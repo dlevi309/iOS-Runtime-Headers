@@ -1,0 +1,113 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AvatarUI.framework/AvatarUI
+*/
+
+#import <AvatarUI/AvatarUI-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <libobjc.A.dylib/AVTSplashScreenViewControllerDelegate.h>
+#import <libobjc.A.dylib/AVTAvatarAttributeEditorViewControllerDelegate.h>
+#import <UIKit/UIAdaptivePresentationControllerDelegate.h>
+#import <libobjc.A.dylib/AVTToolBarDelegate.h>
+
+@protocol AVTAvatarEditorViewControllerDelegate, AVTAvatarStoreInternal, AVTUILogger;
+@class AVTAvatarRecord, AVTViewSessionProvider, AVTUIEnvironment, UIBarButtonItem, AVTToolBar, AVTSplashScreenViewController, AVTAvatarAttributeEditorViewController, NSString;
+
+@interface AVTAvatarEditorViewController : UIViewController <AVTSplashScreenViewControllerDelegate, AVTAvatarAttributeEditorViewControllerDelegate, UIAdaptivePresentationControllerDelegate, AVTToolBarDelegate> {
+
+	BOOL _isCreating;
+	BOOL _hasChanges;
+	id<AVTAvatarEditorViewControllerDelegate> _delegate;
+	AVTAvatarRecord* _initialAvatarRecord;
+	id<AVTAvatarStoreInternal> _store;
+	AVTViewSessionProvider* _avtViewSessionProvider;
+	AVTUIEnvironment* _environment;
+	id<AVTUILogger> _logger;
+	UIBarButtonItem* _cancelButtonItem;
+	UIBarButtonItem* _doneButtonItem;
+	AVTToolBar* _toolbar;
+	AVTSplashScreenViewController* _splashScreenViewController;
+	AVTAvatarAttributeEditorViewController* _attributeEditorViewController;
+
+}
+
+@property (nonatomic,retain) AVTAvatarRecord * initialAvatarRecord;                                                 //@synthesize initialAvatarRecord=_initialAvatarRecord - In the implementation block
+@property (nonatomic,readonly) id<AVTAvatarStoreInternal> store;                                                    //@synthesize store=_store - In the implementation block
+@property (nonatomic,readonly) AVTViewSessionProvider * avtViewSessionProvider;                                     //@synthesize avtViewSessionProvider=_avtViewSessionProvider - In the implementation block
+@property (nonatomic,readonly) AVTUIEnvironment * environment;                                                      //@synthesize environment=_environment - In the implementation block
+@property (nonatomic,readonly) id<AVTUILogger> logger;                                                              //@synthesize logger=_logger - In the implementation block
+@property (nonatomic,readonly) BOOL isCreating;                                                                     //@synthesize isCreating=_isCreating - In the implementation block
+@property (nonatomic,retain) UIBarButtonItem * cancelButtonItem;                                                    //@synthesize cancelButtonItem=_cancelButtonItem - In the implementation block
+@property (nonatomic,retain) UIBarButtonItem * doneButtonItem;                                                      //@synthesize doneButtonItem=_doneButtonItem - In the implementation block
+@property (nonatomic,retain) AVTToolBar * toolbar;                                                                  //@synthesize toolbar=_toolbar - In the implementation block
+@property (assign,nonatomic) BOOL hasChanges;                                                                       //@synthesize hasChanges=_hasChanges - In the implementation block
+@property (nonatomic,readonly) AVTSplashScreenViewController * splashScreenViewController;                          //@synthesize splashScreenViewController=_splashScreenViewController - In the implementation block
+@property (nonatomic,readonly) AVTAvatarAttributeEditorViewController * attributeEditorViewController;              //@synthesize attributeEditorViewController=_attributeEditorViewController - In the implementation block
+@property (assign,nonatomic,__weak) id<AVTAvatarEditorViewControllerDelegate> delegate;                             //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)viewControllerForCreatingAvatarInStore:(id)arg1 ;
++(id)viewControllerForCreatingAvatarInStore:(id)arg1 avtViewSessionProvider:(id)arg2 ;
++(id)viewControllerForEditingAvatar:(id)arg1 avtViewSessionProvider:(id)arg2 store:(id)arg3 ;
++(id)defaultSessionProvider;
++(BOOL)shouldShowSplashScreen;
++(id)viewControllerForEditingAvatar:(id)arg1 store:(id)arg2 ;
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(void)finish:(id)arg1 ;
+-(BOOL)presentationControllerShouldDismiss:(id)arg1 ;
+-(AVTToolBar *)toolbar;
+-(id)keyCommands;
+-(id<AVTAvatarStoreInternal>)store;
+-(id<AVTAvatarEditorViewControllerDelegate>)delegate;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(void)cancel:(id)arg1 ;
+-(UIBarButtonItem *)doneButtonItem;
+-(BOOL)canBecomeFirstResponder;
+-(void)setDelegate:(id<AVTAvatarEditorViewControllerDelegate>)arg1 ;
+-(void)setToolbar:(AVTToolBar *)arg1 ;
+-(void)presentationControllerDidAttemptToDismiss:(id)arg1 ;
+-(void)splashScreenViewControllerDidFinish:(id)arg1 ;
+-(void)viewDidLoad;
+-(BOOL)isModalInPresentation;
+-(id<AVTUILogger>)logger;
+-(void)applyLayout:(id)arg1 ;
+-(BOOL)hasChanges;
+-(UIBarButtonItem *)cancelButtonItem;
+-(AVTViewSessionProvider *)avtViewSessionProvider;
+-(void)setDisableAvatarSnapshotting:(BOOL)arg1 ;
+-(void)setCancelButtonItem:(UIBarButtonItem *)arg1 ;
+-(void)setDoneButtonItem:(UIBarButtonItem *)arg1 ;
+-(void)returnPressed:(id)arg1 ;
+-(AVTUIEnvironment *)environment;
+-(BOOL)isCreating;
+-(UIEdgeInsets)additionalSafeAreaInsets;
+-(void)prepareForAnimatedTransitionWithLayout:(id)arg1 completionBlock:(/*^block*/id)arg2 ;
+-(void)setupInitialViewState;
+-(id)visibleLayout;
+-(void)escPressed:(id)arg1 ;
+-(id)initWithAvatarRecord:(id)arg1 avtViewSessionProvider:(id)arg2 store:(id)arg3 enviroment:(id)arg4 isCreating:(BOOL)arg5 ;
+-(void)updateToolBarForLayout:(id)arg1 ;
+-(id)appropriatePresentationController;
+-(AVTAvatarAttributeEditorViewController *)attributeEditorViewController;
+-(BOOL)disableAvatarSnapshotting;
+-(void)loadSplashScreen;
+-(AVTAvatarRecord *)initialAvatarRecord;
+-(void)loadAttributeEditorViewWithAvatarRecord:(id)arg1 ;
+-(void)configureNavigationItems;
+-(void)enableDoneButton:(BOOL)arg1 ;
+-(void)confirmCancel:(id)arg1 ;
+-(AVTSplashScreenViewController *)splashScreenViewController;
+-(void)handleDiscardAttempt;
+-(void)setHasChanges:(BOOL)arg1 ;
+-(void)toolbar:(id)arg1 didSelectButton:(id)arg2 atIndex:(unsigned long long)arg3 ;
+-(void)attributeEditorDidMakeFirstSelection:(id)arg1 ;
+-(void)attributeEditor:(id)arg1 didUpdateVisibleLayout:(id)arg2 ;
+-(void)controllerPresentationWillObstructView:(id)arg1 ;
+-(void)setInitialAvatarRecord:(AVTAvatarRecord *)arg1 ;
+-(void)prepareForPresetsScrollTestOnCategory:(id)arg1 readyHandler:(/*^block*/id)arg2 ;
+-(void)configurePPTMemoji;
+@end
+

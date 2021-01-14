@@ -1,0 +1,136 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/EventKit.framework/EventKit
+*/
+
+#import <EventKit/EventKit-Structs.h>
+#import <EventKit/EKPersistentObject.h>
+
+@interface EKPersistentCalendarItem : EKPersistentObject
++(id)relations;
++(id)defaultPropertiesToLoad;
+-(id)notes;
+-(void)removeAlarm:(id)arg1 ;
+-(void)setSharedItemModifiedByDisplayName:(id)arg1 ;
+-(BOOL)hasRecurrences;
+-(void)setSharedItemCreatedByFirstName:(id)arg1 ;
+-(id)recurrenceRules;
+-(void)setExternalModificationTag:(id)arg1 ;
+-(int)selfParticipantStatusRaw;
+-(void)setStartTimeZoneName:(id)arg1 ;
+-(BOOL)phantomMaster;
+-(id)singleRecurrenceRule;
+-(void)addAttachment:(id)arg1 ;
+-(id)externalData;
+-(id)sharedItemCreatedByFirstName;
+-(void)setSharedItemCreatedByLastName:(id)arg1 ;
+-(void)setUniqueID:(id)arg1 ;
+-(void)addAttendee:(id)arg1 ;
+-(void)setAttachments:(id)arg1 ;
+-(void)setExternalData:(id)arg1 ;
+-(void)setDefaultAlarmWasDeleted:(BOOL)arg1 ;
+-(void)setCalendarScale:(id)arg1 ;
+-(void)removeAttachment:(id)arg1 ;
+-(id)startDateRaw;
+-(id)sharedItemCreatedByLastName;
+-(id)UUID;
+-(void)removeAttendee:(id)arg1 ;
+-(void)setSequenceNumber:(int)arg1 ;
+-(void)addAlarm:(id)arg1 ;
+-(void)setExternalScheduleID:(id)arg1 ;
+-(id)uniqueID;
+-(id)clientLocation;
+-(void)setCalendar:(id)arg1 ;
+-(BOOL)isAllDay;
+-(id)endTimeZoneName;
+-(void)setStructuredLocationWithoutPrediction:(id)arg1 ;
+-(id)localStructuredData;
+-(void)setSharedItemCreatedTimeZoneName:(id)arg1 ;
+-(id)sharedItemModifiedByLastName;
+-(void)setSharedItemModifiedDate:(id)arg1 ;
+-(void)setEkExceptionDates:(id)arg1 ;
+-(void)setStartDate:(id)arg1 ;
+-(unsigned)modifiedProperties;
+-(id)attachments;
+-(void)setHasAttendees:(BOOL)arg1 ;
+-(void)setExternalID:(id)arg1 ;
+-(void)setStartDateRaw:(id)arg1 ;
+-(void)setSingleRecurrenceRule:(id)arg1 ;
+-(void)setAttendeesRaw:(id)arg1 ;
+-(void)setAppLinkData:(id)arg1 ;
+-(id)sharedItemCreatedTimeZoneName;
+-(id)sharedItemCreatedByAddress;
+-(void)setAllAlarms:(id)arg1 ;
+-(id)sharedItemCreatedDate;
+-(void)setSharedItemCreatedByDisplayName:(id)arg1 ;
+-(id)startTimeZoneName;
+-(id)sharedItemModifiedDate;
+-(void)addRecurrenceRule:(id)arg1 ;
+-(id)endLocation;
+-(void)setSharedItemModifiedByLastName:(id)arg1 ;
+-(void)setModifiedProperties:(unsigned)arg1 ;
+-(BOOL)hasNotes;
+-(id)sharedItemModifiedTimeZoneName;
+-(void)setOriginalItem:(id)arg1 ;
+-(void)setPhantomMaster:(BOOL)arg1 ;
+-(id)selfAttendee;
+-(id)sharedItemModifiedByDisplayName;
+-(void)setStructuredData:(id)arg1 ;
+-(void)setHasNotes:(BOOL)arg1 ;
+-(id)calendarScale;
+-(void)setNotes:(id)arg1 ;
+-(id)ekExceptionDates;
+-(id)sharedItemModifiedByFirstName;
+-(void)setDetachedItems:(id)arg1 ;
+-(id)structuredLocationWithoutPrediction;
+-(void)setSelfAttendee:(id)arg1 ;
+-(void)setHasRecurrences:(BOOL)arg1 ;
+-(id)attendeesRaw;
+-(id)externalScheduleID;
+-(id)startDate;
+-(void)setEndLocation:(id)arg1 ;
+-(BOOL)hasAttendees;
+-(void)setSharedItemModifiedByAddress:(id)arg1 ;
+-(id)lastModifiedDate;
+-(void)setRecurrenceRules:(id)arg1 ;
+-(id)organizer;
+-(id)detachedItems;
+-(void)setOrganizer:(id)arg1 ;
+-(void)setSharedItemModifiedByFirstName:(id)arg1 ;
+-(id)structuredData;
+-(void)setEndTimeZoneName:(id)arg1 ;
+-(void)setURL:(id)arg1 ;
+-(void)setLocalStructuredData:(id)arg1 ;
+-(void)setCreationDate:(id)arg1 ;
+-(id)externalID;
+-(void)setIsAllDay:(BOOL)arg1 ;
+-(id)calendar;
+-(id)allAlarms;
+-(void)setSharedItemModifiedTimeZoneName:(id)arg1 ;
+-(id)externalModificationTag;
+-(id)sharedItemModifiedByAddress;
+-(BOOL)defaultAlarmWasDeleted;
+-(id)originalItem;
+-(void)setTravelStartLocation:(id)arg1 ;
+-(void)setSharedItemCreatedByAddress:(id)arg1 ;
+-(void)setTitle:(id)arg1 ;
+-(id)appLinkData;
+-(void)setClientLocation:(id)arg1 ;
+-(void)setSharedItemCreatedDate:(id)arg1 ;
+-(id)sharedItemCreatedByDisplayName;
+-(int)sequenceNumber;
+-(id)travelStartLocation;
+-(void)removeRecurrenceRule:(id)arg1 ;
+-(id)action;
+-(void)setAction:(id)arg1 ;
+-(id)creationDate;
+-(void)setLastModifiedDate:(id)arg1 ;
+-(id)URL;
+-(void)setUUID:(id)arg1 ;
+-(int)priority;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)setPriority:(int)arg1 ;
+-(id)title;
+@end
+

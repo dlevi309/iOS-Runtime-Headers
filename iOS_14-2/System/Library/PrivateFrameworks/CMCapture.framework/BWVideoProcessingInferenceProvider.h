@@ -1,0 +1,72 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:49 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture
+*/
+
+#import <CMCapture/CMCapture-Structs.h>
+#import <libobjc.A.dylib/BWInferenceProvider.h>
+#import <libobjc.A.dylib/BWInferenceSubmittable.h>
+#import <libobjc.A.dylib/BWInferenceExecutable.h>
+
+@class NSSet, NSMutableArray, VCPCaptureAnalysisSession, NSArray, NSString;
+
+@interface BWVideoProcessingInferenceProvider : NSObject <BWInferenceProvider, BWInferenceSubmittable, BWInferenceExecutable> {
+
+	int _type;
+	int _executionTarget;
+	NSSet* _preventionReasons;
+	NSMutableArray* _inputVideoRequirements;
+	NSMutableArray* _outputVideoRequirements;
+	NSMutableArray* _cloneVideoRequirements;
+	NSMutableArray* _inputMetadataRequirements;
+	NSMutableArray* _outputMetadataRequirements;
+	unsigned long long _analysisType;
+	VCPCaptureAnalysisSession* _vcpSession;
+
+}
+
+@property (nonatomic,readonly) int type;                                                     //@synthesize type=_type - In the implementation block
+@property (nonatomic,readonly) int executionTarget;                                          //@synthesize executionTarget=_executionTarget - In the implementation block
+@property (nonatomic,copy,readonly) NSSet * preventionReasons;                               //@synthesize preventionReasons=_preventionReasons - In the implementation block
+@property (nonatomic,readonly) NSArray * inputVideoRequirements;                             //@synthesize inputVideoRequirements=_inputVideoRequirements - In the implementation block
+@property (nonatomic,readonly) NSArray * outputVideoRequirements;                            //@synthesize outputVideoRequirements=_outputVideoRequirements - In the implementation block
+@property (nonatomic,readonly) NSArray * cloneVideoRequirements;                             //@synthesize cloneVideoRequirements=_cloneVideoRequirements - In the implementation block
+@property (nonatomic,readonly) NSArray * inputMetadataRequirements;                          //@synthesize inputMetadataRequirements=_inputMetadataRequirements - In the implementation block
+@property (nonatomic,readonly) NSArray * outputMetadataRequirements;                         //@synthesize outputMetadataRequirements=_outputMetadataRequirements - In the implementation block
+@property (nonatomic,readonly) unsigned allowedPixelBufferCompressionDirection; 
+@property (nonatomic,readonly) id<BWInferenceExecutable> executable; 
+@property (nonatomic,readonly) id<BWInferenceSubmittable> submittable; 
+@property (nonatomic,readonly) id<BWInferenceExtractable> extractable; 
+@property (nonatomic,readonly) id<BWInferencePropagatable> propagatable; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(void)initialize;
+-(id)newStorage;
+-(id<BWInferenceSubmittable>)submittable;
+-(id<BWInferenceExtractable>)extractable;
+-(id<BWInferencePropagatable>)propagatable;
+-(int)prepareForExecution;
+-(int)executeOnSampleBuffer:(opaqueCMSampleBufferRef)arg1 usingStorage:(id)arg2 withExecutionTime:(SCD_Struct_BW8)arg3 completionHandler:(/*^block*/id)arg4 ;
+-(int)submitForSampleBuffer:(opaqueCMSampleBufferRef)arg1 usingStorage:(id)arg2 withSubmissionTime:(SCD_Struct_BW8)arg3 workQueue:(id)arg4 completionHandler:(/*^block*/id)arg5 ;
+-(int)prepareForSubmissionWithWorkQueue:(id)arg1 ;
+-(id<BWInferenceExecutable>)executable;
+-(id)initWithType:(int)arg1 analysisType:(unsigned long long)arg2 executionTarget:(int)arg3 schedulerPriority:(unsigned)arg4 preventionReasons:(id)arg5 resourceProvider:(id)arg6 ;
+-(id)bindVideoInputFromAttachedMediaUsingKey:(id)arg1 preparedByAttachedMediaKey:(id)arg2 withVideoFormatProvider:(/*^block*/id)arg3 ;
+-(id)bindOutputMetadataKeys:(id)arg1 ;
+-(int)type;
+-(int)executionTarget;
+-(void)propagateInferenceResultsToInferenceDictionary:(id)arg1 usingStorage:(id)arg2 propagationSampleBuffer:(opaqueCMSampleBufferRef)arg3 ;
+-(int)prewarmUsingLimitedMemory:(BOOL)arg1 ;
+-(NSSet *)preventionReasons;
+-(NSArray *)inputVideoRequirements;
+-(NSArray *)outputVideoRequirements;
+-(NSArray *)cloneVideoRequirements;
+-(NSArray *)inputMetadataRequirements;
+-(NSArray *)outputMetadataRequirements;
+-(unsigned)allowedPixelBufferCompressionDirection;
+-(void)dealloc;
+@end
+

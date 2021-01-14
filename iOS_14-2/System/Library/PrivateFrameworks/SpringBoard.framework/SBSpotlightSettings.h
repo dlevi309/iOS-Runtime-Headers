@@ -1,0 +1,103 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard
+*/
+
+#import <PrototypeTools/PTSettings.h>
+
+@class SBFFluidBehaviorSettings;
+
+@interface SBSpotlightSettings : PTSettings {
+
+	SBFFluidBehaviorSettings* _opacityAnimationSettings;
+	SBFFluidBehaviorSettings* _snappyOpacityAnimationSettings;
+	SBFFluidBehaviorSettings* _scaleAnimationSettings;
+	SBFFluidBehaviorSettings* _snappyScaleAnimationSettings;
+	double _anchorPointY;
+	double _hiddenScale;
+	double _hiddenBlurRadius;
+	double _minTranslationToShowSpotlight;
+	double _maxTranslationForSpotlightScale;
+	double _spotlightScaleRubberbandingMin;
+	double _spotlightScaleRubberbandingMax;
+	double _spotlightScaleRubberbandingRange;
+	double _maxTranslationForHomeScreenScale;
+	double _homeScreenScaleRubberbandingMin;
+	double _homeScreenScaleRubberbandingMax;
+	double _homeScreenScaleRubberbandingRange;
+	double _maxTranslationForDimmingView;
+	double _dimmingViewRubberbandingMin;
+	double _dimmingViewRubberbandingMax;
+	double _dimmingViewRubberbandingRange;
+	double _spotlightTranslationRubberbandingRange;
+
+}
+
+@property (nonatomic,retain) SBFFluidBehaviorSettings * opacityAnimationSettings;                    //@synthesize opacityAnimationSettings=_opacityAnimationSettings - In the implementation block
+@property (nonatomic,retain) SBFFluidBehaviorSettings * snappyOpacityAnimationSettings;              //@synthesize snappyOpacityAnimationSettings=_snappyOpacityAnimationSettings - In the implementation block
+@property (nonatomic,retain) SBFFluidBehaviorSettings * scaleAnimationSettings;                      //@synthesize scaleAnimationSettings=_scaleAnimationSettings - In the implementation block
+@property (nonatomic,retain) SBFFluidBehaviorSettings * snappyScaleAnimationSettings;                //@synthesize snappyScaleAnimationSettings=_snappyScaleAnimationSettings - In the implementation block
+@property (assign,nonatomic) double anchorPointY;                                                    //@synthesize anchorPointY=_anchorPointY - In the implementation block
+@property (assign,nonatomic) double hiddenScale;                                                     //@synthesize hiddenScale=_hiddenScale - In the implementation block
+@property (assign,nonatomic) double hiddenBlurRadius;                                                //@synthesize hiddenBlurRadius=_hiddenBlurRadius - In the implementation block
+@property (assign,nonatomic) double minTranslationToShowSpotlight;                                   //@synthesize minTranslationToShowSpotlight=_minTranslationToShowSpotlight - In the implementation block
+@property (assign,nonatomic) double maxTranslationForSpotlightScale;                                 //@synthesize maxTranslationForSpotlightScale=_maxTranslationForSpotlightScale - In the implementation block
+@property (assign,nonatomic) double spotlightScaleRubberbandingMin;                                  //@synthesize spotlightScaleRubberbandingMin=_spotlightScaleRubberbandingMin - In the implementation block
+@property (assign,nonatomic) double spotlightScaleRubberbandingMax;                                  //@synthesize spotlightScaleRubberbandingMax=_spotlightScaleRubberbandingMax - In the implementation block
+@property (assign,nonatomic) double spotlightScaleRubberbandingRange;                                //@synthesize spotlightScaleRubberbandingRange=_spotlightScaleRubberbandingRange - In the implementation block
+@property (assign,nonatomic) double maxTranslationForHomeScreenScale;                                //@synthesize maxTranslationForHomeScreenScale=_maxTranslationForHomeScreenScale - In the implementation block
+@property (assign,nonatomic) double homeScreenScaleRubberbandingMin;                                 //@synthesize homeScreenScaleRubberbandingMin=_homeScreenScaleRubberbandingMin - In the implementation block
+@property (assign,nonatomic) double homeScreenScaleRubberbandingMax;                                 //@synthesize homeScreenScaleRubberbandingMax=_homeScreenScaleRubberbandingMax - In the implementation block
+@property (assign,nonatomic) double homeScreenScaleRubberbandingRange;                               //@synthesize homeScreenScaleRubberbandingRange=_homeScreenScaleRubberbandingRange - In the implementation block
+@property (assign,nonatomic) double maxTranslationForDimmingView;                                    //@synthesize maxTranslationForDimmingView=_maxTranslationForDimmingView - In the implementation block
+@property (assign,nonatomic) double dimmingViewRubberbandingMin;                                     //@synthesize dimmingViewRubberbandingMin=_dimmingViewRubberbandingMin - In the implementation block
+@property (assign,nonatomic) double dimmingViewRubberbandingMax;                                     //@synthesize dimmingViewRubberbandingMax=_dimmingViewRubberbandingMax - In the implementation block
+@property (assign,nonatomic) double dimmingViewRubberbandingRange;                                   //@synthesize dimmingViewRubberbandingRange=_dimmingViewRubberbandingRange - In the implementation block
+@property (assign,nonatomic) double spotlightTranslationRubberbandingRange;                          //@synthesize spotlightTranslationRubberbandingRange=_spotlightTranslationRubberbandingRange - In the implementation block
++(id)settingsControllerModule;
+-(void)setDefaultValues;
+-(void)setAnchorPointY:(double)arg1 ;
+-(double)anchorPointY;
+-(double)maxTranslationForHomeScreenScale;
+-(double)homeScreenScaleRubberbandingMin;
+-(double)homeScreenScaleRubberbandingMax;
+-(double)homeScreenScaleRubberbandingRange;
+-(double)maxTranslationForDimmingView;
+-(double)dimmingViewRubberbandingMin;
+-(double)dimmingViewRubberbandingMax;
+-(double)dimmingViewRubberbandingRange;
+-(void)setHiddenScale:(double)arg1 ;
+-(void)setHiddenBlurRadius:(double)arg1 ;
+-(void)setMinTranslationToShowSpotlight:(double)arg1 ;
+-(void)setMaxTranslationForSpotlightScale:(double)arg1 ;
+-(void)setSpotlightScaleRubberbandingMin:(double)arg1 ;
+-(double)hiddenScale;
+-(void)setSpotlightScaleRubberbandingMax:(double)arg1 ;
+-(void)setSpotlightScaleRubberbandingRange:(double)arg1 ;
+-(void)setMaxTranslationForHomeScreenScale:(double)arg1 ;
+-(void)setHomeScreenScaleRubberbandingMin:(double)arg1 ;
+-(void)setHomeScreenScaleRubberbandingMax:(double)arg1 ;
+-(void)setHomeScreenScaleRubberbandingRange:(double)arg1 ;
+-(void)setMaxTranslationForDimmingView:(double)arg1 ;
+-(void)setDimmingViewRubberbandingMin:(double)arg1 ;
+-(void)setDimmingViewRubberbandingMax:(double)arg1 ;
+-(void)setDimmingViewRubberbandingRange:(double)arg1 ;
+-(void)setSpotlightTranslationRubberbandingRange:(double)arg1 ;
+-(SBFFluidBehaviorSettings *)opacityAnimationSettings;
+-(void)setOpacityAnimationSettings:(SBFFluidBehaviorSettings *)arg1 ;
+-(SBFFluidBehaviorSettings *)snappyOpacityAnimationSettings;
+-(void)setSnappyOpacityAnimationSettings:(SBFFluidBehaviorSettings *)arg1 ;
+-(SBFFluidBehaviorSettings *)scaleAnimationSettings;
+-(void)setScaleAnimationSettings:(SBFFluidBehaviorSettings *)arg1 ;
+-(SBFFluidBehaviorSettings *)snappyScaleAnimationSettings;
+-(void)setSnappyScaleAnimationSettings:(SBFFluidBehaviorSettings *)arg1 ;
+-(double)hiddenBlurRadius;
+-(double)minTranslationToShowSpotlight;
+-(double)maxTranslationForSpotlightScale;
+-(double)spotlightScaleRubberbandingMin;
+-(double)spotlightScaleRubberbandingMax;
+-(double)spotlightScaleRubberbandingRange;
+-(double)spotlightTranslationRubberbandingRange;
+@end
+

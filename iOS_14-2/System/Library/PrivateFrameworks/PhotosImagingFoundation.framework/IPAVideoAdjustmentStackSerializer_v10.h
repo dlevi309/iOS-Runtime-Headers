@@ -1,0 +1,16 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosImagingFoundation.framework/PhotosImagingFoundation
+*/
+
+#import <PhotosImagingFoundation/IPAVideoAdjustmentStackSerializer.h>
+
+@interface IPAVideoAdjustmentStackSerializer_v10 : IPAVideoAdjustmentStackSerializer
+-(id)dataFromArchive:(id)arg1 error:(id*)arg2 ;
+-(id)archiveFromData:(id)arg1 error:(id*)arg2 ;
+-(id)dataFromVideoAdjustmentStack:(id)arg1 error:(id*)arg2 ;
+-(id)videoAdjustmentStackFromData:(id)arg1 error:(id*)arg2 ;
+-(id)videoAdjustmentFromArchive:(id)arg1 error:(id*)arg2 ;
+@end
+

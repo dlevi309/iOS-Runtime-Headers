@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:47 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
+*/
+
+
+@class NSString, NSArray;
+
+@interface CUBluetoothUpdateAccessoryDevicesRequest : NSObject {
+
+	unsigned _deviceState;
+	int _highPriorityState;
+	int _hijackState;
+	NSString* _accessoryID;
+	NSArray* _deviceAddresses;
+	/*^block*/id _completionHandler;
+
+}
+
+@property (nonatomic,copy) NSString * accessoryID;                 //@synthesize accessoryID=_accessoryID - In the implementation block
+@property (nonatomic,copy) NSArray * deviceAddresses;              //@synthesize deviceAddresses=_deviceAddresses - In the implementation block
+@property (assign,nonatomic) unsigned deviceState;                 //@synthesize deviceState=_deviceState - In the implementation block
+@property (assign,nonatomic) int highPriorityState;                //@synthesize highPriorityState=_highPriorityState - In the implementation block
+@property (assign,nonatomic) int hijackState;                      //@synthesize hijackState=_hijackState - In the implementation block
+@property (nonatomic,copy) id completionHandler;                   //@synthesize completionHandler=_completionHandler - In the implementation block
+-(void)setCompletionHandler:(id)arg1 ;
+-(NSArray *)deviceAddresses;
+-(int)hijackState;
+-(int)highPriorityState;
+-(void)setDeviceAddresses:(NSArray *)arg1 ;
+-(void)setHighPriorityState:(int)arg1 ;
+-(void)setHijackState:(int)arg1 ;
+-(id)completionHandler;
+-(NSString *)accessoryID;
+-(id)description;
+-(unsigned)deviceState;
+-(void)setDeviceState:(unsigned)arg1 ;
+-(void)setAccessoryID:(NSString *)arg1 ;
+@end
+

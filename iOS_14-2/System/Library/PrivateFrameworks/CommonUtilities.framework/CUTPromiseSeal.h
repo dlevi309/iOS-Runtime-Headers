@@ -1,0 +1,23 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:59 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities
+*/
+
+
+@class CUTPromise;
+
+@interface CUTPromiseSeal : NSObject {
+
+	CUTPromise* _promise;
+
+}
+
+@property (nonatomic,retain) CUTPromise * promise;              //@synthesize promise=_promise - In the implementation block
+-(id)initWithQueue:(id)arg1 ;
+-(void)fulfillWithValue:(id)arg1 ;
+-(CUTPromise *)promise;
+-(void)setPromise:(CUTPromise *)arg1 ;
+-(void)failWithError:(id)arg1 ;
+@end
+

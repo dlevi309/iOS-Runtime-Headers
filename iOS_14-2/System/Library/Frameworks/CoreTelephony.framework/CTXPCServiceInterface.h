@@ -1,0 +1,10 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+*/
+
+
+@protocol CTXPCServiceInterface <NSObject,CTXPCServiceBaseInterface,CTXPCServiceRegistrationInterface,CTXPCServiceDataInterface,CTXPCServiceSubscriberInterface,CTXPCServiceEmergencyInterface,CTXPCServiceCarrierBundleInterface,CTXPCServiceVoicemailInterface,CTXPCServiceCellMonitorInterface,CTXPCServicePostponementInterface,CTXPCServiceDeviceManagementInterface,CTXPCServicePNRInterface,CTXPCServiceSuppServicesInterface,CTXPCServiceCapabilitiesInterface,CTXPCServiceFTInterface,CTXPCServiceRadioInterface,CTXPCServiceCallInterface,CTXPCServicePhonebookInterface,CTXPCServiceCellularPlanManagerInterface,CTXPCServiceSMSInterface,CTXPCServiceAppDataUsageInterface,CTXPCServiceCellularUsagePolicyInterface,CTXPCServiceCarrierServicesInterface,CTXPCServiceSIMToolkitInterface>
+@end
+

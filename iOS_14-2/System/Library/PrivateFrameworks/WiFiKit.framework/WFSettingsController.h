@@ -1,0 +1,81 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WiFiKit.framework/WiFiKit
+*/
+
+#import <libobjc.A.dylib/WFNetworkSettingsViewControllerDataCoordinator.h>
+
+@class WFNetworkSettingsViewController, WFMutableNetworkProfile, WFNetworkSettingsConfig, WFIPMonitor, NSOperationQueue, WFDetailsContext, WFNetworkScanRecord, NSString;
+
+@interface WFSettingsController : NSObject <WFNetworkSettingsViewControllerDataCoordinator> {
+
+	BOOL _monitorIPChanges;
+	BOOL _cloudSyncRunning;
+	BOOL _currentNetwork;
+	BOOL _runningInSetup;
+	WFNetworkSettingsViewController* _settingsViewController;
+	WFMutableNetworkProfile* _profile;
+	WFNetworkSettingsConfig* _config;
+	WFIPMonitor* _ipMonitor;
+	NSOperationQueue* _queue;
+	WFDetailsContext* _detailsContext;
+	WFNetworkScanRecord* _network;
+	NSString* _hardwareMACAddress;
+
+}
+
+@property (nonatomic,retain) WFMutableNetworkProfile * profile;                                     //@synthesize profile=_profile - In the implementation block
+@property (nonatomic,retain) WFNetworkSettingsConfig * config;                                      //@synthesize config=_config - In the implementation block
+@property (nonatomic,retain) WFNetworkSettingsViewController * settingsViewController;              //@synthesize settingsViewController=_settingsViewController - In the implementation block
+@property (assign,nonatomic) BOOL monitorIPChanges;                                                 //@synthesize monitorIPChanges=_monitorIPChanges - In the implementation block
+@property (nonatomic,retain) WFIPMonitor * ipMonitor;                                               //@synthesize ipMonitor=_ipMonitor - In the implementation block
+@property (nonatomic,retain) NSOperationQueue * queue;                                              //@synthesize queue=_queue - In the implementation block
+@property (assign,nonatomic) BOOL cloudSyncRunning;                                                 //@synthesize cloudSyncRunning=_cloudSyncRunning - In the implementation block
+@property (nonatomic,retain) WFDetailsContext * detailsContext;                                     //@synthesize detailsContext=_detailsContext - In the implementation block
+@property (nonatomic,retain) WFNetworkScanRecord * network;                                         //@synthesize network=_network - In the implementation block
+@property (assign,getter=isCurrentNetwork,nonatomic) BOOL currentNetwork;                           //@synthesize currentNetwork=_currentNetwork - In the implementation block
+@property (nonatomic,retain) NSString * hardwareMACAddress;                                         //@synthesize hardwareMACAddress=_hardwareMACAddress - In the implementation block
+@property (assign,getter=isRunningInSetup,nonatomic) BOOL runningInSetup;                           //@synthesize runningInSetup=_runningInSetup - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(WFNetworkSettingsConfig *)config;
+-(void)setCurrentNetwork:(BOOL)arg1 ;
+-(void)setProfile:(WFMutableNetworkProfile *)arg1 ;
+-(WFIPMonitor *)ipMonitor;
+-(WFNetworkScanRecord *)network;
+-(void)setIpMonitor:(WFIPMonitor *)arg1 ;
+-(WFMutableNetworkProfile *)profile;
+-(NSOperationQueue *)queue;
+-(WFNetworkSettingsViewController *)settingsViewController;
+-(void)setConfig:(WFNetworkSettingsConfig *)arg1 ;
+-(NSString *)hardwareMACAddress;
+-(void)setQueue:(NSOperationQueue *)arg1 ;
+-(void)setNetwork:(WFNetworkScanRecord *)arg1 ;
+-(void)dealloc;
+-(void)setSettingsViewController:(WFNetworkSettingsViewController *)arg1 ;
+-(BOOL)isCurrentNetwork;
+-(void)_ipStateDidChange:(id)arg1 ;
+-(void)setDetailsContext:(WFDetailsContext *)arg1 ;
+-(WFDetailsContext *)detailsContext;
+-(void)setHardwareMACAddress:(NSString *)arg1 ;
+-(id)initWithDetailsContext:(id)arg1 runningInSetup:(BOOL)arg2 ;
+-(id)initWithDetailsContext:(id)arg1 ;
+-(void)_applySetupAppearances;
+-(id)_baseConfigForNetwork:(id)arg1 current:(BOOL)arg2 ;
+-(void)_refreshSettingsConfig:(id)arg1 ;
+-(void)_currentNetworkDidChange:(id)arg1 ;
+-(void)_startMontoringIPChanges;
+-(void)_stopMonitoringIPChanges;
+-(id)_profileForNetwork:(id)arg1 ;
+-(BOOL)cloudSyncRunning;
+-(void)networkSettingsViewController:(id)arg1 saveConfig:(id)arg2 errorHandler:(/*^block*/id)arg3 ;
+-(BOOL)monitorIPChanges;
+-(void)setMonitorIPChanges:(BOOL)arg1 ;
+-(void)setCloudSyncRunning:(BOOL)arg1 ;
+-(BOOL)isRunningInSetup;
+-(void)setRunningInSetup:(BOOL)arg1 ;
+@end
+

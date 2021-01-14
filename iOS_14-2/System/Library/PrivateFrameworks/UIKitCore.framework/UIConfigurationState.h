@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:19 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+@class UITraitCollection;
+
+
+@protocol UIConfigurationState <NSObject,NSCopying,NSSecureCoding>
+@property (nonatomic,retain) UITraitCollection * traitCollection; 
+@required
+-(UITraitCollection *)traitCollection;
+-(id)objectForKeyedSubscript:(id)arg1;
+-(void)setTraitCollection:(id)arg1;
+-(void)setObject:(id)arg1 forKeyedSubscript:(id)arg2;
+-(void)setCustomState:(id)arg1 forKey:(id)arg2;
+-(id)customStateForKey:(id)arg1;
+-(id)initWithTraitCollection:(id)arg1;
+
+@end
+

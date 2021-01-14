@@ -1,0 +1,34 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:26 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Silex.framework/Silex
+*/
+
+#import <Silex/SXJSONObject.h>
+#import <libobjc.A.dylib/SXHints.h>
+
+@protocol SXHints <NSObject>
+@property (nonatomic,readonly) id<SXConditionHints> conditions; 
+@property (nonatomic,readonly) id<SXConditionalHints> conditionals; 
+@required
+-(id<SXConditionHints>)conditions;
+-(id<SXConditionalHints>)conditionals;
+
+@end
+
+
+@class NSString;
+
+@interface SXHints : SXJSONObject <SXHints>
+
+@property (nonatomic,readonly) id<SXConditionHints> conditions; 
+@property (nonatomic,readonly) id<SXConditionalHints> conditionals; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(Class)classForProtocolProperty:(id)arg1 withValue:(id)arg2 ;
+-(id<SXConditionalHints>)conditionals;
+-(id<SXConditionHints>)conditions;
+@end
+

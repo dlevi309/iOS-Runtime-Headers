@@ -1,0 +1,26 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:30 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ChatKit.framework/ChatKit
+*/
+
+#import <ChatKit/ChatKit-Structs.h>
+#import <ChatKit/CKTranscriptCell.h>
+
+@class UIView;
+
+@interface CKTranscriptHeaderCell : CKTranscriptCell {
+
+	UIView* _loadingIndicator;
+
+}
+
+@property (nonatomic,retain) UIView * loadingIndicator;              //@synthesize loadingIndicator=_loadingIndicator - In the implementation block
++(double)defaultCellHeight;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)layoutSubviewsForAlignmentContents;
+-(void)setLoadingIndicator:(UIView *)arg1 ;
+-(UIView *)loadingIndicator;
+-(void)startAnimatingActivityIndicator;
+@end
+

@@ -1,0 +1,85 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
+*/
+
+#import <PassKitCore/PassKitCore-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, PKTransactionAmount, NSDate;
+
+@interface PKPaymentTransactionAward : NSObject <NSCopying, NSSecureCoding> {
+
+	BOOL _hasDeepLink;
+	BOOL _claimExpired;
+	BOOL _redeemExpired;
+	NSString* _identifier;
+	long long _type;
+	NSString* _subtype;
+	long long _order;
+	PKTransactionAmount* _amount;
+	NSString* _localizedAmount;
+	NSString* _awardDescription;
+	NSString* _relevantAccountName;
+	NSDate* _claimExpiryDate;
+	NSDate* _redeemExpiryDate;
+	NSString* _typeString;
+
+}
+
+@property (nonatomic,copy) NSString * typeString;                       //@synthesize typeString=_typeString - In the implementation block
+@property (nonatomic,copy) NSString * identifier;                       //@synthesize identifier=_identifier - In the implementation block
+@property (assign,nonatomic) long long type;                            //@synthesize type=_type - In the implementation block
+@property (nonatomic,copy) NSString * subtype;                          //@synthesize subtype=_subtype - In the implementation block
+@property (assign,nonatomic) long long order;                           //@synthesize order=_order - In the implementation block
+@property (nonatomic,copy) PKTransactionAmount * amount;                //@synthesize amount=_amount - In the implementation block
+@property (nonatomic,copy) NSString * localizedAmount;                  //@synthesize localizedAmount=_localizedAmount - In the implementation block
+@property (nonatomic,copy) NSString * awardDescription;                 //@synthesize awardDescription=_awardDescription - In the implementation block
+@property (nonatomic,copy) NSString * relevantAccountName;              //@synthesize relevantAccountName=_relevantAccountName - In the implementation block
+@property (assign,nonatomic) BOOL hasDeepLink;                          //@synthesize hasDeepLink=_hasDeepLink - In the implementation block
+@property (nonatomic,copy) NSDate * claimExpiryDate;                    //@synthesize claimExpiryDate=_claimExpiryDate - In the implementation block
+@property (assign,nonatomic) BOOL claimExpired;                         //@synthesize claimExpired=_claimExpired - In the implementation block
+@property (nonatomic,copy) NSDate * redeemExpiryDate;                   //@synthesize redeemExpiryDate=_redeemExpiryDate - In the implementation block
+@property (assign,nonatomic) BOOL redeemExpired;                        //@synthesize redeemExpired=_redeemExpired - In the implementation block
++(BOOL)supportsSecureCoding;
+-(NSString *)typeString;
+-(NSString *)subtype;
+-(id)dictionaryRepresentation;
+-(void)encodeWithCoder:(id)arg1 ;
+-(void)setType:(long long)arg1 ;
+-(id)initWithDictionary:(id)arg1 ;
+-(void)setLocalizedAmount:(NSString *)arg1 ;
+-(void)setAmount:(PKTransactionAmount *)arg1 ;
+-(long long)type;
+-(BOOL)hasDeepLink;
+-(unsigned long long)hash;
+-(id)initWithCoder:(id)arg1 ;
+-(PKTransactionAmount *)amount;
+-(void)setIdentifier:(NSString *)arg1 ;
+-(void)setTypeString:(NSString *)arg1 ;
+-(BOOL)isEqualToPaymentTransactionAward:(id)arg1 ;
+-(NSString *)localizedAmount;
+-(NSString *)awardDescription;
+-(void)setAwardDescription:(NSString *)arg1 ;
+-(NSString *)relevantAccountName;
+-(void)setRelevantAccountName:(NSString *)arg1 ;
+-(void)setHasDeepLink:(BOOL)arg1 ;
+-(NSDate *)claimExpiryDate;
+-(void)setClaimExpiryDate:(NSDate *)arg1 ;
+-(BOOL)claimExpired;
+-(void)setClaimExpired:(BOOL)arg1 ;
+-(NSDate *)redeemExpiryDate;
+-(void)setRedeemExpiryDate:(NSDate *)arg1 ;
+-(BOOL)redeemExpired;
+-(void)setRedeemExpired:(BOOL)arg1 ;
+-(NSString *)identifier;
+-(void)setSubtype:(NSString *)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)formattedStringValue;
+-(BOOL)isEqual:(id)arg1 ;
+-(long long)order;
+-(void)setOrder:(long long)arg1 ;
+@end
+

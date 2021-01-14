@@ -1,0 +1,31 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon
+*/
+
+
+@class MLModel;
+
+@interface EDImportantMLModel : NSObject {
+
+	MLModel* _model;
+
+}
+
+@property (nonatomic,readonly) MLModel * model;              //@synthesize model=_model - In the implementation block
++(id)URLOfModelInThisBundle;
++(void)loadContentsOfURL:(id)arg1 configuration:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
++(void)loadWithConfiguration:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(MLModel *)model;
+-(id)init;
+-(id)predictionFromFeatures:(id)arg1 options:(id)arg2 error:(id*)arg3 ;
+-(id)predictionsFromInputs:(id)arg1 options:(id)arg2 error:(id*)arg3 ;
+-(id)predictionFromFeatures:(id)arg1 error:(id*)arg2 ;
+-(id)initWithContentsOfURL:(id)arg1 error:(id*)arg2 ;
+-(id)initWithConfiguration:(id)arg1 error:(id*)arg2 ;
+-(id)initWithMLModel:(id)arg1 ;
+-(id)initWithContentsOfURL:(id)arg1 configuration:(id)arg2 error:(id*)arg3 ;
+-(id)predictionFromCc_contains_contact:(double)arg1 cc_is_top_direct_addresses_based_on_respond:(double)arg2 cc_is_top_direct_addresses_based_on_scroll:(double)arg3 cc_is_top_direct_addresses_based_on_send:(double)arg4 cc_is_top_direct_addresses_based_on_view:(double)arg5 cc_is_top_indirect_addresses_based_on_respond:(double)arg6 cc_is_top_indirect_addresses_based_on_scroll:(double)arg7 cc_is_top_indirect_addresses_based_on_send:(double)arg8 cc_is_top_indirect_addresses_based_on_view:(double)arg9 cc_is_vip:(double)arg10 from_list_id:(double)arg11 message_is_forward:(double)arg12 message_is_reply:(double)arg13 num_recipients:(double)arg14 sender_is_contact:(double)arg15 sender_is_top_direct_addresses_based_on_respond:(double)arg16 sender_is_top_direct_addresses_based_on_scroll:(double)arg17 sender_is_top_direct_addresses_based_on_send:(double)arg18 sender_is_top_direct_addresses_based_on_view:(double)arg19 sender_is_top_indirect_addresses_based_on_respond:(double)arg20 sender_is_top_indirect_addresses_based_on_scroll:(double)arg21 sender_is_top_indirect_addresses_based_on_send:(double)arg22 sender_is_top_indirect_addresses_based_on_view:(double)arg23 sender_is_vip:(double)arg24 subject_is_top_words_based_on_respond:(double)arg25 subject_is_top_words_based_on_scroll:(double)arg26 subject_is_top_words_based_on_send:(double)arg27 subject_is_top_words_based_on_view:(double)arg28 time_received:(id)arg29 to_contains_contact:(double)arg30 to_is_top_direct_addresses_based_on_respond:(double)arg31 to_is_top_direct_addresses_based_on_scroll:(double)arg32 to_is_top_direct_addresses_based_on_send:(double)arg33 to_is_top_direct_addresses_based_on_view:(double)arg34 to_is_top_indirect_addresses_based_on_respond:(double)arg35 to_is_top_indirect_addresses_based_on_scroll:(double)arg36 to_is_top_indirect_addresses_based_on_send:(double)arg37 to_is_top_indirect_addresses_based_on_view:(double)arg38 to_is_vip:(double)arg39 user_is_bcc:(double)arg40 user_is_cc:(double)arg41 user_is_sender:(double)arg42 user_is_to:(double)arg43 error:(id*)arg44 ;
+@end
+

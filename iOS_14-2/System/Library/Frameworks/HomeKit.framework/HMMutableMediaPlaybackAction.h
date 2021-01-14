@@ -1,0 +1,25 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:50 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/HomeKit.framework/HomeKit
+*/
+
+#import <HomeKit/HomeKit-Structs.h>
+#import <HomeKit/HMMediaPlaybackAction.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSSet, NSNumber, MPPlaybackArchive;
+
+@interface HMMutableMediaPlaybackAction : HMMediaPlaybackAction <NSCopying>
+
+@property (nonatomic,copy) NSSet * mediaProfiles; 
+@property (assign,nonatomic) long long state; 
+@property (nonatomic,retain) NSNumber * volume; 
+@property (nonatomic,retain) MPPlaybackArchive * playbackArchive; 
+-(void)setVolume:(NSNumber *)arg1 ;
+-(void)setMediaProfiles:(NSSet *)arg1 ;
+-(void)setPlaybackArchive:(MPPlaybackArchive *)arg1 ;
+-(void)setState:(long long)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+@end
+

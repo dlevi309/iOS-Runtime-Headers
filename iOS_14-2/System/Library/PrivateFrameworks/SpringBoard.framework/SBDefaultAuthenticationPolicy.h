@@ -1,0 +1,40 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:22 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard
+*/
+
+#import <libobjc.A.dylib/SBFAuthenticationPolicy.h>
+
+@class SBiCloudPasscodeRequirementLockoutController, SBSoftwareUpdatePasscodePolicyManager, SecureBackup, NSString;
+
+@interface SBDefaultAuthenticationPolicy : NSObject <SBFAuthenticationPolicy> {
+
+	SBiCloudPasscodeRequirementLockoutController* _iCloudPasscodeRequirementLockoutController;
+	SBSoftwareUpdatePasscodePolicyManager* _softwareUpdatePasscodePolicyManager;
+	SecureBackup* _secureBackupHelper;
+
+}
+
+@property (setter=_setSecureBackupHelper:,getter=_secureBackupHelper,nonatomic,retain) SecureBackup * secureBackupHelper;              //@synthesize secureBackupHelper=_secureBackupHelper - In the implementation block
+@property (nonatomic,retain) SBiCloudPasscodeRequirementLockoutController * iCloudPasscodeRequirementLockoutController;                //@synthesize iCloudPasscodeRequirementLockoutController=_iCloudPasscodeRequirementLockoutController - In the implementation block
+@property (nonatomic,retain) SBSoftwareUpdatePasscodePolicyManager * softwareUpdatePasscodePolicyManager;                              //@synthesize softwareUpdatePasscodePolicyManager=_softwareUpdatePasscodePolicyManager - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(SBSoftwareUpdatePasscodePolicyManager *)softwareUpdatePasscodePolicyManager;
+-(BOOL)usesSecureMode;
+-(void)wipeDeviceWithReason:(id)arg1 ;
+-(BOOL)shouldClearBlockStateOnSync;
+-(void)cachePasscode:(id)arg1 ;
+-(void)clearPasscodeCache;
+-(BOOL)allowAuthenticationRevocation;
+-(void)passcodeAuthenticationFailedWithError:(id)arg1 ;
+-(void)setSoftwareUpdatePasscodePolicyManager:(SBSoftwareUpdatePasscodePolicyManager *)arg1 ;
+-(void)setICloudPasscodeRequirementLockoutController:(SBiCloudPasscodeRequirementLockoutController *)arg1 ;
+-(SBiCloudPasscodeRequirementLockoutController *)iCloudPasscodeRequirementLockoutController;
+-(id)_secureBackupHelper;
+-(void)_setSecureBackupHelper:(id)arg1 ;
+@end
+

@@ -1,0 +1,72 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomEvaluator.framework/SymptomEvaluator
+*/
+
+#import <libobjc.A.dylib/ConfigurableObjectProtocol.h>
+
+@protocol SymptomAdditionalProtocol;
+@class NSMutableDictionary, NSString;
+
+@interface SimpleRuleCondition : NSObject <ConfigurableObjectProtocol> {
+
+	NSMutableDictionary* _resetSources;
+	int _conditionType;
+	NSString* _conditionName;
+	long long _conditionMinCount;
+	NSString* _conditionPrevSymptom;
+	long long _conditionMaxAge;
+	long long _conditionFlags;
+	NSString* _conditionStringID;
+	long long _conditionStringLength;
+	id<SymptomAdditionalProtocol> _additionalHandler;
+	SEL _additionalSelector;
+
+}
+
+@property (nonatomic,retain) NSString * conditionName;                                     //@synthesize conditionName=_conditionName - In the implementation block
+@property (assign,nonatomic) long long conditionMinCount;                                  //@synthesize conditionMinCount=_conditionMinCount - In the implementation block
+@property (assign,nonatomic) int conditionType;                                            //@synthesize conditionType=_conditionType - In the implementation block
+@property (nonatomic,retain) NSString * conditionPrevSymptom;                              //@synthesize conditionPrevSymptom=_conditionPrevSymptom - In the implementation block
+@property (assign,nonatomic) long long conditionMaxAge;                                    //@synthesize conditionMaxAge=_conditionMaxAge - In the implementation block
+@property (assign,nonatomic) long long conditionFlags;                                     //@synthesize conditionFlags=_conditionFlags - In the implementation block
+@property (nonatomic,retain) NSString * conditionStringID;                                 //@synthesize conditionStringID=_conditionStringID - In the implementation block
+@property (assign,nonatomic) long long conditionStringLength;                              //@synthesize conditionStringLength=_conditionStringLength - In the implementation block
+@property (nonatomic,retain) id<SymptomAdditionalProtocol> additionalHandler;              //@synthesize additionalHandler=_additionalHandler - In the implementation block
+@property (assign,nonatomic) SEL additionalSelector;                                       //@synthesize additionalSelector=_additionalSelector - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)objectWithName:(id)arg1 ;
++(id)configureClass:(id)arg1 ;
+-(int)read:(id)arg1 returnedValues:(id)arg2 ;
+-(int)configureInstance:(id)arg1 ;
+-(BOOL)evaluatePrevSymptom:(id)arg1 showingWorkAt:(id)arg2 ;
+-(void)setConditionStringID:(NSString *)arg1 ;
+-(void)setConditionMinCount:(long long)arg1 ;
+-(long long)conditionMaxAge;
+-(long long)conditionMinCount;
+-(BOOL)evaluateHandler:(id)arg1 showingWorkAt:(id)arg2 ;
+-(int)conditionType;
+-(void)setConditionStringLength:(long long)arg1 ;
+-(void)setConditionMaxAge:(long long)arg1 ;
+-(void)setConditionPrevSymptom:(NSString *)arg1 ;
+-(SEL)additionalSelector;
+-(NSString *)conditionPrevSymptom;
+-(void)setConditionType:(int)arg1 ;
+-(void)setConditionFlags:(long long)arg1 ;
+-(NSString *)description;
+-(void)_reset:(id)arg1 ;
+-(long long)conditionFlags;
+-(id<SymptomAdditionalProtocol>)additionalHandler;
+-(void)setAdditionalHandler:(id<SymptomAdditionalProtocol>)arg1 ;
+-(void)setAdditionalSelector:(SEL)arg1 ;
+-(void)setConditionName:(NSString *)arg1 ;
+-(NSString *)conditionStringID;
+-(long long)conditionStringLength;
+-(NSString *)conditionName;
+-(BOOL)evaluate:(id)arg1 showingWorkAt:(id)arg2 ;
+@end
+

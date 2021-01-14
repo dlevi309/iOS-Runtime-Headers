@@ -1,0 +1,59 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:55 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Memories.framework/Memories
+*/
+
+#import <Memories/Memories-Structs.h>
+#import <Memories/KonaClip.h>
+
+@class NSDictionary, NSString;
+
+@interface TransitionClip : KonaClip {
+
+	BOOL _forcedNoOverlap;
+	NSDictionary* _transitionEffectSettings;
+
+}
+
+@property (nonatomic,retain) NSString * transitionName; 
+@property (assign,nonatomic) int transitionDirection; 
+@property (nonatomic,readonly) int overlapType; 
+@property (assign,nonatomic) int type; 
+@property (assign,nonatomic) BOOL forcedNoOverlap;                               //@synthesize forcedNoOverlap=_forcedNoOverlap - In the implementation block
+@property (assign,nonatomic) int audioEnabledType; 
+@property (assign,nonatomic) float effectRangeBias; 
+@property (nonatomic,copy) NSDictionary * transitionEffectSettings;              //@synthesize transitionEffectSettings=_transitionEffectSettings - In the implementation block
+@property (nonatomic,readonly) SCD_Struct_PM9 effectRange; 
++(int)overlapTypeForName:(id)arg1 ;
+-(void)setTransitionDirection:(int)arg1 ;
+-(BOOL)audioEnabled;
+-(void)setType:(int)arg1 ;
+-(int)type;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(int)transitionDirection;
+-(NSString *)transitionName;
+-(SCD_Struct_PM9)effectRange;
+-(int)clipType;
+-(int)transitionEatLeft;
+-(int)transitionEatRight;
+-(int)biasedDuration;
+-(void)setTransitionName:(NSString *)arg1 ;
+-(int)overlapType;
+-(void)setTransitionEffectSettings:(NSDictionary *)arg1 ;
+-(void)setEffectRangeBias:(float)arg1 ;
+-(NSDictionary *)transitionEffectSettings;
+-(id)plistRepresentationFromProject:(id)arg1 ;
+-(void)setContentsFromPlist:(id)arg1 inProject:(id)arg2 ;
+-(BOOL)forcedNoOverlap;
+-(BOOL)overlapIsCurrentlyForced;
+-(void)setTransitionEatLeft:(int)arg1 ;
+-(void)setTransitionEatRight:(int)arg1 ;
+-(float)effectRangeBias;
+-(int)biasedStartOffset;
+-(void)setForcedNoOverlap:(BOOL)arg1 ;
+-(id)transitionIDFromName:(id)arg1 ;
+-(void)setAudioEnabledType:(int)arg1 ;
+-(int)audioEnabledType;
+@end
+

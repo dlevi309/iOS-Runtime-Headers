@@ -1,0 +1,35 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BulletinDistributorCompanion.framework/BulletinDistributorCompanion
+*/
+
+
+@class NSDictionary;
+
+@interface BLTSectionConfigurationInternal : NSObject {
+
+	NSDictionary* _configurations;
+
+}
+-(id)init;
+-(id)_loadConfigurations;
+-(unsigned long long)coordinationTypeForSectionID:(id)arg1 subtype:(long long)arg2 category:(id)arg3 ;
+-(unsigned long long)coordinationTypeForSectionID:(id)arg1 subtype:(long long)arg2 ;
+-(BOOL)hasSectionIDOptedOutOfAttachmentCoordination:(id)arg1 ;
+-(BOOL)shouldSectionIDSettingsAlwaysSync:(id)arg1 ;
+-(BOOL)shouldSectionIDAlwaysAlert:(id)arg1 category:(id)arg2 ;
+-(BOOL)hasSectionIDOptedOutOfWaitForUserIdle:(id)arg1 ;
+-(BOOL)hasSectionIDOptedOutOfNotificationTuning:(id)arg1 ;
+-(BOOL)hasSectionIDDisplayedCriticalBulletins:(id)arg1 ;
+-(BOOL)applyWhitelistToChildSections:(id)arg1 ;
+-(unsigned long long)legacyMapLocationForSectionID:(id)arg1 ;
+-(id)watchVersionThatUsesUserInfoForContextForSectionID:(id)arg1 ;
+-(id)additionalBridgeSectionIDsForSectionID:(id)arg1 ;
+-(BOOL)hasSectionIDOptedOutOfSubtitleRemovalForOlderWatches:(id)arg1 ;
+-(BOOL)shouldUsePhoneExpirationDateForSectionID:(id)arg1 ;
+-(BOOL)hasSectionIDOptedOutOfSettingsCoordination:(id)arg1 ;
+-(BOOL)setCoordinationType:(unsigned long long)arg1 sectionID:(id)arg2 ;
+-(id)watchVersionThatUsesAttachmentURLForSectionID:(id)arg1 ;
+@end
+

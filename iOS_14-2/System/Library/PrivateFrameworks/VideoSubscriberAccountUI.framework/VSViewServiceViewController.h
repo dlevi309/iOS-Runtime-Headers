@@ -1,0 +1,105 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:44 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VideoSubscriberAccountUI.framework/VideoSubscriberAccountUI
+*/
+
+#import <UIKitCore/UIViewController.h>
+#import <libobjc.A.dylib/VSViewServiceProtocol.h>
+#import <libobjc.A.dylib/VSIdentityProviderPickerViewControllerDelegate.h>
+#import <libobjc.A.dylib/VSIdentityProviderViewControllerDelegate.h>
+#import <libobjc.A.dylib/VSRemoteNotifierDelegate.h>
+
+@class VSPersistentStorage, VSRestrictionsCenter, VSRemoteNotifier, VSPreferences, NSOperationQueue, VSOptional, UINavigationController, VSAuditToken, NSString;
+
+@interface VSViewServiceViewController : UIViewController <VSViewServiceProtocol, VSIdentityProviderPickerViewControllerDelegate, VSIdentityProviderViewControllerDelegate, VSRemoteNotifierDelegate> {
+
+	BOOL _presentedInHost;
+	BOOL _identityProviderPickerRequired;
+	BOOL _didAuthenticateAccount;
+	VSPersistentStorage* _storage;
+	VSRestrictionsCenter* _restrictionsCenter;
+	VSRemoteNotifier* _remoteNotifier;
+	VSPreferences* _preferences;
+	NSOperationQueue* _privateQueue;
+	VSOptional* _currentRequest;
+	VSOptional* _currentRequestID;
+	UINavigationController* _navController;
+	VSAuditToken* _auditToken;
+
+}
+
+@property (nonatomic,retain) VSPersistentStorage * storage;                                                            //@synthesize storage=_storage - In the implementation block
+@property (nonatomic,retain) VSRestrictionsCenter * restrictionsCenter;                                                //@synthesize restrictionsCenter=_restrictionsCenter - In the implementation block
+@property (nonatomic,retain) VSRemoteNotifier * remoteNotifier;                                                        //@synthesize remoteNotifier=_remoteNotifier - In the implementation block
+@property (nonatomic,retain) VSPreferences * preferences;                                                              //@synthesize preferences=_preferences - In the implementation block
+@property (nonatomic,retain) NSOperationQueue * privateQueue;                                                          //@synthesize privateQueue=_privateQueue - In the implementation block
+@property (nonatomic,copy) VSOptional * currentRequest;                                                                //@synthesize currentRequest=_currentRequest - In the implementation block
+@property (nonatomic,retain) VSOptional * currentRequestID;                                                            //@synthesize currentRequestID=_currentRequestID - In the implementation block
+@property (assign,getter=isPresentedInHost,nonatomic) BOOL presentedInHost;                                            //@synthesize presentedInHost=_presentedInHost - In the implementation block
+@property (assign,getter=isIdentityProviderPickerRequired,nonatomic) BOOL identityProviderPickerRequired;              //@synthesize identityProviderPickerRequired=_identityProviderPickerRequired - In the implementation block
+@property (assign,nonatomic) BOOL didAuthenticateAccount;                                                              //@synthesize didAuthenticateAccount=_didAuthenticateAccount - In the implementation block
+@property (nonatomic,retain) UINavigationController * navController;                                                   //@synthesize navController=_navController - In the implementation block
+@property (nonatomic,copy) VSAuditToken * auditToken;                                                                  //@synthesize auditToken=_auditToken - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)_remoteViewControllerInterface;
++(id)_exportedInterface;
+-(UINavigationController *)navController;
+-(VSOptional *)currentRequest;
+-(void)setStorage:(VSPersistentStorage *)arg1 ;
+-(VSOptional *)currentRequestID;
+-(void)setCurrentRequestID:(VSOptional *)arg1 ;
+-(VSPersistentStorage *)storage;
+-(void)setAuditToken:(VSAuditToken *)arg1 ;
+-(VSPreferences *)preferences;
+-(NSOperationQueue *)privateQueue;
+-(void)setPreferences:(VSPreferences *)arg1 ;
+-(VSRemoteNotifier *)remoteNotifier;
+-(void)setRemoteNotifier:(VSRemoteNotifier *)arg1 ;
+-(void)remoteNotifier:(id)arg1 didReceiveRemoteNotificationWithUserInfo:(id)arg2 ;
+-(VSAuditToken *)auditToken;
+-(void)_willAppearInRemoteViewController;
+-(void)setPrivateQueue:(NSOperationQueue *)arg1 ;
+-(void)setCurrentRequest:(VSOptional *)arg1 ;
+-(void)dealloc;
+-(id)initWithNibName:(id)arg1 bundle:(id)arg2 ;
+-(void)setNavController:(UINavigationController *)arg1 ;
+-(void)_performRequest:(id)arg1 withIdentifier:(id)arg2 ;
+-(void)_viewControllerWasDismissed;
+-(void)_request:(id)arg1 didFailWithError:(id)arg2 ;
+-(void)dismissIdentityProviderViewController:(id)arg1 ;
+-(void)identityProviderViewControllerDidCancel:(id)arg1 ;
+-(void)identityProviderViewControllerDidFinishLoading:(id)arg1 ;
+-(void)identityProviderViewController:(id)arg1 didFinishRequest:(id)arg2 withResult:(id)arg3 ;
+-(void)identityProviderViewController:(id)arg1 didAuthenticateAccount:(id)arg2 forRequest:(id)arg3 ;
+-(VSRestrictionsCenter *)restrictionsCenter;
+-(void)setRestrictionsCenter:(VSRestrictionsCenter *)arg1 ;
+-(void)identityProviderPickerViewControllerDidCancel:(id)arg1 ;
+-(void)identityProviderPickerViewController:(id)arg1 didPickIdentityProvider:(id)arg2 ;
+-(void)identityProviderPickerViewControllerDidPickAdditionalIdentityProviders:(id)arg1 ;
+-(void)_performRequestInternal:(id)arg1 withID:(id)arg2 identityProviders:(id)arg3 accounts:(id)arg4 ;
+-(void)setDidAuthenticateAccount:(BOOL)arg1 ;
+-(void)setIdentityProviderPickerRequired:(BOOL)arg1 ;
+-(void)_requestDidFailWithError:(id)arg1 ;
+-(void)_performRequestWithIdentityProvider:(id)arg1 account:(id)arg2 ;
+-(void)_didDetermineIdentityProvider:(id)arg1 withPickerViewController:(id)arg2 ;
+-(void)_showIdentityProviderPickerViewControllerWithIdentityProviders:(id)arg1 ;
+-(void)_completeRequestWithResponse:(id)arg1 ;
+-(id)_identityProviderRequestForViewServiceRequest:(id)arg1 withAccount:(id)arg2 ;
+-(BOOL)isIdentityProviderPickerRequired;
+-(void)_determinePreAuthAppIsAuthorized:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_presentInHostIfNecessary;
+-(id)_viewControllerHost;
+-(BOOL)isPresentedInHost;
+-(void)setPresentedInHost:(BOOL)arg1 ;
+-(id)_viewServiceResponseWithIdentityProviderResponse:(id)arg1 ;
+-(void)_dismissInHostIfNecessary;
+-(void)_completeRequest:(id)arg1 withResponse:(id)arg2 ;
+-(void)_didCancelRequest;
+-(void)_completeRequestWithResponse:(id)arg1 fromIdentityProvider:(id)arg2 ;
+-(BOOL)didAuthenticateAccount;
+@end
+

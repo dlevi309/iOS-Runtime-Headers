@@ -1,0 +1,12 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:56 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+
+#import <GeoServices/GeoServices-Structs.h>
+@interface _GEOTransitPreloadCamera : NSObject
+-(void)implicateTilesForCoordinate:(GEOCoarseLocationLatLng)arg1 into:(id)arg2 radialDistance:(double)arg3 tileSetStyles:(id)arg4 ;
+@end
+

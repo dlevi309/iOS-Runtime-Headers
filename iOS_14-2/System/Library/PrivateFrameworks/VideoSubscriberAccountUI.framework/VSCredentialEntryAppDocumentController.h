@@ -1,0 +1,42 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:44 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VideoSubscriberAccountUI.framework/VideoSubscriberAccountUI
+*/
+
+#import <VideoSubscriberAccountUI/VSAppDocumentController.h>
+#import <libobjc.A.dylib/VSCredentialEntryViewModelDelegate.h>
+#import <libobjc.A.dylib/VSIKItemGroupDelegate.h>
+
+@class VSIKItemGroupElement, NSArray, NSString;
+
+@interface VSCredentialEntryAppDocumentController : VSAppDocumentController <VSCredentialEntryViewModelDelegate, VSIKItemGroupDelegate> {
+
+	VSIKItemGroupElement* _pickerElement;
+	NSArray* _buttonElements;
+
+}
+
+@property (nonatomic,retain) VSIKItemGroupElement * pickerElement;              //@synthesize pickerElement=_pickerElement - In the implementation block
+@property (nonatomic,retain) NSArray * buttonElements;                          //@synthesize buttonElements=_buttonElements - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void*)arg4 ;
+-(void)_stopObservingViewModel:(id)arg1 ;
+-(void)_startObservingViewModel:(id)arg1 ;
+-(NSArray *)buttonElements;
+-(void)setButtonElements:(NSArray *)arg1 ;
+-(void)itemGroup:(id)arg1 selectedItemIndexDidChange:(long long)arg2 ;
+-(id)_newViewModel;
+-(BOOL)_updateViewModel:(id)arg1 error:(id*)arg2 ;
+-(id)_credentialEntryViewModelWithViewModel:(id)arg1 ;
+-(BOOL)_updateCredentialEntryViewModel:(id)arg1 error:(id*)arg2 ;
+-(BOOL)_updateCredentialEntryViewModel:(id)arg1 withTemplate:(id)arg2 error:(id*)arg3 ;
+-(VSIKItemGroupElement *)pickerElement;
+-(void)setPickerElement:(VSIKItemGroupElement *)arg1 ;
+-(void)viewModel:(id)arg1 buttonTappedAtIndex:(unsigned long long)arg2 ;
+-(void)viewModel:(id)arg1 pickerDidSelectRow:(unsigned long long)arg2 ;
+@end
+

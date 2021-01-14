@@ -1,0 +1,69 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:34 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/CloudDocsDaemon
+*/
+
+#import <CloudDocsDaemon/BRCLocalItem.h>
+#import <libobjc.A.dylib/BRCTopLevelShareable.h>
+
+@class BRCAliasItem, BRCDocumentItem, NSString;
+
+@interface BRCDirectoryItem : BRCLocalItem <BRCTopLevelShareable> {
+
+	long long _mtime;
+
+}
+
+@property (nonatomic,readonly) BRCAliasItem * asBRAlias; 
+@property (nonatomic,readonly) BRCDirectoryItem * asDirectory; 
+@property (nonatomic,readonly) BRCDocumentItem * asDocument; 
+@property (nonatomic,readonly) long long mtime;                              //@synthesize mtime=_mtime - In the implementation block
+@property (nonatomic,readonly) NSString * unsaltedBookmarkData; 
+-(long long)mtime;
+-(unsigned long long)childItemCount;
+-(BOOL)isDirectory;
+-(unsigned long long)diffAgainstServerItem:(id)arg1 ;
+-(BRCDirectoryItem *)asDirectory;
+-(BOOL)isSharedByMeOrContainsSharedByMeItem;
+-(BOOL)isSharedToMeOrContainsSharedToMeItem;
+-(BOOL)changedAtRelativePath:(id)arg1 scanPackage:(BOOL)arg2 ;
+-(id)asShareableItem;
+-(BOOL)evictInTask:(id)arg1 options:(unsigned long long)arg2 error:(id*)arg3 ;
+-(BOOL)hasShareIDAndIsOwnedByMe;
+-(BOOL)possiblyContainsSharedItem;
+-(BOOL)isShareableItem;
+-(BOOL)_insertInDB:(id)arg1 dbRowID:(unsigned long long)arg2 ;
+-(BOOL)_updateInDB:(id)arg1 diffs:(unsigned long long)arg2 ;
+-(BOOL)startDownloadInTask:(id)arg1 options:(unsigned long long)arg2 error:(id*)arg3 ;
+-(BOOL)_deleteFromDB:(id)arg1 keepAliases:(BOOL)arg2 ;
+-(BOOL)containsPendingUploadOrSyncUp;
+-(BOOL)possiblyContainsSharedToMeItem;
+-(BOOL)hasDeadChildren;
+-(BOOL)isDirectoryWithPackageName;
+-(id)_initWithRelativePath:(id)arg1 parentGlobalID:(id)arg2 ;
+-(id)_initFromPQLResultSet:(id)arg1 session:(id)arg2 db:(id)arg3 error:(id*)arg4 ;
+-(BOOL)updateFromFSAtPath:(id)arg1 parentGlobalID:(id)arg2 ;
+-(void)markRemovedFromFilesystemForServerEdit:(BOOL)arg1 ;
+-(id)_initWithServerItem:(id)arg1 dbRowID:(unsigned long long)arg2 ;
+-(BOOL)updateLocationAndMetaFromFSAtPath:(id)arg1 parentGlobalID:(id)arg2 ;
+-(void)updateItemMetadataFromServerItem:(id)arg1 appliedSharingPermission:(BOOL)arg2 ;
+-(id)folderRootStructureRecord;
+-(BOOL)containsFault;
+-(BOOL)containsPendingDeleteDocuments;
+-(id)clientZonesChildrenNeedingSyncUpAreIn;
+-(BOOL)markChildrenLost;
+-(BOOL)hasPendingLostChildren;
+-(BOOL)_markChildrenLostForDeadParent;
+-(BOOL)hasLostChildren;
+-(void)_markLostDirectoryAsAlmostDead;
+-(BOOL)_updateRecursiveProperties;
+-(void)_retryPostponedIfNeededForDiffs:(unsigned long long)arg1 ;
+-(BOOL)_insertRecursiveProperties;
+-(BOOL)possiblyContainsSharedByMeItem;
+-(BOOL)containsOverQuotaItems;
+-(BOOL)containsPendingDownload;
+-(void)transformIntoFSRoot;
+-(BOOL)hasLiveChildren;
+@end
+

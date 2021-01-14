@@ -1,0 +1,102 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:13 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NanoTimeKitCompanion-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/NTKTemplateComplicationDisplay.h>
+#import <libobjc.A.dylib/NTKComplicationDisplay.h>
+
+@protocol NTKComplicationDisplayObserver;
+@class UIView, NSDate, UIColor, CLKDevice, CLKComplicationTemplate, NSString;
+
+@interface NTKCircularComplicationView : UIView <NTKTemplateComplicationDisplay, NTKComplicationDisplay> {
+
+	UIView* _platter;
+	UIView* _highlightView;
+	NSDate* _timeTravelDate;
+	UIColor* _computedForegroundColor;
+	UIColor* _computedPlatterColor;
+	BOOL canUseCurvedText;
+	BOOL _useRoundedFontDesign;
+	BOOL _usesMediumLayout;
+	BOOL _wantsPlatter;
+	BOOL _usesMultiColor;
+	id<NTKComplicationDisplayObserver> displayObserver;
+	CLKDevice* _device;
+	UIColor* _foregroundColor;
+	UIColor* _platterColor;
+	CLKComplicationTemplate* _complicationTemplate;
+
+}
+
+@property (nonatomic,readonly) CLKComplicationTemplate * complicationTemplate;                       //@synthesize complicationTemplate=_complicationTemplate - In the implementation block
+@property (nonatomic,readonly) CLKDevice * device;                                                   //@synthesize device=_device - In the implementation block
+@property (nonatomic,retain) UIColor * foregroundColor;                                              //@synthesize foregroundColor=_foregroundColor - In the implementation block
+@property (nonatomic,retain) UIColor * platterColor;                                                 //@synthesize platterColor=_platterColor - In the implementation block
+@property (assign,nonatomic) BOOL useRoundedFontDesign;                                              //@synthesize useRoundedFontDesign=_useRoundedFontDesign - In the implementation block
+@property (assign,nonatomic) BOOL usesMediumLayout;                                                  //@synthesize usesMediumLayout=_usesMediumLayout - In the implementation block
+@property (assign,nonatomic) BOOL wantsPlatter;                                                      //@synthesize wantsPlatter=_wantsPlatter - In the implementation block
+@property (assign,nonatomic) BOOL usesMultiColor;                                                    //@synthesize usesMultiColor=_usesMultiColor - In the implementation block
+@property (readonly) NSDate * timeTravelDate;                                                        //@synthesize timeTravelDate=_timeTravelDate - In the implementation block
+@property (assign,nonatomic,__weak) id<NTKComplicationDisplayObserver> displayObserver; 
+@property (assign,nonatomic) BOOL canUseCurvedText; 
+@property (assign,getter=isHighlighted,nonatomic) BOOL highlighted; 
+@property (assign,nonatomic) BOOL shouldUseTemplateColors; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)handlesComplicationTemplate:(id)arg1 ;
++(id)viewForComplicationType:(unsigned long long)arg1 ;
++(id)_stopwatchImageProviderMedium:(BOOL)arg1 ;
++(id)mediumViewForComplicationType:(unsigned long long)arg1 ;
++(id)_timerImageProviderMedium:(BOOL)arg1 ;
++(id)_alarmImageProviderMedium:(BOOL)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)setForegroundColor:(UIColor *)arg1 ;
+-(UIColor *)foregroundColor;
+-(BOOL)pointInside:(CGPoint)arg1 withEvent:(id)arg2 ;
+-(CLKDevice *)device;
+-(void)layoutSubviews;
+-(UIColor *)platterColor;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(void)setHighlighted:(BOOL)arg1 ;
+-(void)setComplicationTemplate:(id)arg1 reason:(long long)arg2 ;
+-(CLKComplicationTemplate *)complicationTemplate;
+-(NSDate *)timeTravelDate;
+-(void)_enumerateForegroundColoringViewsWithBlock:(/*^block*/id)arg1 ;
+-(void)setPlatterColor:(UIColor *)arg1 ;
+-(void)setUseRoundedFontDesign:(BOOL)arg1 ;
+-(void)setTimeTravelDate:(id)arg1 animated:(BOOL)arg2 ;
+-(id<NTKComplicationDisplayObserver>)displayObserver;
+-(void)setDisplayObserver:(id<NTKComplicationDisplayObserver>)arg1 ;
+-(BOOL)canUseCurvedText;
+-(void)setCanUseCurvedText:(BOOL)arg1 ;
+-(SCD_Struct_NT33)_layoutConstants;
+-(id)_newLabelSubviewWithFont:(id)arg1 ;
+-(void)setUsesMediumLayout:(BOOL)arg1 ;
+-(void)setWantsPlatter:(BOOL)arg1 ;
+-(void)_computeForegroundColor;
+-(void)_computePlatterColor;
+-(void)_updateColorChange;
+-(void)_updateForegroundColor;
+-(void)_updatePlatterColor;
+-(void)_updateLabelsForFontChange;
+-(BOOL)usesMultiColor;
+-(id)_computedForegroundColor;
+-(void)_updateForTemplateChange;
+-(long long)_variableFontSizeForText:(id)arg1 ;
+-(BOOL)usesMediumLayout;
+-(id)_computedPlatterColor;
+-(void)setUsesMultiColor:(BOOL)arg1 ;
+-(void)_updateImageViewColor:(id)arg1 ;
+-(void)_updateLabelViewColor:(id)arg1 ;
+-(id)_mediumStackFontForText:(id)arg1 ;
+-(id)_fontForDynamicFontSize:(long long)arg1 ;
+-(BOOL)useRoundedFontDesign;
+-(BOOL)wantsPlatter;
+@end
+

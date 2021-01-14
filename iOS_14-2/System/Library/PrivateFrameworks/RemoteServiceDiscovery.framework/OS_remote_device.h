@@ -1,0 +1,77 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/RemoteServiceDiscovery.framework/RemoteServiceDiscovery
+*/
+
+
+@protocol OS_dispatch_queue, OS_xpc_object;
+@class NSObject;
+
+@interface OS_remote_device : NSObject {
+
+	char* device_name;
+	char* device_alias;
+	unsigned _state;
+	unsigned _type;
+	NSObject*<OS_dispatch_queue> _dq;
+	NSObject*<OS_xpc_object> _properties;
+	char* _uuid;
+	unsigned long long _device_id;
+	unsigned long long _messaging_protocol_version;
+	NSObject*<OS_xpc_object> _connection;
+	/*^block*/id _connected_callback;
+	NSObject*<OS_dispatch_queue> _connected_callback_queue;
+	OS_remote_device* _connected_callback_self_retain;
+	/*^block*/id _disconnected_callback;
+	NSObject*<OS_dispatch_queue> _disconnected_callback_queue;
+	OS_remote_device* _disconnected_callback_self_retain;
+
+}
+
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> dq;                                       //@synthesize dq=_dq - In the implementation block
+@property (assign,nonatomic) unsigned state;                                                        //@synthesize state=_state - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_xpc_object> properties;                                   //@synthesize properties=_properties - In the implementation block
+@property (assign,nonatomic) unsigned type;                                                         //@synthesize type=_type - In the implementation block
+@property (assign,nonatomic) char* uuid;                                                            //@synthesize uuid=_uuid - In the implementation block
+@property (assign,nonatomic) unsigned long long device_id;                                          //@synthesize device_id=_device_id - In the implementation block
+@property (assign,nonatomic) unsigned long long messaging_protocol_version;                         //@synthesize messaging_protocol_version=_messaging_protocol_version - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_xpc_object> connection;                                   //@synthesize connection=_connection - In the implementation block
+@property (nonatomic,copy) id connected_callback;                                                   //@synthesize connected_callback=_connected_callback - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> connected_callback_queue;                 //@synthesize connected_callback_queue=_connected_callback_queue - In the implementation block
+@property (nonatomic,retain) OS_remote_device * connected_callback_self_retain;                     //@synthesize connected_callback_self_retain=_connected_callback_self_retain - In the implementation block
+@property (nonatomic,copy) id disconnected_callback;                                                //@synthesize disconnected_callback=_disconnected_callback - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> disconnected_callback_queue;              //@synthesize disconnected_callback_queue=_disconnected_callback_queue - In the implementation block
+@property (nonatomic,retain) OS_remote_device * disconnected_callback_self_retain;                  //@synthesize disconnected_callback_self_retain=_disconnected_callback_self_retain - In the implementation block
+-(NSObject*<OS_dispatch_queue>)dq;
+-(NSObject*<OS_xpc_object>)properties;
+-(char*)uuid;
+-(id)init;
+-(void)setType:(unsigned)arg1 ;
+-(NSObject*<OS_xpc_object>)connection;
+-(void)setDq:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(unsigned)type;
+-(void)setState:(unsigned)arg1 ;
+-(unsigned)state;
+-(void)setProperties:(NSObject*<OS_xpc_object>)arg1 ;
+-(void)setUuid:(char*)arg1 ;
+-(void)setConnection:(NSObject*<OS_xpc_object>)arg1 ;
+-(id)connected_callback;
+-(void)dealloc;
+-(unsigned long long)device_id;
+-(void)setDevice_id:(unsigned long long)arg1 ;
+-(unsigned long long)messaging_protocol_version;
+-(void)setMessaging_protocol_version:(unsigned long long)arg1 ;
+-(void)setConnected_callback:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)connected_callback_queue;
+-(void)setConnected_callback_queue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(OS_remote_device *)connected_callback_self_retain;
+-(void)setConnected_callback_self_retain:(OS_remote_device *)arg1 ;
+-(id)disconnected_callback;
+-(void)setDisconnected_callback:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)disconnected_callback_queue;
+-(void)setDisconnected_callback_queue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(OS_remote_device *)disconnected_callback_self_retain;
+-(void)setDisconnected_callback_self_retain:(OS_remote_device *)arg1 ;
+@end
+

@@ -1,0 +1,49 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:25 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+#import <UIKitCore/UIKitCore-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSMutableSet, UIColor;
+
+@interface _UIFocusRegionMapEntry : NSObject <NSCopying> {
+
+	_UIFocusRegionMapEntry* _originalEntry;
+	_UIFocusRegionMapEntry* _parentEntry;
+	NSMutableSet* _occludingFrames;
+	CGRect _frame;
+	CGRect _originalRegionFrame;
+
+}
+
+@property (nonatomic,copy,readonly) UIColor * visualRepresentationColor; 
+@property (nonatomic,readonly) long long visualRepresentationPatternType; 
+@property (assign,nonatomic) CGRect frame;                                             //@synthesize frame=_frame - In the implementation block
+@property (assign,nonatomic) CGRect originalRegionFrame;                               //@synthesize originalRegionFrame=_originalRegionFrame - In the implementation block
+@property (nonatomic,retain) _UIFocusRegionMapEntry * originalEntry;                   //@synthesize originalEntry=_originalEntry - In the implementation block
+@property (nonatomic,retain) _UIFocusRegionMapEntry * parentEntry;                     //@synthesize parentEntry=_parentEntry - In the implementation block
+@property (nonatomic,retain) NSMutableSet * occludingFrames;                           //@synthesize occludingFrames=_occludingFrames - In the implementation block
+-(CGRect)frame;
+-(_UIFocusRegionMapEntry *)originalEntry;
+-(id)description;
+-(void)setFrame:(CGRect)arg1 ;
+-(void)setOriginalRegionFrame:(CGRect)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 originalRegionFrame:(CGRect)arg2 ;
+-(id)_mapEntriesByOccludingWithFrame:(CGRect)arg1 ;
+-(NSMutableSet *)occludingFrames;
+-(CGRect)originalRegionFrame;
+-(id)sliceWithFrame:(CGRect)arg1 ;
+-(UIColor *)visualRepresentationColor;
+-(void)setOccludingFrames:(NSMutableSet *)arg1 ;
+-(void)_wasOccludedByFrame:(CGRect)arg1 ;
+-(void)setOriginalEntry:(_UIFocusRegionMapEntry *)arg1 ;
+-(void)setParentEntry:(_UIFocusRegionMapEntry *)arg1 ;
+-(id)_uniqueElementFromArray:(id)arg1 forKey:(id)arg2 ;
+-(long long)visualRepresentationPatternType;
+-(_UIFocusRegionMapEntry *)parentEntry;
+-(id)copyWithZone:(NSZone*)arg1 ;
+@end
+

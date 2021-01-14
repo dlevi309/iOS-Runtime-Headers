@@ -1,0 +1,83 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MusicCarDisplayUI.framework/MusicCarDisplayUI
+*/
+
+
+@protocol MCDPCContainerDelegate, OS_dispatch_queue;
+#import <MusicCarDisplayUI/MusicCarDisplayUI-Structs.h>
+@class NSString, NSIndexPath, MCDPCItem, MCDPCModel, NSObject, NSMutableDictionary;
+
+@interface MCDPCContainer : NSObject {
+
+	NSString* _identifier;
+	NSIndexPath* _indexPath;
+	MCDPCItem* _rootItem;
+	MCDPCModel* _model;
+	BOOL _showPlaybackProgress;
+	SCD_Struct_MC1 __supportedDelegateCalls;
+	long long _cachedCount;
+	id<MCDPCContainerDelegate> _delegate;
+	NSObject*<OS_dispatch_queue> _serialAccessContainerQueue;
+	NSMutableDictionary* _cachedIndiciesByIdentifier;
+	NSMutableDictionary* _cachedItemsByIndicies;
+
+}
+
+@property (assign,nonatomic) long long cachedCount;                                                //@synthesize cachedCount=_cachedCount - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> serialAccessContainerQueue;              //@synthesize serialAccessContainerQueue=_serialAccessContainerQueue - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * cachedIndiciesByIdentifier;                     //@synthesize cachedIndiciesByIdentifier=_cachedIndiciesByIdentifier - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * cachedItemsByIndicies;                          //@synthesize cachedItemsByIndicies=_cachedItemsByIndicies - In the implementation block
+@property (nonatomic,__weak,readonly) MCDPCItem * rootItem;                                        //@synthesize rootItem=_rootItem - In the implementation block
+@property (nonatomic,readonly) NSIndexPath * indexPath;                                            //@synthesize indexPath=_indexPath - In the implementation block
+@property (nonatomic,readonly) NSString * identifier;                                              //@synthesize identifier=_identifier - In the implementation block
+@property (nonatomic,readonly) NSString * appTitle; 
+@property (nonatomic,readonly) NSString * title; 
+@property (nonatomic,__weak,readonly) MCDPCModel * model;                                          //@synthesize model=_model - In the implementation block
+@property (nonatomic,readonly) BOOL showPlaybackProgress;                                          //@synthesize showPlaybackProgress=_showPlaybackProgress - In the implementation block
+@property (nonatomic,readonly) long long showCurrentlyPlayingIndex; 
+@property (assign,nonatomic,__weak) id<MCDPCContainerDelegate> delegate;                           //@synthesize delegate=_delegate - In the implementation block
+-(void)setCount:(long long)arg1 ;
+-(MCDPCModel *)model;
+-(id<MCDPCContainerDelegate>)delegate;
+-(MCDPCItem *)rootItem;
+-(NSIndexPath *)indexPath;
+-(void)setDelegate:(id<MCDPCContainerDelegate>)arg1 ;
+-(id)description;
+-(void)setCachedCount:(long long)arg1 ;
+-(void)invalidate;
+-(NSString *)identifier;
+-(void)fetchContentWithCompletion:(/*^block*/id)arg1 ;
+-(void)refreshWithCompletion:(/*^block*/id)arg1 ;
+-(NSString *)title;
+-(void)dealloc;
+-(long long)cachedCount;
+-(id)containerAtIndex:(long long)arg1 ;
+-(NSString *)appTitle;
+-(id)cachedItemForIndex:(long long)arg1 ;
+-(long long)showCurrentlyPlayingIndex;
+-(BOOL)showPlaybackProgress;
+-(void)beginLoadingItem:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(BOOL)isValidForRefreshedParent:(id)arg1 ;
+-(void)_contentItemsUpdated:(id)arg1 ;
+-(id)_initWithModel:(id)arg1 rootItem:(id)arg2 indexPath:(id)arg3 ;
+-(void)getNowPlayingIdentifiersWithCompletion:(/*^block*/id)arg1 ;
+-(void)_nowPlayingIdentifiersDidChange:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)serialAccessContainerQueue;
+-(void)setCachedItemsByIndicies:(NSMutableDictionary *)arg1 ;
+-(void)setCachedIndiciesByIdentifier:(NSMutableDictionary *)arg1 ;
+-(NSMutableDictionary *)cachedIndiciesByIdentifier;
+-(NSMutableDictionary *)cachedItemsByIndicies;
+-(id)cachedIndexByIdentifier:(id)arg1 ;
+-(void)getChildrenInRange:(NSRange)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getCountOfChildrenWithCompletion:(/*^block*/id)arg1 ;
+-(void)getPlaybackProgressSupportForChildrenWithCompletion:(/*^block*/id)arg1 ;
+-(void)beginLoadingItemWithCompletion:(/*^block*/id)arg1 ;
+-(id)containerForItem:(id)arg1 ;
+-(void)setShowPlaybackProgress:(BOOL)arg1 ;
+-(void)updateRootItemWithCompletion:(/*^block*/id)arg1 ;
+-(id)cachedItemForIdentifier:(id)arg1 ;
+-(void)setSerialAccessContainerQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+@end
+

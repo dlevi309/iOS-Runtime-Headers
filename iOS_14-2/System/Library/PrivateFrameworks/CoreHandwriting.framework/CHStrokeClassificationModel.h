@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:29 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+*/
+
+#import <CoreHandwriting/CoreHandwriting-Structs.h>
+#import <CoreHandwriting/CHRecurrentNeuralNetworkMontreal.h>
+
+@class NSString;
+
+@interface CHStrokeClassificationModel : CHRecurrentNeuralNetworkMontreal {
+
+	long long _distanceFeatureIndex;
+	long long _sinAngleFeatureIndex;
+	long long _cosAngleFeatureIndex;
+	long long _endpointFeatureIndex;
+	NSString* _directionalFeaturesInputName;
+	NSString* _textStrokeProbabilityOutputName;
+
+}
+
+@property (nonatomic,readonly) long long distanceFeatureIndex;                                 //@synthesize distanceFeatureIndex=_distanceFeatureIndex - In the implementation block
+@property (nonatomic,readonly) long long sinAngleFeatureIndex;                                 //@synthesize sinAngleFeatureIndex=_sinAngleFeatureIndex - In the implementation block
+@property (nonatomic,readonly) long long cosAngleFeatureIndex;                                 //@synthesize cosAngleFeatureIndex=_cosAngleFeatureIndex - In the implementation block
+@property (nonatomic,readonly) long long endpointFeatureIndex;                                 //@synthesize endpointFeatureIndex=_endpointFeatureIndex - In the implementation block
+@property (nonatomic,retain,readonly) NSString * directionalFeaturesInputName;                 //@synthesize directionalFeaturesInputName=_directionalFeaturesInputName - In the implementation block
+@property (nonatomic,retain,readonly) NSString * textStrokeProbabilityOutputName;              //@synthesize textStrokeProbabilityOutputName=_textStrokeProbabilityOutputName - In the implementation block
+-(long long)maxSequenceLength;
+-(void)dealloc;
+-(NSString *)directionalFeaturesInputName;
+-(long long)distanceFeatureIndex;
+-(vector<float, std::__1::allocator<float> >*)_extractFeaturesFromDrawing:(id)arg1 inputName:(id)arg2 interpointDistance:(double)arg3 error:(id*)arg4 ;
+-(id)initWithModelName:(id)arg1 ;
+-(long long)windowOverlap;
+-(long long)endpointFeatureIndex;
+-(id)normalizedDrawing:(id)arg1 targetHeight:(double)arg2 interpolationDistance:(double)arg3 outputPointMap:(vector<std::__1::map<long, long, std::__1::less<long>, std::__1::allocator<std::__1::pair<const long, long> > >, std::__1::allocator<std::__1::map<long, long, std::__1::less<long>, std::__1::allocator<std::__1::pair<const long, long> > > > >*)arg4 ;
+-(NSString *)textStrokeProbabilityOutputName;
+-(BOOL)classifyStrokesInDrawing:(id)arg1 outTextStrokeProbabilities:(vector<double, std::__1::allocator<double> >*)arg2 cancellationBlock:(/*^block*/id)arg3 ;
+-(long long)sinAngleFeatureIndex;
+-(long long)cosAngleFeatureIndex;
+@end
+

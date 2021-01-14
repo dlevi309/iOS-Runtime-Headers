@@ -1,0 +1,68 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VirtualGarage.framework/VirtualGarage
+*/
+
+#import <VirtualGarage/VirtualGarage-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, NSDate, NSMeasurement, NSNumber;
+
+@interface VGVehicleState : NSObject <NSCopying, NSSecureCoding> {
+
+	BOOL _isCharging;
+	NSString* _identifier;
+	NSDate* _dateOfUpdate;
+	long long _origin;
+	NSMeasurement* _currentEVRange;
+	NSMeasurement* _maxEVRange;
+	NSMeasurement* _minBatteryCapacity;
+	NSMeasurement* _currentBatteryCapacity;
+	NSMeasurement* _maxBatteryCapacity;
+	NSString* _consumptionArguments;
+	NSString* _chargingArguments;
+	unsigned long long _activeConnector;
+	NSNumber* _batteryPercentage;
+
+}
+
+@property (nonatomic,readonly) NSNumber * batteryPercentage;                        //@synthesize batteryPercentage=_batteryPercentage - In the implementation block
+@property (nonatomic,readonly) NSString * identifier;                               //@synthesize identifier=_identifier - In the implementation block
+@property (nonatomic,readonly) NSDate * dateOfUpdate;                               //@synthesize dateOfUpdate=_dateOfUpdate - In the implementation block
+@property (nonatomic,readonly) long long origin;                                    //@synthesize origin=_origin - In the implementation block
+@property (nonatomic,readonly) NSMeasurement * currentEVRange;                      //@synthesize currentEVRange=_currentEVRange - In the implementation block
+@property (nonatomic,readonly) NSMeasurement * maxEVRange;                          //@synthesize maxEVRange=_maxEVRange - In the implementation block
+@property (nonatomic,readonly) NSMeasurement * minBatteryCapacity;                  //@synthesize minBatteryCapacity=_minBatteryCapacity - In the implementation block
+@property (nonatomic,readonly) NSMeasurement * currentBatteryCapacity;              //@synthesize currentBatteryCapacity=_currentBatteryCapacity - In the implementation block
+@property (nonatomic,readonly) NSMeasurement * maxBatteryCapacity;                  //@synthesize maxBatteryCapacity=_maxBatteryCapacity - In the implementation block
+@property (nonatomic,readonly) NSString * consumptionArguments;                     //@synthesize consumptionArguments=_consumptionArguments - In the implementation block
+@property (nonatomic,readonly) NSString * chargingArguments;                        //@synthesize chargingArguments=_chargingArguments - In the implementation block
+@property (nonatomic,readonly) BOOL isCharging;                                     //@synthesize isCharging=_isCharging - In the implementation block
+@property (nonatomic,readonly) unsigned long long activeConnector;                  //@synthesize activeConnector=_activeConnector - In the implementation block
++(BOOL)supportsSecureCoding;
++(id)_vehicleStateFromStorage:(id)arg1 ;
+-(long long)origin;
+-(id)_storage;
+-(NSString *)consumptionArguments;
+-(NSString *)chargingArguments;
+-(void)encodeWithCoder:(id)arg1 ;
+-(unsigned long long)activeConnector;
+-(NSMeasurement *)currentBatteryCapacity;
+-(id)description;
+-(NSNumber *)batteryPercentage;
+-(id)initWithCoder:(id)arg1 ;
+-(NSString *)identifier;
+-(BOOL)isCharging;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(NSMeasurement *)maxEVRange;
+-(NSMeasurement *)minBatteryCapacity;
+-(NSMeasurement *)maxBatteryCapacity;
+-(NSDate *)dateOfUpdate;
+-(NSMeasurement *)currentEVRange;
+-(id)initWithIdentifier:(id)arg1 dateOfUpdate:(id)arg2 origin:(long long)arg3 batteryPercentage:(id)arg4 currentEVRange:(id)arg5 maxEVRange:(id)arg6 minBatteryCapacity:(id)arg7 currentBatteryCapacity:(id)arg8 maxBatteryCapacity:(id)arg9 consumptionArguments:(id)arg10 chargingArguments:(id)arg11 isCharging:(BOOL)arg12 activeConnector:(unsigned long long)arg13 ;
+-(BOOL)isSignificantlyDifferentFromVehicleState:(id)arg1 ;
+@end
+

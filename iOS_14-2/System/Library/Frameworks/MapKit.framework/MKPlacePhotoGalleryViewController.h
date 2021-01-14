@@ -1,0 +1,166 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:06 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/MapKit.framework/MapKit
+*/
+
+#import <MapKit/MapKit-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <UIKit/UIScrollViewDelegate.h>
+#import <UIKit/UIGestureRecognizerDelegate.h>
+#import <libobjc.A.dylib/MKActivityObserving.h>
+
+@protocol MKPlacePhotoGalleryViewControllerDelegate;
+@class UIBarButtonItem, NSArray, MKMapItem, UIView, UIScrollView, NSNumber, MKPlacePhotoGalleryAttributionView, NSMutableArray, UIActivityIndicatorView, NSString;
+
+@interface MKPlacePhotoGalleryViewController : UIViewController <UIScrollViewDelegate, UIGestureRecognizerDelegate, MKActivityObserving> {
+
+	BOOL _panAndSwipeToDismissGestureEnabled;
+	BOOL _shouldFinishAnimation;
+	id<MKPlacePhotoGalleryViewControllerDelegate> _delegate;
+	UIBarButtonItem* _rapBarButton;
+	NSArray* _photos;
+	MKMapItem* _mapItem;
+	NSArray* _photoViews;
+	UIView* _additionalView;
+	UIScrollView* _scrollView;
+	long long _panGestureStartingDirection;
+	UIView* _gestureTrackedView;
+	NSNumber* _originalIndex;
+	MKPlacePhotoGalleryAttributionView* _attributionView;
+	NSMutableArray* _indexesOfDownloadedImages;
+	NSMutableArray* _downloadingImagesURLs;
+	double _lastScrollViewOffsetBeforeScrolling;
+	UIBarButtonItem* _openNavigationBarButton;
+	UIActivityIndicatorView* _spinner;
+	UIBarButtonItem* _doneBarButtonItem;
+	UIBarButtonItem* _backBarButtonItem;
+	UIBarButtonItem* _addPhotoBarButtonItem;
+	CGPoint _imageViewCenterPoint;
+
+}
+
+@property (nonatomic,copy) NSArray * photos;                                                             //@synthesize photos=_photos - In the implementation block
+@property (nonatomic,retain) MKMapItem * mapItem;                                                        //@synthesize mapItem=_mapItem - In the implementation block
+@property (nonatomic,copy) NSArray * photoViews;                                                         //@synthesize photoViews=_photoViews - In the implementation block
+@property (nonatomic,retain) UIView * additionalView;                                                    //@synthesize additionalView=_additionalView - In the implementation block
+@property (nonatomic,retain) UIScrollView * scrollView;                                                  //@synthesize scrollView=_scrollView - In the implementation block
+@property (assign,nonatomic) CGPoint imageViewCenterPoint;                                               //@synthesize imageViewCenterPoint=_imageViewCenterPoint - In the implementation block
+@property (assign,nonatomic) long long panGestureStartingDirection;                                      //@synthesize panGestureStartingDirection=_panGestureStartingDirection - In the implementation block
+@property (nonatomic,retain) UIView * gestureTrackedView;                                                //@synthesize gestureTrackedView=_gestureTrackedView - In the implementation block
+@property (assign,nonatomic) BOOL shouldFinishAnimation;                                                 //@synthesize shouldFinishAnimation=_shouldFinishAnimation - In the implementation block
+@property (nonatomic,retain) NSNumber * originalIndex;                                                   //@synthesize originalIndex=_originalIndex - In the implementation block
+@property (nonatomic,retain) MKPlacePhotoGalleryAttributionView * attributionView;                       //@synthesize attributionView=_attributionView - In the implementation block
+@property (nonatomic,retain) NSMutableArray * indexesOfDownloadedImages;                                 //@synthesize indexesOfDownloadedImages=_indexesOfDownloadedImages - In the implementation block
+@property (nonatomic,retain) NSMutableArray * downloadingImagesURLs;                                     //@synthesize downloadingImagesURLs=_downloadingImagesURLs - In the implementation block
+@property (assign,nonatomic) double lastScrollViewOffsetBeforeScrolling;                                 //@synthesize lastScrollViewOffsetBeforeScrolling=_lastScrollViewOffsetBeforeScrolling - In the implementation block
+@property (nonatomic,retain) UIBarButtonItem * openNavigationBarButton;                                  //@synthesize openNavigationBarButton=_openNavigationBarButton - In the implementation block
+@property (nonatomic,retain) UIActivityIndicatorView * spinner;                                          //@synthesize spinner=_spinner - In the implementation block
+@property (nonatomic,readonly) BOOL isShowingPhotosProvidedByApple; 
+@property (nonatomic,readonly) UIBarButtonItem * leftBarButtonItem; 
+@property (nonatomic,readonly) UIBarButtonItem * rightBarButtonItem; 
+@property (nonatomic,retain) UIBarButtonItem * rapBarButton;                                             //@synthesize rapBarButton=_rapBarButton - In the implementation block
+@property (nonatomic,retain) UIBarButtonItem * doneBarButtonItem;                                        //@synthesize doneBarButtonItem=_doneBarButtonItem - In the implementation block
+@property (nonatomic,retain) UIBarButtonItem * backBarButtonItem;                                        //@synthesize backBarButtonItem=_backBarButtonItem - In the implementation block
+@property (nonatomic,retain) UIBarButtonItem * addPhotoBarButtonItem;                                    //@synthesize addPhotoBarButtonItem=_addPhotoBarButtonItem - In the implementation block
+@property (assign,nonatomic,__weak) id<MKPlacePhotoGalleryViewControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) BOOL panAndSwipeToDismissGestureEnabled;                                    //@synthesize panAndSwipeToDismissGestureEnabled=_panAndSwipeToDismissGestureEnabled - In the implementation block
+@property (nonatomic,readonly) unsigned long long numberOfViews; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setPhotos:(NSArray *)arg1 ;
+-(id<MKPlacePhotoGalleryViewControllerDelegate>)delegate;
+-(UIActivityIndicatorView *)spinner;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(CGPoint)scrollViewContentOffset;
+-(void)didTapDone;
+-(id)photoViewForTransition;
+-(MKMapItem *)mapItem;
+-(void)setupViewsWithAdditionalView:(id)arg1 ;
+-(void)_rapButtonPressed;
+-(BOOL)isShowingPhotosProvidedByApple;
+-(void)setRapBarButton:(UIBarButtonItem *)arg1 ;
+-(UIBarButtonItem *)rapBarButton;
+-(void)_addPhotoButtonPressed;
+-(void)setAddPhotoBarButtonItem:(UIBarButtonItem *)arg1 ;
+-(UIBarButtonItem *)addPhotoBarButtonItem;
+-(void)setDoneBarButtonItem:(UIBarButtonItem *)arg1 ;
+-(void)didTapOpen;
+-(void)setOpenNavigationBarButton:(UIBarButtonItem *)arg1 ;
+-(void)toggleBackground:(id)arg1 ;
+-(void)zoomToPoint:(id)arg1 ;
+-(void)cancelDownloadingImages;
+-(void)setupPhotoViewsWithStackView:(id)arg1 ;
+-(void)setupAdditionalView:(id)arg1 withStackView:(id)arg2 ;
+-(void)setupAttributionView;
+-(void)updateViewsWithPhotoAtIndex:(unsigned long long)arg1 ;
+-(void)handlePanGesture:(id)arg1 ;
+-(void)didTapOnAdditionalView;
+-(void)didTapOnAttributionView;
+-(id)attributionLogoUsingDarkAppearance:(BOOL)arg1 ;
+-(NSNumber *)originalIndex;
+-(NSArray *)photoViews;
+-(void)setOriginalIndex:(NSNumber *)arg1 ;
+-(void)downloadImageForVisibleViews;
+-(NSMutableArray *)indexesOfDownloadedImages;
+-(void)downloadImageForURL:(id)arg1 forIndex:(unsigned long long)arg2 ;
+-(NSMutableArray *)downloadingImagesURLs;
+-(UIView *)additionalView;
+-(BOOL)panAndSwipeToDismissGestureEnabled;
+-(UIView *)gestureTrackedView;
+-(void)setGestureTrackedView:(UIView *)arg1 ;
+-(long long)panGestureStartingDirection;
+-(void)setPanGestureStartingDirection:(long long)arg1 ;
+-(void)setShouldFinishAnimation:(BOOL)arg1 ;
+-(void)setImageViewCenterPoint:(CGPoint)arg1 ;
+-(unsigned long long)indexOfView:(id)arg1 ;
+-(CGPoint)imageViewCenterPoint;
+-(MKPlacePhotoGalleryAttributionView *)attributionView;
+-(BOOL)shouldFinishAnimation;
+-(unsigned long long)viewsCount;
+-(void)setUIStyleWithNavigationBarHidden:(BOOL)arg1 ;
+-(UIBarButtonItem *)openNavigationBarButton;
+-(UIBarButtonItem *)doneBarButtonItem;
+-(void)resetPhotosZoomLevel;
+-(double)lastScrollViewOffsetBeforeScrolling;
+-(void)setLastScrollViewOffsetBeforeScrolling:(double)arg1 ;
+-(void)stopAnimatingActivityIndicatorViewForRAP;
+-(void)downloadImageForPhotoViewAtIndex:(unsigned long long)arg1 ;
+-(id)currentPhoto;
+-(unsigned long long)numberOfViews;
+-(void)startAnimatingActivityIndicatorViewForRAP;
+-(void)scrollRight;
+-(void)setPanAndSwipeToDismissGestureEnabled:(BOOL)arg1 ;
+-(void)setPhotoViews:(NSArray *)arg1 ;
+-(void)setAdditionalView:(UIView *)arg1 ;
+-(void)setAttributionView:(MKPlacePhotoGalleryAttributionView *)arg1 ;
+-(void)setDelegate:(id<MKPlacePhotoGalleryViewControllerDelegate>)arg1 ;
+-(void)setIndexesOfDownloadedImages:(NSMutableArray *)arg1 ;
+-(void)setDownloadingImagesURLs:(NSMutableArray *)arg1 ;
+-(void)scrollViewDidEndDecelerating:(id)arg1 ;
+-(BOOL)_canShowWhileLocked;
+-(void)scrollLeft;
+-(void)setScrollView:(UIScrollView *)arg1 ;
+-(void)setMapItem:(MKMapItem *)arg1 ;
+-(NSArray *)photos;
+-(void)scrollViewDidScroll:(id)arg1 ;
+-(void)viewWillTransitionToSize:(CGSize)arg1 withTransitionCoordinator:(id)arg2 ;
+-(id)initWithPhotos:(id)arg1 additionalView:(id)arg2 scrollToIndex:(unsigned long long)arg3 mapItem:(id)arg4 delegate:(id)arg5 ;
+-(UIBarButtonItem *)rightBarButtonItem;
+-(unsigned long long)indexOfVisibleView;
+-(UIBarButtonItem *)leftBarButtonItem;
+-(void)setSpinner:(UIActivityIndicatorView *)arg1 ;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(UIScrollView *)scrollView;
+-(void)setBackBarButtonItem:(UIBarButtonItem *)arg1 ;
+-(void)viewDidLayoutSubviews;
+-(BOOL)gestureRecognizer:(id)arg1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)arg2 ;
+-(void)beginAnimatingActivityIndicator;
+-(void)endAnimatingActivityIndicatorWithError:(id)arg1 ;
+-(void)dealloc;
+-(void)dismiss;
+-(UIBarButtonItem *)backBarButtonItem;
+@end
+

@@ -1,0 +1,60 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:48 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/IMDaemonCore.framework/IMDaemonCore
+*/
+
+#import <IMDaemonCore/IMReadReceiptProcessingParameter.h>
+#import <IMDaemonCore/IMMessageFromStorageParameter.h>
+
+@class NSString, NSNumber, NSArray, IMDChat;
+
+@interface IMReadReceiptPipelineParameter : NSObject <IMReadReceiptProcessingParameter, IMMessageFromStorageParameter> {
+
+	BOOL _isFromDefaultPairedDevice;
+	BOOL _isFromStorage;
+	BOOL _isLastFromStorage;
+	BOOL _isFromMe;
+	NSString* _GUID;
+	NSNumber* _timestamp;
+	NSString* _fromPushID;
+	NSString* _fromIdentifier;
+	NSArray* _messageItems;
+	IMDChat* _chat;
+
+}
+
+@property (getter=UID,nonatomic,copy) NSString * GUID;                    //@synthesize GUID=_GUID - In the implementation block
+@property (nonatomic,retain) NSNumber * timestamp;                        //@synthesize timestamp=_timestamp - In the implementation block
+@property (nonatomic,copy) NSString * fromPushID;                         //@synthesize fromPushID=_fromPushID - In the implementation block
+@property (nonatomic,copy) NSString * fromIdentifier;                     //@synthesize fromIdentifier=_fromIdentifier - In the implementation block
+@property (assign,nonatomic) BOOL isFromDefaultPairedDevice;              //@synthesize isFromDefaultPairedDevice=_isFromDefaultPairedDevice - In the implementation block
+@property (assign,nonatomic) BOOL isFromStorage;                          //@synthesize isFromStorage=_isFromStorage - In the implementation block
+@property (assign,nonatomic) BOOL isLastFromStorage;                      //@synthesize isLastFromStorage=_isLastFromStorage - In the implementation block
+@property (assign,nonatomic) BOOL isFromMe;                               //@synthesize isFromMe=_isFromMe - In the implementation block
+@property (nonatomic,retain) NSArray * messageItems;                      //@synthesize messageItems=_messageItems - In the implementation block
+@property (nonatomic,retain) IMDChat * chat;                              //@synthesize chat=_chat - In the implementation block
+-(IMDChat *)chat;
+-(NSNumber *)timestamp;
+-(void)setChat:(IMDChat *)arg1 ;
+-(void)setIsFromMe:(BOOL)arg1 ;
+-(id)description;
+-(BOOL)isFromDefaultPairedDevice;
+-(NSString *)fromIdentifier;
+-(void)setFromIdentifier:(NSString *)arg1 ;
+-(BOOL)isFromMe;
+-(void)setGUID:(NSString *)arg1 ;
+-(void)setTimestamp:(NSNumber *)arg1 ;
+-(NSString *)GUID;
+-(BOOL)isFromStorage;
+-(BOOL)isLastFromStorage;
+-(void)setIsFromStorage:(BOOL)arg1 ;
+-(void)setIsLastFromStorage:(BOOL)arg1 ;
+-(NSArray *)messageItems;
+-(NSString *)fromPushID;
+-(void)setMessageItems:(NSArray *)arg1 ;
+-(id)initWithBD:(id)arg1 ;
+-(void)setFromPushID:(NSString *)arg1 ;
+-(void)setIsFromDefaultPairedDevice:(BOOL)arg1 ;
+@end
+

@@ -1,0 +1,62 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV
+*/
+
+#import <CoreDAV/CoreDAVTaskGroup.h>
+#import <libobjc.A.dylib/CoreDAVTaskDelegate.h>
+#import <libobjc.A.dylib/CoreDAVTaskGroupDelegate.h>
+
+@class CalDAVGetPrincipalEmailDetailsTaskGroup, NSURL, NSMutableArray, NSMutableSet, NSSet, NSString;
+
+@interface CalDAVGetDelegatesBaseTaskGroup : CoreDAVTaskGroup <CoreDAVTaskDelegate, CoreDAVTaskGroupDelegate> {
+
+	BOOL _serverSupportsExpandPropertyReport;
+	CalDAVGetPrincipalEmailDetailsTaskGroup* _getPrincipalEmailDetailsTaskGroup;
+	NSURL* _principalURL;
+	NSMutableArray* _readPrincipalURLs;
+	NSMutableArray* _writePrincipalURLs;
+	NSMutableSet* _writeDetails;
+	NSMutableSet* _readDetails;
+
+}
+
+@property (nonatomic,retain) CalDAVGetPrincipalEmailDetailsTaskGroup * getPrincipalEmailDetailsTaskGroup;              //@synthesize getPrincipalEmailDetailsTaskGroup=_getPrincipalEmailDetailsTaskGroup - In the implementation block
+@property (nonatomic,retain) NSURL * principalURL;                                                                     //@synthesize principalURL=_principalURL - In the implementation block
+@property (nonatomic,retain) NSMutableArray * readPrincipalURLs;                                                       //@synthesize readPrincipalURLs=_readPrincipalURLs - In the implementation block
+@property (nonatomic,retain) NSMutableArray * writePrincipalURLs;                                                      //@synthesize writePrincipalURLs=_writePrincipalURLs - In the implementation block
+@property (nonatomic,retain) NSMutableSet * writeDetails;                                                              //@synthesize writeDetails=_writeDetails - In the implementation block
+@property (nonatomic,retain) NSMutableSet * readDetails;                                                               //@synthesize readDetails=_readDetails - In the implementation block
+@property (assign,nonatomic) BOOL serverSupportsExpandPropertyReport;                                                  //@synthesize serverSupportsExpandPropertyReport=_serverSupportsExpandPropertyReport - In the implementation block
+@property (nonatomic,retain,readonly) NSSet * readOnlyPrincipalDetails; 
+@property (nonatomic,retain,readonly) NSSet * readWritePrincipalDetails; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setPrincipalURL:(NSURL *)arg1 ;
+-(NSURL *)principalURL;
+-(void)taskGroup:(id)arg1 didFinishWithError:(id)arg2 ;
+-(void)task:(id)arg1 didFinishWithError:(id)arg2 ;
+-(id)initWithAccountInfoProvider:(id)arg1 principalURL:(id)arg2 taskManager:(id)arg3 ;
+-(void)setServerSupportsExpandPropertyReport:(BOOL)arg1 ;
+-(NSSet *)readWritePrincipalDetails;
+-(NSSet *)readOnlyPrincipalDetails;
+-(id)_mappingsForPrincipalDetails;
+-(id)_popFromArray:(id)arg1 ;
+-(NSMutableArray *)readPrincipalURLs;
+-(void)_getPrincipalDetailsForURL:(id)arg1 ;
+-(NSMutableArray *)writePrincipalURLs;
+-(BOOL)serverSupportsExpandPropertyReport;
+-(void)_processDetailsFromMultiStatus:(id)arg1 allowWrite:(BOOL)arg2 ;
+-(NSMutableSet *)writeDetails;
+-(NSMutableSet *)readDetails;
+-(void)setReadDetails:(NSMutableSet *)arg1 ;
+-(void)setWriteDetails:(NSMutableSet *)arg1 ;
+-(void)setReadPrincipalURLs:(NSMutableArray *)arg1 ;
+-(void)setWritePrincipalURLs:(NSMutableArray *)arg1 ;
+-(void)setGetPrincipalEmailDetailsTaskGroup:(CalDAVGetPrincipalEmailDetailsTaskGroup *)arg1 ;
+-(CalDAVGetPrincipalEmailDetailsTaskGroup *)getPrincipalEmailDetailsTaskGroup;
+@end
+

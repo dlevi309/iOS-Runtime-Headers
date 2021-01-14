@@ -1,0 +1,63 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:04 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
+*/
+
+#import <PassKitUI/PKSectionTableViewController.h>
+#import <libobjc.A.dylib/PKPerformActionViewControllerDelegate.h>
+#import <libobjc.A.dylib/PKPaymentDataProviderDelegate.h>
+
+@protocol PKPaymentDataProvider, PKBalanceDetailsViewControllerDelegate;
+@class PKPaymentBalance, PKPaymentPass, PKPaymentPassAction, PKPaymentWebService, NSString, NSArray;
+
+@interface PKBalanceDetailsViewController : PKSectionTableViewController <PKPerformActionViewControllerDelegate, PKPaymentDataProviderDelegate> {
+
+	PKPaymentBalance* _balance;
+	PKPaymentPass* _pass;
+	PKPaymentPassAction* _action;
+	id<PKPaymentDataProvider> _paymentDataProvider;
+	PKPaymentWebService* _webService;
+	long long _style;
+	NSString* _currentBalance;
+	NSString* _currencyCode;
+	NSArray* _reminderAmounts;
+	unsigned long long _selectedReminderAmountIndex;
+	id<PKBalanceDetailsViewControllerDelegate> _delegate;
+
+}
+
+@property (assign,nonatomic,__weak) id<PKBalanceDetailsViewControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)tableView:(id)arg1 titleForHeaderInSection:(long long)arg2 ;
+-(void)viewWillLayoutSubviews;
+-(BOOL)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2 ;
+-(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 ;
+-(id<PKBalanceDetailsViewControllerDelegate>)delegate;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 ;
+-(void)paymentPassWithUniqueIdentifier:(id)arg1 didUpdateWithTransitPassProperties:(id)arg2 ;
+-(void)setDelegate:(id<PKBalanceDetailsViewControllerDelegate>)arg1 ;
+-(void)performActionViewControllerDidCancel:(id)arg1 ;
+-(void)performActionViewControllerDidPerformAction:(id)arg1 ;
+-(BOOL)shouldMapSection:(unsigned long long)arg1 ;
+-(void)_initializeReminderAmounts:(id)arg1 ;
+-(long long)_numberOfBalanceDetailsRowsEnabledForRowType:(unsigned long long)arg1 ;
+-(void)scrollViewDidScroll:(id)arg1 ;
+-(id)initWithBalance:(id)arg1 forPass:(id)arg2 balanceReminder:(id)arg3 balanceName:(id)arg4 currencyCode:(id)arg5 associatedAction:(id)arg6 paymentDataProvider:(id)arg7 webService:(id)arg8 style:(long long)arg9 ;
+-(long long)_numberOfBalanceDetailsRowsEnabled;
+-(unsigned long long)_balanceDetailsRowTypeForRowIndex:(long long)arg1 ;
+-(void)_handleReminderAmountChanged:(id)arg1 ;
+-(id)initWithTransitPassProperties:(id)arg1 forPass:(id)arg2 balanceReminder:(id)arg3 associatedAction:(id)arg4 paymentDataProvider:(id)arg5 webService:(id)arg6 style:(long long)arg7 ;
+-(id)initWithBalance:(id)arg1 forPass:(id)arg2 balanceReminder:(id)arg3 associatedAction:(id)arg4 paymentDataProvider:(id)arg5 webService:(id)arg6 style:(long long)arg7 ;
+-(void)_handleActionSelected;
+-(void)paymentPassWithUniqueIdentifier:(id)arg1 didReceiveBalanceUpdate:(id)arg2 ;
+-(id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 ;
+-(id)tableView:(id)arg1 titleForFooterInSection:(long long)arg2 ;
+-(void)paymentPassWithUniqueIdentifier:(id)arg1 didUpdateBalanceReminder:(id)arg2 forBalanceWithIdentifier:(id)arg3 ;
+-(void)dealloc;
+@end
+

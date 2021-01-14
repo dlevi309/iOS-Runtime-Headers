@@ -1,0 +1,39 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:19 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementModel.framework/RemoteManagementModel
+*/
+
+#import <RemoteManagementModel/RemoteManagementModel-Structs.h>
+#import <RemoteManagementModel/RMModelAssetBase.h>
+#import <libobjc.A.dylib/RMModelRegisteredTypeProtocol.h>
+
+@class NSString;
+
+@interface RMModelUserIdentityDeclaration : RMModelAssetBase <RMModelRegisteredTypeProtocol> {
+
+	NSString* _payloadFullName;
+	NSString* _payloadEmailAddress;
+
+}
+
+@property (nonatomic,copy) NSString * payloadFullName;                  //@synthesize payloadFullName=_payloadFullName - In the implementation block
+@property (nonatomic,copy) NSString * payloadEmailAddress;              //@synthesize payloadEmailAddress=_payloadEmailAddress - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)buildRequiredOnlyWithIdentifier:(id)arg1 ;
++(id)allowedPayloadKeys;
++(id)registeredClassName;
++(id)registeredIdentifier;
++(id)buildWithIdentifier:(id)arg1 fullName:(id)arg2 emailAddress:(id)arg3 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)setPayloadEmailAddress:(NSString *)arg1 ;
+-(NSString *)payloadEmailAddress;
+-(BOOL)loadPayloadFromDictionary:(id)arg1 serializationType:(short)arg2 error:(id*)arg3 ;
+-(id)serializePayloadWithType:(short)arg1 ;
+-(void)setPayloadFullName:(NSString *)arg1 ;
+-(NSString *)payloadFullName;
+@end
+

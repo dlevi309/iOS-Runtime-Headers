@@ -1,0 +1,54 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:50 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WorkflowEditor.framework/WorkflowEditor
+*/
+
+
+#import <WorkflowEditor/WorkflowEditor-Structs.h>
+@class CKComponentScopeHandle, UIView;
+
+@interface CKComponent : NSObject {
+
+	CKComponentScopeHandle* _scopeHandle;
+	CKComponentViewConfiguration* _viewConfiguration;
+	unique_ptr<CKComponentMountInfo, std::__1::default_delete<CKComponentMountInfo> >* _mountInfo;
+	CKComponentSize _size;
+
+}
+
+@property (assign,nonatomic,__weak) UIView * rootComponentMountedView; 
+@property (nonatomic,readonly) id<NSObject> scopeFrameToken; 
+@property (nonatomic,readonly) CKComponentSize size;                                //@synthesize size=_size - In the implementation block
++(id)new;
++(id)initialState;
++(id)newWithView:(const CKComponentViewConfiguration*)arg1 size:(const CKComponentSize*)arg2 ;
+-(id)nextResponder;
+-(BOOL)canPerformAction:(SEL)arg1 withSender:(id)arg2 ;
+-(id)init;
+-(CKComponentSize)size;
+-(id)controller;
+-(id)targetForAction:(SEL)arg1 withSender:(id)arg2 ;
+-(CKComponentViewContext)viewContext;
+-(void)dealloc;
+-(const CKComponentViewConfiguration*)viewConfiguration;
+-(CKComponentLayout*)computeLayoutThatFits:(CKSizeRange)arg1 ;
+-(CKComponentLayout*)layoutThatFits:(CKSizeRange)arg1 parentSize:(CGSize)arg2 ;
+-(void)updateState:(/*^block*/id)arg1 mode:(unsigned long long)arg2 ;
+-(CKComponentLayout*)computeLayoutThatFits:(CKSizeRange)arg1 restrictedToSize:(const CKComponentSize*)arg2 relativeToParentSize:(CGSize)arg3 ;
+-(id)viewForAnimation;
+-(void)wf_applyVisualStying:(id)arg1 ;
+-(CKComponentBoundsAnimation)boundsAnimationFromPreviousComponent:(id)arg1 ;
+-(id)initWithView:(const CKComponentViewConfiguration*)arg1 size:(const CKComponentSize*)arg2 ;
+-(MountResult*)mountInContext:(const MountContext*)arg1 size:(CGSize)arg2 children:(shared_ptr<const std::__1::vector<CKComponentLayoutChild, std::__1::allocator<CKComponentLayoutChild> > >*)arg3 supercomponent:(id)arg4 ;
+-(void)unmount;
+-(void)_relinquishMountedView;
+-(void)childrenDidMount;
+-(vector<CKComponentAnimation, std::__1::allocator<CKComponentAnimation> >*)animationsOnInitialMount;
+-(vector<CKComponentAnimation, std::__1::allocator<CKComponentAnimation> >*)animationsFromPreviousComponent:(id)arg1 ;
+-(id)nextResponderAfterController;
+-(void)setRootComponentMountedView:(UIView *)arg1 ;
+-(UIView *)rootComponentMountedView;
+-(id<NSObject>)scopeFrameToken;
+@end
+

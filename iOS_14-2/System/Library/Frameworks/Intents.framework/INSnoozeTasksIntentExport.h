@@ -1,0 +1,24 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:23 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/Intents.framework/Intents
+*/
+
+@class NSArray, INDateComponentsRange, NSNumber;
+
+
+@protocol INSnoozeTasksIntentExport <NSObject,JSExport>
+@property (nonatomic,copy) NSArray * tasks; 
+@property (nonatomic,copy) INDateComponentsRange * nextTriggerTime; 
+@property (nonatomic,copy) NSNumber * all; 
+@required
+-(NSNumber *)all;
+-(NSArray *)tasks;
+-(id)init;
+-(INDateComponentsRange *)nextTriggerTime;
+-(void)setNextTriggerTime:(id)arg1;
+-(void)setAll:(id)arg1;
+-(void)setTasks:(id)arg1;
+
+@end
+

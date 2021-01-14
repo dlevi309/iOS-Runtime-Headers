@@ -1,0 +1,67 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Osprey.framework/Osprey
+*/
+
+#import <Osprey/OspreyRPC.h>
+
+@protocol OS_dispatch_queue, OS_dispatch_group;
+@class NSURL, NSURLSessionConfiguration, NSObject, OspreyGRPCChannel, OspreyDeviceAuthentication, NSError, OspreyPreferences, OspreyConnectionPreferences, OspreyChannelRequestOptions, NSString;
+
+@interface OspreyChannel : NSObject <OspreyRPC> {
+
+	NSURL* _url;
+	NSURLSessionConfiguration* _configuration;
+	NSObject*<OS_dispatch_queue> _queue;
+	OspreyGRPCChannel* _channel;
+	OspreyDeviceAuthentication* _deviceAuthenticator;
+	NSObject*<OS_dispatch_group> _validationGroup;
+	BOOL _waitingForSignature;
+	NSError* _signatureError;
+	OspreyPreferences* _preferences;
+	OspreyConnectionPreferences* _connectionPreferences;
+	OspreyChannelRequestOptions* _defaultRequestOptions;
+	BOOL _enableDeviceAuthentication;
+	/*^block*/id _connectionMetricsHandler;
+	NSString* _clientTraceId;
+
+}
+
+@property (assign,nonatomic) BOOL enableDeviceAuthentication;              //@synthesize enableDeviceAuthentication=_enableDeviceAuthentication - In the implementation block
+@property (assign,nonatomic) BOOL forceHTTPv2; 
+@property (nonatomic,copy) id connectionMetricsHandler;                    //@synthesize connectionMetricsHandler=_connectionMetricsHandler - In the implementation block
+@property (assign,nonatomic) BOOL useAbsinthe; 
+@property (nonatomic,copy) NSString * clientTraceId;                       //@synthesize clientTraceId=_clientTraceId - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)initWithURL:(id)arg1 configuration:(id)arg2 ;
+-(void)setUseCompression:(BOOL)arg1 ;
+-(id)bidirectionalStreamingRequestWithMethodName:(id)arg1 requestBuilder:(/*^block*/id)arg2 streamingResponseHandler:(/*^block*/id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)unaryRequestWithMethodName:(id)arg1 requestData:(id)arg2 requestBuilder:(/*^block*/id)arg3 responseHandler:(/*^block*/id)arg4 ;
+-(BOOL)enableDeviceAuthentication;
+-(void)setEnableDeviceAuthentication:(BOOL)arg1 ;
+-(BOOL)forceHTTPv2;
+-(void)setForceHTTPv2:(BOOL)arg1 ;
+-(NSString *)clientTraceId;
+-(void)setClientTraceId:(NSString *)arg1 ;
+-(id)initWithURL:(id)arg1 configuration:(id)arg2 useCache:(BOOL)arg3 ;
+-(void)setConnectionMetricsHandler:(id)arg1 ;
+-(id)connectionMetricsHandler;
+-(id)_buildRequestWithMethodName:(id)arg1 requestBuilder:(/*^block*/id)arg2 ;
+-(void)_prepareChannelWithRequest:(id)arg1 continueWith:(/*^block*/id)arg2 ;
+-(void)preconnect;
+-(void)_prepareDeviceAuthenticationWithCompletion:(/*^block*/id)arg1 ;
+-(void)initializeDeviceAuthenticationSessionWithCompletion:(/*^block*/id)arg1 ;
+-(void)serverStreamingRequestWithMethodName:(id)arg1 requestData:(id)arg2 requestBuilder:(/*^block*/id)arg3 streamingResponseHandler:(/*^block*/id)arg4 completion:(/*^block*/id)arg5 ;
+-(id)clientStreamingRequestWithMethodName:(id)arg1 requestBuilder:(/*^block*/id)arg2 responseHandler:(/*^block*/id)arg3 ;
+-(/*^block*/id)getConnectionMetricsHandler;
+-(BOOL)useAbsinthe;
+-(void)setUseAbsinthe:(BOOL)arg1 ;
+-(void)initializeAbsintheSessionWithCompletion:(/*^block*/id)arg1 ;
+-(void)performRequest:(id)arg1 handler:(/*^block*/id)arg2 ;
+-(void)performBidirectionalStreamingRequest:(id)arg1 handler:(/*^block*/id)arg2 completion:(/*^block*/id)arg3 ;
+@end
+

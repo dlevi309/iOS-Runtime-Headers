@@ -1,0 +1,160 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:44 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VoiceServices.framework/Support/libvoiced_tts.dylib
+*/
+
+#import <libvoiced_tts.dylib/libvoiced_tts.dylib-Structs.h>
+#import <Foundation/NSOperation.h>
+#import <libobjc.A.dylib/VSDeviceTTSCoreDelegate.h>
+#import <libobjc.A.dylib/VSOspreyTTSCoreDelegate.h>
+#import <libobjc.A.dylib/VSSpeechSpeakableProtocol.h>
+#import <libobjc.A.dylib/VSSpeechEagerProtocol.h>
+
+@protocol VSSpeechServiceDelegate;
+@class VSSpeechRequest, VSInstrumentMetrics, NSError, VSAudioPlaybackService, NSArray, VSDeviceTTSCore, VSAudioData, VSSpeechInternalSettings, VSOspreyTTSCore, VSCachingService, VSSiriServerConfiguration, NSString;
+
+@interface VSSpeechServerTask : NSOperation <VSDeviceTTSCoreDelegate, VSOspreyTTSCoreDelegate, VSSpeechSpeakableProtocol, VSSpeechEagerProtocol> {
+
+	BOOL _shouldSpeak;
+	BOOL _readyForEagerTask;
+	BOOL _useServerResponse;
+	BOOL _useDeviceSynthesis;
+	BOOL _speechStartReported;
+	BOOL _isEagerCache;
+	BOOL _disableOsprey;
+	id<VSSpeechServiceDelegate> _delegate;
+	VSSpeechRequest* _request;
+	VSInstrumentMetrics* _instrumentMetrics;
+	NSError* _error;
+	VSAudioPlaybackService* _playbackService;
+	NSArray* _wordTimingInfo;
+	VSSpeechServerTask* _speakTask;
+	VSDeviceTTSCore* _synthesisCore;
+	long long _aceChannelRetryTimes;
+	long long _serverTTSRetryTimes;
+	VSAudioData* _serverAudio;
+	NSArray* _deferredTTSTimingInfo;
+	VSSpeechInternalSettings* _internalSettings;
+	VSOspreyTTSCore* _ospreyCore;
+	VSCachingService* _cachingService;
+	VSSiriServerConfiguration* _serverTTSConfig;
+	opaque_pthread_cond_t _timeoutCondition;
+	opaque_pthread_mutex_t _racingMutex;
+
+}
+
+@property (assign,nonatomic) BOOL shouldSpeak;                                         //@synthesize shouldSpeak=_shouldSpeak - In the implementation block
+@property (nonatomic,retain) VSSpeechRequest * request;                                //@synthesize request=_request - In the implementation block
+@property (nonatomic,retain) VSInstrumentMetrics * instrumentMetrics;                  //@synthesize instrumentMetrics=_instrumentMetrics - In the implementation block
+@property (nonatomic,retain) NSError * error;                                          //@synthesize error=_error - In the implementation block
+@property (nonatomic,retain) VSAudioPlaybackService * playbackService;                 //@synthesize playbackService=_playbackService - In the implementation block
+@property (nonatomic,retain) NSArray * wordTimingInfo;                                 //@synthesize wordTimingInfo=_wordTimingInfo - In the implementation block
+@property (assign,nonatomic) opaque_pthread_cond_t timeoutCondition;                   //@synthesize timeoutCondition=_timeoutCondition - In the implementation block
+@property (assign,nonatomic) BOOL readyForEagerTask;                                   //@synthesize readyForEagerTask=_readyForEagerTask - In the implementation block
+@property (nonatomic,retain) VSSpeechServerTask * speakTask;                           //@synthesize speakTask=_speakTask - In the implementation block
+@property (nonatomic,retain) VSDeviceTTSCore * synthesisCore;                          //@synthesize synthesisCore=_synthesisCore - In the implementation block
+@property (assign,nonatomic) BOOL useServerResponse;                                   //@synthesize useServerResponse=_useServerResponse - In the implementation block
+@property (assign,nonatomic) BOOL useDeviceSynthesis;                                  //@synthesize useDeviceSynthesis=_useDeviceSynthesis - In the implementation block
+@property (assign,nonatomic) BOOL speechStartReported;                                 //@synthesize speechStartReported=_speechStartReported - In the implementation block
+@property (assign,nonatomic) BOOL isEagerCache;                                        //@synthesize isEagerCache=_isEagerCache - In the implementation block
+@property (assign,nonatomic) BOOL disableOsprey;                                       //@synthesize disableOsprey=_disableOsprey - In the implementation block
+@property (assign,nonatomic) long long aceChannelRetryTimes;                           //@synthesize aceChannelRetryTimes=_aceChannelRetryTimes - In the implementation block
+@property (assign,nonatomic) long long serverTTSRetryTimes;                            //@synthesize serverTTSRetryTimes=_serverTTSRetryTimes - In the implementation block
+@property (assign,nonatomic) opaque_pthread_mutex_t racingMutex;                       //@synthesize racingMutex=_racingMutex - In the implementation block
+@property (nonatomic,retain) VSAudioData * serverAudio;                                //@synthesize serverAudio=_serverAudio - In the implementation block
+@property (nonatomic,retain) NSArray * deferredTTSTimingInfo;                          //@synthesize deferredTTSTimingInfo=_deferredTTSTimingInfo - In the implementation block
+@property (nonatomic,retain) VSSpeechInternalSettings * internalSettings;              //@synthesize internalSettings=_internalSettings - In the implementation block
+@property (nonatomic,retain) VSOspreyTTSCore * ospreyCore;                             //@synthesize ospreyCore=_ospreyCore - In the implementation block
+@property (nonatomic,retain) VSCachingService * cachingService;                        //@synthesize cachingService=_cachingService - In the implementation block
+@property (nonatomic,retain) VSSiriServerConfiguration * serverTTSConfig;              //@synthesize serverTTSConfig=_serverTTSConfig - In the implementation block
+@property (assign,nonatomic,__weak) id<VSSpeechServiceDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)suspend;
+-(id)init;
+-(void)setRequest:(VSSpeechRequest *)arg1 ;
+-(id<VSSpeechServiceDelegate>)delegate;
+-(void)setInternalSettings:(VSSpeechInternalSettings *)arg1 ;
+-(void)setError:(NSError *)arg1 ;
+-(VSSpeechRequest *)request;
+-(NSError *)error;
+-(BOOL)isSpeaking;
+-(void)setDelegate:(id<VSSpeechServiceDelegate>)arg1 ;
+-(BOOL)shouldSpeak;
+-(id)voiceKey;
+-(VSSpeechInternalSettings *)internalSettings;
+-(void)main;
+-(BOOL)disableOsprey;
+-(void)setDisableOsprey:(BOOL)arg1 ;
+-(void)cancel;
+-(void)resume;
+-(void)dealloc;
+-(VSSpeechServerTask *)speakTask;
+-(VSCachingService *)cachingService;
+-(VSInstrumentMetrics *)instrumentMetrics;
+-(void)reportTimingInfo;
+-(VSAudioPlaybackService *)playbackService;
+-(void)setReadyForEagerTask:(BOOL)arg1 ;
+-(void)reportInstrumentMetrics;
+-(void)reportFinish;
+-(void)reportSpeechStart;
+-(id)taskHash;
+-(id)audioPowerProvider;
+-(BOOL)readyForEagerTask;
+-(void)setSpeakTask:(VSSpeechServerTask *)arg1 ;
+-(void)setInstrumentMetrics:(VSInstrumentMetrics *)arg1 ;
+-(void)setPlaybackService:(VSAudioPlaybackService *)arg1 ;
+-(void)setCachingService:(VSCachingService *)arg1 ;
+-(BOOL)useDeviceSynthesis;
+-(VSDeviceTTSCore *)synthesisCore;
+-(BOOL)useServerResponse;
+-(void)setUseServerResponse:(BOOL)arg1 ;
+-(VSOspreyTTSCore *)ospreyCore;
+-(NSArray *)wordTimingInfo;
+-(void)setWordTimingInfo:(NSArray *)arg1 ;
+-(id)playAudioData:(id)arg1 ;
+-(VSAudioData *)serverAudio;
+-(void)setServerAudio:(VSAudioData *)arg1 ;
+-(void)setUseDeviceSynthesis:(BOOL)arg1 ;
+-(NSArray *)deferredTTSTimingInfo;
+-(VSSiriServerConfiguration *)serverTTSConfig;
+-(BOOL)shouldDeferDeviceTTS;
+-(void)setDeferredTTSTimingInfo:(NSArray *)arg1 ;
+-(BOOL)speechStartReported;
+-(void)setSpeechStartReported:(BOOL)arg1 ;
+-(void)proceedWithSpeechCache:(id)arg1 ;
+-(id)eagerTaskHashForRequest:(id)arg1 ;
+-(void)setIsEagerCache:(BOOL)arg1 ;
+-(void)proceedWithServerTTS;
+-(void)writeAudioIfNeeded:(id)arg1 ;
+-(id)handleServerResponse:(id)arg1 timingInfo:(id)arg2 ;
+-(void)broadcastTimeoutCondition;
+-(long long)serverTTSRetryTimes;
+-(long long)aceChannelRetryTimes;
+-(void)setServerTTSRetryTimes:(long long)arg1 ;
+-(void)startSiriRoundTrip;
+-(void)waitSiriRoundTripToFinish;
+-(void)speakRetryPhrase;
+-(void)fallbackToDeviceSynthesis;
+-(BOOL)isEagerCache;
+-(id)stringOfSourceOfTTS:(long long)arg1 ;
+-(id)handleDeviceSynthesis:(id)arg1 timingInfo:(id)arg2 ;
+-(void)synthesisCore:(id)arg1 didReceiveAudio:(id)arg2 ;
+-(void)synthesisCore:(id)arg1 didReceiveWordTimingInfo:(id)arg2 ;
+-(void)ospreyCore:(id)arg1 didReceiveAudio:(id)arg2 wordTimingInfo:(id)arg3 ;
+-(void)ospreyCore:(id)arg1 didFinishWithError:(id)arg2 ;
+-(id)initWithRequest:(id)arg1 shouldSpeak:(BOOL)arg2 ;
+-(void)setShouldSpeak:(BOOL)arg1 ;
+-(opaque_pthread_cond_t)timeoutCondition;
+-(void)setTimeoutCondition:(opaque_pthread_cond_t)arg1 ;
+-(void)setSynthesisCore:(VSDeviceTTSCore *)arg1 ;
+-(void)setAceChannelRetryTimes:(long long)arg1 ;
+-(opaque_pthread_mutex_t)racingMutex;
+-(void)setRacingMutex:(opaque_pthread_mutex_t)arg1 ;
+-(void)setOspreyCore:(VSOspreyTTSCore *)arg1 ;
+-(void)setServerTTSConfig:(VSSiriServerConfiguration *)arg1 ;
+@end
+

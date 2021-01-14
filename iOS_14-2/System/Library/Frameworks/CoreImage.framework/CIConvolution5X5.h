@@ -1,0 +1,32 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreImage.framework/CoreImage
+*/
+
+#import <CoreImage/CIFilter.h>
+
+@class CIImage, CIVector, NSNumber;
+
+@interface CIConvolution5X5 : CIFilter {
+
+	CIImage* inputImage;
+	CIVector* inputWeights;
+	NSNumber* inputBias;
+
+}
+
+@property (nonatomic,retain) CIImage * inputImage; 
+@property (nonatomic,retain) CIVector * inputWeights; 
+@property (nonatomic,retain) NSNumber * inputBias; 
++(id)customAttributes;
+-(BOOL)_isIdentity;
+-(void)setInputImage:(CIImage *)arg1 ;
+-(NSNumber *)inputBias;
+-(CIVector *)inputWeights;
+-(void)setInputWeights:(CIVector *)arg1 ;
+-(void)setInputBias:(NSNumber *)arg1 ;
+-(id)outputImage;
+-(CIImage *)inputImage;
+@end
+

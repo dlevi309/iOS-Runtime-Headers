@@ -1,0 +1,20 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:42 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
+*/
+
+
+#import <ProactiveSupport/ProactiveSupport-Structs.h>
+@interface _PASLPWriterV1 : NSObject
++(id)fileBackedDataWithPropertyList:(id)arg1 writtenToPath:(id)arg2 error:(id*)arg3 ;
++(BOOL)_visitObject:(id)arg1 handleBoolean:(/*^block*/id)arg2 handleInt64:(/*^block*/id)arg3 handleFloat64:(/*^block*/id)arg4 handleTimeInterval:(/*^block*/id)arg5 handleData:(/*^block*/id)arg6 handleString:(/*^block*/id)arg7 handleDict:(/*^block*/id)arg8 handleArray:(/*^block*/id)arg9 handleOther:(/*^block*/id)arg10 ;
++(BOOL)_scanPlist:(id)arg1 recursionDepth:(unsigned long long)arg2 sizeUpperBound:(unsigned long long*)arg3 allDictionaryKeys:(id)arg4 error:(id*)arg5 ;
++(unsigned)_valueWordForObjectGraph:(id)arg1 allocContext:(SCD_Struct_PA17*)arg2 recursionDepth:(unsigned long long)arg3 ;
++(void)_writePlist:(id)arg1 allDictionaryKeys:(id)arg2 toBuffer:(void*)arg3 size:(unsigned long long)arg4 actSize:(unsigned long long*)arg5 ;
++(id)_mappedDataWithPlist:(id)arg1 fd:(int)arg2 ofs:(long long)arg3 error:(id*)arg4 ;
++(id)fileBackedDataWithPropertyList:(id)arg1 appendedToFd:(int)arg2 startOfs:(long long*)arg3 error:(id*)arg4 ;
++(id)dataWithPropertyList:(id)arg1 error:(id*)arg2 ;
+-(id)init;
+@end
+

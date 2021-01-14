@@ -1,0 +1,71 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Translation.framework/Translation
+*/
+
+#import <libobjc.A.dylib/_LTTranslationEngine.h>
+
+@protocol OS_dispatch_queue, OS_dispatch_source;
+@class NSOperationQueue, FTMtService, FTBlazarService, NSObject, _LTOspreySpeechTranslationSession, _LTBatchTranslationResponseHandler, NSDate, AFSettingsConnection, _LTTextToSpeechCache, NSString;
+
+@interface _LTOnlineTranslationEngine : NSObject <_LTTranslationEngine> {
+
+	NSOperationQueue* _sendQueue;
+	FTMtService* _service;
+	FTBlazarService* _blazarService;
+	FTBlazarService* _webTaskService;
+	NSObject*<OS_dispatch_queue> _translationQueue;
+	_LTOspreySpeechTranslationSession* _speechSession;
+	_LTBatchTranslationResponseHandler* batchTranslationResponseHandler;
+	NSObject*<OS_dispatch_queue> _timerQueue;
+	NSObject*<OS_dispatch_source> _serverTimer;
+	NSDate* _startTime;
+	AFSettingsConnection* _assistantSettingsConnection;
+	long long _dataSharingOptInStatus;
+	_LTTextToSpeechCache* _ttsCache;
+	NSObject*<OS_dispatch_queue> _serverQueue;
+
+}
+
+@property (nonatomic,retain) _LTTextToSpeechCache * ttsCache;                       //@synthesize ttsCache=_ttsCache - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> serverQueue;              //@synthesize serverQueue=_serverQueue - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(void)initialize;
++(id)blazarServiceWithBundleID:(id)arg1 ;
+-(id)_service;
+-(NSObject*<OS_dispatch_queue>)serverQueue;
+-(id)init;
+-(void)endpoint;
+-(void)addSpeechAudioData:(id)arg1 ;
+-(id)_webTaskService;
+-(id)_blazarService;
+-(void)updateServerTimeout;
+-(void)serverTimeoutFired;
+-(void)sendBatchTranslationRequestWithDelegate:(id)arg1 ;
+-(id)_serviceForTask:(long long)arg1 ;
+-(id)_tokenizeString:(id)arg1 inLocale:(id)arg2 ;
+-(void)startServerTimeoutTimer;
+-(void)cancelServerTimeout;
+-(void)_translate:(id)arg1 context:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_translateParagraph:(id)arg1 index:(long long)arg2 context:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(BOOL)_hasOngoingSpeechSession;
+-(void)_speechSessionCompletedWithError:(id)arg1 ;
+-(void)setLanguagesRecognized:(id)arg1 ;
+-(void)setTtsCache:(_LTTextToSpeechCache *)arg1 ;
+-(BOOL)translatesPair:(id)arg1 ;
+-(void)preheatAsynchronously:(BOOL)arg1 withContext:(id)arg2 ;
+-(void)translateSentence:(id)arg1 withContext:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)translate:(id)arg1 withContext:(id)arg2 paragraphResult:(/*^block*/id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)endAudio;
+-(_LTTextToSpeechCache *)ttsCache;
+-(void)startSpeechTranslationWithContext:(id)arg1 delegate:(id)arg2 ;
+-(void)cancelSpeechTranslation;
+-(void)speak:(id)arg1 withContext:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)startTextToSpeechTranslationWithContext:(id)arg1 text:(id)arg2 delegate:(id)arg3 ;
+-(void)setServerQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+@end
+

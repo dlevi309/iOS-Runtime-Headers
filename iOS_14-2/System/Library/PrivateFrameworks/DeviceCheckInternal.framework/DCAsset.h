@@ -1,0 +1,30 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:36 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/DeviceCheckInternal.framework/DeviceCheckInternal
+*/
+
+
+@class NSData;
+
+@interface DCAsset : NSObject {
+
+	unsigned long long _version;
+	double _publicKeyRefreshInterval;
+	NSData* _publicKey;
+
+}
+
+@property (assign,nonatomic) unsigned long long version;                   //@synthesize version=_version - In the implementation block
+@property (assign,nonatomic) double publicKeyRefreshInterval;              //@synthesize publicKeyRefreshInterval=_publicKeyRefreshInterval - In the implementation block
+@property (nonatomic,copy) NSData * publicKey;                             //@synthesize publicKey=_publicKey - In the implementation block
++(id)assetWithMobileAsset:(id)arg1 ;
+-(NSData *)publicKey;
+-(void)setPublicKey:(NSData *)arg1 ;
+-(id)description;
+-(void)setVersion:(unsigned long long)arg1 ;
+-(unsigned long long)version;
+-(double)publicKeyRefreshInterval;
+-(void)setPublicKeyRefreshInterval:(double)arg1 ;
+@end
+

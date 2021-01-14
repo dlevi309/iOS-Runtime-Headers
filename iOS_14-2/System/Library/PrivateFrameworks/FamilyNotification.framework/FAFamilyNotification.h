@@ -1,0 +1,108 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:42 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/FamilyNotification.framework/FamilyNotification
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, NSDate, NSNumber, NSURL, NSData, NSDictionary;
+
+@interface FAFamilyNotification : NSObject <NSSecureCoding> {
+
+	BOOL _shouldPersistWhenActivated;
+	BOOL _shouldPersistWhenDismissed;
+	BOOL _hasActionButton;
+	NSString* _identifier;
+	NSString* _title;
+	NSString* _informativeText;
+	NSDate* _relevanceDate;
+	NSDate* _expiryDate;
+	NSNumber* _familyMemberDSID;
+	unsigned long long _displayStyle;
+	NSString* _actionButtonLabel;
+	NSString* _otherButtonLabel;
+	NSString* _unlockActionLabel;
+	NSURL* _activateActionURL;
+	NSURL* _dismissActionlURL;
+	NSURL* _launchActionURL;
+	NSData* _launchActionArguments;
+	NSDictionary* _userInfo;
+	NSString* _uuid;
+	NSString* _clientIdentifier;
+	NSString* _delegateMachServiceName;
+
+}
+
+@property (copy) NSString * uuid;                                 //@synthesize uuid=_uuid - In the implementation block
+@property (copy) NSString * clientIdentifier;                     //@synthesize clientIdentifier=_clientIdentifier - In the implementation block
+@property (copy) NSString * delegateMachServiceName;              //@synthesize delegateMachServiceName=_delegateMachServiceName - In the implementation block
+@property (copy) NSString * identifier;                           //@synthesize identifier=_identifier - In the implementation block
+@property (copy) NSString * title;                                //@synthesize title=_title - In the implementation block
+@property (copy) NSString * informativeText;                      //@synthesize informativeText=_informativeText - In the implementation block
+@property (copy) NSDate * relevanceDate;                          //@synthesize relevanceDate=_relevanceDate - In the implementation block
+@property (copy) NSDate * expiryDate;                             //@synthesize expiryDate=_expiryDate - In the implementation block
+@property (copy) NSNumber * familyMemberDSID;                     //@synthesize familyMemberDSID=_familyMemberDSID - In the implementation block
+@property (assign) unsigned long long displayStyle;               //@synthesize displayStyle=_displayStyle - In the implementation block
+@property (assign) BOOL shouldPersistWhenActivated;               //@synthesize shouldPersistWhenActivated=_shouldPersistWhenActivated - In the implementation block
+@property (assign) BOOL shouldPersistWhenDismissed;               //@synthesize shouldPersistWhenDismissed=_shouldPersistWhenDismissed - In the implementation block
+@property (copy) NSString * actionButtonLabel;                    //@synthesize actionButtonLabel=_actionButtonLabel - In the implementation block
+@property (copy) NSString * otherButtonLabel;                     //@synthesize otherButtonLabel=_otherButtonLabel - In the implementation block
+@property (assign) BOOL hasActionButton;                          //@synthesize hasActionButton=_hasActionButton - In the implementation block
+@property (copy) NSString * unlockActionLabel;                    //@synthesize unlockActionLabel=_unlockActionLabel - In the implementation block
+@property (copy) NSURL * activateActionURL;                       //@synthesize activateActionURL=_activateActionURL - In the implementation block
+@property (copy) NSURL * dismissActionlURL;                       //@synthesize dismissActionlURL=_dismissActionlURL - In the implementation block
+@property (copy) NSURL * launchActionURL;                         //@synthesize launchActionURL=_launchActionURL - In the implementation block
+@property (copy) NSData * launchActionArguments;                  //@synthesize launchActionArguments=_launchActionArguments - In the implementation block
+@property (copy) NSDictionary * userInfo;                         //@synthesize userInfo=_userInfo - In the implementation block
++(BOOL)supportsSecureCoding;
+-(void)setUserInfo:(NSDictionary *)arg1 ;
+-(void)setClientIdentifier:(NSString *)arg1 ;
+-(NSString *)uuid;
+-(NSDictionary *)userInfo;
+-(NSNumber *)familyMemberDSID;
+-(id)init;
+-(void)setFamilyMemberDSID:(NSNumber *)arg1 ;
+-(NSString *)unlockActionLabel;
+-(void)encodeWithCoder:(id)arg1 ;
+-(void)setTitle:(NSString *)arg1 ;
+-(NSDate *)relevanceDate;
+-(void)setDisplayStyle:(unsigned long long)arg1 ;
+-(id)description;
+-(NSDate *)expiryDate;
+-(void)setExpiryDate:(NSDate *)arg1 ;
+-(void)setUnlockActionLabel:(NSString *)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setIdentifier:(NSString *)arg1 ;
+-(NSString *)identifier;
+-(void)setUuid:(NSString *)arg1 ;
+-(NSString *)clientIdentifier;
+-(NSString *)informativeText;
+-(void)setInformativeText:(NSString *)arg1 ;
+-(NSString *)title;
+-(unsigned long long)displayStyle;
+-(BOOL)shouldPersistWhenActivated;
+-(void)setShouldPersistWhenActivated:(BOOL)arg1 ;
+-(BOOL)shouldPersistWhenDismissed;
+-(void)setShouldPersistWhenDismissed:(BOOL)arg1 ;
+-(NSString *)delegateMachServiceName;
+-(void)setDelegateMachServiceName:(NSString *)arg1 ;
+-(NSURL *)launchActionURL;
+-(NSData *)launchActionArguments;
+-(void)setLaunchActionURL:(NSURL *)arg1 ;
+-(void)setLaunchActionArguments:(NSData *)arg1 ;
+-(id)cacheDictionaryRepresentation;
+-(id)initWithCacheDictionaryRepresentation:(id)arg1 ;
+-(void)setRelevanceDate:(NSDate *)arg1 ;
+-(NSString *)actionButtonLabel;
+-(void)setActionButtonLabel:(NSString *)arg1 ;
+-(NSString *)otherButtonLabel;
+-(void)setOtherButtonLabel:(NSString *)arg1 ;
+-(BOOL)hasActionButton;
+-(void)setHasActionButton:(BOOL)arg1 ;
+-(NSURL *)activateActionURL;
+-(void)setActivateActionURL:(NSURL *)arg1 ;
+-(NSURL *)dismissActionlURL;
+-(void)setDismissActionlURL:(NSURL *)arg1 ;
+@end
+

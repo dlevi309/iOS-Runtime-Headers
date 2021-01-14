@@ -1,0 +1,74 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:28 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CloudDocsUI.framework/CloudDocsUI
+*/
+
+#import <CloudDocsUI/_UIDocumentPickerContainerModel.h>
+#import <libobjc.A.dylib/_UIArrayControllerDelegate.h>
+
+@protocol _UIDocumentPickerDirectoryObserver;
+@class NSOperationQueue, NSArray, NSURL, NSString, _UIArrayController;
+
+@interface _UIDocumentPickerURLContainerModel : _UIDocumentPickerContainerModel <_UIArrayControllerDelegate> {
+
+	double _startObservingTime;
+	NSOperationQueue* _presentedItemOperationQueue;
+	NSArray* _modelObjects;
+	NSArray* _pickableTypes;
+	unsigned long long _pickerMode;
+	NSURL* _url;
+	NSString* _displayTitle;
+	_UIArrayController*<_UIDocumentPickerDirectoryObserver> _observer;
+	id _urlObserver;
+
+}
+
+@property (nonatomic,retain) NSURL * url;                                                                   //@synthesize url=_url - In the implementation block
+@property (nonatomic,retain) _UIArrayController*<_UIDocumentPickerDirectoryObserver> observer;              //@synthesize observer=_observer - In the implementation block
+@property (nonatomic,retain) NSArray * modelObjects;                                                        //@synthesize modelObjects=_modelObjects - In the implementation block
+@property (nonatomic,copy) NSArray * pickableTypes;                                                         //@synthesize pickableTypes=_pickableTypes - In the implementation block
+@property (assign,nonatomic) unsigned long long pickerMode;                                                 //@synthesize pickerMode=_pickerMode - In the implementation block
+@property (nonatomic,retain) id urlObserver;                                                                //@synthesize urlObserver=_urlObserver - In the implementation block
+@property (nonatomic,copy) NSString * displayTitle;                                                         //@synthesize displayTitle=_displayTitle - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)allTags;
++(void)_tagColorsDidChange;
++(id)tagColorsByTag;
++(id)_tagBlipColors;
+-(id)scopes;
+-(void)setObserver:(_UIArrayController*<_UIDocumentPickerDirectoryObserver>)arg1 ;
+-(id)init;
+-(_UIArrayController*<_UIDocumentPickerDirectoryObserver>)observer;
+-(void)setDisplayTitle:(NSString *)arg1 ;
+-(NSURL *)url;
+-(NSString *)displayTitle;
+-(NSString *)description;
+-(void)setUrl:(NSURL *)arg1 ;
+-(void)arrayController:(id)arg1 modelChanged:(id)arg2 differences:(id)arg3 ;
+-(NSArray *)modelObjects;
+-(void)setModelObjects:(NSArray *)arg1 ;
+-(void)dealloc;
+-(id)initWithURL:(id)arg1 pickableTypes:(id)arg2 mode:(unsigned long long)arg3 ;
+-(void)startMonitoringChanges;
+-(void)stopMonitoringChanges;
+-(id)_createObserver;
+-(NSArray *)pickableTypes;
+-(unsigned long long)pickerMode;
+-(BOOL)afterInitialUpdate;
+-(void)updateSortDescriptors;
+-(void)refreshItem:(id)arg1 thumbnailOnly:(BOOL)arg2 ;
+-(void)updateObserverForURL:(id)arg1 ;
+-(void)callUpdateHandlerWithNewItems:(id)arg1 diff:(id)arg2 ;
+-(BOOL)shouldShowContainerForType:(id)arg1 ;
+-(BOOL)shouldAllowPickingType:(id)arg1 ;
+-(BOOL)shouldEnableContainer:(id)arg1 ;
+-(void)setPickableTypes:(NSArray *)arg1 ;
+-(void)setPickerMode:(unsigned long long)arg1 ;
+-(id)urlObserver;
+-(void)setUrlObserver:(id)arg1 ;
+@end
+

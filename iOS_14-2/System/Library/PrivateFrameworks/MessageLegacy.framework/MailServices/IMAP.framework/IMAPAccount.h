@@ -1,0 +1,238 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:56 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MessageLegacy.framework/MailServices/IMAP.framework/IMAP
+*/
+
+#import <IMAP/IMAP-Structs.h>
+#import <Message/MailAccount.h>
+#import <libobjc.A.dylib/MFIMAPConnectionDelegate.h>
+#import <libobjc.A.dylib/EFLoggable.h>
+#import <libobjc.A.dylib/MFIMAPMailboxListFilter.h>
+
+@class NSString, MFIMAPOperationCache, NSRecursiveLock, NSArray, NSLock, NSNumber, NSSet, NSMutableDictionary;
+
+@interface IMAPAccount : MailAccount <MFIMAPConnectionDelegate, EFLoggable, MFIMAPMailboxListFilter> {
+
+	NSString* _separatorChar;
+	NSString* _serverNamespace;
+	CFArrayRef _cachedConnections;
+	CFArrayRef _mailboxesToSynchronize;
+	MFIMAPOperationCache* _offlineCache;
+	unsigned long long _greatestInboxUid;
+	double _timeLastFetchedMailboxList;
+	NSRecursiveLock* _connectionLock;
+	int _nextConnectionTag;
+	id _packetContextAssertion;
+	NSArray* _lockOrderingArray;
+	unsigned _readBufferSize;
+	/*^block*/id _offlineCacheFlushHandler;
+	AB _fetchedMailboxList;
+	AB _isOffline;
+	NSArray* _lastKnownCapabilities;
+	NSLock* _eSearchSupportedLock;
+	NSNumber* _eSearchSupported;
+	double _lastPushRegistration;
+	NSString* _apsTopic;
+	NSSet* _pushedMailboxUids;
+	NSMutableDictionary* _pushRegisteredMailboxes;
+	int _supportedPushServiceLevel;
+	unsigned _observingPushedFoldersPrefsChanged : 1;
+	unsigned _mustRegisterForPushOnNextConnection : 1;
+	unsigned _didRequestPushRegistration : 1;
+	unsigned _listeningForDeviceTokenChanges : 1;
+	unsigned _didUpdateSeparatorAndNamespace : 1;
+	int _apsVersion;
+	NSString* _apsSenderArgument;
+
+}
+
+@property (nonatomic,copy) NSString * apsSenderArgument;              //@synthesize apsSenderArgument=_apsSenderArgument - In the implementation block
+@property (assign,nonatomic) int apsVersion;                          //@synthesize apsVersion=_apsVersion - In the implementation block
+@property (readonly) BOOL isOffline; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)log;
++(id)accountTypeString;
++(id)accountTypeIdentifier;
++(void*)legacyKeychainProtocol;
++(id)saslProfileName;
++(unsigned)defaultPortNumber;
++(id)csAccountTypeString;
++(unsigned)defaultSecurePortNumber;
++(void)_deleteQueuedMailboxes:(id)arg1 ;
+-(void)checkInConnection:(id)arg1 ;
+-(BOOL)requiresAuthentication;
+-(void)saveState;
+-(void)_writeCustomInfoToMailboxCache:(id)arg1 ;
+-(void)messagesAdded:(id)arg1 ;
+-(id)lastKnownCapabilities;
+-(void)nowWouldBeAGoodTimeToStartBackgroundSynchronization;
+-(BOOL)shouldExpungeMessagesOnDelete;
+-(BOOL)isSpecialMailbox:(id)arg1 ;
+-(BOOL)canMailboxBeDeleted:(id)arg1 ;
+-(void)transferNotificationSessionToAccount:(id)arg1 ;
+-(BOOL)deleteInPlaceForAllMailboxes;
+-(BOOL)_registerPushNotificationPrefix:(id)arg1 forMailboxNames:(id)arg2 ;
+-(void)_mailboxesWereRemovedFromTree:(id)arg1 withFileSystemPaths:(id)arg2 ;
+-(void)_readCustomInfoFromMailboxCache:(id)arg1 ;
+-(unsigned long long)minID;
+-(id)clientToken;
+-(BOOL)isOffline;
+-(id)errorForResponse:(id)arg1 ;
+-(unsigned long long)minUID;
+-(void)setCompactWhenClosingMailboxes:(BOOL)arg1 ;
+-(id)stateCaptureTitle;
+-(id)copyDiagnosticInformation;
+-(void)_setCapabilities:(id)arg1 ;
+-(void)setLibrary:(id)arg1 ;
+-(void)setIsOffline:(BOOL)arg1 ;
+-(void)setDisplayName:(id)arg1 ;
+-(void)releaseAllConnections;
+-(Class)connectionClass;
+-(id)certUIService;
+-(id)secureServiceName;
+-(id)statisticsKind;
+-(BOOL)canGoOffline;
+-(void)releaseAllForcedConnections;
+-(id)nameForMailboxUid:(id)arg1 ;
+-(id)serviceName;
+-(BOOL)canFetch;
+-(id)initWithLibrary:(id)arg1 persistentAccount:(id)arg2 ;
+-(void)startListeningForNotifications;
+-(void)stopListeningForNotifications;
+-(id)_copyMailboxUidWithParent:(id)arg1 name:(id)arg2 attributes:(unsigned)arg3 existingMailboxUid:(id)arg4 dictionary:(id)arg5 ;
+-(id)_newMailboxWithParent:(id)arg1 name:(id)arg2 attributes:(unsigned)arg3 dictionary:(id)arg4 withCreationOption:(int)arg5 ;
+-(BOOL)newMailboxNameIsAcceptable:(id)arg1 reasonForFailure:(id*)arg2 ;
+-(id)_URLScheme;
+-(id)mailboxUidForRelativePath:(id)arg1 create:(BOOL)arg2 ;
+-(BOOL)isMailboxLocalForType:(int)arg1 ;
+-(BOOL)canReceiveNewMailNotifications;
+-(id)_nameForMailboxUid:(id)arg1 ;
+-(id)connectionForStore:(id)arg1 delegate:(id)arg2 options:(int)arg3 failedToSelectMailbox:(BOOL*)arg4 ;
+-(id)allMailMailboxUid;
+-(void)fetchMailboxList;
+-(Class)storeClass;
+-(BOOL)renameMailbox:(id)arg1 newName:(id)arg2 parent:(id)arg3 ;
+-(void)_synchronouslyLoadListingForParent:(id)arg1 ;
+-(BOOL)_deleteMailbox:(id)arg1 ;
+-(id)mailboxPathExtension;
+-(BOOL)supportsRemoteAppend;
+-(BOOL)supportsMailboxEditing;
+-(id)_infoForMatchingURL:(id)arg1 ;
+-(id)_specialMailboxUidWithType:(int)arg1 create:(BOOL)arg2 ;
+-(BOOL)shouldRestoreMessagesAfterFailedDelete;
+-(BOOL)supportsUserPushedMailboxes;
+-(id)pushedMailboxUids;
+-(void)changePushedMailboxUidsAdded:(id)arg1 deleted:(id)arg2 ;
+-(id)fetchLimits;
+-(BOOL)moveSupported;
+-(id)replayAction:(id)arg1 ;
+-(BOOL)deleteInPlaceForMailbox:(id)arg1 ;
+-(BOOL)supportsAppend;
+-(void)resetMailboxTimer;
+-(BOOL)compactWhenClosingMailboxes;
+-(void)dealloc;
+-(id)_mailboxPathPrefix;
+-(void)_setSpecialMailbox:(id)arg1 forType:(int)arg2 ;
+-(void)deleteMessagesFromMailboxUid:(id)arg1 olderThanNumberOfDays:(unsigned)arg2 ;
+-(id)_pathComponentForUidName:(id)arg1 ;
+-(id)_uidNameForPathComponent:(id)arg1 ;
+-(id)mf_lockOrdering;
+-(BOOL)shouldRegisterForPush;
+-(BOOL)canAttemptPushRegistration;
+-(id)separatorChar;
+-(void)handleOverQuotaResponse:(id)arg1 ;
+-(void)handleAlertResponse:(id)arg1 ;
+-(void)filterMailboxList:(id)arg1 forMailbox:(id)arg2 options:(int)arg3 ;
+-(id)specialUseAttributeForType:(int)arg1 ;
+-(id)specialUseAttributesForMailbox:(id)arg1 ;
+-(BOOL)xListSupportedOnConnection:(id)arg1 ;
+-(void)flushOfflineCache;
+-(void)setHandlerForOfflineCacheFlush:(/*^block*/id)arg1 ;
+-(int)apsVersion;
+-(id)offlineCacheIfExists;
+-(void)_renameLocalSpecialMailboxesToName:(id)arg1 ;
+-(id)offlineCacheDirectoryPath;
+-(unsigned)readBufferSize;
+-(void)_updateSeparatorAndNamespaceWithConnection:(id)arg1 ;
+-(void)throttledGetMailboxListWithConnection:(id)arg1 ;
+-(void)setReadBufferSize:(unsigned)arg1 ;
+-(void)checkInConnection:(id)arg1 destroy:(BOOL)arg2 ;
+-(void)_releaseAllConnectionsAndCallSuper:(BOOL)arg1 synchronously:(BOOL)arg2 edgeForcedOnly:(BOOL)arg3 saveOfflineCache:(BOOL)arg4 ;
+-(void)_invokeBlock:(/*^block*/id)arg1 ;
+-(id)_mailboxUidForName:(id)arg1 ;
+-(void)_flushOfflineCache;
+-(void)networkChanged;
+-(void)_releaseAllConnectionsAndCallSuper:(BOOL)arg1 ;
+-(id)serverPathPrefix;
+-(id)serverPathPrefixAccountValue;
+-(id)_listingForMailboxUid:(id)arg1 listAllChildren:(BOOL)arg2 onlySubscribed:(BOOL)arg3 statusDataItems:(id)arg4 withConnection:(id)arg5 statusEntriesByMailbox:(id*)arg6 ;
+-(id)_listingForMailboxUid:(id)arg1 listAllChildren:(BOOL)arg2 onlySubscribed:(BOOL)arg3 ;
+-(id)offlineCache;
+-(void)unselectMailbox:(id)arg1 ;
+-(id)offlineCacheIfOffline;
+-(id)_listingForMailboxUid:(id)arg1 listAllChildren:(BOOL)arg2 ;
+-(void)setStoreMailboxType:(int)arg1 onServer:(BOOL)arg2 ;
+-(BOOL)storeMailboxTypeOnServer:(int)arg1 ;
+-(void)_synchronizeAccountWithServer;
+-(BOOL)getMailboxListWithConnection:(id)arg1 statusDataItems:(id)arg2 statusEntriesByMailbox:(id*)arg3 ;
+-(void)_mailboxListingChanged;
+-(void)_waitForMailboxListingLoadToComplete;
+-(void)setServerPathPrefix:(id)arg1 shouldSync:(BOOL)arg2 ;
+-(id)_fileSystemServerPathPrefix;
+-(BOOL)hasPendingOfflineOperations;
+-(void)setServerPathPrefix:(id)arg1 ;
+-(BOOL)mustRegisterForPushOnNextConnection;
+-(id)_externalMailboxUids;
+-(void)setMustRegisterForPushOnNextConnection:(BOOL)arg1 ;
+-(double)lastPushRegistration;
+-(int)supportedPushServiceLevel;
+-(void)updatePushRegisteredMailboxes:(id)arg1 ;
+-(void)setSupportedPushServiceLevel:(int)arg1 ;
+-(void)setAPSTopic:(id)arg1 ;
+-(void)setLastPushRegistration:(double)arg1 ;
+-(id)_notificationNameForMailbox:(id)arg1 withPrefix:(id)arg2 ;
+-(id)notificationNamesForPrefix:(id)arg1 mailboxUids:(id)arg2 ;
+-(id)_copyMailboxListForNames:(id)arg1 ;
+-(void)_schedulePushRegistrationConnection;
+-(id)_copyMailboxListPreferenceForKey:(id)arg1 ;
+-(id)_copyUserPushedMailboxes;
+-(void)_updatePushedMailboxesAndNotify:(BOOL)arg1 ;
+-(void)setValueInAccountInfo:(id)arg1 forKey:(id)arg2 ;
+-(id)_notesPrefix;
+-(id)_copyPushedMailboxesForPrefix:(id)arg1 ;
+-(id)mailboxesRegisteredForPushByHash;
+-(void)_apsDeviceTokenChanged:(id)arg1 ;
+-(void)_registerForDeviceTokenChanges;
+-(id)apsTopic;
+-(void)_unregisterForDeviceTokenChanges;
+-(BOOL)connection:(id)arg1 shouldHandleUntaggedResponse:(id)arg2 forCommand:(id)arg3 ;
+-(void)connection:(id)arg1 didReceiveResponse:(id)arg2 forCommand:(id)arg3 ;
+-(void)connectionDidDisconnect:(id)arg1 ;
+-(unsigned long long)greatestInboxUid;
+-(BOOL)needToSynchronizeMailboxCaches;
+-(void)_didSynchronizeMailboxCachesAndFoundChanges:(BOOL)arg1 ;
+-(id)_dataForTemporaryUid:(unsigned)arg1 ;
+-(unsigned)minimumPartialDownloadSize;
+-(BOOL)allowsPartialDownloads;
+-(void)setAllowsPartialDownloads:(BOOL)arg1 ;
+-(BOOL)connectAndAuthenticate:(id)arg1 ;
+-(void)checkInConnectionsForStore:(id)arg1 ;
+-(BOOL)verifyESearchSupportWithBlock:(/*^block*/id)arg1 ;
+-(void)releaseAllConnectionsSynchronously;
+-(void)acquireNetworkAssertion;
+-(void)releaseNetworkAssertion;
+-(BOOL)getMailboxListWithConnection:(id)arg1 ;
+-(BOOL)requiresDataForOfflineTransfersFromStore:(id)arg1 ;
+-(void)serverRegisteredMailboxes:(id)arg1 withTopic:(id)arg2 version:(int)arg3 ;
+-(id)registerPushNotificationPrefix:(id)arg1 forMailboxUids:(id)arg2 ;
+-(id)mailboxNamesForPushRegistration;
+-(void)handlePushNotificationOnMailboxes:(id)arg1 missedNotifications:(BOOL)arg2 notificationPayload:(id)arg3 ;
+-(NSString *)apsSenderArgument;
+-(void)setApsSenderArgument:(NSString *)arg1 ;
+-(void)setApsVersion:(int)arg1 ;
+@end
+

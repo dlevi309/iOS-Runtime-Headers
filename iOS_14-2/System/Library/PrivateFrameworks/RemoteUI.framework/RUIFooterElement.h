@@ -1,0 +1,21 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI
+*/
+
+#import <RemoteUI/RUIElement.h>
+
+@class RemoteUISectionFooter;
+
+@interface RUIFooterElement : RUIElement {
+
+	RemoteUISectionFooter* _footerView;
+
+}
+-(id)linkURL;
+-(void)setEnabled:(BOOL)arg1 ;
+-(long long)labelAlignment;
+-(void)configureView:(id)arg1 ;
+@end
+

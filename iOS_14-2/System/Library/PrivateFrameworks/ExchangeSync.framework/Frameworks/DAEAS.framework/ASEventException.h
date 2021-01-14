@@ -1,0 +1,69 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:41 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ExchangeSync.framework/Frameworks/DAEAS.framework/DAEAS
+*/
+
+#import <DAEAS/ASEvent.h>
+#import <libobjc.A.dylib/ASParsingAcceptingTopLevelLeaves.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class ASEvent, NSNumber, NSDate, NSMutableDictionary;
+
+@interface ASEventException : ASEvent <ASParsingAcceptingTopLevelLeaves, NSSecureCoding> {
+
+	ASEvent* _originalEvent;
+	NSNumber* _isDeleted;
+	NSDate* _exceptionStartTime;
+	NSMutableDictionary* _placeHolder;
+
+}
+
+@property (nonatomic,retain) NSMutableDictionary * placeHolder;              //@synthesize placeHolder=_placeHolder - In the implementation block
+@property (assign,nonatomic,__weak) ASEvent * originalEvent;                 //@synthesize originalEvent=_originalEvent - In the implementation block
+@property (nonatomic,retain) NSNumber * isDeleted;                           //@synthesize isDeleted=_isDeleted - In the implementation block
+@property (nonatomic,retain) NSDate * exceptionStartTime;                    //@synthesize exceptionStartTime=_exceptionStartTime - In the implementation block
++(BOOL)supportsSecureCoding;
++(BOOL)acceptsTopLevelLeaves;
++(BOOL)parsingLeafNode;
++(BOOL)parsingWithSubItems;
++(BOOL)frontingBasicTypes;
++(BOOL)notifyOfUnknownTokens;
++(id)asParseRules;
++(id)eventExceptionWithCalEvent:(void*)arg1 originalEvent:(id)arg2 account:(id)arg3 ;
+-(void)setOriginalEvent:(ASEvent *)arg1 ;
+-(ASEvent *)originalEvent;
+-(void)encodeWithCoder:(id)arg1 ;
+-(NSNumber *)isDeleted;
+-(id)description;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setIsDeleted:(NSNumber *)arg1 ;
+-(void)loadClientIDs;
+-(void)applyPlaceHolder;
+-(void)clearPlaceHolder;
+-(void)setObject:(id)arg1 forDCCPT:(int)arg2 ;
+-(void)parseASParseContext:(id)arg1 root:(id)arg2 parent:(id)arg3 callbackDict:(id)arg4 streamCallbackDict:(id)arg5 account:(id)arg6 ;
+-(id)exceptionDate;
+-(void)setExceptionDate:(id)arg1 ;
+-(void)postProcessApplicationData;
+-(void)appendActiveSyncDataForTask:(id)arg1 toWBXMLData:(id)arg2 ;
+-(BOOL)deleteFromCalendar;
+-(NSMutableDictionary *)placeHolder;
+-(void)setPlaceHolder:(NSMutableDictionary *)arg1 ;
+-(id)uidGeneratedIfNecessaryWithLocalEvent:(void*)arg1 ;
+-(id)initWithCalEvent:(void*)arg1 originalEvent:(id)arg2 account:(id)arg3 ;
+-(NSDate *)exceptionStartTime;
+-(id)initWithExceptionStartTime:(id)arg1 ;
+-(id)serverIdForCalFrameworkWithParentEvent:(id)arg1 ;
+-(void)saveToCalendarWithParentASEvent:(id)arg1 existingRecord:(void*)arg2 intoCalendar:(void*)arg3 shouldMergeProperties:(BOOL)arg4 outMergeDidChooseLocalProperties:(BOOL*)arg5 account:(id)arg6 ;
+-(void)takeValuesFromParentForAccount:(id)arg1 ;
+-(BOOL)verifyExternalIds;
+-(BOOL)hasOccurrenceInTheFuture;
+-(BOOL)fillOutMissingExternalIds;
+-(id)serverIdForCalFrameworkWithParentServerId:(id)arg1 ;
+-(id)_transformedExceptionStartDateForCalFramework:(id)arg1 ;
+-(void)setExceptionStartTime:(NSDate *)arg1 ;
+-(id)_transformedExceptionStartDateForActiveSync:(id)arg1 isFloating:(BOOL)arg2 ;
+-(void)_loadAttributesFromCalEvent:(void*)arg1 withKnownExceptionDate:(id)arg2 forAccount:(id)arg3 ;
+@end
+

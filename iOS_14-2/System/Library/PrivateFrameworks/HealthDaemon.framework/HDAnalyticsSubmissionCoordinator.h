@@ -1,0 +1,76 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+#import <libobjc.A.dylib/HDPeriodicActivityDelegate.h>
+
+@protocol OS_dispatch_queue, HDAnalyticsSubmissionCoordinatorDelegate;
+@class HDDaemon, HDPeriodicActivity, NSObject, HKObserverSet, NSString;
+
+@interface HDAnalyticsSubmissionCoordinator : NSObject <HDPeriodicActivityDelegate> {
+
+	HDDaemon* _daemon;
+	HDPeriodicActivity* _periodicActivity;
+	NSObject*<OS_dispatch_queue> _queue;
+	HKObserverSet*<HDAnalyticsSubmissionCoordinatorDelegate> _observers;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(BOOL)periodicActivityRequiresProtectedData:(id)arg1 ;
+-(void)nanoSync_reportSyncSuccessWithReason:(id)arg1 options:(unsigned long long)arg2 duration:(double)arg3 profileType:(long long)arg4 ;
+-(void)medicalID_reportHasBeenDeletedForProfileType:(long long)arg1 ;
+-(void)cloudSync_reportRebaseTriggeredByDeletionByUser:(BOOL)arg1 ;
+-(void)submitEvent:(id)arg1 ;
+-(void)heartRate_reportDailyRestingHeartRate:(double)arg1 sedentaryHeartRateCount:(int)arg2 filteredSedentaryHeartRateCount:(int)arg3 profileType:(long long)arg4 ;
+-(void)database_reportJournalEntryInsertedForJournal:(long long)arg1 entryClass:(id)arg2 entrySize:(id)arg3 ;
+-(void)tinker_pairingDidFinishForConfiguration:(id)arg1 duration:(double)arg2 ;
+-(void)cloudSync_reportDailyAnalyticForProfileType:(long long)arg1 syncEnabled:(BOOL)arg2 syncDisabledError:(id)arg3 primaryContainer:(id)arg4 restoreComplete:(BOOL)arg5 timeSinceRestoreStart:(id)arg6 journalSize:(id)arg7 timeSinceLastSuccessfulPull:(id)arg8 timeSinceLastSuccessfulPush:(id)arg9 timeSinceLastPushForwardProgress:(id)arg10 storeCount:(long long)arg11 zoneCount:(long long)arg12 hasUnifiedZone:(BOOL)arg13 hasMasterZone:(BOOL)arg14 hasMedicalID:(BOOL)arg15 errorRequiringUserAction:(id)arg16 ;
+-(id)initWithDaemon:(id)arg1 ;
+-(void)addObserver:(id)arg1 queue:(id)arg2 ;
+-(void)workout_reportWorkoutCondenserEventWithReason:(long long)arg1 batchSize:(long long)arg2 hasWatchSource:(BOOL)arg3 duration:(double)arg4 success:(BOOL)arg5 error:(id)arg6 workoutsToCondense:(long long)arg7 workoutsToRecondense:(long long)arg8 condensedWorkouts:(long long)arg9 processedWorkouts:(long long)arg10 createdSeries:(long long)arg11 deletedSamples:(long long)arg12 ;
+-(BOOL)isEventUsed:(id)arg1 ;
+-(int)heartRate_outputValueWithRestingHeartRate:(double)arg1 ;
+-(void)cloudSync_operationFailed:(id)arg1 error:(id)arg2 ;
+-(void)cloudSync_operationStarted:(id)arg1 ;
+-(void)medicalID_dailyReport:(id)arg1 sosContactStatus:(BOOL)arg2 profileType:(long long)arg3 ;
+-(void)cloudSync_reportPipelineStarted:(id)arg1 ;
+-(void)performPeriodicActivity:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)cloudSync_operationFinished:(id)arg1 ;
+-(void)cloudSync_reportOwnershipChangeForProfile:(id)arg1 reason:(id)arg2 ;
+-(void)periodicActivity:(id)arg1 configureXPCActivityCriteria:(id)arg2 ;
+-(void)cloudSync_reportPeriodicSyncFailureWithError:(id)arg1 duration:(double)arg2 type:(long long)arg3 ;
+-(BOOL)_database_shouldSendReportForKey:(id)arg1 profile:(id)arg2 ;
+-(void)removeObserver:(id)arg1 ;
+-(void)cloudSync_reportOwnershipChangeForMissingManateeIdentityDuringPush;
+-(void)cloudSync_reportMissingManateeIdentityDuringFetchInContainer:(id)arg1 zoneName:(id)arg2 databaseScope:(long long)arg3 ;
+-(void)cloudSync_reportRestoreForProfile:(id)arg1 startDate:(id)arg2 endDate:(id)arg3 duration:(double)arg4 finishedJournalMerge:(BOOL)arg5 ;
+-(void)database_reportDatabaseMigrationStatus:(long long)arg1 database:(id)arg2 schemaVersion:(long long)arg3 error:(id)arg4 profileType:(long long)arg5 ;
+-(void)healthService_reportServiceTypeAdded:(id)arg1 profileType:(long long)arg2 ;
+-(void)workout_reportGymKitWorkoutWithFitnessMachineType:(id)arg1 manufacturer:(id)arg2 timeToBeginExperience:(long long)arg3 workoutEndError:(long long)arg4 ;
+-(void)authorization_reportAuthRequestsFromBundleIdentifier:(id)arg1 isExtension:(BOOL)arg2 isAppleWatch:(BOOL)arg3 shouldPrompt:(BOOL)arg4 ;
+-(void)cloudSync_reportPipelineFailed:(id)arg1 error:(id)arg2 ;
+-(void)authorization_reportAuthRequestPromptedForBundleIdentifer:(id)arg1 profileType:(long long)arg2 ;
+-(int)heartRate_popWithProfileType:(long long)arg1 ;
+-(void)database_reportUnprotectedDatabaseIdentifier:(id)arg1 doesNotMatchProtectedDatabaseIdentifier:(id)arg2 ;
+-(void)nanoSync_reportResponseStatusCode:(int)arg1 profileType:(long long)arg2 ;
+-(void)healthService_reportServiceTypeRemoved:(id)arg1 profileType:(long long)arg2 ;
+-(void)nanoSync_reportSyncFailureWithReason:(id)arg1 options:(unsigned long long)arg2 duration:(double)arg3 profileType:(long long)arg4 error:(id)arg5 ;
+-(void)unitTest_fireDailyAnalyticsActivityWithCompletion:(/*^block*/id)arg1 ;
+-(void)tinker_pairingDidFailWithError:(id)arg1 configuration:(id)arg2 duration:(double)arg3 stage:(long long)arg4 ;
+-(void)sendEvent:(id)arg1 block:(/*^block*/id)arg2 ;
+-(void)medicalID_reportHasBeenSetForProfileType:(long long)arg1 ;
+-(void)cloudSync_reportPipelineFinished:(id)arg1 ;
+-(void)healthService_reportCountForAllServices:(id)arg1 profileType:(long long)arg2 ;
+-(void)cloudSync_reportPeriodicSyncSuccessAfterDuration:(double)arg1 type:(long long)arg2 ;
+-(void)database_reportHFDCorruptionWithFailureType:(long long)arg1 code:(int)arg2 description:(id)arg3 profile:(id)arg4 initialRebuildStage:(int)arg5 newRebuildStage:(int)arg6 ;
+-(void)healthService_reportServiceType:(id)arg1 duration:(double)arg2 profileType:(long long)arg3 ;
+-(void)cloudSync_reportPeriodicSyncStartForType:(long long)arg1 ;
+-(void)database_reportSQLiteCorruptionWithResultCode:(int)arg1 type:(long long)arg2 profile:(id)arg3 ;
+@end
+

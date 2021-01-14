@@ -1,0 +1,25 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:02 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
+*/
+
+
+@interface PFSharingUtilities : NSObject
++(id)_exifSubsecTimeFormatter;
++(id)_exifDateTimeFormatter;
++(id)_dateFormatterTemplate;
++(id)_gpsTimeFormatter;
++(id)_gpsDateFormatter;
++(id)addAccessibilityDescription:(id)arg1 toAVMetadata:(id)arg2 ;
++(id)addDescription:(id)arg1 toAVMetadata:(id)arg2 ;
++(id)setString:(id)arg1 forKey:(id)arg2 inKeySpace:(id)arg3 inAVMetadata:(id)arg4 ;
++(id)addCustomDate:(id)arg1 toAVMetadata:(id)arg2 ;
++(id)addCustomLocation:(id)arg1 toAVMetadata:(id)arg2 ;
++(id)gpsDictionaryForLocation:(id)arg1 ;
++(id)exifDateTimeFromDate:(id)arg1 ;
++(id)exifSubsecTimeFromDate:(id)arg1 ;
++(id)addCreationDate:(id)arg1 toExifDictionary:(id)arg2 ;
++(id)addCreationDate:(id)arg1 toTIFFDictionary:(id)arg2 ;
+@end
+

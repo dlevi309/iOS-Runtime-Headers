@@ -1,0 +1,11 @@
+#import <SoundsAndHapticsSettings/SHSToneController.h>
+#import <SoundsAndHapticsSettings/SHSAudioPlayback.h>
+#import <SoundsAndHapticsSettings/SHSHeadphoneLevelLimitDescriptionCell.h>
+#import <SoundsAndHapticsSettings/SHSHeadphoneNotificationsController.h>
+#import <SoundsAndHapticsSettings/SHSSoundsPrefController.h>
+#import <SoundsAndHapticsSettings/SHSRingerControl.h>
+#import <SoundsAndHapticsSettings/SHSHeadphoneLevelLimitSliderCell.h>
+#import <SoundsAndHapticsSettings/SHSHeadphoneNotificationTableCell.h>
+#import <SoundsAndHapticsSettings/SHSHeadphoneHearingProtectionController.h>
+#import <SoundsAndHapticsSettings/SHSHeadphoneLightningAdaptersController.h>
+#import <SoundsAndHapticsSettings/SHSSpeakersPrefController.h>

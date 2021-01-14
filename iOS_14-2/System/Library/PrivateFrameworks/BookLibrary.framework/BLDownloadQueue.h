@@ -1,0 +1,83 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:55 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BookLibrary.framework/BookLibrary
+*/
+
+#import <BookLibrary/BookLibrary-Structs.h>
+#import <libobjc.A.dylib/SSBookDownloadQueue.h>
+#import <libobjc.A.dylib/BUUserAccountObserving.h>
+
+@class NSArray, NSHashTable, BLServiceProxy, NSMutableDictionary, NSString;
+
+@interface BLDownloadQueue : NSObject <SSBookDownloadQueue, BUUserAccountObserving> {
+
+	os_unfair_lock_s _observersLock;
+	os_unfair_lock_s _activeDownloadsLock;
+	NSHashTable* _observers;
+	BLServiceProxy* _serviceProxy;
+	NSMutableDictionary* _activeDownloads;
+
+}
+
+@property (nonatomic,retain) NSHashTable * observers;                            //@synthesize observers=_observers - In the implementation block
+@property (nonatomic,retain) BLServiceProxy * serviceProxy;                      //@synthesize serviceProxy=_serviceProxy - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * activeDownloads;              //@synthesize activeDownloads=_activeDownloads - In the implementation block
+@property (nonatomic,readonly) NSArray * downloads; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)sharedInstance;
++(void)cancelAllActiveDownloads;
+-(NSArray *)downloads;
+-(void)addDownloadWithPermlink:(id)arg1 title:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)addObserver:(id)arg1 ;
+-(NSMutableDictionary *)activeDownloads;
+-(NSHashTable *)observers;
+-(void)_cancelAllPausedDownloads;
+-(id)init;
+-(void)userAccount:(unsigned long long)arg1 didChangeWithReason:(unsigned long long)arg2 ;
+-(void)_notifyComplete:(id)arg1 ;
+-(void)_postDownloadCompleteNotificationWithDictionary:(id)arg1 failed:(BOOL)arg2 ;
+-(void)purchaseWithBuyParameters:(id)arg1 storeID:(id)arg2 isAudiobook:(BOOL)arg3 userInfo:(id)arg4 completion:(/*^block*/id)arg5 ;
+-(void)_addDownloadWithMetadata:(id)arg1 isRestore:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(id)_stringFromObject:(id)arg1 ;
+-(void)_sendInitialProgressNotificationForDownloadWithStoreID:(id)arg1 storePlaylistID:(id)arg2 orPermlink:(id)arg3 downloadID:(id)arg4 title:(id)arg5 collectionTitle:(id)arg6 isPaused:(BOOL)arg7 isAudiobook:(BOOL)arg8 targetObserver:(id)arg9 ;
+-(void)addRestoreDownloadWithMetadata:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)addDownloadsWithRestoreContentRequestItems:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)addRestoreDownloadsWithMetadata:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)_downloadStatusStoreID:(id)arg1 storePlaylistID:(id)arg2 orPermLink:(id)arg3 downloadID:(id)arg4 title:(id)arg5 collectionTitle:(id)arg6 isPaused:(BOOL)arg7 isAudiobook:(BOOL)arg8 ;
+-(void)purchaseWithBuyParameters:(id)arg1 storeID:(id)arg2 isAudiobook:(BOOL)arg3 completion:(/*^block*/id)arg4 ;
+-(void)setObservers:(NSHashTable *)arg1 ;
+-(void)_purchaseDidCompleteWithResponse:(id)arg1 ;
+-(void)setServiceProxy:(BLServiceProxy *)arg1 ;
+-(void)cancelDownloadWithID:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)reloadFromServerWithCompletion:(/*^block*/id)arg1 ;
+-(void)removeObserver:(id)arg1 ;
+-(void)addDownloadWithPurchaseParameters:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)pauseDownloadWithID:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(id)_downloadStatusFromDictionary:(id)arg1 outParamNewlyTrackedDownload:(BOOL*)arg2 ;
+-(void)purchaseWithRequest:(id)arg1 uiManager:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_postUpdatesForCurrentlyPausedDownloadsForObserver:(id)arg1 ;
+-(void)_purchaseDidFailedWithResponse:(id)arg1 ;
+-(void)purchaseWithBuyParameters:(id)arg1 storeID:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(BLServiceProxy *)serviceProxy;
+-(void)processAutomaticDownloadsWithReply:(/*^block*/id)arg1 ;
+-(void)_sendCancelCompletionNotificationForDownloadWithDownloadID:(id)arg1 ;
+-(void)addDownloadsWithMetadata:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)_dateFromObject:(id)arg1 ;
+-(void)_notifyProgress:(id)arg1 ;
+-(void)cancelAllActiveDownloadsWithCompletion:(/*^block*/id)arg1 ;
+-(void)addDownloadWithMetadata:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)addDownloadWithPurchaseParameters:(id)arg1 storeID:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)resumeDownloadWithID:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setActiveDownloads:(NSMutableDictionary *)arg1 ;
+-(void)setAutomaticDownloadEnabled:(BOOL)arg1 uiManager:(id)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(id)_numberFromObject:(id)arg1 ;
+-(void)addDownloadsWithManifestRequest:(id)arg1 uiManager:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)dealloc;
+-(void)_notifyFailed:(id)arg1 ;
+-(void)purchaseWithRequest:(id)arg1 completion:(/*^block*/id)arg2 ;
+@end
+

@@ -1,0 +1,45 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:50 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HomeKitDaemon/HMDBackingStoreOperation.h>
+
+@class HMDBackingStoreCacheGroup, NSArray;
+
+@interface HMDBackingStoreCacheFetchRecords : HMDBackingStoreOperation {
+
+	BOOL _recursive;
+	HMDBackingStoreCacheGroup* _group;
+	/*^block*/id _fetchResult;
+	NSArray* _recordNames;
+	NSArray* _uuids;
+	NSArray* _parentUuids;
+
+}
+
+@property (nonatomic,retain) HMDBackingStoreCacheGroup * group;              //@synthesize group=_group - In the implementation block
+@property (nonatomic,copy) id fetchResult;                                   //@synthesize fetchResult=_fetchResult - In the implementation block
+@property (nonatomic,retain) NSArray * recordNames;                          //@synthesize recordNames=_recordNames - In the implementation block
+@property (nonatomic,retain) NSArray * uuids;                                //@synthesize uuids=_uuids - In the implementation block
+@property (nonatomic,retain) NSArray * parentUuids;                          //@synthesize parentUuids=_parentUuids - In the implementation block
+@property (assign) BOOL recursive;                                           //@synthesize recursive=_recursive - In the implementation block
+-(void)setGroup:(HMDBackingStoreCacheGroup *)arg1 ;
+-(HMDBackingStoreCacheGroup *)group;
+-(id)fetchResult;
+-(void)setFetchResult:(id)arg1 ;
+-(NSArray *)uuids;
+-(void)setUuids:(NSArray *)arg1 ;
+-(NSArray *)recordNames;
+-(id)mainReturningError;
+-(void)setRecordNames:(NSArray *)arg1 ;
+-(NSArray *)parentUuids;
+-(BOOL)recursive;
+-(id)initWithGroup:(id)arg1 uuids:(id)arg2 fetchResult:(/*^block*/id)arg3 ;
+-(id)initWithGroup:(id)arg1 parentUuids:(id)arg2 fetchResult:(/*^block*/id)arg3 ;
+-(id)initWithGroup:(id)arg1 records:(id)arg2 fetchResult:(/*^block*/id)arg3 ;
+-(void)setRecursive:(BOOL)arg1 ;
+-(void)setParentUuids:(NSArray *)arg1 ;
+@end
+

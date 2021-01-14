@@ -1,0 +1,21 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ProVideo.framework/ProVideo
+*/
+
+#import <ProVideo/ProVideo-Structs.h>
+#import <ProVideo/PAEFilterDefaultBase.h>
+
+@interface PAEChannelMixer : PAEFilterDefaultBase
+-(id)properties;
+-(id)initWithAPIManager:(id)arg1 ;
+-(BOOL)addParameters;
+-(BOOL)parameterChanged:(unsigned)arg1 ;
+-(BOOL)canThrowRenderOutput:(id)arg1 withInput:(id)arg2 withInfo:(SCD_Struct_PA84*)arg3 ;
+-(BOOL)frameSetup:(SCD_Struct_PA84*)arg1 inputInfo:(SCD_Struct_PA83)arg2 hardware:(BOOL*)arg3 software:(BOOL*)arg4 ;
+-(BOOL)constrainMonoParams:(int)arg1 atTime:(/*function pointer*/void**)arg2 ;
+-(void)getRed:(double*)arg1 green:(double*)arg2 blue:(double*)arg3 alpha:(double*)arg4 fromParam:(int)arg5 atFxTime:(/*function pointer*/void**)arg6 ;
+-(BOOL)monochromeChanged:(/*function pointer*/void**)arg1 ;
+@end
+

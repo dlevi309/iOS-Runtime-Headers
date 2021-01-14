@@ -1,0 +1,57 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AirTraffic.framework/AirTraffic
+*/
+
+
+@protocol OS_xpc_object, OS_dispatch_queue;
+@class NSObject, NSMutableSet, NSString;
+
+@interface ATXPCConnection : NSObject {
+
+	NSObject*<OS_xpc_object> _conn;
+	NSObject*<OS_dispatch_queue> _eventQueue;
+	/*^block*/id _lockdownHandler;
+	/*^block*/id _messageHandler;
+	/*^block*/id _disconnectHandler;
+	NSMutableSet* _outstandingMessages;
+	BOOL _assertionHeld;
+	id _context;
+
+}
+
+@property (readonly) NSString * serviceName; 
+@property (nonatomic,copy) id lockdownHandler;                //@synthesize lockdownHandler=_lockdownHandler - In the implementation block
+@property (nonatomic,copy) id messageHandler;                 //@synthesize messageHandler=_messageHandler - In the implementation block
+@property (nonatomic,copy) id disconnectHandler;              //@synthesize disconnectHandler=_disconnectHandler - In the implementation block
+@property (assign,nonatomic) BOOL assertionHeld;              //@synthesize assertionHeld=_assertionHeld - In the implementation block
+@property (nonatomic,retain) id context;                      //@synthesize context=_context - In the implementation block
+-(id)initWithServiceName:(id)arg1 onQueue:(id)arg2 ;
+-(id)eventQueue;
+-(void)shutdown;
+-(void)sendMessage:(id)arg1 ;
+-(id)initWithXPCConnection:(id)arg1 ;
+-(id)messageHandler;
+-(id)context;
+-(void)_handleXPCError:(id)arg1 ;
+-(id)disconnectHandler;
+-(NSString *)serviceName;
+-(void)setDisconnectHandler:(id)arg1 ;
+-(void)sendMessage:(id)arg1 withReply:(/*^block*/id)arg2 ;
+-(void)_setEventHandlerOnConnection:(id)arg1 ;
+-(void)_handleXPCMessage:(id)arg1 ;
+-(void)_sendMessage:(id)arg1 handler:(/*^block*/id)arg2 ;
+-(void)_handleLockdownMessage:(void*)arg1 ;
+-(void)_registerMessage:(id)arg1 ;
+-(void)_removeMessage:(id)arg1 ;
+-(unsigned long long)_outstandingMessages;
+-(id)lockdownHandler;
+-(void)setLockdownHandler:(id)arg1 ;
+-(BOOL)assertionHeld;
+-(void)setAssertionHeld:(BOOL)arg1 ;
+-(void)setMessageHandler:(id)arg1 ;
+-(void)dealloc;
+-(void)setContext:(id)arg1 ;
+@end
+

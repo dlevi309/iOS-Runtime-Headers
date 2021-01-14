@@ -1,0 +1,14 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:19 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib
+*/
+
+
+@interface DspLibChannelLayouts : NSObject
++(id)supportedLayouts;
++(id)channelNamesForLayout:(unsigned)arg1 ;
++(id)channelLayoutName:(unsigned)arg1 ;
++(id)supportedLayoutNamesForChannelCount:(unsigned)arg1 ;
+@end
+

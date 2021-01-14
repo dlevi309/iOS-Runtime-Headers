@@ -1,0 +1,40 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:04 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
+*/
+
+
+@class NSCountedSet, NSMutableDictionary;
+
+@interface VSBinder : NSObject {
+
+	BOOL _establishmentProhibited;
+	id _boundObject;
+	NSCountedSet* _currentlyChangingBindings;
+	NSMutableDictionary* _establishedBindings;
+
+}
+
+@property (nonatomic,__weak,readonly) id boundObject;                                                    //@synthesize boundObject=_boundObject - In the implementation block
+@property (assign,getter=isEstablishmentProhibited,nonatomic) BOOL establishmentProhibited;              //@synthesize establishmentProhibited=_establishmentProhibited - In the implementation block
+@property (nonatomic,retain) NSCountedSet * currentlyChangingBindings;                                   //@synthesize currentlyChangingBindings=_currentlyChangingBindings - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * establishedBindings;                                  //@synthesize establishedBindings=_establishedBindings - In the implementation block
+-(void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void*)arg4 ;
+-(id)init;
+-(void)dealloc;
+-(void)tearDownBinding:(id)arg1 ;
+-(NSMutableDictionary *)establishedBindings;
+-(BOOL)isEstablishmentProhibited;
+-(id)_infoForBinding:(id)arg1 ;
+-(NSCountedSet *)currentlyChangingBindings;
+-(id)valueForBinding:(id)arg1 ;
+-(id)boundObject;
+-(id)initWithBoundObject:(id)arg1 ;
+-(void)establishBinding:(id)arg1 withInfo:(id)arg2 ;
+-(void)setValue:(id)arg1 forBinding:(id)arg2 ;
+-(void)setEstablishmentProhibited:(BOOL)arg1 ;
+-(void)setCurrentlyChangingBindings:(NSCountedSet *)arg1 ;
+-(void)setEstablishedBindings:(NSMutableDictionary *)arg1 ;
+@end
+

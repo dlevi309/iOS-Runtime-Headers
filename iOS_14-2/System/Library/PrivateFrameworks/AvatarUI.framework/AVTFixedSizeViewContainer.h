@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:01 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AvatarUI.framework/AvatarUI
+*/
+
+#import <UIKitCore/UIView.h>
+
+@class UIView;
+
+@interface AVTFixedSizeViewContainer : UIView {
+
+	UIView* _fixedSizeView;
+
+}
+
+@property (nonatomic,readonly) UIView * fixedSizeView;              //@synthesize fixedSizeView=_fixedSizeView - In the implementation block
+-(void)layoutSubviews;
+-(id)initWithFixedSizeView:(id)arg1 ;
+-(UIView *)fixedSizeView;
+@end
+

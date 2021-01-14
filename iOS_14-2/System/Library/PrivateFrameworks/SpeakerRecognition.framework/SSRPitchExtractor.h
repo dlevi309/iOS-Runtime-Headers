@@ -1,0 +1,36 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:50 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition
+*/
+
+#import <libobjc.A.dylib/EARAudioResultsGeneratorDelegate.h>
+
+@protocol OS_dispatch_queue;
+@class EARAudioResultsGenerator, NSObject, NSString;
+
+@interface SSRPitchExtractor : NSObject <EARAudioResultsGeneratorDelegate> {
+
+	EARAudioResultsGenerator* _resultsGenerator;
+	NSObject*<OS_dispatch_queue> _queue;
+
+}
+
+@property (nonatomic,retain) EARAudioResultsGenerator * resultsGenerator;              //@synthesize resultsGenerator=_resultsGenerator - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> queue;                       //@synthesize queue=_queue - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)initWithAsset:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)queue;
+-(void)setQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(float)getPitchForUtteranceAudioFiles:(id)arg1 ;
+-(void)_processAudioFileURL:(id)arg1 ;
+-(float)_getVoicingWeightedPitchForResultMatrix:(id)arg1 ;
+-(float)_getVoicingProbFromRawData:(float)arg1 ;
+-(float)_getPitchHzFromRawData:(float)arg1 ;
+-(EARAudioResultsGenerator *)resultsGenerator;
+-(void)setResultsGenerator:(EARAudioResultsGenerator *)arg1 ;
+@end
+

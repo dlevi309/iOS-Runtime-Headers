@@ -1,0 +1,17 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:45 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote
+*/
+
+#import <MediaRemote/MRProtocolMessage.h>
+
+@interface MRSetConnectionStateMessage : MRProtocolMessage
+
+@property (nonatomic,readonly) unsigned state; 
+-(id)initWithConnectionState:(unsigned)arg1 ;
+-(unsigned long long)encryptionType;
+-(unsigned long long)type;
+-(unsigned)state;
+@end
+

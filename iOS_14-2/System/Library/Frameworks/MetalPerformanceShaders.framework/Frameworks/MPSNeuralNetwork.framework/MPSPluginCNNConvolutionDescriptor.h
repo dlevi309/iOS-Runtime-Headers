@@ -1,0 +1,60 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:05 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork
+*/
+
+
+@class MPSNNNeuronDescriptor;
+
+@interface MPSPluginCNNConvolutionDescriptor : NSObject {
+
+	unsigned long long _kernelWidth;
+	unsigned long long _kernelHeight;
+	unsigned long long _inputFeatureChannels;
+	unsigned long long _outputFeatureChannels;
+	unsigned long long _strideInPixelsX;
+	unsigned long long _strideInPixelsY;
+	unsigned long long _groups;
+	unsigned long long _dilationRateX;
+	unsigned long long _dilationRateY;
+	MPSNNNeuronDescriptor* _fusedNeuronDescriptor;
+	unsigned long long _channelMultiplier;
+	unsigned long long _subPixelScaleFactor;
+	BOOL _isFullyConnected;
+	BOOL _isConvolutionTranspose;
+
+}
+
+@property (nonatomic,readonly) unsigned long long kernelWidth;                             //@synthesize kernelWidth=_kernelWidth - In the implementation block
+@property (nonatomic,readonly) unsigned long long kernelHeight;                            //@synthesize kernelHeight=_kernelHeight - In the implementation block
+@property (nonatomic,readonly) unsigned long long inputFeatureChannels;                    //@synthesize inputFeatureChannels=_inputFeatureChannels - In the implementation block
+@property (nonatomic,readonly) unsigned long long outputFeatureChannels;                   //@synthesize outputFeatureChannels=_outputFeatureChannels - In the implementation block
+@property (nonatomic,readonly) unsigned long long strideInPixelsX;                         //@synthesize strideInPixelsX=_strideInPixelsX - In the implementation block
+@property (nonatomic,readonly) unsigned long long strideInPixelsY;                         //@synthesize strideInPixelsY=_strideInPixelsY - In the implementation block
+@property (nonatomic,readonly) unsigned long long groups;                                  //@synthesize groups=_groups - In the implementation block
+@property (nonatomic,readonly) unsigned long long dilationRateX;                           //@synthesize dilationRateX=_dilationRateX - In the implementation block
+@property (nonatomic,readonly) unsigned long long dilationRateY;                           //@synthesize dilationRateY=_dilationRateY - In the implementation block
+@property (nonatomic,readonly) MPSNNNeuronDescriptor * fusedNeuronDescriptor;              //@synthesize fusedNeuronDescriptor=_fusedNeuronDescriptor - In the implementation block
+@property (nonatomic,readonly) unsigned long long channelMultiplier;                       //@synthesize channelMultiplier=_channelMultiplier - In the implementation block
+@property (nonatomic,readonly) unsigned long long subPixelScaleFactor;                     //@synthesize subPixelScaleFactor=_subPixelScaleFactor - In the implementation block
+@property (nonatomic,readonly) BOOL isFullyConnected;                                      //@synthesize isFullyConnected=_isFullyConnected - In the implementation block
+@property (nonatomic,readonly) BOOL isConvolutionTranspose;                                //@synthesize isConvolutionTranspose=_isConvolutionTranspose - In the implementation block
+-(unsigned long long)channelMultiplier;
+-(id)initWithKernelWidth:(unsigned long long)arg1 kernelHeight:(unsigned long long)arg2 inputFeatureChannels:(unsigned long long)arg3 outputFeatureChannels:(unsigned long long)arg4 strideInPixelsX:(unsigned long long)arg5 strideInPixelsY:(unsigned long long)arg6 groups:(unsigned long long)arg7 dilationRateX:(unsigned long long)arg8 dilationRateY:(unsigned long long)arg9 channelMultiplier:(unsigned long long)arg10 subPixelScaleFactor:(unsigned long long)arg11 isFullyConnected:(BOOL)arg12 isConvolutionTranspose:(BOOL)arg13 fusedNeuronDescriptor:(id)arg14 ;
+-(unsigned long long)outputFeatureChannels;
+-(unsigned long long)subPixelScaleFactor;
+-(BOOL)isFullyConnected;
+-(BOOL)isConvolutionTranspose;
+-(unsigned long long)groups;
+-(unsigned long long)strideInPixelsX;
+-(unsigned long long)strideInPixelsY;
+-(unsigned long long)inputFeatureChannels;
+-(MPSNNNeuronDescriptor *)fusedNeuronDescriptor;
+-(unsigned long long)kernelWidth;
+-(unsigned long long)kernelHeight;
+-(unsigned long long)dilationRateX;
+-(unsigned long long)dilationRateY;
+-(void)dealloc;
+@end
+

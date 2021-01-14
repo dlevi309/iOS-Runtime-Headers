@@ -1,0 +1,80 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+#import <HealthDaemon/HDStandardTaskServer.h>
+#import <libobjc.A.dylib/HKWorkoutSessionServerInterface.h>
+#import <libobjc.A.dylib/HKDataFlowLinkProcessor.h>
+#import <libobjc.A.dylib/HDWorkoutDataSource.h>
+#import <libobjc.A.dylib/HDWorkoutDataDestination.h>
+#import <libobjc.A.dylib/HDWorkoutSessionObserver.h>
+
+@protocol OS_dispatch_queue, HDWorkoutDataAccumulator;
+@class NSObject, HKWorkoutSessionTaskConfiguration, HDWorkoutSessionServer, HKDataFlowLink, HDWorkoutBuilderEntity, HKSource, NSString, NSUUID;
+
+@interface HDWorkoutSessionTaskServer : HDStandardTaskServer <HKWorkoutSessionServerInterface, HKDataFlowLinkProcessor, HDWorkoutDataSource, HDWorkoutDataDestination, HDWorkoutSessionObserver> {
+
+	NSObject*<OS_dispatch_queue> _queue;
+	HKWorkoutSessionTaskConfiguration* _taskConfiguration;
+	HDWorkoutSessionServer* _sessionServer;
+	HKDataFlowLink* _workoutDataFlowLink;
+	HDWorkoutBuilderEntity* _builderEntity;
+	HKSource* _clientSource;
+	id<HDWorkoutDataAccumulator> _accumulator;
+
+}
+
+@property (__weak) id<HDWorkoutDataAccumulator> accumulator;                                     //@synthesize accumulator=_accumulator - In the implementation block
+@property (nonatomic,readonly) BOOL requiresCoreLocationAssertion; 
+@property (nonatomic,readonly) BOOL supportsAppRelaunchForRecovery; 
+@property (nonatomic,readonly) BOOL shouldStopPreviousSession; 
+@property (nonatomic,copy,readonly) HKSource * clientSource;                                     //@synthesize clientSource=_clientSource - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (readonly) HKDataFlowLink * workoutDataFlowLink; 
+@property (copy,readonly) NSUUID * workoutDataProcessorUUID; 
+@property (readonly) unsigned long long workoutDataDestinationState; 
+@property (nonatomic,readonly) id<HDWorkoutDataAccumulator> workoutDataAccumulator; 
++(id)createTaskServerWithUUID:(id)arg1 configuration:(id)arg2 client:(id)arg3 delegate:(id)arg4 error:(id*)arg5 ;
++(BOOL)validateConfiguration:(id)arg1 client:(id)arg2 error:(id*)arg3 ;
++(id)taskIdentifier;
++(Class)configurationClass;
++(id)requiredEntitlements;
+-(void)connectionInvalidated;
+-(void)connectionConfigured;
+-(id)exportedInterface;
+-(id)remoteInterface;
+-(void)workoutSession:(id)arg1 didFailWithError:(id)arg2 ;
+-(void)workoutSession:(id)arg1 didGenerateEvent:(id)arg2 ;
+-(void)remote_setTargetState:(long long)arg1 date:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(BOOL)shouldStopPreviousSession;
+-(void)remote_recoverWithCompletion:(/*^block*/id)arg1 ;
+-(BOOL)requiresCoreLocationAssertion;
+-(BOOL)supportsAppRelaunchForRecovery;
+-(void)workoutSession:(id)arg1 didChangeToState:(long long)arg2 fromState:(long long)arg3 date:(id)arg4 ;
+-(id<HDWorkoutDataAccumulator>)accumulator;
+-(void)setAccumulator:(id<HDWorkoutDataAccumulator>)arg1 ;
+-(void)workoutDataDestination:(id)arg1 requestsDataFrom:(id)arg2 to:(id)arg3 ;
+-(void)workoutDataDestination:(id)arg1 didChangeFromState:(unsigned long long)arg2 toState:(unsigned long long)arg3 ;
+-(void)workoutDataDestination:(id)arg1 requestsFinalDataFrom:(id)arg2 to:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)workoutDataDestination:(id)arg1 didUpdateConfiguration:(id)arg2 ;
+-(HKDataFlowLink *)workoutDataFlowLink;
+-(NSUUID *)workoutDataProcessorUUID;
+-(void)addSamples:(id)arg1 dataSource:(id)arg2 ;
+-(void)addWorkoutEvents:(id)arg1 dataSource:(id)arg2 ;
+-(void)addMetadata:(id)arg1 dataSource:(id)arg2 ;
+-(void)updateWorkoutConfiguration:(id)arg1 dataSource:(id)arg2 ;
+-(unsigned long long)workoutDataDestinationState;
+-(id<HDWorkoutDataAccumulator>)workoutDataAccumulator;
+-(id)initWithUUID:(id)arg1 configuration:(id)arg2 client:(id)arg3 clientSource:(id)arg4 delegate:(id)arg5 sessionServer:(id)arg6 ;
+-(void)setAssociatedWorkoutBuilderEntity:(id)arg1 ;
+-(void)setWorkoutDataAccumulator:(id<HDWorkoutDataAccumulator>)arg1 ;
+-(void)_queue_setupSessionServer;
+-(void)observeWorkoutSessionServer:(id)arg1 ;
+-(HKSource *)clientSource;
+@end
+

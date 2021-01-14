@@ -1,0 +1,21 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:36 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/HealthKit.framework/HealthKit
+*/
+
+
+@interface _HKAudiogramDiagnosticSensitivityPoint : NSObject {
+
+	double _earSensitivityDBHL;
+	double _frequencyHz;
+
+}
+
+@property (nonatomic,readonly) double earSensitivityDBHL;              //@synthesize earSensitivityDBHL=_earSensitivityDBHL - In the implementation block
+@property (nonatomic,readonly) double frequencyHz;                     //@synthesize frequencyHz=_frequencyHz - In the implementation block
+-(double)frequencyHz;
+-(double)earSensitivityDBHL;
+-(id)initWithEarSensitivity:(id)arg1 frequency:(id)arg2 ;
+@end
+

@@ -1,0 +1,46 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:37 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NotesUI.framework/NotesUI
+*/
+
+#import <NotesUI/NotesUI-Structs.h>
+#import <NotesUI/ICMigrationDeviceInfo.h>
+
+@class NSString;
+
+@interface ICFullDeviceInfo : ICMigrationDeviceInfo {
+
+	NSString* _model;
+	NSString* _modelDisplayName;
+	NSString* _softwareVersion;
+	ICDeviceHardwareInfo _hardwareInfo;
+
+}
+
+@property (nonatomic,readonly) ICDeviceHardwareInfo hardwareInfo;              //@synthesize hardwareInfo=_hardwareInfo - In the implementation block
+@property (nonatomic,readonly) NSString * model;                               //@synthesize model=_model - In the implementation block
+@property (nonatomic,readonly) NSString * modelDisplayName;                    //@synthesize modelDisplayName=_modelDisplayName - In the implementation block
+@property (nonatomic,readonly) NSString * softwareVersion;                     //@synthesize softwareVersion=_softwareVersion - In the implementation block
+-(NSString *)model;
+-(id)init;
+-(NSString *)softwareVersion;
+-(id)description;
+-(NSString *)modelDisplayName;
+-(BOOL)shouldBeHidden;
+-(ICDeviceHardwareInfo)hardwareInfo;
+-(BOOL)upgradableToIOS13;
+-(BOOL)upgradedToIOS13;
+-(BOOL)isIOSDevice;
+-(BOOL)upgraded;
+-(BOOL)upgradable;
+-(BOOL)isOSXDevice;
+-(id)initWithName:(id)arg1 model:(id)arg2 modelDisplayName:(id)arg3 softwareVersion:(id)arg4 ;
+-(id)loggableDescription;
+-(ICDeviceHardwareInfo)hardwareInfoFromModelId:(id)arg1 ;
+-(BOOL)isHardwareInfoUpgradable:(ICDeviceHardwareInfo)arg1 ;
+-(BOOL)isHardwareInfoUpgradableToIOS13:(ICDeviceHardwareInfo)arg1 ;
+-(BOOL)upgradedToMajor:(int)arg1 minor:(int)arg2 ;
+-(unsigned long long)hardwareInfoNameFromString:(id)arg1 ;
+@end
+

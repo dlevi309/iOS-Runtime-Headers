@@ -1,0 +1,92 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:42 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/TouchML.framework/TouchML
+*/
+
+typedef struct _NSZone* NSZoneRef;
+
+typedef struct CGPoint {
+	double x;
+	double y;
+} CGPoint;
+
+typedef struct CGSize {
+	double width;
+	double height;
+} CGSize;
+
+typedef struct CGRect {
+	CGPoint origin;
+	CGSize size;
+} CGRect;
+
+typedef struct NSRange {
+	unsigned long long location;
+	unsigned long long length;
+} NSRange;
+
+typedef struct CGAffineTransform {
+	double a;
+	double b;
+	double c;
+	double d;
+	double tx;
+	double ty;
+} CGAffineTransform;
+
+typedef struct CATransform3D {
+	double m11;
+	double m12;
+	double m13;
+	double m14;
+	double m21;
+	double m22;
+	double m23;
+	double m24;
+	double m31;
+	double m32;
+	double m33;
+	double m34;
+	double m41;
+	double m42;
+	double m43;
+	double m44;
+} CATransform3D;
+
+typedef struct UIEdgeInsets {
+	double top;
+	double left;
+	double bottom;
+	double right;
+} UIEdgeInsets;
+
+typedef struct CGFont* CGFontRef;
+
+typedef struct CGVector {
+	double dx;
+	double dy;
+} CGVector;
+
+typedef struct OpaqueJSClass* OpaqueJSClassRef;
+
+typedef struct {
+	int version;
+	unsigned attributes;
+	char* className;
+	OpaqueJSClass parentClass;
+	/*function pointer*/void* staticValues;
+	/*function pointer*/void* staticFunctions;
+	/*function pointer*/void* initialize;
+	/*function pointer*/void* finalize;
+	/*function pointer*/void* hasProperty;
+	/*function pointer*/void* getProperty;
+	/*function pointer*/void* setProperty;
+	/*function pointer*/void* deleteProperty;
+	/*function pointer*/void* getPropertyNames;
+	/*function pointer*/void* callAsFunction;
+	/*function pointer*/void* callAsConstructor;
+	/*function pointer*/void* hasInstance;
+	/*function pointer*/void* convertToType;
+} SCD_Struct_TM11;
+

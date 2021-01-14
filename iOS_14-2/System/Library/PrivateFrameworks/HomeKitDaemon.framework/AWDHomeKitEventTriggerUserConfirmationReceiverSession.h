@@ -1,0 +1,56 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:57 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HomeKitDaemon/HomeKitDaemon-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString;
+
+@interface AWDHomeKitEventTriggerUserConfirmationReceiverSession : PBCodable <NSCopying> {
+
+	unsigned long long _timestamp;
+	unsigned long long _userResponseDelay;
+	int _resultErrorCode;
+	NSString* _sessionID;
+	SCD_Struct_AW2 _has;
+
+}
+
+@property (assign,nonatomic) BOOL hasTimestamp; 
+@property (assign,nonatomic) unsigned long long timestamp;                      //@synthesize timestamp=_timestamp - In the implementation block
+@property (nonatomic,readonly) BOOL hasSessionID; 
+@property (nonatomic,retain) NSString * sessionID;                              //@synthesize sessionID=_sessionID - In the implementation block
+@property (assign,nonatomic) BOOL hasResultErrorCode; 
+@property (assign,nonatomic) int resultErrorCode;                               //@synthesize resultErrorCode=_resultErrorCode - In the implementation block
+@property (assign,nonatomic) BOOL hasUserResponseDelay; 
+@property (assign,nonatomic) unsigned long long userResponseDelay;              //@synthesize userResponseDelay=_userResponseDelay - In the implementation block
+-(BOOL)hasSessionID;
+-(id)dictionaryRepresentation;
+-(NSString *)sessionID;
+-(void)setSessionID:(NSString *)arg1 ;
+-(unsigned long long)timestamp;
+-(void)mergeFrom:(id)arg1 ;
+-(id)description;
+-(void)setHasTimestamp:(BOOL)arg1 ;
+-(unsigned long long)hash;
+-(BOOL)hasTimestamp;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)writeTo:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)setTimestamp:(unsigned long long)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)setResultErrorCode:(int)arg1 ;
+-(void)setHasResultErrorCode:(BOOL)arg1 ;
+-(BOOL)hasResultErrorCode;
+-(int)resultErrorCode;
+-(unsigned long long)userResponseDelay;
+-(void)setUserResponseDelay:(unsigned long long)arg1 ;
+-(void)setHasUserResponseDelay:(BOOL)arg1 ;
+-(BOOL)hasUserResponseDelay;
+@end
+

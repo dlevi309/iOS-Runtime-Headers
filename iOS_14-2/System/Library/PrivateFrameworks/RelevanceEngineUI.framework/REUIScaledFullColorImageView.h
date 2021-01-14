@@ -1,0 +1,37 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:19 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/RelevanceEngineUI.framework/RelevanceEngineUI
+*/
+
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/CLKFullColorImageView.h>
+
+@protocol CLKMonochromeFilterProvider;
+@class UIImageView, NSString;
+
+@interface REUIScaledFullColorImageView : UIView <CLKFullColorImageView> {
+
+	id<CLKMonochromeFilterProvider> filterProvider;
+	UIImageView* _imageView;
+
+}
+
+@property (nonatomic,readonly) UIImageView * imageView;                                          //@synthesize imageView=_imageView - In the implementation block
+@property (assign,nonatomic,__weak) id<CLKMonochromeFilterProvider> filterProvider; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(UIImageView *)imageView;
+-(void)layoutSubviews;
+-(void)setFilterProvider:(id<CLKMonochromeFilterProvider>)arg1 ;
+-(void)transitionToMonochromeWithFraction:(double)arg1 ;
+-(void)updateMonochromeColor;
+-(id<CLKMonochromeFilterProvider>)filterProvider;
+-(id)initFullColorImageViewWithDevice:(id)arg1 ;
+-(void)pauseLiveFullColorImageView;
+-(void)resumeLiveFullColorImageView;
+-(void)configureWithImageProvider:(id)arg1 reason:(long long)arg2 ;
+@end
+

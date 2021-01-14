@@ -1,0 +1,60 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:58 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MetricKitCore.framework/MetricKitCore
+*/
+
+#import <libobjc.A.dylib/MXSourceXPCServer.h>
+#import <libobjc.A.dylib/NSXPCListenerDelegate.h>
+
+@protocol OS_os_log, OS_dispatch_queue;
+@class NSObject, NSFileManager, NSXPCListener, NSString;
+
+@interface MXSource : NSObject <MXSourceXPCServer, NSXPCListenerDelegate> {
+
+	NSObject*<OS_os_log> _MXSourceLogHandle;
+	NSFileManager* _fileManager;
+	NSXPCListener* _xpcListener;
+	NSObject*<OS_dispatch_queue> _requestQueue;
+	NSObject*<OS_dispatch_queue> _iVarQueue;
+
+}
+
+@property (retain) NSObject*<OS_os_log> MXSourceLogHandle;                           //@synthesize MXSourceLogHandle=_MXSourceLogHandle - In the implementation block
+@property (retain) NSFileManager * fileManager;                                      //@synthesize fileManager=_fileManager - In the implementation block
+@property (nonatomic,retain) NSXPCListener * xpcListener;                            //@synthesize xpcListener=_xpcListener - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> requestQueue;              //@synthesize requestQueue=_requestQueue - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> iVarQueue;                 //@synthesize iVarQueue=_iVarQueue - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)sharedSource;
++(void)sanitizeDeviceMetadataForDiagnostic:(id)arg1 ;
+-(NSFileManager *)fileManager;
+-(void)setXpcListener:(NSXPCListener *)arg1 ;
+-(void)setFileManager:(NSFileManager *)arg1 ;
+-(NSObject*<OS_dispatch_queue>)requestQueue;
+-(id)init;
+-(void)setRequestQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(BOOL)listener:(id)arg1 shouldAcceptNewConnection:(id)arg2 ;
+-(NSXPCListener *)xpcListener;
+-(id)bundleIDFromPid:(int)arg1 ;
+-(id)bundleIDFromURL:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)iVarQueue;
+-(void)setIVarQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(NSObject*<OS_os_log>)MXSourceLogHandle;
+-(void)writeMetricDataWithPayload:(id)arg1 ;
+-(void)writeDiagnosticDataWithPayload:(id)arg1 ;
+-(void)deliverDummyPayloadForClient:(id)arg1 ;
+-(BOOL)validatePayload:(id)arg1 ;
+-(id)setupSourceDirectoryForSource:(long long)arg1 ;
+-(void)removeFilesForSourceID:(long long)arg1 dateString:(id)arg2 ;
+-(BOOL)validatePowerlogData:(id)arg1 ;
+-(BOOL)validateHangTracerData:(id)arg1 ;
+-(BOOL)validateSpinTracerData:(id)arg1 ;
+-(BOOL)validateReportCrashData:(id)arg1 ;
+-(void)cleanDataDirectoryForSource:(long long)arg1 dateString:(id)arg2 ;
+-(void)setMXSourceLogHandle:(NSObject*<OS_os_log>)arg1 ;
+@end
+

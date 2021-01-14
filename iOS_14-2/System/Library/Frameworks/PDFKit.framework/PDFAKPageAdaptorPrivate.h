@@ -1,0 +1,21 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:59 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PDFKit.framework/PDFKit
+*/
+
+
+@class PDFPage, AKPageModelController;
+
+@interface PDFAKPageAdaptorPrivate : NSObject {
+
+	BOOL isTornDown;
+	PDFPage* pdfPage;
+	AKPageModelController* akPageModelController;
+	BOOL isObservingPageModel;
+	BOOL isSyncingFromPDFPage;
+	BOOL isSyncingFromAKPageModel;
+
+}
+@end
+

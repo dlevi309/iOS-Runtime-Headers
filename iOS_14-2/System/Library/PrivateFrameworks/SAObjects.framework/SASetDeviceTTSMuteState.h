@@ -1,0 +1,20 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
+*/
+
+#import <SAObjects/SABaseClientBoundCommand.h>
+
+@interface SASetDeviceTTSMuteState : SABaseClientBoundCommand
+
+@property (assign,nonatomic) BOOL textToSpeechIsMuted; 
++(id)setDeviceTTSMuteState;
++(id)setDeviceTTSMuteStateWithDictionary:(id)arg1 context:(id)arg2 ;
+-(id)groupIdentifier;
+-(id)encodedClassName;
+-(BOOL)requiresResponse;
+-(BOOL)textToSpeechIsMuted;
+-(void)setTextToSpeechIsMuted:(BOOL)arg1 ;
+@end
+

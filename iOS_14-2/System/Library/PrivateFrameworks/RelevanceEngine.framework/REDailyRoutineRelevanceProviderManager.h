@@ -1,0 +1,44 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/RelevanceEngine.framework/RelevanceEngine
+*/
+
+#import <RelevanceEngine/RERelevanceProviderManager.h>
+#import <libobjc.A.dylib/REDailyRoutinePredictorDelegate.h>
+#import <libobjc.A.dylib/REDailyRoutineRelevanceProviderManagerProperties.h>
+
+@class NSString;
+
+@interface REDailyRoutineRelevanceProviderManager : RERelevanceProviderManager <REDailyRoutinePredictorDelegate, REDailyRoutineRelevanceProviderManagerProperties> {
+
+	BOOL _inMorningRoutine;
+	BOOL _inEveningRoutine;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) BOOL isInMorningRoutine; 
+@property (nonatomic,readonly) BOOL isInEveningRoutine; 
++(id)_features;
++(Class)_relevanceProviderClass;
++(BOOL)_wantsSeperateRelevanceQueue;
+-(void)pause;
+-(void)resume;
+-(id)_valueForProvider:(id)arg1 context:(id)arg2 feature:(id)arg3 ;
+-(id)_valueForProvider:(id)arg1 feature:(id)arg2 ;
+-(void)_prepareForUpdate;
+-(void)dailyRoutinePredictorDidUpdatedPredictedRoutines:(id)arg1 ;
+-(void)dailyRoutinePredictorDidBeginMorningRoutine:(id)arg1 ;
+-(void)dailyRoutinePredictorDidEndMorningRoutine:(id)arg1 ;
+-(void)dailyRoutinePredictorDidBeginEveningRoutine:(id)arg1 ;
+-(void)dailyRoutinePredictorDidEndEveningRoutine:(id)arg1 ;
+-(BOOL)_isInRoutine:(unsigned long long)arg1 forDate:(id)arg2 ;
+-(void)_updateRoutines;
+-(BOOL)isInMorningRoutine;
+-(BOOL)isInEveningRoutine;
+@end
+

@@ -1,0 +1,40 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:28 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SiriUIActivation.framework/SiriUIActivation
+*/
+
+
+@class NSString;
+
+typedef struct InstrumentationDismissalState {
+	BOOL fluidDismissalSet;
+	BOOL punchedOut;
+	BOOL incomingPhoneCallDetected;
+	BOOL outgoingPhoneCallDetected;
+	NSString* attemptedAppLaunchIdentifier;
+} InstrumentationDismissalState;
+
+typedef struct os_unfair_lock_s {
+	unsigned _os_unfair_lock_opaque;
+} os_unfair_lock_s;
+
+typedef struct CGPoint {
+	double x;
+	double y;
+} CGPoint;
+
+typedef struct CGSize {
+	double width;
+	double height;
+} CGSize;
+
+typedef struct CGRect {
+	CGPoint origin;
+	CGSize size;
+} CGRect;
+
+typedef struct __IOHIDEventSystemClient* IOHIDEventSystemClientRef;
+
+typedef struct __IOHIDEvent* IOHIDEventRef;
+

@@ -1,0 +1,45 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:19 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/IMCore.framework/IMCore
+*/
+
+
+@class NSDictionary, NSArray;
+
+@interface IMServiceAgent : NSObject {
+
+	NSDictionary* _currentAVChatInfo;
+
+}
+
+@property (nonatomic,retain) NSArray * myAvailableMessages; 
+@property (nonatomic,retain) NSArray * myAwayMessages; 
+@property (nonatomic,readonly) unsigned long long vcCapabilities; 
+@property (nonatomic,__weak,readonly) NSDictionary * currentAVChatInfo; 
+@property (nonatomic,readonly) unsigned long long requestAudioReflectorStart; 
+@property (nonatomic,readonly) unsigned long long requestAudioReflectorStop; 
++(id)notificationCenter;
++(void)forgetStatusImageAppearance;
++(id)imageNameForStatus:(unsigned long long)arg1 ;
++(id)imageURLForStatus:(unsigned long long)arg1 ;
++(id)sharedAgent;
++(void)setServiceAgentCapabilities:(long long)arg1 ;
++(long long)serviceAgentCapabilities;
+-(id)notificationCenter;
+-(id)serviceWithName:(id)arg1 ;
+-(unsigned long long)vcCapabilities;
+-(id)myPictureData;
+-(void)setMyStatus:(unsigned long long)arg1 message:(id)arg2 ;
+-(void)launchIfNecessary;
+-(NSArray *)myAvailableMessages;
+-(NSArray *)myAwayMessages;
+-(void)setMyAvailableMessages:(NSArray *)arg1 ;
+-(void)setMyAwayMessages:(NSArray *)arg1 ;
+-(id)serviceWithNameNonBlocking:(id)arg1 ;
+-(NSDictionary *)currentAVChatInfo;
+-(unsigned long long)requestAudioReflectorStart;
+-(unsigned long long)requestAudioReflectorStop;
+-(unsigned long long)requestVideoStillForPerson:(id)arg1 ;
+@end
+

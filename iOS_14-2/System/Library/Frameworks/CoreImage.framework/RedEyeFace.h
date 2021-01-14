@@ -1,0 +1,86 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreImage.framework/CoreImage
+*/
+
+
+@class VNFaceObservation, VNFaceLandmarks2D, CIImage, NSArray, CIVector;
+
+@interface RedEyeFace : NSObject {
+
+	int _imageOrientation;
+	float _faceOrientation;
+	float _junkiness;
+	float _areaMax;
+	VNFaceObservation* _observation;
+	VNFaceLandmarks2D* _landmarks;
+	CIImage* _segmentationSkin;
+	CIImage* _segmentationSclera;
+	CIImage* _segmentationIris;
+	NSArray* _uvLeft;
+	NSArray* _uvRight;
+	CIVector* _faceRect;
+	CIVector* _roiRenderOriginLeft;
+	CIVector* _roiRenderOriginRight;
+	CIVector* _roiRenderSize;
+	CIVector* _pupilLeft;
+	CIVector* _pupilRight;
+
+}
+
+@property (assign,nonatomic) int imageOrientation;                         //@synthesize imageOrientation=_imageOrientation - In the implementation block
+@property (assign,nonatomic) float faceOrientation;                        //@synthesize faceOrientation=_faceOrientation - In the implementation block
+@property (assign,nonatomic) float junkiness;                              //@synthesize junkiness=_junkiness - In the implementation block
+@property (assign,nonatomic) float areaMax;                                //@synthesize areaMax=_areaMax - In the implementation block
+@property (nonatomic,retain) VNFaceObservation * observation;              //@synthesize observation=_observation - In the implementation block
+@property (nonatomic,retain) VNFaceLandmarks2D * landmarks;                //@synthesize landmarks=_landmarks - In the implementation block
+@property (nonatomic,retain) CIImage * segmentationSkin;                   //@synthesize segmentationSkin=_segmentationSkin - In the implementation block
+@property (nonatomic,retain) CIImage * segmentationSclera;                 //@synthesize segmentationSclera=_segmentationSclera - In the implementation block
+@property (nonatomic,retain) CIImage * segmentationIris;                   //@synthesize segmentationIris=_segmentationIris - In the implementation block
+@property (nonatomic,retain) NSArray * uvLeft;                             //@synthesize uvLeft=_uvLeft - In the implementation block
+@property (nonatomic,retain) NSArray * uvRight;                            //@synthesize uvRight=_uvRight - In the implementation block
+@property (nonatomic,retain) CIVector * faceRect;                          //@synthesize faceRect=_faceRect - In the implementation block
+@property (nonatomic,retain) CIVector * roiRenderOriginLeft;               //@synthesize roiRenderOriginLeft=_roiRenderOriginLeft - In the implementation block
+@property (nonatomic,retain) CIVector * roiRenderOriginRight;              //@synthesize roiRenderOriginRight=_roiRenderOriginRight - In the implementation block
+@property (nonatomic,retain) CIVector * roiRenderSize;                     //@synthesize roiRenderSize=_roiRenderSize - In the implementation block
+@property (nonatomic,retain) CIVector * pupilLeft;                         //@synthesize pupilLeft=_pupilLeft - In the implementation block
+@property (nonatomic,retain) CIVector * pupilRight;                        //@synthesize pupilRight=_pupilRight - In the implementation block
+-(int)imageOrientation;
+-(void)setImageOrientation:(int)arg1 ;
+-(CIVector *)faceRect;
+-(id)init;
+-(NSArray *)uvLeft;
+-(float)areaMax;
+-(NSArray *)uvRight;
+-(void)setObservation:(VNFaceObservation *)arg1 ;
+-(void)setFaceRect:(CIVector *)arg1 ;
+-(VNFaceLandmarks2D *)landmarks;
+-(float)junkiness;
+-(CIVector *)pupilLeft;
+-(void)setUvLeft:(NSArray *)arg1 ;
+-(void)setUvRight:(NSArray *)arg1 ;
+-(void)setLandmarks:(VNFaceLandmarks2D *)arg1 ;
+-(void)setRoiRenderSize:(CIVector *)arg1 ;
+-(void)setSegmentationSkin:(CIImage *)arg1 ;
+-(void)setSegmentationSclera:(CIImage *)arg1 ;
+-(void)setSegmentationIris:(CIImage *)arg1 ;
+-(void)setRoiRenderOriginLeft:(CIVector *)arg1 ;
+-(void)setPupilLeft:(CIVector *)arg1 ;
+-(void)setRoiRenderOriginRight:(CIVector *)arg1 ;
+-(void)setPupilRight:(CIVector *)arg1 ;
+-(float)faceOrientation;
+-(void)setFaceOrientation:(float)arg1 ;
+-(void)setJunkiness:(float)arg1 ;
+-(void)setAreaMax:(float)arg1 ;
+-(VNFaceObservation *)observation;
+-(CIImage *)segmentationSkin;
+-(CIImage *)segmentationSclera;
+-(CIImage *)segmentationIris;
+-(CIVector *)roiRenderOriginLeft;
+-(CIVector *)roiRenderSize;
+-(CIVector *)roiRenderOriginRight;
+-(CIVector *)pupilRight;
+-(void)dealloc;
+@end
+

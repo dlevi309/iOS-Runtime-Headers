@@ -1,0 +1,58 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts
+*/
+
+
+@protocol VCVoiceShortcutManagerXPCInterface <NSObject>
+@required
+-(void)unregisterTriggerWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)deleteTriggerWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)sendAceCommandDictionary:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)stopRunningWorkflowWithRunningContext:(id)arg1;
+-(void)checkTriggerStateWithKeyPath:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)getVoiceShortcutsWithCompletion:(/*^block*/id)arg1;
+-(void)getVoiceShortcutWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)setShortcutSuggestions:(id)arg1 forAppWithBundleIdentifier:(id)arg2;
+-(void)setInteger:(long long)arg1 forKey:(id)arg2 inDomain:(id)arg3 completionHandler:(/*^block*/id)arg4;
+-(void)checkTriggerStateWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)resumeWorkflowFromContext:(id)arg1 presentationMode:(unsigned long long)arg2 completion:(/*^block*/id)arg3;
+-(void)dismissPresentedContentWithCompletion:(/*^block*/id)arg1;
+-(void)runWorkflowWithRequest:(id)arg1 context:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)getNumberOfVoiceShortcutsWithCompletion:(/*^block*/id)arg1;
+-(void)getVoiceShortcutWithPhrase:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)getVoiceShortcutsForAppWithBundleIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)addVoiceShortcut:(id)arg1 phrase:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)updateVoiceShortcutWithIdentifier:(id)arg1 phrase:(id)arg2 shortcut:(id)arg3 completion:(/*^block*/id)arg4;
+-(void)deleteVoiceShortcutWithIdentifier:(id)arg1 name:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)requestDataMigration:(/*^block*/id)arg1;
+-(void)getShortcutSuggestionsForAppWithBundleIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)getShortcutSuggestionsForAllAppsWithLimit:(unsigned long long)arg1 completion:(/*^block*/id)arg2;
+-(void)generateSingleUseTokenForWorkflowIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)getShareSheetWorkflowsForExtensionMatchingDictionaries:(id)arg1 hostBundleIdentifier:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)getSiriPodcastsDatabaseURLWithCompletion:(/*^block*/id)arg1;
+-(void)refreshTriggerWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)fireTriggerWithIdentifier:(id)arg1 force:(BOOL)arg2 completion:(/*^block*/id)arg3;
+-(void)enqueueDialogRequest:(id)arg1 runningContext:(id)arg2 completionHandler:(/*^block*/id)arg3;
+-(void)hasRunEventsInTheLast5DaysWithCompletion:(/*^block*/id)arg1;
+-(void)obliterateShortcuts:(/*^block*/id)arg1;
+-(void)createShortcutWithRecordData:(id)arg1 name:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)getResultsForWorkflowQuery:(id)arg1 resultClassName:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)getValueForDescriptor:(id)arg1 resultClassName:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)addDefaultShortcutsIfNecessaryWithCompletion:(/*^block*/id)arg1;
+-(void)resetDefaultShortcutFlagsWithCompletion:(/*^block*/id)arg1;
+-(void)createSleepWorkflow:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)getSleepActionSuggestionsForAllAppsWithOptions:(unsigned long long)arg1 completion:(/*^block*/id)arg2;
+-(void)getSleepActionSuggestionsForAppWithBundleIdentifier:(id)arg1 shouldFilterBySleep:(BOOL)arg2 completion:(/*^block*/id)arg3;
+-(void)getSleepActionSuggestionsForAllAppsFilteringBySleep:(BOOL)arg1 completion:(/*^block*/id)arg2;
+-(void)getSleepActionSuggestionsForAppWithBundleIdentifier:(id)arg1 options:(unsigned long long)arg2 completion:(/*^block*/id)arg3;
+-(void)deleteSleepWorkflowWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)getAccessibilityWorkflowsWithCompletion:(/*^block*/id)arg1;
+-(void)getAccessibilityWorkflowWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)drawGlyphs:(id)arg1 withBackgroundColorValues:(id)arg2 intoContext:(id)arg3 completion:(/*^block*/id)arg4;
+-(void)getFirstUnsortedWorkflowWithCompletion:(/*^block*/id)arg1;
+-(void)getConfiguredTriggerDescriptionsWithCompletion:(/*^block*/id)arg1;
+
+@end
+

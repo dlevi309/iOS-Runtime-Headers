@@ -1,0 +1,147 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:39 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/EventKit.framework/EventKit
+*/
+
+#import <EventKit/EKPersistentObject.h>
+
+@class EKPersistentSource, NSString, NSSet;
+
+@interface EKPersistentCalendar : EKPersistentObject
+
+@property (nonatomic,retain) EKPersistentSource * source; 
+@property (nonatomic,retain) NSString * UUID; 
+@property (nonatomic,copy) NSString * unlocalizedTitle; 
+@property (nonatomic,copy) NSString * externalID; 
+@property (nonatomic,copy) NSString * externalModificationTag; 
+@property (assign,nonatomic) int displayOrder; 
+@property (nonatomic,copy) NSString * colorStringRaw; 
+@property (assign,getter=isColorDisplayOnly,nonatomic) BOOL colorDisplayOnly; 
+@property (nonatomic,copy) NSString * symbolicColorName; 
+@property (assign,nonatomic) int flags; 
+@property (assign,nonatomic) unsigned long long sharingStatus; 
+@property (assign,nonatomic) unsigned long long invitationStatus; 
+@property (nonatomic,copy) NSString * sharedOwnerName; 
+@property (nonatomic,copy) NSString * sharedOwnerURL; 
+@property (assign,nonatomic) unsigned long long sharingInvitationResponse; 
+@property (nonatomic,copy) NSSet * sharees; 
+@property (nonatomic,copy) NSString * publishedURL; 
+@property (assign,getter=isPublished,nonatomic) BOOL published; 
+@property (nonatomic,copy) NSString * selfIdentityDisplayName; 
+@property (nonatomic,copy) NSString * selfIdentityEmail; 
+@property (nonatomic,copy) NSString * selfIdentityPhoneNumber; 
+@property (nonatomic,copy) NSString * selfIdentityAddress; 
+@property (nonatomic,copy) NSString * selfIdentityFirstName; 
+@property (nonatomic,copy) NSString * selfIdentityLastName; 
+@property (nonatomic,copy) NSString * ownerIdentityDisplayName; 
+@property (nonatomic,copy) NSString * ownerIdentityEmail; 
+@property (nonatomic,copy) NSString * ownerIdentityPhoneNumber; 
+@property (nonatomic,copy) NSString * ownerIdentityAddress; 
+@property (nonatomic,copy) NSString * ownerIdentityFirstName; 
+@property (nonatomic,copy) NSString * ownerIdentityLastName; 
+@property (nonatomic,copy) NSString * subcalAccountID; 
+@property (nonatomic,copy) NSString * pushKey; 
++(id)relations;
++(id)defaultPropertiesToLoad;
++(Class)meltedClass;
++(id)calendarWithRandomUUID;
+-(id)notes;
+-(void)setSubscriptionID:(id)arg1 ;
+-(id)refreshDate;
+-(int)entityType;
+-(void)setLastSyncError:(unsigned long long)arg1 ;
+-(id)lastSyncStartDate;
+-(void)setLastSyncErrorData:(id)arg1 ;
+-(id)lastSyncEndDate;
+-(void)setLastSyncStartDate:(id)arg1 ;
+-(id)lastSyncErrorData;
+-(unsigned long long)lastSyncError;
+-(void)setExternalModificationTag:(NSString *)arg1 ;
+-(id)publishURL;
+-(void)setOwnerIdentityLastName:(NSString *)arg1 ;
+-(void)setSharedOwnerURL:(NSString *)arg1 ;
+-(void)setSymbolicColorName:(NSString *)arg1 ;
+-(NSString *)UUID;
+-(void)setOwnerIdentityId:(int)arg1 ;
+-(void)setPublished:(BOOL)arg1 ;
+-(int)ownerIdentityId;
+-(unsigned long long)sharingInvitationResponse;
+-(void)setExternalID:(NSString *)arg1 ;
+-(void)setAllAlarms:(id)arg1 ;
+-(NSString *)unlocalizedTitle;
+-(NSString *)ownerIdentityLastName;
+-(void)setDisplayOrder:(int)arg1 ;
+-(NSSet *)sharees;
+-(void)setSyncToken:(id)arg1 ;
+-(void)setNotes:(id)arg1 ;
+-(id)externalIDTag;
+-(void)setOwnerIdentityPhoneNumber:(NSString *)arg1 ;
+-(NSString *)ownerIdentityAddress;
+-(int)flags;
+-(NSString *)externalID;
+-(BOOL)isColorDisplayOnly;
+-(id)allAlarms;
+-(NSString *)externalModificationTag;
+-(void)setSubcalAccountID:(NSString *)arg1 ;
+-(void)setExternalRepresentation:(id)arg1 ;
+-(void)setDigest:(id)arg1 ;
+-(id)subscriptionID;
+-(void)setSelfIdentityPhoneNumber:(NSString *)arg1 ;
+-(void)setLastSyncEndDate:(id)arg1 ;
+-(NSString *)ownerIdentityDisplayName;
+-(NSString *)selfIdentityPhoneNumber;
+-(void)setUnlocalizedTitle:(NSString *)arg1 ;
+-(NSString *)ownerIdentityPhoneNumber;
+-(NSString *)ownerIdentityEmail;
+-(void)setSource:(EKPersistentSource *)arg1 ;
+-(void)setColorDisplayOnly:(BOOL)arg1 ;
+-(NSString *)selfIdentityLastName;
+-(id)description;
+-(NSString *)colorStringRaw;
+-(void)setSelfIdentityFirstName:(NSString *)arg1 ;
+-(NSString *)sharedOwnerName;
+-(void)setColorStringRaw:(NSString *)arg1 ;
+-(int)displayOrder;
+-(void)setSharingInvitationResponse:(unsigned long long)arg1 ;
+-(NSString *)symbolicColorName;
+-(void)setRefreshDate:(id)arg1 ;
+-(void)setIsPublished:(BOOL)arg1 ;
+-(void)setFlags:(int)arg1 ;
+-(NSString *)ownerIdentityFirstName;
+-(void)setSelfIdentityLastName:(NSString *)arg1 ;
+-(void)setPublishURL:(id)arg1 ;
+-(id)externalRepresentation;
+-(void)setNotifications:(id)arg1 ;
+-(void)setOwnerIdentityEmail:(NSString *)arg1 ;
+-(NSString *)selfIdentityEmail;
+-(BOOL)isPublished;
+-(void)setSelfIdentityEmail:(NSString *)arg1 ;
+-(unsigned long long)sharingStatus;
+-(void)setInvitationStatus:(unsigned long long)arg1 ;
+-(id)syncToken;
+-(NSString *)selfIdentityDisplayName;
+-(int)allowedEntities;
+-(void)setSelfIdentityDisplayName:(NSString *)arg1 ;
+-(unsigned long long)invitationStatus;
+-(NSString *)selfIdentityAddress;
+-(void)setOwnerIdentityDisplayName:(NSString *)arg1 ;
+-(void)setUUID:(NSString *)arg1 ;
+-(void)setPushKey:(NSString *)arg1 ;
+-(id)notifications;
+-(id)digest;
+-(void)setSharingStatus:(unsigned long long)arg1 ;
+-(NSString *)subcalAccountID;
+-(NSString *)pushKey;
+-(void)setOwnerIdentityAddress:(NSString *)arg1 ;
+-(void)setSharedOwnerName:(NSString *)arg1 ;
+-(NSString *)sharedOwnerURL;
+-(NSString *)selfIdentityFirstName;
+-(void)setOwnerIdentityFirstName:(NSString *)arg1 ;
+-(void)setAllowedEntities:(int)arg1 ;
+-(EKPersistentSource *)source;
+-(void)setSelfIdentityAddress:(NSString *)arg1 ;
+-(void)setExternalIDTag:(id)arg1 ;
+-(void)setSharees:(NSSet *)arg1 ;
+@end
+

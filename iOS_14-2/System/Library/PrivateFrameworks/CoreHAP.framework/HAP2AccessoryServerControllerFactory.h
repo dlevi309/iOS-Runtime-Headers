@@ -1,0 +1,27 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:32 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP
+*/
+
+#import <CoreHAP/HAP2LoggingObject.h>
+#import <libobjc.A.dylib/HAP2AccessoryServerControllerFactory.h>
+
+@protocol HAP2AccessoryServerControllerFactory <NSObject>
+@required
+-(id)createControllerWithEncoding:(id)arg1 secureTransport:(id)arg2 operationQueue:(id)arg3;
+
+@end
+
+
+@class NSString;
+
+@interface HAP2AccessoryServerControllerFactory : HAP2LoggingObject <HAP2AccessoryServerControllerFactory>
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)createControllerWithEncoding:(id)arg1 secureTransport:(id)arg2 operationQueue:(id)arg3 ;
+@end
+

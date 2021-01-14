@@ -1,0 +1,56 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:03 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
+*/
+
+
+@protocol VSStateMachineDelegate;
+@class NSString, VSOptional, NSOperationQueue, NSMutableArray, NSMutableDictionary;
+
+@interface VSStateMachine : NSObject {
+
+	int _mode;
+	NSString* _name;
+	VSOptional* _currentState;
+	id<VSStateMachineDelegate> _delegate;
+	NSOperationQueue* _transitionQueue;
+	NSMutableArray* _enqueuedTransitions;
+	NSMutableDictionary* _transitionTable;
+	NSMutableDictionary* _ignoredEventsByState;
+
+}
+
+@property (nonatomic,retain) NSOperationQueue * transitionQueue;                      //@synthesize transitionQueue=_transitionQueue - In the implementation block
+@property (nonatomic,retain) VSOptional * currentState;                               //@synthesize currentState=_currentState - In the implementation block
+@property (nonatomic,retain) NSMutableArray * enqueuedTransitions;                    //@synthesize enqueuedTransitions=_enqueuedTransitions - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * transitionTable;                   //@synthesize transitionTable=_transitionTable - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * ignoredEventsByState;              //@synthesize ignoredEventsByState=_ignoredEventsByState - In the implementation block
+@property (nonatomic,copy) NSString * name;                                           //@synthesize name=_name - In the implementation block
+@property (assign,nonatomic,__weak) id<VSStateMachineDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+-(void)setCurrentState:(VSOptional *)arg1 ;
+-(id)init;
+-(VSOptional *)currentState;
+-(id<VSStateMachineDelegate>)delegate;
+-(NSMutableDictionary *)transitionTable;
+-(NSString *)name;
+-(void)setDelegate:(id<VSStateMachineDelegate>)arg1 ;
+-(id)description;
+-(void)setName:(NSString *)arg1 ;
+-(void)enqueueEvent:(id)arg1 ;
+-(NSMutableArray *)enqueuedTransitions;
+-(void)setEnqueuedTransitions:(NSMutableArray *)arg1 ;
+-(NSOperationQueue *)transitionQueue;
+-(void)_exitingState:(id)arg1 ;
+-(void)_enteringState:(id)arg1 ;
+-(NSMutableDictionary *)ignoredEventsByState;
+-(void)_setDestinationState:(id)arg1 forEvent:(id)arg2 inState:(id)arg3 ignoringEvent:(BOOL)arg4 ;
+-(void)_handleEnqueuedTransitions;
+-(void)ignoreEvent:(id)arg1 inState:(id)arg2 ;
+-(void)setDestinationState:(id)arg1 forEvent:(id)arg2 inState:(id)arg3 ;
+-(void)activateWithState:(id)arg1 ;
+-(void)setTransitionQueue:(NSOperationQueue *)arg1 ;
+-(void)setTransitionTable:(NSMutableDictionary *)arg1 ;
+-(void)setIgnoredEventsByState:(NSMutableDictionary *)arg1 ;
+@end
+

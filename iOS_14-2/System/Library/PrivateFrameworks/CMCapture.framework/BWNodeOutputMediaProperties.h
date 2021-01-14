@@ -1,0 +1,77 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:49 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture
+*/
+
+
+@class NSString, BWNodeOutput, BWFormat, BWPixelBufferPool, BWDataBufferPool, BWVideoFormat, BWPointCloudFormat;
+
+@interface BWNodeOutputMediaProperties : NSObject {
+
+	NSString* _associatedAttachedMediaKey;
+	BWNodeOutput* _owningNodeOutput;
+	BWFormat* _resolvedFormat;
+	BWFormat* _liveFormat;
+	BWPixelBufferPool* _preparedPixelBufferPool;
+	BWPixelBufferPool* _livePixelBufferPool;
+	int _preparedPixelBufferPoolSize;
+	int _livePixelBufferPoolSize;
+	BWDataBufferPool* _preparedDataBufferPool;
+	BWDataBufferPool* _liveDataBufferPool;
+	int _preparedDataBufferPoolSize;
+	int _liveDataBufferPoolSize;
+	int _resolvedRetainedBufferCount;
+	unsigned _mediaType;
+
+}
+
+@property (nonatomic,retain) BWFormat * liveFormat;                                        //@synthesize liveFormat=_liveFormat - In the implementation block
+@property (nonatomic,readonly) unsigned mediaType;                                         //@synthesize mediaType=_mediaType - In the implementation block
+@property (nonatomic,retain) BWFormat * resolvedFormat; 
+@property (nonatomic,retain) BWPixelBufferPool * preparedPixelBufferPool;                  //@synthesize preparedPixelBufferPool=_preparedPixelBufferPool - In the implementation block
+@property (assign,nonatomic) int preparedPixelBufferPoolSize;                              //@synthesize preparedPixelBufferPoolSize=_preparedPixelBufferPoolSize - In the implementation block
+@property (nonatomic,retain) BWPixelBufferPool * livePixelBufferPool; 
+@property (assign,nonatomic) int livePixelBufferPoolSize;                                  //@synthesize livePixelBufferPoolSize=_livePixelBufferPoolSize - In the implementation block
+@property (nonatomic,retain) BWDataBufferPool * preparedDataBufferPool;                    //@synthesize preparedDataBufferPool=_preparedDataBufferPool - In the implementation block
+@property (assign,nonatomic) int preparedDataBufferPoolSize;                               //@synthesize preparedDataBufferPoolSize=_preparedDataBufferPoolSize - In the implementation block
+@property (nonatomic,retain) BWDataBufferPool * liveDataBufferPool; 
+@property (assign,nonatomic) int liveDataBufferPoolSize;                                   //@synthesize liveDataBufferPoolSize=_liveDataBufferPoolSize - In the implementation block
+@property (nonatomic,readonly) BWVideoFormat * resolvedVideoFormat; 
+@property (nonatomic,readonly) BWPointCloudFormat * resolvedPointCloudFormat; 
+@property (assign,nonatomic) int resolvedRetainedBufferCount;                              //@synthesize resolvedRetainedBufferCount=_resolvedRetainedBufferCount - In the implementation block
+@property (nonatomic,readonly) BWVideoFormat * liveVideoFormat; 
+-(void)setPreparedSharedPixelBufferPool:(id)arg1 ;
+-(BWPixelBufferPool *)livePixelBufferPool;
+-(void)setLiveDataBufferPoolSize:(int)arg1 ;
+-(unsigned)mediaType;
+-(void)setPreparedPixelBufferPool:(BWPixelBufferPool *)arg1 ;
+-(BWFormat *)liveFormat;
+-(int)liveDataBufferPoolSize;
+-(int)preparedPixelBufferPoolSize;
+-(void)_setOwningNodeOutput:(id)arg1 associatedAttachedMediaKey:(id)arg2 ;
+-(int)resolvedRetainedBufferCount;
+-(int)preparedDataBufferPoolSize;
+-(void)setNodePreparedPixelBufferPool:(id)arg1 ;
+-(void)setResolvedRetainedBufferCount:(int)arg1 ;
+-(void)setPreparedSharedDataBufferPool:(id)arg1 ;
+-(BWPixelBufferPool *)preparedPixelBufferPool;
+-(BWDataBufferPool *)preparedDataBufferPool;
+-(void)setResolvedFormat:(BWFormat *)arg1 ;
+-(void)setLivePixelBufferPool:(BWPixelBufferPool *)arg1 ;
+-(BWPointCloudFormat *)resolvedPointCloudFormat;
+-(void)setPreparedPixelBufferPoolSize:(int)arg1 ;
+-(BWVideoFormat *)resolvedVideoFormat;
+-(void)setLivePixelBufferPoolSize:(int)arg1 ;
+-(void)setLiveDataBufferPool:(BWDataBufferPool *)arg1 ;
+-(void)setPreparedDataBufferPoolSize:(int)arg1 ;
+-(void)setLiveFormat:(BWFormat *)arg1 ;
+-(int)livePixelBufferPoolSize;
+-(BWFormat *)resolvedFormat;
+-(BWVideoFormat *)liveVideoFormat;
+-(void)setPreparedDataBufferPool:(BWDataBufferPool *)arg1 ;
+-(void)setNodePreparedDataBufferPool:(id)arg1 ;
+-(void)dealloc;
+-(BWDataBufferPool *)liveDataBufferPool;
+@end
+

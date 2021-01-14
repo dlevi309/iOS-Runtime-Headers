@@ -1,0 +1,134 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:34 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
+*/
+
+#import <PhotosUICore/PhotosUICore-Structs.h>
+#import <libobjc.A.dylib/PXDisplayCollection.h>
+
+@class NSString;
+
+@interface PXBaseDisplayCollection : NSObject <PXDisplayCollection>
+
+@property (nonatomic,readonly) BOOL canContainAssets; 
+@property (nonatomic,readonly) BOOL canContainCollections; 
+@property (nonatomic,readonly) NSString * localizedTitle; 
+@property (nonatomic,readonly) BOOL px_allowsImplicitSelectionForProjectOrSharingAction; 
+@property (nonatomic,readonly) BOOL px_canRearrangeContent; 
+@property (nonatomic,readonly) BOOL px_canAddContent; 
+@property (nonatomic,readonly) BOOL px_isUserCreated; 
+@property (nonatomic,readonly) BOOL px_isRegularAlbum; 
+@property (nonatomic,readonly) BOOL px_isStandInAlbum; 
+@property (nonatomic,readonly) BOOL px_isImportedAlbum; 
+@property (nonatomic,readonly) BOOL px_isMyPhotoStreamAlbum; 
+@property (nonatomic,readonly) BOOL px_isUserSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isRootSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isMediaTypeSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isAllPhotosSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isFavoritesSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isPlacesSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isHiddenSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isRecentlyAddedSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isRecentlyDeletedSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isRecentsSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isRecentlyEditedSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isScreenRecordingsSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isPanoramasSmartAlbum; 
+@property (nonatomic,readonly) BOOL px_isMoment; 
+@property (nonatomic,readonly) BOOL px_isHighlight; 
+@property (nonatomic,readonly) BOOL px_isSuggestion; 
+@property (nonatomic,readonly) BOOL px_isSharedAlbum; 
+@property (nonatomic,readonly) BOOL px_isOwnedSharedAlbum; 
+@property (nonatomic,readonly) BOOL px_isCloudMultipleContributorsEnabled; 
+@property (nonatomic,readonly) BOOL px_isInReadWriteCloudLibrary; 
+@property (nonatomic,readonly) BOOL px_isFolder; 
+@property (nonatomic,readonly) BOOL px_isRegularFolder; 
+@property (nonatomic,readonly) BOOL px_isSmartFolder; 
+@property (nonatomic,readonly) BOOL px_isFavoriteMemoriesSmartFolder; 
+@property (nonatomic,readonly) BOOL px_isTopLevelFolder; 
+@property (nonatomic,readonly) BOOL px_isSharedAlbumsFolder; 
+@property (nonatomic,readonly) BOOL px_isSharedAlbumsAndActivityFolder; 
+@property (nonatomic,readonly) BOOL px_isMediaTypesFolder; 
+@property (nonatomic,readonly) BOOL px_isProjectsFolder; 
+@property (nonatomic,readonly) BOOL px_isMacSyncedAlbum; 
+@property (nonatomic,readonly) BOOL px_isMacSyncedEventsFolder; 
+@property (nonatomic,readonly) BOOL px_isMacSyncedFacesFolder; 
+@property (nonatomic,readonly) BOOL px_isProject; 
+@property (nonatomic,readonly) BOOL px_isPhotosVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isMomentsVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isMemoriesVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isForYouVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isPeopleVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isSharedActivityVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isTransientPlacesCollection; 
+@property (nonatomic,readonly) BOOL px_isImportHistoryCollection; 
+@property (nonatomic,readonly) BOOL px_isMyAlbumsVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isSharedAlbumsVirtualCollection; 
+@property (nonatomic,readonly) BOOL px_isImportSessionCollection; 
+@property (nonatomic,readonly) id px_cheapLogIdentifier; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(NSString *)localizedTitle;
+-(BOOL)px_isSuggestion;
+-(BOOL)px_canRearrangeContent;
+-(BOOL)px_canAddContent;
+-(BOOL)px_allowsImplicitSelectionForProjectOrSharingAction;
+-(BOOL)px_isUserCreated;
+-(BOOL)px_isRegularAlbum;
+-(BOOL)px_isMyPhotoStreamAlbum;
+-(BOOL)px_isSmartAlbum;
+-(BOOL)px_isRootSmartAlbum;
+-(BOOL)px_isMediaTypeSmartAlbum;
+-(BOOL)px_isFavoritesSmartAlbum;
+-(BOOL)px_isHighlight;
+-(BOOL)px_isRecentlyAddedSmartAlbum;
+-(BOOL)px_isRecentlyEditedSmartAlbum;
+-(BOOL)px_isScreenRecordingsSmartAlbum;
+-(BOOL)px_isCloudMultipleContributorsEnabled;
+-(BOOL)px_isInReadWriteCloudLibrary;
+-(BOOL)px_isRegularFolder;
+-(BOOL)px_isSharedAlbumsAndActivityFolder;
+-(BOOL)px_isMediaTypesFolder;
+-(BOOL)px_isProjectsFolder;
+-(BOOL)px_isProject;
+-(BOOL)px_isPhotosVirtualCollection;
+-(BOOL)px_isMomentsVirtualCollection;
+-(BOOL)px_isForYouVirtualCollection;
+-(BOOL)px_isSharedActivityVirtualCollection;
+-(BOOL)px_isImportSessionCollection;
+-(id)px_cheapLogIdentifier;
+-(BOOL)px_isRecentsSmartAlbum;
+-(BOOL)px_isAllPhotosSmartAlbum;
+-(BOOL)px_isPlacesSmartAlbum;
+-(BOOL)px_isPeopleVirtualCollection;
+-(BOOL)px_isImportHistoryCollection;
+-(BOOL)px_isPanoramasSmartAlbum;
+-(BOOL)px_isTransientPlacesCollection;
+-(BOOL)px_isMacSyncedAlbum;
+-(BOOL)px_isMacSyncedEventsFolder;
+-(BOOL)px_isMacSyncedFacesFolder;
+-(BOOL)px_isSharedAlbum;
+-(BOOL)px_isFolder;
+-(BOOL)px_isFavoriteMemoriesSmartFolder;
+-(BOOL)px_isRecentlyDeletedSmartAlbum;
+-(BOOL)px_isHiddenSmartAlbum;
+-(BOOL)px_isStandInAlbum;
+-(BOOL)px_isSharedAlbumsVirtualCollection;
+-(BOOL)px_isMyAlbumsVirtualCollection;
+-(BOOL)px_isOwnedSharedAlbum;
+-(BOOL)px_isUserSmartAlbum;
+-(BOOL)px_isImportedAlbum;
+-(BOOL)canContainAssets;
+-(BOOL)px_isSmartFolder;
+-(BOOL)px_isMemoriesVirtualCollection;
+-(BOOL)px_isSharedAlbumsFolder;
+-(BOOL)px_isTopLevelFolder;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)canContainCollections;
+-(BOOL)px_isMoment;
+@end
+

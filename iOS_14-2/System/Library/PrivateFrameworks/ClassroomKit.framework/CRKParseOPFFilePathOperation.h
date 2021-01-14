@@ -1,0 +1,30 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ClassroomKit.framework/ClassroomKit
+*/
+
+#import <Catalyst/CATOperation.h>
+#import <libobjc.A.dylib/NSXMLParserDelegate.h>
+
+@class NSXMLParser, NSString;
+
+@interface CRKParseOPFFilePathOperation : CATOperation <NSXMLParserDelegate> {
+
+	NSXMLParser* mContainerParser;
+	NSString* mBookFilePath;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(BOOL)isAsynchronous;
+-(void)main;
+-(void)parser:(id)arg1 parseErrorOccurred:(id)arg2 ;
+-(void)parserDidEndDocument:(id)arg1 ;
+-(void)parser:(id)arg1 didStartElement:(id)arg2 namespaceURI:(id)arg3 qualifiedName:(id)arg4 attributes:(id)arg5 ;
+-(id)initWithBookFilePath:(id)arg1 ;
+@end
+

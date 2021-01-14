@@ -1,0 +1,178 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/Foundation.framework/Foundation
+*/
+
+
+@class NSString, NSSet, NSDictionary, NSDate, NSUUID, UAUserActivity, NSURL;
+
+@interface NSUserActivity : NSObject {
+
+	id _internal;
+	id _delegate;
+	id _frameworkDelegate;
+
+}
+
+@property (setter=_setSubtitle:,copy) NSString * _subtitle; 
+@property (setter=_setMinimalRequiredUserInfoKeys:,copy) NSSet * _minimalRequiredUserInfoKeys; 
+@property (setter=_setContentType:,copy) NSString * _contentType; 
+@property (setter=_setContentUserAction:,copy) NSString * _contentUserAction; 
+@property (setter=_setContentAttributes:,copy) NSDictionary * _contentAttributes; 
+@property (setter=_setKeywords:,copy) NSSet * _keywords; 
+@property (setter=_setContentIdentifier:,copy) NSString * _contentIdentifier; 
+@property (setter=_setExpirationDate:,copy) NSDate * _expirationDate; 
+@property (setter=_setEligibleForUserActivityHandoff:,getter=_isEligibleForUserActivityHandoff) BOOL _eligibleForUserActivityHandoff; 
+@property (setter=_setEligibleForUserActivityIndexing:,getter=_isEligibleForUserActivityIndexing) BOOL _eligibleForUserActivityIndexing; 
+@property (setter=_setEligibleForUserActivityReminders:,getter=_isEligibleForUserActivityReminders) BOOL _eligibleForUserActivityReminders; 
+@property (setter=_setEligibleForUserActivityPublicIndexing:,getter=_isEligibleForUserActivityPublicIndexing) BOOL _eligibleForUserActivityPublicIndexing; 
+@property (copy,readonly) NSString * _teamIdentifier; 
+@property (retain,readonly) NSUUID * _uniqueIdentifier; 
+@property (readonly) long long _suggestedActionType; 
+@property (copy,readonly) NSDate * _lastActivityDate; 
+@property (setter=_setOptions:,copy) NSDictionary * _options; 
+@property (setter=_setFrameworkPayload:,copy) NSDictionary * _frameworkPayload; 
+@property (setter=_setFrameworkDelegate:,__weak) id<NSUserActivityDelegate> _frameworkDelegate; 
+@property (retain,readonly) UAUserActivity * _internalUserActivity;                                                                                                     //@synthesize internal=_internal - In the implementation block
+@property (copy,readonly) NSString * activityType; 
+@property (copy) NSString * title; 
+@property (copy) NSDictionary * userInfo; 
+@property (copy) NSSet * requiredUserInfoKeys; 
+@property (assign) BOOL needsSave; 
+@property (copy) NSURL * webpageURL; 
+@property (copy) NSURL * referrerURL; 
+@property (copy) NSDate * expirationDate; 
+@property (copy) NSSet * keywords; 
+@property (assign) BOOL supportsContinuationStreams; 
+@property (__weak) id<NSUserActivityDelegate> delegate; 
+@property (copy) NSString * targetContentIdentifier; 
+@property (getter=isEligibleForHandoff) BOOL eligibleForHandoff; 
+@property (getter=isEligibleForSearch) BOOL eligibleForSearch; 
+@property (getter=isEligibleForPublicIndexing) BOOL eligibleForPublicIndexing; 
+@property (getter=isEligibleForPrediction) BOOL eligibleForPrediction; 
+@property (copy) NSString * persistentIdentifier; 
++(id)_fetchUserActivityWithUUID:(id)arg1 intervalToWaitForDocumentSynchronizationToComplete:(double)arg2 completionHandler:(/*^block*/id)arg3 ;
++(BOOL)_currentUserActivityUUIDWithOptions:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
++(id)_userFacingErrorForLaunchServicesError:(id)arg1 userInfo:(id)arg2 ;
++(void)_unregisterUserActivityType:(id)arg1 dynamicActivityType:(id)arg2 ;
++(void)_registerUserActivityType:(id)arg1 dynamicActivityType:(id)arg2 ;
++(void)_fetchUserActivityWithUUID:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
++(void)deleteAllSavedUserActivitiesWithCompletionHandler:(/*^block*/id)arg1 ;
++(BOOL)_supportsUserActivityAppLinks;
++(id)_currentUserActivityUUID;
++(void)deleteSavedUserActivitiesWithPersistentIdentifiers:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)resignCurrent;
+-(void)setUserInfo:(NSDictionary *)arg1 ;
+-(NSString *)targetContentIdentifier;
+-(id)_determineMatchingApplicationBundleIdentifierWithOptions:(id)arg1 ;
+-(NSString *)_teamIdentifier;
+-(NSURL *)webpageURL;
+-(void)setTargetContentIdentifier:(NSString *)arg1 ;
+-(NSString *)_contentType;
+-(BOOL)_createUserActivityDataWithOptions:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)_setOptions:(id)arg1 ;
+-(id)initWithActivityType:(id)arg1 ;
+-(void)_prepareUserActivityForLaunchingWithOptions:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)setExpirationDate:(NSDate *)arg1 ;
+-(id)_initWithUserActivityStrings:(id)arg1 secondaryString:(id)arg2 optionalData:(id)arg3 ;
+-(void)setKeywords:(NSSet *)arg1 ;
+-(NSDictionary *)userInfo;
+-(id)contentUserAction;
+-(BOOL)_createUserActivityStringsWithOptions:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(id)_determineMatchingApplicationBundleIdentfierWithOptions:(id)arg1 ;
+-(id)_initWithUserActivityType:(id)arg1 dynamicActivityType:(id)arg2 options:(id)arg3 ;
+-(NSString *)activityType;
+-(id)_initWithTypeIdentifier:(id)arg1 suggestedActionType:(long long)arg2 options:(id)arg3 ;
+-(NSDictionary *)_options;
+-(id)init;
+-(void)didReceiveInputStream:(id)arg1 outputStream:(id)arg2 ;
+-(NSSet *)keywords;
+-(NSDate *)_expirationDate;
+-(id<NSUserActivityDelegate>)delegate;
+-(NSSet *)_keywords;
+-(void)setEligibleForHandoff:(BOOL)arg1 ;
+-(void)setWebpageURL:(NSURL *)arg1 ;
+-(id)typeIdentifier;
+-(void)_setExpirationDate:(id)arg1 ;
+-(BOOL)_isEligibleForUserActivityPublicIndexing;
+-(void)_setEligibleForUserActivityPublicIndexing:(BOOL)arg1 ;
+-(id)contentType;
+-(BOOL)isEligibleForSearch;
+-(BOOL)_isEligibleForUserActivityIndexing;
+-(void)_setEligibleForUserActivityIndexing:(BOOL)arg1 ;
+-(void)_updateFrameworkPayloadValue:(id)arg1 forKey:(id)arg2 ;
+-(BOOL)isEligibleForPublicIndexing;
+-(void)setTitle:(NSString *)arg1 ;
+-(void)_setEligibleForUserActivityHandoff:(BOOL)arg1 ;
+-(void)_setMinimalRequiredUserInfoKeys:(id)arg1 ;
+-(BOOL)_isEligibleForUserActivityReminders;
+-(void)_removeFrameworkPayloadValueForKey:(id)arg1 ;
+-(void)_setEligibleForUserActivityReminders:(BOOL)arg1 ;
+-(id)webPageURL;
+-(void)_setSubtitle:(id)arg1 ;
+-(BOOL)_isEligibleForUserActivityHandoff;
+-(void)setPersistentIdentifier:(NSString *)arg1 ;
+-(id)contentAttributes;
+-(NSString *)persistentIdentifier;
+-(id)contentAttributeSet;
+-(void)setDelegate:(id<NSUserActivityDelegate>)arg1 ;
+-(BOOL)needsSave;
+-(id)initWithInternalUserActivity:(id)arg1 ;
+-(void)setContentAttributeSet:(id)arg1 ;
+-(void)_setKeywords:(id)arg1 ;
+-(NSSet *)_minimalRequiredUserInfoKeys;
+-(void)_updateUserInfoValue:(id)arg1 forKey:(id)arg2 ;
+-(void)_removeUserInfoValueForKey:(id)arg1 ;
+-(NSDate *)expirationDate;
+-(void)becomeCurrent;
+-(void)_setContentType:(id)arg1 ;
+-(void)setWebPageURL:(id)arg1 ;
+-(long long)_suggestedActionType;
+-(id)_initWithUserActivityData:(id)arg1 ;
+-(NSDictionary *)_frameworkPayload;
+-(NSDate *)_lastActivityDate;
+-(void)setRequiredUserInfoKeys:(NSSet *)arg1 ;
+-(void)_resignCurrent;
+-(UAUserActivity *)_internalUserActivity;
+-(void)_setFrameworkPayload:(id)arg1 ;
+-(void)_setLastActivityDate:(id)arg1 ;
+-(BOOL)isEligibleForPrediction;
+-(id)initWithTypeIdentifier:(id)arg1 ;
+-(void)didSynchronizeActivity;
+-(void)_setContentUserAction:(id)arg1 ;
+-(void)_setContentIdentifier:(id)arg1 ;
+-(void)_setContentAttributes:(id)arg1 ;
+-(void)_addKeywordsFromArray:(id)arg1 ;
+-(void)_setFrameworkDelegate:(id)arg1 ;
+-(id)_parentUserActivity;
+-(unsigned long long)hash;
+-(void)setEligibleForSearch:(BOOL)arg1 ;
+-(id<NSUserActivityDelegate>)_frameworkDelegate;
+-(void)getContinuationStreamsWithCompletionHandler:(/*^block*/id)arg1 ;
+-(NSString *)_contentUserAction;
+-(NSURL *)referrerURL;
+-(NSString *)_contentIdentifier;
+-(NSDictionary *)_contentAttributes;
+-(void)setEligibleForPrediction:(BOOL)arg1 ;
+-(void)invalidate;
+-(void)willSynchronizeActivity;
+-(void)_setParentUserActivity:(id)arg1 ;
+-(void)setContentType:(id)arg1 ;
+-(void)setContentAttributes:(id)arg1 ;
+-(NSSet *)requiredUserInfoKeys;
+-(BOOL)isEligibleForHandoff;
+-(void)setNeedsSave:(BOOL)arg1 ;
+-(NSString *)_subtitle;
+-(void)addUserInfoEntriesFromDictionary:(id)arg1 ;
+-(void)setEligibleForPublicIndexing:(BOOL)arg1 ;
+-(NSUUID *)_uniqueIdentifier;
+-(BOOL)supportsContinuationStreams;
+-(void)setReferrerURL:(NSURL *)arg1 ;
+-(void)setContentUserAction:(id)arg1 ;
+-(NSString *)title;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)dealloc;
+-(void)setSupportsContinuationStreams:(BOOL)arg1 ;
+@end
+

@@ -1,0 +1,162 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:21 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard
+*/
+
+#import <SpringBoard/SpringBoard-Structs.h>
+#import <SpringBoard/SBGestureSwitcherModifier.h>
+#import <libobjc.A.dylib/SBHomeGestureDockSwitcherModifierDelegate.h>
+#import <libobjc.A.dylib/SBHomeGestureFinalDestinationSwitcherModifierDelegate.h>
+
+@class UIViewFloatAnimatableProperty, CADisplayLink, SBSwitcherModifier, SBCoplanarSwitcherModifier, SBHomeGestureDockSwitcherModifier, SBHomeGestureFinalDestinationSwitcherModifier, SBDismissSiriSwitcherModifier, SBAppLayout, NSString;
+
+@interface SBHomeGestureSwitcherModifier : SBGestureSwitcherModifier <SBHomeGestureDockSwitcherModifierDelegate, SBHomeGestureFinalDestinationSwitcherModifierDelegate> {
+
+	BOOL _inMultitasking;
+	UIViewFloatAnimatableProperty* _inMultitaskingChangedProperty;
+	CGPoint _touchOffset;
+	double _lastFrameOffsetX;
+	double _lastTranslationXForRubberbanding;
+	double _translationXLostToRubberbanding;
+	BOOL _hasTriggeredCardFlyIn;
+	double _translationYWhenTriggeredCardFlyIn;
+	BOOL _hasBecomeCoplanarSinceGestureFromSwitcherBegan;
+	CGPoint _gestureLiftOffVelocity;
+	CGPoint _gestureLiftOffTranslation;
+	CGPoint _translationAdjustmentForStartingFromSwitcher;
+	CGPoint _translationAdjustmentForStartingFromHomeScreen;
+	double _progressToInSwitcherCardScale;
+	double _progressToMaxTranslation;
+	CGPoint _translation;
+	CGPoint _velocity;
+	double _stackedProgress;
+	CGPoint _initialCentroid;
+	CGPoint _centroid;
+	CGPoint _centroidAdjustment;
+	double _absoluteScale;
+	CGPoint _translationWithoutScale;
+	CADisplayLink* _displayLink;
+	double _lastTouchTimestamp;
+	long long _gestureHoldTimer;
+	CGPoint _initialTouchLocation;
+	CGPoint _lastTouchLocation;
+	BOOL _everTranslatedUpwards;
+	BOOL _cancelledGestureForEmptySwitcher;
+	double _toHomeScreenAlpha;
+	double _toHomeScreenBlurProgress;
+	double _toHomeScreenDimmingAlpha;
+	BOOL _didWarmupFlyInHaptic;
+	BOOL _didPlayFlyInHaptic;
+	BOOL _gestureHasBegun;
+	BOOL _gestureHasEnded;
+	SBSwitcherModifier* _multitaskingModifier;
+	SBCoplanarSwitcherModifier* _coplanarLayoutModifier;
+	SBHomeGestureDockSwitcherModifier* _dockModifier;
+	SBHomeGestureFinalDestinationSwitcherModifier* _finalDestinationModifier;
+	SBDismissSiriSwitcherModifier* _dismissSiriModifier;
+	SBAppLayout* _selectedAppLayout;
+	long long _startingEnvironmentMode;
+	BOOL _scrunchInitiated;
+	BOOL _continuingGesture;
+	BOOL _lastGestureWasAnArcSwipe;
+	BOOL _shouldResignActive;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)animationAttributesForLayoutElement:(id)arg1 ;
+-(double)opacityForIndex:(unsigned long long)arg1 ;
+-(BOOL)isSwitcherWindowVisible;
+-(BOOL)isHomeScreenContentRequired;
+-(long long)homeScreenBackdropBlurType;
+-(id)visibleAppLayouts;
+-(id)appLayoutsToCacheSnapshots;
+-(UIRectCornerRadii)cardCornerRadiiForIndex:(unsigned long long)arg1 ;
+-(BOOL)isSwitcherWindowUserInteractionEnabled;
+-(id)liveContentRasterizationAttributesForAppLayout:(id)arg1 ;
+-(double)titleAndIconOpacityForIndex:(unsigned long long)arg1 ;
+-(CGRect)frameForIndex:(unsigned long long)arg1 ;
+-(long long)wallpaperStyle;
+-(double)homeScreenDimmingAlpha;
+-(double)_switcherCardScale;
+-(NSString *)debugDescription;
+-(double)wallpaperScale;
+-(id)keyboardSuppressionMode;
+-(void)_displayLinkFired:(id)arg1 ;
+-(double)lighteningAlphaForIndex:(unsigned long long)arg1 ;
+-(void)didMoveToParentModifier:(id)arg1 ;
+-(double)titleOpacityForIndex:(unsigned long long)arg1 ;
+-(id)handleSwitcherSettingsChangedEvent:(id)arg1 ;
+-(double)homeScreenBackdropBlurProgress;
+-(double)shadowOpacityForIndex:(unsigned long long)arg1 ;
+-(id)handleRemovalEvent:(id)arg1 ;
+-(id)appLayoutsToResignActive;
+-(id)handleMainTransitionEvent:(id)arg1 ;
+-(BOOL)isWallpaperRequiredForSwitcher;
+-(BOOL)isContainerStatusBarVisible;
+-(void)_applyPrototypeSettings;
+-(double)wallpaperOverlayAlphaForIndex:(unsigned long long)arg1 ;
+-(BOOL)isContentStatusBarVisibleForIndex:(unsigned long long)arg1 ;
+-(double)scaleForIndex:(unsigned long long)arg1 ;
+-(double)homeScreenScale;
+-(double)darkeningAlphaForIndex:(unsigned long long)arg1 ;
+-(double)homeScreenAlpha;
+-(id)appLayoutsToCacheFullsizeSnapshots;
+-(void)dealloc;
+-(id)selectedAppLayout;
+-(id)handleGestureEvent:(id)arg1 ;
+-(id)_newDockModifierRequiringVerticalSwipeToTrackDock:(BOOL)arg1 startingEnvironmentMode:(long long)arg2 ;
+-(double)_distanceYToInSwitcherCardScale;
+-(id)handleHomeGestureSettingsChangedEvent:(id)arg1 ;
+-(id)_updateForGestureDidBeginWithEvent:(id)arg1 ;
+-(id)_updateForGestureDidChangeWithEvent:(id)arg1 ;
+-(id)_updateForGestureDidEndWithEvent:(id)arg1 ;
+-(void)_updateGestureTranslationVelocityAndProgressWithEvent:(id)arg1 ;
+-(void)_updateShouldResignActiveWithEvent:(id)arg1 ;
+-(void)_updateStackedProgress;
+-(id)_responseForUpdatingLayoutForGestureBegan;
+-(id)_responseForUpdatingIconViewVisibility:(BOOL)arg1 ;
+-(id)_responseForStudyLogDidBeginGesture;
+-(id)_responseForSBEventGestureBeganWithTimeDelta:(double)arg1 ;
+-(CGPoint)_unadjustedGestureTranslation;
+-(BOOL)_isTranslationPastDistanceThresholdToUnconditionallyGoHome:(double)arg1 ;
+-(id)_updateInMultitaskingIfNeededWithLocation:(CGPoint)arg1 ;
+-(double)_scaleForAdjacentCards;
+-(void)_updateFrameOffsetForXRubberbandingForTranslation:(CGPoint)arg1 ;
+-(long long)currentFinalDestination;
+-(id)_responseForActivatingFinalDestination:(long long)arg1 ;
+-(id)_responseForActivatingReachabilityIfNeededWithFinalDestination:(long long)arg1 ;
+-(id)_responseForStudyLogDidEndGestureWithEvent:(id)arg1 finalDestination:(long long)arg2 destinationReason:(id)arg3 ;
+-(id)_responseForSBEventGestureEndWithEvent:(id)arg1 finalDestination:(long long)arg2 ;
+-(void)_updateTranslationAdjustmentForGestureFromHomeScreenIfNeededWithEvent:(id)arg1 ;
+-(double)_gestureProgressToMaxTranslationForTranslation:(double)arg1 ;
+-(BOOL)_isSelectedAppLayoutAtIndex:(unsigned long long)arg1 ;
+-(CGPoint)_frameOffsetForTranslation:(CGPoint)arg1 ;
+-(BOOL)_shouldPositionAdjacentCardsOffscreenForFlyIn;
+-(CGPoint)_rubberbandedTranslationForAdjacentCards;
+-(double)_scaleForTranslation:(CGPoint)arg1 ;
+-(unsigned long long)_selectedAppLayoutIndex;
+-(double)_coplanarSpacing;
+-(id)_layoutSettingsForAppLayout:(id)arg1 layoutSettings:(id)arg2 ;
+-(id)_cornerRadiusSettings;
+-(double)_inSwitcherCenterYOffsetWhenPresented;
+-(double)_centerYOffsetDuringGesture;
+-(double)_scaleForOffscreenAdjacentCardsForFlyIn;
+-(double)unconditionalDistanceThresholdForHome;
+-(BOOL)_shouldResignActiveBasedOnCardScale;
+-(BOOL)_hasPausedEnoughForFlyIn;
+-(BOOL)_inMultitaskingForLocation:(CGPoint)arg1 translation:(CGPoint)arg2 ;
+-(BOOL)_preventPositioningCardsOffscreenForFlatBottomEdgeSwipe;
+-(void)_beginAnimatingMultitaskingPropertyWithMode:(long long)arg1 settings:(id)arg2 ;
+-(BOOL)_hasTraveledSufficientDistanceForHomeOrAppSwitcher;
+-(double)_distanceYToMaxTranslation;
+-(id)initWithGestureID:(id)arg1 selectedAppLayout:(id)arg2 startingEnvironmentMode:(long long)arg3 multitaskingModifier:(id)arg4 scrunchInitiated:(BOOL)arg5 continuingGesture:(BOOL)arg6 lastGestureWasAnArcSwipe:(BOOL)arg7 ;
+-(CGPoint)liftOffVelocityForGestureEnd;
+-(CGPoint)liftOffTranslationForGestureEnd;
+-(BOOL)isShowingOrAnimatingCardsForFlyIn;
+@end
+

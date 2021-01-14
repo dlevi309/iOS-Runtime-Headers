@@ -1,0 +1,48 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NTKBackgroundImageFaceView.h>
+#import <libobjc.A.dylib/CLKVideoPlayerViewDelegate.h>
+
+@class UIImageView, CLKVideoPlayerView, NSString;
+
+@interface NTKAVFaceBaseView : NTKBackgroundImageFaceView <CLKVideoPlayerViewDelegate> {
+
+	UIImageView* _posterImageView;
+	CLKVideoPlayerView* _videoPlayerView;
+
+}
+
+@property (nonatomic,retain) CLKVideoPlayerView * videoPlayerView;              //@synthesize videoPlayerView=_videoPlayerView - In the implementation block
+@property (nonatomic,retain) UIImageView * posterImageView;                     //@synthesize posterImageView=_posterImageView - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)_mediaServicesWereReset:(id)arg1 ;
+-(void)layoutSubviews;
+-(CLKVideoPlayerView *)videoPlayerView;
+-(void)_reset;
+-(void)dealloc;
+-(UIImageView *)posterImageView;
+-(void)setPosterImageView:(UIImageView *)arg1 ;
+-(id)_posterImageView;
+-(id)initWithFaceStyle:(long long)arg1 forDevice:(id)arg2 clientIdentifier:(id)arg3 ;
+-(void)_loadSnapshotContentViews;
+-(void)_unloadSnapshotContentViews;
+-(void)_cleanupAfterTransitionToOption:(id)arg1 forCustomEditMode:(long long)arg2 slot:(id)arg3 ;
+-(void)_prepareForEditing;
+-(void)pauseVideoPlayerViewIfItExists;
+-(void)_transitionToPosterView:(id)arg1 ;
+-(void)videoPlayerViewDidBeginPlaying:(id)arg1 ;
+-(void)videoPlayerViewDidPauseAfterPlayingVideoToEnd:(id)arg1 ;
+-(id)_selectedContentView;
+-(void)setVideoPlayerView:(CLKVideoPlayerView *)arg1 ;
+-(void)_beginTransitionToOption;
+-(void)_createVideoPlayerViewIfNeeded;
+-(void)videoPlayerViewDidBeginPlayingQueuedVideo:(id)arg1 ;
+@end
+

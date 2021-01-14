@@ -1,0 +1,64 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:34 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SecurityFoundation.framework/SecurityFoundation
+*/
+
+typedef struct CC_SHA1state_st {
+	unsigned h0;
+	unsigned h1;
+	unsigned h2;
+	unsigned h3;
+	unsigned h4;
+	unsigned Nl;
+	unsigned Nh;
+	unsigned data[16];
+	int num;
+} CC_SHA1state_st;
+
+typedef struct CC_SHA256state_st {
+	unsigned count[2];
+	unsigned hash[8];
+	unsigned wbuf[16];
+} CC_SHA256state_st;
+
+typedef struct CC_SHA512state_st {
+	unsigned long long count[2];
+	unsigned long long hash[8];
+	unsigned long long wbuf[16];
+} CC_SHA512state_st;
+
+typedef struct CC_MD5state_st {
+	unsigned A;
+	unsigned B;
+	unsigned C;
+	unsigned D;
+	unsigned Nl;
+	unsigned Nh;
+	unsigned data[16];
+	int num;
+} CC_MD5state_st;
+
+typedef const struct __CFString* CFStringRef;
+
+typedef struct _NSZone* NSZoneRef;
+
+typedef struct {
+	unsigned long long authenticationRequirements;
+	long long subsetCount;
+} SCD_Struct_SF6;
+
+typedef struct {
+	long long mode;
+	SCD_Struct_SF6 authenticationPolicy;
+} SCD_Struct_SF7;
+
+typedef const struct __CFDictionary* CFDictionaryRef;
+
+typedef struct {
+	long long field1;
+	SCD_Struct_SF6 field2;
+} SCD_Struct_SF9;
+
+typedef struct __SecCertificate* SecCertificateRef;
+

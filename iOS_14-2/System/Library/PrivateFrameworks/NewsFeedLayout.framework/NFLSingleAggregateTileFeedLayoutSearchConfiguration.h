@@ -1,0 +1,59 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:04 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NewsFeedLayout.framework/NewsFeedLayout
+*/
+
+#import <NewsFeedLayout/NewsFeedLayout-Structs.h>
+#import <libobjc.A.dylib/NFLFeedLayoutSearchConfiguration.h>
+
+@class NSArray, NSString;
+
+@interface NFLSingleAggregateTileFeedLayoutSearchConfiguration : NSObject <NFLFeedLayoutSearchConfiguration> {
+
+	BOOL _showAccessoryText;
+	Class _subBatchLayoutTilingOperationClass;
+	Class _rankedLayoutGenerationOperationClass;
+	long long _cellType;
+	long long _rowSpan;
+
+}
+
+@property (nonatomic,retain) Class subBatchLayoutTilingOperationClass;                          //@synthesize subBatchLayoutTilingOperationClass=_subBatchLayoutTilingOperationClass - In the implementation block
+@property (nonatomic,retain) Class rankedLayoutGenerationOperationClass;                        //@synthesize rankedLayoutGenerationOperationClass=_rankedLayoutGenerationOperationClass - In the implementation block
+@property (assign,nonatomic) long long cellType;                                                //@synthesize cellType=_cellType - In the implementation block
+@property (assign,nonatomic) long long rowSpan;                                                 //@synthesize rowSpan=_rowSpan - In the implementation block
+@property (assign,getter=isShowingAccessoryText,nonatomic) BOOL showAccessoryText;              //@synthesize showAccessoryText=_showAccessoryText - In the implementation block
+@property (nonatomic,readonly) unsigned long long preferredTileInfoBatchSize; 
+@property (nonatomic,readonly) NSArray * allRowTypes; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setShowAccessoryText:(BOOL)arg1 ;
+-(Class)subBatchLayoutTilingOperationClassForRowType:(unsigned long long)arg1 ;
+-(long long)cellType;
+-(id)init;
+-(void)setCellType:(long long)arg1 ;
+-(long long)rowSpan;
+-(void)setRowSpan:(long long)arg1 ;
+-(BOOL)isShowingAccessoryText;
+-(SCD_Struct_NF7)subBatchLayoutSeedForRowType:(unsigned long long)arg1 withTileInfos:(id)arg2 ;
+-(Class)rankedLayoutGenerationOperationClassForRequest:(id)arg1 ;
+-(id)descriptionForRowType:(unsigned long long)arg1 ;
+-(id)nextRowTypeCandidatesForRowType:(unsigned long long)arg1 ;
+-(unsigned long long)preferredTileInfoBatchSize;
+-(unsigned long long)numberOfTileInfosUsedByRowType:(unsigned long long)arg1 ;
+-(double)transitionRankFromNoneToRowType:(unsigned long long)arg1 ;
+-(double)transitionRankFromRowTypeToNone:(unsigned long long)arg1 ;
+-(BOOL)supportsTileInfoType:(unsigned long long)arg1 ;
+-(NSArray *)allRowTypes;
+-(double)transitionRankFromRowType:(unsigned long long)arg1 toRowType:(unsigned long long)arg2 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(Class)subBatchLayoutTilingOperationClass;
+-(Class)rankedLayoutGenerationOperationClass;
+-(id)initWithSubBatchLayoutTilingOperationClass:(Class)arg1 rankedLayoutGenerationOperationClass:(Class)arg2 cellType:(long long)arg3 rowSpan:(long long)arg4 ;
+-(void)setSubBatchLayoutTilingOperationClass:(Class)arg1 ;
+-(void)setRankedLayoutGenerationOperationClass:(Class)arg1 ;
+@end
+

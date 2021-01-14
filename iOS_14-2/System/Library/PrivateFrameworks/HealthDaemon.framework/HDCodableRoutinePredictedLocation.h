@@ -1,0 +1,73 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+#import <HealthDaemon/HealthDaemon-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSData, HDCodableRoutineLocation;
+
+@interface HDCodableRoutinePredictedLocation : PBCodable <NSCopying> {
+
+	double _confidence;
+	double _nextEntryTime;
+	NSData* _geoData;
+	HDCodableRoutineLocation* _locationOfInterest;
+	int _modeOfTransportation;
+	int _sourceType;
+	SCD_Struct_HD10 _has;
+
+}
+
+@property (nonatomic,readonly) BOOL hasLocationOfInterest; 
+@property (nonatomic,retain) HDCodableRoutineLocation * locationOfInterest;              //@synthesize locationOfInterest=_locationOfInterest - In the implementation block
+@property (assign,nonatomic) BOOL hasConfidence; 
+@property (assign,nonatomic) double confidence;                                          //@synthesize confidence=_confidence - In the implementation block
+@property (assign,nonatomic) BOOL hasNextEntryTime; 
+@property (assign,nonatomic) double nextEntryTime;                                       //@synthesize nextEntryTime=_nextEntryTime - In the implementation block
+@property (assign,nonatomic) BOOL hasModeOfTransportation; 
+@property (assign,nonatomic) int modeOfTransportation;                                   //@synthesize modeOfTransportation=_modeOfTransportation - In the implementation block
+@property (assign,nonatomic) BOOL hasSourceType; 
+@property (assign,nonatomic) int sourceType;                                             //@synthesize sourceType=_sourceType - In the implementation block
+@property (nonatomic,readonly) BOOL hasGeoData; 
+@property (nonatomic,retain) NSData * geoData;                                           //@synthesize geoData=_geoData - In the implementation block
+-(double)confidence;
+-(id)dictionaryRepresentation;
+-(int)sourceType;
+-(void)mergeFrom:(id)arg1 ;
+-(void)setSourceType:(int)arg1 ;
+-(HDCodableRoutineLocation *)locationOfInterest;
+-(double)nextEntryTime;
+-(int)modeOfTransportation;
+-(void)setModeOfTransportation:(int)arg1 ;
+-(id)description;
+-(id)sourceTypeAsString:(int)arg1 ;
+-(int)StringAsSourceType:(id)arg1 ;
+-(BOOL)hasSourceType;
+-(void)setHasSourceType:(BOOL)arg1 ;
+-(void)setConfidence:(double)arg1 ;
+-(void)setHasConfidence:(BOOL)arg1 ;
+-(BOOL)hasConfidence;
+-(NSData *)geoData;
+-(unsigned long long)hash;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)setLocationOfInterest:(HDCodableRoutineLocation *)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)writeTo:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)setGeoData:(NSData *)arg1 ;
+-(BOOL)hasGeoData;
+-(BOOL)hasLocationOfInterest;
+-(void)setNextEntryTime:(double)arg1 ;
+-(void)setHasNextEntryTime:(BOOL)arg1 ;
+-(BOOL)hasNextEntryTime;
+-(void)setHasModeOfTransportation:(BOOL)arg1 ;
+-(BOOL)hasModeOfTransportation;
+-(id)modeOfTransportationAsString:(int)arg1 ;
+-(int)StringAsModeOfTransportation:(id)arg1 ;
+@end
+

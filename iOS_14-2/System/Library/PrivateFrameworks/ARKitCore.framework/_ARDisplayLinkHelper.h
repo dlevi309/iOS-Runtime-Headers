@@ -1,0 +1,18 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ARKitCore.framework/ARKitCore
+*/
+
+
+@class ARDisplayLink;
+
+@interface _ARDisplayLinkHelper : NSObject {
+
+	ARDisplayLink* _displayLink;
+
+}
+-(void)callback:(id)arg1 ;
+-(id)initWithDisplayLink:(id)arg1 ;
+@end
+

@@ -1,0 +1,17 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:35 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation
+*/
+
+
+@interface CNDate : NSObject
++(id)gmtBuddhistCalendar;
++(id)dayComponentsFromDate:(id)arg1 ;
++(id)gmtGregorianCalendar;
++(id)dateFromDayComponents:(id)arg1 ;
++(id)gmtChineseCalendar;
++(id)gmtJapaneseCalendar;
++(id)gmtIslamicCalendar;
+@end
+

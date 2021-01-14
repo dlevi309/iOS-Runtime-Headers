@@ -1,0 +1,19 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:48 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/ContactsUI.framework/ContactsUI
+*/
+
+
+@interface CNPhotoPickerActionButtonBlockHandler : NSObject {
+
+	/*^block*/id _actionBlock;
+
+}
+
+@property (nonatomic,copy,readonly) id actionBlock;              //@synthesize actionBlock=_actionBlock - In the implementation block
+-(void)performAction;
+-(id)actionBlock;
+-(id)initWithActionBlock:(/*^block*/id)arg1 ;
+@end
+

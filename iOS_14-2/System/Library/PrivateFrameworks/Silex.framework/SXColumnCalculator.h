@@ -1,0 +1,30 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Silex.framework/Silex
+*/
+
+#import <Silex/Silex-Structs.h>
+#import <libobjc.A.dylib/SXColumnCalculator.h>
+
+@protocol SXColumnCalculator <NSObject>
+@required
+-(id)columnLayoutWithViewportSize:(CGSize)arg1 constrainedToWidth:(double)arg2 documentLayout:(id)arg3 contentScaleFactor:(double)arg4;
+-(id)columnLayoutWithConstrainedViewportSize:(CGSize)arg1 viewportSize:(CGSize)arg2 documentLayout:(id)arg3;
+
+@end
+
+
+@class NSString;
+
+@interface SXColumnCalculator : NSObject <SXColumnCalculator>
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)columnLayoutWithViewportSize:(CGSize)arg1 constrainedToWidth:(double)arg2 documentLayout:(id)arg3 contentScaleFactor:(double)arg4 ;
+-(id)columnLayoutWithConstrainedViewportSize:(CGSize)arg1 scaledConstrainedViewportSize:(CGSize)arg2 viewportSize:(CGSize)arg3 documentLayout:(id)arg4 contentScaleFactor:(double)arg5 ;
+-(id)columnLayoutWithConstrainedViewportSize:(CGSize)arg1 viewportSize:(CGSize)arg2 documentLayout:(id)arg3 ;
+@end
+

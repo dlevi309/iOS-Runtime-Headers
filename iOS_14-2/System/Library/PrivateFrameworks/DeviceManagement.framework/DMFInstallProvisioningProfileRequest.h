@@ -1,0 +1,31 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
+*/
+
+#import <DeviceManagement/DMFTaskRequest.h>
+
+@class NSString, NSData;
+
+@interface DMFInstallProvisioningProfileRequest : DMFTaskRequest {
+
+	NSString* _managingProfileIdentifier;
+	NSData* _profileData;
+
+}
+
+@property (nonatomic,copy) NSString * managingProfileIdentifier;              //@synthesize managingProfileIdentifier=_managingProfileIdentifier - In the implementation block
+@property (nonatomic,copy) NSData * profileData;                              //@synthesize profileData=_profileData - In the implementation block
++(BOOL)supportsSecureCoding;
++(BOOL)isPermittedOnUserConnection;
++(id)permittedPlatforms;
++(BOOL)isPermittedOnSystemConnection;
+-(void)encodeWithCoder:(id)arg1 ;
+-(NSString *)managingProfileIdentifier;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setManagingProfileIdentifier:(NSString *)arg1 ;
+-(NSData *)profileData;
+-(void)setProfileData:(NSData *)arg1 ;
+@end
+

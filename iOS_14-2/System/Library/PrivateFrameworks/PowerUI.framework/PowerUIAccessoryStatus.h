@@ -1,0 +1,66 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:21 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PowerUI.framework/PowerUI
+*/
+
+
+@class NSDate, NSUUID;
+
+@interface PowerUIAccessoryStatus : NSObject {
+
+	BOOL _enabled;
+	BOOL _temporarilyDisabled;
+	unsigned char _underchargesSinceLastReport;
+	unsigned char _chargingEventsSinceLastReport;
+	unsigned short _minutesSavedSinceLastReport;
+	unsigned long long _currentState;
+	NSDate* _disabledUntilDate;
+	NSDate* _lastSentDate;
+	NSDate* _lastSeenDate;
+	NSDate* _lastUnderchargeRecordedForPrediction;
+	NSUUID* _expectedHash;
+	unsigned long long _managerState;
+
+}
+
+@property (assign) unsigned long long currentState;                            //@synthesize currentState=_currentState - In the implementation block
+@property (assign) BOOL enabled;                                               //@synthesize enabled=_enabled - In the implementation block
+@property (retain) NSDate * disabledUntilDate;                                 //@synthesize disabledUntilDate=_disabledUntilDate - In the implementation block
+@property (assign) BOOL temporarilyDisabled;                                   //@synthesize temporarilyDisabled=_temporarilyDisabled - In the implementation block
+@property (retain) NSDate * lastSentDate;                                      //@synthesize lastSentDate=_lastSentDate - In the implementation block
+@property (retain) NSDate * lastSeenDate;                                      //@synthesize lastSeenDate=_lastSeenDate - In the implementation block
+@property (retain) NSDate * lastUnderchargeRecordedForPrediction;              //@synthesize lastUnderchargeRecordedForPrediction=_lastUnderchargeRecordedForPrediction - In the implementation block
+@property (retain) NSUUID * expectedHash;                                      //@synthesize expectedHash=_expectedHash - In the implementation block
+@property (assign) unsigned short minutesSavedSinceLastReport;                 //@synthesize minutesSavedSinceLastReport=_minutesSavedSinceLastReport - In the implementation block
+@property (assign) unsigned char underchargesSinceLastReport;                  //@synthesize underchargesSinceLastReport=_underchargesSinceLastReport - In the implementation block
+@property (assign) unsigned char chargingEventsSinceLastReport;                //@synthesize chargingEventsSinceLastReport=_chargingEventsSinceLastReport - In the implementation block
+@property (assign) unsigned long long managerState;                            //@synthesize managerState=_managerState - In the implementation block
+-(void)setCurrentState:(unsigned long long)arg1 ;
+-(BOOL)enabled;
+-(BOOL)temporarilyDisabled;
+-(void)setTemporarilyDisabled:(BOOL)arg1 ;
+-(id)init;
+-(unsigned long long)currentState;
+-(void)setEnabled:(BOOL)arg1 ;
+-(void)setLastSeenDate:(NSDate *)arg1 ;
+-(NSDate *)disabledUntilDate;
+-(void)setDisabledUntilDate:(NSDate *)arg1 ;
+-(id)description;
+-(NSDate *)lastSeenDate;
+-(NSDate *)lastSentDate;
+-(void)setLastSentDate:(NSDate *)arg1 ;
+-(NSDate *)lastUnderchargeRecordedForPrediction;
+-(void)setLastUnderchargeRecordedForPrediction:(NSDate *)arg1 ;
+-(NSUUID *)expectedHash;
+-(void)setExpectedHash:(NSUUID *)arg1 ;
+-(unsigned short)minutesSavedSinceLastReport;
+-(void)setMinutesSavedSinceLastReport:(unsigned short)arg1 ;
+-(unsigned char)underchargesSinceLastReport;
+-(void)setUnderchargesSinceLastReport:(unsigned char)arg1 ;
+-(unsigned char)chargingEventsSinceLastReport;
+-(void)setChargingEventsSinceLastReport:(unsigned char)arg1 ;
+-(unsigned long long)managerState;
+-(void)setManagerState:(unsigned long long)arg1 ;
+@end
+

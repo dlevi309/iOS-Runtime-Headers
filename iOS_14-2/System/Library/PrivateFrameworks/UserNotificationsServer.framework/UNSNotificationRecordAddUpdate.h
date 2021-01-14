@@ -1,0 +1,12 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/UserNotificationsServer.framework/UserNotificationsServer
+*/
+
+#import <UserNotificationsServer/UNSNotificationRecordUpdate.h>
+
+@interface UNSNotificationRecordAddUpdate : UNSNotificationRecordUpdate
++(id)updateWithNotificationRecord:(id)arg1 ;
+@end
+

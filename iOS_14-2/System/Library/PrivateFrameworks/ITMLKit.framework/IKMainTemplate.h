@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:48 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ITMLKit.framework/ITMLKit
+*/
+
+#import <ITMLKit/IKViewElement.h>
+
+@class IKMenuBarElement, IKBackgroundElement, IKButtonElement, IKDocumentBannerElement;
+
+@interface IKMainTemplate : IKViewElement
+
+@property (nonatomic,retain,readonly) IKMenuBarElement * menuBar; 
+@property (nonatomic,retain,readonly) IKBackgroundElement * background; 
+@property (nonatomic,retain,readonly) IKButtonElement * button; 
+@property (nonatomic,retain,readonly) IKDocumentBannerElement * banner; 
+-(IKBackgroundElement *)background;
+-(IKButtonElement *)button;
+-(IKDocumentBannerElement *)banner;
+-(IKMenuBarElement *)menuBar;
+@end
+

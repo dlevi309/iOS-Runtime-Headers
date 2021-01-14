@@ -1,0 +1,36 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ProVideo.framework/ProVideo
+*/
+
+
+#import <ProVideo/ProVideo-Structs.h>
+@class PAEKeyerAutokeySetup, PAEKeyerHistogram;
+
+@interface PAEKeyerAutokeySetupUtil : NSObject {
+
+	id _apiManager;
+	PAEKeyerAutokeySetup* _autokeySetup;
+	PAEKeyerHistogram* _keyerHistogram;
+	id _actionAPI;
+	id _getAPI;
+	id _setAPI;
+
+}
+-(void)setHistogram:(ColorHisto*)arg1 ;
+-(void)syncWithDB;
+-(void)dealloc;
+-(id)initWithAPIManager:(id)arg1 ;
+-(void)getDataFromDB;
+-(id)getInitialSamples;
+-(int)getSamplesNb;
+-(Vec3f)getInitialSample:(int)arg1 ;
+-(ColorHisto*)getHistogram;
+-(void)syncWithDBAsDefault;
+-(void)delInitialSample:(int)arg1 ;
+-(void)clearInitialSamples;
+-(void)addInitialSample:(Vec3f*)arg1 ;
+-(void)fillAutokeySamplesArray:(vector<Vec3f, std::__1::allocator<Vec3f> >*)arg1 ;
+@end
+

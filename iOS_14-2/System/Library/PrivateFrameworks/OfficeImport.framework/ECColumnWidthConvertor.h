@@ -1,0 +1,21 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:08 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport
+*/
+
+
+#import <OfficeImport/OfficeImport-Structs.h>
+@interface ECColumnWidthConvertor : NSObject {
+
+	int mMultiplier;
+
+}
+-(double)lassoColumnWidthFromXl:(double)arg1 ;
+-(void)setupWithEDFont:(id)arg1 state:(id)arg2 ;
+-(double)xlColumnWidthFromXlBaseColumnWidth:(double)arg1 ;
+-(CGSize)stringSizeWithFont:(id)arg1 edFont:(id)arg2 drawingState:(id)arg3 ;
+-(float)fontWidthAdjustmentFor:(id)arg1 ;
+-(double)xlColumnWidthFromLasso:(double)arg1 ;
+@end
+

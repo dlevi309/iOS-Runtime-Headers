@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:29 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Silex.framework/Silex
+*/
+
+
+@protocol TSDWrappable <NSObject>
+@property (nonatomic,readonly) BOOL hasAlpha; 
+@required
+-(id)parent;
+-(int)wrapType;
+-(BOOL)hasAlpha;
+-(id)wrapPolygon;
+-(CGRect*)boundsInfluencingExteriorWrap;
+-(CGRect*)boundsInRoot;
+-(BOOL)isHTMLWrap;
+-(int)wrapDirection;
+-(int)wrapFitType;
+
+@end
+

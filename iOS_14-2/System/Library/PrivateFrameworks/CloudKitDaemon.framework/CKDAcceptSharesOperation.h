@@ -1,0 +1,62 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:17 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+*/
+
+#import <CloudKitDaemon/CKDDatabaseOperation.h>
+
+@class NSMutableDictionary, NSMutableArray;
+
+@interface CKDAcceptSharesOperation : CKDDatabaseOperation {
+
+	/*^block*/id _acceptCompletionBlock;
+	NSMutableDictionary* _clientProvidedMetadatasByURL;
+	NSMutableArray* _shareURLsToAccept;
+	NSMutableArray* _acceptedShareURLsToFetch;
+	NSMutableDictionary* _shareMetadatasToAcceptByURL;
+	unsigned long long _numShareAcceptAttempts;
+
+}
+
+@property (assign,nonatomic) unsigned long long state; 
+@property (nonatomic,retain) NSMutableDictionary * clientProvidedMetadatasByURL;                             //@synthesize clientProvidedMetadatasByURL=_clientProvidedMetadatasByURL - In the implementation block
+@property (nonatomic,retain) NSMutableArray * shareURLsToAccept;                                             //@synthesize shareURLsToAccept=_shareURLsToAccept - In the implementation block
+@property (nonatomic,retain) NSMutableArray * acceptedShareURLsToFetch;                                      //@synthesize acceptedShareURLsToFetch=_acceptedShareURLsToFetch - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * shareMetadatasToAcceptByURL;                              //@synthesize shareMetadatasToAcceptByURL=_shareMetadatasToAcceptByURL - In the implementation block
+@property (assign,nonatomic) unsigned long long numShareAcceptAttempts;                                      //@synthesize numShareAcceptAttempts=_numShareAcceptAttempts - In the implementation block
+@property (nonatomic,retain) id<CKAcceptSharesOperationCallbacks> clientOperationCallbackProxy; 
+@property (nonatomic,copy) id acceptCompletionBlock;                                                         //@synthesize acceptCompletionBlock=_acceptCompletionBlock - In the implementation block
+-(void)_finishOnCallbackQueueWithError:(id)arg1 ;
+-(int)operationType;
+-(id)activityCreate;
+-(id)nameForState:(unsigned long long)arg1 ;
+-(id)initWithOperationInfo:(id)arg1 clientContext:(id)arg2 ;
+-(void)main;
+-(BOOL)makeStateTransition;
+-(void)setAcceptCompletionBlock:(id)arg1 ;
+-(id)_addSelfIdentityToShareMetadataPublicPCS:(id)arg1 forShareWithURL:(id)arg2 error:(id*)arg3 ;
+-(void)_fetchMetadataForShares;
+-(void)_prepareShareMetadata;
+-(void)_fetchAcceptedShares;
+-(void)_decryptShareMetadata;
+-(BOOL)_acceptShares;
+-(NSMutableArray *)shareURLsToAccept;
+-(NSMutableArray *)acceptedShareURLsToFetch;
+-(id)acceptCompletionBlock;
+-(void)_performCallbackForURL:(id)arg1 withShare:(id)arg2 error:(id)arg3 ;
+-(NSMutableDictionary *)shareMetadatasToAcceptByURL;
+-(BOOL)_callingParticipantOONForShareMetadata:(id)arg1 ;
+-(unsigned long long)numShareAcceptAttempts;
+-(void)setNumShareAcceptAttempts:(unsigned long long)arg1 ;
+-(void)_handleShareURLAccepted:(id)arg1 forShare:(id)arg2 responseCode:(id)arg3 ;
+-(NSMutableDictionary *)clientProvidedMetadatasByURL;
+-(unsigned long long)sharingServiceTypeForShareMetadata:(id)arg1 ;
+-(id)_keySwapForOONParticipant:(id)arg1 ;
+-(BOOL)_validateInvitedPCSCanBeDecryptedForShare:(id)arg1 ;
+-(void)setShareURLsToAccept:(NSMutableArray *)arg1 ;
+-(void)setClientProvidedMetadatasByURL:(NSMutableDictionary *)arg1 ;
+-(void)setAcceptedShareURLsToFetch:(NSMutableArray *)arg1 ;
+-(void)setShareMetadatasToAcceptByURL:(NSMutableDictionary *)arg1 ;
+@end
+

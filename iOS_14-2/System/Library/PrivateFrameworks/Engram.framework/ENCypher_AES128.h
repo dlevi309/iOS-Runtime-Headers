@@ -1,0 +1,39 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Engram.framework/Engram
+*/
+
+#import <libobjc.A.dylib/ENCypher.h>
+
+@class NSString, NSData;
+
+@interface ENCypher_AES128 : NSObject <ENCypher> {
+
+	NSData* _key;
+
+}
+
+@property (nonatomic,retain) NSData * key;                          //@synthesize key=_key - In the implementation block
+@property (nonatomic,readonly) NSString * identifier; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)supportsSecureCoding;
++(id)_randomDataWithLength:(long long)arg1 ;
++(id)_encryptData:(id)arg1 withKey:(id)arg2 ;
++(id)_decryptData:(id)arg1 withKey:(id)arg2 ;
+-(id)initWithKey:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(NSData *)key;
+-(unsigned long long)hash;
+-(id)initWithCoder:(id)arg1 ;
+-(id)cypherData:(id)arg1 withAccountIdentity:(id)arg2 identifier:(id*)arg3 error:(id*)arg4 ;
+-(id)decypherData:(id)arg1 withAccountIdentity:(id)arg2 signingDevicePublicKey:(id)arg3 identifier:(id)arg4 error:(id*)arg5 ;
+-(NSString *)identifier;
+-(void)setKey:(NSData *)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(id)initWithRandomKey;
+@end
+

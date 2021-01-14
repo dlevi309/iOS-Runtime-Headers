@@ -1,0 +1,21 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/DrawingKit.framework/DrawingKit
+*/
+
+
+#import <DrawingKit/DrawingKit-Structs.h>
+@interface DKInkThumbnailRenderer : NSObject
++(double)scaleToFitDrawing:(id)arg1 inSize:(CGSize)arg2 ;
++(id)imageForDrawing:(id)arg1 fittingInSize:(CGSize)arg2 backingScale:(double)arg3 color:(id)arg4 highFidelity:(BOOL)arg5 ;
++(id)_imageForDrawingUsingGL:(id)arg1 fittingInSize:(CGSize)arg2 displayScale:(double)arg3 color:(id)arg4 ;
++(id)_imageForDrawingUsingCG:(id)arg1 fittingInSize:(CGSize)arg2 displayScale:(double)arg3 color:(id)arg4 ;
++(void)_interpolateDrawing:(id)arg1 inSize:(CGSize)arg2 displayScale:(double)arg3 ellipseHandler:(/*^block*/id)arg4 ;
++(CGSize)sizeForDrawing:(id)arg1 inSize:(CGSize)arg2 ;
++(id)imageForDrawing:(id)arg1 fittingInSize:(CGSize)arg2 color:(id)arg3 highFidelity:(BOOL)arg4 ;
++(CGPathRef)_newStrokedInterpolatedPathWithDrawing:(id)arg1 inSize:(CGSize)arg2 displayScale:(double)arg3 ;
++(void)_drawPath:(id)arg1 atScale:(double)arg2 inRect:(CGRect)arg3 inkColor:(id)arg4 backgroundColor:(id)arg5 inContext:(CGContextRef)arg6 ;
++(BOOL)_drawDebugPatternInGLContext:(id)arg1 inSize:(CGSize)arg2 ;
+@end
+

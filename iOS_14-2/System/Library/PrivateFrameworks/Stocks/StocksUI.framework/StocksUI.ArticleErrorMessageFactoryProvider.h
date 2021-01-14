@@ -1,0 +1,18 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:32 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Stocks/StocksUI.framework/StocksUI
+*/
+
+#import <libobjc.A.dylib/NUErrorMessageFactory.h>
+
+@interface StocksUI.ArticleErrorMessageFactoryProvider : NSObject <NUErrorMessageFactory> {
+
+	 reachability;
+
+}
+-(id)errorMessageForArticleView;
+-(id)errorMessageForArticleViewWithOfflineReason:(long long)arg1 ;
+-(id)init;
+@end
+

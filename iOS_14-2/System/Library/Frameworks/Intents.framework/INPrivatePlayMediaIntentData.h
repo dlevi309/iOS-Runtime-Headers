@@ -1,0 +1,91 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:23 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/Intents.framework/Intents
+*/
+
+#import <Intents/Intents-Structs.h>
+#import <libobjc.A.dylib/INCacheableContainer.h>
+#import <libobjc.A.dylib/INJSONSerializable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSNumber, NSArray, INPrivateMediaIntentData, NSString;
+
+@interface INPrivatePlayMediaIntentData : NSObject <INCacheableContainer, INJSONSerializable, NSCopying, NSSecureCoding> {
+
+	NSNumber* _appSelectionEnabled;
+	NSNumber* _appInferred;
+	NSArray* _audioSearchResults;
+	INPrivateMediaIntentData* _privateMediaIntentData;
+	NSNumber* _appSelectionSignalsEnabled;
+	NSNumber* _appSelectionSignalsFrequencyDenominator;
+	NSNumber* _shouldSuppressCommonWholeHouseAudioRoutes;
+	NSNumber* _immediatelyStartPlayback;
+	NSNumber* _isAmbiguousPlay;
+	NSNumber* _isPersonalizedRequest;
+	NSArray* _internalSignals;
+	NSNumber* _entityConfidenceSignalsEnabled;
+	NSNumber* _entityConfidenceSignalsFrequencyDenominatorInternal;
+	NSNumber* _entityConfidenceSignalsFrequencyDenominatorProd;
+	NSNumber* _entityConfidenceSignalsMaxItemsToDisambiguate;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,copy) INPrivateMediaIntentData * privateMediaIntentData;                                    //@synthesize privateMediaIntentData=_privateMediaIntentData - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * appSelectionEnabled;                                              //@synthesize appSelectionEnabled=_appSelectionEnabled - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * appInferred;                                                      //@synthesize appInferred=_appInferred - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * audioSearchResults;                                                //@synthesize audioSearchResults=_audioSearchResults - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * appSelectionSignalsEnabled;                                       //@synthesize appSelectionSignalsEnabled=_appSelectionSignalsEnabled - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * appSelectionSignalsFrequencyDenominator;                          //@synthesize appSelectionSignalsFrequencyDenominator=_appSelectionSignalsFrequencyDenominator - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * shouldSuppressCommonWholeHouseAudioRoutes;                        //@synthesize shouldSuppressCommonWholeHouseAudioRoutes=_shouldSuppressCommonWholeHouseAudioRoutes - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * immediatelyStartPlayback;                                         //@synthesize immediatelyStartPlayback=_immediatelyStartPlayback - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * isAmbiguousPlay;                                                  //@synthesize isAmbiguousPlay=_isAmbiguousPlay - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * isPersonalizedRequest;                                            //@synthesize isPersonalizedRequest=_isPersonalizedRequest - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * internalSignals;                                                   //@synthesize internalSignals=_internalSignals - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * entityConfidenceSignalsEnabled;                                   //@synthesize entityConfidenceSignalsEnabled=_entityConfidenceSignalsEnabled - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * entityConfidenceSignalsFrequencyDenominatorInternal;              //@synthesize entityConfidenceSignalsFrequencyDenominatorInternal=_entityConfidenceSignalsFrequencyDenominatorInternal - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * entityConfidenceSignalsFrequencyDenominatorProd;                  //@synthesize entityConfidenceSignalsFrequencyDenominatorProd=_entityConfidenceSignalsFrequencyDenominatorProd - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * entityConfidenceSignalsMaxItemsToDisambiguate;                    //@synthesize entityConfidenceSignalsMaxItemsToDisambiguate=_entityConfidenceSignalsMaxItemsToDisambiguate - In the implementation block
++(BOOL)supportsSecureCoding;
++(id)_intents_decodeWithJSONDecoder:(id)arg1 codableDescription:(id)arg2 from:(id)arg3 ;
+-(id)descriptionAtIndent:(unsigned long long)arg1 ;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 privateMediaIntentData:(id)arg4 appSelectionSignalsEnabled:(id)arg5 appSelectionSignalsFrequencyDenominator:(id)arg6 shouldSuppressCommonWholeHouseAudioRoutes:(id)arg7 immediatelyStartPlayback:(id)arg8 ;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 privateMediaIntentData:(id)arg4 appSelectionSignalsEnabled:(id)arg5 appSelectionSignalsFrequencyDenominator:(id)arg6 shouldSuppressCommonWholeHouseAudioRoutes:(id)arg7 ;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 privateMediaIntentData:(id)arg4 appSelectionSignalsEnabled:(id)arg5 appSelectionSignalsFrequencyDenominator:(id)arg6 shouldSuppressCommonWholeHouseAudioRoutes:(id)arg7 immediatelyStartPlayback:(id)arg8 isAmbiguousPlay:(id)arg9 ;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 privateMediaIntentData:(id)arg4 appSelectionSignalsEnabled:(id)arg5 appSelectionSignalsFrequencyDenominator:(id)arg6 shouldSuppressCommonWholeHouseAudioRoutes:(id)arg7 immediatelyStartPlayback:(id)arg8 isAmbiguousPlay:(id)arg9 isPersonalizedRequest:(id)arg10 ;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 privateMediaIntentData:(id)arg4 appSelectionSignalsEnabled:(id)arg5 appSelectionSignalsFrequencyDenominator:(id)arg6 shouldSuppressCommonWholeHouseAudioRoutes:(id)arg7 immediatelyStartPlayback:(id)arg8 isAmbiguousPlay:(id)arg9 isPersonalizedRequest:(id)arg10 internalSignals:(id)arg11 entityConfidenceSignalsEnabled:(id)arg12 entityConfidenceSignalsFrequencyDenominatorInternal:(id)arg13 entityConfidenceSignalsFrequencyDenominatorProd:(id)arg14 entityConfidenceSignalsMaxItemsToDisambiguate:(id)arg15 ;
+-(NSArray *)internalSignals;
+-(NSNumber *)appInferred;
+-(NSNumber *)appSelectionEnabled;
+-(NSNumber *)appSelectionSignalsEnabled;
+-(NSNumber *)isAmbiguousPlay;
+-(NSNumber *)appSelectionSignalsFrequencyDenominator;
+-(NSNumber *)entityConfidenceSignalsEnabled;
+-(NSNumber *)immediatelyStartPlayback;
+-(NSNumber *)entityConfidenceSignalsFrequencyDenominatorInternal;
+-(NSNumber *)entityConfidenceSignalsFrequencyDenominatorProd;
+-(NSNumber *)entityConfidenceSignalsMaxItemsToDisambiguate;
+-(NSNumber *)isPersonalizedRequest;
+-(INPrivateMediaIntentData *)privateMediaIntentData;
+-(void)setPrivateMediaIntentData:(INPrivateMediaIntentData *)arg1 ;
+-(NSNumber *)shouldSuppressCommonWholeHouseAudioRoutes;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)_dictionaryRepresentation;
+-(NSString *)description;
+-(unsigned long long)hash;
+-(id)_intents_cacheableObjects;
+-(void)_intents_updateContainerWithCache:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)initWithAppSelectionEnabled:(id)arg1 appInferred:(id)arg2 audioSearchResults:(id)arg3 privateMediaIntentData:(id)arg4 ;
+-(id)_intents_encodeWithJSONEncoder:(id)arg1 codableDescription:(id)arg2 ;
+-(NSArray *)audioSearchResults;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+@end
+

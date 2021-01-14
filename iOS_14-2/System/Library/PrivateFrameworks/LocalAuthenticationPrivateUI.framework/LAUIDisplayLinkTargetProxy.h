@@ -1,0 +1,19 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:51 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/LocalAuthenticationPrivateUI.framework/LocalAuthenticationPrivateUI
+*/
+
+
+@class LAUIRenderLoop;
+
+@interface LAUIDisplayLinkTargetProxy : NSObject {
+
+	LAUIRenderLoop* _target;
+
+}
+-(id)init;
+-(id)initWithTarget:(id)arg1 ;
+-(void)draw:(id)arg1 ;
+@end
+

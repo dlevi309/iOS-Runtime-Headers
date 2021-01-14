@@ -1,0 +1,18 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:53 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+
+@interface VUIOSFeatureEnabled : NSObject
++(BOOL)isNewSearchUIEnabled;
++(BOOL)isEpicShelfEnabled;
++(BOOL)isFlowcaseEnabled;
++(BOOL)isPaginationEnabled;
++(BOOL)isViewModelUIEnabled;
++(BOOL)isCanonicalBrowserUIEnabled;
++(BOOL)isPageControlUIEnabled;
++(BOOL)isViewModelPostPlayUIEnabled;
+@end
+

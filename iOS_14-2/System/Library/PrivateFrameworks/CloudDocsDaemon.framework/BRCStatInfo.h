@@ -1,0 +1,109 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:32 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/CloudDocsDaemon
+*/
+
+#import <CloudDocsDaemon/CloudDocsDaemon-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class BRFieldCKInfo, BRCItemID, NSString, NSData, BRCUserRowID, BRMangledID;
+
+@interface BRCStatInfo : NSObject <NSCopying, NSSecureCoding> {
+
+	BRFieldCKInfo* _ckInfo;
+	BRCItemID* _parentID;
+	char _state;
+	char _type;
+	char _mode;
+	long long _birthtime;
+	long long _lastUsedTime;
+	long long _favoriteRank;
+	NSString* _logicalName;
+	NSString* _aliasTarget;
+	BOOL _hiddenExt;
+	NSData* _xattrSignature;
+	NSData* _lazyXattr;
+	NSData* _finderTags;
+	NSString* _trashPutBackPath;
+	BRCItemID* _trashPutBackParentID;
+	BRCUserRowID* _creatorRowID;
+
+}
+
+@property (nonatomic,retain) BRFieldCKInfo * ckInfo;                             //@synthesize ckInfo=_ckInfo - In the implementation block
+@property (nonatomic,retain) BRCItemID * parentID;                               //@synthesize parentID=_parentID - In the implementation block
+@property (assign,nonatomic) char state;                                         //@synthesize state=_state - In the implementation block
+@property (assign,nonatomic) char type;                                          //@synthesize type=_type - In the implementation block
+@property (assign,nonatomic) char mode;                                          //@synthesize mode=_mode - In the implementation block
+@property (nonatomic,retain) NSString * logicalName;                             //@synthesize logicalName=_logicalName - In the implementation block
+@property (assign,nonatomic) long long birthtime;                                //@synthesize birthtime=_birthtime - In the implementation block
+@property (assign,nonatomic) long long lastUsedTime;                             //@synthesize lastUsedTime=_lastUsedTime - In the implementation block
+@property (assign,nonatomic) long long favoriteRank;                             //@synthesize favoriteRank=_favoriteRank - In the implementation block
+@property (assign,getter=isHiddenExt,nonatomic) BOOL hiddenExt;                  //@synthesize hiddenExt=_hiddenExt - In the implementation block
+@property (nonatomic,retain) NSData * finderTags;                                //@synthesize finderTags=_finderTags - In the implementation block
+@property (nonatomic,retain) NSData * xattrSignature;                            //@synthesize xattrSignature=_xattrSignature - In the implementation block
+@property (nonatomic,readonly) NSString * representableName; 
+@property (nonatomic,readonly) BRMangledID * _aliasTargetMangledID; 
+@property (nonatomic,readonly) NSString * aliasTarget;                           //@synthesize aliasTarget=_aliasTarget - In the implementation block
+@property (nonatomic,retain) NSData * lazyXattr;                                 //@synthesize lazyXattr=_lazyXattr - In the implementation block
+@property (nonatomic,readonly) BOOL iWorkShareable; 
+@property (nonatomic,retain) NSString * trashPutBackPath;                        //@synthesize trashPutBackPath=_trashPutBackPath - In the implementation block
+@property (nonatomic,retain) BRCItemID * trashPutBackParentID;                   //@synthesize trashPutBackParentID=_trashPutBackParentID - In the implementation block
+@property (nonatomic,retain) BRCUserRowID * creatorRowID;                        //@synthesize creatorRowID=_creatorRowID - In the implementation block
++(BOOL)supportsSecureCoding;
+-(char)mode;
+-(id)initFromResultSet:(id)arg1 pos:(int)arg2 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(long long)lastUsedTime;
+-(NSString *)logicalName;
+-(void)setType:(char)arg1 ;
+-(void)setMode:(char)arg1 ;
+-(BOOL)isHiddenExt;
+-(BRFieldCKInfo *)ckInfo;
+-(id)description;
+-(BOOL)isWritable;
+-(BRCItemID *)parentID;
+-(char)type;
+-(void)setState:(char)arg1 ;
+-(BOOL)isExecutable;
+-(id)initWithCoder:(id)arg1 ;
+-(char)state;
+-(void)setParentID:(BRCItemID *)arg1 ;
+-(void)setFavoriteRank:(long long)arg1 ;
+-(long long)favoriteRank;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)displayName;
+-(void)setLastUsedTime:(long long)arg1 ;
+-(void)setCkInfo:(BRFieldCKInfo *)arg1 ;
+-(NSData *)finderTags;
+-(void)setFinderTags:(NSData *)arg1 ;
+-(long long)birthtime;
+-(BRCUserRowID *)creatorRowID;
+-(unsigned long long)diffAgainst:(id)arg1 ;
+-(BRMangledID *)_aliasTargetMangledID;
+-(id)_aliasTargetItemID;
+-(void)_updateAliasTarget:(id)arg1 ;
+-(NSData *)xattrSignature;
+-(NSString *)trashPutBackPath;
+-(BRCItemID *)trashPutBackParentID;
+-(NSString *)aliasTarget;
+-(id)descriptionWithContext:(id)arg1 origName:(id)arg2 ;
+-(BOOL)checkStateWithItemID:(id)arg1 logToFile:(_sFILE*)arg2 ;
+-(id)initWithStatInfo:(id)arg1 ;
+-(NSString *)representableName;
+-(BOOL)iWorkShareable;
+-(BOOL)check:(id)arg1 logToFile:(_sFILE*)arg2 ;
+-(BOOL)isEtagEqual:(id)arg1 ;
+-(void)setCreatorRowID:(BRCUserRowID *)arg1 ;
+-(void)setBirthtime:(long long)arg1 ;
+-(void)setHiddenExt:(BOOL)arg1 ;
+-(void)setXattrSignature:(NSData *)arg1 ;
+-(NSData *)lazyXattr;
+-(void)setLazyXattr:(NSData *)arg1 ;
+-(void)setLogicalName:(NSString *)arg1 ;
+-(void)setTrashPutBackPath:(NSString *)arg1 ;
+-(void)setTrashPutBackParentID:(BRCItemID *)arg1 ;
+@end
+

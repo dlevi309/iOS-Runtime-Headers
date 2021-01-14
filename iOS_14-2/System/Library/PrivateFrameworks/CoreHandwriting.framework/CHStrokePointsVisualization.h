@@ -1,0 +1,13 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:29 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+*/
+
+#import <CoreHandwriting/CoreHandwriting-Structs.h>
+#import <CoreHandwriting/CHStrokeVisualization.h>
+
+@interface CHStrokePointsVisualization : CHStrokeVisualization
+-(void)drawStrokesFromStrokeProvider:(id)arg1 inRect:(CGRect)arg2 context:(CGContextRef)arg3 ;
+@end
+

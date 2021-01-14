@@ -1,0 +1,99 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:25 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MediaMiningKit.framework/MediaMiningKit
+*/
+
+#import <libobjc.A.dylib/CLSCurationModel.h>
+
+@protocol CLSAssetProcessedSignals;
+@class CLSMediaPreAnalysisModel, CLSMediaAnalysisModel, CLSAestheticsModel, CLSJunkClassificationModel, CLSFaceModel, NSString;
+
+@interface CLSCurationModel_v1 : NSObject <CLSCurationModel> {
+
+	id<CLSAssetProcessedSignals> _defaultProcessedSignals;
+	CLSMediaPreAnalysisModel* _mediaPreAnalysisModel;
+	CLSMediaAnalysisModel* _mediaAnalysisModel;
+	CLSAestheticsModel* _aestheticsModel;
+	CLSJunkClassificationModel* _junkClassificationModel;
+	CLSFaceModel* _faceModel;
+	double _faceSizeUpperLimit;
+	double _faceSizeLowerLimit;
+
+}
+
+@property (readonly) CLSMediaPreAnalysisModel * mediaPreAnalysisModel;                    //@synthesize mediaPreAnalysisModel=_mediaPreAnalysisModel - In the implementation block
+@property (readonly) CLSMediaAnalysisModel * mediaAnalysisModel;                          //@synthesize mediaAnalysisModel=_mediaAnalysisModel - In the implementation block
+@property (readonly) CLSAestheticsModel * aestheticsModel;                                //@synthesize aestheticsModel=_aestheticsModel - In the implementation block
+@property (readonly) CLSJunkClassificationModel * junkClassificationModel;                //@synthesize junkClassificationModel=_junkClassificationModel - In the implementation block
+@property (readonly) CLSFaceModel * faceModel;                                            //@synthesize faceModel=_faceModel - In the implementation block
+@property (readonly) double faceSizeUpperLimit;                                           //@synthesize faceSizeUpperLimit=_faceSizeUpperLimit - In the implementation block
+@property (readonly) double faceSizeLowerLimit;                                           //@synthesize faceSizeLowerLimit=_faceSizeLowerLimit - In the implementation block
+@property (readonly) double minimumDurationForVideoToNotBeJunk; 
+@property (readonly) double minimumDurationForTimelapseVideoToNotBeJunk; 
+@property (readonly) double minimumDurationForHighFramerateVideoToNotBeJunk; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(unsigned long long)minimumRequiredSceneAnalysisVersion;
++(BOOL)minimumRequiredAnalysisVersionsAreMatchedBySpecification:(id)arg1 ;
++(BOOL)maximumAllowedAnalysisVersionsAreMatchedBySpecification:(id)arg1 ;
++(unsigned long long)minimumRequiredMediaAnalysisVersion;
++(unsigned long long)minimumRequiredFaceAnalysisVersion;
++(unsigned long long)maximumAllowedSceneAnalysisVersion;
++(unsigned long long)maximumAllowedMediaAnalysisVersion;
++(unsigned long long)maximumAllowedFaceAnalysisVersion;
++(short)uninterestingAudioClassifications;
+-(void)enumerateClassificationBasedSignalModelsUsingBlock:(/*^block*/id)arg1 ;
+-(BOOL)isUtilityForMemoriesWithAsset:(id)arg1 ;
+-(BOOL)avoidIfPossibleForKeyAssetWithAsset:(id)arg1 ;
+-(BOOL)isShowcasingFoodWithSceneClassification:(id)arg1 ;
+-(id)newProcessedSignals;
+-(BOOL)hasPoorResolutionWithAsset:(id)arg1 ;
+-(void)enumerateSignalModelsUsingBlock:(/*^block*/id)arg1 ;
+-(BOOL)isJunkWithJunkClassification:(id)arg1 ;
+-(id)initWithCurationModelSpecification:(id)arg1 ;
+-(BOOL)isTragicFailureWithImageAsset:(id)arg1 ;
+-(float)interactionScoreWithAsset:(id)arg1 ;
+-(CLSFaceModel *)faceModel;
+-(double)faceSizeUpperLimit;
+-(double)faceSizeLowerLimit;
+-(BOOL)isAestheticallyPrettyGoodWithAsset:(id)arg1 ;
+-(double)scoreWithAsset:(id)arg1 inContext:(id)arg2 ;
+-(CLSJunkClassificationModel *)junkClassificationModel;
+-(BOOL)hasInterestingScenesWithAsset:(id)arg1 ;
+-(CLSMediaPreAnalysisModel *)mediaPreAnalysisModel;
+-(BOOL)isUtilityWithAsset:(id)arg1 ;
+-(BOOL)isShinyGemWithAsset:(id)arg1 ;
+-(BOOL)isRegularGemWithAsset:(id)arg1 ;
+-(BOOL)isBlurryWithAsset:(id)arg1 ;
+-(BOOL)isInhabitedWithAsset:(id)arg1 ;
+-(BOOL)isInterestingVideoWithAsset:(id)arg1 ;
+-(BOOL)isInterestingLivePhotoWithAsset:(id)arg1 ;
+-(BOOL)isInterestingPanoramaWithAsset:(id)arg1 ;
+-(BOOL)isInterestingSDOFWithAsset:(id)arg1 ;
+-(BOOL)isInterestingHDRWithAsset:(id)arg1 ;
+-(BOOL)isInterestingReframeWithAsset:(id)arg1 ;
+-(BOOL)hasInterestingAudioClassificationWithAsset:(id)arg1 ;
+-(short)interestingAudioClassificationsWithAsset:(id)arg1 ;
+-(id)processedSignalsFromSignals:(id)arg1 ;
+-(id)faceInformationSummaryWithFaces:(id)arg1 personUUIDs:(id)arg2 hiddenPersonLocalIdentifiers:(id)arg3 ;
+-(BOOL)isNonMemorableWithAsset:(id)arg1 ;
+-(BOOL)isGoldWithAsset:(id)arg1 ;
+-(BOOL)assetIsJunkWithSceneClassifications:(id)arg1 confidenceThresholdBySceneIdentifierForScenesPreventingJunking:(id)arg2 confidenceThresholdBySceneIdentifierForJunkingScenes:(id)arg3 confidenceThresholdBySceneIdentifierForScenesPreventingSceneBasedJunking:(id)arg4 ;
+-(CLSMediaAnalysisModel *)mediaAnalysisModel;
+-(CLSAestheticsModel *)aestheticsModel;
+-(double)minimumDurationForVideoToNotBeJunk;
+-(double)minimumDurationForTimelapseVideoToNotBeJunk;
+-(double)minimumDurationForHighFramerateVideoToNotBeJunk;
+-(BOOL)asset:(id)arg1 isAestheticallyAwesomeWithContext:(id)arg2 ;
+-(BOOL)isUtilityForVideoAsset:(id)arg1 ;
+-(BOOL)isBadQualityForImageKeyAssetWithAsset:(id)arg1 ;
+-(BOOL)imageAssetIsJunkFromSceneAndJunkClassifications:(id)arg1 ;
+-(BOOL)imageAssetIsJunkForMemoriesFromSceneAndJunkClassifications:(id)arg1 forKeyAsset:(BOOL)arg2 ;
+-(BOOL)isUtilityForImageAsset:(id)arg1 ;
+-(BOOL)isUtilityForMemoriesForImageAsset:(id)arg1 ;
+-(BOOL)isJunkWithSignal:(id)arg1 isReliable:(BOOL*)arg2 ;
+@end
+

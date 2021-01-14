@@ -1,0 +1,71 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:39 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/DocumentCamera.framework/DocumentCamera
+*/
+
+#import <DocumentCamera/DocumentCamera-Structs.h>
+#import <UIKitCore/UICollectionViewController.h>
+#import <UIKit/UICollectionViewDataSource.h>
+#import <UIKit/UICollectionViewDelegate.h>
+#import <libobjc.A.dylib/ICDocCamThumbnailViewLayoutDelegate.h>
+
+@protocol ICDocCamThumbnailViewDelegate;
+@class NSMutableArray, ICDocCamImageCache, ICDocCamThumbnailCollectionViewLayout, NSString;
+
+@interface ICDocCamThumbnailCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate, ICDocCamThumbnailViewLayoutDelegate> {
+
+	BOOL _isPerformingBatchUpdates;
+	BOOL _needReloadAfterBatchUpdates;
+	NSMutableArray* _documentInfoArray;
+	ICDocCamImageCache* _imageCache;
+	id<ICDocCamThumbnailViewDelegate> _delegate;
+	ICDocCamThumbnailCollectionViewLayout* _layout;
+
+}
+
+@property (assign,nonatomic,__weak) id<ICDocCamThumbnailViewDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,retain) ICDocCamThumbnailCollectionViewLayout * layout;                 //@synthesize layout=_layout - In the implementation block
+@property (assign,nonatomic) BOOL isPerformingBatchUpdates;                                  //@synthesize isPerformingBatchUpdates=_isPerformingBatchUpdates - In the implementation block
+@property (assign,nonatomic) BOOL needReloadAfterBatchUpdates;                               //@synthesize needReloadAfterBatchUpdates=_needReloadAfterBatchUpdates - In the implementation block
+@property (nonatomic,retain) NSMutableArray * documentInfoArray;                             //@synthesize documentInfoArray=_documentInfoArray - In the implementation block
+@property (nonatomic,retain) ICDocCamImageCache * imageCache;                                //@synthesize imageCache=_imageCache - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)collectionView:(id)arg1 didEndDisplayingCell:(id)arg2 forItemAtIndexPath:(id)arg3 ;
+-(void)collectionView:(id)arg1 willDisplayCell:(id)arg2 forItemAtIndexPath:(id)arg3 ;
+-(void)collectionView:(id)arg1 didSelectItemAtIndexPath:(id)arg2 ;
+-(long long)numberOfSectionsInCollectionView:(id)arg1 ;
+-(id<ICDocCamThumbnailViewDelegate>)delegate;
+-(id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2 ;
+-(id)rootView;
+-(long long)collectionView:(id)arg1 numberOfItemsInSection:(long long)arg2 ;
+-(unsigned long long)supportedInterfaceOrientations;
+-(void)setDelegate:(id<ICDocCamThumbnailViewDelegate>)arg1 ;
+-(void)update;
+-(BOOL)shouldAutorotate;
+-(void)didReceiveMemoryWarning;
+-(id)initWithDelegate:(id)arg1 ;
+-(BOOL)_canShowWhileLocked;
+-(void)viewDidLoad;
+-(ICDocCamImageCache *)imageCache;
+-(void)setImageCache:(ICDocCamImageCache *)arg1 ;
+-(void)viewWillTransitionToSize:(CGSize)arg1 withTransitionCoordinator:(id)arg2 ;
+-(void)setLayout:(ICDocCamThumbnailCollectionViewLayout *)arg1 ;
+-(ICDocCamThumbnailCollectionViewLayout *)layout;
+-(CGSize)collectionView:(id)arg1 imageSizeAtIndex:(long long)arg2 ;
+-(CGRect)targetViewRect;
+-(void)setDocumentInfoArray:(NSMutableArray *)arg1 ;
+-(void)animateLayoutChange;
+-(void)addNewDocument:(id)arg1 completionBlock:(/*^block*/id)arg2 ;
+-(NSMutableArray *)documentInfoArray;
+-(BOOL)isPerformingBatchUpdates;
+-(void)setImageWithUUID:(id)arg1 forCell:(id)arg2 useResizedImage:(BOOL)arg3 ;
+-(void)reloadDataForCollectionView;
+-(void)setNeedReloadAfterBatchUpdates:(BOOL)arg1 ;
+-(void)setIsPerformingBatchUpdates:(BOOL)arg1 ;
+-(BOOL)needReloadAfterBatchUpdates;
+@end
+

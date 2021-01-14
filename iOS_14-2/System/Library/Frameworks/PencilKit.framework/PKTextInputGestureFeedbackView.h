@@ -1,0 +1,50 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:37 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PencilKit.framework/PencilKit
+*/
+
+#import <PencilKit/PencilKit-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@class PKTextInputFeedbackController, NSArray, UIView;
+
+@interface PKTextInputGestureFeedbackView : UIView {
+
+	BOOL __needsRefresh;
+	PKTextInputFeedbackController* _dataSourceController;
+	NSArray* __highlightViews;
+	UIView* __reserveSpaceView;
+	CGRect __reserveSpaceCaretRect;
+
+}
+
+@property (nonatomic,retain) NSArray * _highlightViews;                                                //@synthesize _highlightViews=__highlightViews - In the implementation block
+@property (nonatomic,retain) UIView * _reserveSpaceView;                                               //@synthesize _reserveSpaceView=__reserveSpaceView - In the implementation block
+@property (assign,nonatomic) CGRect _reserveSpaceCaretRect;                                            //@synthesize _reserveSpaceCaretRect=__reserveSpaceCaretRect - In the implementation block
+@property (assign,nonatomic) BOOL _needsRefresh;                                                       //@synthesize _needsRefresh=__needsRefresh - In the implementation block
+@property (assign,nonatomic,__weak) PKTextInputFeedbackController * dataSourceController;              //@synthesize dataSourceController=_dataSourceController - In the implementation block
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)layoutSubviews;
+-(BOOL)_needsRefresh;
+-(void)cancelShowingReserveSpaceIntro;
+-(void)setDataSourceController:(PKTextInputFeedbackController *)arg1 ;
+-(void)setNeedsRefreshFeedbackViews;
+-(void)beginShowingReserveSpaceIntro;
+-(void)set_needsRefresh:(BOOL)arg1 ;
+-(PKTextInputFeedbackController *)dataSourceController;
+-(UIEdgeInsets)_rectInsetsToApplyForFeedbackType:(long long)arg1 ;
+-(id)_highlightTextRectsToDisplayForElementContent:(id)arg1 range:(NSRange)arg2 feedbackType:(long long)arg3 ;
+-(void)_ensureHighlightViewsCount:(long long)arg1 ;
+-(void)_updateHighlightViewsLookForFeedbackType:(long long)arg1 element:(id)arg2 ;
+-(NSArray *)_highlightViews;
+-(id)reserveSpaceRects;
+-(void)set_highlightViews:(NSArray *)arg1 ;
+-(UIView *)_reserveSpaceView;
+-(void)set_reserveSpaceView:(UIView *)arg1 ;
+-(void)set_reserveSpaceCaretRect:(CGRect)arg1 ;
+-(CGRect)_reserveSpaceCaretRect;
+-(void)_prepareForReserveSpaceAnimations;
+-(CGRect)_selectionClipRectForElement:(id)arg1 ;
+@end
+

@@ -1,0 +1,26 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:13 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /usr/lib/libnetwork.dylib
+*/
+
+#import <libnetwork.dylib/libnetwork.dylib-Structs.h>
+#import <libobjc.A.dylib/OS_nw_protocol_data_array.h>
+
+@class NSString;
+
+@interface NWConcrete_nw_protocol_data_array : NSObject <OS_nw_protocol_data_array> {
+
+	nw_frame_array_s* frame_array;
+	unsigned frame_count;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(void)dealloc;
+@end
+

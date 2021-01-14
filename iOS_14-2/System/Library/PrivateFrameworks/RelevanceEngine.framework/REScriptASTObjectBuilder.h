@@ -1,0 +1,34 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/RelevanceEngine.framework/RelevanceEngine
+*/
+
+
+@class REScriptSymbolTable;
+
+@interface REScriptASTObjectBuilder : NSObject {
+
+	REScriptSymbolTable* _table;
+
+}
+
+@property (nonatomic,readonly) REScriptSymbolTable * table;              //@synthesize table=_table - In the implementation block
+-(REScriptSymbolTable *)table;
+-(id)initWithTable:(id)arg1 ;
+-(id)buildObjectWithNode:(id)arg1 error:(id*)arg2 ;
+-(id)objectTypeErrorDescription;
+-(id)buildObjectWithIdentifierNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithBinaryExpressionNode:(id)arg1 previousExpression:(id)arg2 error:(id*)arg3 ;
+-(id)buildObjectWithFunctionNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithSubscriptExpressionNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithLiteralNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithExpressionNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithPrefixExpressionNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithMemberExpressionNode:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithTopLevelBinaryExpression:(id)arg1 error:(id*)arg2 ;
+-(id)buildObjectWithTopLevelBinaryExpressionListNode:(id)arg1 error:(id*)arg2 ;
+-(id)_errorForUnsupportedNode:(id)arg1 ;
+-(id)buildObjectWithBinaryExpressionListNode:(id)arg1 previousExpression:(id)arg2 error:(id*)arg3 ;
+@end
+

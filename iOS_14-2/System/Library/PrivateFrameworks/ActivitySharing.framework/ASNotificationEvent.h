@@ -1,0 +1,48 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ActivitySharing.framework/ActivitySharing
+*/
+
+#import <libobjc.A.dylib/ASCloudKitCodable.h>
+
+@class NSUUID, NSDate, NSString;
+
+@interface ASNotificationEvent : NSObject <ASCloudKitCodable> {
+
+	NSUUID* _friendUUID;
+	long long _type;
+	NSDate* _date;
+	NSUUID* _triggerUUID;
+	long long _triggerSnapshotIndex;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,retain) NSUUID * friendUUID;                         //@synthesize friendUUID=_friendUUID - In the implementation block
+@property (assign,nonatomic) long long type;                              //@synthesize type=_type - In the implementation block
+@property (nonatomic,retain) NSDate * date;                               //@synthesize date=_date - In the implementation block
+@property (nonatomic,retain) NSUUID * triggerUUID;                        //@synthesize triggerUUID=_triggerUUID - In the implementation block
+@property (assign,nonatomic) long long triggerSnapshotIndex;              //@synthesize triggerSnapshotIndex=_triggerSnapshotIndex - In the implementation block
++(id)notificationEventWithRecord:(id)arg1 friendUUID:(id)arg2 ;
++(id)goalCompletionEventWithActivitySummary:(id)arg1 ;
++(id)workoutCompletionEventWithWorkout:(id)arg1 ;
++(id)achievementCompletionEventWithAchievement:(id)arg1 ;
++(id)deletedWorkoutEventWithUUID:(id)arg1 ;
+-(void)setDate:(NSDate *)arg1 ;
+-(void)setType:(long long)arg1 ;
+-(NSUUID *)friendUUID;
+-(void)setFriendUUID:(NSUUID *)arg1 ;
+-(NSString *)description;
+-(long long)type;
+-(NSDate *)date;
+-(id)recordWithZoneID:(id)arg1 ;
+-(NSUUID *)triggerUUID;
+-(void)setTriggerUUID:(NSUUID *)arg1 ;
+-(long long)triggerSnapshotIndex;
+-(void)setTriggerSnapshotIndex:(long long)arg1 ;
+@end
+

@@ -1,0 +1,49 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:47 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ITMLKit.framework/ITMLKit
+*/
+
+#import <libobjc.A.dylib/RWIProtocolCSSDomainHandler.h>
+
+@class NSMutableDictionary, RWIProtocolCSSStyleSheetHeader, IKViewElementStyleFactory, NSMapTable, IKJSInspectorController, NSString;
+
+@interface IKJSInspectorCSSAgent : NSObject <RWIProtocolCSSDomainHandler> {
+
+	NSMutableDictionary* _inlineStyleMap;
+	RWIProtocolCSSStyleSheetHeader* _templateStylesheetHeader;
+	IKViewElementStyleFactory* _styleFactory;
+	NSMapTable* _authorStylesheets;
+	IKJSInspectorController* _controller;
+
+}
+
+@property (nonatomic,__weak,readonly) IKJSInspectorController * controller;              //@synthesize controller=_controller - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(void)_evaluator:(id)arg1 updateMediaStylesWithActiveStyles:(id)arg2 inActiveStyles:(id)arg3 defaultStyles:(id)arg4 forRule:(id)arg5 withMatch:(id)arg6 ;
+-(IKJSInspectorController *)controller;
+-(void)enableWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 ;
+-(void)disableWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 ;
+-(id)initWithInspectorController:(id)arg1 ;
+-(void)updateStylesheets;
+-(void)resetStylesFromNode:(id)arg1 ;
+-(void)mediaQueryResultDidChange;
+-(id)_getMatchedStyleRulesForNode:(id)arg1 ;
+-(id)_getMatchedTemplateStylesForNode:(id)arg1 ;
+-(id)_updatedInlineStyleForNode:(int)arg1 withStyleString:(id)arg2 ;
+-(id)_stylesheetBodyForStylesheetId:(id)arg1 ;
+-(id)_styleNodeForStylesheetId:(id)arg1 ;
+-(void)getMatchedStylesForNodeWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 nodeId:(int)arg3 includePseudo:(BOOL*)arg4 includeInherited:(BOOL*)arg5 ;
+-(void)getInlineStylesForNodeWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 nodeId:(int)arg3 ;
+-(void)getComputedStyleForNodeWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 nodeId:(int)arg3 ;
+-(void)getAllStyleSheetsWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 ;
+-(void)getStyleSheetWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 styleSheetId:(id)arg3 ;
+-(void)getStyleSheetTextWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 styleSheetId:(id)arg3 ;
+-(void)setStyleSheetTextWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 styleSheetId:(id)arg3 text:(id)arg4 ;
+-(void)setStyleTextWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 styleId:(id)arg3 text:(id)arg4 ;
+-(void)getSupportedCSSPropertiesWithErrorCallback:(/*^block*/id)arg1 successCallback:(/*^block*/id)arg2 ;
+@end
+

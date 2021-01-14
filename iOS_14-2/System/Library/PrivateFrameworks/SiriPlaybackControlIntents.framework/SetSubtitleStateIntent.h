@@ -1,0 +1,20 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SiriPlaybackControlIntents.framework/SiriPlaybackControlIntents
+*/
+
+#import <Intents/INIntent.h>
+
+@class Device, LanguageOption, NSArray, DeviceQuery;
+
+@interface SetSubtitleStateIntent : INIntent
+
+@property (nonatomic,copy) Device * device; 
+@property (assign,nonatomic) long long enable; 
+@property (nonatomic,copy) LanguageOption * language; 
+@property (nonatomic,copy) NSArray * deviceContext; 
+@property (assign,nonatomic) long long type; 
+@property (nonatomic,copy) DeviceQuery * deviceQuery; 
+@end
+

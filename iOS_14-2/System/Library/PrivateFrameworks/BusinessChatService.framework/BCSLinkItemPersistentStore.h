@@ -1,0 +1,39 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:21 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BusinessChatService.framework/BusinessChatService
+*/
+
+#import <BusinessChatService/BusinessChatService-Structs.h>
+#import <BusinessChatService/BCSPersistentStore.h>
+#import <libobjc.A.dylib/BCSItemCaching.h>
+#import <libobjc.A.dylib/BCSLinkItemCacheClearing.h>
+
+@interface BCSLinkItemPersistentStore : BCSPersistentStore <BCSItemCaching, BCSLinkItemCacheClearing> {
+
+	long long _schemaVersion;
+
+}
++(const char*)debugQueueName;
+-(long long)schemaVersion;
+-(id)databasePath;
+-(const char*)schema;
+-(id)init;
+-(void)_deleteAllItems;
+-(id)itemMatching:(id)arg1 ;
+-(void)deleteItemMatching:(id)arg1 ;
+-(void)updateItem:(id)arg1 withItemIdentifier:(id)arg2 ;
+-(id)initWithSchemaVersion:(long long)arg1 ;
+-(id)_linkItemMatching:(id)arg1 ;
+-(void)_updateLinkItem:(id)arg1 withItemIdentifier:(id)arg2 ;
+-(void)_deleteLinkItemMatching:(id)arg1 ;
+-(BOOL)_executeDeleteSQLQuery:(const char*)arg1 ;
+-(id)_executeFetchLinkItemSQLQuery:(const char*)arg1 ;
+-(id)_extractLinkItemFromStatement:(sqlite3_stmtRef)arg1 ;
+-(BOOL)_insertLinkItem:(id)arg1 withItemIdentifier:(id)arg2 ;
+-(void)deleteItemsOfType:(long long)arg1 ;
+-(void)deleteExpiredItemsOfType:(long long)arg1 ;
+-(void)deleteLinkItemsWithBundleID:(id)arg1 ;
+-(void)schemaVersionWillChangeForDatabase:(sqlite3Ref)arg1 fromSchemaVersion:(long long)arg2 toSchemaVersion:(long long)arg3 ;
+@end
+

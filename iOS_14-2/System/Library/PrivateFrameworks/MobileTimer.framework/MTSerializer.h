@@ -1,0 +1,18 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:55 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MobileTimer.framework/MobileTimer
+*/
+
+@class NSCoder;
+
+
+@protocol MTSerializer
+@property (nonatomic,readonly) unsigned long long mtType; 
+@property (nonatomic,readonly) NSCoder * mtCoder; 
+@required
+-(unsigned long long)mtType;
+-(NSCoder *)mtCoder;
+
+@end
+

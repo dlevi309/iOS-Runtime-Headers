@@ -1,0 +1,52 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WiFiPolicy.framework/WiFiPolicy
+*/
+
+#import <libobjc.A.dylib/TBAnalyticsEvent.h>
+
+@class NSNumber, NSString, NSDictionary;
+
+@interface TBCacheAnalyticsEvent : NSObject <TBAnalyticsEvent> {
+
+	unsigned long long _status;
+	NSNumber* _staleness;
+	NSNumber* _tileKey;
+	NSNumber* _type;
+	NSNumber* _errorCode;
+	NSString* _eventName;
+	NSDictionary* _eventDictionary;
+
+}
+
+@property (assign,nonatomic) unsigned long long status;                   //@synthesize status=_status - In the implementation block
+@property (assign,nonatomic) NSNumber * staleness;                        //@synthesize staleness=_staleness - In the implementation block
+@property (assign,nonatomic) NSNumber * tileKey;                          //@synthesize tileKey=_tileKey - In the implementation block
+@property (assign,nonatomic) NSNumber * type;                             //@synthesize type=_type - In the implementation block
+@property (assign,nonatomic) NSNumber * errorCode;                        //@synthesize errorCode=_errorCode - In the implementation block
+@property (nonatomic,retain) NSString * eventName;                        //@synthesize eventName=_eventName - In the implementation block
+@property (nonatomic,retain) NSDictionary * eventDictionary;              //@synthesize eventDictionary=_eventDictionary - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)cacheAvailabilityEventWithStatus:(unsigned long long)arg1 ;
++(id)cacheAnalyticsEventWithStatus:(unsigned long long)arg1 staleness:(unsigned long long)arg2 tileKey:(unsigned long long)arg3 type:(unsigned long long)arg4 error:(id)arg5 ;
++(id)cacheEventWithTotalCount:(unsigned long long)arg1 last24HoursCount:(unsigned long long)arg2 ;
+-(NSString *)eventName;
+-(NSNumber *)errorCode;
+-(void)setType:(NSNumber *)arg1 ;
+-(NSNumber *)tileKey;
+-(NSDictionary *)eventDictionary;
+-(void)setEventName:(NSString *)arg1 ;
+-(NSNumber *)type;
+-(void)setErrorCode:(NSNumber *)arg1 ;
+-(void)setStatus:(unsigned long long)arg1 ;
+-(void)setTileKey:(NSNumber *)arg1 ;
+-(unsigned long long)status;
+-(void)setEventDictionary:(NSDictionary *)arg1 ;
+-(NSNumber *)staleness;
+-(void)setStaleness:(NSNumber *)arg1 ;
+@end
+

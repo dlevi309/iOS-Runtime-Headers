@@ -1,0 +1,19 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:28 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PhotosUI.framework/PhotosUI
+*/
+
+#import <PhotosUI/PUOneUpSuggestion.h>
+
+@interface PUOneUpLivephotoVariationSuggestion : PUOneUpSuggestion {
+
+	long long _variationType;
+
+}
+
+@property (assign,nonatomic) long long variationType;              //@synthesize variationType=_variationType - In the implementation block
+-(long long)variationType;
+-(void)setVariationType:(long long)arg1 ;
+@end
+

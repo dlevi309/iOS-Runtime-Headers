@@ -1,0 +1,112 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:03 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoverSheet.framework/CoverSheet
+*/
+
+#import <CoverSheet/CSCoverSheetViewControllerBase.h>
+#import <libobjc.A.dylib/SBUIPasscodeLockViewDelegate.h>
+#import <libobjc.A.dylib/PTSettingsKeyObserver.h>
+
+@protocol SBUIPasscodeLockView_Internal, CSPasscodeViewControllerDelegate, CSCoverSheetContextProviding, CSWallpaperColorProvider;
+@class SBFAuthenticationAssertion, UIView, CSPasscodeBackgroundView, CSLockScreenPearlSettings, SBUIProudLockContainerViewController, NSString, UIColor, CSFaceOcclusionMonitor;
+
+@interface CSPasscodeViewController : CSCoverSheetViewControllerBase <SBUIPasscodeLockViewDelegate, PTSettingsKeyObserver> {
+
+	BOOL _attemptingUnlock;
+	SBFAuthenticationAssertion* _sustainAuthenticationAssertion;
+	unsigned long long _options;
+	UIView*<SBUIPasscodeLockView_Internal> _passcodeLockView;
+	CSPasscodeBackgroundView* _backgroundView;
+	BOOL _isBeingDismissedAfterInterstitialTransitionCancelled;
+	CSLockScreenPearlSettings* _pearlSettings;
+	BOOL _useBiometricPresentation;
+	BOOL _biometricButtonsInitiallyVisible;
+	BOOL _showProudLock;
+	BOOL _confirmedNotInPocket;
+	id<CSPasscodeViewControllerDelegate> _delegate;
+	SBUIProudLockContainerViewController* _proudLockContainerViewControllerToUpdate;
+	NSString* _unlockDestination;
+	UIColor* _wallpaperAverageColorOverride;
+	id<CSCoverSheetContextProviding> _coverSheetContext;
+	id<CSWallpaperColorProvider> _wallpaperColorProvider;
+	CSFaceOcclusionMonitor* _faceOcclusionMonitor;
+
+}
+
+@property (assign,nonatomic,__weak) id<CSPasscodeViewControllerDelegate> delegate;                                         //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) BOOL useBiometricPresentation;                                                                //@synthesize useBiometricPresentation=_useBiometricPresentation - In the implementation block
+@property (assign,nonatomic) BOOL biometricButtonsInitiallyVisible;                                                        //@synthesize biometricButtonsInitiallyVisible=_biometricButtonsInitiallyVisible - In the implementation block
+@property (assign,nonatomic) BOOL showProudLock;                                                                           //@synthesize showProudLock=_showProudLock - In the implementation block
+@property (nonatomic,retain) SBUIProudLockContainerViewController * proudLockContainerViewControllerToUpdate;              //@synthesize proudLockContainerViewControllerToUpdate=_proudLockContainerViewControllerToUpdate - In the implementation block
+@property (nonatomic,copy) NSString * unlockDestination;                                                                   //@synthesize unlockDestination=_unlockDestination - In the implementation block
+@property (assign,nonatomic) UIColor * wallpaperAverageColorOverride;                                                      //@synthesize wallpaperAverageColorOverride=_wallpaperAverageColorOverride - In the implementation block
+@property (assign,nonatomic) BOOL confirmedNotInPocket;                                                                    //@synthesize confirmedNotInPocket=_confirmedNotInPocket - In the implementation block
+@property (nonatomic,retain) id<CSCoverSheetContextProviding> coverSheetContext;                                           //@synthesize coverSheetContext=_coverSheetContext - In the implementation block
+@property (nonatomic,retain) id<CSWallpaperColorProvider> wallpaperColorProvider;                                          //@synthesize wallpaperColorProvider=_wallpaperColorProvider - In the implementation block
+@property (nonatomic,retain) CSFaceOcclusionMonitor * faceOcclusionMonitor;                                                //@synthesize faceOcclusionMonitor=_faceOcclusionMonitor - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id<CSWallpaperColorProvider>)wallpaperColorProvider;
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(void)setWallpaperColorProvider:(id<CSWallpaperColorProvider>)arg1 ;
+-(id)initWithOptions:(unsigned long long)arg1 ;
+-(long long)presentationStyle;
+-(long long)presentationPriority;
+-(long long)presentationTransition;
+-(id)displayLayoutElementIdentifier;
+-(id<CSPasscodeViewControllerDelegate>)delegate;
+-(BOOL)handleEvent:(id)arg1 ;
+-(void)viewWillDisappear:(BOOL)arg1 ;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(void)aggregateBehavior:(id)arg1 ;
+-(void)passcodeLockViewPasscodeEntered:(id)arg1 ;
+-(void)passcodeLockViewPasscodeDidChange:(id)arg1 ;
+-(NSString *)unlockDestination;
+-(void)setUnlockDestination:(NSString *)arg1 ;
+-(BOOL)confirmedNotInPocket;
+-(void)setConfirmedNotInPocket:(BOOL)arg1 ;
+-(void)setDelegate:(id<CSPasscodeViewControllerDelegate>)arg1 ;
+-(void)aggregateAppearance:(id)arg1 ;
+-(long long)presentationType;
+-(void)viewDidLoad;
+-(void)viewDidDisappear:(BOOL)arg1 ;
+-(void)settings:(id)arg1 changedValueForKey:(id)arg2 ;
+-(void)passcodeLockViewStateChange:(id)arg1 ;
+-(void)loadView;
+-(void)passcodeLockViewPasscodeEnteredViaMesa:(id)arg1 ;
+-(void)performCustomTransitionToVisible:(BOOL)arg1 withAnimationSettings:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)passcodeLockViewCancelButtonPressed:(id)arg1 ;
+-(void)passcodeLockViewEmergencyCallButtonPressed:(id)arg1 ;
+-(void)dealloc;
+-(void)_passcodeLockViewPasscodeEntered:(id)arg1 viaMesa:(BOOL)arg2 ;
+-(void)setUseBiometricPresentation:(BOOL)arg1 ;
+-(BOOL)useBiometricPresentation;
+-(BOOL)presentationCancelsTouches;
+-(void)setCoverSheetContext:(id<CSCoverSheetContextProviding>)arg1 ;
+-(id<CSCoverSheetContextProviding>)coverSheetContext;
+-(void)_updateProudLockViewControllerConfiguration;
+-(void)setWallpaperAverageColorOverride:(UIColor *)arg1 ;
+-(void)setFaceOcclusionMonitor:(CSFaceOcclusionMonitor *)arg1 ;
+-(void)setBiometricButtonsInitiallyVisible:(BOOL)arg1 ;
+-(void)setShowProudLock:(BOOL)arg1 ;
+-(void)setProudLockContainerViewControllerToUpdate:(SBUIProudLockContainerViewController *)arg1 ;
+-(void)beginInteractivePresentationTransitionForInitialTransition:(BOOL)arg1 ;
+-(void)updateInteractiveTransitionWithPercent:(double)arg1 forInitialTransition:(BOOL)arg2 ;
+-(void)endInteractiveTransitionToPresented:(BOOL)arg1 forInitialTransition:(BOOL)arg2 ;
+-(void)commitingToEndTransitionToPresented:(BOOL)arg1 forInitialTransition:(BOOL)arg2 ;
+-(void)_setBiometricAuthenticationEnabledForTransientAppearanceTransition:(BOOL)arg1 ;
+-(BOOL)_shouldUseLightStylePasscodeView;
+-(BOOL)biometricButtonsInitiallyVisible;
+-(void)_updateReduceTransparencyBackingColor;
+-(SBUIProudLockContainerViewController *)proudLockContainerViewControllerToUpdate;
+-(BOOL)showProudLock;
+-(BOOL)_shouldEmulateInteractivePresentation;
+-(void)_emulateInteractivePresentation;
+-(id)_effectiveAverageWallpaperColor;
+-(UIColor *)wallpaperAverageColorOverride;
+-(CSFaceOcclusionMonitor *)faceOcclusionMonitor;
+@end
+

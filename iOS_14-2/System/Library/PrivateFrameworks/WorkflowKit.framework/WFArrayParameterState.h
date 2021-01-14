@@ -1,0 +1,35 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit
+*/
+
+#import <WorkflowKit/WorkflowKit-Structs.h>
+#import <libobjc.A.dylib/WFParameterState.h>
+
+@class NSArray, NSString;
+
+@interface WFArrayParameterState : NSObject <WFParameterState> {
+
+	NSArray* _values;
+
+}
+
+@property (nonatomic,copy,readonly) NSArray * values;               //@synthesize values=_values - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(Class)processingValueClass;
+-(id)serializedRepresentation;
+-(NSArray *)values;
+-(id)initWithValues:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(id)initWithSerializedRepresentation:(id)arg1 variableProvider:(id)arg2 parameter:(id)arg3 ;
+-(id)containedVariables;
+-(void)processWithContext:(id)arg1 userInputRequiredHandler:(/*^block*/id)arg2 valueHandler:(/*^block*/id)arg3 ;
+-(void)processWithContext:(id)arg1 userInputRequiredHandler:(/*^block*/id)arg2 valueHandler:(/*^block*/id)arg3 processSingleVariableStringsAsContentItems:(BOOL)arg4 ;
+@end
+

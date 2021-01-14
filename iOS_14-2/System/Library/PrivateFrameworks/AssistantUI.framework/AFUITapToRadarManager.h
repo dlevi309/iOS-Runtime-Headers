@@ -1,0 +1,62 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:57 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
+*/
+
+#import <libobjc.A.dylib/AFUIBugReporting.h>
+
+@protocol AFUIBugReportingDelegate;
+@class NSString, NSArray, NSMutableDictionary, NSMutableArray;
+
+@interface AFUITapToRadarManager : NSObject <AFUIBugReporting> {
+
+	id<AFUIBugReportingDelegate> _delegate;
+	NSString* _hostname;
+	NSString* _lastUserText;
+	NSString* _siriLanguage;
+	NSArray* _contextCollectorsInfo;
+	NSMutableDictionary* _tapToRadarParameters;
+	NSMutableArray* _attachmentPaths;
+
+}
+
+@property (getter=_hostname,nonatomic,copy) NSString * hostname;                                                   //@synthesize hostname=_hostname - In the implementation block
+@property (getter=_lastUserText,nonatomic,copy) NSString * lastUserText;                                           //@synthesize lastUserText=_lastUserText - In the implementation block
+@property (getter=_siriLanguage,nonatomic,copy) NSString * siriLanguage;                                           //@synthesize siriLanguage=_siriLanguage - In the implementation block
+@property (getter=_contextCollectorsInfo,nonatomic,copy) NSArray * contextCollectorsInfo;                          //@synthesize contextCollectorsInfo=_contextCollectorsInfo - In the implementation block
+@property (getter=_tapToRadarParameters,nonatomic,retain) NSMutableDictionary * tapToRadarParameters;              //@synthesize tapToRadarParameters=_tapToRadarParameters - In the implementation block
+@property (getter=_attachmentPaths,nonatomic,retain) NSMutableArray * attachmentPaths;                             //@synthesize attachmentPaths=_attachmentPaths - In the implementation block
+@property (assign,nonatomic,__weak) id<AFUIBugReportingDelegate> delegate;                                         //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(id<AFUIBugReportingDelegate>)delegate;
+-(void)setTitle:(id)arg1 ;
+-(unsigned long long)maximumAttachmentSize;
+-(void)setDelegate:(id<AFUIBugReportingDelegate>)arg1 ;
+-(void)setHostname:(NSString *)arg1 ;
+-(void)setAttachmentPaths:(NSMutableArray *)arg1 ;
+-(void)setDescription:(NSString *)arg1 ;
+-(id)_hostname;
+-(void)_setDefaultParameterValues;
+-(void)attachFileAtPath:(id)arg1 image:(BOOL)arg2 ;
+-(id)_attachmentPaths;
+-(id)_siriLanguage;
+-(id)_lastUserText;
+-(BOOL)canReportBugs;
+-(void)composeBugReport;
+-(void)setSiriLanguage:(NSString *)arg1 ;
+-(void)setLastUserText:(NSString *)arg1 ;
+-(void)setIncludeSysdiagnosesFromDevices:(id)arg1 ;
+-(void)setContextCollectorsInfo:(NSArray *)arg1 ;
+-(void)setKeywordIdentifiers:(id)arg1 ;
+-(void)attachData:(id)arg1 name:(id)arg2 mimeType:(id)arg3 ;
+-(void)setComponentName:(id)arg1 componentVersion:(id)arg2 componentID:(id)arg3 ;
+-(id)_contextCollectorsInfo;
+-(id)_tapToRadarParameters;
+-(void)setTapToRadarParameters:(NSMutableDictionary *)arg1 ;
+@end
+

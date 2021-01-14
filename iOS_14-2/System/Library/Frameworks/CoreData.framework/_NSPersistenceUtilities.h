@@ -1,0 +1,13 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreData.framework/CoreData
+*/
+
+
+@interface _NSPersistenceUtilities : NSObject
++(void)initialize;
++(unsigned long long)attributeTypeForXMLInfo:(id)arg1 ;
++(BOOL)_setURL:(id)arg1 forPersistentStore:(id)arg2 withCoordinator:(id)arg3 ;
+@end
+

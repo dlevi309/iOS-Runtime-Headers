@@ -1,0 +1,65 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeUI.framework/HomeUI
+*/
+
+#import <HomeUI/HUImageOBWelcomeController.h>
+#import <libobjc.A.dylib/HUConfigurationViewController.h>
+#import <libobjc.A.dylib/HUPreloadableViewController.h>
+
+@protocol HUConfigurationViewControllerDelegate;
+@class HMHome, OBTrayButton, OBLinkTrayButton, NSString;
+
+@interface HUCameraRecordingIntroViewController : HUImageOBWelcomeController <HUConfigurationViewController, HUPreloadableViewController> {
+
+	id<HUConfigurationViewControllerDelegate> _delegate;
+	unsigned long long _variant;
+	HMHome* _home;
+	OBTrayButton* _setupButton;
+	OBLinkTrayButton* _notNowButton;
+	NSString* _continueButtonText;
+	NSString* _notNowButtonText;
+	NSString* _captionText;
+
+}
+
+@property (assign,nonatomic) unsigned long long variant;                                             //@synthesize variant=_variant - In the implementation block
+@property (nonatomic,retain) HMHome * home;                                                          //@synthesize home=_home - In the implementation block
+@property (nonatomic,retain) OBTrayButton * setupButton;                                             //@synthesize setupButton=_setupButton - In the implementation block
+@property (nonatomic,retain) OBLinkTrayButton * notNowButton;                                        //@synthesize notNowButton=_notNowButton - In the implementation block
+@property (nonatomic,retain) NSString * continueButtonText;                                          //@synthesize continueButtonText=_continueButtonText - In the implementation block
+@property (nonatomic,retain) NSString * notNowButtonText;                                            //@synthesize notNowButtonText=_notNowButtonText - In the implementation block
+@property (nonatomic,retain) NSString * captionText;                                                 //@synthesize captionText=_captionText - In the implementation block
+@property (assign,nonatomic,__weak) id<HUConfigurationViewControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) BOOL isFinalStep; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(id<HUConfigurationViewControllerDelegate>)delegate;
+-(void)viewWillDisappear:(BOOL)arg1 ;
+-(unsigned long long)variant;
+-(id)hu_preloadContent;
+-(void)setVariant:(unsigned long long)arg1 ;
+-(void)setDelegate:(id<HUConfigurationViewControllerDelegate>)arg1 ;
+-(OBLinkTrayButton *)notNowButton;
+-(void)setNotNowButton:(OBLinkTrayButton *)arg1 ;
+-(NSString *)captionText;
+-(void)viewDidLoad;
+-(OBTrayButton *)setupButton;
+-(void)setHome:(HMHome *)arg1 ;
+-(void)setCaptionText:(NSString *)arg1 ;
+-(HMHome *)home;
+-(id)initWithTitle:(id)arg1 detailText:(id)arg2 icon:(id)arg3 contentImage:(id)arg4 ;
+-(id)initWithIntroVariant:(unsigned long long)arg1 home:(id)arg2 ;
+-(void)setSetupButton:(OBTrayButton *)arg1 ;
+-(NSString *)continueButtonText;
+-(void)_buttonOne:(id)arg1 ;
+-(NSString *)notNowButtonText;
+-(void)_buttonTwo:(id)arg1 ;
+-(void)setContinueButtonText:(NSString *)arg1 ;
+-(void)setNotNowButtonText:(NSString *)arg1 ;
+@end
+

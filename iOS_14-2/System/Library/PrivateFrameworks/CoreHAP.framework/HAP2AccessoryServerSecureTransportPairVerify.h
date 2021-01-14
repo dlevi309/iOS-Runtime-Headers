@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:32 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP
+*/
+
+#import <CoreHAP/HAP2AccessoryServerSecureTransportBase.h>
+#import <libobjc.A.dylib/HAP2AccessoryServerTransportDelegate.h>
+#import <libobjc.A.dylib/HAPSecuritySessionDelegate.h>
+
+@class HAPSecuritySession, NSString;
+
+@interface HAP2AccessoryServerSecureTransportPairVerify : HAP2AccessoryServerSecureTransportBase <HAP2AccessoryServerTransportDelegate, HAPSecuritySessionDelegate> {
+
+	HAPSecuritySession* _securitySession;
+	/*^block*/id _stateChangeCompletion;
+
+}
+
+@property (nonatomic,copy) id stateChangeCompletion;                            //@synthesize stateChangeCompletion=_stateChangeCompletion - In the implementation block
+@property (nonatomic,retain) HAPSecuritySession * securitySession;              //@synthesize securitySession=_securitySession - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)_closeWithError:(id)arg1 ;
+-(void)_openTransport;
+-(void)setSecuritySession:(HAPSecuritySession *)arg1 ;
+-(HAPSecuritySession *)securitySession;
+-(id)securitySession:(id)arg1 didReceiveLocalPairingIdentityRequestWithError:(id*)arg2 ;
+-(id)securitySession:(id)arg1 didReceiveRequestForPeerPairingIdentityWithIdentifier:(id)arg2 error:(id*)arg3 ;
+-(void)securitySession:(id)arg1 didReceiveSetupExchangeData:(id)arg2 ;
+-(void)securitySessionDidOpen:(id)arg1 ;
+-(void)securitySession:(id)arg1 didCloseWithError:(id)arg2 ;
+-(void)setStateChangeCompletion:(id)arg1 ;
+-(void)_sendSetupExchangeData:(id)arg1 ;
+-(id)stateChangeCompletion;
+-(void)_secureTransport;
+-(id)initWithTransport:(id)arg1 operationQueue:(id)arg2 ;
+-(void)doOpenWithCompletion:(/*^block*/id)arg1 ;
+-(void)doCloseWithError:(id)arg1 completion:(/*^block*/id)arg2 ;
+@end
+

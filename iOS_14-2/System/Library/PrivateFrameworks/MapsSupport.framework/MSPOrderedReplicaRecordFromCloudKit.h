@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:14 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MapsSupport.framework/MapsSupport
+*/
+
+#import <MapsSupport/MSPReplicaRecordFromCloudKit.h>
+#import <libobjc.A.dylib/MSPOrderedReplicaRecord.h>
+#import <libobjc.A.dylib/MSPOrderedReplicaRecordFromCloud.h>
+
+@class MSPPosition, MSPVectorTimestamp, NSData, NSString, CKRecord, NSUUID;
+
+@interface MSPOrderedReplicaRecordFromCloudKit : MSPReplicaRecordFromCloudKit <MSPOrderedReplicaRecord, MSPOrderedReplicaRecordFromCloud> {
+
+	MSPPosition* _position;
+	MSPVectorTimestamp* _positionTimestamp;
+
+}
+
+@property (nonatomic,readonly) MSPPosition * position;                                                                         //@synthesize position=_position - In the implementation block
+@property (nonatomic,readonly) MSPVectorTimestamp * positionTimestamp;                                                         //@synthesize positionTimestamp=_positionTimestamp - In the implementation block
+@property (nonatomic,copy,readonly) NSData * contents; 
+@property (nonatomic,copy,readonly) MSPVectorTimestamp * contentsTimestamp; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,retain) CKRecord * record; 
+@property (getter=isTombstoneRepresentedByCloudRecord,nonatomic,readonly) BOOL tombstoneRepresentedByCloudRecord; 
+@property (getter=recordIdentifier,nonatomic,readonly) NSUUID * recordIdentifier; 
++(id)recordType;
++(id)recordFromInsertEdit:(id)arg1 ;
+-(MSPPosition *)position;
+-(MSPVectorTimestamp *)positionTimestamp;
+-(id)recordZoneName;
+-(NSString *)description;
+-(id)initWithCKRecord:(id)arg1 ;
+-(id)recordRepresentation;
+-(id)initWithReplicaRecord:(id)arg1 recordID:(id)arg2 ;
+-(void)applyUpdatePositionEdit:(id)arg1 ;
+-(id)initWithContents:(id)arg1 contentsTimestamp:(id)arg2 position:(id)arg3 positionTimestamp:(id)arg4 identifier:(id)arg5 ;
+@end
+

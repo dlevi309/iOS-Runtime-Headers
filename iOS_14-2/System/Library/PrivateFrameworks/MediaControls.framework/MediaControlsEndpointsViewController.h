@@ -1,0 +1,143 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:53 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MediaControls.framework/MediaControls
+*/
+
+#import <MediaControls/MediaControlsCollectionViewController.h>
+#import <libobjc.A.dylib/MRPlatterViewControllerDelegate.h>
+#import <MediaControls/MediaControlsCollectionViewDataSource.h>
+#import <MediaControls/MediaControlsCollectionViewDelegate.h>
+#import <MediaControls/MediaControlsEndpointsManagerDelegate.h>
+#import <libobjc.A.dylib/CCUIContentModuleContentViewController.h>
+
+@class MPAVOutputDeviceRoutingDataSource, MPMediaControlsConfiguration, MediaControlsEndpointsManager, MPAVRoutingViewController, MPAVEndpointRoute, NSString, AVExternalPlaybackMonitor, UIViewPropertyAnimator;
+
+@interface MediaControlsEndpointsViewController : MediaControlsCollectionViewController <MRPlatterViewControllerDelegate, MediaControlsCollectionViewDataSource, MediaControlsCollectionViewDelegate, MediaControlsEndpointsManagerDelegate, CCUIContentModuleContentViewController> {
+
+	MPAVOutputDeviceRoutingDataSource* _outputDeviceRoutingDataSource;
+	long long _lastSelectedModeForActivePlatterViewController;
+	BOOL _didRetrieveActiveSystemRouteOnce;
+	BOOL _shouldReselectActiveSystemRoute;
+	BOOL _prewarming;
+	BOOL _shouldTransitionToVisibleWhenReady;
+	BOOL _didTransitionToVisible;
+	BOOL _shouldPresentUsingViewService;
+	BOOL _dismissing;
+	BOOL _onScreen;
+	MPMediaControlsConfiguration* _configuration;
+	/*^block*/id _routingCornerViewTappedBlock;
+	/*^block*/id _homeGestureDismissalAllowedBlock;
+	MediaControlsEndpointsManager* _endpointsManager;
+	MPAVRoutingViewController* _routingViewController;
+	MPAVEndpointRoute* _selectedRoute;
+	NSString* _routingContextUID;
+	AVExternalPlaybackMonitor* _externalPlaybackMonitor;
+
+}
+
+@property (assign,getter=isDismissing,nonatomic) BOOL dismissing;                              //@synthesize dismissing=_dismissing - In the implementation block
+@property (assign,getter=isOnScreen,nonatomic) BOOL onScreen;                                  //@synthesize onScreen=_onScreen - In the implementation block
+@property (nonatomic,retain) MediaControlsEndpointsManager * endpointsManager;                 //@synthesize endpointsManager=_endpointsManager - In the implementation block
+@property (nonatomic,retain) MPAVRoutingViewController * routingViewController;                //@synthesize routingViewController=_routingViewController - In the implementation block
+@property (nonatomic,retain) MPAVEndpointRoute * selectedRoute;                                //@synthesize selectedRoute=_selectedRoute - In the implementation block
+@property (nonatomic,copy) NSString * routingContextUID;                                       //@synthesize routingContextUID=_routingContextUID - In the implementation block
+@property (nonatomic,retain) AVExternalPlaybackMonitor * externalPlaybackMonitor;              //@synthesize externalPlaybackMonitor=_externalPlaybackMonitor - In the implementation block
+@property (nonatomic,retain) MPMediaControlsConfiguration * configuration;                     //@synthesize configuration=_configuration - In the implementation block
+@property (nonatomic,copy) id routingCornerViewTappedBlock;                                    //@synthesize routingCornerViewTappedBlock=_routingCornerViewTappedBlock - In the implementation block
+@property (nonatomic,copy) id homeGestureDismissalAllowedBlock;                                //@synthesize homeGestureDismissalAllowedBlock=_homeGestureDismissalAllowedBlock - In the implementation block
+@property (assign,nonatomic) BOOL shouldPresentUsingViewService;                               //@synthesize shouldPresentUsingViewService=_shouldPresentUsingViewService - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) double preferredExpandedContentHeight; 
+@property (nonatomic,readonly) double preferredExpandedContentWidth; 
+@property (nonatomic,readonly) double preferredExpandedContinuousCornerRadius; 
+@property (nonatomic,readonly) BOOL providesOwnPlatter; 
+@property (nonatomic,readonly) UIViewPropertyAnimator * customAnimator; 
+@property (nonatomic,readonly) BOOL shouldPerformHoverInteraction; 
+@property (nonatomic,readonly) BOOL shouldPerformClickInteraction; 
++(BOOL)_shouldTransitionEarlyOnSystemRoute;
+-(id)routingCornerViewTappedBlock;
+-(void)endUpdates;
+-(void)setRoutingContextUID:(NSString *)arg1 ;
+-(NSString *)routingContextUID;
+-(void)dismissPresentedContentAnimated:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)homeObserverDidUpdateKnownUIDs:(id)arg1 ;
+-(BOOL)canDismissPresentedContent;
+-(long long)defaultSelectedItemIndexForCollectionViewController:(id)arg1 ;
+-(BOOL)isOnScreen;
+-(BOOL)providesOwnPlatter;
+-(void)_assignRouteViewControllerToSelectedPanelViewController;
+-(id)init;
+-(void)mediaControlsCollectionViewController:(id)arg1 willSelectItemAtIndex:(long long)arg2 withReason:(long long)arg3 ;
+-(void)setRoutingCornerViewTappedBlock:(id)arg1 ;
+-(void)dismissPlatterViewController:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)mediaControlsCollectionViewController:(id)arg1 viewControllerForItemAtIndex:(long long)arg2 ;
+-(void)viewWillDisappear:(BOOL)arg1 ;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(void)platterViewController:(id)arg1 willToggleRoutingPicker:(BOOL)arg2 ;
+-(void)endpointsManager:(id)arg1 activeSystemRouteDidChange:(id)arg2 ;
+-(void)_updateEndpointRouteForOutputDeviceDataSource:(id)arg1 ;
+-(void)platterViewController:(id)arg1 didToggleRoutingPicker:(BOOL)arg2 ;
+-(void)_transitionToVisible:(BOOL)arg1 ;
+-(void)_routeDidChangeNotification:(id)arg1 ;
+-(void)setEndpointsManager:(MediaControlsEndpointsManager *)arg1 ;
+-(void)setOnScreen:(BOOL)arg1 ;
+-(void)_updateDiscoveryMode;
+-(void)mediaControlsCollectionViewController:(id)arg1 didEndDisplayingViewController:(id)arg2 forItemAtIndex:(long long)arg3 ;
+-(id)platterViewController:(id)arg1 presentingViewForPresentedViewController:(id)arg2 ;
+-(void)setRoutingViewController:(MPAVRoutingViewController *)arg1 ;
+-(void)_transitionToVisibleIfNeeded;
+-(double)preferredExpandedContentHeight;
+-(void)mediaControlsCollectionViewController:(id)arg1 didDisplayViewController:(id)arg2 forItemAtIndex:(long long)arg3 ;
+-(BOOL)shouldExpandModuleOnTouch:(id)arg1 ;
+-(void)platterViewController:(id)arg1 homeGestureDismisalAllowedDidChange:(BOOL)arg2 ;
+-(AVExternalPlaybackMonitor *)externalPlaybackMonitor;
+-(BOOL)shouldPerformHoverInteraction;
+-(double)preferredItemHeightGivenWidth:(double)arg1 ;
+-(void)_updateSupportedModesForSelectedPlatterViewController;
+-(void)platterViewController:(id)arg1 didPickRoute:(id)arg2 ;
+-(long long)numberOfItemsInCollectionViewController:(id)arg1 ;
+-(void)_setupEndpointsManager;
+-(MPMediaControlsConfiguration *)configuration;
+-(double)preferredExpandedContentWidth;
+-(BOOL)_isSelectedRouteInRoutes;
+-(void)setSelectedRoute:(MPAVEndpointRoute *)arg1 ;
+-(void)_updateModesForSelectedPlatterViewController;
+-(BOOL)_canShowWhileLocked;
+-(void)reloadData;
+-(void)updateContentInsets;
+-(void)viewDidLoad;
+-(void)didSelectEndpoint:(id)arg1 ;
+-(MPAVEndpointRoute *)selectedRoute;
+-(void)mediaControlsCollectionViewController:(id)arg1 didSelectItemAtIndex:(long long)arg2 withReason:(long long)arg3 ;
+-(BOOL)shouldPresentUsingViewServicePlatterViewController:(id)arg1 ;
+-(BOOL)mediaControlsCollectionViewController:(id)arg1 canSelectItemAtIndex:(long long)arg2 ;
+-(void)mediaControlsCollectionViewController:(id)arg1 willDisplayViewController:(id)arg2 forItemAtIndex:(long long)arg3 ;
+-(void)setDismissing:(BOOL)arg1 ;
+-(void)_supportedModesForSelectedRoute:(unsigned long long*)arg1 selectedMode:(long long*)arg2 ;
+-(double)preferredItemHeight;
+-(void)setShouldPresentUsingViewService:(BOOL)arg1 ;
+-(void)viewDidDisappear:(BOOL)arg1 ;
+-(void)endpointsManager:(id)arg1 defersRoutesReplacement:(/*^block*/id)arg2 ;
+-(void)setDisplayMode:(long long)arg1 ;
+-(void)setExternalPlaybackMonitor:(AVExternalPlaybackMonitor *)arg1 ;
+-(void)setHomeGestureDismissalAllowedBlock:(id)arg1 ;
+-(void)_setupRoutingViewController;
+-(void)_selectActiveSystemRouteIfNeeded;
+-(BOOL)shouldPresentUsingViewService;
+-(BOOL)isDismissing;
+-(MPAVRoutingViewController *)routingViewController;
+-(id)homeGestureDismissalAllowedBlock;
+-(void)stopPrewarming;
+-(MediaControlsEndpointsManager *)endpointsManager;
+-(void)viewDidLayoutSubviews;
+-(void)startPrewarming;
+-(BOOL)_isReadyForAppearanceTransition;
+-(void)_setSelectedRoute:(id)arg1 isUserSelected:(BOOL)arg2 animated:(BOOL)arg3 ;
+-(void)dealloc;
+-(void)setConfiguration:(MPMediaControlsConfiguration *)arg1 ;
+@end
+

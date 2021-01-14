@@ -1,0 +1,69 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:33 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP
+*/
+
+#import <CoreHAP/CoreHAP-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/HAPTLVProtocol.h>
+
+@class HAPTLVUnsignedNumberValue, NSData, HAPCharacteristicValueTransitionEndBehaviorWrapper, HAPCharacteristicValueLinearTransition, HAPCharacteristicValueLinearDerivedTransition, NSString;
+
+@interface HAPCharacteristicValueTransition : NSObject <NSCopying, HAPTLVProtocol> {
+
+	HAPTLVUnsignedNumberValue* _HAPInstanceID;
+	NSData* _controllerContext;
+	HAPCharacteristicValueTransitionEndBehaviorWrapper* _endBehavior;
+	HAPCharacteristicValueLinearTransition* _linearTransition;
+	HAPCharacteristicValueLinearDerivedTransition* _linearDerivedTransition;
+	HAPTLVUnsignedNumberValue* _valueUpdateTimeInterval;
+	NSData* _notifyValueChangeThreshold;
+	HAPTLVUnsignedNumberValue* _notifyTimeIntervalThreshold;
+
+}
+
+@property (nonatomic,retain) HAPTLVUnsignedNumberValue * HAPInstanceID;                                            //@synthesize HAPInstanceID=_HAPInstanceID - In the implementation block
+@property (nonatomic,retain) NSData * controllerContext;                                                           //@synthesize controllerContext=_controllerContext - In the implementation block
+@property (nonatomic,retain) HAPCharacteristicValueTransitionEndBehaviorWrapper * endBehavior;                     //@synthesize endBehavior=_endBehavior - In the implementation block
+@property (nonatomic,retain) HAPCharacteristicValueLinearTransition * linearTransition;                            //@synthesize linearTransition=_linearTransition - In the implementation block
+@property (nonatomic,retain) HAPCharacteristicValueLinearDerivedTransition * linearDerivedTransition;              //@synthesize linearDerivedTransition=_linearDerivedTransition - In the implementation block
+@property (nonatomic,retain) HAPTLVUnsignedNumberValue * valueUpdateTimeInterval;                                  //@synthesize valueUpdateTimeInterval=_valueUpdateTimeInterval - In the implementation block
+@property (nonatomic,retain) NSData * notifyValueChangeThreshold;                                                  //@synthesize notifyValueChangeThreshold=_notifyValueChangeThreshold - In the implementation block
+@property (nonatomic,retain) HAPTLVUnsignedNumberValue * notifyTimeIntervalThreshold;                              //@synthesize notifyTimeIntervalThreshold=_notifyTimeIntervalThreshold - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)naturalLightingValueTransitionWithLightProfile:(id)arg1 naturalLightingEnabled:(BOOL)arg2 startDate:(id)arg3 dataSource:(id)arg4 ;
++(BOOL)updateTransition:(id)arg1 withCurve:(id)arg2 brightnessCharacteristic:(id)arg3 millisecondsElapsedSinceStartOfDay:(unsigned long long)arg4 transitionStartTimeInMilliseconds:(unsigned long long)arg5 ;
++(BOOL)canCoalesceTransitionPoint1:(id)arg1 transitionPoint2:(id)arg2 ofCurve:(id)arg3 ;
++(id)transitionPointsByCoalescingTransitionPoints:(id)arg1 ofCurve:(id)arg2 ;
++(id)parsedFromData:(id)arg1 error:(id*)arg2 ;
+-(id)naturalLightingActiveTransitionContextForCharacteristic:(id)arg1 ;
+-(id)naturalLightingActiveTransitionContextLightProfile:(id)arg1 ;
+-(id)init;
+-(NSString *)description;
+-(BOOL)parseFromData:(id)arg1 error:(id*)arg2 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(id)serializeWithError:(id*)arg1 ;
+-(NSData *)controllerContext;
+-(HAPTLVUnsignedNumberValue *)HAPInstanceID;
+-(HAPCharacteristicValueTransitionEndBehaviorWrapper *)endBehavior;
+-(HAPCharacteristicValueLinearTransition *)linearTransition;
+-(HAPCharacteristicValueLinearDerivedTransition *)linearDerivedTransition;
+-(void)setHAPInstanceID:(HAPTLVUnsignedNumberValue *)arg1 ;
+-(void)setNotifyTimeIntervalThreshold:(HAPTLVUnsignedNumberValue *)arg1 ;
+-(void)setValueUpdateTimeInterval:(HAPTLVUnsignedNumberValue *)arg1 ;
+-(void)setNotifyValueChangeThreshold:(NSData *)arg1 ;
+-(void)setControllerContext:(NSData *)arg1 ;
+-(void)setEndBehavior:(HAPCharacteristicValueTransitionEndBehaviorWrapper *)arg1 ;
+-(void)setLinearDerivedTransition:(HAPCharacteristicValueLinearDerivedTransition *)arg1 ;
+-(void)setLinearTransition:(HAPCharacteristicValueLinearTransition *)arg1 ;
+-(HAPTLVUnsignedNumberValue *)valueUpdateTimeInterval;
+-(NSData *)notifyValueChangeThreshold;
+-(HAPTLVUnsignedNumberValue *)notifyTimeIntervalThreshold;
+-(id)initWithHAPInstanceID:(id)arg1 controllerContext:(id)arg2 endBehavior:(id)arg3 linearTransition:(id)arg4 linearDerivedTransition:(id)arg5 valueUpdateTimeInterval:(id)arg6 notifyValueChangeThreshold:(id)arg7 notifyTimeIntervalThreshold:(id)arg8 ;
+@end
+

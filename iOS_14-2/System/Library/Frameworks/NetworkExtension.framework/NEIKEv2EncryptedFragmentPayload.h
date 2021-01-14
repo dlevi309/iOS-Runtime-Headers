@@ -1,0 +1,31 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:19 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension
+*/
+
+#import <NetworkExtension/NEIKEv2EncryptedPayload.h>
+
+@interface NEIKEv2EncryptedFragmentPayload : NEIKEv2EncryptedPayload {
+
+	unsigned _fragmentNumber;
+	unsigned _totalFragments;
+	unsigned long long _nextPayload;
+
+}
+
+@property (assign) unsigned fragmentNumber;                     //@synthesize fragmentNumber=_fragmentNumber - In the implementation block
+@property (assign) unsigned totalFragments;                     //@synthesize totalFragments=_totalFragments - In the implementation block
+@property (assign) unsigned long long nextPayload;              //@synthesize nextPayload=_nextPayload - In the implementation block
++(id)copyTypeDescription;
+-(BOOL)hasRequiredFields;
+-(BOOL)parsePayloadData;
+-(unsigned)fragmentNumber;
+-(unsigned)totalFragments;
+-(void)setTotalFragments:(unsigned)arg1 ;
+-(unsigned long long)nextPayload;
+-(void)setFragmentNumber:(unsigned)arg1 ;
+-(void)setNextPayload:(unsigned long long)arg1 ;
+-(unsigned long long)type;
+@end
+

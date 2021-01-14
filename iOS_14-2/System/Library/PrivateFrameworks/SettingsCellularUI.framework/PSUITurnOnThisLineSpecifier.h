@@ -1,0 +1,51 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SettingsCellularUI.framework/SettingsCellularUI
+*/
+
+#import <Preferences/PSSpecifier.h>
+#import <libobjc.A.dylib/CXCallObserverDelegate.h>
+
+@class PSUICellularPlanUniversalReference, CTCellularPlanManager, PSUICellularPlanManagerCache, PSUICoreTelephonyCallCache, PSListController, CXCallObserver, NSString;
+
+@interface PSUITurnOnThisLineSpecifier : PSSpecifier <CXCallObserverDelegate> {
+
+	PSUICellularPlanUniversalReference* _planReference;
+	CTCellularPlanManager* _cellularPlanManager;
+	PSUICellularPlanManagerCache* _planManagerCache;
+	PSUICoreTelephonyCallCache* _callCache;
+	PSListController* _hostController;
+	CXCallObserver* _callObserver;
+
+}
+
+@property (nonatomic,retain) PSUICellularPlanUniversalReference * planReference;              //@synthesize planReference=_planReference - In the implementation block
+@property (nonatomic,retain) CTCellularPlanManager * cellularPlanManager;                     //@synthesize cellularPlanManager=_cellularPlanManager - In the implementation block
+@property (nonatomic,retain) PSUICellularPlanManagerCache * planManagerCache;                 //@synthesize planManagerCache=_planManagerCache - In the implementation block
+@property (nonatomic,retain) PSUICoreTelephonyCallCache * callCache;                          //@synthesize callCache=_callCache - In the implementation block
+@property (assign,nonatomic,__weak) PSListController * hostController;                        //@synthesize hostController=_hostController - In the implementation block
+@property (nonatomic,retain) CXCallObserver * callObserver;                                   //@synthesize callObserver=_callObserver - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setCallObserver:(CXCallObserver *)arg1 ;
+-(CTCellularPlanManager *)cellularPlanManager;
+-(PSUICellularPlanUniversalReference *)planReference;
+-(CXCallObserver *)callObserver;
+-(PSUICellularPlanManagerCache *)planManagerCache;
+-(void)callObserver:(id)arg1 callChanged:(id)arg2 ;
+-(void)setPlanReference:(PSUICellularPlanUniversalReference *)arg1 ;
+-(void)setPlanManagerCache:(PSUICellularPlanManagerCache *)arg1 ;
+-(void)setCellularPlanManager:(CTCellularPlanManager *)arg1 ;
+-(PSListController *)hostController;
+-(void)setHostController:(PSListController *)arg1 ;
+-(id)initWithPlanUniversalReference:(id)arg1 cellularPlanManager:(id)arg2 planManagerCache:(id)arg3 callCache:(id)arg4 hostController:(id)arg5 ;
+-(PSUICoreTelephonyCallCache *)callCache;
+-(void)setCallCache:(PSUICoreTelephonyCallCache *)arg1 ;
+-(void)setPlanEnabled:(id)arg1 specifier:(id)arg2 ;
+-(id)isPlanEnabled:(id)arg1 ;
+-(void)setSwitchEnabled;
+@end
+

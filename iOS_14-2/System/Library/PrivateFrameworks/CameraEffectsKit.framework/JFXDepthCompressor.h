@@ -1,0 +1,46 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CameraEffectsKit.framework/CameraEffectsKit
+*/
+
+
+#import <CameraEffectsKit/CameraEffectsKit-Structs.h>
+@class JFXVideoEncoderInterface;
+
+@interface JFXDepthCompressor : NSObject {
+
+	JFXVideoEncoderInterface* _videoEncoderInterface;
+	opaqueCMFormatDescriptionRef _previousFormatDescription;
+	int _depthCodecType;
+
+}
+
+@property (nonatomic,readonly) int depthCodecType;              //@synthesize depthCodecType=_depthCodecType - In the implementation block
++(id)decapsulatePayload:(id)arg1 ;
++(id)encapsulatePayload:(id)arg1 ;
++(id)NSDataFromFloatDepth32:(CVBufferRef)arg1 ;
++(id)NSDataFromDepthMapInsideAVDepthData:(id)arg1 ;
++(id)fakeXMPDataIfNotFound;
++(id)fakeAuxDepthInfoDictionaryForCVPixelBuffer:(CVBufferRef)arg1 ;
+-(void)dealloc;
+-(int)depthCodecType;
+-(id)initWithDepthCodecType:(int)arg1 ;
+-(id)depthOutputSettingsForDepthDimensions:(SCD_Struct_JF29)arg1 ;
+-(const opaqueCMFormatDescriptionRef)depthFormatDescriptionForDepthDimensions:(SCD_Struct_JF29)arg1 ;
+-(id)compressAVDepthData:(id)arg1 timingInfo:(SCD_Struct_JF30)arg2 error:(id*)arg3 ;
+-(id)compressDepthMapCVPixelBuffer:(CVBufferRef)arg1 timingInfo:(SCD_Struct_JF30)arg2 error:(id*)arg3 ;
+-(id)compressAVDepthData_Photo:(id)arg1 timingInfo:(SCD_Struct_JF30)arg2 error:(id*)arg3 ;
+-(id)compressAVDepthData_LZ:(id)arg1 timingInfo:(SCD_Struct_JF30)arg2 error:(id*)arg3 ;
+-(id)compressAVDepthData_BGRA:(id)arg1 timingInfo:(SCD_Struct_JF30)arg2 error:(id*)arg3 ;
+-(id)compressAVDepthData_HEVC10:(id)arg1 timingInfo:(SCD_Struct_JF30)arg2 error:(id*)arg3 ;
+-(unsigned)getPayloadTypeOrSize:(id)arg1 offsetPointer:(unsigned long long*)arg2 ;
+-(id)hevcSEIPayloadHeaderForPayloadType:(int)arg1 payloadSize:(unsigned long long)arg2 ;
+-(id)mutableCopyExtensionsDictionaryCopyFromAVDepthData:(id)arg1 ;
+-(id)hevcSEIMessageDataWithDepthXMPMetadata:(id)arg1 isPrefixSEI:(BOOL)arg2 nuh_layer_id:(int)arg3 nuh_temporal_id_plus1:(int)arg4 ;
+-(id)depthSampleBufferAppendingDepthMetadata:(id)arg1 depthSampleBufferFromCodec:(opaqueCMSampleBufferRef)arg2 ;
+-(CVBufferRef)copyDepthBufferAsBGRA:(CVBufferRef)arg1 ;
+-(id)hevcSEIPayload:(id)arg1 ;
+-(id)depthSampleBufferWithNewHVCCWithDepthMetadata:(id)arg1 depthSampleBufferFromCodec:(opaqueCMSampleBufferRef)arg2 ;
+@end
+

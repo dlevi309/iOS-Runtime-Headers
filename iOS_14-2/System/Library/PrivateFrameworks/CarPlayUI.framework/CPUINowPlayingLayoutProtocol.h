@@ -1,0 +1,27 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:25 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI
+*/
+
+
+@protocol CPUINowPlayingLayoutProtocol <NSObject>
+@required
+-(double)displayScale;
+-(UIEdgeInsets*)layoutMargins;
+-(BOOL)showsArtwork;
+-(CGSize*)maximumTitleViewSize;
+-(unsigned long long)artworkPosition;
+-(double)albumArtWidthMultiplier;
+-(CGRect*)nowPlayingFrame;
+-(CGSize*)maximumNowPlayingSize;
+-(double)playModeControlButtonWidth;
+-(double)playModeControlButtonSpacing;
+-(BOOL)playModeControlButtonsFullWidth;
+-(BOOL)progressViewFullWidth;
+-(double)transportControlButtonHeight;
+-(double)transportControlButtonSpacing;
+-(unsigned long long)trackInfoFontStyle;
+
+@end
+

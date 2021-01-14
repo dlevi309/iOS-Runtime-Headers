@@ -1,0 +1,154 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Rapport.framework/Rapport
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, NSData, CURangingMeasurement, SFDevice, CUMobileDevice, NSUUID, CUPairedPeer, NSDictionary;
+
+@interface RPDevice : NSObject <NSSecureCoding> {
+
+	unsigned char _deviceActionType;
+	BOOL _needsSetup;
+	int _activityLevel;
+	unsigned _flags;
+	int _proximity;
+	unsigned _blePairState;
+	int _rawRSSI;
+	int _smoothedRSSI;
+	unsigned _systemPairState;
+	unsigned _wifiDeviceIEFlags;
+	NSString* _accountID;
+	NSData* _bleAuthTag;
+	NSString* _contactID;
+	NSString* _identifier;
+	NSString* _idsDeviceIdentifier;
+	NSString* _model;
+	NSString* _name;
+	CURangingMeasurement* _relativeLocation;
+	SFDevice* _bleDevice;
+	CUMobileDevice* _mobileDevice;
+	NSData* _authTag;
+	NSData* _bleAdvertisementData;
+	NSData* _bleDeviceAddress;
+	NSUUID* _identifierUUID;
+	CUPairedPeer* _pairedPeer;
+	NSUUID* _pairingIdentifier;
+	NSData* _txtData;
+	NSDictionary* _txtDictionary;
+	NSString* _udid;
+	NSData* _wifiAddress;
+	NSData* _wifiBSSID;
+	NSData* _wifiDeviceIEDeviceID;
+	NSData* _wifiDeviceIEName;
+	NSData* _wifiIEData;
+	id _wifiPlatformObject;
+	NSString* _wifiSSID;
+
+}
+
+@property (nonatomic,retain) SFDevice * bleDevice;                               //@synthesize bleDevice=_bleDevice - In the implementation block
+@property (nonatomic,copy) NSString * identifier;                                //@synthesize identifier=_identifier - In the implementation block
+@property (nonatomic,retain) CUMobileDevice * mobileDevice;                      //@synthesize mobileDevice=_mobileDevice - In the implementation block
+@property (nonatomic,copy) NSString * name;                                      //@synthesize name=_name - In the implementation block
+@property (retain) CURangingMeasurement * relativeLocation;                      //@synthesize relativeLocation=_relativeLocation - In the implementation block
+@property (nonatomic,copy,readonly) NSData * authTag;                            //@synthesize authTag=_authTag - In the implementation block
+@property (nonatomic,copy,readonly) NSData * bleAdvertisementData;               //@synthesize bleAdvertisementData=_bleAdvertisementData - In the implementation block
+@property (nonatomic,copy,readonly) NSData * bleDeviceAddress;                   //@synthesize bleDeviceAddress=_bleDeviceAddress - In the implementation block
+@property (nonatomic,readonly) unsigned blePairState;                            //@synthesize blePairState=_blePairState - In the implementation block
+@property (nonatomic,readonly) unsigned char deviceActionType;                   //@synthesize deviceActionType=_deviceActionType - In the implementation block
+@property (nonatomic,copy) NSUUID * identifierUUID;                              //@synthesize identifierUUID=_identifierUUID - In the implementation block
+@property (nonatomic,readonly) BOOL needsSetup;                                  //@synthesize needsSetup=_needsSetup - In the implementation block
+@property (nonatomic,retain) CUPairedPeer * pairedPeer;                          //@synthesize pairedPeer=_pairedPeer - In the implementation block
+@property (nonatomic,copy) NSUUID * pairingIdentifier;                           //@synthesize pairingIdentifier=_pairingIdentifier - In the implementation block
+@property (nonatomic,readonly) int rawRSSI;                                      //@synthesize rawRSSI=_rawRSSI - In the implementation block
+@property (nonatomic,readonly) int smoothedRSSI;                                 //@synthesize smoothedRSSI=_smoothedRSSI - In the implementation block
+@property (assign,nonatomic) unsigned systemPairState;                           //@synthesize systemPairState=_systemPairState - In the implementation block
+@property (nonatomic,copy,readonly) NSData * txtData;                            //@synthesize txtData=_txtData - In the implementation block
+@property (nonatomic,copy,readonly) NSDictionary * txtDictionary;                //@synthesize txtDictionary=_txtDictionary - In the implementation block
+@property (nonatomic,copy) NSString * udid;                                      //@synthesize udid=_udid - In the implementation block
+@property (nonatomic,copy) NSData * wifiAddress;                                 //@synthesize wifiAddress=_wifiAddress - In the implementation block
+@property (nonatomic,copy) NSData * wifiBSSID;                                   //@synthesize wifiBSSID=_wifiBSSID - In the implementation block
+@property (nonatomic,copy) NSData * wifiDeviceIEDeviceID;                        //@synthesize wifiDeviceIEDeviceID=_wifiDeviceIEDeviceID - In the implementation block
+@property (nonatomic,readonly) unsigned wifiDeviceIEFlags;                       //@synthesize wifiDeviceIEFlags=_wifiDeviceIEFlags - In the implementation block
+@property (nonatomic,copy) NSData * wifiDeviceIEName;                            //@synthesize wifiDeviceIEName=_wifiDeviceIEName - In the implementation block
+@property (nonatomic,copy) NSData * wifiIEData;                                  //@synthesize wifiIEData=_wifiIEData - In the implementation block
+@property (nonatomic,retain) id wifiPlatformObject;                              //@synthesize wifiPlatformObject=_wifiPlatformObject - In the implementation block
+@property (nonatomic,copy) NSString * wifiSSID;                                  //@synthesize wifiSSID=_wifiSSID - In the implementation block
+@property (nonatomic,copy,readonly) NSString * accountID;                        //@synthesize accountID=_accountID - In the implementation block
+@property (nonatomic,readonly) int activityLevel;                                //@synthesize activityLevel=_activityLevel - In the implementation block
+@property (nonatomic,copy,readonly) NSData * bleAuthTag;                         //@synthesize bleAuthTag=_bleAuthTag - In the implementation block
+@property (nonatomic,copy,readonly) NSString * contactID;                        //@synthesize contactID=_contactID - In the implementation block
+@property (nonatomic,readonly) unsigned flags;                                   //@synthesize flags=_flags - In the implementation block
+@property (nonatomic,copy,readonly) NSString * idsDeviceIdentifier;              //@synthesize idsDeviceIdentifier=_idsDeviceIdentifier - In the implementation block
+@property (nonatomic,copy,readonly) NSString * model;                            //@synthesize model=_model - In the implementation block
+@property (nonatomic,readonly) int proximity;                                    //@synthesize proximity=_proximity - In the implementation block
++(BOOL)supportsSecureCoding;
+-(NSString *)accountID;
+-(BOOL)needsSetup;
+-(NSUUID *)pairingIdentifier;
+-(void)setPairingIdentifier:(NSUUID *)arg1 ;
+-(unsigned char)deviceActionType;
+-(NSString *)udid;
+-(NSData *)wifiIEData;
+-(int)smoothedRSSI;
+-(NSString *)model;
+-(NSDictionary *)txtDictionary;
+-(NSString *)contactID;
+-(CUPairedPeer *)pairedPeer;
+-(void)setWifiPlatformObject:(id)arg1 ;
+-(NSData *)txtData;
+-(id)init;
+-(unsigned)systemPairState;
+-(void)_updateTXTDictionary:(id)arg1 ;
+-(NSData *)bleAuthTag;
+-(unsigned)updateWithSFDevice:(id)arg1 changes:(unsigned)arg2 ;
+-(unsigned)flags;
+-(void)setWifiAddress:(NSData *)arg1 ;
+-(CURangingMeasurement *)relativeLocation;
+-(void)encodeWithCoder:(id)arg1 ;
+-(NSData *)wifiBSSID;
+-(int)activityLevel;
+-(CUMobileDevice *)mobileDevice;
+-(void)setRelativeLocation:(CURangingMeasurement *)arg1 ;
+-(void)setWifiIEData:(NSData *)arg1 ;
+-(unsigned)updateWithBonjourDevice:(id)arg1 ;
+-(void)setBleDevice:(SFDevice *)arg1 ;
+-(unsigned)blePairState;
+-(int)proximity;
+-(id)wifiPlatformObject;
+-(void)setWifiBSSID:(NSData *)arg1 ;
+-(NSData *)bleAdvertisementData;
+-(NSString *)name;
+-(NSString *)idsDeviceIdentifier;
+-(void)setUdid:(NSString *)arg1 ;
+-(void)setWifiDeviceIEName:(NSData *)arg1 ;
+-(id)descriptionWithLevel:(int)arg1 ;
+-(id)description;
+-(SFDevice *)bleDevice;
+-(NSData *)wifiAddress;
+-(void)setIdentifierUUID:(NSUUID *)arg1 ;
+-(void)setWifiDeviceIEDeviceID:(NSData *)arg1 ;
+-(void)setSystemPairState:(unsigned)arg1 ;
+-(NSData *)bleDeviceAddress;
+-(NSData *)wifiDeviceIEName;
+-(void)updateWithWiFiDevice:(id)arg1 changes:(unsigned)arg2 ;
+-(id)initWithCoder:(id)arg1 ;
+-(unsigned)wifiDeviceIEFlags;
+-(void)setName:(NSString *)arg1 ;
+-(void)updateWithSystemInfo:(id)arg1 ;
+-(void)setIdentifier:(NSString *)arg1 ;
+-(void)setPairedPeer:(CUPairedPeer *)arg1 ;
+-(NSString *)identifier;
+-(NSData *)authTag;
+-(void)setMobileDevice:(CUMobileDevice *)arg1 ;
+-(void)setWifiSSID:(NSString *)arg1 ;
+-(unsigned)updateWithMobileDevice:(id)arg1 ;
+-(NSData *)wifiDeviceIEDeviceID;
+-(NSUUID *)identifierUUID;
+-(int)rawRSSI;
+-(NSString *)wifiSSID;
+@end
+

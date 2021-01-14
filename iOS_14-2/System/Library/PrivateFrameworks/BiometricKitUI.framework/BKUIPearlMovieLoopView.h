@@ -1,0 +1,42 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI
+*/
+
+#import <BiometricKitUI/BiometricKitUI-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@class AVPlayer, AVAsset, UIImage, UIImageView;
+
+@interface BKUIPearlMovieLoopView : UIView {
+
+	AVPlayer* _player;
+	AVAsset* _assets;
+	UIImage* _selfPortraite;
+	UIImageView* _imageView;
+
+}
+
+@property (nonatomic,retain) AVPlayer * player;                    //@synthesize player=_player - In the implementation block
+@property (nonatomic,retain) AVAsset * assets;                     //@synthesize assets=_assets - In the implementation block
+@property (nonatomic,retain) UIImage * selfPortraite;              //@synthesize selfPortraite=_selfPortraite - In the implementation block
+@property (nonatomic,retain) UIImageView * imageView;              //@synthesize imageView=_imageView - In the implementation block
++(Class)layerClass;
+-(AVAsset *)assets;
+-(AVPlayer *)player;
+-(void)setImageView:(UIImageView *)arg1 ;
+-(void)setPlayer:(AVPlayer *)arg1 ;
+-(UIImageView *)imageView;
+-(BOOL)portrait;
+-(void)setAssets:(AVAsset *)arg1 ;
+-(id)playerLayer;
+-(id)selfPortrait;
+-(id)initWithFrame:(CGRect)arg1 player:(id)arg2 asset:(id)arg3 ;
+-(void)unhideAVPlayerRemoveSnapshot;
+-(void)hideAVPlayerReplaceWithSnapshot;
+-(void)setAlphaHideOnZero:(double)arg1 ;
+-(UIImage *)selfPortraite;
+-(void)setSelfPortraite:(UIImage *)arg1 ;
+@end
+

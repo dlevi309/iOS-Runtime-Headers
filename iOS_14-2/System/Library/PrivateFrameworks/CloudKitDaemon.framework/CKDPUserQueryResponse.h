@@ -1,0 +1,34 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:17 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+*/
+
+#import <CloudKitDaemon/CloudKitDaemon-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class CKDPUser;
+
+@interface CKDPUserQueryResponse : PBCodable <NSCopying> {
+
+	CKDPUser* _user;
+
+}
+
+@property (nonatomic,readonly) BOOL hasUser; 
+@property (nonatomic,retain) CKDPUser * user;              //@synthesize user=_user - In the implementation block
+-(id)dictionaryRepresentation;
+-(void)setUser:(CKDPUser *)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(id)description;
+-(CKDPUser *)user;
+-(unsigned long long)hash;
+-(BOOL)hasUser;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)writeTo:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+@end
+

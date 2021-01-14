@@ -1,0 +1,160 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/UserNotificationsUIKit.framework/UserNotificationsUIKit
+*/
+
+#import <UserNotificationsUIKit/UserNotificationsUIKit-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <UIKit/UIScrollViewDelegate.h>
+#import <UIKit/UIGestureRecognizerDelegate.h>
+#import <libobjc.A.dylib/NCNotificationViewControllerObserving.h>
+#import <libobjc.A.dylib/PLContentSizeCategoryAdjusting.h>
+#import <libobjc.A.dylib/MTMaterialGrouping.h>
+
+@protocol NCNotificationListCellDelegate;
+@class NSString, NCNotificationViewController, UIView, NCNotificationListCellActionButtonsView, UIViewFloatAnimatableProperty, UIPanGestureRecognizer;
+
+@interface NCNotificationListCell : UIView <UIScrollViewDelegate, UIGestureRecognizerDelegate, NCNotificationViewControllerObserving, PLContentSizeCategoryAdjusting, MTMaterialGrouping> {
+
+	BOOL _adjustsFontForContentSizeCategory;
+	BOOL _configured;
+	BOOL _sideSwipedWithoutTouch;
+	BOOL _executingDefaultAction;
+	BOOL _performingSwipeHinting;
+	BOOL _performingOrbHinting;
+	NSString* _materialGroupNameBase;
+	NCNotificationViewController* _contentViewController;
+	id<NCNotificationListCellDelegate> _delegate;
+	UIView* _contentView;
+	NCNotificationListCellActionButtonsView* _leftActionButtonsView;
+	NCNotificationListCellActionButtonsView* _rightActionButtonsView;
+	UIView* _leftActionButtonsClippingRevealView;
+	UIView* _rightActionButtonsClippingRevealView;
+	unsigned long long _actionsRevealState;
+	/*^block*/id _sideSwipeHintingHideAnimationBlock;
+	UIViewFloatAnimatableProperty* _targetPositionAnimatableProperty;
+	UIPanGestureRecognizer* _panGestureRecognizer;
+	double _panGestureStartingPosition;
+	UIEdgeInsets _insetMargins;
+
+}
+
+@property (nonatomic,retain) NCNotificationListCellActionButtonsView * leftActionButtonsView;               //@synthesize leftActionButtonsView=_leftActionButtonsView - In the implementation block
+@property (nonatomic,retain) NCNotificationListCellActionButtonsView * rightActionButtonsView;              //@synthesize rightActionButtonsView=_rightActionButtonsView - In the implementation block
+@property (nonatomic,retain) UIView * leftActionButtonsClippingRevealView;                                  //@synthesize leftActionButtonsClippingRevealView=_leftActionButtonsClippingRevealView - In the implementation block
+@property (nonatomic,retain) UIView * rightActionButtonsClippingRevealView;                                 //@synthesize rightActionButtonsClippingRevealView=_rightActionButtonsClippingRevealView - In the implementation block
+@property (assign,getter=isExecutingDefaultAction,nonatomic) BOOL executingDefaultAction;                   //@synthesize executingDefaultAction=_executingDefaultAction - In the implementation block
+@property (assign,nonatomic) unsigned long long actionsRevealState;                                         //@synthesize actionsRevealState=_actionsRevealState - In the implementation block
+@property (assign,getter=isPerformingSwipeHinting,nonatomic) BOOL performingSwipeHinting;                   //@synthesize performingSwipeHinting=_performingSwipeHinting - In the implementation block
+@property (nonatomic,copy) id sideSwipeHintingHideAnimationBlock;                                           //@synthesize sideSwipeHintingHideAnimationBlock=_sideSwipeHintingHideAnimationBlock - In the implementation block
+@property (nonatomic,retain) UIViewFloatAnimatableProperty * targetPositionAnimatableProperty;              //@synthesize targetPositionAnimatableProperty=_targetPositionAnimatableProperty - In the implementation block
+@property (nonatomic,retain) UIPanGestureRecognizer * panGestureRecognizer;                                 //@synthesize panGestureRecognizer=_panGestureRecognizer - In the implementation block
+@property (assign,nonatomic) double panGestureStartingPosition;                                             //@synthesize panGestureStartingPosition=_panGestureStartingPosition - In the implementation block
+@property (assign,getter=isPerformingOrbHinting,nonatomic) BOOL performingOrbHinting;                       //@synthesize performingOrbHinting=_performingOrbHinting - In the implementation block
+@property (nonatomic,retain) NCNotificationViewController * contentViewController;                          //@synthesize contentViewController=_contentViewController - In the implementation block
+@property (assign,nonatomic,__weak) id<NCNotificationListCellDelegate> delegate;                            //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,readonly) UIView * contentView;                                                        //@synthesize contentView=_contentView - In the implementation block
+@property (assign,nonatomic) UIEdgeInsets insetMargins;                                                     //@synthesize insetMargins=_insetMargins - In the implementation block
+@property (assign,getter=isConfigured,nonatomic) BOOL configured;                                           //@synthesize configured=_configured - In the implementation block
+@property (assign,getter=isSideSwipedWithoutTouch,nonatomic) BOOL sideSwipedWithoutTouch;                   //@synthesize sideSwipedWithoutTouch=_sideSwipedWithoutTouch - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,copy) NSString * preferredContentSizeCategory; 
+@property (assign,nonatomic) BOOL adjustsFontForContentSizeCategory;                                        //@synthesize adjustsFontForContentSizeCategory=_adjustsFontForContentSizeCategory - In the implementation block
+@property (nonatomic,copy) NSString * materialGroupNameBase;                                                //@synthesize materialGroupNameBase=_materialGroupNameBase - In the implementation block
+-(void)setAdjustsFontForContentSizeCategory:(BOOL)arg1 ;
+-(void)notificationViewControllerWillBeginUserInteraction:(id)arg1 ;
+-(BOOL)adjustsFontForContentSizeCategory;
+-(BOOL)isConfigured;
+-(BOOL)adjustForContentSizeCategoryChange;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)_resetClipping;
+-(UIPanGestureRecognizer *)panGestureRecognizer;
+-(id<NCNotificationListCellDelegate>)delegate;
+-(void)setContentViewController:(NCNotificationViewController *)arg1 ;
+-(void)_layoutContentView;
+-(void)setPanGestureRecognizer:(UIPanGestureRecognizer *)arg1 ;
+-(NSString *)materialGroupNameBase;
+-(NCNotificationViewController *)contentViewController;
+-(void)setDelegate:(id<NCNotificationListCellDelegate>)arg1 ;
+-(void)layoutSubviews;
+-(void)notificationViewControllerDidEndUserInteraction:(id)arg1 ;
+-(void)_handlePanGesture:(id)arg1 ;
+-(void)setMaterialGroupNameBase:(NSString *)arg1 ;
+-(void)_configureClippingIfNecessary;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+-(BOOL)_shouldPerformClipping;
+-(UIEdgeInsets)insetMargins;
+-(void)_setupClipping;
+-(UIView *)contentView;
+-(BOOL)gestureRecognizerShouldBegin:(id)arg1 ;
+-(void)dealloc;
+-(BOOL)_disableRasterizeInAnimations;
+-(void)setConfigured:(BOOL)arg1 ;
+-(BOOL)isSideSwipedWithoutTouch;
+-(void)resetCellScrollPositionAnimated:(BOOL)arg1 ;
+-(void)_setupContentOffsetFloatAnimatableProperty;
+-(void)updateCellForContentViewController:(id)arg1 ;
+-(void)_resetActionButtonViews;
+-(void)setActionsRevealState:(unsigned long long)arg1 ;
+-(void)_setupPanGestureRecognizer;
+-(void)_updateNotificationCellPosition:(double)arg1 ;
+-(void)_resetNotificationCellPositionAnimated:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setPerformingSwipeHinting:(BOOL)arg1 ;
+-(void)setExecutingDefaultAction:(BOOL)arg1 ;
+-(void)_performSideSwipeHinting;
+-(unsigned long long)actionsRevealState;
+-(void)_configureClippingRevealViewsIfNecessary;
+-(void)_configureActionButtonViewsIfNecessary;
+-(id)_notificationCellView;
+-(void)setPanGestureStartingPosition:(double)arg1 ;
+-(double)panGestureStartingPosition;
+-(void)_setNotificationCellPosition:(double)arg1 withVelocity:(double)arg2 animated:(BOOL)arg3 completion:(/*^block*/id)arg4 ;
+-(double)_updateActionRevealStateForTargetPosition:(double)arg1 currentPosition:(double)arg2 velocity:(double)arg3 ;
+-(double)_actionButtonTriggerDistanceForView:(id)arg1 ;
+-(void)_updateRevealForLeftActionButtonsClippingRevealViewForRevealPercentage:(double)arg1 ;
+-(void)_performDefaultActionForLeft;
+-(void)_updateRevealForRightActionButtonsClippingRevealViewForRevealPercentage:(double)arg1 ;
+-(void)_performDefaultActionForRight;
+-(UIViewFloatAnimatableProperty *)targetPositionAnimatableProperty;
+-(void)_updateTargetPosition:(double)arg1 ;
+-(BOOL)isPerformingOrbHinting;
+-(void)_updateActionButtonRevealPercentageForTargetPosition:(double)arg1 ;
+-(void)setPerformingOrbHinting:(BOOL)arg1 ;
+-(void)_executeClearAction;
+-(void)_executeDefaultAction;
+-(void)_configureClippingRevealView:(id)arg1 ;
+-(id)_cellActionButtonsView;
+-(id)_openActionButtonsView;
+-(void)_configureActionButtonsView:(id)arg1 ;
+-(BOOL)isExecutingDefaultAction;
+-(void)_updateRevealForActionButtonsClippingRevealView:(id)arg1 actionButtonsView:(id)arg2 forRevealPercentage:(double)arg3 actionButtonsViewNeedsClipping:(BOOL)arg4 ;
+-(double)_alphaForActionButtonsView:(id)arg1 revealPercentage:(double)arg2 ;
+-(void)_performSideSwipeHintingRevealAnimation;
+-(void)_performSideSwipeHintingHideAnimation;
+-(BOOL)isPerformingSwipeHinting;
+-(BOOL)_delegateAllowsPerformingClipping;
+-(void)cellViewButtonPressed:(id)arg1 ;
+-(void)cellSettingsButtonPressed:(id)arg1 ;
+-(void)cellClearButtonPressed:(id)arg1 ;
+-(void)cellOpenButtonPressed:(id)arg1 ;
+-(void)hintSideSwipeForDefaultAction;
+-(void)resetCellActionButtons;
+-(void)setInsetMargins:(UIEdgeInsets)arg1 ;
+-(void)setSideSwipedWithoutTouch:(BOOL)arg1 ;
+-(NCNotificationListCellActionButtonsView *)leftActionButtonsView;
+-(void)setLeftActionButtonsView:(NCNotificationListCellActionButtonsView *)arg1 ;
+-(NCNotificationListCellActionButtonsView *)rightActionButtonsView;
+-(void)setRightActionButtonsView:(NCNotificationListCellActionButtonsView *)arg1 ;
+-(UIView *)leftActionButtonsClippingRevealView;
+-(void)setLeftActionButtonsClippingRevealView:(UIView *)arg1 ;
+-(UIView *)rightActionButtonsClippingRevealView;
+-(void)setRightActionButtonsClippingRevealView:(UIView *)arg1 ;
+-(id)sideSwipeHintingHideAnimationBlock;
+-(void)setSideSwipeHintingHideAnimationBlock:(id)arg1 ;
+-(void)setTargetPositionAnimatableProperty:(UIViewFloatAnimatableProperty *)arg1 ;
+@end
+

@@ -1,0 +1,37 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:10 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/Metal.framework/Metal
+*/
+
+#import <Metal/Metal-Structs.h>
+#import <Metal/_MTLCommandQueue.h>
+
+@protocol MTLDevice;
+@class MTLIOAccelDevice;
+
+@interface MTLIOAccelCommandQueue : _MTLCommandQueue {
+
+	IOAccelCommandQueueRef _commandQueue;
+	MTLIOAccelDevice*<MTLDevice> _device;
+	unsigned long long _priority;
+	unsigned long long _backgroundPriority;
+
+}
+
+@property (readonly) id<MTLDevice> device;              //@synthesize device=_device - In the implementation block
+-(void)setCompletionQueue:(id)arg1 ;
+-(void)submitCommandBuffers:(const id*)arg1 count:(unsigned long long)arg2 ;
+-(id)initWithDevice:(id)arg1 descriptor:(id)arg2 ;
+-(BOOL)_setGPUPriority:(unsigned long long)arg1 backgroundPriority:(unsigned long long)arg2 ;
+-(BOOL)setBackgroundGPUPriority:(unsigned long long)arg1 offset:(unsigned short)arg2 ;
+-(id<MTLDevice>)device;
+-(BOOL)setGPUPriority:(unsigned long long)arg1 ;
+-(unsigned long long)getBackgroundGPUPriority;
+-(BOOL)setBackgroundGPUPriority:(unsigned long long)arg1 ;
+-(unsigned long long)getGPUPriority;
+-(void)setLabel:(id)arg1 ;
+-(BOOL)setGPUPriority:(unsigned long long)arg1 offset:(unsigned short)arg2 ;
+-(void)dealloc;
+@end
+

@@ -1,0 +1,187 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI
+*/
+
+#import <GameCenterUI/GameCenterUI-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <UIKit/UIScrollViewDelegate.h>
+
+@class UIView, NSLayoutConstraint, UIImageView, OBBoldTrayButton, UIScrollView, UIStackView, GKLabel, UILabel, OBPrivacyLinkController, NSString;
+
+@interface GKOnboardingViewController : UIViewController <UIScrollViewDelegate> {
+
+	UIView* _privacyContainer;
+	NSLayoutConstraint* _topConstraint;
+	UIView* _buttonContainer;
+	UIView* _privacyContainerInScrollView;
+	UIView* _continueButtonContainerInScrollView;
+	NSLayoutConstraint* _welcomeStackViewTrailingConstraint;
+	NSLayoutConstraint* _welcomeStackViewLeadingConstraint;
+	NSLayoutConstraint* _whatsnewStackViewTrailingConstraint;
+	NSLayoutConstraint* _whatsnewStackViewLeadingConstraint;
+	NSLayoutConstraint* _privacyContainerInScrollViewHeightConstraint;
+	NSLayoutConstraint* _bottomStackViewTopConstraint;
+	NSLayoutConstraint* _continueButtonContainerWidthConstraint;
+	NSLayoutConstraint* _bottomStackViewBottomConstraint;
+	NSLayoutConstraint* _continueButtonContainerInScrollViewHeightConstraint;
+	NSLayoutConstraint* _scrollViewToBottomContainerConstraint;
+	NSLayoutConstraint* _scrollViewToBottomSafeAreaConstraint;
+	UIImageView* _bubbleImageView;
+	UIView* _bottomContainerView;
+	OBBoldTrayButton* _nextButton;
+	UIScrollView* _scrollView;
+	UIStackView* _welcomeStackView;
+	UIStackView* _whatsNewStackView;
+	UIImageView* _addFriendsImage;
+	GKLabel* _addFriendsTitle;
+	GKLabel* _addFriendsSubtitle;
+	UIImageView* _achievementImage;
+	GKLabel* _achievementTitle;
+	GKLabel* _achievementSubtitle;
+	UIImageView* _multiplayerImage;
+	GKLabel* _multiplayerTitle;
+	GKLabel* _multiplayerSubtitle;
+	UIView* _addFriendsContainer;
+	UIView* _achievementContainer;
+	UIView* _multiplayerContainer;
+	UILabel* _mainTitle;
+	UILabel* _subTitle;
+	OBPrivacyLinkController* _privacyLink;
+
+}
+
+@property (nonatomic,retain) UIView * privacyContainer;                                                             //@synthesize privacyContainer=_privacyContainer - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * topConstraint;                                                    //@synthesize topConstraint=_topConstraint - In the implementation block
+@property (nonatomic,retain) UIView * buttonContainer;                                                              //@synthesize buttonContainer=_buttonContainer - In the implementation block
+@property (nonatomic,retain) UIView * privacyContainerInScrollView;                                                 //@synthesize privacyContainerInScrollView=_privacyContainerInScrollView - In the implementation block
+@property (nonatomic,retain) UIView * continueButtonContainerInScrollView;                                          //@synthesize continueButtonContainerInScrollView=_continueButtonContainerInScrollView - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * welcomeStackViewTrailingConstraint;                               //@synthesize welcomeStackViewTrailingConstraint=_welcomeStackViewTrailingConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * welcomeStackViewLeadingConstraint;                                //@synthesize welcomeStackViewLeadingConstraint=_welcomeStackViewLeadingConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * whatsnewStackViewTrailingConstraint;                              //@synthesize whatsnewStackViewTrailingConstraint=_whatsnewStackViewTrailingConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * whatsnewStackViewLeadingConstraint;                               //@synthesize whatsnewStackViewLeadingConstraint=_whatsnewStackViewLeadingConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * privacyContainerInScrollViewHeightConstraint;                     //@synthesize privacyContainerInScrollViewHeightConstraint=_privacyContainerInScrollViewHeightConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * bottomStackViewTopConstraint;                                     //@synthesize bottomStackViewTopConstraint=_bottomStackViewTopConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * continueButtonContainerWidthConstraint;                           //@synthesize continueButtonContainerWidthConstraint=_continueButtonContainerWidthConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * bottomStackViewBottomConstraint;                                  //@synthesize bottomStackViewBottomConstraint=_bottomStackViewBottomConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * continueButtonContainerInScrollViewHeightConstraint;              //@synthesize continueButtonContainerInScrollViewHeightConstraint=_continueButtonContainerInScrollViewHeightConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * scrollViewToBottomContainerConstraint;                            //@synthesize scrollViewToBottomContainerConstraint=_scrollViewToBottomContainerConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * scrollViewToBottomSafeAreaConstraint;                             //@synthesize scrollViewToBottomSafeAreaConstraint=_scrollViewToBottomSafeAreaConstraint - In the implementation block
+@property (nonatomic,retain) UIImageView * bubbleImageView;                                                         //@synthesize bubbleImageView=_bubbleImageView - In the implementation block
+@property (nonatomic,retain) UIView * bottomContainerView;                                                          //@synthesize bottomContainerView=_bottomContainerView - In the implementation block
+@property (nonatomic,retain) OBBoldTrayButton * nextButton;                                                         //@synthesize nextButton=_nextButton - In the implementation block
+@property (nonatomic,retain) UIScrollView * scrollView;                                                             //@synthesize scrollView=_scrollView - In the implementation block
+@property (nonatomic,retain) UIStackView * welcomeStackView;                                                        //@synthesize welcomeStackView=_welcomeStackView - In the implementation block
+@property (nonatomic,retain) UIStackView * whatsNewStackView;                                                       //@synthesize whatsNewStackView=_whatsNewStackView - In the implementation block
+@property (nonatomic,retain) UIImageView * addFriendsImage;                                                         //@synthesize addFriendsImage=_addFriendsImage - In the implementation block
+@property (nonatomic,retain) GKLabel * addFriendsTitle;                                                             //@synthesize addFriendsTitle=_addFriendsTitle - In the implementation block
+@property (nonatomic,retain) GKLabel * addFriendsSubtitle;                                                          //@synthesize addFriendsSubtitle=_addFriendsSubtitle - In the implementation block
+@property (nonatomic,retain) UIImageView * achievementImage;                                                        //@synthesize achievementImage=_achievementImage - In the implementation block
+@property (nonatomic,retain) GKLabel * achievementTitle;                                                            //@synthesize achievementTitle=_achievementTitle - In the implementation block
+@property (nonatomic,retain) GKLabel * achievementSubtitle;                                                         //@synthesize achievementSubtitle=_achievementSubtitle - In the implementation block
+@property (nonatomic,retain) UIImageView * multiplayerImage;                                                        //@synthesize multiplayerImage=_multiplayerImage - In the implementation block
+@property (nonatomic,retain) GKLabel * multiplayerTitle;                                                            //@synthesize multiplayerTitle=_multiplayerTitle - In the implementation block
+@property (nonatomic,retain) GKLabel * multiplayerSubtitle;                                                         //@synthesize multiplayerSubtitle=_multiplayerSubtitle - In the implementation block
+@property (assign) UIView * addFriendsContainer;                                                                    //@synthesize addFriendsContainer=_addFriendsContainer - In the implementation block
+@property (assign) UIView * achievementContainer;                                                                   //@synthesize achievementContainer=_achievementContainer - In the implementation block
+@property (assign) UIView * multiplayerContainer;                                                                   //@synthesize multiplayerContainer=_multiplayerContainer - In the implementation block
+@property (nonatomic,retain) UILabel * mainTitle;                                                                   //@synthesize mainTitle=_mainTitle - In the implementation block
+@property (nonatomic,retain) UILabel * subTitle;                                                                    //@synthesize subTitle=_subTitle - In the implementation block
+@property (nonatomic,retain) OBPrivacyLinkController * privacyLink;                                                 //@synthesize privacyLink=_privacyLink - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setTopConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)viewWillLayoutSubviews;
+-(void)addPrivacyLink;
+-(void)setupNavigationBar;
+-(void)updateUIBasedOnTraitCollection;
+-(UIView *)addFriendsContainer;
+-(UIView *)achievementContainer;
+-(UIView *)multiplayerContainer;
+-(void)setPrivacyLink:(OBPrivacyLinkController *)arg1 ;
+-(OBPrivacyLinkController *)privacyLink;
+-(NSLayoutConstraint *)topConstraint;
+-(UIView *)buttonContainer;
+-(UIView *)privacyContainer;
+-(void)constrainTextInView:(id)arg1 toFontSize:(double)arg2 ;
+-(void)showSignOutAlert;
+-(OBBoldTrayButton *)nextButton;
+-(void)signOutPressed:(id)arg1 ;
+-(UIView *)privacyContainerInScrollView;
+-(void)reparentView:(id)arg1 toSuperview:(id)arg2 ;
+-(UIView *)continueButtonContainerInScrollView;
+-(NSLayoutConstraint *)bottomStackViewTopConstraint;
+-(UIView *)bottomContainerView;
+-(NSLayoutConstraint *)scrollViewToBottomContainerConstraint;
+-(UIStackView *)whatsNewStackView;
+-(void)setNextButton:(OBBoldTrayButton *)arg1 ;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(NSLayoutConstraint *)scrollViewToBottomSafeAreaConstraint;
+-(NSLayoutConstraint *)privacyContainerInScrollViewHeightConstraint;
+-(NSLayoutConstraint *)continueButtonContainerInScrollViewHeightConstraint;
+-(NSLayoutConstraint *)bottomStackViewBottomConstraint;
+-(NSLayoutConstraint *)continueButtonContainerWidthConstraint;
+-(NSLayoutConstraint *)welcomeStackViewLeadingConstraint;
+-(NSLayoutConstraint *)welcomeStackViewTrailingConstraint;
+-(UIStackView *)welcomeStackView;
+-(NSLayoutConstraint *)whatsnewStackViewLeadingConstraint;
+-(NSLayoutConstraint *)whatsnewStackViewTrailingConstraint;
+-(void)reparentGDPRToNewParent:(id)arg1 ;
+-(void)setPrivacyContainer:(UIView *)arg1 ;
+-(void)setPrivacyContainerInScrollView:(UIView *)arg1 ;
+-(void)setContinueButtonContainerInScrollView:(UIView *)arg1 ;
+-(void)setWelcomeStackViewTrailingConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setWelcomeStackViewLeadingConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setBubbleImageView:(UIImageView *)arg1 ;
+-(UILabel *)subTitle;
+-(void)setWhatsnewStackViewTrailingConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setWhatsnewStackViewLeadingConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setPrivacyContainerInScrollViewHeightConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setBottomStackViewTopConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setContinueButtonContainerWidthConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setBottomStackViewBottomConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setScrollViewToBottomContainerConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setSubTitle:(UILabel *)arg1 ;
+-(void)setContinueButtonContainerInScrollViewHeightConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setScrollViewToBottomSafeAreaConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setBottomContainerView:(UIView *)arg1 ;
+-(void)setWelcomeStackView:(UIStackView *)arg1 ;
+-(void)setWhatsNewStackView:(UIStackView *)arg1 ;
+-(UIImageView *)addFriendsImage;
+-(void)setAddFriendsImage:(UIImageView *)arg1 ;
+-(GKLabel *)addFriendsTitle;
+-(void)setAddFriendsTitle:(GKLabel *)arg1 ;
+-(GKLabel *)addFriendsSubtitle;
+-(void)setAddFriendsSubtitle:(GKLabel *)arg1 ;
+-(UIImageView *)achievementImage;
+-(void)setAchievementImage:(UIImageView *)arg1 ;
+-(GKLabel *)achievementTitle;
+-(void)setAchievementTitle:(GKLabel *)arg1 ;
+-(GKLabel *)achievementSubtitle;
+-(void)setAchievementSubtitle:(GKLabel *)arg1 ;
+-(UIImageView *)multiplayerImage;
+-(void)setMultiplayerImage:(UIImageView *)arg1 ;
+-(GKLabel *)multiplayerTitle;
+-(void)setMultiplayerTitle:(GKLabel *)arg1 ;
+-(GKLabel *)multiplayerSubtitle;
+-(void)setMultiplayerSubtitle:(GKLabel *)arg1 ;
+-(void)setAddFriendsContainer:(UIView *)arg1 ;
+-(void)setAchievementContainer:(UIView *)arg1 ;
+-(UILabel *)mainTitle;
+-(void)setMultiplayerContainer:(UIView *)arg1 ;
+-(void)viewSafeAreaInsetsDidChange;
+-(void)setButtonContainer:(UIView *)arg1 ;
+-(void)viewDidLoad;
+-(void)setScrollView:(UIScrollView *)arg1 ;
+-(void)scrollViewDidScroll:(id)arg1 ;
+-(void)nextPressed:(id)arg1 ;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(UIScrollView *)scrollView;
+-(UIImageView *)bubbleImageView;
+-(void)configureWhatsNewList;
+-(void)setMainTitle:(UILabel *)arg1 ;
+@end
+

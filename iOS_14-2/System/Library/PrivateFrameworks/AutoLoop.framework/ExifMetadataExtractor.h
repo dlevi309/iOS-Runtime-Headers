@@ -1,0 +1,48 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AutoLoop.framework/AutoLoop
+*/
+
+
+@class NSDictionary, NSURL, NSMutableDictionary, NSMutableArray;
+
+@interface ExifMetadataExtractor : NSObject {
+
+	NSDictionary* desiredAppleMakerKeyPairs;
+	BOOL hadAllRequestedKeys;
+	BOOL saveAllMetadata;
+	NSURL* inFileURL;
+	NSMutableDictionary* metadataDictionary;
+	NSMutableArray* desiredExifKeysArray;
+	NSMutableArray* facesArray;
+	NSDictionary* allMetadata;
+
+}
+
+@property (retain) NSURL * inFileURL; 
+@property (retain) NSMutableArray * desiredExifKeysArray; 
+@property (readonly) NSMutableDictionary * metadataDictionary; 
+@property (readonly) NSMutableArray * facesArray; 
+@property (readonly) BOOL hadAllRequestedKeys; 
+@property (assign) BOOL saveAllMetadata; 
+@property (readonly) NSDictionary * allMetadata; 
+-(id)init;
+-(NSDictionary *)allMetadata;
+-(NSMutableDictionary *)metadataDictionary;
+-(NSMutableArray *)facesArray;
+-(void)setInFileURL:(NSURL *)arg1 ;
+-(BOOL)keyIsDesired:(id)arg1 ;
+-(BOOL)copyKeysFromDictionary:(id)arg1 ;
+-(BOOL)CopyFromMakerMediaDict:(id)arg1 toDict:(id)arg2 ;
+-(void)CopyFacesDataFromAuxDictionary:(id)arg1 toArray:(id)arg2 ;
+-(void)performCorrectionsOnDictionary:(id)arg1 ;
+-(short)processFile;
+-(NSURL *)inFileURL;
+-(NSMutableArray *)desiredExifKeysArray;
+-(void)setDesiredExifKeysArray:(NSMutableArray *)arg1 ;
+-(BOOL)hadAllRequestedKeys;
+-(BOOL)saveAllMetadata;
+-(void)setSaveAllMetadata:(BOOL)arg1 ;
+@end
+

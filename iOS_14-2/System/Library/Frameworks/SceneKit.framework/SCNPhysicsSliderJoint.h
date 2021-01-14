@@ -1,0 +1,71 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:02 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/SceneKit.framework/SceneKit
+*/
+
+#import <SceneKit/SceneKit-Structs.h>
+#import <SceneKit/SCNPhysicsBehavior.h>
+
+@class SCNPhysicsWorld, SCNPhysicsBody;
+
+@interface SCNPhysicsSliderJoint : SCNPhysicsBehavior {
+
+	SCD_Struct_SC152 _definition;
+	btSliderConstraint* _constraint;
+	SCNPhysicsWorld* _world;
+
+}
+
+@property (nonatomic,readonly) SCNPhysicsBody * bodyA; 
+@property (assign,nonatomic) SCNVector3 axisA; 
+@property (assign,nonatomic) SCNVector3 anchorA; 
+@property (nonatomic,readonly) SCNPhysicsBody * bodyB; 
+@property (assign,nonatomic) SCNVector3 axisB; 
+@property (assign,nonatomic) SCNVector3 anchorB; 
+@property (assign,nonatomic) double minimumLinearLimit; 
+@property (assign,nonatomic) double maximumLinearLimit; 
+@property (assign,nonatomic) double minimumAngularLimit; 
+@property (assign,nonatomic) double maximumAngularLimit; 
+@property (assign,nonatomic) double motorTargetLinearVelocity; 
+@property (assign,nonatomic) double motorMaximumForce; 
+@property (assign,nonatomic) double motorTargetAngularVelocity; 
+@property (assign,nonatomic) double motorMaximumTorque; 
++(BOOL)supportsSecureCoding;
++(id)jointWithBodyA:(id)arg1 axisA:(SCNVector3)arg2 anchorA:(SCNVector3)arg3 bodyB:(id)arg4 axisB:(SCNVector3)arg5 anchorB:(SCNVector3)arg6 ;
++(id)jointWithBody:(id)arg1 axis:(SCNVector3)arg2 anchor:(SCNVector3)arg3 ;
+-(SCNPhysicsBody *)bodyA;
+-(SCNPhysicsBody *)bodyB;
+-(SCNVector3)axisA;
+-(SCNVector3)axisB;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(SCNVector3)anchorA;
+-(SCNVector3)anchorB;
+-(void)dealloc;
+-(id)initWithBodyA:(id)arg1 axisA:(SCNVector3)arg2 anchorA:(SCNVector3)arg3 bodyB:(id)arg4 axisB:(SCNVector3)arg5 anchorB:(SCNVector3)arg6 ;
+-(id)initWithBody:(id)arg1 axis:(SCNVector3)arg2 anchor:(SCNVector3)arg3 ;
+-(void)setAxisA:(SCNVector3)arg1 ;
+-(void)setAxisB:(SCNVector3)arg1 ;
+-(void)setAnchorA:(SCNVector3)arg1 ;
+-(void)setAnchorB:(SCNVector3)arg1 ;
+-(void)_addToPhysicsWorld:(id)arg1 ;
+-(void)_willRemoveFromPhysicsWorld:(id)arg1 ;
+-(double)minimumLinearLimit;
+-(void)setMinimumLinearLimit:(double)arg1 ;
+-(double)maximumLinearLimit;
+-(void)setMaximumLinearLimit:(double)arg1 ;
+-(double)minimumAngularLimit;
+-(void)setMinimumAngularLimit:(double)arg1 ;
+-(double)maximumAngularLimit;
+-(void)setMaximumAngularLimit:(double)arg1 ;
+-(double)motorTargetLinearVelocity;
+-(void)setMotorTargetLinearVelocity:(double)arg1 ;
+-(double)motorMaximumForce;
+-(void)setMotorMaximumForce:(double)arg1 ;
+-(double)motorTargetAngularVelocity;
+-(void)setMotorTargetAngularVelocity:(double)arg1 ;
+-(double)motorMaximumTorque;
+-(void)setMotorMaximumTorque:(double)arg1 ;
+@end
+

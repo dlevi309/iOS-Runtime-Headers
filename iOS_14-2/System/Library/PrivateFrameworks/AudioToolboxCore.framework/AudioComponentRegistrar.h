@@ -1,0 +1,29 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:08 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
+*/
+
+#import <AudioToolboxCore/AudioToolboxCore-Structs.h>
+#import <libobjc.A.dylib/NSXPCListenerDelegate.h>
+
+@class NSString;
+
+@interface AudioComponentRegistrar : NSObject <NSXPCListenerDelegate> {
+
+	AudioComponentRegistrarImpl* _impl;
+
+}
+
+@property (nonatomic,readonly) AudioComponentRegistrarImpl* impl;              //@synthesize impl=_impl - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(BOOL)listener:(id)arg1 shouldAcceptNewConnection:(id)arg2 ;
+-(void)resumeListeners;
+-(id)initForMode:(BOOL)arg1 ;
+-(void)dealloc;
+-(AudioComponentRegistrarImpl*)impl;
+@end
+

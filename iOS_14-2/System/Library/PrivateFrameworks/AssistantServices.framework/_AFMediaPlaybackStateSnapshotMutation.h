@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:54 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
+*/
+
+#import <AssistantServices/AssistantServices-Structs.h>
+#import <libobjc.A.dylib/AFMediaPlaybackStateSnapshotMutating.h>
+
+@class AFMediaPlaybackStateSnapshot, NSDate, NSString;
+
+@interface _AFMediaPlaybackStateSnapshotMutation : NSObject <AFMediaPlaybackStateSnapshotMutating> {
+
+	AFMediaPlaybackStateSnapshot* _baseModel;
+	long long _playbackState;
+	NSDate* _nowPlayingTimestamp;
+	NSString* _mediaType;
+	NSString* _groupIdentifier;
+	struct {
+		unsigned isDirty : 1;
+		unsigned hasPlaybackState : 1;
+		unsigned hasNowPlayingTimestamp : 1;
+		unsigned hasMediaType : 1;
+		unsigned hasGroupIdentifier : 1;
+	}  _mutationFlags;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setPlaybackState:(long long)arg1 ;
+-(void)setGroupIdentifier:(id)arg1 ;
+-(void)setMediaType:(id)arg1 ;
+-(id)init;
+-(id)generate;
+-(id)initWithBaseModel:(id)arg1 ;
+-(void)setNowPlayingTimestamp:(id)arg1 ;
+@end
+

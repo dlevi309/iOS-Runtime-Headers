@@ -1,0 +1,55 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:52 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VideosUI-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, UIFont, UIColor;
+
+@interface VUIMonogramImageConfiguration : NSObject <NSCopying> {
+
+	long long _style;
+	NSString* _firstName;
+	NSString* _lastName;
+	NSString* _text;
+	UIFont* _font;
+	UIColor* _bgColor;
+	double _diameter;
+	double _focusedSizeIncrease;
+	UIColor* _textColor;
+
+}
+
+@property (nonatomic,readonly) long long style;                       //@synthesize style=_style - In the implementation block
+@property (nonatomic,copy) NSString * firstName;                      //@synthesize firstName=_firstName - In the implementation block
+@property (nonatomic,copy) NSString * lastName;                       //@synthesize lastName=_lastName - In the implementation block
+@property (nonatomic,copy) NSString * text;                           //@synthesize text=_text - In the implementation block
+@property (nonatomic,retain) UIFont * font;                           //@synthesize font=_font - In the implementation block
+@property (nonatomic,retain) UIColor * bgColor;                       //@synthesize bgColor=_bgColor - In the implementation block
+@property (assign,nonatomic) double diameter;                         //@synthesize diameter=_diameter - In the implementation block
+@property (assign,nonatomic) double focusedSizeIncrease;              //@synthesize focusedSizeIncrease=_focusedSizeIncrease - In the implementation block
+@property (nonatomic,retain) UIColor * textColor;                     //@synthesize textColor=_textColor - In the implementation block
+-(NSString *)firstName;
+-(NSString *)lastName;
+-(UIColor *)textColor;
+-(void)setLastName:(NSString *)arg1 ;
+-(void)setFirstName:(NSString *)arg1 ;
+-(void)setFont:(UIFont *)arg1 ;
+-(void)setBgColor:(UIColor *)arg1 ;
+-(id)initWithStyle:(long long)arg1 ;
+-(void)setText:(NSString *)arg1 ;
+-(void)setTextColor:(UIColor *)arg1 ;
+-(UIColor *)bgColor;
+-(double)diameter;
+-(NSString *)text;
+-(void)setDiameter:(double)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(long long)style;
+-(UIFont *)font;
+-(void)setFocusedSizeIncrease:(double)arg1 ;
+-(double)focusedSizeIncrease;
+@end
+

@@ -1,0 +1,83 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
+*/
+
+
+@protocol OS_os_activity;
+#import <AccessibilityUtilities/AccessibilityUtilities-Structs.h>
+@class NSMutableArray, NSHashTable, NSMutableDictionary, NSNumber, NSObject, NSLocale, NSDate;
+
+@interface AXTapticTimeManager : NSObject {
+
+	NSMutableArray* _enqueuedSounds;
+	NSMutableArray* _enqueuedSoundDelays;
+	NSHashTable* _observers;
+	unsigned _ssIDHapticFast[24];
+	unsigned _ssIDHapticSlow[24];
+	unsigned _ssIDHapticMorse[10];
+	NSMutableDictionary* _soundToPatterns;
+	NSMutableDictionary* _hapticsDescriptions;
+	BOOL _is24Hour;
+	NSNumber* _cachedSpeed;
+	long long _currentSsid;
+	NSObject*<OS_os_activity> _activity;
+	os_activity_scope_state_s _scopeState;
+	BOOL _isCurrentlyOutputting;
+	unsigned _assertionID;
+	/*^block*/id _testingQueueCallback;
+	NSLocale* _localeOverride;
+	NSDate* _dateOverride;
+
+}
+
+@property (assign,nonatomic) unsigned assertionID;                      //@synthesize assertionID=_assertionID - In the implementation block
+@property (nonatomic,copy) id testingQueueCallback;                     //@synthesize testingQueueCallback=_testingQueueCallback - In the implementation block
+@property (nonatomic,retain) NSLocale * localeOverride;                 //@synthesize localeOverride=_localeOverride - In the implementation block
+@property (nonatomic,retain) NSDate * dateOverride;                     //@synthesize dateOverride=_dateOverride - In the implementation block
+@property (nonatomic,readonly) BOOL isCurrentlyOutputting;              //@synthesize isCurrentlyOutputting=_isCurrentlyOutputting - In the implementation block
++(id)sharedInstance;
+-(void)addObserver:(id)arg1 ;
+-(NSDate *)dateOverride;
+-(id)init;
+-(void)_clearQueue;
+-(void)setAssertionID:(unsigned)arg1 ;
+-(void)_updateIs24HourTime;
+-(void)_updateHapticPatternsIfNecessary:(BOOL)arg1 ;
+-(void)_cleanupHapticsDict;
+-(id)_atomToLegacyVibePattern:(id)arg1 ;
+-(NSLocale *)localeOverride;
+-(BOOL)_is24HourTime;
+-(id)_dateComponentsForClockTime;
+-(long long)_numberOfTapsForHourNumber:(long long)arg1 withEncoding:(long long)arg2 ;
+-(BOOL)isCurrentlyOutputting;
+-(BOOL)_startPowerAssertion;
+-(void)_stopPowerAssertion;
+-(BOOL)_preStartCheck;
+-(void)_handleTestingQueueCallback;
+-(void)_informObserversDidStart;
+-(void)_dequeueSound;
+-(long long)_numberOfTapHoursForClockTimeWithEncoding:(long long)arg1 ;
+-(void)_enqueueHours:(unsigned long long)arg1 encoding:(long long)arg2 ;
+-(void)outputHours:(long long)arg1 ;
+-(long long)_numberOfTapMinutesForClockTime;
+-(void)_enqueueMinutes:(unsigned long long)arg1 encoding:(long long)arg2 ;
+-(void)_outputWithEnqueueBlock:(/*^block*/id)arg1 ;
+-(id)testingQueueCallback;
+-(id)_convertSoundToStringName:(unsigned)arg1 ;
+-(void)_informObserversDidStop;
+-(void)_informObserversDidOutputSSID:(long long)arg1 ;
+-(void)outputMinutes:(long long)arg1 ;
+-(void)_informObserversWillOutputSSID:(long long)arg1 hapticsDescriptions:(id)arg2 ;
+-(void)setLocaleOverride:(NSLocale *)arg1 ;
+-(void)outputHoursAndMinutes:(long long)arg1 ;
+-(void)stopCurrentOutput;
+-(void)setTestingQueueCallback:(id)arg1 ;
+-(void)_localeDidChange:(id)arg1 ;
+-(void)removeObserver:(id)arg1 ;
+-(unsigned)assertionID;
+-(void)setDateOverride:(NSDate *)arg1 ;
+-(void)dealloc;
+@end
+

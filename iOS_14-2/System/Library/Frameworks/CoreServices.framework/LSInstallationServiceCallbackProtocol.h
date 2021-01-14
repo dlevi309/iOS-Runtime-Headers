@@ -1,0 +1,14 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:10 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreServices.framework/CoreServices
+*/
+
+
+@protocol LSInstallationServiceCallbackProtocol <NSObject>
+@required
+-(void)callbackDeliveryComplete;
+-(void)updateCallbackWithData:(id)arg1;
+
+@end
+

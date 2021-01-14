@@ -1,0 +1,78 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NanoTimeKitCompanion-Structs.h>
+#import <BridgePreferences/BPSWelcomeOptinViewController.h>
+#import <libobjc.A.dylib/ASCLockupViewDelegate.h>
+
+@protocol OS_dispatch_queue, NTKGreenfieldCompanionContentViewControllerDelegate;
+@class NTKGreenfieldDecodedRecipe, NSError, NSNumber, NSString, NSArray, NSSet, ASCLockupView, BPSWatchView, NTKGreenfieldHighlightableFaceContainerView, NSObject;
+
+@interface NTKGreenfieldCompanionContentViewController : BPSWelcomeOptinViewController <ASCLockupViewDelegate> {
+
+	unsigned long long _state;
+	NTKGreenfieldDecodedRecipe* _decodedRecipe;
+	NSError* _error;
+	NSNumber* _complicationItemId;
+	BOOL _canAddFaceDirectly;
+	NSString* _addFaceDescription;
+	NSArray* _skippedComplicationSlots;
+	NSSet* _unavailableSlots;
+	NSString* _unavailableTitle;
+	NSString* _unavailableDescription;
+	ASCLockupView* _appStoreView;
+	BOOL _lockupViewStateDidChange;
+	BPSWatchView* _watchView;
+	NTKGreenfieldHighlightableFaceContainerView* _faceView;
+	long long _installMode;
+	NSObject*<OS_dispatch_queue> _workQueue;
+	id<NTKGreenfieldCompanionContentViewControllerDelegate> _greenfieldDelegate;
+
+}
+
+@property (assign,nonatomic,__weak) id<NTKGreenfieldCompanionContentViewControllerDelegate> greenfieldDelegate;              //@synthesize greenfieldDelegate=_greenfieldDelegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(id)alternateButtonTitle;
+-(id)detailString;
+-(void)viewDidLoad;
+-(id)presentingViewControllerForLockupView:(id)arg1 ;
+-(void)lockupViewDidFinishRequest:(id)arg1 ;
+-(void)lockupView:(id)arg1 appStateDidChange:(id)arg2 ;
+-(id)titleString;
+-(void)viewDidLayoutSubviews;
+-(id)suggestedButtonTitle;
+-(void)suggestedButtonPressed:(id)arg1 ;
+-(void)alternateButtonPressed:(id)arg1 ;
+-(id)initStartStateWithDecodedRecipe:(id)arg1 canAddFaceDirectly:(BOOL)arg2 addFaceDescription:(id)arg3 ;
+-(void)setGreenfieldDelegate:(id<NTKGreenfieldCompanionContentViewControllerDelegate>)arg1 ;
+-(id)initComplicationNotAvailableStateWithDecodedRecipe:(id)arg1 unavailableSlots:(id)arg2 unavailableTitle:(id)arg3 unavailableDescription:(id)arg4 ;
+-(id)initAddComplicationStateWithDecodedRecipe:(id)arg1 complicationItemId:(id)arg2 installMode:(long long)arg3 skippedComplicationSlots:(id)arg4 ;
+-(id)initCompletedStateWithDecodedRecipe:(id)arg1 skippedComplicationSlots:(id)arg2 canRevisit:(BOOL)arg3 ;
+-(id)initWithError:(id)arg1 decodedRecipe:(id)arg2 ;
+-(void)_setupContentViewForWatchFaceNotAvailableError;
+-(void)_setupContentView;
+-(void)_presentErrorUIAlert;
+-(id)_errorTitleForError:(id)arg1 ;
+-(id)_errorSubtitleForError:(id)arg1 ;
+-(void)_didTapShowInternalErrorButton;
+-(void)refreshViews;
+-(void)_setupWatchFaceViewContainerWithView:(id)arg1 deviceSize:(unsigned long long)arg2 deviceMaterial:(unsigned long long)arg3 ;
+-(void)_updateComplicationDisplayStates;
+-(CGSize)_watchScreenSizeForDeviceSize:(unsigned long long)arg1 screenScale:(double)arg2 ;
+-(CGPoint)_watchScreenInsetForDeviceSize:(unsigned long long)arg1 screenScale:(double)arg2 ;
+-(unsigned long long)_deviceSizeForCLKDeviceSizeClass:(unsigned long long)arg1 ;
+-(void)_installLocallyAvailableApp;
+-(void)_overrideLockup:(id)arg1 withButtonTitle:(id)arg2 buttonAction:(/*^block*/id)arg3 ;
+-(void)_reinstallSystemAppWithBundleId:(id)arg1 ;
+-(void)_reinstallAppWithAdamId:(id)arg1 ;
+-(void)_didTapAddToMyFacesButton;
+-(id<NTKGreenfieldCompanionContentViewControllerDelegate>)greenfieldDelegate;
+@end
+

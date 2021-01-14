@@ -1,0 +1,123 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:02 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Symbolication.framework/Symbolication
+*/
+
+
+@protocol VMUStackLogReader;
+#import <Symbolication/Symbolication-Structs.h>
+@class VMUDebugTimer, VMUProcessObjectGraph, VMUTaskMemoryScanner, NSMutableArray;
+
+@interface VMULeakDetector : NSObject {
+
+	BOOL _showLeakedVMregions;
+	BOOL _showOnlyVMregions;
+	BOOL _fullStacks;
+	BOOL _showRawClassNames;
+	BOOL _showBinaryContents;
+	BOOL _checkAbandoned;
+	BOOL _suppressOutput;
+	BOOL _showListOfLeaks;
+	BOOL _groupByType;
+	BOOL _referenceTreeShowRegionVirtualSize;
+	unsigned _objectContentLevel;
+	unsigned long long _max_contents_bytes;
+	VMUDebugTimer* _debugTimer;
+	id<VMUStackLogReader> _stackLogReader;
+	VMUProcessObjectGraph* _graph;
+	VMUTaskMemoryScanner* _scanner;
+	unsigned _task;
+	_sFILE* _outputFile;
+	BOOL _fcloseOutput;
+	unsigned _numExcluded;
+	void* _abandoned;
+	void* _leakedNodes;
+	NSMutableArray* _leakTreeRootsArray;
+	VMUProcessObjectGraph* _leakedGraph;
+	BOOL _showContext;
+
+}
+
+@property (assign,nonatomic) BOOL showLeakedVMregions;                             //@synthesize showLeakedVMregions=_showLeakedVMregions - In the implementation block
+@property (assign,nonatomic) BOOL showContext;                                     //@synthesize showContext=_showContext - In the implementation block
+@property (assign,nonatomic) BOOL showOnlyVMregions;                               //@synthesize showOnlyVMregions=_showOnlyVMregions - In the implementation block
+@property (assign,nonatomic) BOOL fullStacks;                                      //@synthesize fullStacks=_fullStacks - In the implementation block
+@property (assign,nonatomic) BOOL showRawClassNames;                               //@synthesize showRawClassNames=_showRawClassNames - In the implementation block
+@property (assign,nonatomic) BOOL showBinaryContents;                              //@synthesize showBinaryContents=_showBinaryContents - In the implementation block
+@property (assign,nonatomic) BOOL checkAbandoned;                                  //@synthesize checkAbandoned=_checkAbandoned - In the implementation block
+@property (assign,nonatomic) BOOL suppressOutput;                                  //@synthesize suppressOutput=_suppressOutput - In the implementation block
+@property (assign,nonatomic) BOOL showListOfLeaks;                                 //@synthesize showListOfLeaks=_showListOfLeaks - In the implementation block
+@property (assign,nonatomic) BOOL groupByType;                                     //@synthesize groupByType=_groupByType - In the implementation block
+@property (assign,nonatomic) BOOL referenceTreeShowRegionVirtualSize;              //@synthesize referenceTreeShowRegionVirtualSize=_referenceTreeShowRegionVirtualSize - In the implementation block
+@property (nonatomic,retain) VMUDebugTimer * debugTimer;                           //@synthesize debugTimer=_debugTimer - In the implementation block
+@property (assign,nonatomic) _sFILE* outputFile;                                   //@synthesize outputFile=_outputFile - In the implementation block
+@property (assign,nonatomic) BOOL fcloseOutput;                                    //@synthesize fcloseOutput=_fcloseOutput - In the implementation block
+@property (assign,nonatomic) unsigned objectContentLevel;                          //@synthesize objectContentLevel=_objectContentLevel - In the implementation block
+@property (nonatomic,readonly) unsigned task;                                      //@synthesize task=_task - In the implementation block
+@property (nonatomic,readonly) VMUProcessObjectGraph * graph;                      //@synthesize graph=_graph - In the implementation block
+@property (nonatomic,readonly) VMUTaskMemoryScanner * scanner;                     //@synthesize scanner=_scanner - In the implementation block
+@property (nonatomic,readonly) id<VMUStackLogReader> stackLogReader;               //@synthesize stackLogReader=_stackLogReader - In the implementation block
+@property (assign,nonatomic) void* abandoned;                                      //@synthesize abandoned=_abandoned - In the implementation block
+@property (assign,nonatomic) void* leakedNodes;                                    //@synthesize leakedNodes=_leakedNodes - In the implementation block
+@property (nonatomic,retain) NSMutableArray * leakTreeRootsArray;                  //@synthesize leakTreeRootsArray=_leakTreeRootsArray - In the implementation block
+@property (nonatomic,retain) VMUProcessObjectGraph * leakedGraph;                  //@synthesize leakedGraph=_leakedGraph - In the implementation block
+-(VMUProcessObjectGraph *)graph;
+-(unsigned)task;
+-(VMUTaskMemoryScanner *)scanner;
+-(unsigned)objectContentLevel;
+-(void)setObjectContentLevel:(unsigned)arg1 ;
+-(void)setDebugTimer:(VMUDebugTimer *)arg1 ;
+-(void)setShowRawClassNames:(BOOL)arg1 ;
+-(VMUDebugTimer *)debugTimer;
+-(void)printout:(const char*)arg1 ;
+-(id)nodeDescription:(unsigned)arg1 ;
+-(BOOL)showRawClassNames;
+-(void*)abandoned;
+-(id)scannerOrGraph;
+-(id)labelForNode:(unsigned)arg1 details:(SCD_Struct_VM2)arg2 shortLabel:(BOOL)arg3 ;
+-(void)printContents:(void*)arg1 size:(unsigned long long)arg2 ;
+-(id)nodeTypeDescription:(unsigned)arg1 details:(SCD_Struct_VM2*)arg2 mallocBySize:(BOOL)arg3 ;
+-(id)nodeDescription:(unsigned)arg1 usingDetails:(SCD_Struct_VM2*)arg2 ;
+-(_sFILE*)outputFile;
+-(void)setLeakedGraph:(VMUProcessObjectGraph *)arg1 ;
+-(void)setLeakTreeRootsArray:(NSMutableArray *)arg1 ;
+-(id)referenceDescription:(SCD_Struct_VM5*)arg1 dstDescription:(id)arg2 is64bit:(BOOL)arg3 ;
+-(BOOL)checkTaskExistence;
+-(void)setLeakedNodes:(void*)arg1 ;
+-(void)setAbandoned:(void*)arg1 ;
+-(void)buildLeakTree;
+-(void)dealloc;
+-(void)printLeak:(const char*)arg1 node:(unsigned)arg2 details:(SCD_Struct_VM2)arg3 region:(id)arg4 stop:(BOOL*)arg5 ;
+-(void)printLeakTree;
+-(id)initWithTask:(unsigned)arg1 graph:(id)arg2 scanner:(id)arg3 stackLogReader:(id)arg4 ;
+-(unsigned)doNormalLeakDetectionWithError:(out id*)arg1 ;
+-(BOOL)showLeakedVMregions;
+-(void)setShowLeakedVMregions:(BOOL)arg1 ;
+-(BOOL)showContext;
+-(void)setShowContext:(BOOL)arg1 ;
+-(BOOL)showOnlyVMregions;
+-(void)setShowOnlyVMregions:(BOOL)arg1 ;
+-(BOOL)fullStacks;
+-(void)setFullStacks:(BOOL)arg1 ;
+-(BOOL)showBinaryContents;
+-(void)setShowBinaryContents:(BOOL)arg1 ;
+-(BOOL)checkAbandoned;
+-(void)setCheckAbandoned:(BOOL)arg1 ;
+-(BOOL)suppressOutput;
+-(void)setSuppressOutput:(BOOL)arg1 ;
+-(BOOL)showListOfLeaks;
+-(void)setShowListOfLeaks:(BOOL)arg1 ;
+-(BOOL)groupByType;
+-(void)setGroupByType:(BOOL)arg1 ;
+-(BOOL)referenceTreeShowRegionVirtualSize;
+-(void)setReferenceTreeShowRegionVirtualSize:(BOOL)arg1 ;
+-(void)setOutputFile:(_sFILE*)arg1 ;
+-(BOOL)fcloseOutput;
+-(void)setFcloseOutput:(BOOL)arg1 ;
+-(id<VMUStackLogReader>)stackLogReader;
+-(void*)leakedNodes;
+-(NSMutableArray *)leakTreeRootsArray;
+-(VMUProcessObjectGraph *)leakedGraph;
+@end
+

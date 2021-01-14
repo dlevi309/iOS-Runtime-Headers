@@ -1,0 +1,25 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:29:22 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Health/FeedItemPlugins/Highlights.healthplugin/Highlights
+*/
+
+#import <Highlights/Highlights-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@interface Highlights.WorkoutSummaryView : UIView {
+
+	 $__lazy_storage_$_distanceLabel;
+	 $__lazy_storage_$_durationLabel;
+	 $__lazy_storage_$_energyBurnedLabel;
+	 $__lazy_storage_$_workoutTitleLabel;
+	 $__lazy_storage_$_leftKeyLine;
+	 $__lazy_storage_$_rightKeyLine;
+	 viewModel;
+
+}
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)layoutSubviews;
+-(id)initWithCoder:(id)arg1 ;
+@end
+

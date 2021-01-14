@@ -1,0 +1,18 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:05 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+@class NSString;
+
+
+@protocol GEOTransitTicketingSegmentInfo <NSObject>
+@property (nonatomic,readonly) NSString * ticketingUrl; 
+@property (nonatomic,readonly) NSString * segmentName; 
+@required
+-(NSString *)segmentName;
+-(NSString *)ticketingUrl;
+
+@end
+

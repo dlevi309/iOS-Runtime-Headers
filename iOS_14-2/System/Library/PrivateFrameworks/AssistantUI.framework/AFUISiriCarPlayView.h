@@ -1,0 +1,58 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:58 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
+*/
+
+#import <AssistantUI/AssistantUI-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/AFUISiriCarPlayBackgroundViewDelegate.h>
+#import <libobjc.A.dylib/AFUISiriContent.h>
+#import <libobjc.A.dylib/SUICOrbViewControlling.h>
+
+@protocol AFUISiriContentDelegate;
+@class AFUISiriCarPlayBackgroundView, UIView, SUICOrbView, CRSUIStatusBarStyleAssertion, NSString;
+
+@interface AFUISiriCarPlayView : UIView <AFUISiriCarPlayBackgroundViewDelegate, AFUISiriContent, SUICOrbViewControlling> {
+
+	long long _siriSessionState;
+	id<AFUISiriContentDelegate> _siriContentDelegate;
+	long long _mode;
+	AFUISiriCarPlayBackgroundView* _backgroundView;
+	UIView* _remoteContentView;
+	SUICOrbView* _orbView;
+	UIView* _orbContainerView;
+	CRSUIStatusBarStyleAssertion* _statusBarStyleAssertion;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (assign,nonatomic) long long siriSessionState;              //@synthesize siriSessionState=_siriSessionState - In the implementation block
+@property (assign,nonatomic) long long mode;                          //@synthesize mode=_mode - In the implementation block
+@property (nonatomic,retain) UIView * remoteContentView;              //@synthesize remoteContentView=_remoteContentView - In the implementation block
+-(long long)mode;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)setMode:(long long)arg1 ;
+-(void)dealloc;
+-(void)_setupContentViews;
+-(UIView *)remoteContentView;
+-(void)setRemoteContentView:(UIView *)arg1 ;
+-(long long)siriSessionState;
+-(void)setSiriSessionState:(long long)arg1 ;
+-(void)setAuxiliaryViewsHidden:(BOOL)arg1 animated:(BOOL)arg2 ;
+-(void)setSiriContentDelegate:(id)arg1 ;
+-(void)setContentViewsAlpha:(double)arg1 ;
+-(void)updateBackgroundVisibility:(BOOL)arg1 ;
+-(void)animateOrbViewToOffWithCompletion:(/*^block*/id)arg1 ;
+-(void)updateBackgroundViewMode:(long long)arg1 ;
+-(void)setInputPowerLevel:(float)arg1 ;
+-(void)setOutputPowerLevel:(float)arg1 ;
+-(void)backgroundView:(id)arg1 requestsCarPlayStatusBarOverride:(BOOL)arg2 animationSettings:(id)arg3 ;
+-(void)_orbHeldWithGestureRecognizer:(id)arg1 ;
+-(void)_orbTappedWithGestureRecognizer:(id)arg1 ;
+-(CGRect)orbViewRectInCarplayView;
+@end
+

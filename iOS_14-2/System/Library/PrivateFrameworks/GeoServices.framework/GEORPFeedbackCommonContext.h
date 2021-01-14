@@ -1,0 +1,159 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:54 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, PBUnknownFields, NSMutableArray, GEOABAssignmentResponse, GEORPCurrentEnvironmentManifestURLs, GEORPMapLocation, GEORPNavigationSettings, GEORPSearchCommonContext, GEORPSourceInfo;
+
+@interface GEORPFeedbackCommonContext : PBCodable <NSCopying> {
+
+	PBDataReader* _reader;
+	PBUnknownFields* _unknownFields;
+	SCD_Struct_GE90* _userPaths;
+	NSMutableArray* _auxiliaryControls;
+	double _clientCreatedAt;
+	GEOABAssignmentResponse* _currentAbAssignmentResponse;
+	GEORPCurrentEnvironmentManifestURLs* _currentEnvironmentManifestUrls;
+	GEORPMapLocation* _mapLocation;
+	GEORPNavigationSettings* _navigationSettings;
+	unsigned long long _originatingAuxiliaryControlIndex;
+	GEORPSearchCommonContext* _searchCommon;
+	GEORPSourceInfo* _sourceInfo;
+	NSMutableArray* _visibleTileSets;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	int _deviceGmtOffset;
+	int _pinType;
+	struct {
+		unsigned has_clientCreatedAt : 1;
+		unsigned has_originatingAuxiliaryControlIndex : 1;
+		unsigned has_deviceGmtOffset : 1;
+		unsigned has_pinType : 1;
+		unsigned read_unknownFields : 1;
+		unsigned read_userPaths : 1;
+		unsigned read_auxiliaryControls : 1;
+		unsigned read_currentAbAssignmentResponse : 1;
+		unsigned read_currentEnvironmentManifestUrls : 1;
+		unsigned read_mapLocation : 1;
+		unsigned read_navigationSettings : 1;
+		unsigned read_searchCommon : 1;
+		unsigned read_sourceInfo : 1;
+		unsigned read_visibleTileSets : 1;
+		unsigned wrote_anyField : 1;
+	}  _flags;
+
+}
+
+@property (assign,nonatomic) BOOL hasPinType; 
+@property (assign,nonatomic) int pinType; 
+@property (nonatomic,readonly) BOOL hasMapLocation; 
+@property (nonatomic,retain) GEORPMapLocation * mapLocation; 
+@property (nonatomic,retain) NSMutableArray * visibleTileSets; 
+@property (nonatomic,readonly) unsigned long long userPathsCount; 
+@property (nonatomic,readonly) int* userPaths; 
+@property (assign,nonatomic) BOOL hasClientCreatedAt; 
+@property (assign,nonatomic) double clientCreatedAt; 
+@property (nonatomic,retain) NSMutableArray * auxiliaryControls; 
+@property (assign,nonatomic) BOOL hasOriginatingAuxiliaryControlIndex; 
+@property (assign,nonatomic) unsigned long long originatingAuxiliaryControlIndex; 
+@property (assign,nonatomic) BOOL hasDeviceGmtOffset; 
+@property (assign,nonatomic) int deviceGmtOffset; 
+@property (nonatomic,readonly) BOOL hasCurrentEnvironmentManifestUrls; 
+@property (nonatomic,retain) GEORPCurrentEnvironmentManifestURLs * currentEnvironmentManifestUrls; 
+@property (nonatomic,readonly) BOOL hasNavigationSettings; 
+@property (nonatomic,retain) GEORPNavigationSettings * navigationSettings; 
+@property (nonatomic,readonly) BOOL hasSourceInfo; 
+@property (nonatomic,retain) GEORPSourceInfo * sourceInfo; 
+@property (nonatomic,readonly) BOOL hasSearchCommon; 
+@property (nonatomic,retain) GEORPSearchCommonContext * searchCommon; 
+@property (nonatomic,readonly) BOOL hasCurrentAbAssignmentResponse; 
+@property (nonatomic,retain) GEOABAssignmentResponse * currentAbAssignmentResponse; 
+@property (nonatomic,readonly) PBUnknownFields * unknownFields; 
++(Class)visibleTileSetType;
++(Class)auxiliaryControlType;
++(BOOL)isValid:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(NSMutableArray *)visibleTileSets;
+-(PBUnknownFields *)unknownFields;
+-(void)clearUnknownFields:(BOOL)arg1 ;
+-(GEORPSourceInfo *)sourceInfo;
+-(void)readAll:(BOOL)arg1 ;
+-(id)init;
+-(id)jsonRepresentation;
+-(GEORPMapLocation *)mapLocation;
+-(void)setMapLocation:(GEORPMapLocation *)arg1 ;
+-(BOOL)hasSourceInfo;
+-(BOOL)hasMapLocation;
+-(GEORPCurrentEnvironmentManifestURLs *)currentEnvironmentManifestUrls;
+-(GEORPNavigationSettings *)navigationSettings;
+-(GEORPSearchCommonContext *)searchCommon;
+-(GEOABAssignmentResponse *)currentAbAssignmentResponse;
+-(void)addVisibleTileSet:(id)arg1 ;
+-(void)addUserPath:(int)arg1 ;
+-(void)setClientCreatedAt:(double)arg1 ;
+-(void)addAuxiliaryControl:(id)arg1 ;
+-(void)setDeviceGmtOffset:(int)arg1 ;
+-(void)setOriginatingAuxiliaryControlIndex:(unsigned long long)arg1 ;
+-(void)setCurrentEnvironmentManifestUrls:(GEORPCurrentEnvironmentManifestURLs *)arg1 ;
+-(unsigned long long)userPathsCount;
+-(void)setNavigationSettings:(GEORPNavigationSettings *)arg1 ;
+-(void)setSearchCommon:(GEORPSearchCommonContext *)arg1 ;
+-(void)setCurrentAbAssignmentResponse:(GEOABAssignmentResponse *)arg1 ;
+-(void)clearUserPaths;
+-(unsigned long long)visibleTileSetsCount;
+-(void)clearVisibleTileSets;
+-(id)visibleTileSetAtIndex:(unsigned long long)arg1 ;
+-(int)userPathAtIndex:(unsigned long long)arg1 ;
+-(unsigned long long)auxiliaryControlsCount;
+-(void)clearAuxiliaryControls;
+-(id)auxiliaryControlAtIndex:(unsigned long long)arg1 ;
+-(void)setHasPinType:(BOOL)arg1 ;
+-(id)pinTypeAsString:(int)arg1 ;
+-(int)StringAsPinType:(id)arg1 ;
+-(void)setVisibleTileSets:(NSMutableArray *)arg1 ;
+-(void)setUserPaths:(int*)arg1 count:(unsigned long long)arg2 ;
+-(id)userPathsAsString:(int)arg1 ;
+-(int)StringAsUserPaths:(id)arg1 ;
+-(double)clientCreatedAt;
+-(void)setHasClientCreatedAt:(BOOL)arg1 ;
+-(BOOL)hasClientCreatedAt;
+-(NSMutableArray *)auxiliaryControls;
+-(void)setAuxiliaryControls:(NSMutableArray *)arg1 ;
+-(unsigned long long)originatingAuxiliaryControlIndex;
+-(int)deviceGmtOffset;
+-(BOOL)hasSearchCommon;
+-(void)setHasOriginatingAuxiliaryControlIndex:(BOOL)arg1 ;
+-(BOOL)hasOriginatingAuxiliaryControlIndex;
+-(void)setHasDeviceGmtOffset:(BOOL)arg1 ;
+-(BOOL)hasDeviceGmtOffset;
+-(BOOL)hasCurrentEnvironmentManifestUrls;
+-(BOOL)hasNavigationSettings;
+-(BOOL)hasCurrentAbAssignmentResponse;
+-(void)mergeFrom:(id)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)initWithDictionary:(id)arg1 ;
+-(id)description;
+-(void)setPinType:(int)arg1 ;
+-(unsigned long long)hash;
+-(int*)userPaths;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)writeTo:(id)arg1 ;
+-(void)recordEnvironmentAndManifestURLs;
+-(void)_recordManifestURLs:(id)arg1 ;
+-(void)_recordCurrentEnvironment:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)hasPinType;
+-(id)initWithJSON:(id)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)dealloc;
+-(int)pinType;
+-(void)setSourceInfo:(GEORPSourceInfo *)arg1 ;
+@end
+

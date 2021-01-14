@@ -1,0 +1,100 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:51 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/HMDNetworkRouterFirewallRuleManagerInternal.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+#import <libobjc.A.dylib/HMDNetworkRouterFirewallRuleManager.h>
+
+@protocol HMDNetworkRouterFirewallRuleManager <NSObject>
+@required
+-(void)fetchCloudChangesWithCompletion:(/*^block*/id)arg1;
+-(void)fetchRulesForAccessories:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)startupForClient:(id)arg1 completion:(/*^block*/id)arg2;
+-(void)shutdownForClient:(id)arg1;
+-(void)fetchPairedMetadataVersionConfigurationsForAccessories:(id)arg1 completion:(/*^block*/id)arg2;
+
+@end
+
+#import <libobjc.A.dylib/HMDNetworkRouterFirewallRuleManagerDebug.h>
+
+@protocol HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinator, OS_dispatch_queue, HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinatorFactory;
+@class NSArray, NSMutableArray, HMBLocalDatabase, NSNotificationCenter, NSObject, HMFUnfairLock, NSString;
+
+@interface HMDNetworkRouterFirewallRuleManager : HMFObject <HMDNetworkRouterFirewallRuleManagerInternal, HMFLogging, HMDNetworkRouterFirewallRuleManager, HMDNetworkRouterFirewallRuleManagerDebug> {
+
+	long long _state;
+	id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinator> _coordinator;
+	NSMutableArray* _clients;
+	unsigned long long _operationsInProgressCount;
+	HMBLocalDatabase* _localDatabase;
+	NSNotificationCenter* _notificationCenter;
+	NSObject*<OS_dispatch_queue> _callbackQueue;
+	NSObject*<OS_dispatch_queue> _workQueue;
+	id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinatorFactory> _coordinatorFactory;
+	HMFUnfairLock* _propertyLock;
+
+}
+
+@property (nonatomic,readonly) HMBLocalDatabase * localDatabase;                                                                      //@synthesize localDatabase=_localDatabase - In the implementation block
+@property (nonatomic,readonly) NSNotificationCenter * notificationCenter;                                                             //@synthesize notificationCenter=_notificationCenter - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> callbackQueue;                                                            //@synthesize callbackQueue=_callbackQueue - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> workQueue;                                                                //@synthesize workQueue=_workQueue - In the implementation block
+@property (nonatomic,readonly) id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinatorFactory> coordinatorFactory;              //@synthesize coordinatorFactory=_coordinatorFactory - In the implementation block
+@property (nonatomic,readonly) HMFUnfairLock * propertyLock;                                                                          //@synthesize propertyLock=_propertyLock - In the implementation block
+@property (nonatomic,retain) id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinator> coordinator;                              //@synthesize coordinator=_coordinator - In the implementation block
+@property (assign,nonatomic) long long state;                                                                                         //@synthesize state=_state - In the implementation block
+@property (nonatomic,readonly) NSMutableArray * clients;                                                                              //@synthesize clients=_clients - In the implementation block
+@property (assign,nonatomic) unsigned long long operationsInProgressCount;                                                            //@synthesize operationsInProgressCount=_operationsInProgressCount - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * activeClients; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)logCategory;
++(id)sharedInstance;
++(double)defaultCloudFetchInterval;
++(double)defaultCloudFetchRetryInterval;
+-(NSMutableArray *)clients;
+-(void)removeOverridesForProductGroup:(id)arg1 productNumber:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(NSObject*<OS_dispatch_queue>)workQueue;
+-(void)removeAllLocalRulesWithCompletion:(/*^block*/id)arg1 ;
+-(id)init;
+-(void)setCoordinator:(id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinator>)arg1 ;
+-(NSNotificationCenter *)notificationCenter;
+-(void)removeAllOverridesWithCompletion:(/*^block*/id)arg1 ;
+-(void)dumpAllLocalRulesIgnoringOverrides:(BOOL)arg1 rawOutput:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)fetchCloudChangesWithCompletion:(/*^block*/id)arg1 ;
+-(void)dumpPairedMetadataForProductGroup:(id)arg1 productNumber:(id)arg2 firmwareVersion:(id)arg3 ignoreOverrides:(BOOL)arg4 rawOutput:(BOOL)arg5 completion:(/*^block*/id)arg6 ;
+-(void)dumpCloudRecordsForProductGroup:(id)arg1 productNumber:(id)arg2 rawOutput:(BOOL)arg3 verifySignatures:(BOOL)arg4 completion:(/*^block*/id)arg5 ;
+-(void)setState:(long long)arg1 ;
+-(HMFUnfairLock *)propertyLock;
+-(long long)state;
+-(void)listCloudRecordsForProductGroup:(id)arg1 rawOutput:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)setOverrides:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)dumpLocalRulesForProductGroup:(id)arg1 ignoreOverrides:(BOOL)arg2 rawOutput:(BOOL)arg3 completion:(/*^block*/id)arg4 ;
+-(NSObject*<OS_dispatch_queue>)callbackQueue;
+-(HMBLocalDatabase *)localDatabase;
+-(void)addOverrides:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)dumpLocalRulesForProductGroup:(id)arg1 productNumber:(id)arg2 firmwareVersion:(id)arg3 ignoreOverrides:(BOOL)arg4 rawOutput:(BOOL)arg5 completion:(/*^block*/id)arg6 ;
+-(void)dealloc;
+-(id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinator>)coordinator;
+-(void)fetchRulesForAccessories:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)startupForClient:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)initWithLocalDatabase:(id)arg1 ;
+-(id)initWithLocalDatabase:(id)arg1 coordinatorFactory:(id)arg2 ;
+-(id)initWithLocalDatabase:(id)arg1 notificationCenter:(id)arg2 workQueue:(id)arg3 coordinatorFactory:(id)arg4 ;
+-(id<HMDNetworkRouterFirewallRuleManagerBackingStoreCoordinatorFactory>)coordinatorFactory;
+-(unsigned long long)operationsInProgressCount;
+-(void)setOperationsInProgressCount:(unsigned long long)arg1 ;
+-(void)_fetchCloudChangesIgnoringLastFetchedAccessories:(BOOL)arg1 forceChangeNotifications:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)shutdownForClient:(id)arg1 ;
+-(void)fetchPairedMetadataVersionConfigurationsForAccessories:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)didCompleteScheduledCloudFetch;
+-(NSArray *)activeClients;
+-(void)forceFetchCloudChangesAndForceChangeNotifications:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+@end
+

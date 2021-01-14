@@ -1,0 +1,99 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:41 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/FMF.framework/FMF
+*/
+
+#import <FMF/FMF-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, NSNumber, NSArray, NSDictionary;
+
+@interface FMFHandle : NSObject <NSCopying, NSSecureCoding> {
+
+	BOOL _isFamilyMember;
+	BOOL _pending;
+	BOOL _reachable;
+	NSString* _identifier;
+	NSString* _serverId;
+	NSNumber* _dsid;
+	NSArray* _aliasServerIds;
+	NSArray* _invitationSentToIds;
+	NSDictionary* _expiresByGroupId;
+	NSString* _hashedDSID;
+	NSNumber* _trackingTimestamp;
+	NSNumber* _favoriteOrder;
+	NSString* __prettyNameInternal;
+	long long _idsStatus;
+	NSString* _qualifiedIdentifier;
+
+}
+
+@property (nonatomic,copy) NSString * identifier;                        //@synthesize identifier=_identifier - In the implementation block
+@property (nonatomic,copy) NSString * serverId;                          //@synthesize serverId=_serverId - In the implementation block
+@property (nonatomic,copy) NSNumber * dsid;                              //@synthesize dsid=_dsid - In the implementation block
+@property (assign,nonatomic) BOOL isFamilyMember;                        //@synthesize isFamilyMember=_isFamilyMember - In the implementation block
+@property (nonatomic,copy) NSArray * aliasServerIds;                     //@synthesize aliasServerIds=_aliasServerIds - In the implementation block
+@property (nonatomic,copy) NSArray * invitationSentToIds;                //@synthesize invitationSentToIds=_invitationSentToIds - In the implementation block
+@property (nonatomic,copy) NSDictionary * expiresByGroupId;              //@synthesize expiresByGroupId=_expiresByGroupId - In the implementation block
+@property (nonatomic,copy) NSString * hashedDSID;                        //@synthesize hashedDSID=_hashedDSID - In the implementation block
+@property (assign,getter=isPending,nonatomic) BOOL pending;              //@synthesize pending=_pending - In the implementation block
+@property (nonatomic,copy) NSNumber * trackingTimestamp;                 //@synthesize trackingTimestamp=_trackingTimestamp - In the implementation block
+@property (nonatomic,copy) NSNumber * favoriteOrder;                     //@synthesize favoriteOrder=_favoriteOrder - In the implementation block
+@property (nonatomic,copy) NSString * _prettyNameInternal;               //@synthesize _prettyNameInternal=__prettyNameInternal - In the implementation block
+@property (assign,nonatomic) long long idsStatus;                        //@synthesize idsStatus=_idsStatus - In the implementation block
+@property (assign,nonatomic) BOOL reachable;                             //@synthesize reachable=_reachable - In the implementation block
+@property (nonatomic,copy) NSString * qualifiedIdentifier;               //@synthesize qualifiedIdentifier=_qualifiedIdentifier - In the implementation block
++(id)handleWithId:(id)arg1 serverId:(id)arg2 ;
++(BOOL)supportsSecureCoding;
++(id)familyHandleWithId:(id)arg1 dsid:(id)arg2 ;
++(id)handleWithId:(id)arg1 ;
+-(void)abPreferencesDidChange;
+-(NSNumber *)dsid;
+-(void)setDsid:(NSNumber *)arg1 ;
+-(id)recordId;
+-(BOOL)isPending;
+-(void)setPending:(BOOL)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(NSString *)hashedDSID;
+-(id)debugDescription;
+-(void)setReachable:(BOOL)arg1 ;
+-(void)setHashedDSID:(NSString *)arg1 ;
+-(id)description;
+-(void)setServerId:(NSString *)arg1 ;
+-(NSString *)serverId;
+-(NSNumber *)favoriteOrder;
+-(unsigned long long)hash;
+-(id)initWithCoder:(id)arg1 ;
+-(BOOL)isPhoneNumber;
+-(void)setIdentifier:(NSString *)arg1 ;
+-(NSString *)identifier;
+-(id)prettyName;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(BOOL)reachable;
+-(long long)prettyNameCompare:(id)arg1 ;
+-(BOOL)isFamilyMember;
+-(void)addressBookDidChange;
+-(void)set_prettyNameInternal:(NSString *)arg1 ;
+-(void)setQualifiedIdentifier:(NSString *)arg1 ;
+-(void)setIdsStatus:(long long)arg1 ;
+-(void)setTrackingTimestamp:(NSNumber *)arg1 ;
+-(void)setIsFamilyMember:(BOOL)arg1 ;
+-(NSDictionary *)expiresByGroupId;
+-(void)setExpiresByGroupId:(NSDictionary *)arg1 ;
+-(NSNumber *)trackingTimestamp;
+-(void)setFavoriteOrder:(NSNumber *)arg1 ;
+-(long long)idsStatus;
+-(NSString *)qualifiedIdentifier;
+-(NSString *)_prettyNameInternal;
+-(void)setICloudId:(id)arg1 ;
+-(BOOL)isSharingThroughGroupId:(id)arg1 ;
+-(void)clearFavoriteOrder;
+-(NSArray *)aliasServerIds;
+-(void)setAliasServerIds:(NSArray *)arg1 ;
+-(NSArray *)invitationSentToIds;
+-(void)setInvitationSentToIds:(NSArray *)arg1 ;
+@end
+

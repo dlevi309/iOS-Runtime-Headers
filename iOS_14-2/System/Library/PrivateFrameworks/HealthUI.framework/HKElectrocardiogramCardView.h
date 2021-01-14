@@ -1,0 +1,121 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
+*/
+
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/HKDateCacheObserver.h>
+
+@class HKElectrocardiogram, HKDateCache, HKRoundedHeaderView, UIView, UIImageView, UILabel, HKElectrocardiogramChartView, NSLayoutConstraint, NSArray, NSString;
+
+@interface HKElectrocardiogramCardView : UIView <HKDateCacheObserver> {
+
+	BOOL _onboarding;
+	BOOL _isSampleInteractive;
+	HKElectrocardiogram* _sample;
+	HKDateCache* _dateCache;
+	long long _activeAlgorithmVersion;
+	HKRoundedHeaderView* _headerView;
+	UIView* _cellBackgroundView;
+	UIImageView* _heartImageView;
+	UILabel* _averageHeartRateLabel;
+	UILabel* _symptomsLabel;
+	HKElectrocardiogramChartView* _graphView;
+	NSLayoutConstraint* _averageHeartRateLabelFirstBaselineConstraint;
+	NSLayoutConstraint* _averageHeartRateLabelWidthConstraint;
+	NSLayoutConstraint* _symptomsLabelFirstBaselineConstraint;
+	NSLayoutConstraint* _graphTopConstraint;
+	NSLayoutConstraint* _heartImageViewHeightConstraint;
+	NSArray* _regularConstraints;
+	NSArray* _largeTextConstraints;
+
+}
+
+@property (assign,nonatomic,__weak) HKDateCache * dateCache;                                                 //@synthesize dateCache=_dateCache - In the implementation block
+@property (assign,getter=isOnboarding,nonatomic) BOOL onboarding;                                            //@synthesize onboarding=_onboarding - In the implementation block
+@property (assign,nonatomic) long long activeAlgorithmVersion;                                               //@synthesize activeAlgorithmVersion=_activeAlgorithmVersion - In the implementation block
+@property (nonatomic,readonly) BOOL isSampleInteractive;                                                     //@synthesize isSampleInteractive=_isSampleInteractive - In the implementation block
+@property (nonatomic,retain) HKRoundedHeaderView * headerView;                                               //@synthesize headerView=_headerView - In the implementation block
+@property (nonatomic,retain) UIView * cellBackgroundView;                                                    //@synthesize cellBackgroundView=_cellBackgroundView - In the implementation block
+@property (nonatomic,retain) UIImageView * heartImageView;                                                   //@synthesize heartImageView=_heartImageView - In the implementation block
+@property (nonatomic,retain) UILabel * averageHeartRateLabel;                                                //@synthesize averageHeartRateLabel=_averageHeartRateLabel - In the implementation block
+@property (nonatomic,retain) UILabel * symptomsLabel;                                                        //@synthesize symptomsLabel=_symptomsLabel - In the implementation block
+@property (nonatomic,retain) HKElectrocardiogramChartView * graphView;                                       //@synthesize graphView=_graphView - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * averageHeartRateLabelFirstBaselineConstraint;              //@synthesize averageHeartRateLabelFirstBaselineConstraint=_averageHeartRateLabelFirstBaselineConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * averageHeartRateLabelWidthConstraint;                      //@synthesize averageHeartRateLabelWidthConstraint=_averageHeartRateLabelWidthConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * symptomsLabelFirstBaselineConstraint;                      //@synthesize symptomsLabelFirstBaselineConstraint=_symptomsLabelFirstBaselineConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * graphTopConstraint;                                        //@synthesize graphTopConstraint=_graphTopConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * heartImageViewHeightConstraint;                            //@synthesize heartImageViewHeightConstraint=_heartImageViewHeightConstraint - In the implementation block
+@property (nonatomic,retain) NSArray * regularConstraints;                                                   //@synthesize regularConstraints=_regularConstraints - In the implementation block
+@property (nonatomic,retain) NSArray * largeTextConstraints;                                                 //@synthesize largeTextConstraints=_largeTextConstraints - In the implementation block
+@property (nonatomic,retain) HKElectrocardiogram * sample;                                                   //@synthesize sample=_sample - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(double)_graphHeight;
++(double)estimatedHeight;
++(id)_accessibilityContentSizeCategory;
++(double)_headerBottomToAverageHeartRateBaseline;
++(double)_averageHeartRateBaselineToGraphTop;
++(double)_graphBottomToCardBottom;
++(id)_averageHeartRateSymptomsFont;
++(id)_averageHeartRateSymptomsFontForElectrocardiogram:(id)arg1 ;
++(double)_averageHeartRateBaselineToSymptomBaseline;
++(id)_averageHeartRateSymptomsTextStyle;
++(id)_averageHeartRateSymptomsBoldFont;
+-(void)_setupConstraints;
+-(void)setHeaderView:(HKRoundedHeaderView *)arg1 ;
+-(void)tintColorDidChange;
+-(HKElectrocardiogram *)sample;
+-(HKDateCache *)dateCache;
+-(void)updateUI;
+-(NSArray *)regularConstraints;
+-(void)setRegularConstraints:(NSArray *)arg1 ;
+-(void)setLargeTextConstraints:(NSArray *)arg1 ;
+-(NSArray *)largeTextConstraints;
+-(void)_updateForCurrentSizeCategory;
+-(id)_cardBackgroundColor;
+-(void)setSample:(HKElectrocardiogram *)arg1 ;
+-(HKRoundedHeaderView *)headerView;
+-(void)_setupUI;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(void)dealloc;
+-(void)setDateCache:(HKDateCache *)arg1 ;
+-(HKElectrocardiogramChartView *)graphView;
+-(void)setActiveAlgorithmVersion:(long long)arg1 ;
+-(id)initWithSample:(id)arg1 dateCache:(id)arg2 onboarding:(BOOL)arg3 activeAlgorithmVersion:(long long)arg4 isSampleInteractive:(BOOL)arg5 ;
+-(NSLayoutConstraint *)heartImageViewHeightConstraint;
+-(void)setHeartImageViewHeightConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)dateCacheDidUpdate:(id)arg1 onNotification:(id)arg2 ;
+-(void)_updateTextConstraints;
+-(BOOL)_isLayingOutForAccessibility;
+-(id)_chevronColor;
+-(void)_setUpGraph;
+-(id)_cardHeaderColor;
+-(void)setCellBackgroundView:(UIView *)arg1 ;
+-(UIView *)cellBackgroundView;
+-(void)setHeartImageView:(UIImageView *)arg1 ;
+-(UIImageView *)heartImageView;
+-(void)setAverageHeartRateLabel:(UILabel *)arg1 ;
+-(UILabel *)averageHeartRateLabel;
+-(void)setSymptomsLabel:(UILabel *)arg1 ;
+-(UILabel *)symptomsLabel;
+-(void)setGraphView:(HKElectrocardiogramChartView *)arg1 ;
+-(void)setAverageHeartRateLabelFirstBaselineConstraint:(NSLayoutConstraint *)arg1 ;
+-(NSLayoutConstraint *)averageHeartRateLabelFirstBaselineConstraint;
+-(void)setAverageHeartRateLabelWidthConstraint:(NSLayoutConstraint *)arg1 ;
+-(NSLayoutConstraint *)averageHeartRateLabelWidthConstraint;
+-(void)setSymptomsLabelFirstBaselineConstraint:(NSLayoutConstraint *)arg1 ;
+-(NSLayoutConstraint *)symptomsLabelFirstBaselineConstraint;
+-(long long)activeAlgorithmVersion;
+-(id)_graphBackgroundColor;
+-(NSLayoutConstraint *)graphTopConstraint;
+-(void)setGraphTopConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)_updateGraphTopConstraint;
+-(BOOL)isOnboarding;
+-(void)setOnboarding:(BOOL)arg1 ;
+-(BOOL)isSampleInteractive;
+@end
+

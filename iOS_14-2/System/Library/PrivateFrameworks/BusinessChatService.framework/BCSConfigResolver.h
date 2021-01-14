@@ -1,0 +1,40 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:21 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BusinessChatService.framework/BusinessChatService
+*/
+
+#import <libobjc.A.dylib/BCSConfigResolving.h>
+
+@protocol BCSConfigCaching, BCSConfigCacheSkipping, BCSConfigRemoteFetching, BCSMetricFactoryProtocol;
+@class NSString;
+
+@interface BCSConfigResolver : NSObject <BCSConfigResolving> {
+
+	id<BCSConfigCaching> _configCache;
+	id<BCSConfigCacheSkipping> _configCacheSkipper;
+	id<BCSConfigRemoteFetching> _configRemoteFetcher;
+	id<BCSMetricFactoryProtocol> _metricFactory;
+
+}
+
+@property (nonatomic,retain) id<BCSConfigCaching> configCache;                             //@synthesize configCache=_configCache - In the implementation block
+@property (nonatomic,retain) id<BCSConfigCacheSkipping> configCacheSkipper;                //@synthesize configCacheSkipper=_configCacheSkipper - In the implementation block
+@property (nonatomic,retain) id<BCSConfigRemoteFetching> configRemoteFetcher;              //@synthesize configRemoteFetcher=_configRemoteFetcher - In the implementation block
+@property (nonatomic,retain) id<BCSMetricFactoryProtocol> metricFactory;                   //@synthesize metricFactory=_metricFactory - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id<BCSConfigRemoteFetching>)configRemoteFetcher;
+-(id<BCSConfigCaching>)configCache;
+-(id<BCSConfigCacheSkipping>)configCacheSkipper;
+-(id<BCSMetricFactoryProtocol>)metricFactory;
+-(void)configItemWithType:(long long)arg1 clientBundleID:(id)arg2 metric:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(id)initWithConfigCache:(id)arg1 cacheSkipper:(id)arg2 remoteFetcher:(id)arg3 metricFactory:(id)arg4 ;
+-(void)setConfigCache:(id<BCSConfigCaching>)arg1 ;
+-(void)setConfigCacheSkipper:(id<BCSConfigCacheSkipping>)arg1 ;
+-(void)setConfigRemoteFetcher:(id<BCSConfigRemoteFetching>)arg1 ;
+-(void)setMetricFactory:(id<BCSMetricFactoryProtocol>)arg1 ;
+@end
+

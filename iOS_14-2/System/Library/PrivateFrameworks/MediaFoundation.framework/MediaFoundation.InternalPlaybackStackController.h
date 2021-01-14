@@ -1,0 +1,29 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:53 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MediaFoundation.framework/MediaFoundation
+*/
+
+#import <libobjc.A.dylib/MFStateDumpable.h>
+
+@class NSDictionary;
+
+@interface MediaFoundation.InternalPlaybackStackController : _UKNOWN_SUPERCLASS_ <MFStateDumpable> {
+
+	 delegate;
+	 currentQueueControllerItem;
+	 maximumPlayerQueueLength;
+	 playerController;
+	 queueAssetLoader;
+	 queueController;
+	 reporter;
+	 errorController;
+	 externalPlaybackController;
+	 backgroundTaskController;
+
+}
+
+@property (readonly,nonatomic) NSDictionary * stateDictionary; 
+-(NSDictionary *)stateDictionary;
+@end
+

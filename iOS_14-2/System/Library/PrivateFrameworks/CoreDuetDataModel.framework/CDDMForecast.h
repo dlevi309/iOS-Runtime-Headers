@@ -1,0 +1,32 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:32 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreDuetDataModel.framework/CoreDuetDataModel
+*/
+
+#import <CoreData/NSManagedObject.h>
+
+@class NSNumber, NSDate;
+
+@interface CDDMForecast : NSManagedObject
+
+@property (nonatomic,retain) NSNumber * attributeId; 
+@property (nonatomic,retain) NSNumber * basisCount; 
+@property (nonatomic,retain) NSNumber * basisFilled; 
+@property (nonatomic,retain) NSNumber * clientId; 
+@property (nonatomic,retain) NSNumber * forecastFormat; 
+@property (nonatomic,retain) NSDate * forecastGeneratedOn; 
+@property (nonatomic,retain) NSNumber * forecastGranularity; 
+@property (nonatomic,retain) NSNumber * forecastGroupId; 
+@property (nonatomic,retain) NSNumber * forecastType; 
+@property (nonatomic,retain) NSDate * historyWindowEnd; 
+@property (nonatomic,retain) NSNumber * historyWindowRecurrenceDelta; 
+@property (nonatomic,retain) NSNumber * historyWindowRecurrenceWidth; 
+@property (nonatomic,retain) NSDate * historyWindowStart; 
+@property (nonatomic,retain) NSNumber * integerId; 
+@property (nonatomic,retain) NSNumber * limitCount; 
+@property (nonatomic,retain) NSNumber * userId; 
+@property (nonatomic,retain) NSDate * creationDate; 
+@property (nonatomic,retain) NSDate * oldestEntryDate; 
+@end
+

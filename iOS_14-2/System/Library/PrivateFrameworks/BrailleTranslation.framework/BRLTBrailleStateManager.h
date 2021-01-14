@@ -1,0 +1,94 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BrailleTranslation.framework/BrailleTranslation
+*/
+
+#import <BrailleTranslation/BrailleTranslation-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@protocol BRLTBrailleStateManagerDelegate, BRLTBrailleTranslationDelegateProtocol;
+@class BRLTScriptString, BRLTBrailleBuffer, BRLTBrailleString, NSRecursiveLock, NSMutableArray;
+
+@interface BRLTBrailleStateManager : NSObject <NSCopying> {
+
+	BRLTScriptString* _scriptString;
+	BRLTBrailleBuffer* _brailleBuffer;
+	BRLTBrailleString* _staticBrailleString;
+	NSRange _scriptForwardEditingRegion;
+	NSRange _scriptBackwardEditingRegion;
+	NSRange _scriptMergeEditingRegion;
+	NSRange _brailleForwardEditingRegion;
+	NSRange _brailleBackwardEditingRegion;
+	NSRange _brailleMergeEditingRegion;
+	NSRange _activeScriptEditingRegion;
+	NSRange _activeBrailleEditingRegion;
+	NSRange _brailleSelection;
+	NSRange _brailleFocus;
+	BOOL _brailleDirty;
+	BOOL _scriptDirty;
+	id<BRLTBrailleStateManagerDelegate> _delegate;
+	id<BRLTBrailleTranslationDelegateProtocol> _translationDelegate;
+	NSRange _pendingScriptSelection;
+	NSRecursiveLock* _apiLock;
+	NSMutableArray* _runningScriptStringHistory;
+	double _lastScriptStringOutputTime;
+	BOOL _editable;
+	unsigned long long _inputTranslationMode;
+	unsigned long long _outputTranslationMode;
+
+}
+
+@property (nonatomic,readonly) BRLTBrailleBuffer * brailleBuffer; 
+@property (assign,nonatomic) BOOL editable;                                         //@synthesize editable=_editable - In the implementation block
+@property (assign,nonatomic) unsigned long long inputTranslationMode;               //@synthesize inputTranslationMode=_inputTranslationMode - In the implementation block
+@property (assign,nonatomic) unsigned long long outputTranslationMode;              //@synthesize outputTranslationMode=_outputTranslationMode - In the implementation block
+-(BOOL)editable;
+-(void)setDelegate:(id)arg1 ;
+-(void)setEditable:(BOOL)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)translate;
+-(void)_translate:(BOOL)arg1 ;
+-(void)insertBrailleChar:(id)arg1 ;
+-(BOOL)deleteBrailleChar;
+-(id)initWithDelegate:(id)arg1 translationDelegate:(id)arg2 ;
+-(void)insertBrailleChar:(id)arg1 silently:(BOOL)arg2 ;
+-(void)_generateBrailleBufferForInsert;
+-(id)brailleDisplayString;
+-(BOOL)_generateBrailleBuffer:(BOOL)arg1 ;
+-(NSRange)backwardEditingAtomForScriptString:(id)arg1 ;
+-(BOOL)_deleteBrailleCharSilently:(BOOL)arg1 ;
+-(BOOL)_selectionIsValidForDelete;
+-(BOOL)_generateBrailleBufferForDelete;
+-(BOOL)_forwardDeleteBrailleCharSilently:(BOOL)arg1 ;
+-(NSRange)brailleSelection;
+-(void)setBrailleSelection:(NSRange)arg1 ;
+-(BOOL)_setBrailleSelection:(NSRange)arg1 newScriptLocation:(out unsigned long long*)arg2 ;
+-(NSRange)_textRangeForBrailleRange:(NSRange)arg1 textPositions:(id)arg2 scriptLength:(long long)arg3 ;
+-(BOOL)_selectionIsValidForInsert;
+-(NSRange)forwardEditingAtomForScriptString:(id)arg1 ;
+-(NSRange)deleteMergeAtomForScriptString:(id)arg1 ;
+-(NSRange)_brailleRangeForTextRange:(NSRange)arg1 textPositions:(id)arg2 brailleLength:(unsigned long long)arg3 ;
+-(unsigned long long)scriptLocationForBrailleLocation:(unsigned long long)arg1 ;
+-(void)setTranslationDelegate:(id)arg1 ;
+-(id)translationDelegate;
+-(BRLTBrailleBuffer *)brailleBuffer;
+-(void)setScriptString:(id)arg1 ;
+-(BOOL)deleteBrailleCharSilently;
+-(BOOL)forwardDeleteBrailleChar;
+-(BOOL)forwardDeleteBrailleCharSilently;
+-(void)setBrailleSelection:(NSRange)arg1 needsForwardToScreenReader:(out BOOL*)arg2 newScriptLocation:(out unsigned long long*)arg3 ;
+-(void)translateForced:(BOOL)arg1 ;
+-(NSRange)brailleFocus;
+-(id)outputScriptString;
+-(NSRange)scriptEditingRange;
+-(unsigned long long)brailleLocationForScriptLocation:(unsigned long long)arg1 ;
+-(NSRange)brailleRangeForScriptRange:(NSRange)arg1 ;
+-(NSRange)scriptRangeForBrailleRange:(NSRange)arg1 ;
+-(NSRange)scriptRangeOfBrailleCellRepresentingCharacterAtScriptIndex:(unsigned long long)arg1 ;
+-(void)setOutputTranslationMode:(unsigned long long)arg1 ;
+-(void)setInputTranslationMode:(unsigned long long)arg1 ;
+-(unsigned long long)inputTranslationMode;
+-(unsigned long long)outputTranslationMode;
+@end
+

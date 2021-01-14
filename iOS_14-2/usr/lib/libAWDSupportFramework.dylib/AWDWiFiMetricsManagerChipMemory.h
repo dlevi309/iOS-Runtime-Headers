@@ -1,0 +1,76 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:29:02 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /usr/lib/libAWDSupportFramework.dylib
+*/
+
+#import <libAWDSupportFramework.dylib/libAWDSupportFramework.dylib-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@interface AWDWiFiMetricsManagerChipMemory : PBCodable <NSCopying> {
+
+	unsigned long long _timestamp;
+	unsigned _heapFree;
+	unsigned _heapFreeMax;
+	unsigned _heapFreeMin;
+	unsigned _heapTotal;
+	unsigned _heapTotalMax;
+	unsigned _heapTotalMin;
+	SCD_Struct_AW16 _has;
+
+}
+
+@property (assign,nonatomic) BOOL hasTimestamp; 
+@property (assign,nonatomic) unsigned long long timestamp;              //@synthesize timestamp=_timestamp - In the implementation block
+@property (assign,nonatomic) BOOL hasHeapTotal; 
+@property (assign,nonatomic) unsigned heapTotal;                        //@synthesize heapTotal=_heapTotal - In the implementation block
+@property (assign,nonatomic) BOOL hasHeapTotalMin; 
+@property (assign,nonatomic) unsigned heapTotalMin;                     //@synthesize heapTotalMin=_heapTotalMin - In the implementation block
+@property (assign,nonatomic) BOOL hasHeapTotalMax; 
+@property (assign,nonatomic) unsigned heapTotalMax;                     //@synthesize heapTotalMax=_heapTotalMax - In the implementation block
+@property (assign,nonatomic) BOOL hasHeapFree; 
+@property (assign,nonatomic) unsigned heapFree;                         //@synthesize heapFree=_heapFree - In the implementation block
+@property (assign,nonatomic) BOOL hasHeapFreeMin; 
+@property (assign,nonatomic) unsigned heapFreeMin;                      //@synthesize heapFreeMin=_heapFreeMin - In the implementation block
+@property (assign,nonatomic) BOOL hasHeapFreeMax; 
+@property (assign,nonatomic) unsigned heapFreeMax;                      //@synthesize heapFreeMax=_heapFreeMax - In the implementation block
+-(id)dictionaryRepresentation;
+-(unsigned long long)timestamp;
+-(void)mergeFrom:(id)arg1 ;
+-(id)description;
+-(void)setHasTimestamp:(BOOL)arg1 ;
+-(unsigned long long)hash;
+-(BOOL)hasTimestamp;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)writeTo:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)setTimestamp:(unsigned long long)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)setHeapTotal:(unsigned)arg1 ;
+-(void)setHasHeapTotal:(BOOL)arg1 ;
+-(BOOL)hasHeapTotal;
+-(void)setHeapTotalMin:(unsigned)arg1 ;
+-(void)setHasHeapTotalMin:(BOOL)arg1 ;
+-(BOOL)hasHeapTotalMin;
+-(void)setHeapTotalMax:(unsigned)arg1 ;
+-(void)setHasHeapTotalMax:(BOOL)arg1 ;
+-(BOOL)hasHeapTotalMax;
+-(void)setHeapFree:(unsigned)arg1 ;
+-(void)setHasHeapFree:(BOOL)arg1 ;
+-(BOOL)hasHeapFree;
+-(void)setHeapFreeMin:(unsigned)arg1 ;
+-(void)setHasHeapFreeMin:(BOOL)arg1 ;
+-(BOOL)hasHeapFreeMin;
+-(void)setHeapFreeMax:(unsigned)arg1 ;
+-(void)setHasHeapFreeMax:(BOOL)arg1 ;
+-(BOOL)hasHeapFreeMax;
+-(unsigned)heapTotal;
+-(unsigned)heapTotalMin;
+-(unsigned)heapTotalMax;
+-(unsigned)heapFree;
+-(unsigned)heapFreeMin;
+-(unsigned)heapFreeMax;
+@end
+

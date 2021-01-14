@@ -1,0 +1,103 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:33 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/CloudDocsDaemon
+*/
+
+#import <CloudDocsDaemon/CloudDocsDaemon-Structs.h>
+#import <CloudDocsDaemon/BRCStatInfo.h>
+
+@class NSNumber, NSString, BRCGenerationID, BRFileObjectID;
+
+@interface BRCLocalStatInfo : BRCStatInfo {
+
+	NSNumber* _processingStamp;
+	NSString* _bouncedLogicalName;
+	unsigned char _itemScope;
+	unsigned _stagedGenerationID;
+	NSNumber* _documentID;
+	NSNumber* _fileID;
+	BRCGenerationID* _generationID;
+	NSNumber* _stagedFileID;
+	NSString* _physicalName;
+	NSNumber* _tmpBouncedNo;
+
+}
+
+@property (assign,nonatomic) unsigned char itemScope;                                 //@synthesize itemScope=_itemScope - In the implementation block
+@property (nonatomic,retain) NSString * rawBouncedLogicalName;                        //@synthesize bouncedLogicalName=_bouncedLogicalName - In the implementation block
+@property (nonatomic,readonly) NSNumber * documentID;                                 //@synthesize documentID=_documentID - In the implementation block
+@property (nonatomic,readonly) NSNumber * fileID;                                     //@synthesize fileID=_fileID - In the implementation block
+@property (nonatomic,readonly) BRCGenerationID * generationID;                        //@synthesize generationID=_generationID - In the implementation block
+@property (nonatomic,readonly) NSNumber * stagedFileID;                               //@synthesize stagedFileID=_stagedFileID - In the implementation block
+@property (nonatomic,readonly) NSNumber * stagedFileIDForDB; 
+@property (nonatomic,readonly) unsigned stagedGenerationID;                           //@synthesize stagedGenerationID=_stagedGenerationID - In the implementation block
+@property (nonatomic,readonly) NSString * physicalName;                               //@synthesize physicalName=_physicalName - In the implementation block
+@property (nonatomic,readonly) NSString * filename; 
+@property (nonatomic,readonly) NSNumber * tmpBouncedNo;                               //@synthesize tmpBouncedNo=_tmpBouncedNo - In the implementation block
+@property (nonatomic,readonly) NSNumber * lostStamp; 
+@property (nonatomic,readonly) BRFileObjectID * fileObjectID; 
+@property (nonatomic,readonly) NSNumber * processingStamp;                            //@synthesize processingStamp=_processingStamp - In the implementation block
+@property (nonatomic,readonly) NSString * logicalNameWithoutLocalBounce; 
++(BOOL)supportsSecureCoding;
++(id)_finderTagsFromRelativePath:(id)arg1 ;
++(char)_modeFromRelativePath:(id)arg1 isPackageFault:(BOOL)arg2 ;
+-(BRCGenerationID *)generationID;
+-(NSNumber *)fileID;
+-(id)initFromResultSet:(id)arg1 pos:(int)arg2 ;
+-(NSString *)filename;
+-(void)encodeWithCoder:(id)arg1 ;
+-(BRFileObjectID *)fileObjectID;
+-(id)logicalName;
+-(NSString *)physicalName;
+-(id)description;
+-(void)_setParentID:(id)arg1 ;
+-(void)setFilename:(NSString *)arg1 ;
+-(NSNumber *)documentID;
+-(id)initWithCoder:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(NSNumber *)stagedFileID;
+-(unsigned)stagedGenerationID;
+-(void)setItemScope:(unsigned char)arg1 ;
+-(NSNumber *)processingStamp;
+-(NSNumber *)stagedFileIDForDB;
+-(NSString *)rawBouncedLogicalName;
+-(unsigned char)itemScope;
+-(NSNumber *)tmpBouncedNo;
+-(id)descriptionWithContext:(id)arg1 origName:(id)arg2 ;
+-(BOOL)checkStateWithItemID:(id)arg1 logToFile:(_sFILE*)arg2 ;
+-(id)initAsShareAcceptFaultWithName:(id)arg1 mode:(char)arg2 ;
+-(void)_markLiveFromStageAsType:(char)arg1 ;
+-(NSNumber *)lostStamp;
+-(void)updateFromFSAtPath:(id)arg1 itemID:(id)arg2 parentGlobalID:(id)arg3 isPackageFault:(BOOL)arg4 readonlyShareChild:(BOOL)arg5 ;
+-(id)initWithLocalStatInfo:(id)arg1 ;
+-(void)setFilename:(id)arg1 forcePhysicalName:(id)arg2 forceBouncedLogicalName:(id)arg3 serverName:(id)arg4 ;
+-(void)_updateMetadataFromFSAtPath:(id)arg1 itemID:(id)arg2 parentGlobalID:(id)arg3 isPackageFault:(BOOL)arg4 readonlyShareChild:(BOOL)arg5 ;
+-(void)_markDead;
+-(NSString *)logicalNameWithoutLocalBounce;
+-(id)initWithRelativePath:(id)arg1 itemID:(id)arg2 parentGlobalID:(id)arg3 ;
+-(void)_setItemScope:(unsigned char)arg1 ;
+-(void)_setCKInfo:(id)arg1 ;
+-(void)_markClearedFromStage;
+-(void)_moveItemAsideWithUUIDString;
+-(void)_generatedBouncedLogicalFilenameWithBounceNumber:(unsigned long long)arg1 ;
+-(void)_migrateTmpBouncedNameToLocalName;
+-(void)_bouncePhysicalNameToRepresentableName;
+-(void)_clearBouncedName;
+-(unsigned long long)diffAgainstLocalInfo:(id)arg1 ;
+-(void)updateFilenameFromPath:(id)arg1 ;
+-(void)updateLocationAndMetaFromFSAtPath:(id)arg1 itemID:(id)arg2 parentGlobalID:(id)arg3 isPackageFault:(BOOL)arg4 readonlyShareChild:(BOOL)arg5 ;
+-(void)_markReserved;
+-(void)_markAlmostDead;
+-(void)updateAsAppLibraryRoot:(id)arg1 ;
+-(void)_markDeadAsSharedTopLevelItemWithDocumentsItemID:(id)arg1 ;
+-(void)_markFound;
+-(void)_markLostAddingBackoffWithMode:(unsigned char)arg1 appLibrary:(id)arg2 ;
+-(void)_markStagedWithFileID:(id)arg1 generationID:(unsigned)arg2 documentID:(id)arg3 ;
+-(void)_updateStatMeta:(id)arg1 ;
+-(void)_markLiveFromStageAsFault:(BOOL)arg1 ;
+-(void)_clearFileID;
+-(void)_clearGenerationID;
+-(void)setRawBouncedLogicalName:(NSString *)arg1 ;
+@end
+

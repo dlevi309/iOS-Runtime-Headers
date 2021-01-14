@@ -1,0 +1,44 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:05 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+
+@protocol OS_dispatch_source;
+#import <GeoServices/GeoServices-Structs.h>
+@class NSObject, GEOTileCache;
+
+@interface GEOTilePool : NSObject {
+
+	NSObject*<OS_dispatch_source> _memoryNotificationEventSource;
+	GEOGenericContainer<_GEOTileKey, GEOTileData *, std::__1::hash<GEOTileKey>, std::__1::equal_to<GEOTileKey>, geo::GEOGenericContainerWeakReferenceTag, 0, 0, geo::GEOGenericContainerLockingTag, detail::_default_pointer_type>* _pool;
+	GEOGenericContainer<_GEOTileKey, id, std::__1::hash<GEOTileKey>, std::__1::equal_to<GEOTileKey>, geo::GEOGenericContainerWeakReferenceTag, 0, 0, geo::GEOGenericContainerLockingTag, detail::_default_pointer_type>* _decodedPool;
+	GEOTileCache* _cache;
+
+}
+
+@property (nonatomic,readonly) unsigned long long currentCount; 
+@property (nonatomic,readonly) unsigned long long currentCost; 
+@property (assign) unsigned long long maxCapacity; 
+@property (assign) unsigned long long maxCost; 
+-(unsigned long long)maxCapacity;
+-(void)setMaxCapacity:(unsigned long long)arg1 ;
+-(void)enumerate:(/*^block*/id)arg1 ;
+-(void)setTile:(id)arg1 forKey:(const GEOTileKey*)arg2 cost:(unsigned long long)arg3 ;
+-(id)init;
+-(void)_receivedMemoryNotification;
+-(unsigned long long)maxCost;
+-(unsigned long long)currentCost;
+-(void)removeTilesWithKeys:(id)arg1 ;
+-(id)initWithSideCacheEnabled:(BOOL)arg1 ;
+-(BOOL)containsKey:(const GEOTileKey*)arg1 cost:(unsigned long long*)arg2 ;
+-(void)removeTileForKey:(const GEOTileKey*)arg1 ;
+-(void)_enteredBackground:(id)arg1 ;
+-(unsigned long long)currentCount;
+-(void)removeAllObjects;
+-(void)removeTilesMatchingPredicate:(/*^block*/id)arg1 ;
+-(void)setMaxCost:(unsigned long long)arg1 ;
+-(id)tileForKey:(const GEOTileKey*)arg1 ;
+@end
+

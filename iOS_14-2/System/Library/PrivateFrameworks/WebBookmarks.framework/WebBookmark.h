@@ -1,0 +1,207 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:55 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WebBookmarks.framework/WebBookmarks
+*/
+
+#import <WebBookmarks/WebBookmarks-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, NSData, NSDictionary, UIColor, UIImage, NSDate;
+
+@interface WebBookmark : NSObject <NSCopying> {
+
+	BOOL _folder;
+	NSString* _title;
+	NSString* _url;
+	NSString* _UUID;
+	NSString* _serverID;
+	NSString* _syncKey;
+	NSData* _syncData;
+	BOOL _editable;
+	BOOL _deletable;
+	BOOL _hidden;
+	BOOL _syncable;
+	BOOL _fetchedIconData;
+	NSData* _iconData;
+	BOOL _locallyAdded;
+	int _archiveStatus;
+	int _webFilterStatus;
+	NSDictionary* _extraAttributes;
+	NSDictionary* _localAttributes;
+	int _id;
+	int _parentID;
+	int _specialID;
+	unsigned _orderIndex;
+	BOOL _inserted;
+	BOOL _needsSyncUpdate;
+	unsigned long long _modifiedAttributes;
+	BOOL _usedForInMemoryChangeTracking;
+
+}
+
+@property (setter=_sf_setIconKeyColor:,nonatomic,retain) UIColor * _sf_iconKeyColor; 
+@property (nonatomic,readonly) UIImage * _sf_icon; 
+@property (nonatomic,retain) NSString * serverID; 
+@property (nonatomic,retain) NSString * syncKey; 
+@property (nonatomic,retain) NSData * syncData; 
+@property (nonatomic,copy,readonly) NSDictionary * dictionaryRepresentationForInMemoryChangeTracking; 
+@property (nonatomic,readonly) unsigned long long modifiedAttributes; 
+@property (nonatomic,readonly) BOOL isReadingListItem; 
+@property (nonatomic,retain) NSString * previewText; 
+@property (assign,nonatomic) BOOL locallyAdded; 
+@property (assign,nonatomic) int archiveStatus; 
+@property (assign,nonatomic) int webFilterStatus; 
+@property (nonatomic,retain) NSDate * dateLastArchived; 
+@property (nonatomic,retain) NSDate * dateAdded; 
+@property (nonatomic,retain) NSDate * dateLastViewed; 
+@property (nonatomic,retain) NSDate * dateLastFetched; 
+@property (nonatomic,retain) NSDictionary * nextPageURLs; 
+@property (nonatomic,retain) NSString * localPreviewText; 
+@property (nonatomic,retain) NSString * readingListIconURL; 
+@property (nonatomic,retain) NSString * readingListIconUUID; 
+@property (assign,nonatomic) BOOL hasFetchedMetadata; 
+@property (assign,nonatomic) BOOL shouldArchive; 
+@property (assign,nonatomic) BOOL needsSyncUpdate;                                                                 //@synthesize needsSyncUpdate=_needsSyncUpdate - In the implementation block
+@property (nonatomic,retain) NSString * title;                                                                     //@synthesize title=_title - In the implementation block
+@property (nonatomic,retain) NSString * address;                                                                   //@synthesize url=_url - In the implementation block
+@property (nonatomic,readonly) int parentID;                                                                       //@synthesize parentID=_parentID - In the implementation block
+@property (nonatomic,readonly) int identifier;                                                                     //@synthesize id=_id - In the implementation block
+@property (nonatomic,readonly) NSString * UUID;                                                                    //@synthesize UUID=_UUID - In the implementation block
+@property (nonatomic,readonly) int specialID;                                                                      //@synthesize specialID=_specialID - In the implementation block
+@property (getter=isEditable,nonatomic,readonly) BOOL editable;                                                    //@synthesize editable=_editable - In the implementation block
+@property (getter=isDeletable,nonatomic,readonly) BOOL deletable;                                                  //@synthesize deletable=_deletable - In the implementation block
+@property (getter=isHidden,nonatomic,readonly) BOOL hidden;                                                        //@synthesize hidden=_hidden - In the implementation block
+@property (getter=isFolder,nonatomic,readonly) BOOL folder;                                                        //@synthesize folder=_folder - In the implementation block
+@property (getter=isInserted,nonatomic,readonly) BOOL inserted;                                                    //@synthesize inserted=_inserted - In the implementation block
+@property (getter=isSyncable,nonatomic,readonly) BOOL syncable;                                                    //@synthesize syncable=_syncable - In the implementation block
+@property (assign,nonatomic) BOOL fetchedIconData;                                                                 //@synthesize fetchedIconData=_fetchedIconData - In the implementation block
+@property (nonatomic,retain) NSData * iconData;                                                                    //@synthesize iconData=_iconData - In the implementation block
+@property (nonatomic,retain) NSDictionary * extraAttributes;                                                       //@synthesize extraAttributes=_extraAttributes - In the implementation block
+@property (nonatomic,retain) NSDictionary * localAttributes;                                                       //@synthesize localAttributes=_localAttributes - In the implementation block
++(unsigned long long)_sf_operationForDropSession:(id)arg1 ;
++(void)_sf_webBookmarksFromDropSession:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
++(id)_trimmedTitle:(id)arg1 ;
++(id)_trimmedPreviewText:(id)arg1 ;
+-(UIImage *)_sf_icon;
+-(UIColor *)_sf_iconKeyColor;
+-(void)_sf_setIconKeyColor:(id)arg1 ;
+-(id)_sf_contextMenuUsingCollection:(id)arg1 withUserInfo:(id)arg2 handler:(id)arg3 ;
+-(BOOL)isEditable;
+-(id)localizedTitle;
+-(NSString *)UUID;
+-(BOOL)isHidden;
+-(id)init;
+-(NSData *)iconData;
+-(void)_setHidden:(BOOL)arg1 ;
+-(void)_setUUID:(id)arg1 ;
+-(void)setTitle:(NSString *)arg1 ;
+-(void)setDateAdded:(NSDate *)arg1 ;
+-(BOOL)isSyncable;
+-(NSString *)syncKey;
+-(id)description;
+-(void)_setID:(int)arg1 ;
+-(BOOL)_attributesMarkedAsModified:(unsigned long long)arg1 ;
+-(void)setServerID:(NSString *)arg1 ;
+-(void)setSyncKey:(NSString *)arg1 ;
+-(void)setSyncData:(NSData *)arg1 ;
+-(BOOL)isReadingListItem;
+-(BOOL)isReadingListFolder;
+-(void)_markAttributesAsModified:(unsigned long long)arg1 ;
+-(void)setReadingListIconURL:(NSString *)arg1 ;
+-(NSString *)readingListIconURL;
+-(id)initFolderWithParentID:(int)arg1 ;
+-(void)_markSpecial:(int)arg1 ;
+-(int)specialID;
+-(id)initWithTitle:(id)arg1 address:(id)arg2 ;
+-(id)initReadingListBookmarkWithTitle:(id)arg1 address:(id)arg2 previewText:(id)arg3 ;
+-(BOOL)isEqualToBookmark:(id)arg1 ;
+-(void)_setParentID:(int)arg1 ;
+-(NSString *)address;
+-(void)_setUsedForInMemoryChangeTracking:(BOOL)arg1 ;
+-(id)initWithDictionaryRepresentationForInMemoryChangeTracking:(id)arg1 ;
+-(BOOL)shouldArchive;
+-(NSDictionary *)dictionaryRepresentationForInMemoryChangeTracking;
+-(unsigned long long)modifiedAttributes;
+-(void)_setInserted:(BOOL)arg1 ;
+-(void)setAddress:(NSString *)arg1 ;
+-(void)setDateLastViewed:(NSDate *)arg1 ;
+-(id)initWithTitle:(id)arg1 address:(id)arg2 parentID:(int)arg3 ;
+-(void)setLocalAttributes:(NSDictionary *)arg1 ;
+-(id)initBuiltinDeviceBookmarkWithTitle:(id)arg1 address:(id)arg2 ;
+-(id)shortTypeDescription;
+-(BOOL)needsSyncUpdate;
+-(NSDate *)dateLastViewed;
+-(id)initBuiltinBookmarkWithTitle:(id)arg1 address:(id)arg2 ;
+-(id)initCarrierBookmarkWithTitle:(id)arg1 address:(id)arg2 ;
+-(id)initWhiteListBookmarkWithTitle:(id)arg1 address:(id)arg2 ;
+-(id)initFrequentlyVisitedSiteWithWebBookmark:(id)arg1 title:(id)arg2 ;
+-(BOOL)isBookmarksBarFolder;
+-(BOOL)isBookmarksMenuFolder;
+-(BOOL)isBuiltinBookmark;
+-(BOOL)isWebFilterWhiteListFolder;
+-(BOOL)isFrequentlyVisitedSitesFolder;
+-(void)setNeedsSyncUpdate:(BOOL)arg1 ;
+-(BOOL)fetchedIconData;
+-(void)setFetchedIconData:(BOOL)arg1 ;
+-(NSDictionary *)localAttributes;
+-(unsigned)_orderIndex;
+-(BOOL)_usedForInMemoryChangeTracking;
+-(void)setPreviewText:(NSString *)arg1 ;
+-(unsigned long long)archiveSize;
+-(int)archiveStatus;
+-(void)setWebFilterStatus:(int)arg1 ;
+-(void)setArchiveStatus:(int)arg1 ;
+-(void)setDateLastArchived:(NSDate *)arg1 ;
+-(void)clearArchiveSynchronously;
+-(id)_initWithSqliteRow:(sqlite3_stmtRef)arg1 ;
+-(NSString *)readingListIconUUID;
+-(void)clearArchive;
+-(void)_setOrderIndex:(unsigned)arg1 ;
+-(void)setReadingListIconUUID:(NSString *)arg1 ;
+-(BOOL)fullArchiveAvailable;
+-(int)webFilterStatus;
+-(BOOL)locallyAdded;
+-(void)_setSyncable:(BOOL)arg1 ;
+-(BOOL)isFolder;
+-(int)parentID;
+-(id)_initWithSqliteRow:(sqlite3_stmtRef)arg1 hasIcon:(BOOL)arg2 ;
+-(void)cleanupRedundantPreviewText;
+-(unsigned long long)hash;
+-(BOOL)isInserted;
+-(void)setExtraAttributes:(NSDictionary *)arg1 ;
+-(NSString *)localPreviewText;
+-(id)_readingListPropertyNamed:(id)arg1 ;
+-(void)_modifyExtraReadingListAttributes:(/*^block*/id)arg1 ;
+-(void)_modifyLocalReadingListAttributes:(/*^block*/id)arg1 ;
+-(void)setLocallyAdded:(BOOL)arg1 ;
+-(NSDate *)dateLastArchived;
+-(NSDate *)dateLastFetched;
+-(void)setDateLastFetched:(NSDate *)arg1 ;
+-(void)setTitle:(id)arg1 previewText:(id)arg2 dateLastFetched:(id)arg3 ;
+-(void)setNextPageURLs:(NSDictionary *)arg1 ;
+-(NSDictionary *)nextPageURLs;
+-(void)setLocalPreviewText:(NSString *)arg1 ;
+-(BOOL)hasFetchedMetadata;
+-(void)setHasFetchedMetadata:(BOOL)arg1 ;
+-(id)offlineArchiveDirectoryPath;
+-(unsigned long long)_sizeForFileOrDirectory:(id)arg1 withAttributes:(id)arg2 ;
+-(void)_removeDirectoryAtPath:(id)arg1 ;
+-(id)webarchivePathInReaderForm:(BOOL)arg1 fileExists:(BOOL*)arg2 ;
+-(id)webarchivePathForNextPageURL:(id)arg1 ;
+-(NSString *)serverID;
+-(void)writeOfflineWebView:(id)arg1 withOptions:(unsigned long long)arg2 quickLookFilePath:(id)arg3 suggestedFileName:(id)arg4 completion:(/*^block*/id)arg5 ;
+-(BOOL)shouldReattemptArchiveWithAutomaticArchivingEnabled:(BOOL)arg1 ;
+-(NSData *)syncData;
+-(int)identifier;
+-(NSString *)previewText;
+-(void)setShouldArchive:(BOOL)arg1 ;
+-(BOOL)isDeletable;
+-(void)setIconData:(NSData *)arg1 ;
+-(NSDate *)dateAdded;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(NSDictionary *)extraAttributes;
+-(NSString *)title;
+-(BOOL)isEqual:(id)arg1 ;
+@end
+

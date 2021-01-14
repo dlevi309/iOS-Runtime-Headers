@@ -1,0 +1,36 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:44 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosGraph.framework/PhotosGraph
+*/
+
+#import <libobjc.A.dylib/PGBehavioralAlgorithm.h>
+
+@class NSSet, NSMapTable;
+
+@interface PGSceneprintsBehavioralProcessor : NSObject <PGBehavioralAlgorithm> {
+
+	NSSet* _goldAssets;
+	NSSet* _goldAssetUUIDs;
+	NSMapTable* _goldAssetSceneprintsAndDates;
+	double _similarityThreshold;
+
+}
+
+@property (nonatomic,readonly) NSSet * goldAssets;                                     //@synthesize goldAssets=_goldAssets - In the implementation block
+@property (nonatomic,readonly) NSSet * goldAssetUUIDs;                                 //@synthesize goldAssetUUIDs=_goldAssetUUIDs - In the implementation block
+@property (nonatomic,readonly) NSMapTable * goldAssetSceneprintsAndDates;              //@synthesize goldAssetSceneprintsAndDates=_goldAssetSceneprintsAndDates - In the implementation block
+@property (assign,nonatomic) double similarityThreshold;                               //@synthesize similarityThreshold=_similarityThreshold - In the implementation block
+-(id)initWithGoldAssets:(id)arg1 graph:(id)arg2 ;
+-(id)initWithGoldAssets:(id)arg1 graph:(id)arg2 persistedData:(id)arg3 ;
+-(void)preprocessWithProgressBlock:(/*^block*/id)arg1 ;
+-(float)semanticScoreForAsset:(id)arg1 ;
+-(id)semanticScoreByAssetUUIDForAssets:(id)arg1 ;
+-(id)dataToPersist;
+-(NSSet *)goldAssets;
+-(NSSet *)goldAssetUUIDs;
+-(NSMapTable *)goldAssetSceneprintsAndDates;
+-(double)similarityThreshold;
+-(void)setSimilarityThreshold:(double)arg1 ;
+@end
+

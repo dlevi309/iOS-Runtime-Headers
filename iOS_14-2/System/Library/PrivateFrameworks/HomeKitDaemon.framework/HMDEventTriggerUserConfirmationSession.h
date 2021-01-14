@@ -1,0 +1,62 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:55 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HomeKitDaemon/HMDEventTriggerSession.h>
+#import <libobjc.A.dylib/HMFDumpState.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+#import <libobjc.A.dylib/HMFTimerDelegate.h>
+#import <libobjc.A.dylib/HMDHomeMessageReceiver.h>
+
+@class HMDEventTriggerExecutionSession, HMDEventTriggerDevice, HMDTriggerConfirmationTimer, HomeKitEventTriggerUserConfirmationReceiverSessionLogEvent, NSMutableArray, NSString, NSSet, NSUUID;
+
+@interface HMDEventTriggerUserConfirmationSession : HMDEventTriggerSession <HMFDumpState, HMFLogging, HMFTimerDelegate, HMDHomeMessageReceiver> {
+
+	HMDEventTriggerExecutionSession* _executionSession;
+	HMDEventTriggerDevice* _requestingDevice;
+	HMDTriggerConfirmationTimer* _userResponseTimer;
+	HomeKitEventTriggerUserConfirmationReceiverSessionLogEvent* _analyticsEvent;
+	NSMutableArray* _analyticsSendEvents;
+
+}
+
+@property (assign,nonatomic,__weak) HMDEventTriggerExecutionSession * executionSession;                                //@synthesize executionSession=_executionSession - In the implementation block
+@property (nonatomic,readonly) HMDEventTriggerDevice * requestingDevice;                                               //@synthesize requestingDevice=_requestingDevice - In the implementation block
+@property (nonatomic,retain) HMDTriggerConfirmationTimer * userResponseTimer;                                          //@synthesize userResponseTimer=_userResponseTimer - In the implementation block
+@property (nonatomic,retain) HomeKitEventTriggerUserConfirmationReceiverSessionLogEvent * analyticsEvent;              //@synthesize analyticsEvent=_analyticsEvent - In the implementation block
+@property (nonatomic,retain) NSMutableArray * analyticsSendEvents;                                                     //@synthesize analyticsSendEvents=_analyticsSendEvents - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (copy,readonly) NSSet * messageReceiverChildren; 
+@property (nonatomic,readonly) NSUUID * messageTargetUUID; 
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> messageReceiveQueue; 
++(id)logCategory;
+-(void)timerDidFire:(id)arg1 ;
+-(void)_registerForMessages;
+-(HomeKitEventTriggerUserConfirmationReceiverSessionLogEvent *)analyticsEvent;
+-(void)setAnalyticsEvent:(HomeKitEventTriggerUserConfirmationReceiverSessionLogEvent *)arg1 ;
+-(void)dealloc;
+-(void)_sessionComplete;
+-(void)userDidConfirmExecute:(BOOL)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)setExecutionSession:(HMDEventTriggerExecutionSession *)arg1 ;
+-(HMDEventTriggerExecutionSession *)executionSession;
+-(id)initWithSessionID:(id)arg1 eventTrigger:(id)arg2 workQueue:(id)arg3 msgDispatcher:(id)arg4 requestingDevice:(id)arg5 ;
+-(void)createBulletinNotification;
+-(NSMutableArray *)analyticsSendEvents;
+-(void)_handleUserPermissionRemoveDialogRequest:(id)arg1 ;
+-(void)_handleUserPermissionRemoteResponse:(id)arg1 ;
+-(void)_createBulletinNotification;
+-(void)_askForUserPermissionFromDevice:(id)arg1 executionSessionID:(id)arg2 ;
+-(void)setUserResponseTimer:(HMDTriggerConfirmationTimer *)arg1 ;
+-(HMDTriggerConfirmationTimer *)userResponseTimer;
+-(void)_userResponse:(unsigned long long)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(HMDEventTriggerDevice *)requestingDevice;
+-(void)askForUserPermission:(id)arg1 ;
+-(void)_removeUserDialog:(id)arg1 ;
+-(void)setAnalyticsSendEvents:(NSMutableArray *)arg1 ;
+@end
+

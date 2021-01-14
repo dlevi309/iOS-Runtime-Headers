@@ -1,0 +1,120 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AvatarKit.framework/AvatarKit
+*/
+
+typedef struct {
+	float field1;
+	float field2;
+	float field3;
+} SCD_Struct_AV0;
+
+typedef struct {
+	double field1;
+	BOOL field2;
+	float field3[51];
+	float field4[51];
+	float field5[1];
+	float field6[1];
+} SCD_Struct_AV1;
+
+typedef struct {
+	double timestamp;
+	 translation;
+	 orientation;
+	BOOL cameraSpace;
+	float blendShapeWeights_smooth[51];
+	float blendShapeWeights_raw[51];
+	float parameters_smooth[1];
+	float parameters_raw[1];
+} SCD_Struct_AV2;
+
+typedef struct {
+	[4 columns];
+} SCD_Struct_AV3;
+
+typedef struct {
+	double refTimestamp;
+	double arDelegateTimestamp;
+} SCD_Struct_AV4;
+
+typedef struct opaqueCMSampleBuffer* opaqueCMSampleBufferRef;
+
+typedef struct {
+	[3 columns];
+} SCD_Struct_AV6;
+
+typedef struct {
+	BOOL mirroringEnabled;
+	SCD_Struct_AV6 transform;
+} SCD_Struct_AV7;
+
+typedef struct {
+	BOOL field1;
+	SCD_Struct_AV6 field2;
+} SCD_Struct_AV8;
+
+typedef struct CGImage* CGImageRef;
+
+typedef struct _NSZone* NSZoneRef;
+
+typedef struct CGSize {
+	double width;
+	double height;
+} CGSize;
+
+typedef struct __CVMetalTextureCache* CVMetalTextureCacheRef;
+
+typedef struct {
+	long long field1;
+	int field2;
+	unsigned field3;
+	long long field4;
+} SCD_Struct_AV13;
+
+typedef struct {
+	id field1;
+	id field2;
+	long long field3;
+	BOOL field4;
+} SCD_Struct_AV14;
+
+typedef struct {
+	double totalLatency;
+	double arKitLatency;
+	double updateSyncLatency;
+	double metalLatency;
+	double timeBetweenARFrame;
+	unsigned fps;
+	double audioTime;
+	unsigned droppedFrame;
+	BOOL doubleBuffer;
+	unsigned onlineShaderCompilationCount;
+} SCD_Struct_AV15;
+
+typedef struct os_unfair_lock_s {
+	unsigned _os_unfair_lock_opaque;
+} os_unfair_lock_s;
+
+typedef struct {
+	os_unfair_lock_s lock;
+	/*function pointer*/void* head;
+	int current;
+	unsigned capacity;
+	BOOL reached_max_capacity;
+} SCD_Struct_AV17;
+
+typedef struct CGContext* CGContextRef;
+
+typedef struct {
+	long long value;
+	int timescale;
+	unsigned flags;
+	long long epoch;
+} SCD_Struct_AV19;
+
+typedef struct {
+	 vector;
+} SCD_Struct_AV20;
+

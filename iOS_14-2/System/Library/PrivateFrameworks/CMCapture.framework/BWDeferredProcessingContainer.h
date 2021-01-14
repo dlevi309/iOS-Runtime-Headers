@@ -1,0 +1,46 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:49 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture
+*/
+
+#import <CMCapture/CMCapture-Structs.h>
+#import <CMCapture/BWDeferredContainer.h>
+
+@protocol OS_dispatch_queue;
+@class NSObject, BWPhotoManifest;
+
+@interface BWDeferredProcessingContainer : BWDeferredContainer {
+
+	NSObject*<OS_dispatch_queue> _metadataPrefetchQueue;
+	NSObject*<OS_dispatch_queue> _bufferPrefetchQueue;
+	unsigned long long _sizeBytes;
+	unsigned _ageSeconds;
+	BOOL _isRemote;
+
+}
+
+@property (nonatomic,readonly) unsigned ageSeconds;                          //@synthesize ageSeconds=_ageSeconds - In the implementation block
+@property (nonatomic,readonly) unsigned long long sizeBytes;                 //@synthesize sizeBytes=_sizeBytes - In the implementation block
+@property (nonatomic,readonly) BOOL isRemote;                                //@synthesize isRemote=_isRemote - In the implementation block
+@property (nonatomic,readonly) BWPhotoManifest * photoManifest; 
+-(BOOL)isRemote;
+-(BWPhotoManifest *)photoManifest;
+-(int)_buildFolderStatistics;
+-(int)_buildRemoteStatistics:(id)arg1 intermediatesSize:(unsigned long long)arg2 ;
+-(id)_copyObjectForTag:(id)arg1 customClasses:(id)arg2 err:(int*)arg3 ;
+-(CVBufferRef)copyBufferForTag:(id)arg1 err:(int*)arg2 ;
+-(id)copyMetadataForTag:(id)arg1 err:(int*)arg2 ;
+-(id)copyMetadataForBufferTag:(id)arg1 err:(int*)arg2 ;
+-(id)copyArrayForTag:(id)arg1 customClasses:(id)arg2 err:(int*)arg3 ;
+-(CVBufferRef)copyBufferForType:(unsigned long long)arg1 portType:(id)arg2 metadata:(id*)arg3 err:(int*)arg4 ;
+-(id)initWithXPCEncoding:(id)arg1 applicationID:(id)arg2 captureRequestIdentifier:(id)arg3 baseFolderURL:(id)arg4 err:(int*)arg5 ;
+-(id)initWithApplicationID:(id)arg1 captureRequestIdentifier:(id)arg2 baseFolderURL:(id)arg3 err:(int*)arg4 ;
+-(id)copyDictionaryForTag:(id)arg1 err:(int*)arg2 ;
+-(id)copyAttributesForBufferType:(unsigned long long)arg1 portType:(id)arg2 err:(int*)arg3 ;
+-(BOOL)hasBufferForType:(unsigned long long)arg1 portType:(id)arg2 ;
+-(unsigned)ageSeconds;
+-(unsigned long long)sizeBytes;
+-(void)dealloc;
+@end
+

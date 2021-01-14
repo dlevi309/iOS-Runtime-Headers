@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreData.framework/CoreData
+*/
+
+#import <libobjc.A.dylib/NSPredicateVisitor.h>
+
+@class NSManagedObjectContext;
+
+@interface _NSChildContextPredicateRemapper : NSObject <NSPredicateVisitor> {
+
+	NSManagedObjectContext* _context;
+
+}
+-(id)init;
+-(void)visitPredicate:(id)arg1 ;
+-(void)visitPredicateExpression:(id)arg1 ;
+-(void)visitPredicateOperator:(id)arg1 ;
+-(void)dealloc;
+@end
+

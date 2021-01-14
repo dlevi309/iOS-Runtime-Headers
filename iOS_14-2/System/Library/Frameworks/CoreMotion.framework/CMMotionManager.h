@@ -1,0 +1,174 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:39 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreMotion.framework/CoreMotion
+*/
+
+
+#import <CoreMotion/CoreMotion-Structs.h>
+@class CMAmbientPressureData, CMAccelerometerData, CMGyroData, CMMagnetometerData, CMDeviceMotion;
+
+@interface CMMotionManager : NSObject {
+
+	id _internal;
+
+}
+
+@property (getter=isSidebandSensorFusionAvailable,nonatomic,readonly) BOOL sidebandSensorFusionAvailable; 
+@property (getter=isPredictedDeviceMotionAvailable,nonatomic,readonly) BOOL predictedDeviceMotionAvailable; 
+@property (readonly) CMAmbientPressureData * ambientPressureData; 
+@property (readonly) CMAmbientPressureData * compensatedAmbientPressureData; 
+@property (getter=isDeviceMotionLiteAvailable,nonatomic,readonly) BOOL isDeviceMotionLiteAvailable; 
+@property (assign,nonatomic) double accelerometerUpdateInterval; 
+@property (getter=isAccelerometerAvailable,nonatomic,readonly) BOOL accelerometerAvailable; 
+@property (getter=isAccelerometerActive,nonatomic,readonly) BOOL accelerometerActive; 
+@property (readonly) CMAccelerometerData * accelerometerData; 
+@property (assign,nonatomic) double gyroUpdateInterval; 
+@property (getter=isGyroAvailable,nonatomic,readonly) BOOL gyroAvailable; 
+@property (getter=isGyroActive,nonatomic,readonly) BOOL gyroActive; 
+@property (readonly) CMGyroData * gyroData; 
+@property (assign,nonatomic) double magnetometerUpdateInterval; 
+@property (getter=isMagnetometerAvailable,nonatomic,readonly) BOOL magnetometerAvailable; 
+@property (getter=isMagnetometerActive,nonatomic,readonly) BOOL magnetometerActive; 
+@property (readonly) CMMagnetometerData * magnetometerData; 
+@property (assign,nonatomic) double deviceMotionUpdateInterval; 
+@property (nonatomic,readonly) unsigned long long attitudeReferenceFrame; 
+@property (getter=isDeviceMotionAvailable,nonatomic,readonly) BOOL deviceMotionAvailable; 
+@property (getter=isDeviceMotionActive,nonatomic,readonly) BOOL deviceMotionActive; 
+@property (readonly) CMDeviceMotion * deviceMotion; 
+@property (assign,nonatomic) BOOL showsDeviceMovementDisplay; 
++(void)initialize;
++(SCD_Struct_CM34)gyroCalibrationDatabaseGetBiasFit;
++(BOOL)hasRunMiniCal;
++(BOOL)configureM7Activity:(BOOL)arg1 stepCounting:(BOOL)arg2 activityForceCodeTransition:(BOOL)arg3 stepCountingForceCodeTransition:(BOOL)arg4 threshold:(BOOL)arg5 onBodyDetection:(BOOL)arg6 ispMode:(unsigned char)arg7 predictionInterval:(float)arg8 logLevel:(char)arg9 proactiveRevisitTime:(unsigned short)arg10 ;
++(SCD_Struct_CM34)gyroCalibrationDatabaseGetBiasFitAndEstimate:(SCD_Struct_CM9*)arg1 atTemperature:(float)arg2 ;
++(void)dummySelector:(id)arg1 ;
++(BOOL)startGyroMiniCalibration;
++(BOOL)supportsGyroMiniCalibration;
++(unsigned long long)availableAttitudeReferenceFrames;
++(BOOL)setUrgentCalFlag;
++(void)dumpDb:(long long)arg1 toURL:(id)arg2 onCompletion:(/*^block*/id)arg3 ;
++(BOOL)deviceMotionInitialized:(Sample*)arg1 ;
++(BOOL)northAlignedReferenceFrame:(unsigned long long)arg1 ;
++(void)setAllowInBackground:(BOOL)arg1 ;
+-(id)initPrivate;
+-(void)setMagnetometerUpdateInterval:(double)arg1 ;
+-(BOOL)useAccelerometer;
+-(void)stopAmbientPressureUpdates;
+-(void)setAccelerometerDataCallback:(/*function pointer*/void*)arg1 info:(void*)arg2 interval:(double)arg3 ;
+-(void)rebuildGytt;
+-(void)showDeviceMovementDisplay;
+-(void)setGyroDataCallback:(/*function pointer*/void*)arg1 info:(void*)arg2 interval:(double)arg3 ;
+-(void)startMagnetometerUpdatesPrivateToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(double)compensatedAmbientPressureUpdateInterval;
+-(void)startDeviceMotionUpdatesPrivateUsingReferenceFrame:(unsigned long long)arg1 toQueue:(id)arg2 withHandler:(/*^block*/id)arg3 ;
+-(void)stopGyroUpdates;
+-(void)setNotificationCallback:(/*function pointer*/void*)arg1 info:(void*)arg2 ;
+-(void)setCompensatedAmbientPressureUpdateIntervalPrivate:(double)arg1 ;
+-(id)init;
+-(BOOL)isAccelerometerActive;
+-(void)_stopDeviceMotionErrorUpdates;
+-(void)setUseAccelerometer:(BOOL)arg1 ;
+-(BOOL)setSidebandSensorFusionEnable:(BOOL)arg1 ;
+-(void)startCompensatedAmbientPressureUpdates;
+-(void)startAmbientPressureUpdates;
+-(void)setMagnetometerUpdateIntervalPrivate:(double)arg1 ;
+-(void)setAmbientPressureUpdateIntervalPrivate:(double)arg1 ;
+-(void)_startDeviceMotionErrorUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(BOOL)showsDeviceMovementDisplay;
+-(void)setAccelerometerUpdateInterval:(double)arg1 ;
+-(void)onAmbientPressure:(const Sample*)arg1 ;
+-(void)startCompensatedAmbientPressureUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(id)initUsingGyroOnlySensorFusion;
+-(void)stopAccelerometerUpdatesPrivate;
+-(BOOL)isMagnetometerActive;
+-(void)setCompensatedAmbientPressureUpdateInterval:(double)arg1 ;
+-(void)startDeviceMotionLiteUpdatesForDeviceID:(id)arg1 usingConfiguration:(SCD_Struct_CM35)arg2 toQueue:(id)arg3 withFusedHandler:(/*^block*/id)arg4 ;
+-(void)connect;
+-(BOOL)isSidebandSensorFusionAvailable;
+-(BOOL)setMotionThreadPriority:(int)arg1 ;
+-(void)startMagnetometerUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(BOOL)isGyroActive;
+-(BOOL)setSidebandSensorFusionEnable:(BOOL)arg1 measureLatency:(BOOL)arg2 withSnoopHandler:(/*^block*/id)arg3 ;
+-(void)stopMagnetometerUpdates;
+-(void)onDeviceMotion:(const Sample*)arg1 ;
+-(BOOL)readRawAmbientPressureSamplesFromDB:(id)arg1 toQueue:(id)arg2 where:(id)arg3 withHandler:(/*^block*/id)arg4 ;
+-(CMAmbientPressureData *)compensatedAmbientPressureData;
+-(void)willResignActive:(id)arg1 ;
+-(BOOL)isAccelerometerAvailable;
+-(void)startAccelerometerUpdates;
+-(void)setGyroUpdateIntervalPrivate:(double)arg1 ;
+-(void)stopDeviceMotionUpdates;
+-(void)setDeviceMotionUpdateInterval:(double)arg1 ;
+-(void)startCompensatedAmbientPressureUpdatesPrivateToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(void)startDeviceMotionUpdatesUsingReferenceFrame:(unsigned long long)arg1 ;
+-(void)stopDeviceMotionUpdatesPrivate;
+-(void)stopAmbientPressureUpdatesPrivate;
+-(void)applyNorthReference:(Sample*)arg1 ;
+-(void)setDeviceMotionCallback:(/*function pointer*/void*)arg1 info:(void*)arg2 interval:(double)arg3 fsync:(BOOL)arg4 ;
+-(void)stopGyroUpdatesPrivate;
+-(double)deviceMotionUpdateInterval;
+-(CMGyroData *)gyroData;
+-(void)setShowsDeviceMovementDisplay:(BOOL)arg1 ;
+-(void)didBecomeActive:(id)arg1 ;
+-(void)setMagnetometerDataCallback:(/*function pointer*/void*)arg1 info:(void*)arg2 interval:(double)arg3 ;
+-(void)stopDeviceMotionLiteUpdatesForDeviceID:(id)arg1 ;
+-(BOOL)isDeviceMotionLiteAvailable;
+-(void)setDeviceMotionUpdateIntervalPrivate:(double)arg1 ;
+-(BOOL)isDeviceMotionAvailable;
+-(void)onAccelerometer:(const Sample*)arg1 ;
+-(BOOL)isDeviceMotionActive;
+-(double)ambientPressureUpdateInterval;
+-(void)stopCompensatedAmbientPressureUpdates;
+-(CMAccelerometerData *)accelerometerData;
+-(void)startGyroUpdatesPrivateToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(BOOL)sendDeviceMotionError:(int)arg1 ;
+-(id)initUsing6AxisSensorFusion;
+-(void)onMagnetometer:(const Sample*)arg1 ;
+-(double)accelerometerUpdateInterval;
+-(void)onCompensatedAmbientPressure:(const Sample*)arg1 ;
+-(BOOL)isPredictedDeviceMotionAvailable;
+-(BOOL)setSidebandSensorFusionEnable:(BOOL)arg1 withSnoopHandler:(/*^block*/id)arg2 ;
+-(unsigned long long)attitudeReferenceFrame;
+-(BOOL)isAmbientPressureActive;
+-(void)stopMagnetometerUpdatesPrivate;
+-(double)gyroUpdateInterval;
+-(void)setSidebandTimeSyncHandler:(/*^block*/id)arg1 ;
+-(BOOL)isAmbientPressureAvailable;
+-(void)stopAccelerometerUpdates;
+-(void)startAccelerometerUpdatesPrivateToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(CMMagnetometerData *)magnetometerData;
+-(double)magnetometerUpdateInterval;
+-(id)computeNonlinearPRTTFromDB:(id)arg1 where:(id)arg2 ;
+-(void)setPowerConservationMode:(int)arg1 ;
+-(id)predictedDeviceMotionAtTimestamp:(double)arg1 error:(out id*)arg2 ;
+-(void)setAmbientPressureUpdateInterval:(double)arg1 ;
+-(BOOL)isMagnetometerAvailable;
+-(void)didBecomeActivePrivate:(id)arg1 ;
+-(void)startGyroUpdates;
+-(void)startGyroUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(void)deallocPrivate;
+-(void)startDeviceMotionUpdates;
+-(void)startAmbientPressureUpdatesPrivateToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(void)applyInitialReference:(Sample*)arg1 ;
+-(void)startDeviceMotionLiteFusedUpdatesForDeviceID:(id)arg1 toQueue:(id)arg2 withHandler:(/*^block*/id)arg3 ;
+-(void)setShowsDeviceMovementDisplayPrivate:(BOOL)arg1 ;
+-(BOOL)isGyroAvailable;
+-(void)startMagnetometerUpdates;
+-(void)stopCompensatedAmbientPressureUpdatesPrivate;
+-(int)gyttNumTemperatures;
+-(void)startDeviceMotionUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(CMAmbientPressureData *)ambientPressureData;
+-(void)startAccelerometerUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(void)willResignActivePrivate:(id)arg1 ;
+-(void)setGyroUpdateInterval:(double)arg1 ;
+-(void)startAmbientPressureUpdatesToQueue:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(BOOL)isCompensatedAmbientPressureActive;
+-(void)dismissDeviceMovementDisplay;
+-(void)setAccelerometerUpdateIntervalPrivate:(double)arg1 ;
+-(CMDeviceMotion *)deviceMotion;
+-(void)startDeviceMotionUpdatesUsingReferenceFrame:(unsigned long long)arg1 toQueue:(id)arg2 withHandler:(/*^block*/id)arg3 ;
+-(void)dealloc;
+-(void)onGyro:(const Sample*)arg1 ;
+@end
+

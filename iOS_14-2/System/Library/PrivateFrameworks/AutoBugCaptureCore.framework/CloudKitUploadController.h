@@ -1,0 +1,72 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:48 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AutoBugCaptureCore.framework/AutoBugCaptureCore
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NSObject, AnalyticsWorkspace, DiagnosticCaseStorageAnalytics, DiagnosticCaseSummaryAnalytics, UploadRecordAnalytics;
+
+@interface CloudKitUploadController : NSObject {
+
+	NSObject*<OS_dispatch_queue> _queue;
+	AnalyticsWorkspace* _workspace;
+	DiagnosticCaseStorageAnalytics* _caseStorageAnalytics;
+	DiagnosticCaseSummaryAnalytics* _caseSummaryAnalytics;
+	UploadRecordAnalytics* _uploadRecordAnalytics;
+	unsigned long long _outstandingOperationCount;
+	BOOL _aggregateOperationResult;
+
+}
+
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> queue;              //@synthesize queue=_queue - In the implementation block
++(void)unregisterCloudKitUploadActivities;
+-(void)_save;
+-(void)save;
+-(id)initWithWorkspace:(id)arg1 ;
+-(void)deferXPCActivity:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)queue;
+-(void)finishXPCActivity:(id)arg1 ;
+-(void)uploadCasesWithIdentifiers:(id)arg1 ;
+-(void)uploadMostRecentCases:(unsigned long long)arg1 ;
+-(void)uploadDecisionWithIdentifiers:(id)arg1 reply:(/*^block*/id)arg2 ;
+-(void)submitCaseSummariesWithIdentifiers:(id)arg1 reply:(/*^block*/id)arg2 ;
+-(void)submitRecentCaseSummaries:(unsigned long long)arg1 reply:(/*^block*/id)arg2 ;
+-(void)registerCloudKitUploadActivities;
+-(id)fetchCaseSummariesWithIdentifiers:(id)arg1 ;
+-(void)configureWorkspace:(id)arg1 ;
+-(id)_fetchCasesInternal:(id)arg1 limit:(unsigned long long)arg2 ;
+-(BOOL)validateCaseAttachmentsForDiagnosticCaseStorage:(id)arg1 record:(id)arg2 ;
+-(id)locallyFilterCases:(id)arg1 ;
+-(id)randomlySelectCasesFrom:(id)arg1 maximum:(unsigned long long)arg2 ;
+-(void)filterCasesViaCloudkitDecisionService:(id)arg1 activity:(id)arg2 response:(/*^block*/id)arg3 ;
+-(BOOL)logUploadRequiresConsent:(id)arg1 ;
+-(id)uploadOperationWithRecordsToSave:(id)arg1 recordIDsToDelete:(id)arg2 allowCellular:(BOOL)arg3 activity:(id)arg4 ;
+-(void)operationCompletedWithID:(id)arg1 savedRecords:(id)arg2 deletedRecords:(id)arg3 error:(id)arg4 activity:(id)arg5 ;
+-(BOOL)shouldDeferFromCloudKitError:(id)arg1 ;
+-(void)recordOperationCompleteForOperationID:(id)arg1 completionTime:(id)arg2 success:(BOOL)arg3 ;
+-(id)currentCloudKitContainerForEnvironment:(long long)arg1 ;
+-(void)uploadToCloudKitContainer:(id)arg1 withRecords:(id)arg2 activity:(id)arg3 ;
+-(id)fetchCasesWithIdentifiers:(id)arg1 limit:(unsigned long long)arg2 ;
+-(void)uploadDiagnosticCases:(id)arg1 activity:(id)arg2 ;
+-(void)filterCasesPendingUpload:(id)arg1 activity:(id)arg2 reply:(/*^block*/id)arg3 ;
+-(id)fetchRecentCasesPendingUpload:(unsigned long long)arg1 ;
+-(id)fetchRecentPendingCaseSummaries:(unsigned long long)arg1 ;
+-(void)submitCaseSummaries:(id)arg1 activity:(id)arg2 ;
+-(id)processCloudkitDecisionServiceResponse:(id)arg1 ;
+-(id)_fetchRecentPendingCaseSummariesInternal:(id)arg1 limit:(unsigned long long)arg2 ;
+-(void)registerLogUploadActivities;
+-(void)registerCaseSummaryActivities;
+-(void)startPeriodicUploadTask:(id)arg1 ;
+-(void)configureLogUploadDiscretionaryActivityCriteria:(id)arg1 ;
+-(void)startPeriodicSummaryTask:(id)arg1 ;
+-(void)configureCaseSummaryDiscretionaryActivityCriteria:(id)arg1 ;
+-(void)performUploadForRecentCases:(unsigned long long)arg1 ;
+-(void)performUploadForCaseIdentifiers:(id)arg1 ;
+-(void)performUploadDecisionForCaseIdentifiers:(id)arg1 reply:(/*^block*/id)arg2 ;
+-(void)performSubmissionOfCaseSummariesWithIdentifiers:(id)arg1 reply:(/*^block*/id)arg2 ;
+-(void)performSubmissionOfRecentCaseSummaries:(unsigned long long)arg1 reply:(/*^block*/id)arg2 ;
+-(void)ckcodeDecisionService:(id)arg1 response:(/*^block*/id)arg2 ;
+@end
+

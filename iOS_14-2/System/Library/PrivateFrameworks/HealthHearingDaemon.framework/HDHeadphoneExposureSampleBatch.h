@@ -1,0 +1,35 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:56 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthHearingDaemon.framework/HealthHearingDaemon
+*/
+
+
+@class NSArray, NSNumber;
+
+@interface HDHeadphoneExposureSampleBatch : NSObject {
+
+	BOOL _journaled;
+	BOOL _canTriggerUserNotification;
+	NSArray* _samples;
+	NSNumber* _anchor;
+
+}
+
+@property (nonatomic,retain) NSArray * samples;                              //@synthesize samples=_samples - In the implementation block
+@property (assign,getter=isJournaled,nonatomic) BOOL journaled;              //@synthesize journaled=_journaled - In the implementation block
+@property (nonatomic,retain) NSNumber * anchor;                              //@synthesize anchor=_anchor - In the implementation block
+@property (assign,nonatomic) BOOL canTriggerUserNotification;                //@synthesize canTriggerUserNotification=_canTriggerUserNotification - In the implementation block
++(id)batchWithJournaledSamples:(id)arg1 ;
++(id)batchWithAddedSamples:(id)arg1 anchor:(id)arg2 ;
+-(NSArray *)samples;
+-(void)setSamples:(NSArray *)arg1 ;
+-(NSNumber *)anchor;
+-(void)setAnchor:(NSNumber *)arg1 ;
+-(id)_initWithSamples:(id)arg1 journaled:(BOOL)arg2 anchor:(id)arg3 ;
+-(BOOL)isJournaled;
+-(void)setJournaled:(BOOL)arg1 ;
+-(BOOL)canTriggerUserNotification;
+-(void)setCanTriggerUserNotification:(BOOL)arg1 ;
+@end
+

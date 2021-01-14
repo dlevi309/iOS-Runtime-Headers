@@ -1,0 +1,92 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:29:08 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /usr/lib/libprequelite.dylib
+*/
+
+#import <libprequelite.dylib/libprequelite.dylib-Structs.h>
+#import <libobjc.A.dylib/PQLEnumeration.h>
+
+@class PQLStatement, NSSet, NSError, PQLConnection;
+
+@interface PQLResultSet : NSObject <PQLEnumeration> {
+
+	PQLStatement* _stmt;
+	Class _objectsClass;
+	SEL _objectsClassInitializer;
+	BOOL _hasValuable;
+	/*^block*/id _objectsConstructor;
+	id _lastEnumeratedObject;
+	BOOL _inTransaction;
+	NSSet* _defaultUnarchivingAllowedClasses;
+	NSError* _error;
+	unsigned long long _rowNumber;
+	unsigned long long _columns;
+	PQLConnection* _db;
+
+}
+
+@property (nonatomic,readonly) NSError * error;                                     //@synthesize error=_error - In the implementation block
+@property (nonatomic,readonly) unsigned long long rowNumber;                        //@synthesize rowNumber=_rowNumber - In the implementation block
+@property (nonatomic,readonly) unsigned long long columns;                          //@synthesize columns=_columns - In the implementation block
+@property (nonatomic,readonly) PQLConnection * db;                                  //@synthesize db=_db - In the implementation block
+@property (nonatomic,readonly) sqlite3_stmtRef stmt; 
+@property (nonatomic,retain) NSSet * defaultUnarchivingAllowedClasses;              //@synthesize defaultUnarchivingAllowedClasses=_defaultUnarchivingAllowedClasses - In the implementation block
+-(sqlite3_stmtRef)stmt;
+-(id)stringAtIndex:(int)arg1 ;
+-(id)nextObject;
+-(PQLConnection *)db;
+-(BOOL)next;
+-(unsigned long long)columns;
+-(short)shortAtIndex:(int)arg1 ;
+-(id)dataAtIndex:(int)arg1 ;
+-(unsigned long long)countByEnumeratingWithState:(SCD_Struct_PQ3*)arg1 objects:(id*)arg2 count:(unsigned long long)arg3 ;
+-(id)objectAtIndexedSubscript:(unsigned long long)arg1 ;
+-(id)onlyObjectOfClass:(Class)arg1 ;
+-(void)close;
+-(BOOL)isNullAtIndex:(int)arg1 ;
+-(long long)longAtIndex:(int)arg1 ;
+-(unsigned long long)unsignedLongLongAtIndex:(int)arg1 ;
+-(unsigned)unsignedIntAtIndex:(int)arg1 ;
+-(int)intAtIndex:(int)arg1 ;
+-(id)unarchivedObjectOfClass:(Class)arg1 atIndex:(int)arg2 ;
+-(float)floatAtIndex:(int)arg1 ;
+-(unsigned char)unsignedCharAtIndex:(int)arg1 ;
+-(id)archivedObjectOfClass:(Class)arg1 atIndex:(int)arg2 ;
+-(NSError *)error;
+-(id)object:(/*^block*/id)arg1 ;
+-(BOOL)boolAtIndex:(int)arg1 ;
+-(id)objectAtIndex:(int)arg1 ;
+-(id)onlyObject:(/*^block*/id)arg1 ;
+-(id)objectOfClass:(Class)arg1 initializer:(SEL)arg2 ;
+-(id)description;
+-(NSSet *)defaultUnarchivingAllowedClasses;
+-(id)objectOfClass:(Class)arg1 ;
+-(id)archivedObjectOfClasses:(id)arg1 atIndex:(int)arg2 ;
+-(long long)longLongAtIndex:(int)arg1 ;
+-(unsigned short)unsignedShortAtIndex:(int)arg1 ;
+-(unsigned long long)unsignedLongAtIndex:(int)arg1 ;
+-(BOOL)_next:(BOOL)arg1 ;
+-(id)unarchivedObjectOfClasses:(id)arg1 atIndex:(int)arg2 ;
+-(id)enumerateObjectsOfClass:(Class)arg1 ;
+-(id)objectOfClass:(Class)arg1 atIndex:(int)arg2 ;
+-(id)dataAtIndex:(int)arg1 noCopy:(BOOL)arg2 ;
+-(id)uuidAtIndex:(int)arg1 ;
+-(id)dateAtIndex:(int)arg1 ;
+-(unsigned long long)rowNumber;
+-(long long)integerAtIndex:(int)arg1 ;
+-(id)numberAtIndex:(int)arg1 ;
+-(void)setDefaultUnarchivingAllowedClasses:(NSSet *)arg1 ;
+-(id)enumerateObjects:(/*^block*/id)arg1 ;
+-(unsigned long long)unsignedIntegerAtIndex:(int)arg1 ;
+-(id)onlyObjectOfClass:(Class)arg1 initializer:(SEL)arg2 ;
+-(id)plistAtIndex:(int)arg1 ;
+-(id)columnNameAtIndex:(int)arg1 ;
+-(char)charAtIndex:(int)arg1 ;
+-(id)enumerateObjectsOfClass:(Class)arg1 initializer:(SEL)arg2 ;
+-(id)initWithStatement:(id)arg1 usingDatabase:(id)arg2 ;
+-(const char*)UTF8StringAtIndex:(int)arg1 ;
+-(void)dealloc;
+-(double)doubleAtIndex:(int)arg1 ;
+@end
+

@@ -1,0 +1,100 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:35 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PencilKit.framework/PencilKit
+*/
+
+#import <UIKitCore/UIViewController.h>
+
+@protocol PKPaletteMoreOptionsViewControllerDelegate;
+@class UITraitCollection, NSArray, UIStackView, PKPaletteOptionSwitchCell, PKPaletteOptionButtonCell;
+
+@interface PKPaletteMoreOptionsViewController : UIViewController {
+
+	BOOL _shouldShowAutoMinimizeOption;
+	BOOL _shouldShowFingerDrawsOption;
+	BOOL _autoHideOn;
+	BOOL _isFingerDrawsOn;
+	BOOL _shouldShowTapToRadarOption;
+	BOOL _shouldShowOpenPencilSettingsOption;
+	id<PKPaletteMoreOptionsViewControllerDelegate> _delegate;
+	UITraitCollection* _externalTraitCollection;
+	NSArray* _stackViewPositioningConstraints;
+	UIStackView* _stackView;
+	PKPaletteOptionSwitchCell* _autoMinimizeCell;
+	PKPaletteOptionSwitchCell* _shapesCell;
+	PKPaletteOptionSwitchCell* _fingerDrawsCell;
+	PKPaletteOptionButtonCell* _tapToRadarCell;
+	PKPaletteOptionButtonCell* _openPencilSettingsCell;
+
+}
+
+@property (nonatomic,retain) UITraitCollection * externalTraitCollection;                                 //@synthesize externalTraitCollection=_externalTraitCollection - In the implementation block
+@property (nonatomic,retain) NSArray * stackViewPositioningConstraints;                                   //@synthesize stackViewPositioningConstraints=_stackViewPositioningConstraints - In the implementation block
+@property (nonatomic,retain) UIStackView * stackView;                                                     //@synthesize stackView=_stackView - In the implementation block
+@property (nonatomic,retain) PKPaletteOptionSwitchCell * autoMinimizeCell;                                //@synthesize autoMinimizeCell=_autoMinimizeCell - In the implementation block
+@property (nonatomic,retain) PKPaletteOptionSwitchCell * shapesCell;                                      //@synthesize shapesCell=_shapesCell - In the implementation block
+@property (nonatomic,retain) PKPaletteOptionSwitchCell * fingerDrawsCell;                                 //@synthesize fingerDrawsCell=_fingerDrawsCell - In the implementation block
+@property (nonatomic,retain) PKPaletteOptionButtonCell * tapToRadarCell;                                  //@synthesize tapToRadarCell=_tapToRadarCell - In the implementation block
+@property (nonatomic,retain) PKPaletteOptionButtonCell * openPencilSettingsCell;                          //@synthesize openPencilSettingsCell=_openPencilSettingsCell - In the implementation block
+@property (assign,nonatomic,__weak) id<PKPaletteMoreOptionsViewControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) BOOL shouldShowAutoMinimizeOption;                                           //@synthesize shouldShowAutoMinimizeOption=_shouldShowAutoMinimizeOption - In the implementation block
+@property (assign,nonatomic) BOOL shouldShowFingerDrawsOption;                                            //@synthesize shouldShowFingerDrawsOption=_shouldShowFingerDrawsOption - In the implementation block
+@property (assign,getter=isAutoHideOn,nonatomic) BOOL autoHideOn;                                         //@synthesize autoHideOn=_autoHideOn - In the implementation block
+@property (assign,nonatomic) BOOL isFingerDrawsOn;                                                        //@synthesize isFingerDrawsOn=_isFingerDrawsOn - In the implementation block
+@property (assign,nonatomic) BOOL shouldShowTapToRadarOption;                                             //@synthesize shouldShowTapToRadarOption=_shouldShowTapToRadarOption - In the implementation block
+@property (assign,nonatomic) BOOL shouldShowOpenPencilSettingsOption;                                     //@synthesize shouldShowOpenPencilSettingsOption=_shouldShowOpenPencilSettingsOption - In the implementation block
+-(id<PKPaletteMoreOptionsViewControllerDelegate>)delegate;
+-(UIStackView *)stackView;
+-(void)setDelegate:(id<PKPaletteMoreOptionsViewControllerDelegate>)arg1 ;
+-(BOOL)_canShowWhileLocked;
+-(void)viewDidLoad;
+-(void)_reloadItems;
+-(void)_updateContentSize;
+-(void)setStackView:(UIStackView *)arg1 ;
+-(void)setShouldShowTapToRadarOption:(BOOL)arg1 ;
+-(void)setShouldShowFingerDrawsOption:(BOOL)arg1 ;
+-(void)setStackViewPositioningConstraints:(NSArray *)arg1 ;
+-(NSArray *)stackViewPositioningConstraints;
+-(PKPaletteOptionSwitchCell *)fingerDrawsCell;
+-(void)setExternalTraitCollection:(UITraitCollection *)arg1 ;
+-(void)_updateAutoMinimizeCell;
+-(void)_autoMinimizeCellDidChangeValue:(id)arg1 ;
+-(BOOL)isAutoHideOn;
+-(PKPaletteOptionSwitchCell *)autoMinimizeCell;
+-(void)setFingerDrawsCell:(PKPaletteOptionSwitchCell *)arg1 ;
+-(void)_fingerDrawsCellDidChangeValue:(id)arg1 ;
+-(BOOL)isFingerDrawsOn;
+-(void)_updateFingerDrawsCell;
+-(void)_handleTapToRadarCellTapped;
+-(BOOL)shouldShowTapToRadarOption;
+-(PKPaletteOptionButtonCell *)tapToRadarCell;
+-(BOOL)_isCellInstalled:(id)arg1 ;
+-(void)_handleOpenPencilSettingsCellTapped;
+-(BOOL)shouldShowOpenPencilSettingsOption;
+-(PKPaletteOptionButtonCell *)openPencilSettingsCell;
+-(BOOL)shouldShowAutoMinimizeOption;
+-(id)_makeAutoMinimizeCell;
+-(void)setAutoMinimizeCell:(PKPaletteOptionSwitchCell *)arg1 ;
+-(void)_installCell:(id)arg1 ;
+-(void)_removeCell:(id)arg1 ;
+-(BOOL)shouldShowFingerDrawsOption;
+-(BOOL)_shouldInstallTapToRadarCell;
+-(id)_makeTapToRadarCell;
+-(void)setTapToRadarCell:(PKPaletteOptionButtonCell *)arg1 ;
+-(BOOL)_shouldRemoveTapToRadarCell;
+-(BOOL)_shouldInstallOpenPencilSettingsCell;
+-(id)_makeOpenPencilSettingsCell;
+-(void)setOpenPencilSettingsCell:(PKPaletteOptionButtonCell *)arg1 ;
+-(BOOL)_shouldRemoveOpenPencilSettingsCell;
+-(double)_contentSizeMinWidth;
+-(UITraitCollection *)externalTraitCollection;
+-(void)setIsFingerDrawsOn:(BOOL)arg1 ;
+-(void)updateUIForTraitCollection:(id)arg1 ;
+-(void)setAutoHideOn:(BOOL)arg1 ;
+-(void)setShouldShowOpenPencilSettingsOption:(BOOL)arg1 ;
+-(void)setShouldShowAutoMinimizeOption:(BOOL)arg1 ;
+-(PKPaletteOptionSwitchCell *)shapesCell;
+-(void)setShapesCell:(PKPaletteOptionSwitchCell *)arg1 ;
+@end
+

@@ -1,0 +1,49 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:03 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
+*/
+
+#import <libobjc.A.dylib/TUSearchResult.h>
+
+@class CNAutocompleteResult, NSString, CNContact, NSArray;
+
+@interface TUProxyAutocompleteResult : NSObject <TUSearchResult> {
+
+	CNAutocompleteResult* _autocompleteResult;
+
+}
+
+@property (nonatomic,retain) CNAutocompleteResult * autocompleteResult;              //@synthesize autocompleteResult=_autocompleteResult - In the implementation block
+@property (readonly) NSString * displayName; 
+@property (readonly) NSString * callerId; 
+@property (readonly) CNContact * backingContact; 
+@property (readonly) NSString * backingContactId; 
+@property (readonly) NSString * backingContactIdentifier; 
+@property (readonly) NSString * destinationId; 
+@property (readonly) NSString * isoCountryCode; 
+@property (readonly) NSArray * handles; 
+@property (readonly) long long mostRecentCallType; 
+@property (readonly) BOOL mostRecentCallWasMissed; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (readonly) NSArray * idsCanonicalDestinations; 
+-(NSArray *)handles;
+-(CNAutocompleteResult *)autocompleteResult;
+-(id)init;
+-(NSString *)callerId;
+-(NSString *)isoCountryCode;
+-(void)setAutocompleteResult:(CNAutocompleteResult *)arg1 ;
+-(CNContact *)backingContact;
+-(long long)mostRecentCallType;
+-(NSString *)destinationId;
+-(NSString *)backingContactId;
+-(NSString *)backingContactIdentifier;
+-(BOOL)mostRecentCallWasMissed;
+-(NSArray *)idsCanonicalDestinations;
+-(id)initWithAutocompleteResult:(id)arg1 ;
+-(NSString *)displayName;
+@end
+

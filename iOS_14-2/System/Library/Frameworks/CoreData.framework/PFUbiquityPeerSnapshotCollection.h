@@ -1,0 +1,28 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CoreData.framework/CoreData
+*/
+
+
+@class NSMutableDictionary, NSMutableArray;
+
+@interface PFUbiquityPeerSnapshotCollection : NSObject {
+
+	NSMutableDictionary* _peerIDToTransactionNumberToSnapshot;
+	NSMutableDictionary* _peerIDToTranasctionNumberToKnowledgeVector;
+	NSMutableDictionary* _kvToSnapshot;
+	NSMutableArray* _peerSnapshots;
+	BOOL _needSort;
+
+}
+-(id)init;
+-(id)allPeerIDs;
+-(BOOL)calculateSnapshotDiffsWithError:(id*)arg1 ;
+-(id)snapshotForKnowledgeVector:(id)arg1 ;
+-(id)snapshotForPeerID:(id)arg1 andTransactionNumber:(id)arg2 ;
+-(id)knowledgeVectorsForTransactionNumber:(id)arg1 exportedByPeerWithID:(id)arg2 ;
+-(void)addSnapshot:(id)arg1 ;
+-(void)dealloc;
+@end
+

@@ -1,0 +1,45 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:13 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NanoTimeKitCompanion-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/CLKFullColorImageView.h>
+
+@protocol CLKMonochromeFilterProvider;
+@class UIStackView, NSArray, NSString;
+
+@interface NTKSwissMoonPhaseSevenDayView : UIView <CLKFullColorImageView> {
+
+	id<CLKMonochromeFilterProvider> _filterProvider;
+	UIStackView* _sevenDayLayoutView;
+	NSArray* _dailyViews;
+
+}
+
+@property (nonatomic,retain) UIStackView * sevenDayLayoutView;                                   //@synthesize sevenDayLayoutView=_sevenDayLayoutView - In the implementation block
+@property (nonatomic,retain) NSArray * dailyViews;                                               //@synthesize dailyViews=_dailyViews - In the implementation block
+@property (assign,nonatomic,__weak) id<CLKMonochromeFilterProvider> filterProvider;              //@synthesize filterProvider=_filterProvider - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)setFilterProvider:(id<CLKMonochromeFilterProvider>)arg1 ;
+-(void)enumerateQuadViewsWithBlock:(/*^block*/id)arg1 ;
+-(void)renderSynchronouslyWithImageQueueDiscard:(BOOL)arg1 inGroup:(id)arg2 ;
+-(void)transitionToMonochromeWithFraction:(double)arg1 ;
+-(void)updateMonochromeColor;
+-(id<CLKMonochromeFilterProvider>)filterProvider;
+-(id)initFullColorImageViewWithDevice:(id)arg1 ;
+-(void)pauseLiveFullColorImageView;
+-(void)resumeLiveFullColorImageView;
+-(void)configureWithImageProvider:(id)arg1 reason:(long long)arg2 ;
+-(NSArray *)dailyViews;
+-(UIStackView *)sevenDayLayoutView;
+-(void)setSevenDayLayoutView:(UIStackView *)arg1 ;
+-(void)setDailyViews:(NSArray *)arg1 ;
+@end
+

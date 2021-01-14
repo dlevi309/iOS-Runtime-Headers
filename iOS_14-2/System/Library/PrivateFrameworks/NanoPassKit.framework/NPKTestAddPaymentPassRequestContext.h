@@ -1,0 +1,44 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:02 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit
+*/
+
+
+@class NSString;
+
+@interface NPKTestAddPaymentPassRequestContext : NSObject {
+
+	NSString* _cardPNO;
+	NSString* _cardFlow;
+	NSString* _cardID;
+	NSString* _cardType;
+	NSString* _cardIssuer;
+	NSString* _cardProduct;
+	NSString* _cardEncryptionScheme;
+
+}
+
+@property (nonatomic,retain) NSString * cardPNO;                           //@synthesize cardPNO=_cardPNO - In the implementation block
+@property (nonatomic,retain) NSString * cardFlow;                          //@synthesize cardFlow=_cardFlow - In the implementation block
+@property (nonatomic,retain) NSString * cardID;                            //@synthesize cardID=_cardID - In the implementation block
+@property (nonatomic,retain) NSString * cardType;                          //@synthesize cardType=_cardType - In the implementation block
+@property (nonatomic,retain) NSString * cardIssuer;                        //@synthesize cardIssuer=_cardIssuer - In the implementation block
+@property (nonatomic,retain) NSString * cardProduct;                       //@synthesize cardProduct=_cardProduct - In the implementation block
+@property (nonatomic,retain) NSString * cardEncryptionScheme;              //@synthesize cardEncryptionScheme=_cardEncryptionScheme - In the implementation block
+-(NSString *)cardType;
+-(NSString *)cardID;
+-(void)setCardType:(NSString *)arg1 ;
+-(NSString *)cardPNO;
+-(void)setCardPNO:(NSString *)arg1 ;
+-(NSString *)cardFlow;
+-(void)setCardFlow:(NSString *)arg1 ;
+-(void)setCardID:(NSString *)arg1 ;
+-(NSString *)cardIssuer;
+-(void)setCardIssuer:(NSString *)arg1 ;
+-(NSString *)cardProduct;
+-(void)setCardProduct:(NSString *)arg1 ;
+-(NSString *)cardEncryptionScheme;
+-(void)setCardEncryptionScheme:(NSString *)arg1 ;
+@end
+

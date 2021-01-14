@@ -1,0 +1,75 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:05 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/StoreKitUI-Structs.h>
+#import <StoreKitUI/SKUICollectionViewCell.h>
+#import <UIKit/UIScrollViewAccessibilityDelegate.h>
+#import <libobjc.A.dylib/SKUIPerspectiveView.h>
+#import <libobjc.A.dylib/SKUIViewElementView.h>
+
+@class UIButton, SKUIButtonViewElement, SKUICellScrollView, SKUICheckboxInputViewElement, UIImageView, UIView, SKUIHorizontalLockupView, UIColor, NSString;
+
+@interface SKUIHorizontalLockupCollectionViewCell : SKUICollectionViewCell <UIScrollViewAccessibilityDelegate, SKUIPerspectiveView, SKUIViewElementView> {
+
+	UIButton* _actionButton;
+	SKUIButtonViewElement* _actionButtonViewElement;
+	SKUICellScrollView* _actionsScrollView;
+	UIEdgeInsets _contentInset;
+	SKUICheckboxInputViewElement* _editModeCheckboxElement;
+	UIImageView* _editModeControl;
+	UIView* _highlightBackgroundView;
+	SKUIHorizontalLockupView* _lockupView;
+	UIColor* _lockupViewBackgroundColor;
+
+}
+
+@property (assign,nonatomic) UIEdgeInsets contentInset;                                                                    //@synthesize contentInset=_contentInset - In the implementation block
+@property (getter=isScrollingCellToHideActionButton,nonatomic,readonly) BOOL scrollingCellToHideActionButton; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)prefetchResourcesForViewElement:(id)arg1 reason:(long long)arg2 context:(id)arg3 ;
++(CGSize)preferredSizeForViewElement:(id)arg1 context:(id)arg2 ;
++(void)requestLayoutForViewElement:(id)arg1 width:(double)arg2 context:(id)arg3 ;
++(CGSize)sizeThatFitsWidth:(double)arg1 viewElement:(id)arg2 context:(id)arg3 ;
++(double)maximumPerspectiveHeightForSize:(CGSize)arg1 ;
+-(void)setSemanticContentAttribute:(long long)arg1 ;
+-(void)setContentInset:(UIEdgeInsets)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(UIEdgeInsets)contentInset;
+-(void)setBackgroundColor:(id)arg1 ;
+-(void)setSelected:(BOOL)arg1 ;
+-(void)scrollViewDidEndScrollingAnimation:(id)arg1 ;
+-(void)scrollViewWillEndDragging:(id)arg1 withVelocity:(CGPoint)arg2 targetContentOffset:(inout CGPoint*)arg3 ;
+-(void)layoutSubviews;
+-(void)applyLayoutAttributes:(id)arg1 ;
+-(void)setEditing:(BOOL)arg1 animated:(BOOL)arg2 ;
+-(void)scrollViewDidScroll:(id)arg1 ;
+-(void)setVanishingPoint:(CGPoint)arg1 ;
+-(void)dealloc;
+-(void)setHighlighted:(BOOL)arg1 ;
+-(id)_highlightBackgroundColor;
+-(void)updateForChangedDistanceFromVanishingPoint;
+-(void)setPerspectiveTargetView:(id)arg1 ;
+-(void)reloadWithViewElement:(id)arg1 width:(double)arg2 context:(id)arg3 ;
+-(BOOL)setImage:(id)arg1 forArtworkRequest:(id)arg2 context:(id)arg3 ;
+-(BOOL)updateWithItemState:(id)arg1 context:(id)arg2 animated:(BOOL)arg3 ;
+-(id)viewForElementIdentifier:(id)arg1 ;
+-(BOOL)isDeleteButtonHidden;
+-(BOOL)isScrollingCellToHideActionButton;
+-(void)hideDeleteButton;
+-(void)_removeEditControlAnimated:(BOOL)arg1 ;
+-(void)_addEditControlAnimated:(BOOL)arg1 ;
+-(BOOL)_isActionsScrollViewEnabled;
+-(void)_reloadActionsScrollViewWithViewElement:(id)arg1 context:(id)arg2 ;
+-(id)_editControlImage;
+-(void)_reloadHighlightBackgroundView;
+-(void)_reloadLockupViewBackgroundColor;
+-(void)_actionButtonAction:(id)arg1 ;
+-(id)_attributedStringForActionButton:(id)arg1 context:(id)arg2 ;
+@end
+

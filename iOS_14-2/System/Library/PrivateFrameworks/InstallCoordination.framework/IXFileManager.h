@@ -1,0 +1,42 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:10 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination
+*/
+
+
+@interface IXFileManager : NSObject
++(id)defaultManager;
+-(BOOL)removeItemAtURL:(id)arg1 error:(id*)arg2 ;
+-(BOOL)createSymbolicLinkAtURL:(id)arg1 withDestinationURL:(id)arg2 error:(id*)arg3 ;
+-(BOOL)copyItemAtURL:(id)arg1 toURL:(id)arg2 error:(id*)arg3 ;
+-(BOOL)itemExistsAtURL:(id)arg1 ;
+-(BOOL)moveItemAtURL:(id)arg1 toURL:(id)arg2 error:(id*)arg3 ;
+-(id)realPathForURL:(id)arg1 ifChildOfURL:(id)arg2 ;
+-(BOOL)createDirectoryAtURL:(id)arg1 withIntermediateDirectories:(BOOL)arg2 mode:(unsigned short)arg3 error:(id*)arg4 ;
+-(BOOL)removeItemAtURL:(id)arg1 keepParent:(BOOL)arg2 error:(id*)arg3 ;
+-(BOOL)createDirectoryAtURL:(id)arg1 withIntermediateDirectories:(BOOL)arg2 mode:(unsigned short)arg3 class:(int)arg4 error:(id*)arg5 ;
+-(BOOL)itemExistsAtURL:(id)arg1 error:(id*)arg2 ;
+-(unsigned long long)diskUsageForURL:(id)arg1 ;
+-(BOOL)_moveItemAtURL:(id)arg1 toURL:(id)arg2 failIfSrcMissing:(BOOL)arg3 error:(id*)arg4 ;
+-(BOOL)copyItemIfExistsAtURL:(id)arg1 toURL:(id)arg2 error:(id*)arg3 ;
+-(id)_realPathWhatExistsInPath:(id)arg1 ;
+-(BOOL)moveItemIfExistsAtURL:(id)arg1 toURL:(id)arg2 error:(id*)arg3 ;
+-(id)_realPathForURL:(id)arg1 allowNonExistentPathComponents:(BOOL)arg2 ;
+-(BOOL)_validateSymlink:(id)arg1 withStartingDepth:(unsigned)arg2 andEndingDepth:(unsigned*)arg3 ;
+-(id)createTemporaryDirectoryInDirectoryURL:(id)arg1 error:(id*)arg2 ;
+-(BOOL)_removeACLAtPath:(const char*)arg1 isDir:(BOOL)arg2 error:(id*)arg3 ;
+-(id)urlsForItemsInDirectoryAtURL:(id)arg1 ignoringSymlinks:(BOOL)arg2 error:(id*)arg3 ;
+-(id)destinationOfSymbolicLinkAtURL:(id)arg1 error:(id*)arg2 ;
+-(BOOL)itemDoesNotExistAtURL:(id)arg1 ;
+-(BOOL)dataProtectionClassOfItemAtURL:(id)arg1 class:(int*)arg2 error:(id*)arg3 ;
+-(BOOL)setDataProtectionClassOfItemAtURL:(id)arg1 toClass:(int)arg2 ifPredicate:(/*^block*/id)arg3 error:(id*)arg4 ;
+-(BOOL)_copyItemAtURL:(id)arg1 toURL:(id)arg2 failIfSrcMissing:(BOOL)arg3 error:(id*)arg4 ;
+-(BOOL)itemExistsAtURL:(id)arg1 isDirectory:(BOOL*)arg2 error:(id*)arg3 ;
+-(unsigned long long)_diskUsageForDirectoryURL:(id)arg1 ;
+-(id)itemReplacementDirectoryAppropriateForURL:(id)arg1 error:(id*)arg2 ;
+-(BOOL)_traverseDirectory:(id)arg1 error:(id*)arg2 withBlock:(/*^block*/id)arg3 ;
+-(id)debugDescriptionOfItemAtURL:(id)arg1 ;
+-(BOOL)setPermissionsOfItemAtURL:(id)arg1 toMode:(unsigned short)arg2 error:(id*)arg3 ;
+@end
+

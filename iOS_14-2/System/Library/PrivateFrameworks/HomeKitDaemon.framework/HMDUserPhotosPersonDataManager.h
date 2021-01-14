@@ -1,0 +1,86 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:50 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+#import <libobjc.A.dylib/HMFMessageReceiver.h>
+
+@protocol OS_dispatch_queue;
+@class HMPhotosPersonManagerSettings, HMDPhotosPersonManager, NSObject, NSUUID, HMFMessageDispatcher, HMBLocalZone, HMDUser, HMDCloudPhotosSettingObserver, NSString;
+
+@interface HMDUserPhotosPersonDataManager : HMFObject <HMFLogging, HMFMessageReceiver> {
+
+	BOOL _supportsFaceClassification;
+	HMPhotosPersonManagerSettings* _settings;
+	HMDPhotosPersonManager* _personManager;
+	NSObject*<OS_dispatch_queue> _workQueue;
+	NSUUID* _userUUID;
+	HMFMessageDispatcher* _messageDispatcher;
+	HMBLocalZone* _localZone;
+	HMDUser* _user;
+	HMDCloudPhotosSettingObserver* _cloudPhotosSettingObserver;
+	/*^block*/id _personManagerFactory;
+
+}
+
+@property (readonly) NSObject*<OS_dispatch_queue> workQueue;                                  //@synthesize workQueue=_workQueue - In the implementation block
+@property (copy,readonly) NSUUID * userUUID;                                                  //@synthesize userUUID=_userUUID - In the implementation block
+@property (readonly) HMFMessageDispatcher * messageDispatcher;                                //@synthesize messageDispatcher=_messageDispatcher - In the implementation block
+@property (readonly) HMBLocalZone * localZone;                                                //@synthesize localZone=_localZone - In the implementation block
+@property (readonly) BOOL supportsFaceClassification;                                         //@synthesize supportsFaceClassification=_supportsFaceClassification - In the implementation block
+@property (__weak) HMDUser * user;                                                            //@synthesize user=_user - In the implementation block
+@property (copy) HMPhotosPersonManagerSettings * settings;                                    //@synthesize settings=_settings - In the implementation block
+@property (retain) HMDPhotosPersonManager * personManager;                                    //@synthesize personManager=_personManager - In the implementation block
+@property (readonly) HMDCloudPhotosSettingObserver * cloudPhotosSettingObserver;              //@synthesize cloudPhotosSettingObserver=_cloudPhotosSettingObserver - In the implementation block
+@property (copy) id personManagerFactory;                                                     //@synthesize personManagerFactory=_personManagerFactory - In the implementation block
+@property (copy,readonly) NSUUID * zoneUUID; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) NSUUID * messageTargetUUID; 
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> messageReceiveQueue; 
++(id)logCategory;
++(id)defaultSettings;
++(id)settingsModelUUIDWithUUID:(id)arg1 ;
+-(NSUUID *)messageTargetUUID;
+-(NSObject*<OS_dispatch_queue>)messageReceiveQueue;
+-(NSObject*<OS_dispatch_queue>)workQueue;
+-(void)configure;
+-(void)setUser:(HMDUser *)arg1 ;
+-(id)logIdentifier;
+-(HMFMessageDispatcher *)messageDispatcher;
+-(void)setSettings:(HMPhotosPersonManagerSettings *)arg1 ;
+-(void)setPersonManager:(HMDPhotosPersonManager *)arg1 ;
+-(HMDPhotosPersonManager *)personManager;
+-(HMPhotosPersonManagerSettings *)settings;
+-(NSUUID *)userUUID;
+-(HMDUser *)user;
+-(HMBLocalZone *)localZone;
+-(BOOL)supportsFaceClassification;
+-(void)removeCloudData;
+-(id)updateSettingsModelWithSettings:(id)arg1 ;
+-(id)initWithUser:(id)arg1 messageDispatcher:(id)arg2 localZone:(id)arg3 workQueue:(id)arg4 supportsFaceClassification:(BOOL)arg5 cloudPhotosSettingObserver:(id)arg6 ;
+-(id)settingsModel;
+-(NSUUID *)zoneUUID;
+-(void)updateSettingsForCurrentCameraClipsAccess;
+-(void)handleUpdatePersonManagerSettingsMessage:(id)arg1 ;
+-(void)handleFetchSettingsMessage:(id)arg1 ;
+-(void)handleUserCamerasAccessLevelDidChangeNotification:(id)arg1 ;
+-(void)handleUserRemoteAccessDidChangeNotification:(id)arg1 ;
+-(void)handleHomePersonManagerSettingsDidChangeNotification:(id)arg1 ;
+-(void)configurePhotosPersonManagerWithSettingsModel:(id)arg1 ;
+-(id)settingsModelUUID;
+-(void)removeCloudDataForZoneUUID:(id)arg1 ;
+-(id)photosPersonManagerZoneUUIDForAnyOtherHomeCurrentUser;
+-(id)personManagerFactory;
+-(HMDCloudPhotosSettingObserver *)cloudPhotosSettingObserver;
+-(id)initWithUser:(id)arg1 messageDispatcher:(id)arg2 localZone:(id)arg3 workQueue:(id)arg4 ;
+-(void)recoverDueToUUIDChangeFromOldUUID:(id)arg1 ;
+-(void)handleUpdatedSettingsModel:(id)arg1 previousSettingsModel:(id)arg2 ;
+-(void)setPersonManagerFactory:(id)arg1 ;
+@end
+

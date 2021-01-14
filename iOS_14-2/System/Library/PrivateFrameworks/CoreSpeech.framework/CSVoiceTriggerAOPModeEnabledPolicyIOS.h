@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:38 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech
+*/
+
+#import <CoreSpeech/CSPolicy.h>
+#import <libobjc.A.dylib/CSSiriClientBehaviorMonitorDelegate.h>
+
+@protocol OS_dispatch_queue;
+@class NSObject, NSString;
+
+@interface CSVoiceTriggerAOPModeEnabledPolicyIOS : CSPolicy <CSSiriClientBehaviorMonitorDelegate> {
+
+	NSObject*<OS_dispatch_queue> _recordStateQueue;
+	BOOL _isSiriClientConsideredAsRecord;
+	NSString* _pendingRecordingStopUUID;
+
+}
+
+@property (assign,nonatomic) BOOL isSiriClientConsideredAsRecord;              //@synthesize isSiriClientConsideredAsRecord=_isSiriClientConsideredAsRecord - In the implementation block
+@property (nonatomic,retain) NSString * pendingRecordingStopUUID;              //@synthesize pendingRecordingStopUUID=_pendingRecordingStopUUID - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(void)siriClientBehaviorMonitor:(id)arg1 didStopStream:(id)arg2 withEventUUID:(id)arg3 ;
+-(void)siriClientBehaviorMonitor:(id)arg1 willStopStream:(id)arg2 ;
+-(void)siriClientBehaviorMonitor:(id)arg1 willStartStreamWithContext:(id)arg2 option:(id)arg3 ;
+-(void)siriClientBehaviorMonitor:(id)arg1 didStartStreamWithContext:(id)arg2 successfully:(BOOL)arg3 option:(id)arg4 withEventUUID:(id)arg5 ;
+-(void)_subscribeEventMonitors;
+-(void)siriClientBehaviorMonitor:(id)arg1 didChangedRecordState:(BOOL)arg2 withEventUUID:(id)arg3 withContext:(id)arg4 ;
+-(void)_addVoiceTriggerAOPModeEnabledConditions;
+-(void)_addConditionsForIOSBargeIn;
+-(void)_addConditionsForIOSAOP;
+-(BOOL)_isSpeechDetectionDevicePresent;
+-(BOOL)isSiriClientConsideredAsRecord;
+-(void)setIsSiriClientConsideredAsRecord:(BOOL)arg1 ;
+-(void)setPendingRecordingStopUUID:(NSString *)arg1 ;
+-(NSString *)pendingRecordingStopUUID;
+@end
+

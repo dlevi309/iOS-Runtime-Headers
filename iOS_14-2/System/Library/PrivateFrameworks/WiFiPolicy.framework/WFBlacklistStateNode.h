@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WiFiPolicy.framework/WiFiPolicy
+*/
+
+
+@class NSString;
+
+@interface WFBlacklistStateNode : NSObject {
+
+	unsigned long long _blacklistedState;
+	NSString* _blacklistedStateString;
+	double _blacklistedStateTimestamp;
+	unsigned long long _blacklistedReason;
+	long long _blacklistedReasonData;
+	NSString* _blacklistedReasonString;
+
+}
+
+@property (assign) unsigned long long blacklistedState;               //@synthesize blacklistedState=_blacklistedState - In the implementation block
+@property (copy) NSString * blacklistedStateString;                   //@synthesize blacklistedStateString=_blacklistedStateString - In the implementation block
+@property (assign) double blacklistedStateTimestamp;                  //@synthesize blacklistedStateTimestamp=_blacklistedStateTimestamp - In the implementation block
+@property (assign) unsigned long long blacklistedReason;              //@synthesize blacklistedReason=_blacklistedReason - In the implementation block
+@property (assign) long long blacklistedReasonData;                   //@synthesize blacklistedReasonData=_blacklistedReasonData - In the implementation block
+@property (copy) NSString * blacklistedReasonString;                  //@synthesize blacklistedReasonString=_blacklistedReasonString - In the implementation block
+-(id)init;
+-(unsigned long long)blacklistedState;
+-(unsigned long long)blacklistedReason;
+-(double)blacklistedStateTimestamp;
+-(NSString *)blacklistedStateString;
+-(long long)blacklistedReasonData;
+-(void)setBlacklistedState:(unsigned long long)arg1 ;
+-(void)setBlacklistedStateString:(NSString *)arg1 ;
+-(void)setBlacklistedStateTimestamp:(double)arg1 ;
+-(void)setBlacklistedReason:(unsigned long long)arg1 ;
+-(void)setBlacklistedReasonData:(long long)arg1 ;
+-(void)setBlacklistedReasonString:(NSString *)arg1 ;
+-(NSString *)blacklistedReasonString;
+@end
+

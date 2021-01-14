@@ -1,0 +1,15 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+
+@protocol NTKVideoPlayerFaceViewDelegate
+@required
+-(void)videoDidFinishPlayingToEnd;
+-(void)videoDidBeginPlayingQueuedVideo;
+-(void)customizeFaceViewForListing:(id)arg1 changeEvent:(unsigned long long)arg2 animated:(BOOL)arg3;
+
+@end
+

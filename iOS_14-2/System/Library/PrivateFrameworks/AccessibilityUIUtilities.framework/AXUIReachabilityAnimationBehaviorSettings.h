@@ -1,0 +1,23 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:51 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities
+*/
+
+#import <AccessibilityUIUtilities/AccessibilityUIUtilities-Structs.h>
+#import <UIKit/UIViewSpringAnimationBehaviorDescribing.h>
+
+@interface AXUIReachabilityAnimationBehaviorSettings : NSObject <UIViewSpringAnimationBehaviorDescribing> {
+
+	double _trackingDampingRatio;
+	double _dampingRatio;
+	double _trackingResponse;
+	double _response;
+	double _trackingRetargetImpulse;
+	double _retargetImpulse;
+
+}
+-(id)initWithPayload:(id)arg1 ;
+-(SCD_Struct_AX4)parametersForTransitionFromState:(int)arg1 toState:(int)arg2 ;
+@end
+

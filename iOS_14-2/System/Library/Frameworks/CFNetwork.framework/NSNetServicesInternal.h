@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:20:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+*/
+
+
+@protocol OS_tcp_listener;
+#import <CFNetwork/CFNetwork-Structs.h>
+@class NSMutableArray, NSObject;
+
+@interface NSNetServicesInternal : NSObject {
+
+	NSMutableArray* _monitors;
+	NSObject*<OS_tcp_listener> _listener;
+	CFRunLoopRef _scheduledRunLoop;
+	CFStringRef _scheduledMode;
+
+}
+-(void)dealloc;
+@end
+

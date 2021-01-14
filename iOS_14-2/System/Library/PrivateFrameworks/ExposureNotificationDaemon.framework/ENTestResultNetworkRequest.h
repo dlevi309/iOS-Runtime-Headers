@@ -1,0 +1,44 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:35 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ExposureNotificationDaemon.framework/ExposureNotificationDaemon
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NSObject, NSURLSession, NSURLSessionTask, NSURL, NSString, NSError, NSDictionary;
+
+@interface ENTestResultNetworkRequest : NSObject {
+
+	NSObject*<OS_dispatch_queue> _queue;
+	NSURLSession* _URLSession;
+	NSURLSessionTask* _URLSessionTask;
+	/*^block*/id _completionHandler;
+	NSURL* _requestURL;
+	NSString* _APIKey;
+	NSError* _error;
+
+}
+
+@property (nonatomic,copy,readonly) NSURL * requestURL;                   //@synthesize requestURL=_requestURL - In the implementation block
+@property (nonatomic,copy) NSString * APIKey;                             //@synthesize APIKey=_APIKey - In the implementation block
+@property (nonatomic,copy,readonly) NSError * error;                      //@synthesize error=_error - In the implementation block
+@property (nonatomic,copy,readonly) NSDictionary * bodyJSON; 
+-(void)resumeWithCompletionHandler:(/*^block*/id)arg1 ;
+-(NSError *)error;
+-(NSString *)APIKey;
+-(NSURL *)requestURL;
+-(void)_completeWithError:(id)arg1 ;
+-(void)invalidate;
+-(id)initWithRequestURL:(id)arg1 URLSession:(id)arg2 queue:(id)arg3 ;
+-(void)setAPIKey:(NSString *)arg1 ;
+-(id)errorForUnsuccessfulResponse:(id)arg1 body:(id)arg2 ;
+-(NSDictionary *)bodyJSON;
+-(id)handleResponse:(id)arg1 body:(id)arg2 ;
+-(id)_createURLRequestWithError:(id*)arg1 ;
+-(void)_performURLRequest:(id)arg1 ;
+-(id)_dictionaryFromData:(id)arg1 response:(id)arg2 error:(id*)arg3 ;
+-(id)_errorForURLRequestError:(id)arg1 ;
+-(void)handleURLResponse:(id)arg1 data:(id)arg2 error:(id)arg3 ;
+@end
+

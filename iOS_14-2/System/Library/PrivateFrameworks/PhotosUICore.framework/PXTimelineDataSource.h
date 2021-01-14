@@ -1,0 +1,80 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:34 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
+*/
+
+
+#import <PhotosUICore/PhotosUICore-Structs.h>
+@class NSDictionary, PHPhotoLibrary, NSMutableArray, NSMutableDictionary, NSArray;
+
+@interface PXTimelineDataSource : NSObject {
+
+	NSDictionary* _keyAssetByMemoryLocalIdentifier;
+	NSDictionary* _keyAssetByFeaturedPhotoLocalIdentifier;
+	NSDictionary* _suggestedCropByFeaturedPhotoLocalIdentifier;
+	PHPhotoLibrary* _photoLibrary;
+	NSMutableArray* _memoryCandidates;
+	NSMutableArray* _featuredPhotoCandidates;
+	NSMutableArray* _filteredContent;
+	NSMutableDictionary* _keyAssetByFilteredContentLocalIdentifier;
+	NSMutableArray* _cropFilteredContent;
+	NSMutableDictionary* _keyAssetByCropFilteredContentLocalIdentifier;
+	NSMutableDictionary* _suggestedCropByCropFilteredContentLocalIdentifier;
+	CGSize _widgetSize;
+
+}
+
+@property (nonatomic,__weak,readonly) PHPhotoLibrary * photoLibrary;                                               //@synthesize photoLibrary=_photoLibrary - In the implementation block
+@property (assign,nonatomic) CGSize widgetSize;                                                                    //@synthesize widgetSize=_widgetSize - In the implementation block
+@property (nonatomic,retain) NSMutableArray * memoryCandidates;                                                    //@synthesize memoryCandidates=_memoryCandidates - In the implementation block
+@property (nonatomic,retain) NSMutableArray * featuredPhotoCandidates;                                             //@synthesize featuredPhotoCandidates=_featuredPhotoCandidates - In the implementation block
+@property (nonatomic,retain) NSMutableArray * filteredContent;                                                     //@synthesize filteredContent=_filteredContent - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * keyAssetByFilteredContentLocalIdentifier;                       //@synthesize keyAssetByFilteredContentLocalIdentifier=_keyAssetByFilteredContentLocalIdentifier - In the implementation block
+@property (nonatomic,retain) NSMutableArray * cropFilteredContent;                                                 //@synthesize cropFilteredContent=_cropFilteredContent - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * keyAssetByCropFilteredContentLocalIdentifier;                   //@synthesize keyAssetByCropFilteredContentLocalIdentifier=_keyAssetByCropFilteredContentLocalIdentifier - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * suggestedCropByCropFilteredContentLocalIdentifier;              //@synthesize suggestedCropByCropFilteredContentLocalIdentifier=_suggestedCropByCropFilteredContentLocalIdentifier - In the implementation block
+@property (nonatomic,readonly) NSArray * memories; 
+@property (nonatomic,readonly) NSDictionary * keyAssetByMemoryLocalIdentifier;                                     //@synthesize keyAssetByMemoryLocalIdentifier=_keyAssetByMemoryLocalIdentifier - In the implementation block
+@property (nonatomic,readonly) NSArray * featuredPhotos; 
+@property (nonatomic,readonly) NSDictionary * keyAssetByFeaturedPhotoLocalIdentifier;                              //@synthesize keyAssetByFeaturedPhotoLocalIdentifier=_keyAssetByFeaturedPhotoLocalIdentifier - In the implementation block
+@property (nonatomic,readonly) NSDictionary * suggestedCropByFeaturedPhotoLocalIdentifier;                         //@synthesize suggestedCropByFeaturedPhotoLocalIdentifier=_suggestedCropByFeaturedPhotoLocalIdentifier - In the implementation block
++(BOOL)_momentIsLocationTypeAtWork:(id)arg1 ;
+-(id)initWithPhotoLibrary:(id)arg1 ;
+-(id)init;
+-(PHPhotoLibrary *)photoLibrary;
+-(CGSize)widgetSize;
+-(NSArray *)memories;
+-(id)initWithPhotoLibrary:(id)arg1 forWidgetSize:(CGSize)arg2 ;
+-(NSArray *)featuredPhotos;
+-(void)_initializeFeaturedCandidatesWithMemoryResult:(id)arg1 suggestionResult:(id)arg2 ;
+-(id)_defaultSortDescriptors;
+-(id)_fetchMemoriesWithFeaturedState:(unsigned long long)arg1 ;
+-(id)_fetchSuggestionsWithFeaturedState:(unsigned short)arg1 ;
+-(id)_fetchFallbackMemoriesAndSetFeatured;
+-(void)setWidgetSize:(CGSize)arg1 ;
+-(id)_fetchFallbackSuggestionsAndSetFeatured;
+-(id)_keyAssetFetchOptions;
+-(id)_gatedKeyAssetByMemoryLocalIdentifierWithMemories:(id)arg1 ;
+-(id)_gatedKeyAssetBySuggestionLocalIdentifierWithSuggestions:(id)arg1 ;
+-(id)_fetchMomentByAssetUUIDForAssets:(id)arg1 ;
+-(id)_gatedCropSpecBySuggestionLocalIdentiferFromSuggestions:(id)arg1 ;
+-(NSDictionary *)keyAssetByMemoryLocalIdentifier;
+-(NSDictionary *)keyAssetByFeaturedPhotoLocalIdentifier;
+-(NSDictionary *)suggestedCropByFeaturedPhotoLocalIdentifier;
+-(NSMutableArray *)memoryCandidates;
+-(void)setMemoryCandidates:(NSMutableArray *)arg1 ;
+-(NSMutableArray *)featuredPhotoCandidates;
+-(void)setFeaturedPhotoCandidates:(NSMutableArray *)arg1 ;
+-(NSMutableArray *)filteredContent;
+-(void)setFilteredContent:(NSMutableArray *)arg1 ;
+-(NSMutableDictionary *)keyAssetByFilteredContentLocalIdentifier;
+-(void)setKeyAssetByFilteredContentLocalIdentifier:(NSMutableDictionary *)arg1 ;
+-(NSMutableArray *)cropFilteredContent;
+-(void)setCropFilteredContent:(NSMutableArray *)arg1 ;
+-(NSMutableDictionary *)keyAssetByCropFilteredContentLocalIdentifier;
+-(void)setKeyAssetByCropFilteredContentLocalIdentifier:(NSMutableDictionary *)arg1 ;
+-(NSMutableDictionary *)suggestedCropByCropFilteredContentLocalIdentifier;
+-(void)setSuggestedCropByCropFilteredContentLocalIdentifier:(NSMutableDictionary *)arg1 ;
+@end
+

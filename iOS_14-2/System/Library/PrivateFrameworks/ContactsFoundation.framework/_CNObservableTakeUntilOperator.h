@@ -1,0 +1,48 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:35 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation
+*/
+
+#import <ContactsFoundation/CNObservable.h>
+#import <libobjc.A.dylib/_CNObservableTakeUntilInputObserverDelegate.h>
+#import <libobjc.A.dylib/_CNObservableTakeUntilSignalObserverDelegate.h>
+
+@protocol CNCancelable;
+@class CNObservable, NSString;
+
+@interface _CNObservableTakeUntilOperator : CNObservable <_CNObservableTakeUntilInputObserverDelegate, _CNObservableTakeUntilSignalObserverDelegate> {
+
+	BOOL _active;
+	CNObservable* _input;
+	CNObservable* _signal;
+	id<CNCancelable> _inputToken;
+	id<CNCancelable> _signalToken;
+
+}
+
+@property (readonly) CNObservable * input;                          //@synthesize input=_input - In the implementation block
+@property (readonly) CNObservable * signal;                         //@synthesize signal=_signal - In the implementation block
+@property (getter=isActive) BOOL active;                            //@synthesize active=_active - In the implementation block
+@property (retain) id<CNCancelable> inputToken;                     //@synthesize inputToken=_inputToken - In the implementation block
+@property (retain) id<CNCancelable> signalToken;                    //@synthesize signalToken=_signalToken - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setActive:(BOOL)arg1 ;
+-(CNObservable *)input;
+-(BOOL)isActive;
+-(id)subscribe:(id)arg1 ;
+-(NSString *)description;
+-(BOOL)shouldMirrorEvent:(id)arg1 ;
+-(id)initWithInput:(id)arg1 signal:(id)arg2 ;
+-(void)setSignalToken:(id<CNCancelable>)arg1 ;
+-(void)setInputToken:(id<CNCancelable>)arg1 ;
+-(id<CNCancelable>)inputToken;
+-(id<CNCancelable>)signalToken;
+-(void)signalDidGenerateEventWithObserver:(id)arg1 ;
+-(CNObservable *)signal;
+-(void)cancel;
+@end
+

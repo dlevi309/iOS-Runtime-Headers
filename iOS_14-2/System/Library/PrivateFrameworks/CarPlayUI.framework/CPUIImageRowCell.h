@@ -1,0 +1,72 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:25 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI
+*/
+
+#import <CarPlayUI/CarPlayUI-Structs.h>
+#import <CarPlayUI/_CPUIBaseTableCell.h>
+
+@class NSMutableArray, NSArray, CPUIHighlightButton, UIImageView, UIImage, UIActivityIndicatorView, UIStackView, NSLayoutConstraint;
+
+@interface CPUIImageRowCell : _CPUIBaseTableCell {
+
+	NSMutableArray* _reusableMediaViews;
+	NSArray* _artworkCatalogs;
+	CPUIHighlightButton* _focusIndicator;
+	UIImageView* _chevronView;
+	UIImage* _fallbackImage;
+	UIActivityIndicatorView* _activityIndicator;
+	/*^block*/id _selectGridItemBlock;
+	/*^block*/id _selectTitleBlock;
+	UIStackView* _stackView;
+	NSLayoutConstraint* _stackViewWidthConstraint;
+
+}
+
+@property (nonatomic,retain) NSMutableArray * reusableMediaViews;                        //@synthesize reusableMediaViews=_reusableMediaViews - In the implementation block
+@property (nonatomic,copy) NSArray * artworkCatalogs;                                    //@synthesize artworkCatalogs=_artworkCatalogs - In the implementation block
+@property (nonatomic,retain) CPUIHighlightButton * focusIndicator;                       //@synthesize focusIndicator=_focusIndicator - In the implementation block
+@property (nonatomic,retain) UIImageView * chevronView;                                  //@synthesize chevronView=_chevronView - In the implementation block
+@property (nonatomic,retain) UIImage * fallbackImage;                                    //@synthesize fallbackImage=_fallbackImage - In the implementation block
+@property (nonatomic,retain) UIActivityIndicatorView * activityIndicator;                //@synthesize activityIndicator=_activityIndicator - In the implementation block
+@property (nonatomic,copy) id selectGridItemBlock;                                       //@synthesize selectGridItemBlock=_selectGridItemBlock - In the implementation block
+@property (nonatomic,copy) id selectTitleBlock;                                          //@synthesize selectTitleBlock=_selectTitleBlock - In the implementation block
+@property (nonatomic,retain) UIStackView * stackView;                                    //@synthesize stackView=_stackView - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * stackViewWidthConstraint;              //@synthesize stackViewWidthConstraint=_stackViewWidthConstraint - In the implementation block
++(double)minimumHeight;
++(double)rowHeight;
+-(BOOL)canBecomeFocused;
+-(UIActivityIndicatorView *)activityIndicator;
+-(void)didUpdateFocusInContext:(id)arg1 withAnimationCoordinator:(id)arg2 ;
+-(void)setLoading:(BOOL)arg1 ;
+-(UIStackView *)stackView;
+-(void)setActivityIndicator:(UIActivityIndicatorView *)arg1 ;
+-(UIImage *)fallbackImage;
+-(UIImageView *)chevronView;
+-(void)prepareForReuse;
+-(void)setChevronView:(UIImageView *)arg1 ;
+-(void)layoutSubviews;
+-(void)setFallbackImage:(UIImage *)arg1 ;
+-(void)setHighlighted:(BOOL)arg1 animated:(BOOL)arg2 ;
+-(void)setStackView:(UIStackView *)arg1 ;
+-(void)applyConfiguration:(id)arg1 ;
+-(NSLayoutConstraint *)stackViewWidthConstraint;
+-(void)setStackViewWidthConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)configureCell;
+-(void)setArtworkCatalogs:(NSArray *)arg1 ;
+-(void)setSelectGridItemBlock:(id)arg1 ;
+-(void)setSelectTitleBlock:(id)arg1 ;
+-(id)selectGridItemBlock;
+-(id)selectTitleBlock;
+-(NSArray *)artworkCatalogs;
+-(void)coreCellItemTapped:(id)arg1 ;
+-(CPUIHighlightButton *)focusIndicator;
+-(void)_layoutArtworkImages;
+-(long long)artworkViewCountThatFits:(CGSize)arg1 ;
+-(NSMutableArray *)reusableMediaViews;
+-(void)gridCellItemTapped:(id)arg1 ;
+-(void)setReusableMediaViews:(NSMutableArray *)arg1 ;
+-(void)setFocusIndicator:(CPUIHighlightButton *)arg1 ;
+@end
+

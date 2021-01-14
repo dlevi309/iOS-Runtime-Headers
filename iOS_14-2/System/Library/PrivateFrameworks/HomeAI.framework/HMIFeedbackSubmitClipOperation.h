@@ -1,0 +1,64 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeAI.framework/HomeAI
+*/
+
+#import <HMFoundation/HMFOperation.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+
+@class HMIFeedbackSession, NSUUID, NSMutableArray, NSSet, NSData, NSDictionary, NSString;
+
+@interface HMIFeedbackSubmitClipOperation : HMFOperation <HMFLogging> {
+
+	HMIFeedbackSession* _feedbackSession;
+	NSUUID* _cameraProfileUUID;
+	NSUUID* _clipUUID;
+	NSMutableArray* _temporaryFileURLs;
+	NSSet* _faceCrops;
+	NSData* _assetData;
+	NSDictionary* _serviceResult;
+
+}
+
+@property (readonly) HMIFeedbackSession * feedbackSession;              //@synthesize feedbackSession=_feedbackSession - In the implementation block
+@property (readonly) NSUUID * cameraProfileUUID;                        //@synthesize cameraProfileUUID=_cameraProfileUUID - In the implementation block
+@property (readonly) NSUUID * clipUUID;                                 //@synthesize clipUUID=_clipUUID - In the implementation block
+@property (readonly) NSMutableArray * temporaryFileURLs;                //@synthesize temporaryFileURLs=_temporaryFileURLs - In the implementation block
+@property (retain) NSSet * faceCrops;                                   //@synthesize faceCrops=_faceCrops - In the implementation block
+@property (retain) NSData * assetData;                                  //@synthesize assetData=_assetData - In the implementation block
+@property (retain) NSDictionary * serviceResult;                        //@synthesize serviceResult=_serviceResult - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)logCategory;
+-(HMIFeedbackSession *)feedbackSession;
+-(void)URLSession:(id)arg1 didReceiveChallenge:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)main;
+-(NSUUID *)clipUUID;
+-(NSUUID *)cameraProfileUUID;
+-(NSData *)assetData;
+-(void)setAssetData:(NSData *)arg1 ;
+-(void)setFaceCrops:(NSSet *)arg1 ;
+-(NSSet *)faceCrops;
+-(id)feedbackServiceHost;
+-(id)_temporaryFileURLWithUUID:(id)arg1 extension:(id)arg2 error:(id*)arg3 ;
+-(id)feedbackServiceURL;
+-(id)_base64StringFromData:(id)arg1 ;
+-(BOOL)_attachEncryptedDataUsingKey:(id)arg1 toPayload:(id)arg2 error:(id*)arg3 ;
+-(NSDictionary *)serviceResult;
+-(id)_createPayloadWithServiceResult:(id)arg1 error:(id*)arg2 ;
+-(void)_uploadPayloadData:(id)arg1 uploadURL:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)_stripAudioTrackFromAsset:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)setServiceResult:(NSDictionary *)arg1 ;
+-(void)_downloadClipWithCameraProfileUUID:(id)arg1 clipUUID:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)_requestPreSignedURLWithClipUUID:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(id)feedbackRequestURLForClipWithUUID:(id)arg1 ;
+-(void)_removeTemporaryFiles;
+-(void)_submitClipWithCameraProfileUUID:(id)arg1 clipUUID:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(id)initWithFeedbackSession:(id)arg1 cameraProfileUUID:(id)arg2 clipUUID:(id)arg3 ;
+-(BOOL)_attachFaceCrops:(id)arg1 toPayload:(id)arg2 error:(id*)arg3 ;
+-(NSMutableArray *)temporaryFileURLs;
+@end
+

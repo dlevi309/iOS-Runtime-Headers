@@ -1,0 +1,52 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:57 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+*/
+
+
+@protocol NSObject;
+@class FLFollowUpController;
+
+@interface BYFlowSkipController : NSObject {
+
+	BOOL _basicFunctionalityEnabled_doNotAccessDirectly;
+	FLFollowUpController* _followUpController_doNotAccessDirectly;
+	id<NSObject> _wfNetworkChangeObserver;
+
+}
++(id)sharedInstance;
++(id)_modelSpecificLocalizedStringKeyForKey:(id)arg1 ;
++(id)_supportedIdentifiers;
++(id)_actionForFlowSkipIdentifiers:(id)arg1 ;
++(id)_localizedStringListingFlowSkipIdentifiers:(id)arg1 ;
++(id)_flowSkipIdentifierFromActionIdentifier:(id)arg1 ;
++(id)_actionIdentifierForFlowSkipIdentifier:(id)arg1 ;
++(void)_setShouldObserveChangeFromNetworkSSID:(id)arg1 ;
++(BOOL)_shouldObserveChangeFromNetworkSSID:(id*)arg1 ;
++(void)_clearShouldObserveChangeFromNetworkSSID;
++(id)flowSkipIdentifiersFromFollowUpAction:(id)arg1 ;
+-(id)init;
+-(id)_followUpController;
+-(void)didSkipFlow:(id)arg1 ;
+-(void)observeFinishSetupTriggers;
+-(BOOL)_isBasicFunctionalityEnabled;
+-(id)_pendingFollowUpItem;
+-(void)_postFollowUpItemForFlowSkipIdentifiers:(id)arg1 previousFollowUpItem:(id)arg2 forceNotification:(BOOL)arg3 ;
+-(long long)_timeIntervalForNotifications;
+-(void)didCompleteFlow:(id)arg1 ;
+-(long long)_timeIntervalForFrequentNotifications;
+-(void)_persistInitialNetworkSSID;
+-(void)registerActivities;
+-(long long)_timeoutForWifiObserver;
+-(void)_repostExistingFollowUpItemForcingNotification:(id)arg1 ;
+-(long long)_timeIntervalForWifiObserver;
+-(void)_regsiterWiFiObserverActivityWithNeedsActivity:(BOOL)arg1 handlerQueue:(id)arg2 ;
+-(void)revisePendingFollowUpsForcingRepost:(BOOL)arg1 ;
+-(void)setBasicFunctionalityEnabled:(BOOL)arg1 ;
+-(void)cancelPendingFlows;
+-(void)passcodeDidChange;
+-(id)getFlowSkipIdentifiers;
+-(BOOL)_isPasscodeSet;
+@end
+

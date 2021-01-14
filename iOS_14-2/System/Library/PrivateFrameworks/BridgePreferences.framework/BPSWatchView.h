@@ -1,0 +1,69 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:20 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences
+*/
+
+#import <BridgePreferences/BridgePreferences-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@class NSString, BPSRemoteImageView, UIImageView;
+
+@interface BPSWatchView : UIView {
+
+	BOOL _wantsLightenBlendedScreen;
+	BOOL _wantsInternalFPOLabel;
+	NSString* _screenImageSearchBundleIdentifier;
+	NSString* _screenImageName;
+	unsigned long long _style;
+	unsigned long long _sizeOverride;
+	BPSRemoteImageView* _watchImageView;
+	NSString* _styleVersionSuffix;
+	UIImageView* _watchScreenImageView;
+
+}
+
+@property (assign,nonatomic) unsigned long long style;                                  //@synthesize style=_style - In the implementation block
+@property (assign,nonatomic) unsigned long long sizeOverride;                           //@synthesize sizeOverride=_sizeOverride - In the implementation block
+@property (nonatomic,retain) BPSRemoteImageView * watchImageView;                       //@synthesize watchImageView=_watchImageView - In the implementation block
+@property (nonatomic,copy) NSString * styleVersionSuffix;                               //@synthesize styleVersionSuffix=_styleVersionSuffix - In the implementation block
+@property (nonatomic,readonly) UIImageView * watchScreenImageView;                      //@synthesize watchScreenImageView=_watchScreenImageView - In the implementation block
+@property (assign,nonatomic) BOOL wantsLightenBlendedScreen;                            //@synthesize wantsLightenBlendedScreen=_wantsLightenBlendedScreen - In the implementation block
+@property (assign,nonatomic) BOOL wantsInternalFPOLabel;                                //@synthesize wantsInternalFPOLabel=_wantsInternalFPOLabel - In the implementation block
+@property (nonatomic,retain) NSString * screenImageSearchBundleIdentifier;              //@synthesize screenImageSearchBundleIdentifier=_screenImageSearchBundleIdentifier - In the implementation block
+@property (nonatomic,copy) NSString * screenImageName;                                  //@synthesize screenImageName=_screenImageName - In the implementation block
+-(CGSize)intrinsicContentSize;
+-(id)initWithStyle:(unsigned long long)arg1 ;
+-(id)image;
+-(void)layoutSubviews;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+-(id)initWithStyle:(unsigned long long)arg1 allowsMaterialFallback:(BOOL)arg2 ;
+-(void)overrideMaterial:(unsigned long long)arg1 size:(unsigned long long)arg2 ;
+-(void)setStyle:(unsigned long long)arg1 ;
+-(unsigned long long)style;
+-(BOOL)wantsLightenBlendedScreen;
+-(void)setWantsLightenBlendedScreen:(BOOL)arg1 ;
+-(void)setScreenImageSearchBundleIdentifier:(NSString *)arg1 ;
+-(void)setScreenImageName:(NSString *)arg1 ;
+-(BOOL)wantsInternalFPOLabel;
+-(void)setWantsInternalFPOLabel:(BOOL)arg1 ;
+-(id)initWithStyle:(unsigned long long)arg1 versionModifier:(id)arg2 allowsMaterialFallback:(BOOL)arg3 ;
+-(id)watchAssetBundle;
+-(id)screenBackground:(CGSize)arg1 ;
+-(void)applyScreenStyle;
+-(unsigned long long)deviceSize;
+-(void)layoutWatchScreenImageView;
+-(CGSize)screenImageSize;
+-(void)setSizeOverride:(unsigned long long)arg1 ;
+-(BPSRemoteImageView *)watchImageView;
+-(id)initWithStyle:(unsigned long long)arg1 andVersionModifier:(id)arg2 ;
+-(void)_cleanedImageName:(id*)arg1 withFallbackImage:(id*)arg2 ;
+-(NSString *)screenImageSearchBundleIdentifier;
+-(NSString *)screenImageName;
+-(unsigned long long)sizeOverride;
+-(void)setWatchImageView:(BPSRemoteImageView *)arg1 ;
+-(NSString *)styleVersionSuffix;
+-(void)setStyleVersionSuffix:(NSString *)arg1 ;
+-(UIImageView *)watchScreenImageView;
+@end
+

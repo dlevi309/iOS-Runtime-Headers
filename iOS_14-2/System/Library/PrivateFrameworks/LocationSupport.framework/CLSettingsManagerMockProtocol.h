@@ -1,0 +1,13 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport
+*/
+
+
+@protocol CLSettingsManagerMockProtocol <CLSettingsManagerProtocol>
+@required
+-(void)setSettings:(id)arg1;
+
+@end
+

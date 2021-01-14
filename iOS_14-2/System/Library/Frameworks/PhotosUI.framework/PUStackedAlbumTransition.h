@@ -1,0 +1,93 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:32 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PhotosUI.framework/PhotosUI
+*/
+
+#import <PhotosUI/PhotosUI-Structs.h>
+#import <PhotosUI/PUNavigationTransition.h>
+#import <libobjc.A.dylib/PUCollectionViewLayoutTransitioningDelegate.h>
+#import <libobjc.A.dylib/PUTransitionViewAnimatorDelegate.h>
+
+@protocol PLAssetContainer, PUStackedAlbumTransitionDelegate;
+@class NSSet, UIView, PHCollection, PUStackedAlbumLayout, PUStackedAlbumTransitionLayout, PUTransitionViewAnimator, PUPhotoPinchGestureRecognizer, NSString;
+
+@interface PUStackedAlbumTransition : PUNavigationTransition <PUCollectionViewLayoutTransitioningDelegate, PUTransitionViewAnimatorDelegate> {
+
+	CGRect _popTransitionInitialVisibleBounds;
+	NSSet* _popTransitionInitialVisibleStackedAssetIndexPaths;
+	UIView* _animatorView;
+	BOOL _didAnimateRoundedCorners;
+	BOOL _isExpanding;
+	BOOL _isForStandInAlbum;
+	BOOL _forFolder;
+	id<PLAssetContainer> _photoCollection;
+	PHCollection* _ph_photoCollection;
+	id<PUStackedAlbumTransitionDelegate> _delegate;
+	PUStackedAlbumLayout* __transitionLayout;
+	PUStackedAlbumTransitionLayout* __interactiveTransitionLayout;
+	PUTransitionViewAnimator* __transitionViewAnimator;
+	PUPhotoPinchGestureRecognizer* __photoPinchGestureRecognizer;
+	id __disableToken;
+	CGPoint _interactionCenter;
+
+}
+
+@property (assign,setter=_setExpanding:,nonatomic) BOOL isExpanding;                                                                             //@synthesize isExpanding=_isExpanding - In the implementation block
+@property (assign,setter=_setTransitionLayout:,nonatomic,__weak) PUStackedAlbumLayout * _transitionLayout;                                       //@synthesize _transitionLayout=__transitionLayout - In the implementation block
+@property (setter=_setInteractiveTransitionLayout:,nonatomic,retain) PUStackedAlbumTransitionLayout * _interactiveTransitionLayout;              //@synthesize _interactiveTransitionLayout=__interactiveTransitionLayout - In the implementation block
+@property (setter=_setTransitionViewAnimator:,nonatomic,retain) PUTransitionViewAnimator * _transitionViewAnimator;                              //@synthesize _transitionViewAnimator=__transitionViewAnimator - In the implementation block
+@property (setter=_setPhotoPinchGestureRecognizer:,nonatomic,retain) PUPhotoPinchGestureRecognizer * _photoPinchGestureRecognizer;               //@synthesize _photoPinchGestureRecognizer=__photoPinchGestureRecognizer - In the implementation block
+@property (setter=_setDisableToken:,nonatomic,retain) id _disableToken;                                                                          //@synthesize _disableToken=__disableToken - In the implementation block
+@property (nonatomic,readonly) UIViewController*<PUStackedAlbumControllerTransition> fromViewController; 
+@property (nonatomic,readonly) UIViewController*<PUStackedAlbumControllerTransition> toViewController; 
+@property (nonatomic,retain) id<PLAssetContainer> photoCollection;                                                                               //@synthesize photoCollection=_photoCollection - In the implementation block
+@property (setter=ph_setPhotoCollection:,nonatomic,retain) PHCollection * ph_photoCollection;                                                    //@synthesize ph_photoCollection=_ph_photoCollection - In the implementation block
+@property (assign,nonatomic,__weak) id<PUStackedAlbumTransitionDelegate> delegate;                                                               //@synthesize delegate=_delegate - In the implementation block
+@property (assign,setter=setForStandInAlbum:,nonatomic) BOOL isForStandInAlbum;                                                                  //@synthesize isForStandInAlbum=_isForStandInAlbum - In the implementation block
+@property (assign,getter=isForFolder,nonatomic) BOOL forFolder;                                                                                  //@synthesize forFolder=_forFolder - In the implementation block
+@property (assign,nonatomic) CGPoint interactionCenter;                                                                                          //@synthesize interactionCenter=_interactionCenter - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(id<PUStackedAlbumTransitionDelegate>)delegate;
+-(id)_newInteractiveTransitionViewAnimatorForLayout:(id)arg1 collectionView:(id)arg2 ;
+-(id)_newTransitionLayoutWithStackedAlbumLayout:(id)arg1 otherLayout:(id)arg2 forPush:(BOOL)arg3 ;
+-(id)_popTransitionInitialVisibleStackedAssetIndexPaths:(id)arg1 ;
+-(id<PLAssetContainer>)photoCollection;
+-(void)setPhotoCollection:(id<PLAssetContainer>)arg1 ;
+-(PHCollection *)ph_photoCollection;
+-(void)_setExpanding:(BOOL)arg1 ;
+-(BOOL)isForStandInAlbum;
+-(void)transitionViewAnimatorDidUpdate:(id)arg1 ;
+-(void)transitionViewAnimatorWillEnd:(id)arg1 withTargetTranslation:(inout CGPoint*)arg2 ;
+-(void)transitionViewAnimatorDidEnd:(id)arg1 finished:(BOOL)arg2 ;
+-(BOOL)isForFolder;
+-(CGPoint)interactionCenter;
+-(PUStackedAlbumTransitionLayout *)_interactiveTransitionLayout;
+-(void)_setInteractiveTransitionLayout:(id)arg1 ;
+-(PUTransitionViewAnimator *)_transitionViewAnimator;
+-(void)_setTransitionViewAnimator:(id)arg1 ;
+-(id)_disableToken;
+-(void)_setDisableToken:(id)arg1 ;
+-(void)_setTransitionLayout:(id)arg1 ;
+-(void)setDelegate:(id<PUStackedAlbumTransitionDelegate>)arg1 ;
+-(PUStackedAlbumLayout *)_transitionLayout;
+-(void)animatePushTransition;
+-(void)setForFolder:(BOOL)arg1 ;
+-(void)animatePopTransition;
+-(PUPhotoPinchGestureRecognizer *)_photoPinchGestureRecognizer;
+-(void)_setPhotoPinchGestureRecognizer:(id)arg1 ;
+-(void)setForStandInAlbum:(BOOL)arg1 ;
+-(void)ph_setPhotoCollection:(id)arg1 ;
+-(void)completeInteractiveOperation:(long long)arg1 finished:(BOOL)arg2 ;
+-(void)startInteractiveTransitionWithPhotoPinchGestureRecognizer:(id)arg1 isExpanding:(BOOL)arg2 ;
+-(void)setInteractionCenter:(CGPoint)arg1 ;
+-(void)updateInteractiveTransitionWithPhotoPinchGestureRecognizer:(id)arg1 ;
+-(BOOL)collectionViewLayoutShouldProvideCustomAnimations:(id)arg1 ;
+-(void)collectionViewLayout:(id)arg1 willSupplyLayoutAttributes:(id)arg2 ;
+-(BOOL)isExpanding;
+@end
+

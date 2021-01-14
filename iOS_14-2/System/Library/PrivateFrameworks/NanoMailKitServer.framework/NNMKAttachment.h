@@ -1,0 +1,54 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:04 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoMailKitServer.framework/NanoMailKitServer
+*/
+
+#import <UIFoundation/NSTextAttachment.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString;
+
+@interface NNMKAttachment : NSTextAttachment <NSSecureCoding> {
+
+	NSString* _url;
+	NSString* _contentId;
+	NSString* _fileName;
+	NSString* _mimePartNumber;
+	unsigned long long _fileSize;
+	unsigned long long _type;
+	NSString* _messageId;
+	unsigned long long _syncState;
+
+}
+
+@property (nonatomic,retain) NSString * url;                            //@synthesize url=_url - In the implementation block
+@property (nonatomic,retain) NSString * contentId;                      //@synthesize contentId=_contentId - In the implementation block
+@property (nonatomic,retain) NSString * fileName;                       //@synthesize fileName=_fileName - In the implementation block
+@property (nonatomic,retain) NSString * mimePartNumber;                 //@synthesize mimePartNumber=_mimePartNumber - In the implementation block
+@property (assign,nonatomic) unsigned long long fileSize;               //@synthesize fileSize=_fileSize - In the implementation block
+@property (assign,nonatomic) unsigned long long type;                   //@synthesize type=_type - In the implementation block
+@property (nonatomic,retain) NSString * messageId;                      //@synthesize messageId=_messageId - In the implementation block
+@property (assign,nonatomic) unsigned long long syncState;              //@synthesize syncState=_syncState - In the implementation block
++(BOOL)supportsSecureCoding;
+-(unsigned long long)syncState;
+-(NSString *)contentId;
+-(void)setSyncState:(unsigned long long)arg1 ;
+-(void)setMessageId:(NSString *)arg1 ;
+-(void)setContentId:(NSString *)arg1 ;
+-(void)setFileName:(NSString *)arg1 ;
+-(unsigned long long)fileSize;
+-(void)encodeWithCoder:(id)arg1 ;
+-(void)setType:(unsigned long long)arg1 ;
+-(NSString *)url;
+-(NSString *)fileName;
+-(id)description;
+-(void)setUrl:(NSString *)arg1 ;
+-(unsigned long long)type;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setFileSize:(unsigned long long)arg1 ;
+-(NSString *)messageId;
+-(NSString *)mimePartNumber;
+-(void)setMimePartNumber:(NSString *)arg1 ;
+@end
+

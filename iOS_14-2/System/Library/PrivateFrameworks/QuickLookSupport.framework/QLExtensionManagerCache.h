@@ -1,0 +1,54 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:17 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/QuickLookSupport.framework/QuickLookSupport
+*/
+
+
+@protocol OS_dispatch_queue, OS_dispatch_semaphore;
+@class NSObject, NSDictionary, NSMutableDictionary, NSMapTable;
+
+@interface QLExtensionManagerCache : NSObject {
+
+	NSObject*<OS_dispatch_queue> _accessMatchingExtensionsQueue;
+	NSObject*<OS_dispatch_queue> _waitForExtensionListQueue;
+	BOOL _isMatchingExtensions;
+	NSDictionary* _matchingAttributes;
+	id _matchingContext;
+	NSMutableDictionary* _matchingExtensions;
+	NSMapTable* _qlExtensions;
+	NSObject*<OS_dispatch_semaphore> _waitForExtensionsSemaphore;
+
+}
+
+@property (nonatomic,retain) NSDictionary * matchingAttributes;                              //@synthesize matchingAttributes=_matchingAttributes - In the implementation block
+@property (nonatomic,retain) id matchingContext;                                             //@synthesize matchingContext=_matchingContext - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * matchingExtensions;                       //@synthesize matchingExtensions=_matchingExtensions - In the implementation block
+@property (nonatomic,retain) NSMapTable * qlExtensions;                                      //@synthesize qlExtensions=_qlExtensions - In the implementation block
+@property (assign,nonatomic) BOOL isMatchingExtensions;                                      //@synthesize isMatchingExtensions=_isMatchingExtensions - In the implementation block
+@property (retain) NSObject*<OS_dispatch_semaphore> waitForExtensionsSemaphore;              //@synthesize waitForExtensionsSemaphore=_waitForExtensionsSemaphore - In the implementation block
+-(id)matchingContext;
+-(void)beginMatchingExtensions;
+-(void)setMatchingContext:(id)arg1 ;
+-(void)endMatchingExtensions;
+-(void)dealloc;
+-(void)_didReceiveNewMatchingExtensionList:(id)arg1 ;
+-(void)setMatchingExtensions:(NSMutableDictionary *)arg1 ;
+-(void)setIsMatchingExtensions:(BOOL)arg1 ;
+-(NSMutableDictionary *)matchingExtensions;
+-(id)extensionWithMatchingAttributes:(id)arg1 allowExtensionsForParentTypes:(BOOL)arg2 extensionPath:(id)arg3 ;
+-(void)_synchronouslyWaitForExtensionListIfNeeded;
+-(BOOL)_supportedContentTypesFromExtension:(id)arg1 matches:(id)arg2 allowMatchingWithParentTypes:(BOOL)arg3 ;
+-(id)_bestMatchingExtensionsFromSupportingExtensions:(id)arg1 includingExtensionsWithSupportingParentTypes:(BOOL)arg2 byContentType:(id)arg3 ;
+-(id)extensionWithMatchingAttributes:(id)arg1 allowExtensionsForParentTypes:(BOOL)arg2 extensionPath:(id)arg3 firstPartyExtension:(BOOL)arg4 ;
+-(id)initWithMatchingAttributes:(id)arg1 ;
+-(BOOL)hasExtensionWithMatchingAttributes:(id)arg1 ;
+-(NSDictionary *)matchingAttributes;
+-(void)setMatchingAttributes:(NSDictionary *)arg1 ;
+-(NSMapTable *)qlExtensions;
+-(void)setQlExtensions:(NSMapTable *)arg1 ;
+-(BOOL)isMatchingExtensions;
+-(NSObject*<OS_dispatch_semaphore>)waitForExtensionsSemaphore;
+-(void)setWaitForExtensionsSemaphore:(NSObject*<OS_dispatch_semaphore>)arg1 ;
+@end
+

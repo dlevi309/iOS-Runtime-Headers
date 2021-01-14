@@ -1,0 +1,26 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:55 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/WebKit.framework/WebKit
+*/
+
+
+@protocol PKPaymentAuthorizationViewControllerDelegate <NSObject>
+@optional
+-(void)paymentAuthorizationViewController:(id)arg1 didAuthorizePayment:(id)arg2 handler:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewControllerWillAuthorizePayment:(id)arg1;
+-(void)paymentAuthorizationViewController:(id)arg1 didRequestMerchantSessionUpdate:(/*^block*/id)arg2;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectShippingMethod:(id)arg2 handler:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectShippingContact:(id)arg2 handler:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectPaymentMethod:(id)arg2 handler:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didAuthorizePayment:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectShippingMethod:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectShippingAddress:(const void*)arg2 completion:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectShippingContact:(id)arg2 completion:(/*^block*/id)arg3;
+-(void)paymentAuthorizationViewController:(id)arg1 didSelectPaymentMethod:(id)arg2 completion:(/*^block*/id)arg3;
+
+@required
+-(void)paymentAuthorizationViewControllerDidFinish:(id)arg1;
+
+@end
+

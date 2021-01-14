@@ -1,0 +1,39 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:28 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PhotosUI.framework/PhotosUI
+*/
+
+
+@class PUSectionedGridLayout;
+
+@interface PULayoutAnimationsHelper : NSObject {
+
+	BOOL _shouldAnimateTemporaryImageView;
+	PUSectionedGridLayout* _layout;
+
+}
+
+@property (nonatomic,__weak,readonly) PUSectionedGridLayout * layout;              //@synthesize layout=_layout - In the implementation block
+@property (assign,nonatomic) BOOL shouldAnimateTemporaryImageView;                 //@synthesize shouldAnimateTemporaryImageView=_shouldAnimateTemporaryImageView - In the implementation block
++(double)zoomTransitionAnimationPreferredDurationWhenZoomingIn:(BOOL)arg1 ;
++(/*^block*/id)stackedTransitionAnimationsForReusableView:(id)arg1 toLayoutAttributes:(id)arg2 shouldUseSpringAnimations:(BOOL)arg3 ;
++(double)stackedTransitionAnimationPreferredDurationUsingSpringAnimations:(BOOL)arg1 ;
+-(id)initWithSectionedGridLayout:(id)arg1 ;
+-(/*^block*/id)animationsForReusableView:(id)arg1 toLayoutAttributes:(id)arg2 ;
+-(void)didFinishLayoutTransitionAnimations:(BOOL)arg1 transitionIsAppearing:(BOOL)arg2 ;
+-(void)_applyDefaultLayoutAttributes:(id)arg1 toView:(id)arg2 ;
+-(id)_createDefaultZoomingOutAnimationForKeyPath:(id)arg1 ofReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(id)_createDefaultZoomingInAnimationForKeyPath:(id)arg1 ofReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(void)setShouldAnimateTemporaryImageView:(BOOL)arg1 ;
+-(id)_defaultAnimationForKeyPath:(id)arg1 ofReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(id)_adjustAnimation:(id)arg1 forReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(id)_adjustCellAnimation:(id)arg1 forReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(BOOL)shouldAnimateTemporaryImageView;
+-(id)_adjustSectionHeaderAnimation:(id)arg1 forReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(id)_adjustRenderedStripAnimation:(id)arg1 forReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(id)_adjustDecorationViewAnimation:(id)arg1 forReusableView:(id)arg2 toLayoutAttributes:(id)arg3 ;
+-(void)_configureAnimationsForReusableView:(id)arg1 toLayoutAttributes:(id)arg2 withCompletionBlock:(/*^block*/id)arg3 ;
+-(PUSectionedGridLayout *)layout;
+@end
+

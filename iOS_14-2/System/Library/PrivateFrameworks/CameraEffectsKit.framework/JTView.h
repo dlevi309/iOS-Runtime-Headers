@@ -1,0 +1,22 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CameraEffectsKit.framework/CameraEffectsKit
+*/
+
+#import <UIKitCore/UIView.h>
+
+@interface JTView : UIView {
+
+	BOOL _debuggingUIEnabled;
+
+}
+
+@property (assign) BOOL debuggingUIEnabled;              //@synthesize debuggingUIEnabled=_debuggingUIEnabled - In the implementation block
++(Class)layerClass;
+-(void)layoutSubviews;
+-(BOOL)debuggingUIEnabled;
+-(void)setDebuggingUIEnabled:(BOOL)arg1 ;
+-(void)enableDebugMode:(id)arg1 ;
+@end
+

@@ -1,0 +1,24 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:31 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/SensorKit.framework/SensorKit
+*/
+
+#import <libobjc.A.dylib/SRSensorKitServiceClientReading.h>
+
+@class SRSensorReader;
+
+@interface SRSensorReaderClient : NSObject <SRSensorKitServiceClientReading> {
+
+	SRSensorReader* _reader;
+
+}
+
+@property (__weak) SRSensorReader * reader;              //@synthesize reader=_reader - In the implementation block
++(id)readerClientWithReader:(id)arg1 ;
+-(SRSensorReader *)reader;
+-(void)resetDatastoreFiles:(id)arg1 ;
+-(id)initWithReader:(id)arg1 ;
+-(void)setReader:(SRSensorReader *)arg1 ;
+@end
+

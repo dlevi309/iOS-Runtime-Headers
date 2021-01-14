@@ -1,0 +1,24 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ClassroomKit.framework/ClassroomKit
+*/
+
+
+@interface CRKClassKitColorAndMascotUtility : NSObject
++(unsigned long long)mascotForClass:(id)arg1 ;
++(unsigned long long)colorForClass:(id)arg1 ;
++(BOOL)setMascot:(unsigned long long)arg1 forClass:(id)arg2 error:(id*)arg3 ;
++(BOOL)setColor:(unsigned long long)arg1 forClass:(id)arg2 error:(id*)arg3 ;
++(unsigned long long)mascotTypeForMascotIdentifier:(id)arg1 ;
++(id)mascotIdentifierForMascotType:(unsigned long long)arg1 ;
++(unsigned long long)defaultMascot;
++(id)mascotTypesByMascotIdentifier;
++(unsigned long long)classColorFromClassName:(id)arg1 ;
++(unsigned long long)colorTypeForColorIdentifier:(id)arg1 ;
++(id)colorIdentifierForColorType:(unsigned long long)arg1 ;
++(id)colorTypesByColorIdentifier;
++(id)classThemeColors;
++(unsigned long long)asmHash:(unsigned long long)arg1 forString:(id)arg2 ;
+@end
+

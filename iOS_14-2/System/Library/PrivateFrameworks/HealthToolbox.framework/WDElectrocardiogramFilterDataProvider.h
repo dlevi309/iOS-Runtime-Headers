@@ -1,0 +1,80 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:45 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthToolbox.framework/HealthToolbox
+*/
+
+#import <libobjc.A.dylib/HKSampleTypeUpdateControllerObserver.h>
+
+@protocol WDElectrocardiogramFilterDataProviderDelegate, OS_dispatch_queue;
+@class WDProfile, NSArray, NSObject, NSMutableDictionary, NSString;
+
+@interface WDElectrocardiogramFilterDataProvider : NSObject <HKSampleTypeUpdateControllerObserver> {
+
+	WDProfile* _profile;
+	id<WDElectrocardiogramFilterDataProviderDelegate> _delegate;
+	long long _activeAlgorithmVersion;
+	NSArray* _filterTypes;
+	NSObject*<OS_dispatch_queue> _clientQueue;
+	NSObject*<OS_dispatch_queue> _resourceQueue;
+	NSMutableDictionary* _counts;
+	NSArray* _countQueries;
+
+}
+
+@property (assign,nonatomic,__weak) WDProfile * profile;                                                     //@synthesize profile=_profile - In the implementation block
+@property (assign,nonatomic,__weak) id<WDElectrocardiogramFilterDataProviderDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) long long activeAlgorithmVersion;                                               //@synthesize activeAlgorithmVersion=_activeAlgorithmVersion - In the implementation block
+@property (nonatomic,retain) NSArray * filterTypes;                                                          //@synthesize filterTypes=_filterTypes - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> clientQueue;                                       //@synthesize clientQueue=_clientQueue - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> resourceQueue;                                     //@synthesize resourceQueue=_resourceQueue - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * counts;                                                   //@synthesize counts=_counts - In the implementation block
+@property (nonatomic,retain) NSArray * countQueries;                                                         //@synthesize countQueries=_countQueries - In the implementation block
+@property (nonatomic,readonly) long long filterTypeCount; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)_atrialFibrillationClassificationPredicateWithValue:(unsigned long long)arg1 ;
++(id)_atrialFibrillationClassificationPredicateWithClassifications:(id)arg1 ;
++(id)_atrialFibrillationClassificationPredicateWithValues:(id)arg1 ;
++(id)cellTitleForType:(long long)arg1 ;
++(id)viewControllerTitleForType:(long long)arg1 ;
+-(NSObject*<OS_dispatch_queue>)clientQueue;
+-(void)setProfile:(WDProfile *)arg1 ;
+-(NSMutableDictionary *)counts;
+-(id)initWithProfile:(id)arg1 delegate:(id)arg2 ;
+-(id<WDElectrocardiogramFilterDataProviderDelegate>)delegate;
+-(void)setResourceQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)start;
+-(void)setCounts:(NSMutableDictionary *)arg1 ;
+-(void)stop;
+-(NSArray *)filterTypes;
+-(void)setDelegate:(id<WDElectrocardiogramFilterDataProviderDelegate>)arg1 ;
+-(WDProfile *)profile;
+-(void)setClientQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(NSObject*<OS_dispatch_queue>)resourceQueue;
+-(void)updateController:(id)arg1 didReceiveUpdateForType:(id)arg2 samplesAdded:(id)arg3 objectsRemoved:(id)arg4 ;
+-(void)updateController:(id)arg1 didReceiveHighFrequencyUpdateForType:(id)arg2 ;
+-(void)setActiveAlgorithmVersion:(long long)arg1 ;
+-(long long)activeAlgorithmVersion;
+-(void)_stopQueries;
+-(id)_filterTypesForActiveAlgorithmVersion:(long long)arg1 ;
+-(id)_countQueriesForFilterTypes:(id)arg1 ;
+-(void)setCountQueries:(NSArray *)arg1 ;
+-(NSArray *)countQueries;
+-(long long)_rQueue_countForType:(long long)arg1 ;
+-(long long)countForType:(long long)arg1 ;
+-(id)_atrialFibrillationClassificationsWithActiveAlgorithmVersion:(long long)arg1 ;
+-(id)_highLowHeartRateClassificationsWithActiveAlgorithmVersion:(long long)arg1 ;
+-(id)_inconclusiveClassificationsWithActiveAlgorithmVersion:(long long)arg1 ;
+-(id)_countQueryForType:(long long)arg1 ;
+-(id)electrocardiogramPredicateForType:(long long)arg1 ;
+-(void)_rQueue_setCount:(long long)arg1 forType:(long long)arg2 ;
+-(void)_rQueue_notifyDelegateDidUpdateCountForType:(long long)arg1 ;
+-(void)_safelyStopQuery:(id)arg1 ;
+-(long long)filterTypeCount;
+-(id)displayStringCountForType:(long long)arg1 ;
+-(void)setFilterTypes:(NSArray *)arg1 ;
+@end
+

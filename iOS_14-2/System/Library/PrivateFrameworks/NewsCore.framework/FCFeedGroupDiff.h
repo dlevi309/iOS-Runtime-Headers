@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:51 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NewsCore.framework/NewsCore
+*/
+
+
+@class NSString, NSArray;
+
+@interface FCFeedGroupDiff : NSObject {
+
+	NSString* _groupIdentifier;
+	NSArray* _insertedElements;
+	NSArray* _deletedElements;
+	NSArray* _modifiedElements;
+	NSArray* _insertedHeadlines;
+	NSArray* _deletedHeadlines;
+	NSArray* _modifiedHeadlines;
+
+}
+
+@property (nonatomic,copy,readonly) NSString * groupIdentifier;               //@synthesize groupIdentifier=_groupIdentifier - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * insertedElements;               //@synthesize insertedElements=_insertedElements - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * deletedElements;                //@synthesize deletedElements=_deletedElements - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * modifiedElements;               //@synthesize modifiedElements=_modifiedElements - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * insertedHeadlines;              //@synthesize insertedHeadlines=_insertedHeadlines - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * deletedHeadlines;               //@synthesize deletedHeadlines=_deletedHeadlines - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * modifiedHeadlines;              //@synthesize modifiedHeadlines=_modifiedHeadlines - In the implementation block
+@property (nonatomic,readonly) BOOL isEmpty; 
+-(NSArray *)modifiedHeadlines;
+-(NSString *)groupIdentifier;
+-(id)init;
+-(NSArray *)insertedHeadlines;
+-(NSArray *)deletedHeadlines;
+-(NSArray *)deletedElements;
+-(NSArray *)modifiedElements;
+-(BOOL)isEmpty;
+-(NSArray *)insertedElements;
+-(id)initWithGroupIdentifier:(id)arg1 insertedElements:(id)arg2 deletedElements:(id)arg3 modifiedElements:(id)arg4 ;
+@end
+

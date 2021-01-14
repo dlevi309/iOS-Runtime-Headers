@@ -1,0 +1,72 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:06 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AACCore.framework/AACCore
+*/
+
+
+@protocol AEPreferences <NSObject>
+@property (assign,nonatomic) BOOL enterSandbox; 
+@property (assign,nonatomic) BOOL presentShields; 
+@property (assign,nonatomic) BOOL createAssessmentFile; 
+@property (assign,nonatomic) BOOL disableSiri; 
+@property (assign,nonatomic) BOOL disableContinuity; 
+@property (assign,nonatomic) BOOL scrubPasteboard; 
+@property (assign,nonatomic) BOOL restrictNetworkAccess; 
+@property (assign,nonatomic) BOOL stopAirPlayBeforehand; 
+@property (assign,nonatomic) BOOL restrictFrontmostApp; 
+@property (assign,nonatomic) BOOL pauseMedia; 
+@property (assign,nonatomic) BOOL restrictContentCapture; 
+@property (assign,nonatomic) BOOL disableTrackpadLookup; 
+@required
+-(void)setEnterSandbox:(BOOL)arg1;
+-(void)setEnterSandbox:(BOOL)arg1;
+-(void)setDisableContinuity:(BOOL)arg1;
+-(void)setDisableContinuity:(BOOL)arg1;
+-(BOOL)shouldDisableSiri;
+-(BOOL)shouldDisableSiri;
+-(BOOL)shouldEnterSandbox;
+-(BOOL)shouldEnterSandbox;
+-(BOOL)shouldPresentShields;
+-(BOOL)shouldPresentShields;
+-(void)setPresentShields:(BOOL)arg1;
+-(void)setPresentShields:(BOOL)arg1;
+-(BOOL)shouldCreateAssessmentFile;
+-(BOOL)shouldCreateAssessmentFile;
+-(void)setCreateAssessmentFile:(BOOL)arg1;
+-(void)setCreateAssessmentFile:(BOOL)arg1;
+-(void)setDisableSiri:(BOOL)arg1;
+-(void)setDisableSiri:(BOOL)arg1;
+-(BOOL)shouldDisableContinuity;
+-(BOOL)shouldDisableContinuity;
+-(BOOL)shouldScrubPasteboard;
+-(BOOL)shouldScrubPasteboard;
+-(void)setScrubPasteboard:(BOOL)arg1;
+-(void)setScrubPasteboard:(BOOL)arg1;
+-(BOOL)shouldRestrictNetworkAccess;
+-(BOOL)shouldRestrictNetworkAccess;
+-(void)setRestrictNetworkAccess:(BOOL)arg1;
+-(void)setRestrictNetworkAccess:(BOOL)arg1;
+-(BOOL)shouldStopAirplayBeforehand;
+-(BOOL)shouldStopAirplayBeforehand;
+-(void)setStopAirPlayBeforehand:(BOOL)arg1;
+-(void)setStopAirPlayBeforehand:(BOOL)arg1;
+-(BOOL)shouldRestrictFrontmostApp;
+-(BOOL)shouldRestrictFrontmostApp;
+-(void)setRestrictFrontmostApp:(BOOL)arg1;
+-(void)setRestrictFrontmostApp:(BOOL)arg1;
+-(BOOL)shouldPauseMedia;
+-(BOOL)shouldPauseMedia;
+-(void)setPauseMedia:(BOOL)arg1;
+-(void)setPauseMedia:(BOOL)arg1;
+-(BOOL)shouldRestrictContentCapture;
+-(BOOL)shouldRestrictContentCapture;
+-(void)setRestrictContentCapture:(BOOL)arg1;
+-(void)setRestrictContentCapture:(BOOL)arg1;
+-(BOOL)shouldDisableTrackpadLookup;
+-(BOOL)shouldDisableTrackpadLookup;
+-(void)setDisableTrackpadLookup:(BOOL)arg1;
+-(void)setDisableTrackpadLookup:(BOOL)arg1;
+
+@end
+

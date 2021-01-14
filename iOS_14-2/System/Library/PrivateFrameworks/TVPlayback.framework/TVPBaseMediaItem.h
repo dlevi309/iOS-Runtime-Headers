@@ -1,0 +1,38 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:37 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/TVPlayback.framework/TVPlayback
+*/
+
+#import <TVPlayback/TVPMediaItem.h>
+
+@class NSMutableDictionary, NSString;
+
+@interface TVPBaseMediaItem : NSObject <TVPMediaItem> {
+
+	NSMutableDictionary* _metadataDictionary;
+	NSMutableDictionary* _transactionDictionary;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(NSString *)description;
+-(id)mediaItemMetadataForProperty:(id)arg1 ;
+-(void)setMediaItemMetadata:(id)arg1 forProperty:(id)arg2 ;
+-(void)performMediaItemMetadataTransactionWithBlock:(/*^block*/id)arg1 ;
+-(id)mediaItemURL;
+-(BOOL)hasTrait:(id)arg1 ;
+-(BOOL)isEqualToMediaItem:(id)arg1 ;
+-(void)updateBookmarkWithSuggestedTime:(double)arg1 forElapsedTime:(double)arg2 duration:(double)arg3 playbackOfMediaItemIsEnding:(BOOL)arg4 ;
+-(void)updatePlayCountForElapsedTime:(double)arg1 duration:(double)arg2 ;
+-(id)reportingDelegate;
+-(void)_setMetadata:(id)arg1 forProperty:(id)arg2 postNotification:(BOOL)arg3 ;
+-(void)_postMetadataWillChangeNotificationWithMetadataProperties:(id)arg1 ;
+-(void)_postMetadataDidChangeNotificationWithMetadataProperties:(id)arg1 ;
+-(void)removeMediaItemMetadataForProperty:(id)arg1 ;
+@end
+

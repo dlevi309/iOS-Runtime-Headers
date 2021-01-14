@@ -1,0 +1,36 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit
+*/
+
+
+@protocol WFTimerHandler, OS_dispatch_source, OS_dispatch_queue;
+@class NSObject;
+
+@interface WFTimer : NSObject {
+
+	id<WFTimerHandler> _handler;
+	double _duration;
+	NSObject*<OS_dispatch_source> _timeoutTimer;
+	NSObject*<OS_dispatch_queue> _timerQueue;
+
+}
+
+@property (nonatomic,retain) NSObject*<OS_dispatch_source> timeoutTimer;              //@synthesize timeoutTimer=_timeoutTimer - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> timerQueue;                 //@synthesize timerQueue=_timerQueue - In the implementation block
+@property (nonatomic,__weak,readonly) id<WFTimerHandler> handler;                     //@synthesize handler=_handler - In the implementation block
+@property (nonatomic,readonly) double duration;                                       //@synthesize duration=_duration - In the implementation block
+-(void)restart;
+-(void)start;
+-(NSObject*<OS_dispatch_source>)timeoutTimer;
+-(void)setTimeoutTimer:(NSObject*<OS_dispatch_source>)arg1 ;
+-(NSObject*<OS_dispatch_queue>)timerQueue;
+-(id<WFTimerHandler>)handler;
+-(double)duration;
+-(void)cancel;
+-(void)setTimerQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(id)initWithHandler:(id)arg1 duration:(double)arg2 ;
+-(BOOL)shouldHaveTimeout;
+@end
+

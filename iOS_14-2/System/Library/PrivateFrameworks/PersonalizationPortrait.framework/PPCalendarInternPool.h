@@ -1,0 +1,19 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:38 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PersonalizationPortrait.framework/PersonalizationPortrait
+*/
+
+
+@class _PASLock;
+
+@interface PPCalendarInternPool : NSObject {
+
+	_PASLock* _poolLock;
+
+}
+-(id)init;
+-(id)internedCalendarWithEKCalendar:(id)arg1 ;
+-(void)clearPool;
+@end
+

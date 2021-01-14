@@ -1,0 +1,52 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WiFiKit.framework/WiFiKit
+*/
+
+
+@class NSString;
+
+@interface WFDetailContextPrivateAddressConfig : NSObject {
+
+	BOOL _randomMACAddressDisabled;
+	BOOL _randomMACAddressConfigurable;
+	BOOL _randomMACFeatureEnabled;
+	BOOL _connectedWithHardwareAddress;
+	BOOL _alwaysDisplayRandomAddress;
+	BOOL _randomMACSwitchOn;
+	BOOL _enabledForSecuredNetworks;
+	NSString* _randomMACAddress;
+	NSString* _hardwareMACAddress;
+
+}
+
+@property (assign,getter=isRandomMACAddressDisabled,nonatomic) BOOL randomMACAddressDisabled;                      //@synthesize randomMACAddressDisabled=_randomMACAddressDisabled - In the implementation block
+@property (assign,getter=isRandomMACAddressConfigurable,nonatomic) BOOL randomMACAddressConfigurable;              //@synthesize randomMACAddressConfigurable=_randomMACAddressConfigurable - In the implementation block
+@property (assign,getter=isRandomMACFeatureEnabled,nonatomic) BOOL randomMACFeatureEnabled;                        //@synthesize randomMACFeatureEnabled=_randomMACFeatureEnabled - In the implementation block
+@property (assign,getter=isRandomMACSwitchOn,nonatomic) BOOL randomMACSwitchOn;                                    //@synthesize randomMACSwitchOn=_randomMACSwitchOn - In the implementation block
+@property (nonatomic,copy) NSString * randomMACAddress;                                                            //@synthesize randomMACAddress=_randomMACAddress - In the implementation block
+@property (nonatomic,copy) NSString * hardwareMACAddress;                                                          //@synthesize hardwareMACAddress=_hardwareMACAddress - In the implementation block
+@property (assign,getter=isEnabledForSecuredNetworks,nonatomic) BOOL enabledForSecuredNetworks;                    //@synthesize enabledForSecuredNetworks=_enabledForSecuredNetworks - In the implementation block
+@property (assign,getter=isConnectedWithHardwareAddress,nonatomic) BOOL connectedWithHardwareAddress;              //@synthesize connectedWithHardwareAddress=_connectedWithHardwareAddress - In the implementation block
+@property (getter=isAlwaysDisplayRandomAddress,nonatomic,readonly) BOOL alwaysDisplayRandomAddress;                //@synthesize alwaysDisplayRandomAddress=_alwaysDisplayRandomAddress - In the implementation block
+-(void)setRandomMACAddress:(NSString *)arg1 ;
+-(void)setRandomMACFeatureEnabled:(BOOL)arg1 ;
+-(NSString *)hardwareMACAddress;
+-(NSString *)randomMACAddress;
+-(id)initWithRandomMACAddress:(id)arg1 hardwareMACAddress:(id)arg2 randomMACSwitchOn:(BOOL)arg3 randomMACFeatureEnabled:(BOOL)arg4 randomMACAddressConfigurable:(BOOL)arg5 enabledForSecureNetworks:(BOOL)arg6 randomMACAddressDisabled:(BOOL)arg7 connectedWithHardwareAddress:(BOOL)arg8 ;
+-(void)setHardwareMACAddress:(NSString *)arg1 ;
+-(BOOL)isRandomMACFeatureEnabled;
+-(BOOL)isRandomMACAddressDisabled;
+-(BOOL)isRandomMACSwitchOn;
+-(BOOL)isConnectedWithHardwareAddress;
+-(BOOL)isEnabledForSecuredNetworks;
+-(BOOL)isRandomMACAddressConfigurable;
+-(void)setRandomMACAddressDisabled:(BOOL)arg1 ;
+-(void)setRandomMACSwitchOn:(BOOL)arg1 ;
+-(void)setConnectedWithHardwareAddress:(BOOL)arg1 ;
+-(void)setRandomMACAddressConfigurable:(BOOL)arg1 ;
+-(void)setEnabledForSecuredNetworks:(BOOL)arg1 ;
+-(BOOL)isAlwaysDisplayRandomAddress;
+@end
+

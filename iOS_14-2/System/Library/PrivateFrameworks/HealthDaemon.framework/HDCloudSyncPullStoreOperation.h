@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:17 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+#import <HealthDaemon/HealthDaemon-Structs.h>
+#import <HealthDaemon/HDCloudSyncOperation.h>
+
+@class CKServerChangeToken, HDCloudSyncTarget;
+
+@interface HDCloudSyncPullStoreOperation : HDCloudSyncOperation {
+
+	os_unfair_lock_s _lock;
+	CKServerChangeToken* _initialServerChangeToken;
+	BOOL _hasAppliedChange;
+	HDCloudSyncTarget* _target;
+
+}
+
+@property (nonatomic,readonly) BOOL hasAppliedChange;                   //@synthesize hasAppliedChange=_hasAppliedChange - In the implementation block
+@property (nonatomic,readonly) HDCloudSyncTarget * target;              //@synthesize target=_target - In the implementation block
+-(void)main;
+-(BOOL)finishWithSuccess:(BOOL)arg1 error:(id)arg2 ;
+-(HDCloudSyncTarget *)target;
+-(id)initWithConfiguration:(id)arg1 cloudState:(id)arg2 ;
+-(id)initWithConfiguration:(id)arg1 cloudState:(id)arg2 target:(id)arg3 ;
+-(BOOL)hasAppliedChange;
+-(BOOL)_resetPullState:(id)arg1 error:(id*)arg2 ;
+-(BOOL)_prepareForEpochChangeWithPersistedState:(id)arg1 error:(id*)arg2 ;
+-(long long)_requiresSyncWithError:(id*)arg1 ;
+-(id)persistedStoreState;
+-(void)_fetchChangeRecordsWithChangeToken:(id)arg1 ;
+-(BOOL)_isRelevantChangeRecord:(id)arg1 ;
+-(void)_updatePersistedServerChangeToken:(id)arg1 ;
+-(void)_fetchChangeRecordsOperationDidFinish:(id)arg1 initialChangeToken:(id)arg2 ;
+-(long long)_requiresSyncForSequence:(id)arg1 error:(id*)arg2 ;
+-(id)_orderedChangeRecordsBySequenceRecordIDWithFetchedChangeRecords:(id)arg1 ;
+-(id)_requiredRecordsWithOrderedChangeRecords:(id)arg1 sequenceRecord:(id)arg2 error:(id*)arg3 ;
+-(BOOL)_isValidAnchorRangeMap:(id)arg1 lastAnchorMap:(id)arg2 error:(id*)arg3 ;
+-(BOOL)_shouldApplyAnchorRangeMap:(id)arg1 receivedAnchorMap:(id)arg2 ;
+@end
+

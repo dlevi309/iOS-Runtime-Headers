@@ -1,0 +1,23 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:29:14 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/AccessibilityBundles/UIKit.axbundle/UIKit
+*/
+
+#import <UIKit/__UIPickerColumnViewAccessibility_super.h>
+
+@interface UIPickerColumnViewAccessibility : __UIPickerColumnViewAccessibility_super
++(id)safeCategoryTargetClassName;
++(void)_accessibilityPerformValidations:(id)arg1 ;
++(Class)safeCategoryBaseClass;
+-(id)_accessibilityNativeFocusPreferredElement;
+-(id)_viewToAddFocusLayer;
+-(BOOL)_accessibilityMoveFocusWithHeading:(unsigned long long)arg1 ;
+-(id)_accessibilityKeyCommands;
+-(id)accessibilityPath;
+-(void)_fkaScrollToPreviousRow;
+-(void)_fkaScrollToNextRow;
+-(void)_fkaMoveToPreviousColumn;
+-(void)_fkaMoveToNextColumn;
+@end
+

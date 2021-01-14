@@ -1,0 +1,60 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:48 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture
+*/
+
+#import <CMCapture/CMCapture-Structs.h>
+#import <CMCapture/BWDeferredContainerManagerBase.h>
+
+@protocol OS_dispatch_source, OS_dispatch_queue;
+@class NSObject, NSMutableArray, NSMutableDictionary;
+
+@interface BWDeferredCaptureContainerManager : BWDeferredContainerManagerBase {
+
+	unsigned _cacheSize;
+	unsigned _cacheResidencySeconds;
+	NSObject*<OS_dispatch_source> _cacheExpiryTimer;
+	NSMutableArray* _stagedContainers;
+	NSMutableArray* _inflightContainers;
+	NSMutableArray* _cachedContainers;
+	NSObject*<OS_dispatch_queue> _flushQueue;
+	NSObject*<OS_dispatch_queue> _flushQueueBackground;
+	unsigned long long _cachedLowDiskThresholdBytes;
+	NSMutableDictionary* _pools;
+
+}
++(id)sharedInstance;
+-(id)init;
+-(id)manifestsForApplicationID:(id)arg1 err:(int*)arg2 ;
+-(int)deleteContainerForApplicationID:(id)arg1 captureRequestIdentifier:(id)arg2 ;
+-(int)_queryLowDiskThresholds:(unsigned long long*)arg1 veryLowDiskThresholdBytes:(unsigned long long*)arg2 ;
+-(id)_containerForCaptureRequestIdentifier:(id)arg1 array:(id)arg2 index:(unsigned long long*)arg3 ;
+-(BOOL)_removeContainerForCaptureRequestIdentifier:(id)arg1 array:(id)arg2 ;
+-(BOOL)_removeInflightContainerForCaptureRequestIdentifier:(id)arg1 ;
+-(int)_handleExpiryTimer;
+-(BOOL)_removeCachedContainerForCaptureRequestIdentifier:(id)arg1 ;
+-(void)_rescheduleCacheExpiryTimer;
+-(int)_flushContainer:(id)arg1 container:(id)arg2 ;
+-(int)addBufferPool:(id)arg1 ;
+-(CVBufferRef)newPixelBuffer:(id)arg1 ;
+-(int)removeBufferPool:(id)arg1 ;
+-(void)flush:(id)arg1 toMinimumCapacity:(unsigned long long)arg2 ;
+-(id)_stagedContainerForCaptureRequestIdentifier:(id)arg1 ;
+-(BOOL)_removeStagedContainerForCaptureRequestIdentifier:(id)arg1 ;
+-(void)_updateCacheEntryForContainer:(id)arg1 release:(BOOL)arg2 ;
+-(id)_inflightContainerForCaptureRequestIdentifier:(id)arg1 ;
+-(int)_enumerateManifestsForApplicationID:(id)arg1 manifestArray:(id)arg2 deleteInvalidContainers:(BOOL)arg3 ;
+-(id)_cachedContainerForCaptureRequestIdentifier:(id)arg1 ;
+-(id)createCaptureContainerWithApplicationID:(id)arg1 captureRequestIdentifier:(id)arg2 err:(int*)arg3 ;
+-(int)addCaptureContainer:(id)arg1 ;
+-(id)lookupCaptureContainer:(id)arg1 ;
+-(int)commitContainer:(id)arg1 ;
+-(int)abortContainer:(id)arg1 error:(int)arg2 ;
+-(int)queryContainerStatusForApplicationID:(id)arg1 captureRequestIdentifier:(id)arg2 status:(int*)arg3 ;
+-(id)copyRemoteContainerForApplicationID:(id)arg1 captureRequestIdentifier:(id)arg2 err:(int*)arg3 ;
+-(int)releaseRemoteContainerForApplicationID:(id)arg1 captureRequestIdentifier:(id)arg2 ;
+-(void)_reportCoreAnalyticsDataWithError:(int)arg1 container:(id)arg2 ;
+-(BOOL)canDefer;
+@end
+

@@ -1,0 +1,94 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:58 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AccessibilitySharedSupport.framework/AccessibilitySharedSupport
+*/
+
+#import <libobjc.A.dylib/AXSSMotionTrackingCameraManagerDelegate.h>
+#import <libobjc.A.dylib/AXSSMotionTrackingVideoFileInputManagerDelegate.h>
+#import <libobjc.A.dylib/AXSSMotionTrackingHIDManagerDelegate.h>
+
+@protocol AXSSMotionTrackingInputManagerDelegate;
+@class AXSSMotionTrackingInputConfiguration, AXSSMotionTrackingInput, AXSSMotionTrackingCameraManager, NSMutableArray, AXSSMotionTrackingHIDManager, AXSSMotionTrackingVideoFileInputManager, NSArray, NSString;
+
+@interface AXSSMotionTrackingInputManager : NSObject <AXSSMotionTrackingCameraManagerDelegate, AXSSMotionTrackingVideoFileInputManagerDelegate, AXSSMotionTrackingHIDManagerDelegate> {
+
+	BOOL __monitoring;
+	AXSSMotionTrackingInputConfiguration* _configuration;
+	AXSSMotionTrackingInput* _inputToUse;
+	id<AXSSMotionTrackingInputManagerDelegate> _delegate;
+	AXSSMotionTrackingCameraManager* __cameraManager;
+	NSMutableArray* __compatibleCameraInputs;
+	NSMutableArray* __allCameraInputs;
+	AXSSMotionTrackingHIDManager* __hidManager;
+	NSMutableArray* __hidInputs;
+	AXSSMotionTrackingVideoFileInputManager* __videoFileInputManager;
+	NSMutableArray* __videoFileInputs;
+	NSMutableArray* __compatibleInputs;
+	NSMutableArray* __allInputs;
+
+}
+
+@property (assign,nonatomic) BOOL _monitoring;                                                              //@synthesize _monitoring=__monitoring - In the implementation block
+@property (nonatomic,retain) AXSSMotionTrackingCameraManager * _cameraManager;                              //@synthesize _cameraManager=__cameraManager - In the implementation block
+@property (nonatomic,retain) NSMutableArray * _compatibleCameraInputs;                                      //@synthesize _compatibleCameraInputs=__compatibleCameraInputs - In the implementation block
+@property (nonatomic,retain) NSMutableArray * _allCameraInputs;                                             //@synthesize _allCameraInputs=__allCameraInputs - In the implementation block
+@property (nonatomic,retain) AXSSMotionTrackingHIDManager * _hidManager;                                    //@synthesize _hidManager=__hidManager - In the implementation block
+@property (nonatomic,retain) NSMutableArray * _hidInputs;                                                   //@synthesize _hidInputs=__hidInputs - In the implementation block
+@property (nonatomic,readonly) BOOL _supportsHIDInputs; 
+@property (nonatomic,retain) AXSSMotionTrackingVideoFileInputManager * _videoFileInputManager;              //@synthesize _videoFileInputManager=__videoFileInputManager - In the implementation block
+@property (nonatomic,retain) NSMutableArray * _videoFileInputs;                                             //@synthesize _videoFileInputs=__videoFileInputs - In the implementation block
+@property (nonatomic,retain) AXSSMotionTrackingInput * inputToUse;                                          //@synthesize inputToUse=_inputToUse - In the implementation block
+@property (nonatomic,retain) NSMutableArray * _compatibleInputs;                                            //@synthesize _compatibleInputs=__compatibleInputs - In the implementation block
+@property (nonatomic,retain) NSMutableArray * _allInputs;                                                   //@synthesize _allInputs=__allInputs - In the implementation block
+@property (nonatomic,readonly) BOOL _supportsCameraInputs; 
+@property (nonatomic,copy) AXSSMotionTrackingInputConfiguration * configuration;                            //@synthesize configuration=_configuration - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * compatibleInputs; 
+@property (nonatomic,copy,readonly) NSArray * allInputs; 
+@property (assign,nonatomic,__weak) id<AXSSMotionTrackingInputManagerDelegate> delegate;                    //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)stopMonitoring;
+-(id<AXSSMotionTrackingInputManagerDelegate>)delegate;
+-(void)startMonitoring;
+-(id)initWithConfiguration:(id)arg1 ;
+-(AXSSMotionTrackingCameraManager *)_cameraManager;
+-(void)setDelegate:(id<AXSSMotionTrackingInputManagerDelegate>)arg1 ;
+-(AXSSMotionTrackingInputConfiguration *)configuration;
+-(AXSSMotionTrackingHIDManager *)_hidManager;
+-(BOOL)_monitoring;
+-(void)setConfiguration:(AXSSMotionTrackingInputConfiguration *)arg1 ;
+-(void)set_monitoring:(BOOL)arg1 ;
+-(void)motionTrackingVideoFileInputManager:(id)arg1 updatedVideoFileInputNames:(id)arg2 ;
+-(void)_updateMonitoring;
+-(void)_inputUpdated;
+-(AXSSMotionTrackingVideoFileInputManager *)_videoFileInputManager;
+-(BOOL)_supportsCameraInputs;
+-(NSMutableArray *)_allCameraInputs;
+-(NSMutableArray *)_compatibleCameraInputs;
+-(NSMutableArray *)_videoFileInputs;
+-(BOOL)_supportsHIDInputs;
+-(NSMutableArray *)_hidInputs;
+-(NSMutableArray *)_compatibleInputs;
+-(NSMutableArray *)_allInputs;
+-(BOOL)_supportsMotionTrackingType:(unsigned long long)arg1 ;
+-(NSArray *)compatibleInputs;
+-(NSArray *)allInputs;
+-(void)setInputToUse:(AXSSMotionTrackingInput *)arg1 ;
+-(id)_compatibleCameraInputMatchingCaptureDeviceUniqueID:(id)arg1 ;
+-(AXSSMotionTrackingInput *)inputToUse;
+-(void)motionTrackingCameraManager:(id)arg1 updatedCompatibleCaptureDevices:(id)arg2 ;
+-(void)motionTrackingHIDManager:(id)arg1 updatedDevices:(id)arg2 ;
+-(void)set_cameraManager:(AXSSMotionTrackingCameraManager *)arg1 ;
+-(void)set_compatibleCameraInputs:(NSMutableArray *)arg1 ;
+-(void)set_allCameraInputs:(NSMutableArray *)arg1 ;
+-(void)set_hidManager:(AXSSMotionTrackingHIDManager *)arg1 ;
+-(void)set_hidInputs:(NSMutableArray *)arg1 ;
+-(void)set_videoFileInputManager:(AXSSMotionTrackingVideoFileInputManager *)arg1 ;
+-(void)set_videoFileInputs:(NSMutableArray *)arg1 ;
+-(void)set_compatibleInputs:(NSMutableArray *)arg1 ;
+-(void)set_allInputs:(NSMutableArray *)arg1 ;
+@end
+

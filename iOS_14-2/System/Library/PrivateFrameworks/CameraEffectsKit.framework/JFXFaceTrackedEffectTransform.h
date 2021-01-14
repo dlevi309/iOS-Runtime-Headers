@@ -1,0 +1,42 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:23 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CameraEffectsKit.framework/CameraEffectsKit
+*/
+
+#import <CameraEffectsKit/CameraEffectsKit-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSDictionary;
+
+@interface JFXFaceTrackedEffectTransform : NSObject <NSCopying> {
+
+	NSDictionary* _effectParametersForOnFaceTracking;
+	NSDictionary* _effectParametersForOnBillboardTracking;
+	SCD_Struct_JF14 _cameraProjection;
+	SCD_Struct_JF14 _cameraTransform;
+	SCD_Struct_JF14 _billboardTransform;
+	SCD_Struct_JF14 _onFaceTransform;
+
+}
+
+@property (nonatomic,readonly) SCD_Struct_JF14 cameraProjection;                                   //@synthesize cameraProjection=_cameraProjection - In the implementation block
+@property (nonatomic,readonly) SCD_Struct_JF14 cameraTransform;                                    //@synthesize cameraTransform=_cameraTransform - In the implementation block
+@property (nonatomic,readonly) SCD_Struct_JF14 billboardTransform;                                 //@synthesize billboardTransform=_billboardTransform - In the implementation block
+@property (nonatomic,readonly) SCD_Struct_JF14 onFaceTransform;                                    //@synthesize onFaceTransform=_onFaceTransform - In the implementation block
+@property (nonatomic,readonly) NSDictionary * effectParametersForOnFaceTracking;                   //@synthesize effectParametersForOnFaceTracking=_effectParametersForOnFaceTracking - In the implementation block
+@property (nonatomic,readonly) NSDictionary * effectParametersForOnBillboardTracking;              //@synthesize effectParametersForOnBillboardTracking=_effectParametersForOnBillboardTracking - In the implementation block
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(SCD_Struct_JF14)cameraTransform;
+-(id)effectParametersForTrackingType:(long long)arg1 ;
+-(BOOL)isEqual:(id)arg1 forTrackingType:(long long)arg2 ;
+-(id)interpolateFromTrackingType:(long long)arg1 toTransform:(id)arg2 withTrackingType:(long long)arg3 fraction:(float)arg4 ;
+-(NSDictionary *)effectParametersForOnBillboardTracking;
+-(NSDictionary *)effectParametersForOnFaceTracking;
+-(SCD_Struct_JF14)billboardTransform;
+-(SCD_Struct_JF14)onFaceTransform;
+-(SCD_Struct_JF14)transformForTrackingType:(long long)arg1 ;
+-(SCD_Struct_JF14)cameraProjection;
+-(id)initWithCameraProjection:(SCD_Struct_JF14)arg1 cameraTransform:(SCD_Struct_JF14)arg2 onFaceTransform:(SCD_Struct_JF14)arg3 billboardTransform:(SCD_Struct_JF14)arg4 ;
+@end
+

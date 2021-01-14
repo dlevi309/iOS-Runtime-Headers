@@ -1,0 +1,275 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:35 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/HealthKit.framework/HealthKit
+*/
+
+#import <HealthKit/HealthKit-Structs.h>
+#import <libobjc.A.dylib/HKHealthStoreClientInterface.h>
+#import <libobjc.A.dylib/_HKXPCExportable.h>
+#import <libobjc.A.dylib/HKQueryDelegate.h>
+
+@protocol OS_dispatch_queue, HDHealthStoreServerInterface, _HKAuthorizationPresentationController, _HKDocumentPickerPresentationController;
+@class NSObject, _HKXPCConnection, NSBundle, NSString, HKProfileIdentifier, HKHealthServicesManager, NSMutableSet, HKHealthStoreIdentifier, NSSet;
+
+@interface HKHealthStore : NSObject <HKHealthStoreClientInterface, _HKXPCExportable, HKQueryDelegate> {
+
+	os_unfair_lock_s _lock;
+	NSObject*<OS_dispatch_queue> _connectionQueue;
+	_HKXPCConnection* _healthdConnection;
+	NSBundle* _sourceBundle;
+	NSString* _sourceBundleIdentifier;
+	NSString* _debugIdentifier;
+	HKProfileIdentifier* _profileIdentifier;
+	unsigned _applicationSDKVersion;
+	id<HDHealthStoreServerInterface> _serverProxy;
+	id<_HKAuthorizationPresentationController> _authorizationPresentationController;
+	id<_HKDocumentPickerPresentationController> _documentPickerPresentationController;
+	/*^block*/id _authorizationDelegateTransactionErrorHandler;
+	HKHealthServicesManager* _healthServicesManager;
+	NSMutableSet* _queries;
+	BOOL _resumeRequired;
+	BOOL _resumed;
+	NSString* _writeAuthorizationUsageDescriptionOverride;
+	NSString* _readAuthorizationUsageDescriptionOverride;
+	NSString* _clinicalReadAuthorizationUsageDescriptionOverride;
+	NSString* _researchStudyUsageDescriptionOverride;
+	NSString* _daemonLaunchDarwinNotificationName;
+	NSObject*<OS_dispatch_queue> _clientQueue;
+	HKHealthStoreIdentifier* _identifier;
+
+}
+
+@property (nonatomic,copy,readonly) NSString * firstName; 
+@property (nonatomic,copy) NSString * writeAuthorizationUsageDescriptionOverride;                     //@synthesize writeAuthorizationUsageDescriptionOverride=_writeAuthorizationUsageDescriptionOverride - In the implementation block
+@property (nonatomic,copy) NSString * readAuthorizationUsageDescriptionOverride;                      //@synthesize readAuthorizationUsageDescriptionOverride=_readAuthorizationUsageDescriptionOverride - In the implementation block
+@property (nonatomic,copy) NSString * clinicalReadAuthorizationUsageDescriptionOverride;              //@synthesize clinicalReadAuthorizationUsageDescriptionOverride=_clinicalReadAuthorizationUsageDescriptionOverride - In the implementation block
+@property (nonatomic,copy) NSString * researchStudyUsageDescriptionOverride;                          //@synthesize researchStudyUsageDescriptionOverride=_researchStudyUsageDescriptionOverride - In the implementation block
+@property (nonatomic,copy) NSString * daemonLaunchDarwinNotificationName;                             //@synthesize daemonLaunchDarwinNotificationName=_daemonLaunchDarwinNotificationName - In the implementation block
+@property (nonatomic,readonly) HKHealthServicesManager * healthServicesManager; 
+@property (nonatomic,readonly) unsigned applicationSDKVersion; 
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> clientQueue;                              //@synthesize clientQueue=_clientQueue - In the implementation block
+@property (getter=_queries,copy,readonly) NSSet * queries; 
+@property (copy,readonly) HKHealthStoreIdentifier * identifier;                                       //@synthesize identifier=_identifier - In the implementation block
+@property (copy) HKProfileIdentifier * profileIdentifier; 
+@property (copy) NSString * sourceBundleIdentifier; 
+@property (retain) NSBundle * sourceBundle; 
+@property (copy) NSString * debugIdentifier; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)_applicationHasRunningWorkout;
++(BOOL)isHealthDataAvailable;
+-(HKProfileIdentifier *)profileIdentifier;
+-(NSObject*<OS_dispatch_queue>)clientQueue;
+-(/*^block*/id)_actionCompletionOnClientQueue:(/*^block*/id)arg1 ;
+-(void)_addQuery:(id)arg1 ;
+-(void)executeQuery:(id)arg1 ;
+-(void)dropEntitlement:(id)arg1 ;
+-(id)initWithListenerEndpoint:(id)arg1 ;
+-(void)_applicationWillResignActive:(id)arg1 ;
+-(void)hasSampleWithBundleIdentifier:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setProfileIdentifier:(HKProfileIdentifier *)arg1 ;
+-(NSString *)firstName;
+-(void)connectionInvalidated;
+-(unsigned)applicationSDKVersion;
+-(void)_applicationDidBecomeActive:(id)arg1 ;
+-(id)_queries;
+-(void)badgeHealthAppForEmergencyContactsConsolidationWithCompletion:(/*^block*/id)arg1 ;
+-(void)generateFakeDataForActivityType:(long long)arg1 minutes:(double)arg2 completion:(/*^block*/id)arg3 ;
+-(id)_userEnteredMenstrualPeriodLengthCharacteristicQuantityWithError:(id*)arg1 ;
+-(BOOL)_setCardioFitnessMedicationsUse:(unsigned long long)arg1 error:(id*)arg2 ;
+-(void)_validateAuthorizationRequestWithShareTypes:(id)arg1 readTypes:(id)arg2 ;
+-(void)addSamples:(id)arg1 toWorkout:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(NSString *)sourceBundleIdentifier;
+-(void)updateMedicalIDData:(id)arg1 ;
+-(BOOL)_setWheelchairUse:(long long)arg1 error:(id*)arg2 ;
+-(void)associateSampleUUIDs:(id)arg1 withSampleUUID:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(id)_cardioFitnessMedicationsUseWithError:(id*)arg1 ;
+-(NSBundle *)sourceBundle;
+-(void)startWatchAppWithWorkoutConfiguration:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setSourceBundleIdentifier:(NSString *)arg1 ;
+-(id)earliestPermittedSampleDate;
+-(id)init;
+-(NSString *)debugIdentifier;
+-(void)setDaemonLaunchDarwinNotificationName:(NSString *)arg1 ;
+-(void)clientRemote_unitPreferencesDidUpdate;
+-(void)forceCloudSyncWithOptions:(unsigned long long)arg1 completion:(/*^block*/id)arg2 ;
+-(id)_userEnteredMenstrualCycleLengthCharacteristicQuantityWithError:(id*)arg1 ;
+-(id)dateOfBirthComponentsWithError:(id*)arg1 ;
+-(void)_fetchBoolDaemonPreferenceForKey:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)stopQuery:(id)arg1 ;
+-(void)unregisterPeripheralIdentifier:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)saveObject:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)profileIdentifierForNRDeviceUUID:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)exportedInterface;
+-(void)setSourceBundle:(NSBundle *)arg1 ;
+-(void)resetNanoSyncWithCompletion:(/*^block*/id)arg1 ;
+-(void)startHealthServiceDiscovery:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(void)healthPeripheralsWithFilter:(unsigned long long)arg1 handler:(/*^block*/id)arg2 ;
+-(void)saveObjects:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(BOOL)_setActivityMoveMode:(long long)arg1 error:(id*)arg2 ;
+-(void)_shouldGenerateDemoDataPreferenceIsSet:(/*^block*/id)arg1 ;
+-(void)deleteMedicalIDData;
+-(void)deleteObject:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)disableAllBackgroundDeliveryWithCompletion:(/*^block*/id)arg1 ;
+-(void)endWorkoutSession:(id)arg1 ;
+-(BOOL)_setBiologicalSex:(long long)arg1 error:(id*)arg2 ;
+-(void)clientRemote_presentAuthorizationWithRequestRecord:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_setPreferredUnit:(id)arg1 forType:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(id)_clinicalAuthorizationPresentationRequestForRecord:(id)arg1 ;
+-(id)_characteristicForDataType:(id)arg1 error:(id*)arg2 ;
+-(void)connectionInterrupted;
+-(void)deleteAllSamplesWithTypes:(id)arg1 sourceBundleIdentifier:(id)arg2 options:(unsigned long long)arg3 completion:(/*^block*/id)arg4 ;
+-(void)_throwIfAuthorizationDisallowedForSharing:(BOOL)arg1 types:(id)arg2 ;
+-(id)remoteInterface;
+-(void)disableBackgroundDeliveryForType:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)_removePreferredUnitForType:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(/*^block*/id)_objectCompletionOnClientQueue:(/*^block*/id)arg1 ;
+-(void)_generatePauseOrResumeRequest:(/*^block*/id)arg1 ;
+-(void)saveObjects:(id)arg1 deleteObjects:(id)arg2 associations:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)deleteObjectsOfType:(id)arg1 predicate:(id)arg2 options:(unsigned long long)arg3 withCompletion:(/*^block*/id)arg4 ;
+-(void)fetchCloudSyncRequiredWithCompletion:(/*^block*/id)arg1 ;
+-(void)setServerURL:(id)arg1 forAssetType:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(BOOL)supportsHealthRecords;
+-(id)_sourceBundleOrDefaultBundle;
+-(void)_currentValueForQuantityTypeCode:(long long)arg1 characteristicTypeCode:(long long)arg2 beforeDate:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)_validateHealthDataPurposeStringsForSharingTypes:(id)arg1 readingTypes:(id)arg2 isResearchStudy:(BOOL)arg3 ;
+-(void)fetchMedicalIDDataCreateIfNecessary:(BOOL)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(id)wheelchairUseWithError:(id*)arg1 ;
+-(id)bloodTypeWithError:(id*)arg1 ;
+-(void)badgeForDomain:(long long)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setBadge:(id)arg1 forDomain:(long long)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_faultIfInnappropriateHost;
+-(void)_calculateBMRForDate:(id)arg1 useEndOfDay:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)queryDidFinishExecuting:(id)arg1 ;
+-(void)postNotificationWithRequest:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)_initWithIdentifier:(id)arg1 ;
+-(id)_leanBodyMassCharacteristicQuantityWithError:(id*)arg1 ;
+-(void)_sendNextObjectBatch:(id)arg1 lastRange:(NSRange)arg2 server:(id)arg3 transaction:(id)arg4 completion:(/*^block*/id)arg5 ;
+-(void)_deleteObjects:(id)arg1 options:(unsigned long long)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_fetchDaemonPreferenceForKey:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_throwIfParentTypeNotRequestedForSharing:(BOOL)arg1 types:(id)arg2 ;
+-(void)_validatePurposeStringsForSharingTypes:(id)arg1 readingTypes:(id)arg2 ;
+-(void)invalidateActivityAlertSuppressionForIdentifier:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(BOOL)_setUserEnteredMenstrualCycleLengthCharacteristicQuantity:(id)arg1 error:(id*)arg2 ;
+-(id)_researchStudyUsageDescription;
+-(void)waitForLastChanceSyncWithDevicePairingID:(id)arg1 timeout:(double)arg2 completion:(/*^block*/id)arg3 ;
+-(BOOL)_setBloodType:(long long)arg1 error:(id*)arg2 ;
+-(void)endHealthServiceSession:(id)arg1 ;
+-(NSString *)readAuthorizationUsageDescriptionOverride;
+-(BOOL)_setBodyMassCharacteristicQuantity:(id)arg1 error:(id*)arg2 ;
+-(void)_connectionQueue_setUpWithEndpoint:(id)arg1 ;
+-(void)getHealthLiteValueForKey:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)_clientWriteAuthorizationUsageDescription;
+-(id)activityMoveModeWithError:(id*)arg1 ;
+-(void)forceCloudSyncDataUploadForProfileWithCompletion:(/*^block*/id)arg1 ;
+-(void)setHealthLiteValue:(id)arg1 forKey:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)clientRemote_presentAuthorizationWithSession:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(long long)authorizationStatusForType:(id)arg1 ;
+-(void)_removeQuery:(id)arg1 ;
+-(void)_firstPartyWorkoutSnapshotWithCompletion:(/*^block*/id)arg1 ;
+-(void)forceNanoSyncWithOptions:(unsigned long long)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_currentWorkoutSnapshotWithCompletion:(/*^block*/id)arg1 ;
+-(id)_healthDataAuthorizationPresentationRequestForRecord:(id)arg1 ;
+-(void)deleteObjectsWithUUIDs:(id)arg1 options:(unsigned long long)arg2 completion:(/*^block*/id)arg3 ;
+-(void)deleteObjectsOfType:(id)arg1 predicate:(id)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(void)handleAuthorizationForExtensionWithCompletion:(/*^block*/id)arg1 ;
+-(BOOL)_setLeanBodyMassCharacteristicQuantity:(id)arg1 error:(id*)arg2 ;
+-(void)addHealthServicePairing:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)postCompanionUserNotificationOfType:(long long)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_setBackgroundDeliveryFrequencyDataType:(id)arg1 frequency:(long long)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(void)_validateClinicalHealthRecordsPurposeStringsForSharingTypes:(id)arg1 readingTypes:(id)arg2 ;
+-(BOOL)_setFitzpatrickSkinType:(long long)arg1 error:(id*)arg2 ;
+-(void)beginAuthorizationDelegateTransactionWithSessionIdentifier:(id)arg1 sourceHandler:(/*^block*/id)arg2 errorHandler:(/*^block*/id)arg3 ;
+-(id)_clientReadAuthorizationUsageDescription;
+-(void)splitTotalEnergy:(id)arg1 startDate:(id)arg2 endDate:(id)arg3 resultsHandler:(/*^block*/id)arg4 ;
+-(void)getHealthDirectorySizeInBytesWithCompletion:(/*^block*/id)arg1 ;
+-(void)_setConfigurationPropertyUsingBlock:(/*^block*/id)arg1 ;
+-(void)deleteClientSourceWithCompletion:(/*^block*/id)arg1 ;
+-(BOOL)_setDateOfBirthComponents:(id)arg1 error:(id*)arg2 ;
+-(void)pauseWorkoutSession:(id)arg1 ;
+-(void)requestAuthorizationToShareTypes:(id)arg1 readTypes:(id)arg2 shouldPrompt:(BOOL)arg3 completion:(/*^block*/id)arg4 ;
+-(void)setClinicalReadAuthorizationUsageDescriptionOverride:(NSString *)arg1 ;
+-(id)unitTest_replaceListenerEndpoint:(id)arg1 ;
+-(void)deleteSourceWithBundleIdentifier:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_saveObjects:(id)arg1 atomically:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)deleteObjects:(id)arg1 options:(unsigned long long)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(void)fetchTaskServerEndpointForIdentifier:(id)arg1 pluginURL:(id)arg2 taskUUID:(id)arg3 configuration:(id)arg4 endpointHandler:(/*^block*/id)arg5 errorHandler:(/*^block*/id)arg6 ;
+-(void)clientRemote_conceptIndexManagerDidBecomeQuiescentWithSamplesProcessedCount:(long long)arg1 ;
+-(void)updateMedicalIDData:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_validateAuthorizationRequiredTypes;
+-(void)unitTest_setApplicationSDKVersion:(unsigned)arg1 ;
+-(void)deleteMedicalIDDataWithCompletion:(/*^block*/id)arg1 ;
+-(void)forceNanoSyncWithPullRequest:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setDebugIdentifier:(NSString *)arg1 ;
+-(void)healthServicePairingsWithHandler:(/*^block*/id)arg1 ;
+-(void)startWorkoutSession:(id)arg1 ;
+-(id)_bodyMassCharacteristicQuantityWithError:(id*)arg1 ;
+-(id)initWithListenerEndpoint:(id)arg1 debugIdentifier:(id)arg2 ;
+-(void)_throwIfClinicalTypesRequestedToShare:(id)arg1 ;
+-(NSString *)daemonLaunchDarwinNotificationName;
+-(NSString *)writeAuthorizationUsageDescriptionOverride;
+-(BOOL)_prepareObjectsForSaving:(id)arg1 errorOut:(id*)arg2 ;
+-(HKHealthStoreIdentifier *)identifier;
+-(void)resumeWorkoutSession:(id)arg1 ;
+-(void)enableBackgroundDeliveryForType:(id)arg1 frequency:(long long)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(id)_modificationDateForCharacteristicWithType:(id)arg1 error:(id*)arg2 ;
+-(void)endAuthorizationDelegateTransactionWithSessionIdentifier:(id)arg1 error:(id)arg2 ;
+-(id)_createFitnessMachineConnectionInitiator;
+-(void)recoverActiveWorkoutSessionWithCompletion:(/*^block*/id)arg1 ;
+-(void)fetchServerURLForAssetType:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)_clientClinicalReadAuthorizationUsageDescription;
+-(void)deleteObjects:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)_activeWorkoutApplicationIdentifierWithCompletion:(/*^block*/id)arg1 ;
+-(id)dateOfBirthWithError:(id*)arg1 ;
+-(void)endHealthServiceDiscovery:(id)arg1 ;
+-(void)requestAuthorizationToShareTypes:(id)arg1 readTypes:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_replaceWorkout:(id)arg1 withWorkout:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)forceCloudSyncWithOptions:(unsigned long long)arg1 reason:(long long)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_setDaemonPreferenceValue:(id)arg1 forKey:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_mostRecentQuantityOfType:(id)arg1 beforeDate:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(id)biologicalSexWithError:(id*)arg1 ;
+-(void)suppressActivityAlertsForIdentifier:(id)arg1 suppressionReason:(long long)arg2 timeoutUntilDate:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)fetchMedicalIDEmergencyContactsWithCompletion:(/*^block*/id)arg1 ;
+-(void)deleteObject:(id)arg1 options:(unsigned long long)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(void)preferredUnitsForQuantityTypes:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(HKHealthServicesManager *)healthServicesManager;
+-(void)_generateWorkoutMarkerWithCompletion:(/*^block*/id)arg1 ;
+-(void)_discardServerProxiesForServer:(id)arg1 ;
+-(void)setWriteAuthorizationUsageDescriptionOverride:(NSString *)arg1 ;
+-(void)executeQuery:(id)arg1 activationHandler:(/*^block*/id)arg2 ;
+-(void)fetchMedicalIDDataWithCompletion:(/*^block*/id)arg1 ;
+-(id)initWithIdentifier:(id)arg1 ;
+-(NSString *)researchStudyUsageDescriptionOverride;
+-(void)fetchNanoSyncPairedDevicesWithCompletion:(/*^block*/id)arg1 ;
+-(void)resume;
+-(NSString *)clinicalReadAuthorizationUsageDescriptionOverride;
+-(void)restoreEntitlement:(id)arg1 ;
+-(void)closeTransactionForType:(id)arg1 anchor:(id)arg2 ackTime:(id)arg3 query:(id)arg4 ;
+-(void)startHealthServiceSession:(id)arg1 withHandler:(/*^block*/id)arg2 ;
+-(void)_safeFetchDaemonPreferenceForKey:(id)arg1 expectedReturnClass:(Class)arg2 completion:(/*^block*/id)arg3 ;
+-(BOOL)_setCharacteristic:(id)arg1 forDataType:(id)arg2 error:(id*)arg3 ;
+-(void)getRequestStatusForAuthorizationToShareTypes:(id)arg1 readTypes:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(id)_activityMoveModeWithError:(id*)arg1 ;
+-(BOOL)_setHeightCharacteristicQuantity:(id)arg1 error:(id*)arg2 ;
+-(void)preferredUnitsForQuantityTypes:(id)arg1 version:(long long)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_serverProxyWithCompletion:(/*^block*/id)arg1 errorHandler:(/*^block*/id)arg2 ;
+-(id)fitzpatrickSkinTypeWithError:(id*)arg1 ;
+-(void)allSourcesWithCompletion:(/*^block*/id)arg1 ;
+-(void)dealloc;
+-(void)removeHealthServicePairing:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(id)_heightCharacteristicQuantityWithError:(id*)arg1 ;
+-(id)_createFitnessMachineConnection;
+-(void)registerPeripheralIdentifier:(id)arg1 name:(id)arg2 services:(id)arg3 withCompletion:(/*^block*/id)arg4 ;
+-(void)setReadAuthorizationUsageDescriptionOverride:(NSString *)arg1 ;
+-(void)setResearchStudyUsageDescriptionOverride:(NSString *)arg1 ;
+-(void)fetchPluginServiceEndpointForIdentifier:(id)arg1 endpointHandler:(/*^block*/id)arg2 errorHandler:(/*^block*/id)arg3 ;
+-(void)_closeTransactionWithType:(id)arg1 anchor:(id)arg2 ackTime:(id)arg3 ;
+-(void)disableCloudSyncAndDeleteAllCloudDataWithCompletion:(/*^block*/id)arg1 ;
+-(void)forceLastChanceNanoSyncWithCompletion:(/*^block*/id)arg1 ;
+-(void)_clientQueue_invokeAuthorizationDelegateTransactionErrorHandlerWithError:(id)arg1 ;
+-(BOOL)_setUserEnteredMenstrualPeriodLengthCharacteristicQuantity:(id)arg1 error:(id*)arg2 ;
+@end
+

@@ -1,0 +1,63 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:42 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WiFiPolicy.framework/WiFiPolicy
+*/
+
+
+@interface WiFiUsageLinkDataStats : NSObject {
+
+	unsigned long long _txBytes;
+	unsigned long long _rxBytes;
+	unsigned long long _txFrames;
+	unsigned long long _rxFrames;
+	unsigned long long _txFails;
+	unsigned long long _txRetries;
+	unsigned long long _rxRetries;
+	unsigned long long _rxGlitches;
+	unsigned long long _rxBadFcs;
+	unsigned long long _rxBadPlcp;
+	unsigned long long _txRate;
+	unsigned long long _rxRate;
+
+}
+
+@property (assign,nonatomic) unsigned long long txBytes;                 //@synthesize txBytes=_txBytes - In the implementation block
+@property (assign,nonatomic) unsigned long long rxBytes;                 //@synthesize rxBytes=_rxBytes - In the implementation block
+@property (assign,nonatomic) unsigned long long txFrames;                //@synthesize txFrames=_txFrames - In the implementation block
+@property (assign,nonatomic) unsigned long long rxFrames;                //@synthesize rxFrames=_rxFrames - In the implementation block
+@property (assign,nonatomic) unsigned long long txFails;                 //@synthesize txFails=_txFails - In the implementation block
+@property (assign,nonatomic) unsigned long long txRetries;               //@synthesize txRetries=_txRetries - In the implementation block
+@property (assign,nonatomic) unsigned long long rxRetries;               //@synthesize rxRetries=_rxRetries - In the implementation block
+@property (assign,nonatomic) unsigned long long rxGlitches;              //@synthesize rxGlitches=_rxGlitches - In the implementation block
+@property (assign,nonatomic) unsigned long long rxBadFcs;                //@synthesize rxBadFcs=_rxBadFcs - In the implementation block
+@property (assign,nonatomic) unsigned long long rxBadPlcp;               //@synthesize rxBadPlcp=_rxBadPlcp - In the implementation block
+@property (assign,nonatomic) unsigned long long txRate;                  //@synthesize txRate=_txRate - In the implementation block
+@property (assign,nonatomic) unsigned long long rxRate;                  //@synthesize rxRate=_rxRate - In the implementation block
++(id)dataStatsWithTxFrames:(unsigned long long)arg1 RxFrames:(unsigned long long)arg2 TxFails:(unsigned long long)arg3 TxRetries:(unsigned long long)arg4 RxRetries:(unsigned long long)arg5 RxGlitches:(unsigned long long)arg6 RxBadFcs:(unsigned long long)arg7 RxBadPlcp:(unsigned long long)arg8 TxRate:(unsigned long long)arg9 RxRate:(unsigned long long)arg10 ;
+-(unsigned long long)txRate;
+-(void)setTxBytes:(unsigned long long)arg1 ;
+-(unsigned long long)txBytes;
+-(unsigned long long)rxBytes;
+-(void)setRxBytes:(unsigned long long)arg1 ;
+-(unsigned long long)txFails;
+-(unsigned long long)rxRate;
+-(void)setTxRetries:(unsigned long long)arg1 ;
+-(void)setTxFails:(unsigned long long)arg1 ;
+-(void)setTxFrames:(unsigned long long)arg1 ;
+-(void)setRxRetries:(unsigned long long)arg1 ;
+-(void)setRxFrames:(unsigned long long)arg1 ;
+-(unsigned long long)txRetries;
+-(unsigned long long)txFrames;
+-(unsigned long long)rxRetries;
+-(unsigned long long)rxFrames;
+-(void)setRxGlitches:(unsigned long long)arg1 ;
+-(void)setRxBadFcs:(unsigned long long)arg1 ;
+-(void)setRxBadPlcp:(unsigned long long)arg1 ;
+-(void)setTxRate:(unsigned long long)arg1 ;
+-(void)setRxRate:(unsigned long long)arg1 ;
+-(unsigned long long)rxGlitches;
+-(unsigned long long)rxBadFcs;
+-(unsigned long long)rxBadPlcp;
+@end
+

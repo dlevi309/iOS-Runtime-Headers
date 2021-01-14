@@ -1,0 +1,78 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:23 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/Intents.framework/Intents
+*/
+
+#import <Intents/Intents-Structs.h>
+#import <libobjc.A.dylib/INJSONSerializable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class INSpeakerIDInfo, INAppIdentifier, NSNumber, NSString, INWholeHouseAudioMetadata;
+
+@interface INPrivateMediaIntentData : NSObject <INJSONSerializable, NSCopying, NSSecureCoding> {
+
+	INSpeakerIDInfo* _speakerIDInfo;
+	INAppIdentifier* _proxiedThirdPartyAppInfo;
+	NSNumber* _isAppAttributionRequired;
+	NSNumber* _useDialogMemoryForAttribution;
+	NSNumber* _isAppCorrection;
+	NSString* _fallbackUsername;
+	INWholeHouseAudioMetadata* _wholeHouseAudioMetadata;
+	NSNumber* _nlConfidenceScore;
+	long long _nlConfidenceLevel;
+	NSNumber* _asrConfidenceScore;
+	long long _asrConfidenceLevel;
+	NSString* _resolvedSharedUserID;
+
+}
+
+@property (nonatomic,copy) INAppIdentifier * proxiedThirdPartyAppInfo;                                //@synthesize proxiedThirdPartyAppInfo=_proxiedThirdPartyAppInfo - In the implementation block
+@property (nonatomic,copy) NSNumber * isAppAttributionRequired;                                       //@synthesize isAppAttributionRequired=_isAppAttributionRequired - In the implementation block
+@property (nonatomic,copy) NSNumber * useDialogMemoryForAttribution;                                  //@synthesize useDialogMemoryForAttribution=_useDialogMemoryForAttribution - In the implementation block
+@property (nonatomic,copy) NSString * fallbackUsername;                                               //@synthesize fallbackUsername=_fallbackUsername - In the implementation block
+@property (nonatomic,copy) NSString * resolvedSharedUserID;                                           //@synthesize resolvedSharedUserID=_resolvedSharedUserID - In the implementation block
+@property (nonatomic,copy,readonly) INSpeakerIDInfo * speakerIDInfo;                                  //@synthesize speakerIDInfo=_speakerIDInfo - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * isAppCorrection;                                       //@synthesize isAppCorrection=_isAppCorrection - In the implementation block
+@property (nonatomic,copy,readonly) INWholeHouseAudioMetadata * wholeHouseAudioMetadata;              //@synthesize wholeHouseAudioMetadata=_wholeHouseAudioMetadata - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * nlConfidenceScore;                                     //@synthesize nlConfidenceScore=_nlConfidenceScore - In the implementation block
+@property (nonatomic,readonly) long long nlConfidenceLevel;                                           //@synthesize nlConfidenceLevel=_nlConfidenceLevel - In the implementation block
+@property (nonatomic,copy,readonly) NSNumber * asrConfidenceScore;                                    //@synthesize asrConfidenceScore=_asrConfidenceScore - In the implementation block
+@property (nonatomic,readonly) long long asrConfidenceLevel;                                          //@synthesize asrConfidenceLevel=_asrConfidenceLevel - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)supportsSecureCoding;
++(id)_intents_decodeWithJSONDecoder:(id)arg1 codableDescription:(id)arg2 from:(id)arg3 ;
+-(id)descriptionAtIndent:(unsigned long long)arg1 ;
+-(id)initWithSpeakerIDInfo:(id)arg1 proxiedThirdPartyAppInfo:(id)arg2 isAppAttributionRequired:(id)arg3 useDialogMemoryForAttribution:(id)arg4 isAppCorrection:(id)arg5 fallbackUsername:(id)arg6 wholeHouseAudioMetadata:(id)arg7 nlConfidenceScore:(id)arg8 nlConfidenceLevel:(long long)arg9 asrConfidenceScore:(id)arg10 asrConfidenceLevel:(long long)arg11 ;
+-(id)initWithSpeakerIDInfo:(id)arg1 proxiedThirdPartyAppInfo:(id)arg2 isAppAttributionRequired:(id)arg3 useDialogMemoryForAttribution:(id)arg4 isAppCorrection:(id)arg5 fallbackUsername:(id)arg6 wholeHouseAudioMetadata:(id)arg7 nlConfidenceScore:(id)arg8 nlConfidenceLevel:(long long)arg9 asrConfidenceScore:(id)arg10 asrConfidenceLevel:(long long)arg11 resolvedSharedUserID:(id)arg12 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(INSpeakerIDInfo *)speakerIDInfo;
+-(long long)asrConfidenceLevel;
+-(NSNumber *)asrConfidenceScore;
+-(NSString *)fallbackUsername;
+-(NSNumber *)isAppCorrection;
+-(void)setFallbackUsername:(NSString *)arg1 ;
+-(NSNumber *)isAppAttributionRequired;
+-(void)setIsAppAttributionRequired:(NSNumber *)arg1 ;
+-(long long)nlConfidenceLevel;
+-(NSNumber *)nlConfidenceScore;
+-(INAppIdentifier *)proxiedThirdPartyAppInfo;
+-(void)setProxiedThirdPartyAppInfo:(INAppIdentifier *)arg1 ;
+-(NSString *)resolvedSharedUserID;
+-(void)setResolvedSharedUserID:(NSString *)arg1 ;
+-(NSNumber *)useDialogMemoryForAttribution;
+-(void)setUseDialogMemoryForAttribution:(NSNumber *)arg1 ;
+-(INWholeHouseAudioMetadata *)wholeHouseAudioMetadata;
+-(id)_dictionaryRepresentation;
+-(NSString *)description;
+-(unsigned long long)hash;
+-(id)initWithCoder:(id)arg1 ;
+-(id)_intents_encodeWithJSONEncoder:(id)arg1 codableDescription:(id)arg2 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+@end
+

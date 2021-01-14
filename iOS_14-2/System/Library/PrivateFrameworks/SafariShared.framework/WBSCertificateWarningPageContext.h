@@ -1,0 +1,48 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:14 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SafariShared.framework/SafariShared
+*/
+
+#import <SafariShared/SafariShared-Structs.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, NSURL;
+
+@interface WBSCertificateWarningPageContext : NSObject <NSSecureCoding> {
+
+	NSString* _expiredCertificateDescription;
+	BOOL _canGoBack;
+	NSURL* _failingURL;
+	long long _warningCategory;
+	long long _numberOfDaysInvalid;
+	double _clockSkew;
+
+}
+
+@property (nonatomic,readonly) NSURL * failingURL;                                  //@synthesize failingURL=_failingURL - In the implementation block
+@property (nonatomic,readonly) long long warningCategory;                           //@synthesize warningCategory=_warningCategory - In the implementation block
+@property (nonatomic,readonly) BOOL canGoBack;                                      //@synthesize canGoBack=_canGoBack - In the implementation block
+@property (nonatomic,readonly) long long numberOfDaysInvalid;                       //@synthesize numberOfDaysInvalid=_numberOfDaysInvalid - In the implementation block
+@property (nonatomic,readonly) NSString * expiredCerticateDescription; 
+@property (nonatomic,readonly) double clockSkew;                                    //@synthesize clockSkew=_clockSkew - In the implementation block
++(BOOL)supportsSecureCoding;
++(long long)certificateWarningCategoryForError:(id)arg1 trustIncludesRevokedCertificate:(BOOL)arg2 clockSkew:(double)arg3 ;
++(long long)numberOfDaysBetweenCertificateValidityRangeAndNow:(id)arg1 ;
++(BOOL)certificateWarningCannotBeBypassedForTrust:(SecTrustRef)arg1 ;
++(id)permanentAcceptanceConfirmationTitle;
++(id)permanentAcceptanceConfirmationDescription;
++(id)permanentAcceptanceConfirmationButtonTitle;
+-(id)init;
+-(id)initLegacyTLSWarningWithFailingURL:(id)arg1 canGoBack:(BOOL)arg2 ;
+-(BOOL)canGoBack;
+-(void)encodeWithCoder:(id)arg1 ;
+-(double)clockSkew;
+-(NSURL *)failingURL;
+-(id)initWithCoder:(id)arg1 ;
+-(NSString *)expiredCerticateDescription;
+-(id)initWithWarningCategory:(long long)arg1 failingURL:(id)arg2 numberOfDaysInvalid:(long long)arg3 canGoBack:(BOOL)arg4 clockSkew:(double)arg5 ;
+-(long long)warningCategory;
+-(long long)numberOfDaysInvalid;
+@end
+

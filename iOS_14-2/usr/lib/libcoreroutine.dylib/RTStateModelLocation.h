@@ -1,0 +1,44 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:24 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /usr/lib/libcoreroutine.dylib
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@interface RTStateModelLocation : NSObject <NSSecureCoding> {
+
+	double _Latitude_deg;
+	double _Longitude_deg;
+	double _uncertainty_m;
+	double _confidence;
+	double _timestamp_s;
+
+}
+
+@property (assign,nonatomic) double Latitude_deg;               //@synthesize Latitude_deg=_Latitude_deg - In the implementation block
+@property (assign,nonatomic) double Longitude_deg;              //@synthesize Longitude_deg=_Longitude_deg - In the implementation block
+@property (assign,nonatomic) double uncertainty_m;              //@synthesize uncertainty_m=_uncertainty_m - In the implementation block
+@property (assign,nonatomic) double confidence;                 //@synthesize confidence=_confidence - In the implementation block
+@property (assign,nonatomic) double timestamp_s;                //@synthesize timestamp_s=_timestamp_s - In the implementation block
++(BOOL)supportsSecureCoding;
+-(double)confidence;
+-(id)initWithRTLocation:(id)arg1 ;
+-(id)init;
+-(void)setTimestamp_s:(double)arg1 ;
+-(id)initWithLat:(double)arg1 Lon:(double)arg2 Uncertainty:(double)arg3 confidence:(double)arg4 andTimestamp_s:(double)arg5 ;
+-(double)Latitude_deg;
+-(void)encodeWithCoder:(id)arg1 ;
+-(void)setUncertainty_m:(double)arg1 ;
+-(id)description;
+-(void)setConfidence:(double)arg1 ;
+-(double)timestamp_s;
+-(void)setLatitude_deg:(double)arg1 ;
+-(double)Longitude_deg;
+-(void)setLongitude_deg:(double)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)initWithLatitude:(double)arg1 longitude:(double)arg2 uncertainty:(double)arg3 ;
+-(id)initWithCLLocation:(id)arg1 ;
+-(double)uncertainty_m;
+@end
+

@@ -1,0 +1,144 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:29:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/AccessibilityBundles/UIKit.axbundle/UIKit
+*/
+
+#import <UIKit/UIKit-Structs.h>
+#import <UIKit/__UITableViewAccessibility_super.h>
+
+@interface UITableViewAccessibility : __UITableViewAccessibility_super
+
+@property (assign,setter=_accessibilitySetShouldConsiderSwipeDeletionCommitted:,nonatomic) BOOL _accessibilityShouldConsiderSwipeDeletionCommitted; 
++(id)safeCategoryTargetClassName;
++(void)_accessibilityPerformValidations:(id)arg1 ;
++(Class)safeCategoryBaseClass;
+-(BOOL)canBecomeFocused;
+-(id)accessibilityLabel;
+-(id)preferredFocusedView;
+-(void)_didUpdateFocusInContext:(id)arg1 withAnimationCoordinator:(id)arg2 ;
+-(id)preferredFocusEnvironments;
+-(void)_updateDropTargetAppearanceWithTargetIndexPath:(id)arg1 dropProposal:(id)arg2 dropSession:(id)arg3 ;
+-(BOOL)_accessibilityNativeFocusPreferredElementIsValid;
+-(BOOL)isAccessibilityElement;
+-(id)_accessibilityReusableViewForOpaqueElement:(id)arg1 ;
+-(id)_accessibilityHitTest:(CGPoint)arg1 withEvent:(id)arg2 ;
+-(BOOL)isAccessibilityOpaqueElementProvider;
+-(BOOL)_accessibilitySpeakThisShouldOnlyIncludeVisibleElements;
+-(BOOL)_accessibilityIsScannerGroup;
+-(id)_accessibilityScannerGroupElements;
+-(BOOL)shouldGroupAccessibilityChildren;
+-(id)_accessibilityViewChildrenWithOptions:(id)arg1 ;
+-(id)_accessibilityGroupIdentifier;
+-(id)_accessibilitySupplementaryHeaderViews;
+-(id)_accessibilitySupplementaryFooterViews;
+-(BOOL)accessibilityRespondsToUserInteraction;
+-(id)_accessibilitySubviews;
+-(void)insertRowsAtIndexPaths:(id)arg1 withRowAnimation:(long long)arg2 ;
+-(id)_accessibilityScrollStatus;
+-(void)reloadRowsAtIndexPaths:(id)arg1 withRowAnimation:(long long)arg2 ;
+-(void)deleteRowsAtIndexPaths:(id)arg1 withRowAnimation:(long long)arg2 ;
+-(void)_endReorderingForCell:(id)arg1 wasCancelled:(BOOL)arg2 animated:(BOOL)arg3 ;
+-(id)_accessibilityUserTestingChildren;
+-(unsigned long long)accessibilityTraits;
+-(BOOL)_accessibilityCanPerformEscapeAction;
+-(BOOL)_accessibilityScrollToFrame:(CGRect)arg1 forView:(id)arg2 ;
+-(id)description;
+-(id)_accessibilityFirstVisibleItem;
+-(void)reloadData;
+-(void)setEditing:(BOOL)arg1 animated:(BOOL)arg2 ;
+-(id)accessibilityElementAtIndex:(long long)arg1 ;
+-(long long)indexOfAccessibilityElement:(id)arg1 ;
+-(id)_accessibilityUserTestingVisibleCells;
+-(id)dequeueReusableCellWithIdentifier:(id)arg1 ;
+-(id)_accessibilityUserTestingVisibleSections;
+-(CGRect)accessibilityFrame;
+-(id)indexPathsForRowsInRect:(CGRect)arg1 ;
+-(long long)accessibilityElementCount;
+-(BOOL)accessibilityPerformEscape;
+-(void)insertSections:(id)arg1 withRowAnimation:(long long)arg2 ;
+-(void)reloadSections:(id)arg1 withRowAnimation:(long long)arg2 ;
+-(void)deleteSections:(id)arg1 withRowAnimation:(long long)arg2 ;
+-(id)dequeueReusableCellWithIdentifier:(id)arg1 forIndexPath:(id)arg2 ;
+-(void)setCountString:(id)arg1 ;
+-(void)_reuseTableViewSubview:(id)arg1 viewType:(int)arg2 ;
+-(id)_accessibilitySortedElementsWithin;
+-(BOOL)_accessibilityShouldIncludeArrowKeyCommandsForDirectionalFocusMovement;
+-(BOOL)_accessibilityDrawsFocusRingWhenChildrenFocused;
+-(id)_accessibilitySortedElementsWithinWithOptions:(id)arg1 ;
+-(void)_accessibilityOpaqueElementScrollCleanup;
+-(long long)accessibilityContainerType;
+-(BOOL)_accessibilityOpaqueElementScrollsContentIntoView;
+-(id)_accessibilityOpaqueHeaderElementInDirection:(long long)arg1 childElement:(id)arg2 ;
+-(id)_accessibilityHeaderElement;
+-(id)_accessibilityReorderMessageForNewIndexPath:(id)arg1 swappedWithRow:(long long)arg2 movingDown:(BOOL)arg3 ;
+-(void)setTableHeaderViewShouldAutoHide:(BOOL)arg1 ;
+-(BOOL)accessibilityScrollLeftPageSupported;
+-(BOOL)accessibilityScrollRightPageSupported;
+-(id)_childFocusRegionsInRect:(CGRect)arg1 inCoordinateSpace:(id)arg2 ;
+-(id)accessibilityElementForRow:(unsigned long long)arg1 andColumn:(unsigned long long)arg2 ;
+-(BOOL)_accessibilityKeyCommandsShouldOverrideKeyCommands;
+-(unsigned long long)_accessibilityAutomationType;
+-(void)_reorderPositionChangedForCell:(id)arg1 ;
+-(id)dequeueReusableHeaderFooterViewWithIdentifier:(id)arg1 ;
+-(id)_delegateViewForHeaderInSection:(long long)arg1 ;
+-(id)_delegateViewForFooterInSection:(long long)arg1 ;
+-(void)dealloc;
+-(BOOL)_swipeDeletionCommitted;
+-(void)_accessibilityClearChildren;
+-(id)_accessibilityInternalData;
+-(id)accessibilityCellForRowAtIndexPath:(id)arg1 ;
+-(BOOL)_accessibilityShouldDisableCellReuse;
+-(id)_accessibilityFuzzyHitTest:(CGPoint*)arg1 withEvent:(id)arg2 ;
+-(void)setReusableCellsEnabled:(BOOL)arg1 ;
+-(long long)_axNumberOfSections;
+-(id)_accessibilityUseOpaqueElements;
+-(BOOL)_automationPrefersRealElements;
+-(id)_axFirstLastOpaqueHeaderElementFromSection:(long long)arg1 options:(id)arg2 direction:(long long)arg3 ;
+-(id)_axFirstLastOpaqueHeaderElementInDirection:(long long)arg1 options:(id)arg2 ;
+-(id)_axOpaqueHeaderElementInDirection:(long long)arg1 withinElements:(id)arg2 startIndex:(unsigned long long)arg3 ;
+-(id)_axOffScreenOpaqueHeaderElementInDirection:(long long)arg1 options:(id)arg2 childElement:(id)arg3 ;
+-(BOOL)_accessibilityIsSearchTableVisible;
+-(id)_accessibilitySearchResultsTableView;
+-(id)_accessibilityFooterElement;
+-(id)_axAttemptStoryboard:(id)arg1 viewType:(int)arg2 ;
+-(id)_axAttemptCreationOfViewType:(int)arg1 identifier:(id)arg2 ;
+-(BOOL)_accessibilityShouldConsiderSwipeDeletionCommitted;
+-(void)_accessibilityInitializeInternalData;
+-(void)_axPostLayoutChange;
+-(BOOL)_accessibilitySearchTableViewVisible;
+-(BOOL)_accessibilitySearchControllerDimmingViewVisible;
+-(BOOL)_accessibilityHasAccessibleOrContainerSubviewWithSubviewTree:(id)arg1 ;
+-(BOOL)_accessibilityHasAccessibleOrContainerSubview;
+-(id)accessibilityTableViewCellElementAtGlobalRow:(long long)arg1 ;
+-(id)accessibilityTableViewSectionElementAtSection:(long long)arg1 isHeader:(BOOL)arg2 ;
+-(id)_accessibilityTableViewCellElementForIndexPath:(id)arg1 ;
+-(BOOL)_accessibilitySkipItemsInSectionList:(id)arg1 view:(id)arg2 ;
+-(BOOL)_accessibilityCheckForAlreadyExistingCellElementForCell:(id)arg1 inItems:(id)arg2 ;
+-(id)_accessibilityInternalDataRetrieveOnly;
+-(id)_accessibilitySortedElementsWithinPreservingFloatingHeader:(id)arg1 sortedElements:(id)arg2 ;
+-(id)accessibilityTableViewCellAccessibilityElementForTableViewCell:(id)arg1 ;
+-(long long)_accessibilitySwappedWithRowForInitialGlobalRow:(long long)arg1 oldGlobalRow:(long long)arg2 globalRow:(long long)arg3 ;
+-(BOOL)_accessibilityShouldVerifyTableViewCellsAreVisibleByHitTesting;
+-(id)_axVisibleHeadersAndFootersPriorToFirstVisibleCellSection:(long long)arg1 ;
+-(id)_axVisibleHeadersAndFootersAfterLastVisibleCellSection:(long long)arg1 ;
+-(id)_accessibilityLastFocusedChild;
+-(void)_axSetupIndexGuide;
+-(id)_axGetIndexGuide;
+-(void)_axSetIndexGuide:(id)arg1 ;
+-(void)_accessibilitySetUseOpaqueElements:(id)arg1 ;
+-(void)_accessibilitySetShouldConsiderSwipeDeletionCommitted:(BOOL)arg1 ;
+-(id)_accessibilityVisibleHeaderSections;
+-(void)_setAccessibilitySearchTableViewVisible;
+-(void)_setAccessibilitySearchTableViewHidden;
+-(void)_setAccessibilitySearchControllerDimmingViewVisible;
+-(void)_setAccessibilitySearchControllerDimmingViewHidden;
+-(long long)_accessibilityDefaultTableViewCellScrollPosition;
+-(void)accessibilityFindMockParentForTableViewCell:(id)arg1 ;
+-(id)_accessibilityUIScrollViewScrollStatus;
+-(BOOL)_axTableViewMightBeSidebar;
+-(BOOL)_accessibilityIsInMasterSplitViewController;
+-(id)_axPreviousSelectableIndexPathForIndexPath:(id)arg1 ;
+-(id)_axNextSelectableIndexPathForIndexPath:(id)arg1 ;
+@end
+

@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:38 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI
+*/
+
+#import <libobjc.A.dylib/MFMessageComposeViewControllerInternalDelegate.h>
+#import <libobjc.A.dylib/FAInviteConfigurationController.h>
+
+@protocol FAInviteControllerDelegate;
+@class MFMessageComposeViewController, LPLinkMetadata, UIViewController, NSArray, FAInviteContext, NSString;
+
+@interface FAMessagesInviteConfigurationController : NSObject <MFMessageComposeViewControllerInternalDelegate, FAInviteConfigurationController> {
+
+	MFMessageComposeViewController* _messageComposeViewController;
+	LPLinkMetadata* _linkMetadata;
+	UIViewController* _presentationContext;
+	NSArray* _recipientAddresses;
+	id<FAInviteControllerDelegate> _delegate;
+	FAInviteContext* _context;
+
+}
+
+@property (nonatomic,readonly) FAInviteContext * context;                                 //@synthesize context=_context - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (assign,nonatomic,__weak) id<FAInviteControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
++(BOOL)isAvailable;
+-(void)messageComposeViewController:(id)arg1 shouldSendMessage:(id)arg2 toRecipients:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(id<FAInviteControllerDelegate>)delegate;
+-(FAInviteContext *)context;
+-(void)setDelegate:(id<FAInviteControllerDelegate>)arg1 ;
+-(void)messageComposeViewController:(id)arg1 didFinishWithResult:(long long)arg2 ;
+-(id)_messageComposeViewController;
+-(void)_presentInviteControllerWithCompletion:(/*^block*/id)arg1 ;
+-(void)presentWhenReadyWithCompletion:(/*^block*/id)arg1 ;
+-(id)initWithInviteContext:(id)arg1 presentingController:(id)arg2 ;
+@end
+

@@ -1,0 +1,66 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:36 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PencilKit.framework/PencilKit
+*/
+
+#import <libobjc.A.dylib/CHQueryDelegate.h>
+#import <libobjc.A.dylib/CHRecognitionSessionDataSource.h>
+#import <libobjc.A.dylib/CHTextInputQueryTargetDataSource.h>
+#import <libobjc.A.dylib/PKTextInputDebugStateReporting.h>
+
+@protocol PKTextInputRecognitionManagerDataSource;
+@class NSArray, NSLocale, CHRecognitionSession, CHTextInputQuery, NSString;
+
+@interface PKTextInputRecognitionManager : NSObject <CHQueryDelegate, CHRecognitionSessionDataSource, CHTextInputQueryTargetDataSource, PKTextInputDebugStateReporting> {
+
+	BOOL _preferOutOfProcessRecognition;
+	NSLocale* _recognitionLocale;
+	id<PKTextInputRecognitionManagerDataSource> _currentDataSource;
+	CHRecognitionSession* __recognitionSession;
+	CHTextInputQuery* __textInputQuery;
+	double __beganRecognitionTimestamp;
+	double __lastRecognitionDuration;
+
+}
+
+@property (nonatomic,retain) id<PKTextInputRecognitionManagerDataSource> currentDataSource;              //@synthesize currentDataSource=_currentDataSource - In the implementation block
+@property (nonatomic,retain) CHRecognitionSession * _recognitionSession;                                 //@synthesize _recognitionSession=__recognitionSession - In the implementation block
+@property (nonatomic,retain) CHTextInputQuery * _textInputQuery;                                         //@synthesize _textInputQuery=__textInputQuery - In the implementation block
+@property (assign,nonatomic) double _beganRecognitionTimestamp;                                          //@synthesize _beganRecognitionTimestamp=__beganRecognitionTimestamp - In the implementation block
+@property (assign,nonatomic) double _lastRecognitionDuration;                                            //@synthesize _lastRecognitionDuration=__lastRecognitionDuration - In the implementation block
+@property (nonatomic,retain) NSLocale * recognitionLocale;                                               //@synthesize recognitionLocale=_recognitionLocale - In the implementation block
+@property (assign,nonatomic) BOOL preferOutOfProcessRecognition;                                         //@synthesize preferOutOfProcessRecognition=_preferOutOfProcessRecognition - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,copy,readonly) NSArray * textInputTargets; 
+-(id<PKTextInputRecognitionManagerDataSource>)currentDataSource;
+-(void)setCurrentDataSource:(id<PKTextInputRecognitionManagerDataSource>)arg1 ;
+-(void)dealloc;
+-(void)queryDidUpdateResult:(id)arg1 ;
+-(void)reportDebugStateDescription:(/*^block*/id)arg1 ;
+-(void)setRecognitionLocale:(NSLocale *)arg1 ;
+-(void)beginRecognitionRequestWithDataSource:(id)arg1 ;
+-(NSArray *)textInputTargets;
+-(void)_updateRecognitionSession;
+-(CHRecognitionSession *)_recognitionSession;
+-(CHTextInputQuery *)_textInputQuery;
+-(void)set_beganRecognitionTimestamp:(double)arg1 ;
+-(NSLocale *)recognitionLocale;
+-(void)set_recognitionSession:(CHRecognitionSession *)arg1 ;
+-(BOOL)preferOutOfProcessRecognition;
+-(void)_updateTextInputQuery;
+-(void)set_textInputQuery:(CHTextInputQuery *)arg1 ;
+-(void)_processQueryDidUpdateResult:(id)arg1 ;
+-(double)_beganRecognitionTimestamp;
+-(void)set_lastRecognitionDuration:(double)arg1 ;
+-(id)textInputTargetForItemStableIdentifier:(id)arg1 strokeIdentifiers:(id)arg2 simultaneousItemStableIdentifiers:(id)arg3 ;
+-(double)_lastRecognitionDuration;
+-(id)strokeProviderSnapshot;
+-(id)textInputTargetForItemStableIdentifier:(id)arg1 strokeIdentifiers:(id)arg2 ;
+-(void)fetchContentInfoForTextInputTarget:(id)arg1 strokeIdentifiers:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)setPreferOutOfProcessRecognition:(BOOL)arg1 ;
+@end
+

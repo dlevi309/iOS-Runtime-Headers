@@ -1,0 +1,52 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:52 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/WorkflowUI.framework/WorkflowUI
+*/
+
+#import <WorkflowUI/WorkflowUI-Structs.h>
+#import <UIKitCore/UICollectionViewCell.h>
+#import <UIKit/UIPointerInteractionDelegate.h>
+
+@class UIImageView, UILabel, WFActionDrawerCategoriesMetrics, NSArray, NSString;
+
+@interface WFActionDrawerCategoryCell : UICollectionViewCell <UIPointerInteractionDelegate> {
+
+	BOOL _shouldStackVertically;
+	UIImageView* _iconImageView;
+	UILabel* _titleLabel;
+	WFActionDrawerCategoriesMetrics* _metrics;
+	NSArray* _verticalStackConstraints;
+	NSArray* _horizontalStackConstraints;
+
+}
+
+@property (assign,nonatomic,__weak) UIImageView * iconImageView;                     //@synthesize iconImageView=_iconImageView - In the implementation block
+@property (assign,nonatomic,__weak) UILabel * titleLabel;                            //@synthesize titleLabel=_titleLabel - In the implementation block
+@property (nonatomic,retain) WFActionDrawerCategoriesMetrics * metrics;              //@synthesize metrics=_metrics - In the implementation block
+@property (nonatomic,retain) NSArray * verticalStackConstraints;                     //@synthesize verticalStackConstraints=_verticalStackConstraints - In the implementation block
+@property (nonatomic,retain) NSArray * horizontalStackConstraints;                   //@synthesize horizontalStackConstraints=_horizontalStackConstraints - In the implementation block
+@property (assign,nonatomic) BOOL shouldStackVertically;                             //@synthesize shouldStackVertically=_shouldStackVertically - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)setMetrics:(WFActionDrawerCategoriesMetrics *)arg1 ;
+-(UILabel *)titleLabel;
+-(UIImageView *)iconImageView;
+-(WFActionDrawerCategoriesMetrics *)metrics;
+-(void)setTitleLabel:(UILabel *)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(id)pointerInteraction:(id)arg1 styleForRegion:(id)arg2 ;
+-(void)prepareForReuse;
+-(void)setIconImageView:(UIImageView *)arg1 ;
+-(void)setShouldStackVertically:(BOOL)arg1 ;
+-(BOOL)shouldStackVertically;
+-(void)adjustStackingStyle;
+-(NSArray *)verticalStackConstraints;
+-(void)setVerticalStackConstraints:(NSArray *)arg1 ;
+-(NSArray *)horizontalStackConstraints;
+-(void)setHorizontalStackConstraints:(NSArray *)arg1 ;
+-(void)configureWithWorkflowCategoryTitle:(id)arg1 icon:(id)arg2 shouldStackVertically:(BOOL)arg3 ;
+@end
+

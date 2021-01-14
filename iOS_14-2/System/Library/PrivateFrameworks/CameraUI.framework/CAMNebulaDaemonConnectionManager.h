@@ -1,0 +1,66 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:07 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CameraUI.framework/CameraUI
+*/
+
+#import <libobjc.A.dylib/NSXPCConnectionDelegate.h>
+#import <libobjc.A.dylib/CAMNebulaDaemonClientProtocol.h>
+#import <libobjc.A.dylib/CAMNebulaDaemonBundleIdentifierProtocol.h>
+
+@protocol CAMNebulaDaemonConnectionManagerDelegate, OS_dispatch_queue;
+@class NSString, Protocol, NSXPCConnection, NSObject, NSMutableDictionary, NSMutableArray;
+
+@interface CAMNebulaDaemonConnectionManager : NSObject <NSXPCConnectionDelegate, CAMNebulaDaemonClientProtocol, CAMNebulaDaemonBundleIdentifierProtocol> {
+
+	id<CAMNebulaDaemonConnectionManagerDelegate> _delegate;
+	NSString* _clientAccess;
+	Protocol* _allowedProtocol;
+	NSString* _bundleIdentifier;
+	NSXPCConnection* __connection;
+	NSString* __name;
+	NSObject*<OS_dispatch_queue> __queue;
+	NSMutableDictionary* __tasksPerIdentifier;
+	NSMutableArray* __registeredTargets;
+	NSMutableArray* __registeredProtocols;
+
+}
+
+@property (nonatomic,readonly) NSXPCConnection * _connection;                                           //@synthesize _connection=__connection - In the implementation block
+@property (nonatomic,copy,readonly) NSString * _name;                                                   //@synthesize _name=__name - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> _queue;                                     //@synthesize _queue=__queue - In the implementation block
+@property (nonatomic,readonly) NSMutableDictionary * _tasksPerIdentifier;                               //@synthesize _tasksPerIdentifier=__tasksPerIdentifier - In the implementation block
+@property (nonatomic,readonly) NSMutableArray * _registeredTargets;                                     //@synthesize _registeredTargets=__registeredTargets - In the implementation block
+@property (nonatomic,readonly) NSMutableArray * _registeredProtocols;                                   //@synthesize _registeredProtocols=__registeredProtocols - In the implementation block
+@property (assign,nonatomic,__weak) id<CAMNebulaDaemonConnectionManagerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,copy,readonly) NSString * clientAccess;                                            //@synthesize clientAccess=_clientAccess - In the implementation block
+@property (nonatomic,copy,readonly) Protocol * allowedProtocol;                                         //@synthesize allowedProtocol=_allowedProtocol - In the implementation block
+@property (nonatomic,copy,readonly) NSString * bundleIdentifier;                                        //@synthesize bundleIdentifier=_bundleIdentifier - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)_daemonProtocolInterface;
++(id)_clientProtocolInterface;
+-(NSObject*<OS_dispatch_queue>)_queue;
+-(id<CAMNebulaDaemonConnectionManagerDelegate>)delegate;
+-(NSString *)bundleIdentifier;
+-(void)connection:(id)arg1 handleInvocation:(id)arg2 isReply:(BOOL)arg3 ;
+-(void)_getProxyForExecutingBlock:(/*^block*/id)arg1 ;
+-(void)setDelegate:(id<CAMNebulaDaemonConnectionManagerDelegate>)arg1 ;
+-(NSString *)_name;
+-(NSString *)description;
+-(void)pingAfterInterruption;
+-(NSXPCConnection *)_connection;
+-(void)nebulaDaemonDidCompleteLocalVideoPersistenceWithResult:(id)arg1 ;
+-(void)forceStopTimelapseCaptureWithReasons:(long long)arg1 ;
+-(id)_targetsForSelector:(SEL)arg1 ;
+-(id)initWithConnection:(id)arg1 name:(id)arg2 bundleIdentifier:(id)arg3 queue:(id)arg4 clientAccess:(id)arg5 allowedProtocol:(id)arg6 ;
+-(void)addTarget:(id)arg1 forProtocol:(id)arg2 ;
+-(NSString *)clientAccess;
+-(Protocol *)allowedProtocol;
+-(NSMutableDictionary *)_tasksPerIdentifier;
+-(NSMutableArray *)_registeredTargets;
+-(NSMutableArray *)_registeredProtocols;
+@end
+

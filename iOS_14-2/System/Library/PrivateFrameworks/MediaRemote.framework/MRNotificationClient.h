@@ -1,0 +1,70 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NSObject, NSOrderedSet;
+
+@interface MRNotificationClient : NSObject {
+
+	unsigned long long _registeredNowPlayingObservers;
+	NSObject*<OS_dispatch_queue> _customNotificationsQueue;
+	NSObject*<OS_dispatch_queue> _serialQueue;
+	NSObject*<OS_dispatch_queue> _notificationQueue;
+	NSOrderedSet* _nowPlayingNotifications;
+	NSOrderedSet* _routesChangedNotifications;
+	NSOrderedSet* _volumeControlNotifications;
+	NSOrderedSet* _externalScreenNotifications;
+	NSOrderedSet* _originNotifications;
+	NSOrderedSet* _supportedCommandsNotifications;
+	NSOrderedSet* _voiceInputNotifications;
+	NSOrderedSet* _errorNotifications;
+	BOOL _receivesExternalScreenTypeChangedNotifications;
+	BOOL _receivesSupportedCommandsNotifications;
+	BOOL _receivesRoutesChangedNotifications;
+	BOOL _receivesVolumeControlNotifications;
+	BOOL _receivesOriginChangedNotifications;
+	BOOL _receivesPlaybackErrorNotifications;
+	BOOL _receivesVoiceInputRecordingStateNotifications;
+
+}
+
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> notificationQueue; 
+@property (getter=isRegisteredForNowPlayingNotifications,nonatomic,readonly) BOOL registeredForNowPlayingNotifications; 
+@property (assign,nonatomic) BOOL receivesExternalScreenTypeChangedNotifications;                                                    //@synthesize receivesExternalScreenTypeChangedNotifications=_receivesExternalScreenTypeChangedNotifications - In the implementation block
+@property (assign,nonatomic) BOOL receivesSupportedCommandsNotifications;                                                            //@synthesize receivesSupportedCommandsNotifications=_receivesSupportedCommandsNotifications - In the implementation block
+@property (assign,nonatomic) BOOL receivesRoutesChangedNotifications;                                                                //@synthesize receivesRoutesChangedNotifications=_receivesRoutesChangedNotifications - In the implementation block
+@property (assign,nonatomic) BOOL receivesVolumeControlNotifications;                                                                //@synthesize receivesVolumeControlNotifications=_receivesVolumeControlNotifications - In the implementation block
+@property (assign,nonatomic) BOOL receivesOriginChangedNotifications;                                                                //@synthesize receivesOriginChangedNotifications=_receivesOriginChangedNotifications - In the implementation block
+@property (assign,nonatomic) BOOL receivesPlaybackErrorNotifications;                                                                //@synthesize receivesPlaybackErrorNotifications=_receivesPlaybackErrorNotifications - In the implementation block
+@property (assign,nonatomic) BOOL receivesVoiceInputRecordingStateNotifications;                                                     //@synthesize receivesVoiceInputRecordingStateNotifications=_receivesVoiceInputRecordingStateNotifications - In the implementation block
++(id)nowPlayingNotifications;
+-(BOOL)isRegisteredForNowPlayingNotifications;
+-(void)setReceivesVoiceInputRecordingStateNotifications:(BOOL)arg1 ;
+-(void)setReceivesExternalScreenTypeChangedNotifications:(BOOL)arg1 ;
+-(id)init;
+-(void)unregisterForNowPlayingNotifications;
+-(BOOL)postNotification:(id)arg1 userInfo:(id)arg2 object:(id)arg3 ;
+-(void)registerForNowPlayingNotificationsWithQueue:(id)arg1 force:(BOOL)arg2 ;
+-(void)setReceivesPlaybackErrorNotifications:(BOOL)arg1 ;
+-(void)setReceivesVolumeControlNotifications:(BOOL)arg1 ;
+-(void)dispatchNotification:(id)arg1 userInfo:(id)arg2 object:(id)arg3 ;
+-(BOOL)_processAlwaysNeedsNowPlayingNotifications;
+-(BOOL)receivesSupportedCommandsNotifications;
+-(NSObject*<OS_dispatch_queue>)notificationQueue;
+-(void)setReceivesOriginChangedNotifications:(BOOL)arg1 ;
+-(BOOL)receivesRoutesChangedNotifications;
+-(BOOL)receivesExternalScreenTypeChangedNotifications;
+-(void)setReceivesSupportedCommandsNotifications:(BOOL)arg1 ;
+-(BOOL)receivesPlaybackErrorNotifications;
+-(BOOL)receivesOriginChangedNotifications;
+-(BOOL)_postNotification:(id)arg1 userInfo:(id)arg2 object:(id)arg3 withHandler:(/*^block*/id)arg4 ;
+-(BOOL)receivesVolumeControlNotifications;
+-(BOOL)receivesVoiceInputRecordingStateNotifications;
+-(void)registerForNowPlayingNotificationsWithQueue:(id)arg1 ;
+-(void)setReceivesRoutesChangedNotifications:(BOOL)arg1 ;
+@end
+

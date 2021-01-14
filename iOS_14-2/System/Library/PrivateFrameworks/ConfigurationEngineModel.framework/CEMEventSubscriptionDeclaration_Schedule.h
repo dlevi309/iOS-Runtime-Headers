@@ -1,0 +1,40 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:44 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ConfigurationEngineModel.framework/ConfigurationEngineModel
+*/
+
+#import <ConfigurationEngineModel/ConfigurationEngineModel-Structs.h>
+#import <ConfigurationEngineModel/CEMPayloadBase.h>
+
+@class NSString, NSNumber;
+
+@interface CEMEventSubscriptionDeclaration_Schedule : CEMPayloadBase {
+
+	NSString* _payloadFrequency;
+	NSString* _payloadLocalTime;
+	NSNumber* _payloadSpread;
+	NSNumber* _payloadDay;
+
+}
+
+@property (nonatomic,copy) NSString * payloadFrequency;              //@synthesize payloadFrequency=_payloadFrequency - In the implementation block
+@property (nonatomic,copy) NSString * payloadLocalTime;              //@synthesize payloadLocalTime=_payloadLocalTime - In the implementation block
+@property (nonatomic,copy) NSNumber * payloadSpread;                 //@synthesize payloadSpread=_payloadSpread - In the implementation block
+@property (nonatomic,copy) NSNumber * payloadDay;                    //@synthesize payloadDay=_payloadDay - In the implementation block
++(id)allowedPayloadKeys;
++(id)buildWithFrequency:(id)arg1 withLocalTime:(id)arg2 withSpread:(id)arg3 withDay:(id)arg4 ;
++(id)buildRequiredOnlyWithFrequency:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)loadPayload:(id)arg1 error:(id*)arg2 ;
+-(id)serializePayloadWithAssetProviders:(id)arg1 ;
+-(void)setPayloadFrequency:(NSString *)arg1 ;
+-(void)setPayloadLocalTime:(NSString *)arg1 ;
+-(void)setPayloadSpread:(NSNumber *)arg1 ;
+-(void)setPayloadDay:(NSNumber *)arg1 ;
+-(NSString *)payloadFrequency;
+-(NSString *)payloadLocalTime;
+-(NSNumber *)payloadSpread;
+-(NSNumber *)payloadDay;
+@end
+

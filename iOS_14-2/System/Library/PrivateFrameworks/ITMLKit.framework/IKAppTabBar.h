@@ -1,0 +1,26 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:47 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ITMLKit.framework/ITMLKit
+*/
+
+
+@protocol IKAppTabBarController;
+@class IKJSTabBar;
+
+@interface IKAppTabBar : NSObject {
+
+	id<IKAppTabBarController> _controller;
+	IKJSTabBar* _jsTabBar;
+
+}
+
+@property (assign,nonatomic,__weak) IKJSTabBar * jsTabBar;                               //@synthesize jsTabBar=_jsTabBar - In the implementation block
+@property (nonatomic,__weak,readonly) id<IKAppTabBarController> controller;              //@synthesize controller=_controller - In the implementation block
+-(id<IKAppTabBarController>)controller;
+-(IKJSTabBar *)jsTabBar;
+-(void)onSelect;
+-(id)initWithTabBarController:(id)arg1 ;
+-(void)setJsTabBar:(IKJSTabBar *)arg1 ;
+@end
+

@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:36 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/DataDetectorsNaturalLanguage.framework/DataDetectorsNaturalLanguage
+*/
+
+
+#import <DataDetectorsNaturalLanguage/DataDetectorsNaturalLanguage-Structs.h>
+@interface IPFeatureSentenceFragment : NSObject {
+
+	unsigned long long _clusterType;
+	double _probability_None;
+	double _probability_Rejection;
+	double _probability_Proposal;
+	double _probability_Confirmation;
+	NSRange _range;
+
+}
+
+@property (assign) NSRange range;                                            //@synthesize range=_range - In the implementation block
+@property (assign) unsigned long long clusterType;                           //@synthesize clusterType=_clusterType - In the implementation block
+@property (nonatomic,readonly) unsigned long long mainPolarity; 
+@property (assign) double probability_None;                                  //@synthesize probability_None=_probability_None - In the implementation block
+@property (assign) double probability_Rejection;                             //@synthesize probability_Rejection=_probability_Rejection - In the implementation block
+@property (assign) double probability_Proposal;                              //@synthesize probability_Proposal=_probability_Proposal - In the implementation block
+@property (assign) double probability_Confirmation;                          //@synthesize probability_Confirmation=_probability_Confirmation - In the implementation block
++(id)fragmentWithRange:(NSRange)arg1 clusterType:(unsigned long long)arg2 ;
+-(void)setRange:(NSRange)arg1 ;
+-(NSRange)range;
+-(unsigned long long)clusterType;
+-(id)description;
+-(void)setClusterType:(unsigned long long)arg1 ;
+-(unsigned long long)mainPolarity;
+-(double)probability_None;
+-(double)probability_Rejection;
+-(double)probability_Proposal;
+-(double)probability_Confirmation;
+-(void)setProbability_None:(double)arg1 ;
+-(void)setProbability_Rejection:(double)arg1 ;
+-(void)setProbability_Proposal:(double)arg1 ;
+-(void)setProbability_Confirmation:(double)arg1 ;
+@end
+

@@ -1,0 +1,75 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:14 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit
+*/
+
+#import <AnnotationKit/AnnotationKit-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <UIKit/UIGestureRecognizerDelegate.h>
+#import <libobjc.A.dylib/AKPopoverAnnotationEditor.h>
+
+@protocol AKAnnotationEditorDelegate;
+@class AKTouchOutsideViewGestureRecognizer, AKAnnotation, AKPageController, AKAnnotationTheme, UIView, NSString, IMTheme;
+
+@interface AKAnnotationPopoverViewController : UIViewController <UIGestureRecognizerDelegate, AKPopoverAnnotationEditor> {
+
+	AKTouchOutsideViewGestureRecognizer* mHideOnTouchGestureRecognizer;
+	AKAnnotation* mAnnotation;
+	AKPageController* mAnnotationPageController;
+	AKAnnotationTheme* mAnnotationTheme;
+	int mPosition;
+	id mObserver;
+	BOOL _editsOnLaunch;
+	UIView* _presentationView;
+	id<AKAnnotationEditorDelegate> _delegate;
+	CGRect _presentationRect;
+
+}
+
+@property (nonatomic,retain) UIView * presentationView;                                   //@synthesize presentationView=_presentationView - In the implementation block
+@property (assign,nonatomic) CGRect presentationRect;                                     //@synthesize presentationRect=_presentationRect - In the implementation block
+@property (assign,nonatomic,__weak) id<AKAnnotationEditorDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) int position; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,retain) AKAnnotation * annotation; 
+@property (nonatomic,retain) AKPageController * annotationPageController; 
+@property (nonatomic,retain) AKAnnotationTheme * annotationTheme; 
+@property (assign,nonatomic) BOOL editsOnLaunch;                                          //@synthesize editsOnLaunch=_editsOnLaunch - In the implementation block
+@property (nonatomic,retain) IMTheme * theme; 
+-(AKAnnotation *)annotation;
+-(int)position;
+-(void)didShow;
+-(id)init;
+-(id<AKAnnotationEditorDelegate>)delegate;
+-(void)setAnnotation:(AKAnnotation *)arg1 ;
+-(void)willShow;
+-(UIView *)presentationView;
+-(void)setDelegate:(id<AKAnnotationEditorDelegate>)arg1 ;
+-(void)didReceiveMemoryWarning;
+-(void)viewDidLoad;
+-(void)hide;
+-(void)setPosition:(int)arg1 ;
+-(CGRect)presentationRect;
+-(void)didHide;
+-(BOOL)gestureRecognizerShouldBegin:(id)arg1 ;
+-(void)dealloc;
+-(void)releaseOutlets;
+-(AKAnnotationTheme *)annotationTheme;
+-(void)presentFromRect:(CGRect)arg1 view:(id)arg2 ;
+-(void)setAnnotationTheme:(AKAnnotationTheme *)arg1 ;
+-(BOOL)canPresentInPosition:(int)arg1 ;
+-(void)setAnnotationPageController:(AKPageController *)arg1 ;
+-(CGRect)p_containerFrameForView:(id)arg1 ;
+-(void)setPresentationView:(UIView *)arg1 ;
+-(void)setPresentationRect:(CGRect)arg1 ;
+-(void)willHide;
+-(AKPageController *)annotationPageController;
+-(BOOL)editsOnLaunch;
+-(void)setEditsOnLaunch:(BOOL)arg1 ;
+-(int)willPresentInPosition:(CGRect)arg1 view:(id)arg2 ;
+@end
+

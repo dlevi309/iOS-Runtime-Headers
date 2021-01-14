@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:31 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary
+*/
+
+
+@protocol MLMediaLibraryResourcesServiceProtocol, ML3AccountInformationProviding, MLMediaLibraryAccountChangeObserver;
+@class NSString;
+
+@interface ML3MusicLibraryResourcesManagerContext : NSObject {
+
+	BOOL _runningInDaemon;
+	BOOL _multiUserSupported;
+	id<MLMediaLibraryResourcesServiceProtocol> _resourcesService;
+	id<ML3AccountInformationProviding> _accountInfo;
+	id<MLMediaLibraryAccountChangeObserver> _accountChangeObserver;
+	NSString* _libraryContainerIdentifier;
+
+}
+
+@property (getter=isRunningInDaemon,nonatomic,readonly) BOOL runningInDaemon;                              //@synthesize runningInDaemon=_runningInDaemon - In the implementation block
+@property (getter=isMultiUserSupported,nonatomic,readonly) BOOL multiUserSupported;                        //@synthesize multiUserSupported=_multiUserSupported - In the implementation block
+@property (nonatomic,readonly) id<MLMediaLibraryResourcesServiceProtocol> resourcesService;                //@synthesize resourcesService=_resourcesService - In the implementation block
+@property (nonatomic,readonly) id<ML3AccountInformationProviding> accountInfo;                             //@synthesize accountInfo=_accountInfo - In the implementation block
+@property (nonatomic,readonly) id<MLMediaLibraryAccountChangeObserver> accountChangeObserver;              //@synthesize accountChangeObserver=_accountChangeObserver - In the implementation block
+@property (nonatomic,readonly) NSString * libraryContainerIdentifier;                                      //@synthesize libraryContainerIdentifier=_libraryContainerIdentifier - In the implementation block
++(id)contextForAutoupdatingSharedLibrary;
++(id)contextForSingleUserLibraryWithAccountInfo:(id)arg1 ;
++(id)contextForSingleUserLibraryWithLibraryContainerIdentifier:(id)arg1 ;
++(id)contextForMultiUserFrameworkLibraryWithService:(id)arg1 ;
++(id)contextForMultiUserDaemonLibraryWithAccountInfo:(id)arg1 accountChangeObserver:(id)arg2 ;
+-(id<ML3AccountInformationProviding>)accountInfo;
+-(id)_initWithResourcesService:(id)arg1 accountInfo:(id)arg2 libraryContainerIdentifier:(id)arg3 accountChangeObserver:(id)arg4 supportsMultiUsers:(BOOL)arg5 runningInDaemon:(BOOL)arg6 ;
+-(BOOL)isRunningInDaemon;
+-(BOOL)isMultiUserSupported;
+-(NSString *)libraryContainerIdentifier;
+-(id<MLMediaLibraryAccountChangeObserver>)accountChangeObserver;
+-(id<MLMediaLibraryResourcesServiceProtocol>)resourcesService;
+@end
+

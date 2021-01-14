@@ -1,0 +1,23 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:53 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HMFoundation/HMFObject.h>
+
+@interface HMDMRAVEndpoint : HMFObject {
+
+	void* _mravEndpoint;
+
+}
+
+@property (nonatomic,readonly) void* mravEndpoint;              //@synthesize mravEndpoint=_mravEndpoint - In the implementation block
+-(id)attributeDescriptions;
+-(unsigned long long)hash;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)dealloc;
+-(id)initWithMRAVEndpoint:(void*)arg1 ;
+-(void*)mravEndpoint;
+@end
+

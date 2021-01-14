@@ -1,0 +1,161 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
+*/
+
+#import <PhotosUICore/PhotosUICore-Structs.h>
+#import <PhotosUICore/PXFeatureSpec.h>
+
+@class PXTitleSubtitleLabelSpec, NSDateFormatter, PXExtendedImageConfiguration, PXCuratedLibraryStyleGuide;
+
+@interface PXCuratedLibrarySectionHeaderLayoutSpec : PXFeatureSpec {
+
+	BOOL _isFloating;
+	BOOL _showZoomButtons;
+	BOOL _showAspectFitButtons;
+	BOOL _wantsTitle;
+	BOOL _wantsSubtitle;
+	BOOL _shouldOmitYear;
+	BOOL _shouldAvoidOverlapWithSecondaryToolbar;
+	BOOL _wantsInlineHeader;
+	BOOL _requiresTitleRenderedAsView;
+	BOOL _swapTitleWithSubtitle;
+	BOOL _shouldFadeOutWhenReachingTop;
+	BOOL _shouldAccommodateLeadingButtonsLayout;
+	BOOL _gradientRespectsSafeArea;
+	double _buttonHeight;
+	double _buttonSpacing;
+	double _buttonHorizontalPadding;
+	PXTitleSubtitleLabelSpec* _titleSubtitleLabelSpec;
+	PXTitleSubtitleLabelSpec* _debugInterestingTitleSubtitleLabelSpec;
+	PXTitleSubtitleLabelSpec* _debugNonInterestingTitleSubtitleLabelSpec;
+	unsigned long long _inlineHeaderStyle;
+	NSDateFormatter* _titleDateFormatter;
+	NSDateFormatter* _subtitleDateFormatter;
+	double _fadeOutDistanceFromSafeAreaTop;
+	double _fadeOutDistance;
+	double _fadeOutMinimumAlpha;
+	PXExtendedImageConfiguration* _headerGradientImageConfiguration;
+	double _gradientAlpha;
+	double _gradientHeight;
+	double _minimumSpacingBetweenTopSafeAreaAndContentTop;
+	double _minimumSpacingBetweenTopSafeAreaAndTitleTop;
+	PXCuratedLibraryStyleGuide* _styleGuide;
+	PXCuratedLibrarySectionHeaderLayoutSpec* _smallVariantSpec;
+	SCD_Struct_PX81 _cornerRadius;
+	UIEdgeInsets _padding;
+	UIEdgeInsets _contentPadding;
+	UIEdgeInsets _titlePadding;
+
+}
+
+@property (assign,nonatomic) UIEdgeInsets padding;                                                            //@synthesize padding=_padding - In the implementation block
+@property (assign,nonatomic) SCD_Struct_PX82 cornerRadius;                                                    //@synthesize cornerRadius=_cornerRadius - In the implementation block
+@property (assign,nonatomic) BOOL isFloating;                                                                 //@synthesize isFloating=_isFloating - In the implementation block
+@property (assign,nonatomic) double buttonHeight;                                                             //@synthesize buttonHeight=_buttonHeight - In the implementation block
+@property (assign,nonatomic) double buttonSpacing;                                                            //@synthesize buttonSpacing=_buttonSpacing - In the implementation block
+@property (assign,nonatomic) double buttonHorizontalPadding;                                                  //@synthesize buttonHorizontalPadding=_buttonHorizontalPadding - In the implementation block
+@property (assign,nonatomic) BOOL showZoomButtons;                                                            //@synthesize showZoomButtons=_showZoomButtons - In the implementation block
+@property (assign,nonatomic) BOOL showAspectFitButtons;                                                       //@synthesize showAspectFitButtons=_showAspectFitButtons - In the implementation block
+@property (assign,nonatomic) BOOL wantsTitle;                                                                 //@synthesize wantsTitle=_wantsTitle - In the implementation block
+@property (assign,nonatomic) BOOL wantsSubtitle;                                                              //@synthesize wantsSubtitle=_wantsSubtitle - In the implementation block
+@property (assign,nonatomic) BOOL shouldOmitYear;                                                             //@synthesize shouldOmitYear=_shouldOmitYear - In the implementation block
+@property (assign,nonatomic) UIEdgeInsets contentPadding;                                                     //@synthesize contentPadding=_contentPadding - In the implementation block
+@property (assign,nonatomic) UIEdgeInsets titlePadding;                                                       //@synthesize titlePadding=_titlePadding - In the implementation block
+@property (assign,nonatomic) BOOL shouldAvoidOverlapWithSecondaryToolbar;                                     //@synthesize shouldAvoidOverlapWithSecondaryToolbar=_shouldAvoidOverlapWithSecondaryToolbar - In the implementation block
+@property (nonatomic,copy) PXTitleSubtitleLabelSpec * titleSubtitleLabelSpec;                                 //@synthesize titleSubtitleLabelSpec=_titleSubtitleLabelSpec - In the implementation block
+@property (nonatomic,copy) PXTitleSubtitleLabelSpec * debugInterestingTitleSubtitleLabelSpec;                 //@synthesize debugInterestingTitleSubtitleLabelSpec=_debugInterestingTitleSubtitleLabelSpec - In the implementation block
+@property (nonatomic,copy) PXTitleSubtitleLabelSpec * debugNonInterestingTitleSubtitleLabelSpec;              //@synthesize debugNonInterestingTitleSubtitleLabelSpec=_debugNonInterestingTitleSubtitleLabelSpec - In the implementation block
+@property (assign,nonatomic) BOOL wantsInlineHeader;                                                          //@synthesize wantsInlineHeader=_wantsInlineHeader - In the implementation block
+@property (assign,nonatomic) BOOL requiresTitleRenderedAsView;                                                //@synthesize requiresTitleRenderedAsView=_requiresTitleRenderedAsView - In the implementation block
+@property (assign,nonatomic) unsigned long long inlineHeaderStyle;                                            //@synthesize inlineHeaderStyle=_inlineHeaderStyle - In the implementation block
+@property (assign,nonatomic) BOOL swapTitleWithSubtitle;                                                      //@synthesize swapTitleWithSubtitle=_swapTitleWithSubtitle - In the implementation block
+@property (nonatomic,copy) NSDateFormatter * titleDateFormatter;                                              //@synthesize titleDateFormatter=_titleDateFormatter - In the implementation block
+@property (nonatomic,copy) NSDateFormatter * subtitleDateFormatter;                                           //@synthesize subtitleDateFormatter=_subtitleDateFormatter - In the implementation block
+@property (assign,nonatomic) BOOL shouldFadeOutWhenReachingTop;                                               //@synthesize shouldFadeOutWhenReachingTop=_shouldFadeOutWhenReachingTop - In the implementation block
+@property (assign,nonatomic) double fadeOutDistanceFromSafeAreaTop;                                           //@synthesize fadeOutDistanceFromSafeAreaTop=_fadeOutDistanceFromSafeAreaTop - In the implementation block
+@property (assign,nonatomic) double fadeOutDistance;                                                          //@synthesize fadeOutDistance=_fadeOutDistance - In the implementation block
+@property (assign,nonatomic) double fadeOutMinimumAlpha;                                                      //@synthesize fadeOutMinimumAlpha=_fadeOutMinimumAlpha - In the implementation block
+@property (assign,nonatomic) BOOL shouldAccommodateLeadingButtonsLayout;                                      //@synthesize shouldAccommodateLeadingButtonsLayout=_shouldAccommodateLeadingButtonsLayout - In the implementation block
+@property (assign,nonatomic) double gradientAlpha;                                                            //@synthesize gradientAlpha=_gradientAlpha - In the implementation block
+@property (assign,nonatomic) double gradientHeight;                                                           //@synthesize gradientHeight=_gradientHeight - In the implementation block
+@property (assign,nonatomic) BOOL gradientRespectsSafeArea;                                                   //@synthesize gradientRespectsSafeArea=_gradientRespectsSafeArea - In the implementation block
+@property (nonatomic,retain) PXCuratedLibrarySectionHeaderLayoutSpec * smallVariantSpec;                      //@synthesize smallVariantSpec=_smallVariantSpec - In the implementation block
+@property (nonatomic,readonly) double maximumTitleSubtitleHeight; 
+@property (nonatomic,readonly) PXExtendedImageConfiguration * headerGradientImageConfiguration;               //@synthesize headerGradientImageConfiguration=_headerGradientImageConfiguration - In the implementation block
+@property (nonatomic,readonly) double minimumSpacingBetweenTopSafeAreaAndContentTop;                          //@synthesize minimumSpacingBetweenTopSafeAreaAndContentTop=_minimumSpacingBetweenTopSafeAreaAndContentTop - In the implementation block
+@property (nonatomic,readonly) double minimumSpacingBetweenTopSafeAreaAndTitleTop;                            //@synthesize minimumSpacingBetweenTopSafeAreaAndTitleTop=_minimumSpacingBetweenTopSafeAreaAndTitleTop - In the implementation block
+@property (nonatomic,readonly) PXCuratedLibraryStyleGuide * styleGuide;                                       //@synthesize styleGuide=_styleGuide - In the implementation block
+-(void)setIsFloating:(BOOL)arg1 ;
+-(BOOL)isFloating;
+-(id)initWithExtendedTraitCollection:(id)arg1 options:(unsigned long long)arg2 ;
+-(double)maximumTitleSubtitleHeight;
+-(unsigned long long)inlineHeaderStyle;
+-(UIEdgeInsets)contentPadding;
+-(PXCuratedLibraryStyleGuide *)styleGuide;
+-(SCD_Struct_PX82)cornerRadius;
+-(void)setGradientAlpha:(double)arg1 ;
+-(void)setContentPadding:(UIEdgeInsets)arg1 ;
+-(double)buttonHeight;
+-(UIEdgeInsets)padding;
+-(double)buttonSpacing;
+-(void)setPadding:(UIEdgeInsets)arg1 ;
+-(double)gradientAlpha;
+-(BOOL)wantsTitle;
+-(void)setButtonHeight:(double)arg1 ;
+-(void)setButtonSpacing:(double)arg1 ;
+-(double)buttonHorizontalPadding;
+-(void)setButtonHorizontalPadding:(double)arg1 ;
+-(BOOL)showZoomButtons;
+-(void)setShowZoomButtons:(BOOL)arg1 ;
+-(void)setWantsTitle:(BOOL)arg1 ;
+-(void)setCornerRadius:(SCD_Struct_PX82)arg1 ;
+-(BOOL)showAspectFitButtons;
+-(void)setShowAspectFitButtons:(BOOL)arg1 ;
+-(BOOL)wantsSubtitle;
+-(void)setWantsSubtitle:(BOOL)arg1 ;
+-(BOOL)shouldOmitYear;
+-(void)setShouldOmitYear:(BOOL)arg1 ;
+-(UIEdgeInsets)titlePadding;
+-(void)setTitlePadding:(UIEdgeInsets)arg1 ;
+-(BOOL)shouldAvoidOverlapWithSecondaryToolbar;
+-(PXTitleSubtitleLabelSpec *)titleSubtitleLabelSpec;
+-(double)fadeOutDistance;
+-(void)setShouldAvoidOverlapWithSecondaryToolbar:(BOOL)arg1 ;
+-(void)setTitleSubtitleLabelSpec:(PXTitleSubtitleLabelSpec *)arg1 ;
+-(PXTitleSubtitleLabelSpec *)debugInterestingTitleSubtitleLabelSpec;
+-(void)setDebugInterestingTitleSubtitleLabelSpec:(PXTitleSubtitleLabelSpec *)arg1 ;
+-(PXTitleSubtitleLabelSpec *)debugNonInterestingTitleSubtitleLabelSpec;
+-(void)setWantsInlineHeader:(BOOL)arg1 ;
+-(void)setDebugNonInterestingTitleSubtitleLabelSpec:(PXTitleSubtitleLabelSpec *)arg1 ;
+-(BOOL)requiresTitleRenderedAsView;
+-(void)setRequiresTitleRenderedAsView:(BOOL)arg1 ;
+-(void)setInlineHeaderStyle:(unsigned long long)arg1 ;
+-(BOOL)swapTitleWithSubtitle;
+-(void)setSwapTitleWithSubtitle:(BOOL)arg1 ;
+-(NSDateFormatter *)titleDateFormatter;
+-(void)setTitleDateFormatter:(NSDateFormatter *)arg1 ;
+-(NSDateFormatter *)subtitleDateFormatter;
+-(void)setSubtitleDateFormatter:(NSDateFormatter *)arg1 ;
+-(BOOL)shouldFadeOutWhenReachingTop;
+-(void)setShouldFadeOutWhenReachingTop:(BOOL)arg1 ;
+-(double)fadeOutDistanceFromSafeAreaTop;
+-(void)setFadeOutDistanceFromSafeAreaTop:(double)arg1 ;
+-(void)setFadeOutDistance:(double)arg1 ;
+-(double)fadeOutMinimumAlpha;
+-(void)setFadeOutMinimumAlpha:(double)arg1 ;
+-(PXExtendedImageConfiguration *)headerGradientImageConfiguration;
+-(BOOL)shouldAccommodateLeadingButtonsLayout;
+-(void)setShouldAccommodateLeadingButtonsLayout:(BOOL)arg1 ;
+-(double)gradientHeight;
+-(void)setGradientHeight:(double)arg1 ;
+-(BOOL)gradientRespectsSafeArea;
+-(PXCuratedLibrarySectionHeaderLayoutSpec *)smallVariantSpec;
+-(void)setGradientRespectsSafeArea:(BOOL)arg1 ;
+-(double)minimumSpacingBetweenTopSafeAreaAndContentTop;
+-(double)minimumSpacingBetweenTopSafeAreaAndTitleTop;
+-(void)setSmallVariantSpec:(PXCuratedLibrarySectionHeaderLayoutSpec *)arg1 ;
+-(BOOL)wantsInlineHeader;
+@end
+

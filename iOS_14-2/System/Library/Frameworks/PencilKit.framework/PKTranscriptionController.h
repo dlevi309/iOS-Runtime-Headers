@@ -1,0 +1,65 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:36 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/PencilKit.framework/PencilKit
+*/
+
+#import <libobjc.A.dylib/PKProgressAlertControllerDelegate.h>
+
+@class PKAttachmentView, PKStrokeSelection, PKRecognitionSessionManager, PKProgressAlertController, NSProgress, NSString;
+
+@interface PKTranscriptionController : NSObject <PKProgressAlertControllerDelegate> {
+
+	BOOL _shouldCancel;
+	BOOL _didReceiveTranscription;
+	BOOL _didShowHUD;
+	PKAttachmentView* _attachment;
+	PKStrokeSelection* _strokeSelection;
+	PKRecognitionSessionManager* _recognitionManager;
+	PKProgressAlertController* _progressAlertController;
+	NSProgress* _currentProgress;
+	NSString* _textTranscription;
+
+}
+
+@property (assign,nonatomic,__weak) PKRecognitionSessionManager * recognitionManager;              //@synthesize recognitionManager=_recognitionManager - In the implementation block
+@property (nonatomic,retain) PKProgressAlertController * progressAlertController;                  //@synthesize progressAlertController=_progressAlertController - In the implementation block
+@property (nonatomic,retain) NSProgress * currentProgress;                                         //@synthesize currentProgress=_currentProgress - In the implementation block
+@property (assign,nonatomic) BOOL shouldCancel;                                                    //@synthesize shouldCancel=_shouldCancel - In the implementation block
+@property (assign,nonatomic) BOOL didReceiveTranscription;                                         //@synthesize didReceiveTranscription=_didReceiveTranscription - In the implementation block
+@property (assign,nonatomic) BOOL didShowHUD;                                                      //@synthesize didShowHUD=_didShowHUD - In the implementation block
+@property (nonatomic,copy) NSString * textTranscription;                                           //@synthesize textTranscription=_textTranscription - In the implementation block
+@property (assign,nonatomic,__weak) PKAttachmentView * attachment;                                 //@synthesize attachment=_attachment - In the implementation block
+@property (nonatomic,retain) PKStrokeSelection * strokeSelection;                                  //@synthesize strokeSelection=_strokeSelection - In the implementation block
+-(void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void*)arg4 ;
+-(void)setCurrentProgress:(NSProgress *)arg1 ;
+-(PKAttachmentView *)attachment;
+-(NSProgress *)currentProgress;
+-(BOOL)shouldCancel;
+-(void)setShouldCancel:(BOOL)arg1 ;
+-(void)setAttachment:(PKAttachmentView *)arg1 ;
+-(void)_hideHUD;
+-(void)textInputDidChange:(id)arg1 ;
+-(void)dealloc;
+-(PKStrokeSelection *)strokeSelection;
+-(void)findTranscriptionWithCompletion:(/*^block*/id)arg1 ;
+-(void)setStrokeSelection:(PKStrokeSelection *)arg1 ;
+-(PKRecognitionSessionManager *)recognitionManager;
+-(void)setRecognitionManager:(PKRecognitionSessionManager *)arg1 ;
+-(BOOL)didShowHUD;
+-(id)initWithRecognitionManager:(id)arg1 strokeSelection:(id)arg2 attachment:(id)arg3 ;
+-(NSString *)textTranscription;
+-(id)_fetchTranscriptionWithCompletion:(/*^block*/id)arg1 ;
+-(void)_showHUDWithProgress:(id)arg1 ;
+-(void)setTextTranscription:(NSString *)arg1 ;
+-(void)_progressChanged;
+-(void)_unregisterProgressObserver;
+-(void)cancelAndTeardown;
+-(void)alertControllerDidCancel:(id)arg1 ;
+-(PKProgressAlertController *)progressAlertController;
+-(void)setProgressAlertController:(PKProgressAlertController *)arg1 ;
+-(BOOL)didReceiveTranscription;
+-(void)setDidReceiveTranscription:(BOOL)arg1 ;
+-(void)setDidShowHUD:(BOOL)arg1 ;
+@end
+

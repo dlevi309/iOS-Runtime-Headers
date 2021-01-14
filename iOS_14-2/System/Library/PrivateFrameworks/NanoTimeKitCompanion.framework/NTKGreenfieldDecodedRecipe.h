@@ -1,0 +1,48 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:12 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSDictionary, NTKFace, NSString, NSNumber;
+
+@interface NTKGreenfieldDecodedRecipe : NSObject <NSSecureCoding> {
+
+	NSDictionary* _complicationSlotToTemplateMapping;
+	NSDictionary* _complicationSlotToTemplateOverrideMapping;
+	BOOL _isUsingModifiedComplicationsSet;
+	NTKFace* _watchFace;
+	NSDictionary* _complicationSlotToItemIdMapping;
+	NSDictionary* _complicationSlotToNameMapping;
+	NSDictionary* _complicationSlotToBundleIdMapping;
+	NSString* _noBorderFacePreviewImagePath;
+	NSNumber* _senderBoxedDeviceSize;
+
+}
+
+@property (nonatomic,readonly) NTKFace * watchFace;                                           //@synthesize watchFace=_watchFace - In the implementation block
+@property (nonatomic,readonly) NSDictionary * complicationSlotToTemplateMapping; 
+@property (nonatomic,readonly) NSDictionary * complicationSlotToItemIdMapping;                //@synthesize complicationSlotToItemIdMapping=_complicationSlotToItemIdMapping - In the implementation block
+@property (nonatomic,readonly) NSDictionary * complicationSlotToNameMapping;                  //@synthesize complicationSlotToNameMapping=_complicationSlotToNameMapping - In the implementation block
+@property (nonatomic,readonly) NSDictionary * complicationSlotToBundleIdMapping;              //@synthesize complicationSlotToBundleIdMapping=_complicationSlotToBundleIdMapping - In the implementation block
+@property (nonatomic,readonly) BOOL wasModifiedForThisDevice; 
+@property (nonatomic,readonly) NSString * noBorderFacePreviewImagePath;                       //@synthesize noBorderFacePreviewImagePath=_noBorderFacePreviewImagePath - In the implementation block
+@property (nonatomic,readonly) NSNumber * senderBoxedDeviceSize;                              //@synthesize senderBoxedDeviceSize=_senderBoxedDeviceSize - In the implementation block
++(BOOL)supportsSecureCoding;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(NTKFace *)watchFace;
+-(NSString *)noBorderFacePreviewImagePath;
+-(NSDictionary *)complicationSlotToTemplateMapping;
+-(NSNumber *)senderBoxedDeviceSize;
+-(NSDictionary *)complicationSlotToItemIdMapping;
+-(NSDictionary *)complicationSlotToBundleIdMapping;
+-(NSDictionary *)complicationSlotToNameMapping;
+-(id)_overrideTemplateForComplication:(id)arg1 atSlot:(id)arg2 face:(id)arg3 ;
+-(id)initWithWatchFace:(id)arg1 complicationSlotToTemplateMapping:(id)arg2 complicationSlotToItemIdMapping:(id)arg3 complicationSlotToNameMapping:(id)arg4 complicationSlotToBundleIdMapping:(id)arg5 isUsingModifiedComplicationsSet:(BOOL)arg6 noBorderFacePreviewImagePath:(id)arg7 senderBoxedDeviceSize:(id)arg8 ;
+-(void)collectOverrideTemplates;
+-(BOOL)wasModifiedForThisDevice;
+@end
+

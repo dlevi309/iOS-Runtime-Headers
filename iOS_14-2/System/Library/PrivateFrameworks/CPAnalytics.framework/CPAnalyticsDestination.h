@@ -1,0 +1,18 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:22 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/CPAnalytics.framework/CPAnalytics
+*/
+
+
+@protocol CPAnalyticsDestination <CPAnalyticsDestinationProtocol>
+@optional
++(BOOL)disabled;
+-(void)updateWithConfig:(id)arg1;
+
+@required
+-(id)init;
+-(id)initWithConfig:(id)arg1 cpAnalyticsInstance:(id)arg2;
+
+@end
+

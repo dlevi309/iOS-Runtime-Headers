@@ -1,0 +1,32 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:14 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/Security.framework/Security
+*/
+
+
+@class NSData, LAContext;
+
+@interface CTKClientSEP_TKTokenRefSEP : NSObject {
+
+	NSData* _ACMContext;
+	LAContext* _LAContext;
+
+}
+
+@property (readonly) NSData * ACMContext;                //@synthesize ACMContext=_ACMContext - In the implementation block
+@property (readonly) LAContext * LAContext;              //@synthesize LAContext=_LAContext - In the implementation block
+-(BOOL)deleteObject:(id)arg1 error:(id*)arg2 ;
+-(id)publicKeyOfObject:(id)arg1 error:(id*)arg2 ;
+-(id)attestUsingKey:(id)arg1 attestedKey:(id)arg2 nonce:(id)arg3 error:(id*)arg4 ;
+-(id)keyOperation:(long long)arg1 onObject:(id)arg2 algorithm:(id)arg3 mode:(long long)arg4 in1:(id)arg5 in2:(id)arg6 error:(id*)arg7 ;
+-(id)description;
+-(id)keyForObjectID:(id)arg1 error:(id*)arg2 ;
+-(LAContext *)LAContext;
+-(id)accessControlOfObject:(id)arg1 error:(id*)arg2 ;
+-(id)createOrUpdateObject:(id)arg1 attributes:(id)arg2 error:(id*)arg3 ;
+-(NSData *)ACMContext;
+-(id)initWithTokenID:(id)arg1 LAContext:(id)arg2 testMode:(id)arg3 ;
+-(BOOL)lifetimeControlKey:(id)arg1 lifetimeControlType:(long long)arg2 error:(id*)arg3 ;
+@end
+

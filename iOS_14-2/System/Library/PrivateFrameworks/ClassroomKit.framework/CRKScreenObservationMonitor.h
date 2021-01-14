@@ -1,0 +1,64 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ClassroomKit.framework/ClassroomKit
+*/
+
+#import <libobjc.A.dylib/CRKStudentDaemonProxyObserver.h>
+
+@protocol CRKScreenObservationMonitorDelegate;
+@class NSDictionary, CRKStudentDaemonProxy, NSString;
+
+@interface CRKScreenObservationMonitor : NSObject <CRKStudentDaemonProxyObserver> {
+
+	int mNotificationToken;
+	id<CRKScreenObservationMonitorDelegate> _delegate;
+	NSDictionary* _observingInstructorsByCourse;
+	CRKStudentDaemonProxy* _daemonProxy;
+	NSDictionary* _observingInstructorIdentifiersByCourseIdentifierString;
+	NSDictionary* _enrolledCoursesByCourseIdentifierString;
+
+}
+
+@property (nonatomic,readonly) CRKStudentDaemonProxy * daemonProxy;                                              //@synthesize daemonProxy=_daemonProxy - In the implementation block
+@property (getter=isEnrolled,nonatomic,readonly) BOOL enrolled; 
+@property (getter=isConnected,nonatomic,readonly) BOOL connected; 
+@property (nonatomic,retain) NSDictionary * observingInstructorIdentifiersByCourseIdentifierString;              //@synthesize observingInstructorIdentifiersByCourseIdentifierString=_observingInstructorIdentifiersByCourseIdentifierString - In the implementation block
+@property (nonatomic,retain) NSDictionary * enrolledCoursesByCourseIdentifierString;                             //@synthesize enrolledCoursesByCourseIdentifierString=_enrolledCoursesByCourseIdentifierString - In the implementation block
+@property (nonatomic,retain) NSDictionary * observingInstructorsByCourse;                                        //@synthesize observingInstructorsByCourse=_observingInstructorsByCourse - In the implementation block
+@property (assign,nonatomic,__weak) id<CRKScreenObservationMonitorDelegate> delegate;                            //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,readonly) BOOL hasObservingInstructors; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)keyPathsForValuesAffectingHasObservingInstructors;
+-(BOOL)isConnected;
+-(id)init;
+-(id<CRKScreenObservationMonitorDelegate>)delegate;
+-(CRKStudentDaemonProxy *)daemonProxy;
+-(void)setDelegate:(id<CRKScreenObservationMonitorDelegate>)arg1 ;
+-(void)dealloc;
+-(BOOL)isEnrolled;
+-(id)initWithDaemonProxy:(id)arg1 ;
+-(void)daemonProxyDidConnect:(id)arg1 ;
+-(void)daemonProxyDidDisconnect:(id)arg1 ;
+-(void)daemonProxy:(id)arg1 didReceiveNotificationWithName:(id)arg2 userInfo:(id)arg3 ;
+-(void)connectToStudentdIfNeeded;
+-(void)enrollmentStatusDidChange;
+-(NSDictionary *)observingInstructorIdentifiersByCourseIdentifierString;
+-(void)disconnectFromStudentdIfNeeded;
+-(void)fetchObservingInstructorsDidFinish:(id)arg1 ;
+-(void)updateObservingInstructorsWithDictionary:(id)arg1 ;
+-(void)setObservingInstructorIdentifiersByCourseIdentifierString:(NSDictionary *)arg1 ;
+-(void)fetchEnrolledCoursesForObservingInstructors:(id)arg1 ;
+-(void)fetchEnrolledCoursesDidFinish:(id)arg1 userInfo:(id)arg2 ;
+-(NSDictionary *)enrolledCoursesByCourseIdentifierString;
+-(void)setEnrolledCoursesByCourseIdentifierString:(NSDictionary *)arg1 ;
+-(void)updateObservingInstructorsByCourses;
+-(NSDictionary *)observingInstructorsByCourse;
+-(void)setObservingInstructorsByCourse:(NSDictionary *)arg1 ;
+-(void)fetchObservingInstructors;
+-(BOOL)hasObservingInstructors;
+@end
+

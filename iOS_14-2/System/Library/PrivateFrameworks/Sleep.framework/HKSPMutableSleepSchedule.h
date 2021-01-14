@@ -1,0 +1,87 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:47 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Sleep.framework/Sleep
+*/
+
+#import <Sleep/Sleep-Structs.h>
+#import <Sleep/HKSPSleepSchedule.h>
+#import <libobjc.A.dylib/HKSPMutableObject.h>
+
+@class HKSPChangeSet, HKSPSleepScheduleDayOccurrence, NSDate, NSSet, NSString;
+
+@interface HKSPMutableSleepSchedule : HKSPSleepSchedule <HKSPMutableObject> {
+
+	HKSPChangeSet* _changeSet;
+
+}
+
+@property (assign,nonatomic) unsigned long long windDownMinutes; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * mondayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * tuesdayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * wednesdayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * thursdayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * fridayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * saturdayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * sundayOccurrence; 
+@property (nonatomic,retain) HKSPSleepScheduleDayOccurrence * overrideDayOccurrence; 
+@property (assign,getter=isEnabled,nonatomic) BOOL enabled; 
+@property (assign,nonatomic) double windDownTime; 
+@property (assign,nonatomic) double sleepDurationGoal; 
+@property (nonatomic,copy) NSDate * lastModifiedDate; 
+@property (nonatomic,readonly) HKSPChangeSet * changeSet;                                         //@synthesize changeSet=_changeSet - In the implementation block
+@property (nonatomic,readonly) unsigned long long version; 
+@property (nonatomic,readonly) NSSet * significantChanges; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)supportsSecureCoding;
+-(void)freeze;
+-(HKSPChangeSet *)changeSet;
+-(id)init;
+-(id)mutableCopy;
+-(NSDate *)lastModifiedDate;
+-(void)setEnabled:(BOOL)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(void)setLastModifiedDate:(NSDate *)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(BOOL)isEnabled;
+-(void)saveOccurrence:(id)arg1 ;
+-(void)setWindDownTime:(double)arg1 ;
+-(void)setSleepDurationGoal:(double)arg1 ;
+-(void)setWindDownMinutes:(unsigned long long)arg1 ;
+-(double)windDownTime;
+-(double)sleepDurationGoal;
+-(HKSPSleepScheduleDayOccurrence *)mondayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)tuesdayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)wednesdayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)thursdayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)fridayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)saturdayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)sundayOccurrence;
+-(HKSPSleepScheduleDayOccurrence *)overrideDayOccurrence;
+-(void)_modifyDayOccurrencesForWeekdays:(unsigned long long)arg1 block:(/*^block*/id)arg2 ;
+-(void)removeOccurrence:(id)arg1 ;
+-(void)saveOccurrence:(id)arg1 options:(unsigned long long)arg2 ;
+-(void)setOverrideDayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)_updateOverrideOccurrenceForOccurrence:(id)arg1 ;
+-(void)_updateBackingOccurrencesForOccurrence:(id)arg1 ;
+-(BOOL)_shouldRemoveOverrideOccurrence:(id)arg1 ;
+-(void)setMondayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)setTuesdayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)setWednesdayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)setThursdayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)setFridayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)setSaturdayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(void)setSundayOccurrence:(HKSPSleepScheduleDayOccurrence *)arg1 ;
+-(BOOL)hasChangeToWindDownTime;
+-(BOOL)_hasChangeToScheduleEnabled;
+-(BOOL)_hasChangeForDayOccurrenceKey:(id)arg1 dayOccurrence:(id)arg2 ;
+-(BOOL)hasChangeAffectingScheduling;
+-(BOOL)hasOverrideOccurrenceRemoval;
+-(BOOL)hasChangeToSleepDurationGoal;
+-(id)lastOverrideOccurrenceWakeUpComponents;
+-(id)copyWithZone:(NSZone*)arg1 ;
+@end
+

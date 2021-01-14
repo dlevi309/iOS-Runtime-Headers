@@ -1,0 +1,42 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:49 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Proximity.framework/Proximity
+*/
+
+#import <Proximity/Proximity-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class PRRangeMeasurement, PRAngleMeasurement;
+
+@interface PRRelativePosition : NSObject <NSCopying, NSSecureCoding> {
+
+	double _timestamp;
+	long long _cycleIndex;
+	PRRangeMeasurement* _range;
+	PRAngleMeasurement* _azimuth;
+	PRAngleMeasurement* _elevation;
+
+}
+
+@property (readonly) double timestamp;                                      //@synthesize timestamp=_timestamp - In the implementation block
+@property (readonly) long long cycleIndex;                                  //@synthesize cycleIndex=_cycleIndex - In the implementation block
+@property (nonatomic,readonly) PRRangeMeasurement * range;                  //@synthesize range=_range - In the implementation block
+@property (nonatomic,readonly) PRAngleMeasurement * azimuth;                //@synthesize azimuth=_azimuth - In the implementation block
+@property (nonatomic,readonly) PRAngleMeasurement * elevation;              //@synthesize elevation=_elevation - In the implementation block
++(BOOL)supportsSecureCoding;
++(id)relativePositionWithTimestamp:(double)arg1 range:(id)arg2 azimuth:(id)arg3 elevation:(id)arg4 ;
+-(long long)cycleIndex;
+-(PRRangeMeasurement *)range;
+-(double)timestamp;
+-(void)encodeWithCoder:(id)arg1 ;
+-(PRAngleMeasurement *)azimuth;
+-(id)description;
+-(id)initWithCoder:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(PRAngleMeasurement *)elevation;
+-(id)initWithTimestamp:(double)arg1 range:(id)arg2 azimuth:(id)arg3 elevation:(id)arg4 ;
+@end
+

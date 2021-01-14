@@ -1,0 +1,41 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation
+*/
+
+#import <libobjc.A.dylib/CUTCoreAnalyticsMetric.h>
+
+@class NSDictionary, NSString;
+
+@interface IDSMagnetCorruptionMetric : NSObject <CUTCoreAnalyticsMetric> {
+
+	unsigned long long _correctFramesSinceLastCorruption;
+	unsigned long long _correctRawBytesSinceLastCorruption;
+	unsigned long long _discardedRawBytes;
+	unsigned long long _recoveryTimeInMs;
+	unsigned long long _linkType;
+
+}
+
+@property (nonatomic,readonly) unsigned long long correctFramesSinceLastCorruption;                //@synthesize correctFramesSinceLastCorruption=_correctFramesSinceLastCorruption - In the implementation block
+@property (nonatomic,readonly) unsigned long long correctRawBytesSinceLastCorruption;              //@synthesize correctRawBytesSinceLastCorruption=_correctRawBytesSinceLastCorruption - In the implementation block
+@property (nonatomic,readonly) unsigned long long discardedRawBytes;                               //@synthesize discardedRawBytes=_discardedRawBytes - In the implementation block
+@property (nonatomic,readonly) unsigned long long recoveryTimeInMs;                                //@synthesize recoveryTimeInMs=_recoveryTimeInMs - In the implementation block
+@property (nonatomic,readonly) unsigned long long linkType;                                        //@synthesize linkType=_linkType - In the implementation block
+@property (readonly) NSDictionary * dictionaryRepresentation; 
+@property (readonly) NSString * name; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(NSDictionary *)dictionaryRepresentation;
+-(unsigned long long)correctFramesSinceLastCorruption;
+-(unsigned long long)correctRawBytesSinceLastCorruption;
+-(unsigned long long)discardedRawBytes;
+-(unsigned long long)recoveryTimeInMs;
+-(id)initWithCorrectFramesSinceLastCorruption:(unsigned long long)arg1 correctRawBytesSinceLastCorruption:(unsigned long long)arg2 discardedRawBytes:(unsigned long long)arg3 recoveryTimeInMs:(unsigned long long)arg4 linkType:(unsigned long long)arg5 ;
+-(unsigned long long)linkType;
+-(NSString *)name;
+@end
+

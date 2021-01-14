@@ -1,0 +1,69 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:46 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeAI.framework/HomeAI
+*/
+
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+
+@class HMICameraVideoAnalyzerResult, NSArray, HMICameraVideoAnalyzer, HMFUnfairLock, NSString;
+
+@interface HMICameraVideoAnalyzerHistory : HMFObject <HMFLogging> {
+
+	long long _minRepetitions;
+	long long _maxPredictions;
+	long long _predictions;
+	long long _repetitions;
+	long long _totalPredictions;
+	long long _totalRepetitions;
+	long long _totalRequests;
+	HMICameraVideoAnalyzerResult* _lastRequestResult;
+	NSArray* _lastRequestSignificantEvents;
+	HMICameraVideoAnalyzer* _analyzer;
+	HMFUnfairLock* _lock;
+
+}
+
+@property (assign) long long predictions;                                         //@synthesize predictions=_predictions - In the implementation block
+@property (assign) long long repetitions;                                         //@synthesize repetitions=_repetitions - In the implementation block
+@property (assign) long long totalPredictions;                                    //@synthesize totalPredictions=_totalPredictions - In the implementation block
+@property (assign) long long totalRepetitions;                                    //@synthesize totalRepetitions=_totalRepetitions - In the implementation block
+@property (assign) long long totalRequests;                                       //@synthesize totalRequests=_totalRequests - In the implementation block
+@property (retain) HMICameraVideoAnalyzerResult * lastRequestResult;              //@synthesize lastRequestResult=_lastRequestResult - In the implementation block
+@property (retain) NSArray * lastRequestSignificantEvents;                        //@synthesize lastRequestSignificantEvents=_lastRequestSignificantEvents - In the implementation block
+@property (__weak,readonly) HMICameraVideoAnalyzer * analyzer;                    //@synthesize analyzer=_analyzer - In the implementation block
+@property (nonatomic,readonly) HMFUnfairLock * lock;                              //@synthesize lock=_lock - In the implementation block
+@property (readonly) long long minRepetitions;                                    //@synthesize minRepetitions=_minRepetitions - In the implementation block
+@property (readonly) long long maxPredictions;                                    //@synthesize maxPredictions=_maxPredictions - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)logCategory;
+-(long long)predictions;
+-(HMICameraVideoAnalyzer *)analyzer;
+-(HMFUnfairLock *)lock;
+-(void)reset;
+-(void)setPredictions:(long long)arg1 ;
+-(long long)totalRequests;
+-(void)setTotalRequests:(long long)arg1 ;
+-(long long)totalPredictions;
+-(void)setTotalPredictions:(long long)arg1 ;
+-(HMICameraVideoAnalyzerResult *)lastRequestResult;
+-(long long)repetitions;
+-(void)setRepetitions:(long long)arg1 ;
+-(long long)totalRepetitions;
+-(void)setTotalRepetitions:(long long)arg1 ;
+-(void)setLastRequestResult:(HMICameraVideoAnalyzerResult *)arg1 ;
+-(void)setLastRequestSignificantEvents:(NSArray *)arg1 ;
+-(long long)maxPredictions;
+-(long long)minRepetitions;
+-(NSArray *)lastRequestSignificantEvents;
+-(id)initWithMinRepetitions:(long long)arg1 maxPredictions:(long long)arg2 analyzer:(id)arg3 ;
+-(void)addRequest:(id)arg1 result:(id)arg2 significantEvents:(id)arg3 ;
+-(BOOL)shouldPredictRequest:(id)arg1 ;
+-(id)predictedSignificantEventsForRequest:(id)arg1 ;
+-(id)predictedResultForRequest:(id)arg1 ;
+@end
+

@@ -1,0 +1,24 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:25 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings
+*/
+
+#import <DisplayAndBrightnessSettings/DisplayAndBrightnessSettings-Structs.h>
+#import <Preferences/PSSliderTableCell.h>
+
+@class UILabel;
+
+@interface DBSColorTemperatureSliderTableCell : PSSliderTableCell {
+
+	UILabel* _coolerLabel;
+	UILabel* _warmerLabel;
+	double _horizontalMargin;
+	double _verticalMargin;
+
+}
+-(id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2 specifier:(id)arg3 ;
+-(void)layoutSubviews;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+@end
+

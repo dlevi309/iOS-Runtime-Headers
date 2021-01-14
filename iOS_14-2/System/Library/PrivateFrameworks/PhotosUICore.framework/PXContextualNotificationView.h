@@ -1,0 +1,118 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:22:40 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
+*/
+
+#import <PhotosUICore/PhotosUICore-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/PXChangeObserver.h>
+
+@class PXContextualNotification, NSString, UIImage, AVAsset, AVVideoComposition, UIView, PXImageRequester, UILabel, UIImageView, PXVideoPlayerView, NSLayoutConstraint, AVPlayerItem, PXCapsuleButton, PXContextualNotificationChevronView, NSArray;
+
+@interface PXContextualNotificationView : UIView <PXChangeObserver> {
+
+	BOOL _useRegularHitTesting;
+	long long _style;
+	PXContextualNotification* _contextualNotification;
+	NSString* _title;
+	UIImage* _titleIcon;
+	NSString* _message;
+	AVAsset* _loopingVideoAsset;
+	AVVideoComposition* _loopingVideoComposition;
+	UIView* _contentView;
+	UIImage* _placeholderImage;
+	PXImageRequester* _imageRequester;
+	UILabel* _titleLabel;
+	UIImageView* _titleIconView;
+	UILabel* _messageLabel;
+	UIImageView* _dismissIconView;
+	PXVideoPlayerView* _mediaView;
+	NSLayoutConstraint* _mediaViewHeightConstraint;
+	double __mediaAspectRatio;
+	AVPlayerItem* __loopingPlayerItem;
+	PXCapsuleButton* _actionButton;
+	PXContextualNotificationChevronView* _chevronView;
+	NSArray* _constraints;
+
+}
+
+@property (nonatomic,retain) UIImage * placeholderImage;                                                   //@synthesize placeholderImage=_placeholderImage - In the implementation block
+@property (nonatomic,retain) PXImageRequester * imageRequester;                                            //@synthesize imageRequester=_imageRequester - In the implementation block
+@property (nonatomic,readonly) UILabel * titleLabel;                                                       //@synthesize titleLabel=_titleLabel - In the implementation block
+@property (nonatomic,readonly) UIImageView * titleIconView;                                                //@synthesize titleIconView=_titleIconView - In the implementation block
+@property (nonatomic,readonly) UILabel * messageLabel;                                                     //@synthesize messageLabel=_messageLabel - In the implementation block
+@property (nonatomic,readonly) UIImageView * dismissIconView;                                              //@synthesize dismissIconView=_dismissIconView - In the implementation block
+@property (nonatomic,readonly) PXVideoPlayerView * mediaView;                                              //@synthesize mediaView=_mediaView - In the implementation block
+@property (nonatomic,readonly) NSLayoutConstraint * mediaViewHeightConstraint;                             //@synthesize mediaViewHeightConstraint=_mediaViewHeightConstraint - In the implementation block
+@property (assign,setter=_setMediaAspectRatio:,nonatomic) double _mediaAspectRatio;                        //@synthesize _mediaAspectRatio=__mediaAspectRatio - In the implementation block
+@property (setter=_setLoopingPlayerItem:,nonatomic,retain) AVPlayerItem * _loopingPlayerItem;              //@synthesize _loopingPlayerItem=__loopingPlayerItem - In the implementation block
+@property (nonatomic,retain) PXCapsuleButton * actionButton;                                               //@synthesize actionButton=_actionButton - In the implementation block
+@property (nonatomic,retain) PXContextualNotificationChevronView * chevronView;                            //@synthesize chevronView=_chevronView - In the implementation block
+@property (nonatomic,copy) NSArray * constraints;                                                          //@synthesize constraints=_constraints - In the implementation block
+@property (nonatomic,readonly) long long style;                                                            //@synthesize style=_style - In the implementation block
+@property (assign,nonatomic,__weak) PXContextualNotification * contextualNotification;                     //@synthesize contextualNotification=_contextualNotification - In the implementation block
+@property (nonatomic,copy) NSString * title;                                                               //@synthesize title=_title - In the implementation block
+@property (nonatomic,retain) UIImage * titleIcon;                                                          //@synthesize titleIcon=_titleIcon - In the implementation block
+@property (nonatomic,copy) NSString * message;                                                             //@synthesize message=_message - In the implementation block
+@property (nonatomic,copy) AVAsset * loopingVideoAsset;                                                    //@synthesize loopingVideoAsset=_loopingVideoAsset - In the implementation block
+@property (nonatomic,copy) AVVideoComposition * loopingVideoComposition;                                   //@synthesize loopingVideoComposition=_loopingVideoComposition - In the implementation block
+@property (assign,nonatomic) BOOL useRegularHitTesting;                                                    //@synthesize useRegularHitTesting=_useRegularHitTesting - In the implementation block
+@property (nonatomic,readonly) UIView * contentView;                                                       //@synthesize contentView=_contentView - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(UILabel *)titleLabel;
+-(void)setMessage:(NSString *)arg1 ;
+-(NSArray *)constraints;
+-(void)setConstraints:(NSArray *)arg1 ;
+-(NSString *)message;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 style:(long long)arg2 ;
+-(void)setTitle:(NSString *)arg1 ;
+-(UIImage *)titleIcon;
+-(BOOL)pointInside:(CGPoint)arg1 withEvent:(id)arg2 ;
+-(PXContextualNotificationChevronView *)chevronView;
+-(PXImageRequester *)imageRequester;
+-(void)setImageRequester:(PXImageRequester *)arg1 ;
+-(void)setChevronView:(PXContextualNotificationChevronView *)arg1 ;
+-(UILabel *)messageLabel;
+-(void)_handleActionButton:(id)arg1 ;
+-(void)updateConstraints;
+-(PXCapsuleButton *)actionButton;
+-(void)setActionButton:(PXCapsuleButton *)arg1 ;
+-(AVAsset *)loopingVideoAsset;
+-(void)_preferredContentSizeChanged:(id)arg1 ;
+-(UIImage *)placeholderImage;
+-(id)initWithCoder:(id)arg1 ;
+-(UIImageView *)titleIconView;
+-(void)setPlaceholderImage:(UIImage *)arg1 ;
+-(void)_updateMessageLabelForCMMCard;
+-(UIImageView *)dismissIconView;
+-(void)setPlaceholderImage:(id)arg1 imageRequester:(id)arg2 ;
+-(void)_updateLoopingPlayerItem;
+-(void)_setLoopingPlayerItem:(id)arg1 ;
+-(void)_handleDidSetVideoAudioSession;
+-(void)_startLoopingWithItem:(id)arg1 ;
+-(BOOL)isPointInsideDismissArea:(CGPoint)arg1 ;
+-(BOOL)isPointInsidePassthroughArea:(CGPoint)arg1 ;
+-(void)_setMediaAspectRatio:(double)arg1 ;
+-(BOOL)useRegularHitTesting;
+-(void)setUseRegularHitTesting:(BOOL)arg1 ;
+-(NSLayoutConstraint *)mediaViewHeightConstraint;
+-(double)_mediaAspectRatio;
+-(AVPlayerItem *)_loopingPlayerItem;
+-(void)setTitleIcon:(UIImage *)arg1 ;
+-(void)setLoopingVideoComposition:(AVVideoComposition *)arg1 ;
+-(UIView *)contentView;
+-(void)setContextualNotification:(PXContextualNotification *)arg1 ;
+-(PXContextualNotification *)contextualNotification;
+-(AVVideoComposition *)loopingVideoComposition;
+-(long long)style;
+-(PXVideoPlayerView *)mediaView;
+-(NSString *)title;
+-(void)observable:(id)arg1 didChange:(unsigned long long)arg2 context:(void*)arg3 ;
+-(void)setLoopingVideoAsset:(AVAsset *)arg1 ;
+@end
+

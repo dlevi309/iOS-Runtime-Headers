@@ -1,0 +1,120 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:56 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/Frameworks/SafariServices.framework/SafariServices
+*/
+
+#import <SafariServices/SafariServices-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@protocol SFBrowserViewDelegate;
+@class UIView, _SFToolbar, _SFNavigationBar, WKWebView, _SFLinkPreviewHeader, _SFCrashBanner, _SFPinnableBanner, SFNanoDomainContainerView;
+
+@interface _SFBrowserView : UIView {
+
+	BOOL _contentReadyForDisplay;
+	BOOL _shouldUseScrollToTopView;
+	BOOL _hasReceivedTouchEvents;
+	UIView* _contentContainerView;
+	_SFToolbar* _toolbar;
+	_SFNavigationBar* _navigationBar;
+	double _bottomBarOffset;
+	double _topBarHeight;
+	WKWebView* _currentWebView;
+	unsigned long long _navigationBarBehavior;
+	_SFLinkPreviewHeader* _previewHeader;
+	UIView* _statusBarBackgroundView;
+	UIView* _scrollToTopView;
+	_SFCrashBanner* _crashBanner;
+	double _crashBannerOffset;
+	_SFPinnableBanner* _pinnableBanner;
+	_SFPinnableBanner* _appBannerPendingFirstPaint;
+	UIView* _quickLookDocumentView;
+	double _minimalUITopOffset;
+	id<SFBrowserViewDelegate> _delegate;
+	double _unscaledWebViewWidth;
+	SFNanoDomainContainerView* _nanoDomainContainerView;
+	CGPoint _pinnableBannerOffset;
+	UIEdgeInsets _obscuredInsets;
+
+}
+
+@property (nonatomic,retain) SFNanoDomainContainerView * nanoDomainContainerView;              //@synthesize nanoDomainContainerView=_nanoDomainContainerView - In the implementation block
+@property (nonatomic,readonly) UIView * contentContainerView;                                  //@synthesize contentContainerView=_contentContainerView - In the implementation block
+@property (nonatomic,retain) _SFToolbar * toolbar;                                             //@synthesize toolbar=_toolbar - In the implementation block
+@property (nonatomic,retain) _SFNavigationBar * navigationBar;                                 //@synthesize navigationBar=_navigationBar - In the implementation block
+@property (assign,nonatomic) double bottomBarOffset;                                           //@synthesize bottomBarOffset=_bottomBarOffset - In the implementation block
+@property (assign,nonatomic) double topBarHeight;                                              //@synthesize topBarHeight=_topBarHeight - In the implementation block
+@property (nonatomic,__weak,readonly) WKWebView * currentWebView;                              //@synthesize currentWebView=_currentWebView - In the implementation block
+@property (assign,nonatomic) unsigned long long navigationBarBehavior;                         //@synthesize navigationBarBehavior=_navigationBarBehavior - In the implementation block
+@property (nonatomic,retain) _SFLinkPreviewHeader * previewHeader;                             //@synthesize previewHeader=_previewHeader - In the implementation block
+@property (nonatomic,retain) UIView * statusBarBackgroundView;                                 //@synthesize statusBarBackgroundView=_statusBarBackgroundView - In the implementation block
+@property (nonatomic,readonly) UIView * scrollToTopView;                                       //@synthesize scrollToTopView=_scrollToTopView - In the implementation block
+@property (assign,nonatomic) BOOL shouldUseScrollToTopView;                                    //@synthesize shouldUseScrollToTopView=_shouldUseScrollToTopView - In the implementation block
+@property (nonatomic,retain) _SFCrashBanner * crashBanner;                                     //@synthesize crashBanner=_crashBanner - In the implementation block
+@property (assign,nonatomic) double crashBannerOffset;                                         //@synthesize crashBannerOffset=_crashBannerOffset - In the implementation block
+@property (nonatomic,retain) _SFPinnableBanner * pinnableBanner;                               //@synthesize pinnableBanner=_pinnableBanner - In the implementation block
+@property (assign,nonatomic) CGPoint pinnableBannerOffset;                                     //@synthesize pinnableBannerOffset=_pinnableBannerOffset - In the implementation block
+@property (nonatomic,retain) _SFPinnableBanner * appBannerPendingFirstPaint;                   //@synthesize appBannerPendingFirstPaint=_appBannerPendingFirstPaint - In the implementation block
+@property (nonatomic,readonly) BOOL hasReceivedTouchEvents;                                    //@synthesize hasReceivedTouchEvents=_hasReceivedTouchEvents - In the implementation block
+@property (nonatomic,retain) UIView * quickLookDocumentView;                                   //@synthesize quickLookDocumentView=_quickLookDocumentView - In the implementation block
+@property (assign,nonatomic) double minimalUITopOffset;                                        //@synthesize minimalUITopOffset=_minimalUITopOffset - In the implementation block
+@property (assign,nonatomic,__weak) id<SFBrowserViewDelegate> delegate;                        //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) double unscaledWebViewWidth;                                      //@synthesize unscaledWebViewWidth=_unscaledWebViewWidth - In the implementation block
+@property (assign,nonatomic) UIEdgeInsets obscuredInsets;                                      //@synthesize obscuredInsets=_obscuredInsets - In the implementation block
+@property (nonatomic,readonly) BOOL isContentReadyForDisplay;                                  //@synthesize contentReadyForDisplay=_contentReadyForDisplay - In the implementation block
+-(void)setStatusBarBackgroundView:(UIView *)arg1 ;
+-(UIView *)statusBarBackgroundView;
+-(_SFToolbar *)toolbar;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(UIView *)contentContainerView;
+-(id<SFBrowserViewDelegate>)delegate;
+-(id)hitTest:(CGPoint)arg1 withEvent:(id)arg2 ;
+-(_SFNavigationBar *)navigationBar;
+-(void)setDelegate:(id<SFBrowserViewDelegate>)arg1 ;
+-(void)layoutSubviews;
+-(void)setToolbar:(_SFToolbar *)arg1 ;
+-(double)bottomBarOffset;
+-(double)previewScaleFactor;
+-(CGRect)unscaledWebViewBounds;
+-(void)_scaleContentInset;
+-(_SFLinkPreviewHeader *)previewHeader;
+-(void)setContentReadyForDisplay;
+-(void)setPreviewHeader:(_SFLinkPreviewHeader *)arg1 ;
+-(void)updateDismissButtonStyle:(long long)arg1 ;
+-(void)setBottomBarOffset:(double)arg1 ;
+-(void)setTopBarHeight:(double)arg1 ;
+-(void)addWebView:(id)arg1 ;
+-(void)updatePreviewHeaderWithURLString:(id)arg1 ;
+-(void)setShouldUseScrollToTopView:(BOOL)arg1 ;
+-(void)setCrashBanner:(_SFCrashBanner *)arg1 ;
+-(void)setCrashBannerOffset:(double)arg1 ;
+-(void)setPinnableBanner:(_SFPinnableBanner *)arg1 ;
+-(void)setPinnableBannerOffset:(CGPoint)arg1 ;
+-(WKWebView *)currentWebView;
+-(void)setNavigationBar:(_SFNavigationBar *)arg1 ;
+-(double)topBarHeight;
+-(void)setQuickLookDocumentView:(UIView *)arg1 ;
+-(void)setMinimalUITopOffset:(double)arg1 ;
+-(void)setNanoDomainContainerView:(SFNanoDomainContainerView *)arg1 ;
+-(void)setUnscaledWebViewWidth:(double)arg1 ;
+-(void)setObscuredInsets:(UIEdgeInsets)arg1 ;
+-(BOOL)isContentReadyForDisplay;
+-(unsigned long long)navigationBarBehavior;
+-(void)setNavigationBarBehavior:(unsigned long long)arg1 ;
+-(UIView *)scrollToTopView;
+-(BOOL)shouldUseScrollToTopView;
+-(_SFCrashBanner *)crashBanner;
+-(double)crashBannerOffset;
+-(_SFPinnableBanner *)pinnableBanner;
+-(CGPoint)pinnableBannerOffset;
+-(_SFPinnableBanner *)appBannerPendingFirstPaint;
+-(void)setAppBannerPendingFirstPaint:(_SFPinnableBanner *)arg1 ;
+-(BOOL)hasReceivedTouchEvents;
+-(UIView *)quickLookDocumentView;
+-(double)minimalUITopOffset;
+-(double)unscaledWebViewWidth;
+-(UIEdgeInsets)obscuredInsets;
+-(SFNanoDomainContainerView *)nanoDomainContainerView;
+@end
+

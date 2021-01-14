@@ -1,0 +1,66 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:59 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon
+*/
+
+#import <libobjc.A.dylib/EDMailboxPredictor.h>
+
+@protocol EMUserProfileProvider, EDMailboxPredictionQueryAdapter;
+@class NSDictionary, NSCache, NSMutableString, NSString;
+
+@interface EDHeuristicsMailboxPredictor : NSObject <EDMailboxPredictor> {
+
+	id<EMUserProfileProvider> _userProfileProvider;
+	id<EDMailboxPredictionQueryAdapter> _library;
+	NSDictionary* _parameters;
+	NSCache* _mailboxIDCache;
+	NSMutableString* _debugLog;
+
+}
+
+@property (nonatomic,retain) id<EMUserProfileProvider> userProfileProvider;              //@synthesize userProfileProvider=_userProfileProvider - In the implementation block
+@property (nonatomic,retain) id<EDMailboxPredictionQueryAdapter> library;                //@synthesize library=_library - In the implementation block
+@property (nonatomic,retain) NSDictionary * parameters;                                  //@synthesize parameters=_parameters - In the implementation block
+@property (nonatomic,retain) NSCache * mailboxIDCache;                                   //@synthesize mailboxIDCache=_mailboxIDCache - In the implementation block
+@property (nonatomic,retain) NSMutableString * debugLog;                                 //@synthesize debugLog=_debugLog - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id<EDMailboxPredictionQueryAdapter>)library;
+-(NSDictionary *)parameters;
+-(void)setParameters:(NSDictionary *)arg1 ;
+-(id<EMUserProfileProvider>)userProfileProvider;
+-(void)setLibrary:(id<EDMailboxPredictionQueryAdapter>)arg1 ;
+-(void)setUserProfileProvider:(id<EMUserProfileProvider>)arg1 ;
+-(id)predictMailboxIDsForMessages:(id)arg1 limit:(unsigned long long)arg2 diagnostics:(id*)arg3 ;
+-(void)setMailboxIDCache:(NSCache *)arg1 ;
+-(id)initWithUserProfileProvider:(id)arg1 queryAdapter:(id)arg2 ;
+-(id)_mergeDefaultParameters:(id)arg1 withParameters:(id)arg2 ;
+-(void)setDebugLog:(NSMutableString *)arg1 ;
+-(BOOL)_modeParameterIs:(id)arg1 ;
+-(id)_predictionsForMessage:(id)arg1 limit:(unsigned long long)arg2 ;
+-(id)_summedWeightedPredictionsForMessage:(id)arg1 limit:(unsigned long long)arg2 ;
+-(id)_orderedModePredictionForMessage:(id)arg1 ;
+-(id)_weightedModePredictionsForMessage:(id)arg1 ;
+-(id)_countsForField:(id)arg1 message:(id)arg2 ;
+-(id)_topHitFromMailboxDictionary:(id)arg1 message:(id)arg2 ;
+-(id)_removeSpecialMailboxesInCounts:(id)arg1 message:(id)arg2 ;
+-(id)_conversationIDCountsForMessage:(id)arg1 ;
+-(id)_senderCountsForMessage:(id)arg1 ;
+-(id)_recipientCountsForMessage:(id)arg1 ;
+-(id)_listIDCountsForMessage:(id)arg1 ;
+-(BOOL)_limitToRecents;
+-(id)_groupedMessagesCountByMailboxMatchingQuery:(unsigned long long)arg1 variable:(id)arg2 ;
+-(id)_allowedRecipientsForMessage:(id)arg1 ;
+-(NSCache *)mailboxIDCache;
+-(id)_userCreatedMailboxIDs;
+-(id)_normalizedTermFrequencyTopHitFromDictionary:(id)arg1 withThreshold:(double)arg2 ;
+-(id)_topHitFromMailboxDictionary:(id)arg1 ;
+-(id)_objectWithMeasure:(double)arg1 timesHigherThanFollowUpInMeasures:(id)arg2 ;
+-(BOOL)_isAllowedRecipient:(id)arg1 ;
+-(id)initWithUserProfileProvider:(id)arg1 queryAdapter:(id)arg2 parameters:(id)arg3 ;
+-(NSMutableString *)debugLog;
+@end
+

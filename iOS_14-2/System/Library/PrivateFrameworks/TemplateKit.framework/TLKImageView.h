@@ -1,0 +1,104 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:23:44 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit
+*/
+
+#import <TemplateKit/TemplateKit-Structs.h>
+#import <TemplateKit/TLKView.h>
+#import <libobjc.A.dylib/NUIBoxArrangementDataSource.h>
+#import <libobjc.A.dylib/NUIArrangementContainer.h>
+
+@class TLKImage, UIImageView, UIView, TLKProminenceView, TLKArrangementItem, NUIBoxArrangement, NSString;
+
+@interface TLKImageView : TLKView <NUIBoxArrangementDataSource, NUIArrangementContainer> {
+
+	BOOL _useButtonColoring;
+	BOOL _alwaysShowPlaceholderView;
+	TLKImage* _tlkImage;
+	unsigned long long _prominence;
+	long long _verticalAlignment;
+	long long _horizontalAlignment;
+	UIImageView* _imageView;
+	UIView* _shadowContainer;
+	TLKProminenceView* _placeholderView;
+	TLKArrangementItem* _sizingHelper;
+	NUIBoxArrangement* _boxArrangement;
+	TLKImage* _lastTlkImage;
+	CGSize _minimumSize;
+	CGSize _maximumSize;
+
+}
+
+@property (nonatomic,retain) UIView * shadowContainer;                         //@synthesize shadowContainer=_shadowContainer - In the implementation block
+@property (nonatomic,retain) UIImageView * imageView;                          //@synthesize imageView=_imageView - In the implementation block
+@property (nonatomic,retain) TLKProminenceView * placeholderView;              //@synthesize placeholderView=_placeholderView - In the implementation block
+@property (nonatomic,retain) TLKArrangementItem * sizingHelper;                //@synthesize sizingHelper=_sizingHelper - In the implementation block
+@property (nonatomic,retain) NUIBoxArrangement * boxArrangement;               //@synthesize boxArrangement=_boxArrangement - In the implementation block
+@property (nonatomic,retain) TLKImage * lastTlkImage;                          //@synthesize lastTlkImage=_lastTlkImage - In the implementation block
+@property (nonatomic,retain) TLKImage * tlkImage;                              //@synthesize tlkImage=_tlkImage - In the implementation block
+@property (assign,nonatomic) unsigned long long prominence;                    //@synthesize prominence=_prominence - In the implementation block
+@property (assign,nonatomic) BOOL useButtonColoring;                           //@synthesize useButtonColoring=_useButtonColoring - In the implementation block
+@property (assign,nonatomic) BOOL alwaysShowPlaceholderView;                   //@synthesize alwaysShowPlaceholderView=_alwaysShowPlaceholderView - In the implementation block
+@property (assign,nonatomic) CGSize minimumSize;                               //@synthesize minimumSize=_minimumSize - In the implementation block
+@property (assign,nonatomic) CGSize maximumSize;                               //@synthesize maximumSize=_maximumSize - In the implementation block
+@property (assign,nonatomic) long long verticalAlignment;                      //@synthesize verticalAlignment=_verticalAlignment - In the implementation block
+@property (assign,nonatomic) long long horizontalAlignment;                    //@synthesize horizontalAlignment=_horizontalAlignment - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(CGSize)roundedSizeForSize:(CGSize)arg1 ;
++(BOOL)imageIsEligibleForShadow:(id)arg1 isTemplate:(BOOL)arg2 ;
+-(CGRect)layoutFrameForArrangedSubview:(id)arg1 withProposedContentFrame:(CGRect)arg2 ;
+-(void)setImageView:(UIImageView *)arg1 ;
+-(CGSize)systemLayoutSizeFittingSize:(CGSize)arg1 ;
+-(id)viewForLastBaselineLayout;
+-(void)setProminence:(unsigned long long)arg1 ;
+-(CGSize)intrinsicContentSize;
+-(TLKImage *)tlkImage;
+-(void)setPlaceholderView:(TLKProminenceView *)arg1 ;
+-(id)init;
+-(id)viewForFirstBaselineLayout;
+-(UIImageView *)imageView;
+-(CGSize)contentLayoutSizeFittingSize:(CGSize)arg1 forArrangedSubview:(id)arg2 ;
+-(CGSize)maximumSize;
+-(TLKProminenceView *)placeholderView;
+-(void)_dynamicUserInterfaceTraitDidChange;
+-(void)tlk_updateForAppearance:(id)arg1 ;
+-(void)setMinimumSize:(CGSize)arg1 ;
+-(CGSize)_imageSize;
+-(unsigned long long)prominence;
+-(void)layoutSubviews;
+-(void)didMoveToWindow;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+-(CGSize)minimumSize;
+-(long long)effectiveUserInterfaceLayoutDirection;
+-(long long)horizontalAlignment;
+-(long long)verticalAlignment;
+-(void)setTlkImage:(TLKImage *)arg1 ;
+-(long long)numberOfItemsInBoxArrangement:(id)arg1 ;
+-(id)boxArrangement:(id)arg1 itemAtIndex:(long long)arg2 horizontalAlignment:(long long*)arg3 verticalAlignment:(long long*)arg4 ;
+-(void)observedPropertiesChanged;
+-(void)setShadowContainer:(UIView *)arg1 ;
+-(UIView *)shadowContainer;
+-(void)setSizingHelper:(TLKArrangementItem *)arg1 ;
+-(void)setBoxArrangement:(NUIBoxArrangement *)arg1 ;
+-(TLKArrangementItem *)sizingHelper;
+-(TLKImage *)lastTlkImage;
+-(BOOL)alwaysShowPlaceholderView;
+-(void)setLastTlkImage:(TLKImage *)arg1 ;
+-(CGSize)constrainedSizeForImageSize:(CGSize)arg1 ;
+-(NUIBoxArrangement *)boxArrangement;
+-(void)invalidateIntrinsicContentSizeIfNecessary;
+-(BOOL)useButtonColoring;
+-(void)updateShadow;
+-(BOOL)_imageViewUsesSymbolConfiguration;
+-(void)setUseButtonColoring:(BOOL)arg1 ;
+-(id)actualImageView;
+-(void)setAlwaysShowPlaceholderView:(BOOL)arg1 ;
+-(void)setVerticalAlignment:(long long)arg1 ;
+-(void)setHorizontalAlignment:(long long)arg1 ;
+-(void)setMaximumSize:(CGSize)arg1 ;
+@end
+

@@ -1,0 +1,43 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:56 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+
+@class HMDNetworkRouterFirewallRuleAccessoryIdentifier, NSString, NSDate, NSArray, NSDictionary;
+
+@interface HMDNetworkRouterFirewallRuleCloudNetworkDeclarations : HMFObject <HMFLogging> {
+
+	HMDNetworkRouterFirewallRuleAccessoryIdentifier* _baseAccessoryIdentifier;
+	NSString* _name;
+	NSDate* _lastModifiedTime;
+	NSArray* _ruleConfigurations;
+
+}
+
+@property (nonatomic,readonly) HMDNetworkRouterFirewallRuleAccessoryIdentifier * baseAccessoryIdentifier;              //@synthesize baseAccessoryIdentifier=_baseAccessoryIdentifier - In the implementation block
+@property (nonatomic,readonly) NSString * name;                                                                        //@synthesize name=_name - In the implementation block
+@property (nonatomic,readonly) NSDate * lastModifiedTime;                                                              //@synthesize lastModifiedTime=_lastModifiedTime - In the implementation block
+@property (nonatomic,readonly) NSArray * ruleConfigurations;                                                           //@synthesize ruleConfigurations=_ruleConfigurations - In the implementation block
+@property (nonatomic,readonly) NSDictionary * prettyJSONDictionary; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)logCategory;
++(id)__decodeRuleConfigurationWithVersionString:(id)arg1 ruleConfigurationValue:(id)arg2 baseAccessoryIdentifier:(id)arg3 ;
++(id)__decodeRuleConfigurationsFromJSONDictionary:(id)arg1 baseAccessoryIdentifier:(id)arg2 allowUnzippedData:(BOOL)arg3 ;
+-(NSString *)name;
+-(id)attributeDescriptions;
+-(NSDictionary *)prettyJSONDictionary;
+-(id)initWithBaseAccessoryIdentifier:(id)arg1 data:(id)arg2 ;
+-(id)initWithBaseAccessoryIdentifier:(id)arg1 data:(id)arg2 allowUnzippedData:(BOOL)arg3 ;
+-(NSDate *)lastModifiedTime;
+-(NSArray *)ruleConfigurations;
+-(HMDNetworkRouterFirewallRuleAccessoryIdentifier *)baseAccessoryIdentifier;
+-(id)initWithBaseAccessoryIdentifier:(id)arg1 name:(id)arg2 lastModifiedTime:(id)arg3 ruleConfigurations:(id)arg4 ;
+@end
+

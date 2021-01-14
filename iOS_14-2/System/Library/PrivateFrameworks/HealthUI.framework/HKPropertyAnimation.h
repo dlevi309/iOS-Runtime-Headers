@@ -1,0 +1,60 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:17 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
+*/
+
+#import <HealthUI/HealthUI-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, CAMediaTimingFunction, NSDate;
+
+@interface HKPropertyAnimation : NSObject <NSCopying> {
+
+	NSString* _property;
+	id _fromValue;
+	id _toValue;
+	double _duration;
+	CAMediaTimingFunction* _timingFunction;
+	long long _secondaryAnimationCurve;
+	/*^block*/id _completion;
+	/*^block*/id _propertyApplicationFunction;
+	NSDate* _appliedDate;
+
+}
+
+@property (nonatomic,retain) NSDate * appliedDate;                                //@synthesize appliedDate=_appliedDate - In the implementation block
+@property (nonatomic,retain) NSString * property;                                 //@synthesize property=_property - In the implementation block
+@property (nonatomic,retain) id fromValue;                                        //@synthesize fromValue=_fromValue - In the implementation block
+@property (nonatomic,retain) id toValue;                                          //@synthesize toValue=_toValue - In the implementation block
+@property (assign,nonatomic) double duration;                                     //@synthesize duration=_duration - In the implementation block
+@property (nonatomic,retain) CAMediaTimingFunction * timingFunction;              //@synthesize timingFunction=_timingFunction - In the implementation block
+@property (assign,nonatomic) long long secondaryAnimationCurve;                   //@synthesize secondaryAnimationCurve=_secondaryAnimationCurve - In the implementation block
+@property (nonatomic,copy) id completion;                                         //@synthesize completion=_completion - In the implementation block
+@property (nonatomic,copy) id propertyApplicationFunction;                        //@synthesize propertyApplicationFunction=_propertyApplicationFunction - In the implementation block
+-(NSString *)property;
+-(id)toValue;
+-(void)setCompletion:(id)arg1 ;
+-(void)setDuration:(double)arg1 ;
+-(id)init;
+-(void)setTimingFunction:(CAMediaTimingFunction *)arg1 ;
+-(void)setProperty:(NSString *)arg1 ;
+-(id)fromValue;
+-(id)completion;
+-(CAMediaTimingFunction *)timingFunction;
+-(void)_validate;
+-(void)setToValue:(id)arg1 ;
+-(void)setFromValue:(id)arg1 ;
+-(void)_finish;
+-(double)duration;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)_applyWithCurrentDate:(id)arg1 ;
+-(BOOL)_isCompleted;
+-(long long)secondaryAnimationCurve;
+-(void)setSecondaryAnimationCurve:(long long)arg1 ;
+-(id)propertyApplicationFunction;
+-(void)setPropertyApplicationFunction:(id)arg1 ;
+-(NSDate *)appliedDate;
+-(void)setAppliedDate:(NSDate *)arg1 ;
+@end
+

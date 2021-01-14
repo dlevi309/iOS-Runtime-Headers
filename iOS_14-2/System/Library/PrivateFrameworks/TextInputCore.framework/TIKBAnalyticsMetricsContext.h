@@ -1,0 +1,44 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:18 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/TextInputCore.framework/TextInputCore
+*/
+
+#import <TextInputCore/TextInputCore-Structs.h>
+#import <TextInput/TIAnalyticsMetricsContext.h>
+
+@class NSString, NSDictionary;
+
+@interface TIKBAnalyticsMetricsContext : TIAnalyticsMetricsContext {
+
+	unsigned char _keyboardType;
+	NSString* _layoutName;
+	long long _userInterfaceIdiom;
+	NSDictionary* _testingParameters;
+
+}
+
+@property (nonatomic,readonly) NSString * layoutName;                         //@synthesize layoutName=_layoutName - In the implementation block
+@property (nonatomic,readonly) unsigned char keyboardType;                    //@synthesize keyboardType=_keyboardType - In the implementation block
+@property (nonatomic,readonly) long long userInterfaceIdiom;                  //@synthesize userInterfaceIdiom=_userInterfaceIdiom - In the implementation block
+@property (nonatomic,readonly) NSDictionary * testingParameters;              //@synthesize testingParameters=_testingParameters - In the implementation block
++(BOOL)supportsSecureCoding;
++(id)keyboardTypeEnumToString:(unsigned char)arg1 ;
++(unsigned char)keyboardTypeStringToEnum:(id)arg1 ;
++(id)userInterfaceIdiomToString:(long long)arg1 ;
++(long long)userInterfaceIdiomStringToEnum:(id)arg1 ;
+-(NSString *)layoutName;
+-(long long)userInterfaceIdiom;
+-(unsigned char)keyboardType;
+-(void)encodeWithCoder:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)initWithCoder:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(id)initWithKeyboardState:(id)arg1 ;
+-(id)initWithInputLanguage:(id)arg1 inputRegion:(id)arg2 layoutName:(id)arg3 keyboardType:(unsigned char)arg4 userInterfaceIdiom:(long long)arg5 ;
+-(id)initWithInputLanguage:(id)arg1 inputRegion:(id)arg2 layoutName:(id)arg3 keyboardType:(unsigned char)arg4 userInterfaceIdiom:(long long)arg5 testingParameters:(id)arg6 ;
+-(id)initWithKeyboardState:(id)arg1 testingParameters:(id)arg2 ;
+-(NSDictionary *)testingParameters;
+@end
+

@@ -1,0 +1,20 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:28:15 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ProVideo.framework/ProVideo
+*/
+
+
+@protocol OZFxPlugInternalParamAPI <NSObject>
+@required
+-(BOOL)_getFloatValue:(double*)arg1 fromParm:(unsigned)arg2 atTime:(/*function pointer*/void**)arg3;
+-(BOOL)_getIntValue:(int*)arg1 fromParm:(unsigned)arg2 atTime:(/*function pointer*/void**)arg3;
+-(BOOL)_getBoolValue:(BOOL*)arg1 fromParm:(unsigned)arg2 atTime:(/*function pointer*/void**)arg3;
+-(BOOL)_getRedValue:(double*)arg1 greenValue:(double*)arg2 blueValue:(double*)arg3 fromParm:(unsigned)arg4 atTime:(/*function pointer*/void**)arg5;
+-(BOOL)_getRedValue:(double*)arg1 greenValue:(double*)arg2 blueValue:(double*)arg3 alphaValue:(double*)arg4 fromParm:(unsigned)arg5 atTime:(/*function pointer*/void**)arg6;
+-(BOOL)_getXValue:(double*)arg1 YValue:(double*)arg2 fromParm:(unsigned)arg3 atTime:(/*function pointer*/void**)arg4;
+-(BOOL)_getCustomParameterValue:(id*)arg1 fromParm:(unsigned)arg2 atTime:(/*function pointer*/void**)arg3;
+-(BOOL)_getPathID:(void*)arg1 fromParm:(unsigned)arg2 atTime:(/*function pointer*/void**)arg3;
+
+@end
+

@@ -1,0 +1,84 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:24:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NSObject, NPSDomainAccessorInternal, NSString, NSUUID;
+
+@interface NPSDomainAccessor : NSObject {
+
+	BOOL _initializedWithActiveDevice;
+	NSObject*<OS_dispatch_queue> _externalQueue;
+	NSObject*<OS_dispatch_queue> _invalidationQueue;
+	NPSDomainAccessorInternal* _internalAccessor;
+
+}
+
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> externalQueue;                  //@synthesize externalQueue=_externalQueue - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> invalidationQueue;              //@synthesize invalidationQueue=_invalidationQueue - In the implementation block
+@property (nonatomic,retain) NPSDomainAccessorInternal * internalAccessor;                //@synthesize internalAccessor=_internalAccessor - In the implementation block
+@property (assign,nonatomic) BOOL initializedWithActiveDevice;                            //@synthesize initializedWithActiveDevice=_initializedWithActiveDevice - In the implementation block
+@property (nonatomic,readonly) NSString * domain; 
+@property (nonatomic,readonly) NSUUID * pairingID; 
++(void)initialize;
++(id)copyDomainListForPairingID:(id)arg1 pairingDataStore:(id)arg2 ;
++(id)copyDomainList;
++(void)resolveActivePairedDevicePairingID:(id*)arg1 pairingDataStore:(id*)arg2 ;
+-(NSUUID *)pairingID;
+-(id)dictionaryRepresentation;
+-(void)setFloat:(float)arg1 forKey:(id)arg2 ;
+-(id)dataForKey:(id)arg1 ;
+-(float)floatForKey:(id)arg1 ;
+-(id)dictionaryForKey:(id)arg1 ;
+-(id)initWithDomain:(id)arg1 ;
+-(id)URLForKey:(id)arg1 ;
+-(long long)longForKey:(id)arg1 ;
+-(void)setDouble:(double)arg1 forKey:(id)arg2 ;
+-(double)doubleForKey:(id)arg1 ;
+-(void)removeObjectForKey:(id)arg1 ;
+-(NSString *)domain;
+-(NPSDomainAccessorInternal *)internalAccessor;
+-(id)initWithDomain:(id)arg1 queue:(id)arg2 ;
+-(void)setInteger:(long long)arg1 forKey:(id)arg2 ;
+-(id)initWithDomain:(id)arg1 queue:(id)arg2 pairingID:(id)arg3 pairingDataStore:(id)arg4 ;
+-(id)initWithDomain:(id)arg1 pairingID:(id)arg2 pairingDataStore:(id)arg3 ;
+-(id)initWithInternalDomainAccessor:(id)arg1 queue:(id)arg2 ;
+-(id)shouldNotDoWork;
+-(BOOL)activeDeviceChanged;
+-(void)objectForKey:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)setObject:(id)arg1 forKey:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(long long)integerForKey:(id)arg1 keyExistsAndHasValidFormat:(BOOL*)arg2 ;
+-(long long)longForKey:(id)arg1 keyExistsAndHasValidFormat:(BOOL*)arg2 ;
+-(id)synchronize;
+-(void)setURL:(id)arg1 forKey:(id)arg2 ;
+-(id)objectForKey:(id)arg1 ;
+-(void)synchronizeWithCompletionHandler:(/*^block*/id)arg1 ;
+-(id)stringArrayForKey:(id)arg1 ;
+-(float)floatForKey:(id)arg1 keyExistsAndHasValidFormat:(BOOL*)arg2 ;
+-(double)doubleForKey:(id)arg1 keyExistsAndHasValidFormat:(BOOL*)arg2 ;
+-(unsigned long long)domainSize;
+-(BOOL)requiresDeviceUnlockedSinceBoot;
+-(id)initWithDomain:(id)arg1 pairedDevice:(id)arg2 ;
+-(NSObject*<OS_dispatch_queue>)externalQueue;
+-(void)setExternalQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(NSObject*<OS_dispatch_queue>)invalidationQueue;
+-(void)setInvalidationQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)setInternalAccessor:(NPSDomainAccessorInternal *)arg1 ;
+-(BOOL)initializedWithActiveDevice;
+-(void)setInitializedWithActiveDevice:(BOOL)arg1 ;
+-(BOOL)boolForKey:(id)arg1 ;
+-(id)arrayForKey:(id)arg1 ;
+-(void)invalidate;
+-(id)queue;
+-(void)setBool:(BOOL)arg1 forKey:(id)arg2 ;
+-(long long)integerForKey:(id)arg1 ;
+-(id)copyKeyList;
+-(id)stringForKey:(id)arg1 ;
+-(void)dealloc;
+-(void)setObject:(id)arg1 forKey:(id)arg2 ;
+-(BOOL)boolForKey:(id)arg1 keyExistsAndHasValidFormat:(BOOL*)arg2 ;
+@end
+

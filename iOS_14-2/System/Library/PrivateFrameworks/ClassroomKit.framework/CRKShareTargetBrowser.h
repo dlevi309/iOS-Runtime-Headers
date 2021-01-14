@@ -1,0 +1,70 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/ClassroomKit.framework/ClassroomKit
+*/
+
+#import <libobjc.A.dylib/CATTaskClientDelegate.h>
+#import <libobjc.A.dylib/CATTaskOperationNotificationDelegate.h>
+#import <libobjc.A.dylib/CRKShareTargetCollectorDelegate.h>
+
+@protocol OS_dispatch_queue, CRKShareTargetBrowserDelegate;
+@class NSObject, CATOperationQueue, CATTaskClient, CRKShareTargetBrowserTransportFactory, CRKShareTargetCollector, NSString;
+
+@interface CRKShareTargetBrowser : NSObject <CATTaskClientDelegate, CATTaskOperationNotificationDelegate, CRKShareTargetCollectorDelegate> {
+
+	NSObject*<OS_dispatch_queue> mDelegateQueue;
+	id<CRKShareTargetBrowserDelegate> mDelegate;
+	CATOperationQueue* mOperationQueue;
+	BOOL mBrowsing;
+	BOOL mIsValid;
+	CATTaskClient* _studentClient;
+	CATTaskClient* _instructorClient;
+	CRKShareTargetBrowserTransportFactory* _transportFactory;
+	CRKShareTargetCollector* _shareTargetCollector;
+
+}
+
+@property (nonatomic,retain) CATTaskClient * studentClient;                                           //@synthesize studentClient=_studentClient - In the implementation block
+@property (nonatomic,retain) CATTaskClient * instructorClient;                                        //@synthesize instructorClient=_instructorClient - In the implementation block
+@property (nonatomic,readonly) CRKShareTargetBrowserTransportFactory * transportFactory;              //@synthesize transportFactory=_transportFactory - In the implementation block
+@property (nonatomic,readonly) CRKShareTargetCollector * shareTargetCollector;                        //@synthesize shareTargetCollector=_shareTargetCollector - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)suspend;
+-(void)client:(id)arg1 didInterruptWithError:(id)arg2 ;
+-(id)initWithDelegate:(id)arg1 queue:(id)arg2 ;
+-(void)delegateDidInterruptWithError:(id)arg1 ;
+-(void)taskOperation:(id)arg1 didPostNotificationWithName:(id)arg2 userInfo:(id)arg3 ;
+-(id)initWithDelegate:(id)arg1 ;
+-(void)clientDidConnect:(id)arg1 ;
+-(void)invalidateClient:(id)arg1 ;
+-(void)invalidate;
+-(void)resume;
+-(void)dealloc;
+-(void)setStudentClient:(CATTaskClient *)arg1 ;
+-(CATTaskClient *)studentClient;
+-(void)setInstructorClient:(CATTaskClient *)arg1 ;
+-(CATTaskClient *)instructorClient;
+-(void)connectToStudentd;
+-(void)connectToInstructord;
+-(void)tearDownStudentClient;
+-(void)tearDownInstructorClient;
+-(CRKShareTargetBrowserTransportFactory *)transportFactory;
+-(void)acquireStudentActivityAssertionOperationDidFail:(id)arg1 ;
+-(BOOL)isClientInvalidationError:(id)arg1 ;
+-(void)browseForStudentTargetsOperationDidFail:(id)arg1 ;
+-(void)browseForInstructorTargetsOperationDidFail:(id)arg1 ;
+-(void)acquireStudentActivityAssertion;
+-(void)startBrowsingForStudentTargets;
+-(void)startBrowsingForInstructorTargets;
+-(CRKShareTargetCollector *)shareTargetCollector;
+-(id)makeShareTargetsWithDictionaries:(id)arg1 taskClient:(id)arg2 ;
+-(void)delegateDidFindTargets:(id)arg1 ;
+-(void)delegateDidRemoveTargets:(id)arg1 ;
+-(void)shareTargetCollector:(id)arg1 didFindTargets:(id)arg2 ;
+-(void)shareTargetCollector:(id)arg1 didRemoveTargets:(id)arg2 ;
+@end
+

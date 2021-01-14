@@ -1,0 +1,25 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+
+#import <NanoTimeKitCompanion/NanoTimeKitCompanion-Structs.h>
+@interface NTKAnalogHandFactory : NSObject
++(id)_renderQueue;
++(CGPathRef)newPathWithConfiguration:(id)arg1 ;
++(id)_getHandImageWithConfiguration:(id)arg1 ;
++(id)_getRadialShadowImageWithConfiguration:(id)arg1 ;
++(id)_getDropShadowImageWithConfiguration:(id)arg1 ;
++(id)_getMaskedDropShadowImageWithConfiguration:(id)arg1 shadowImage:(id)arg2 ;
++(CGPathRef)newPathForSecondWithConfiguration:(id)arg1 inset:(double)arg2 ;
++(CGPathRef)newPathForHourMinuteWithConfiguration:(id)arg1 inset:(double)arg2 ;
++(id)_createHandImageWithSize:(CGSize)arg1 paths:(id)arg2 colors:(id)arg3 ;
++(id)_getShadowImageWithConfiguration:(id)arg1 radius:(double)arg2 opacity:(double)arg3 key:(id)arg4 ;
++(id)_createShadowImageSize:(CGSize)arg1 path:(CGPathRef)arg2 radius:(double)arg3 opacity:(double)arg4 ;
++(CGPathRef)newPathForPeg:(id)arg1 inset:(double)arg2 ;
++(id)_createMaskedShadowImageFromShadow:(id)arg1 size:(CGSize)arg2 maskPath:(CGPathRef)arg3 radius:(double)arg4 opacity:(double)arg5 ;
++(id)getAssets:(unsigned long long)arg1 forConfiguration:(id)arg2 ;
+@end
+

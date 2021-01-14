@@ -1,0 +1,15 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:26:11 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NTKWorkoutRichComplicationBaseCircularView.h>
+
+@interface NTKWorkoutRichComplicationExtraLargeCircularView : NTKWorkoutRichComplicationBaseCircularView
++(BOOL)supportsComplicationFamily:(long long)arg1 ;
+-(id)init;
+-(id)_workoutImageName;
+-(id)_animatedImagesName;
+@end
+

@@ -1,0 +1,206 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:21:00 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, PBUnknownFields, NSString, GEOPDCaptionedPhoto, NSMutableArray, GEOPDMapsIdentifier, GEOPDPublisher;
+
+@interface GEOPDPlaceCollection : PBCodable <NSCopying> {
+
+	PBDataReader* _reader;
+	PBUnknownFields* _unknownFields;
+	NSString* _authorName;
+	GEOPDCaptionedPhoto* _authorPhoto;
+	NSMutableArray* _collectionClassDisplayNames;
+	NSMutableArray* _collectionClassSpokenNames;
+	NSMutableArray* _collectionDescriptions;
+	GEOPDMapsIdentifier* _collectionId;
+	NSMutableArray* _displayTitles;
+	NSMutableArray* _itemIds;
+	double _modifiedTime;
+	NSMutableArray* _photos;
+	NSMutableArray* _placeCollectionItems;
+	GEOPDMapsIdentifier* _publisherId;
+	GEOPDPublisher* _publisher;
+	NSMutableArray* _spokenTitles;
+	NSString* _url;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	int _errorState;
+	unsigned _numItems;
+	BOOL _enableFallbackImagesForItems;
+	struct {
+		unsigned has_modifiedTime : 1;
+		unsigned has_errorState : 1;
+		unsigned has_numItems : 1;
+		unsigned has_enableFallbackImagesForItems : 1;
+		unsigned read_unknownFields : 1;
+		unsigned read_authorName : 1;
+		unsigned read_authorPhoto : 1;
+		unsigned read_collectionClassDisplayNames : 1;
+		unsigned read_collectionClassSpokenNames : 1;
+		unsigned read_collectionDescriptions : 1;
+		unsigned read_collectionId : 1;
+		unsigned read_displayTitles : 1;
+		unsigned read_itemIds : 1;
+		unsigned read_photos : 1;
+		unsigned read_placeCollectionItems : 1;
+		unsigned read_publisherId : 1;
+		unsigned read_publisher : 1;
+		unsigned read_spokenTitles : 1;
+		unsigned read_url : 1;
+		unsigned wrote_anyField : 1;
+	}  _flags;
+
+}
+
+@property (nonatomic,retain) NSMutableArray * displayTitles; 
+@property (nonatomic,retain) NSMutableArray * collectionDescriptions; 
+@property (nonatomic,retain) NSMutableArray * photos; 
+@property (nonatomic,readonly) BOOL hasCollectionId; 
+@property (nonatomic,retain) GEOPDMapsIdentifier * collectionId; 
+@property (nonatomic,readonly) BOOL hasPublisherId; 
+@property (nonatomic,retain) GEOPDMapsIdentifier * publisherId; 
+@property (nonatomic,retain) NSMutableArray * placeCollectionItems; 
+@property (nonatomic,retain) NSMutableArray * spokenTitles; 
+@property (nonatomic,retain) NSMutableArray * itemIds; 
+@property (assign,nonatomic) BOOL hasNumItems; 
+@property (assign,nonatomic) unsigned numItems; 
+@property (nonatomic,retain) NSMutableArray * collectionClassDisplayNames; 
+@property (nonatomic,retain) NSMutableArray * collectionClassSpokenNames; 
+@property (assign,nonatomic) BOOL hasModifiedTime; 
+@property (assign,nonatomic) double modifiedTime; 
+@property (nonatomic,readonly) BOOL hasUrl; 
+@property (nonatomic,retain) NSString * url; 
+@property (nonatomic,readonly) BOOL hasAuthorName; 
+@property (nonatomic,retain) NSString * authorName; 
+@property (nonatomic,readonly) BOOL hasPublisher; 
+@property (nonatomic,retain) GEOPDPublisher * publisher; 
+@property (assign,nonatomic) BOOL hasEnableFallbackImagesForItems; 
+@property (assign,nonatomic) BOOL enableFallbackImagesForItems; 
+@property (nonatomic,readonly) BOOL hasAuthorPhoto; 
+@property (nonatomic,retain) GEOPDCaptionedPhoto * authorPhoto; 
+@property (assign,nonatomic) BOOL hasErrorState; 
+@property (assign,nonatomic) int errorState; 
+@property (nonatomic,readonly) PBUnknownFields * unknownFields; 
++(Class)photoType;
++(Class)itemIdType;
++(Class)placeCollectionItemType;
++(Class)displayTitleType;
++(Class)spokenTitleType;
++(Class)collectionDescriptionType;
++(Class)collectionClassDisplayNameType;
++(Class)collectionClassSpokenNameType;
++(BOOL)isValid:(id)arg1 ;
++(id)collectionComponentsForPlaceData:(id)arg1 ;
+-(void)setPublisher:(GEOPDPublisher *)arg1 ;
+-(GEOPDPublisher *)publisher;
+-(id)dictionaryRepresentation;
+-(PBUnknownFields *)unknownFields;
+-(void)clearUnknownFields:(BOOL)arg1 ;
+-(void)readAll:(BOOL)arg1 ;
+-(void)setPhotos:(NSMutableArray *)arg1 ;
+-(id)init;
+-(unsigned long long)photosCount;
+-(id)jsonRepresentation;
+-(void)clearPhotos;
+-(void)addPhoto:(id)arg1 ;
+-(NSString *)authorName;
+-(void)mergeFrom:(id)arg1 ;
+-(int)errorState;
+-(id)initWithData:(id)arg1 ;
+-(NSString *)url;
+-(BOOL)hasCollectionId;
+-(id)collectionTitle;
+-(id)collectionDescription;
+-(BOOL)hasNumItems;
+-(double)modifiedTime;
+-(BOOL)hasAuthorPhoto;
+-(GEOPDCaptionedPhoto *)authorPhoto;
+-(void)addItemId:(id)arg1 ;
+-(void)addDisplayTitle:(id)arg1 ;
+-(void)addCollectionDescription:(id)arg1 ;
+-(void)addSpokenTitle:(id)arg1 ;
+-(void)addPlaceCollectionItem:(id)arg1 ;
+-(void)setNumItems:(unsigned)arg1 ;
+-(void)addCollectionClassDisplayName:(id)arg1 ;
+-(void)setModifiedTime:(double)arg1 ;
+-(void)addCollectionClassSpokenName:(id)arg1 ;
+-(void)setAuthorName:(NSString *)arg1 ;
+-(void)setEnableFallbackImagesForItems:(BOOL)arg1 ;
+-(unsigned long long)itemIdsCount;
+-(void)setAuthorPhoto:(GEOPDCaptionedPhoto *)arg1 ;
+-(void)setErrorState:(int)arg1 ;
+-(unsigned long long)displayTitlesCount;
+-(void)clearDisplayTitles;
+-(id)displayTitleAtIndex:(unsigned long long)arg1 ;
+-(id)initWithDictionary:(id)arg1 ;
+-(unsigned long long)collectionDescriptionsCount;
+-(void)clearCollectionDescriptions;
+-(id)collectionDescriptionAtIndex:(unsigned long long)arg1 ;
+-(unsigned long long)placeCollectionItemsCount;
+-(void)clearPlaceCollectionItems;
+-(id)placeCollectionItemAtIndex:(unsigned long long)arg1 ;
+-(unsigned long long)spokenTitlesCount;
+-(void)clearSpokenTitles;
+-(id)spokenTitleAtIndex:(unsigned long long)arg1 ;
+-(void)clearItemIds;
+-(id)itemIdAtIndex:(unsigned long long)arg1 ;
+-(void)setCollectionId:(GEOPDMapsIdentifier *)arg1 ;
+-(GEOPDMapsIdentifier *)collectionId;
+-(unsigned long long)collectionClassDisplayNamesCount;
+-(void)clearCollectionClassDisplayNames;
+-(id)collectionClassDisplayNameAtIndex:(unsigned long long)arg1 ;
+-(unsigned long long)collectionClassSpokenNamesCount;
+-(void)clearCollectionClassSpokenNames;
+-(id)collectionClassSpokenNameAtIndex:(unsigned long long)arg1 ;
+-(void)setDisplayTitles:(NSMutableArray *)arg1 ;
+-(void)setCollectionDescriptions:(NSMutableArray *)arg1 ;
+-(void)setPlaceCollectionItems:(NSMutableArray *)arg1 ;
+-(NSMutableArray *)spokenTitles;
+-(void)setSpokenTitles:(NSMutableArray *)arg1 ;
+-(void)setHasNumItems:(BOOL)arg1 ;
+-(NSMutableArray *)collectionClassDisplayNames;
+-(NSMutableArray *)collectionClassSpokenNames;
+-(void)setCollectionClassDisplayNames:(NSMutableArray *)arg1 ;
+-(void)setCollectionClassSpokenNames:(NSMutableArray *)arg1 ;
+-(void)setHasModifiedTime:(BOOL)arg1 ;
+-(BOOL)hasModifiedTime;
+-(BOOL)hasAuthorName;
+-(BOOL)enableFallbackImagesForItems;
+-(BOOL)hasEnableFallbackImagesForItems;
+-(void)setHasEnableFallbackImagesForItems:(BOOL)arg1 ;
+-(void)setHasErrorState:(BOOL)arg1 ;
+-(BOOL)hasErrorState;
+-(id)errorStateAsString:(int)arg1 ;
+-(int)StringAsErrorState:(id)arg1 ;
+-(id)description;
+-(unsigned)numItems;
+-(BOOL)hasUrl;
+-(void)setItemIds:(NSMutableArray *)arg1 ;
+-(void)setUrl:(NSString *)arg1 ;
+-(NSMutableArray *)photos;
+-(id)photoAtIndex:(unsigned long long)arg1 ;
+-(unsigned long long)hash;
+-(NSMutableArray *)placeCollectionItems;
+-(BOOL)readFrom:(id)arg1 ;
+-(GEOPDMapsIdentifier *)publisherId;
+-(void)copyTo:(id)arg1 ;
+-(NSMutableArray *)itemIds;
+-(void)writeTo:(id)arg1 ;
+-(void)setPublisherId:(GEOPDMapsIdentifier *)arg1 ;
+-(BOOL)hasPublisherId;
+-(NSMutableArray *)displayTitles;
+-(NSMutableArray *)collectionDescriptions;
+-(BOOL)hasPublisher;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithJSON:(id)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+@end
+

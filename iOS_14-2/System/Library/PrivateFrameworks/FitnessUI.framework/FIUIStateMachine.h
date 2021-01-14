@@ -1,0 +1,61 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:27:43 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NSObject, NSMutableSet, FIUIState, NSMutableArray, NSString;
+
+@interface FIUIStateMachine : NSObject {
+
+	NSObject*<OS_dispatch_queue> _queue;
+	NSMutableSet* _states;
+	FIUIState* _state;
+	FIUIState* _initialState;
+	BOOL _handlingEvent;
+	NSMutableArray* _pendingEvents;
+	NSString* _queueKey;
+	NSMutableArray* _transitionalEvents;
+	NSMutableSet* _parentStates;
+	NSString* _label;
+	/*^block*/id _errorHandler;
+	/*^block*/id _diagnosticHandler;
+	/*^block*/id _transitionalEventFilter;
+	long long _pendingEvent;
+
+}
+
+@property (assign) long long pendingEvent;                  //@synthesize pendingEvent=_pendingEvent - In the implementation block
+@property (nonatomic,retain) NSString * label;              //@synthesize label=_label - In the implementation block
+@property (copy) id errorHandler;                           //@synthesize errorHandler=_errorHandler - In the implementation block
+@property (copy) id diagnosticHandler;                      //@synthesize diagnosticHandler=_diagnosticHandler - In the implementation block
+@property (copy) id transitionalEventFilter;                //@synthesize transitionalEventFilter=_transitionalEventFilter - In the implementation block
+-(id)errorHandler;
+-(void)setErrorHandler:(id)arg1 ;
+-(void)addStates:(id)arg1 ;
+-(id)description;
+-(void)event:(long long)arg1 ;
+-(void)export;
+-(id)graphDescription;
+-(id)state;
+-(id)queue;
+-(void)setLabel:(NSString *)arg1 ;
+-(void)addState:(id)arg1 ;
+-(NSString *)label;
+-(void)dealloc;
+-(void)setDiagnosticHandler:(id)arg1 ;
+-(void)_queue_handleEvents;
+-(id)diagnosticHandler;
+-(id)transitionalEventFilter;
+-(void)_queue_processEvent:(long long)arg1 ;
+-(void)_queue_setInitialStateIfNeeded:(id)arg1 ;
+-(id)initWithLabel:(id)arg1 queue:(id)arg2 ;
+-(void)eventAsync:(long long)arg1 ;
+-(void)addChildStates:(id)arg1 toState:(id)arg2 withEntryState:(id)arg3 ;
+-(void)setTransitionalEventFilter:(id)arg1 ;
+-(long long)pendingEvent;
+-(void)setPendingEvent:(long long)arg1 ;
+@end
+

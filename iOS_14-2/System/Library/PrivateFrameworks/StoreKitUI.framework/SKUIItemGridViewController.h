@@ -1,0 +1,96 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:06 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/StoreKitUI-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <libobjc.A.dylib/SKUIItemCollectionDelegate.h>
+#import <UIKit/UICollectionViewDataSource.h>
+#import <UIKit/UICollectionViewDelegate.h>
+
+@protocol SKUIItemGridDelegate;
+@class UICollectionView, NSMutableIndexSet, SKUIItemCollectionController, UIImage, NSMutableArray, SKUIClientContext, NSOperationQueue, SKUIUber, SKUIStyledImageDataConsumer, SKUIItemArtworkContext, NSArray, NSString;
+
+@interface SKUIItemGridViewController : UIViewController <SKUIItemCollectionDelegate, UICollectionViewDataSource, UICollectionViewDelegate> {
+
+	UICollectionView* _collectionView;
+	NSMutableIndexSet* _hiddenIconIndexSet;
+	SKUIItemCollectionController* _itemCollectionController;
+	UIImage* _placeholderImage;
+	NSMutableIndexSet* _selectedItemIndexSet;
+	NSMutableArray* _items;
+	double _rowHeight;
+	SKUIClientContext* _clientContext;
+	id<SKUIItemGridDelegate> _delegate;
+	NSOperationQueue* _operationQueue;
+	SKUIUber* _uber;
+	CGSize _imageBoundingSize;
+
+}
+
+@property (nonatomic,readonly) double rowHeight;                                          //@synthesize rowHeight=_rowHeight - In the implementation block
+@property (nonatomic,retain) SKUIClientContext * clientContext;                           //@synthesize clientContext=_clientContext - In the implementation block
+@property (assign,nonatomic) CGPoint contentOffset; 
+@property (assign,nonatomic,__weak) id<SKUIItemGridDelegate> delegate;                    //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,retain) SKUIStyledImageDataConsumer * iconDataConsumer; 
+@property (nonatomic,retain) SKUIItemArtworkContext * artworkContext; 
+@property (assign,nonatomic) CGSize imageBoundingSize;                                    //@synthesize imageBoundingSize=_imageBoundingSize - In the implementation block
+@property (nonatomic,copy) NSArray * items;                                               //@synthesize items=_items - In the implementation block
+@property (nonatomic,retain) NSOperationQueue * operationQueue;                           //@synthesize operationQueue=_operationQueue - In the implementation block
+@property (nonatomic,retain) SKUIUber * uber;                                             //@synthesize uber=_uber - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(void)collectionView:(id)arg1 didEndDisplayingCell:(id)arg2 forItemAtIndexPath:(id)arg3 ;
+-(void)setOperationQueue:(NSOperationQueue *)arg1 ;
+-(void)collectionView:(id)arg1 willDisplayCell:(id)arg2 forItemAtIndexPath:(id)arg3 ;
+-(void)collectionView:(id)arg1 didSelectItemAtIndexPath:(id)arg2 ;
+-(NSOperationQueue *)operationQueue;
+-(id)_collectionView;
+-(void)setItems:(NSArray *)arg1 ;
+-(SKUIUber *)uber;
+-(id<SKUIItemGridDelegate>)delegate;
+-(id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2 ;
+-(void)setClientContext:(SKUIClientContext *)arg1 ;
+-(SKUIClientContext *)clientContext;
+-(long long)collectionView:(id)arg1 numberOfItemsInSection:(long long)arg2 ;
+-(void)scrollViewWillBeginDragging:(id)arg1 ;
+-(unsigned long long)supportedInterfaceOrientations;
+-(NSArray *)items;
+-(void)scrollViewWillEndDragging:(id)arg1 withVelocity:(CGPoint)arg2 targetContentOffset:(inout CGPoint*)arg3 ;
+-(void)setDelegate:(id<SKUIItemGridDelegate>)arg1 ;
+-(void)scrollViewDidEndDecelerating:(id)arg1 ;
+-(double)rowHeight;
+-(void)viewDidDisappear:(BOOL)arg1 ;
+-(id)_collectionViewLayout;
+-(void)loadView;
+-(CGPoint)contentOffset;
+-(void)removeItemsAtIndexes:(id)arg1 ;
+-(void)setContentOffset:(CGPoint)arg1 ;
+-(void)viewDidLayoutSubviews;
+-(void)setUber:(SKUIUber *)arg1 ;
+-(void)dealloc;
+-(SKUIItemArtworkContext *)artworkContext;
+-(void)itemCollectionView:(id)arg1 didConfirmItemOfferForCell:(id)arg2 ;
+-(void)setImageBoundingSize:(CGSize)arg1 ;
+-(CGSize)imageBoundingSize;
+-(void)_reloadLayout;
+-(SKUIStyledImageDataConsumer *)iconDataConsumer;
+-(id)_itemCollectionController;
+-(void)loadNextPageOfArtworkWithReason:(long long)arg1 ;
+-(void)setArtworkContext:(SKUIItemArtworkContext *)arg1 ;
+-(void)setIconDataConsumer:(SKUIStyledImageDataConsumer *)arg1 ;
+-(id)itemCollectionController:(id)arg1 cellLayoutForItemIndex:(long long)arg2 ;
+-(NSRange)itemCollectionController:(id)arg1 itemPageRangeForOffset:(CGPoint)arg2 ;
+-(NSRange)visibleItemRangeForItemCollectionController:(id)arg1 ;
+-(id)initWithRowHeight:(double)arg1 ;
+-(id)popIconImageViewForItemAtIndex:(long long)arg1 ;
+-(void)setItemCellClass:(Class)arg1 ;
+-(void)unhideIcons;
+-(void)itemCollectionView:(id)arg1 didPerformEditActionForCell:(id)arg2 ;
+@end
+

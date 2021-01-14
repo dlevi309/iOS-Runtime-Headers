@@ -1,0 +1,167 @@
+/*
+* Generated on Thursday, January 14, 2021 at 2:25:27 PM Pacific Standard Time
+* Operating System: Version 14.2 (Build 18B92)
+* Image Source: /System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard
+*/
+
+#import <SpringBoard/SpringBoard-Structs.h>
+#import <SpringBoard/SBSwitcherModifier.h>
+
+@interface SBDeckSwitcherModifier : SBSwitcherModifier {
+
+	CGPoint _previousContentOffset;
+	BOOL _isScrollingForward;
+	long long _grabbedDraggingIndex;
+	double _outputContentOffsetAdjustmentForIndexChange;
+	double _inputContentOffsetAdjustmentForIndexChange;
+	CGPoint _start;
+	CGPoint _originalLocationInView;
+	double _initialTranslationAdjustment;
+	BOOL _useTitleOpacityPrototypeSettings;
+	unsigned long long _ongoingAppLayoutRemovals;
+
+}
+-(BOOL)isScrollEnabled;
+-(id)animationAttributesForLayoutElement:(id)arg1 ;
+-(id)topMostLayoutElements;
+-(double)opacityForIndex:(unsigned long long)arg1 ;
+-(BOOL)isSwitcherWindowVisible;
+-(BOOL)isHomeScreenContentRequired;
+-(BOOL)shouldAcceleratedHomeButtonPressBegin;
+-(long long)homeScreenBackdropBlurType;
+-(id)visibleAppLayouts;
+-(BOOL)shouldRubberbandFullScreenHomeGrabberView;
+-(id)appLayoutsToCacheSnapshots;
+-(UIRectCornerRadii)cardCornerRadiiForIndex:(unsigned long long)arg1 ;
+-(BOOL)isSwitcherWindowUserInteractionEnabled;
+-(BOOL)shouldAnimateInsertionOrRemovalAtIndex:(unsigned long long)arg1 ;
+-(id)liveContentRasterizationAttributesForAppLayout:(id)arg1 ;
+-(double)titleAndIconOpacityForIndex:(unsigned long long)arg1 ;
+-(double)scrollRange;
+-(CGRect)frameForIndex:(unsigned long long)arg1 ;
+-(long long)wallpaperStyle;
+-(CGPoint)_contentOffsetForScrollProgress:(double)arg1 ;
+-(BOOL)_isIndexVisible:(unsigned long long)arg1 ;
+-(BOOL)shouldConfigureInAppDockHiddenAssertion;
+-(double)plusButtonAlpha;
+-(id)appExposeAccessoryButtonsBundleIdentifier;
+-(long long)plusButtonStyle;
+-(void)resetAdjustedScrollingState;
+-(id)init;
+-(id)handleScrollEvent:(id)arg1 ;
+-(double)contentViewScale;
+-(unsigned long long)indexForScrollProgress:(double)arg1 displayItemsCount:(unsigned long long)arg2 frameOrigin:(double)arg3 ;
+-(double)switcherDimmingAlpha;
+-(CGPoint)adjustedOffsetForOffset:(CGPoint)arg1 translation:(CGPoint)arg2 startPoint:(CGPoint)arg3 locationInView:(CGPoint)arg4 horizontalVelocity:(inout double*)arg5 verticalVelocity:(inout double*)arg6 ;
+-(unsigned long long)numberOfItems;
+-(double)leadingOffsetForIndex:(unsigned long long)arg1 displayItemsCount:(unsigned long long)arg2 scrollProgress:(double)arg3 ;
+-(id)handleTapAppLayoutEvent:(id)arg1 ;
+-(double)_scaleInSwitcherViewForIndex:(unsigned long long)arg1 scrollProgress:(double)arg2 ;
+-(double)reopenClosedWindowsButtonScale;
+-(id)handleTapOutsideToDismissEvent:(id)arg1 ;
+-(CGPoint)restingOffsetForScrollOffset:(CGPoint)arg1 velocity:(CGPoint)arg2 ;
+-(double)rotationAngleForIndex:(unsigned long long)arg1 ;
+-(double)_unscaledCardCornerRadius;
+-(double)_cardCornerRadiusInSwitcher;
+-(id)appLayoutForReceivingHardwareButtonEvents;
+-(double)titleOpacityForIndex:(unsigned long long)arg1 scrollProgress:(double)arg2 ;
+-(BOOL)shouldAllowContentViewTouchesForIndex:(unsigned long long)arg1 ;
+-(double)contentPageViewScaleForAppLayout:(id)arg1 ;
+-(double)switcherBackdropBlurProgress;
+-(BOOL)shouldBringCardToFrontDuringInsertionOrRemoval;
+-(double)homeScreenDimmingAlpha;
+-(double)shadowOffsetForIndex:(unsigned long long)arg1 ;
+-(double)_switcherCardScale;
+-(id)adjustedAppLayoutsForAppLayouts:(id)arg1 ;
+-(BOOL)wantsSwitcherDimmingView;
+-(long long)preferredSnapshotOrientationForAppLayout:(id)arg1 ;
+-(id)debugDescription;
+-(double)wallpaperScale;
+-(BOOL)shouldScaleOverlayToFillBoundsAtIndex:(unsigned long long)arg1 ;
+-(CGRect)fullyPresentedFrameForAppLayout:(id)arg1 ;
+-(unsigned long long)_indexForScrollProgress:(double)arg1 displayItemsCount:(unsigned long long)arg2 depth:(double)arg3 ;
+-(unsigned long long)indexToScrollToAfterRemovingIndex:(unsigned long long)arg1 ;
+-(id)keyboardSuppressionMode;
+-(id)scrollViewAttributes;
+-(double)visibleMarginForItemContainerAtIndex:(unsigned long long)arg1 ;
+-(double)_preferredVisibleMarginForTopPage;
+-(double)_scrollProgressForContentOffset:(CGPoint)arg1 ;
+-(BOOL)shouldUseBackgroundWallpaperTreatmentForIndex:(unsigned long long)arg1 ;
+-(BOOL)wantsDockWindowLevelAssertion;
+-(double)dockProgress;
+-(double)depthForIndex:(unsigned long long)arg1 displayItemsCount:(unsigned long long)arg2 scrollProgress:(double)arg3 ;
+-(id)appLayoutToScrollToBeforeReopeningClosedWindows;
+-(long long)dockUpdateMode;
+-(BOOL)isItemContainerPointerInteractionEnabled;
+-(double)dockWindowLevel;
+-(BOOL)switcherDimmingViewBlocksTouches;
+-(double)lighteningAlphaForIndex:(unsigned long long)arg1 ;
+-(void)didMoveToParentModifier:(id)arg1 ;
+-(BOOL)shouldPerformCrossfadeForReduceMotion;
+-(BOOL)wantsDockBehaviorAssertion;
+-(long long)shadowStyleForAppLayout:(id)arg1 ;
+-(BOOL)wantsAsynchronousSurfaceRetentionAssertion;
+-(double)titleOpacityForIndex:(unsigned long long)arg1 ;
+-(CGSize)_contentSize;
+-(double)scrollProgressForIndex:(unsigned long long)arg1 displayItemsCount:(unsigned long long)arg2 frameOrigin:(double)arg3 ;
+-(double)scrollProgressForIndex:(unsigned long long)arg1 ;
+-(long long)_topIndexForLocationInContainerCoordinateSpace:(CGPoint)arg1 ;
+-(CGRect)_scaleTransformedFrameForIndex:(unsigned long long)arg1 withUntransformedFrame:(CGRect)arg2 scrollProgress:(double)arg3 ;
+-(NSRange)_visibleAppLayoutRangeForContentOffset:(CGPoint)arg1 ;
+-(unsigned long long)_directionForRemovingIndex:(unsigned long long)arg1 centeredIndex:(unsigned long long)arg2 ;
+-(double)_depthForFrameOrigin:(double)arg1 ;
+-(BOOL)wantsSwitcherBackdropBlur;
+-(id)appLayoutToScrollToBeforeTransitioning;
+-(BOOL)shouldPerformRotationAnimationForOrientationChange;
+-(long long)appExposeAccessoryButtonsOverrideUserInterfaceStyle;
+-(id)handleSwitcherSettingsChangedEvent:(id)arg1 ;
+-(BOOL)_priorIndex:(unsigned long long)arg1 fullyObscuresCardForIndex:(unsigned long long)arg2 ;
+-(double)_scrollProgress;
+-(double)homeScreenBackdropBlurProgress;
+-(double)shadowOpacityForIndex:(unsigned long long)arg1 ;
+-(unsigned long long)transactionCompletionOptions;
+-(double)_valueAlongDepthCurveForIndex:(unsigned long long)arg1 scrollProgress:(double)arg2 aCoefficient:(double)arg3 bCoefficient:(double)arg4 ;
+-(id)handleRemovalEvent:(id)arg1 ;
+-(id)appLayoutsToResignActive;
+-(unsigned long long)dockWindowLevelPriority;
+-(id)handleMainTransitionEvent:(id)arg1 ;
+-(unsigned long long)_newIndexOfItemAtIndex:(unsigned long long)arg1 afterRemovingItemAtIndex:(unsigned long long)arg2 ;
+-(unsigned long long)_indexOfCurrentCenteredCard;
+-(BOOL)isIndexKillable:(unsigned long long)arg1 ;
+-(BOOL)isWallpaperRequiredForSwitcher;
+-(BOOL)isContainerStatusBarVisible;
+-(CGPoint)_adjustedOffsetForIndex:(long long)arg1 offset:(CGPoint)arg2 start:(CGPoint)arg3 originalLocationInView:(CGPoint)arg4 locationInView:(CGPoint)arg5 ;
+-(double)containerStatusBarAnimationDuration;
+-(void)_applyPrototypeSettings;
+-(BOOL)clipsToUnobscuredMarginAtIndex:(unsigned long long)arg1 ;
+-(double)desiredXOriginForQuantizedTopPage;
+-(double)wallpaperOverlayAlphaForIndex:(unsigned long long)arg1 ;
+-(BOOL)isHomeGrabberVisibleForIndex:(unsigned long long)arg1 ;
+-(double)_restingScrollProgressForProgress:(double)arg1 velocity:(CGPoint)arg2 ;
+-(BOOL)isContentStatusBarVisibleForIndex:(unsigned long long)arg1 ;
+-(long long)switcherBackdropBlurType;
+-(double)_scaleTransformedXOrigin:(double)arg1 scrollProgress:(double)arg2 ;
+-(BOOL)wantsHomeScreenPointerInteractions;
+-(unsigned long long)_indexForContentOffset:(CGPoint)arg1 ;
+-(BOOL)shouldFireTransitionCompletionInDefaultRunLoopMode;
+-(double)scaleForIndex:(unsigned long long)arg1 ;
+-(BOOL)shouldUseBrightMaterialForIndex:(unsigned long long)arg1 ;
+-(double)snapshotScaleForAppLayout:(id)arg1 ;
+-(double)_scrollProgressForIndex:(unsigned long long)arg1 displayItemsCount:(unsigned long long)arg2 depth:(double)arg3 ;
+-(unsigned long long)indexToScrollToAfterInsertingAtIndex:(unsigned long long)arg1 ;
+-(CGRect)_frameForIndex:(unsigned long long)arg1 displayItemsCount:(unsigned long long)arg2 scrollProgress:(double)arg3 ignoringScrollOffset:(BOOL)arg4 ;
+-(double)homeScreenScale;
+-(CGPoint)contentOffsetForIndex:(unsigned long long)arg1 centered:(BOOL)arg2 ;
+-(double)darkeningAlphaForIndex:(unsigned long long)arg1 ;
+-(double)_scrollMin;
+-(BOOL)isIndexSelectable:(unsigned long long)arg1 ;
+-(double)homeScreenAlpha;
+-(double)minimumTranslationToKillIndex:(unsigned long long)arg1 ;
+-(double)reopenClosedWindowsButtonAlpha;
+-(double)_scaleForTransformForIndex:(unsigned long long)arg1 scrollProgress:(double)arg2 ;
+-(id)appLayoutsToCacheFullsizeSnapshots;
+-(double)opacityForIndex:(unsigned long long)arg1 scrollProgress:(double)arg2 ;
+-(double)_counteractScrollingForOffset:(double)arg1 scrollProgress:(double)arg2 ;
+-(double)distanceToLeadingEdgeOfLeadingCardFromTrailingEdgeOfScreenWithVisibleIndexToStartSearch:(unsigned long long)arg1 ;
+@end
+
