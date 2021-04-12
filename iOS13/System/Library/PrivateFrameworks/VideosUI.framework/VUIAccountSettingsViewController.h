@@ -1,0 +1,77 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:26 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VideosUI-Structs.h>
+#import <Preferences/PSListController.h>
+#import <UIKit/UITableViewDataSource.h>
+#import <UIKit/UITextFieldDelegate.h>
+
+@class PSSpecifier, UITextField, NSString;
+
+@interface VUIAccountSettingsViewController : PSListController <UITableViewDataSource, UITextFieldDelegate> {
+
+	BOOL _authenticationInProgress;
+	long long _watchListAppsCount;
+	PSSpecifier* _credentialsAppleIDSpecifier;
+	PSSpecifier* _credentialsPasswordSpecifier;
+	PSSpecifier* _signInSpecifier;
+	PSSpecifier* _createAccountSpecifier;
+	UITextField* _credentialsAppleIDTextField;
+	UITextField* _credentialsPasswordTextField;
+
+}
+
+@property (assign,nonatomic) BOOL authenticationInProgress;                           //@synthesize authenticationInProgress=_authenticationInProgress - In the implementation block
+@property (assign,nonatomic) long long watchListAppsCount;                            //@synthesize watchListAppsCount=_watchListAppsCount - In the implementation block
+@property (nonatomic,retain) PSSpecifier * credentialsAppleIDSpecifier;               //@synthesize credentialsAppleIDSpecifier=_credentialsAppleIDSpecifier - In the implementation block
+@property (nonatomic,retain) PSSpecifier * credentialsPasswordSpecifier;              //@synthesize credentialsPasswordSpecifier=_credentialsPasswordSpecifier - In the implementation block
+@property (nonatomic,retain) PSSpecifier * signInSpecifier;                           //@synthesize signInSpecifier=_signInSpecifier - In the implementation block
+@property (nonatomic,retain) PSSpecifier * createAccountSpecifier;                    //@synthesize createAccountSpecifier=_createAccountSpecifier - In the implementation block
+@property (nonatomic,retain) UITextField * credentialsAppleIDTextField;               //@synthesize credentialsAppleIDTextField=_credentialsAppleIDTextField - In the implementation block
+@property (nonatomic,retain) UITextField * credentialsPasswordTextField;              //@synthesize credentialsPasswordTextField=_credentialsPasswordTextField - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(void)viewDidLoad;
+-(id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 ;
+-(void)_dismissViewController;
+-(BOOL)textFieldShouldReturn:(id)arg1 ;
+-(BOOL)textField:(id)arg1 shouldChangeCharactersInRange:(NSRange)arg2 replacementString:(id)arg3 ;
+-(long long)_alertStyle;
+-(id)specifiers;
+-(void)setAuthenticationInProgress:(BOOL)arg1 ;
+-(BOOL)authenticationInProgress;
+-(id)_accountSpecifiers;
+-(id)_sourcesSpecifiers;
+-(id)_externalSpecifiers;
+-(id)_clearHistorySpecifiers;
+-(id)_signOutSpecifiers;
+-(id)_credentialsSpecifiers;
+-(id)_signInSpecifiers;
+-(id)_createAccountSpecifiers;
+-(void)_checkConnectedApps;
+-(void)_didSelectSpecifier:(id)arg1 ;
+-(id)_getConnectedAppsCountString;
+-(void)_clearPlayHistory:(id)arg1 ;
+-(void)_openiForgotAppleURL;
+-(long long)watchListAppsCount;
+-(void)setWatchListAppsCount:(long long)arg1 ;
+-(PSSpecifier *)credentialsAppleIDSpecifier;
+-(void)setCredentialsAppleIDSpecifier:(PSSpecifier *)arg1 ;
+-(PSSpecifier *)credentialsPasswordSpecifier;
+-(void)setCredentialsPasswordSpecifier:(PSSpecifier *)arg1 ;
+-(PSSpecifier *)signInSpecifier;
+-(void)setSignInSpecifier:(PSSpecifier *)arg1 ;
+-(PSSpecifier *)createAccountSpecifier;
+-(void)setCreateAccountSpecifier:(PSSpecifier *)arg1 ;
+-(UITextField *)credentialsAppleIDTextField;
+-(void)setCredentialsAppleIDTextField:(UITextField *)arg1 ;
+-(UITextField *)credentialsPasswordTextField;
+-(void)setCredentialsPasswordTextField:(UITextField *)arg1 ;
+@end
+

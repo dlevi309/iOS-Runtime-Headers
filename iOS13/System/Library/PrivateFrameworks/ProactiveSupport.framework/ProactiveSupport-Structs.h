@@ -1,0 +1,120 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
+*/
+
+typedef struct opaque_pthread_mutex_t {
+	long long __sig;
+	char __opaque[56];
+} opaque_pthread_mutex_t;
+
+typedef struct _NSZone* NSZoneRef;
+
+typedef struct {
+	void mmapBase;
+	unsigned long long mmapSize;
+} SCD_Struct_PA2;
+
+typedef const struct __CFAllocator* CFAllocatorRef;
+
+typedef struct {
+	unsigned field1;
+	unsigned field2;
+} SCD_Struct_PA4;
+
+typedef struct {
+	unsigned long long field1;
+	id field2;
+	unsigned long long field3;
+	unsigned long long field4[5];
+} SCD_Struct_PA5;
+
+typedef struct {
+	unsigned field1 : 1;
+	unsigned field2 : 1;
+	unsigned field3 : 1;
+	unsigned field4 : 1;
+	unsigned field5 : 1;
+	unsigned field6 : 1;
+} SCD_Struct_PA6;
+
+typedef struct {
+	_PASBuddyAllocator field1;
+	void field2;
+	unsigned long long field3;
+	void field4;
+	a field5;
+	t field6;
+	o field7;
+	m field8;
+	int field9;
+	char field10;
+	_ field11;
+	float field12;
+	long field13;
+	a field14;
+	g field15;
+} SCD_Struct_PA7;
+
+typedef struct {
+	unsigned long long s[2];
+} SCD_Struct_PA8;
+
+typedef struct {
+	unsigned field1;
+	unsigned field2;
+	unsigned field3;
+	unsigned field4;
+	unsigned char field5;
+	unsigned char field6;
+	unsigned char field7;
+	unsigned char field8;
+} SCD_Struct_PA9;
+
+typedef struct _CFBurstTrie* CFBurstTrieRef;
+
+typedef struct sqlite3* sqlite3Ref;
+
+typedef struct atomic_flag {
+	AB _Value;
+} atomic_flag;
+
+typedef struct sqlite3_stmt* sqlite3_stmtRef;
+
+typedef struct {
+	unsigned field1[8];
+} SCD_Struct_PA14;
+
+typedef struct __SecTask* SecTaskRef;
+
+typedef const struct _PASCompactStringArray* PASCompactStringArrayRef;
+
+typedef struct {
+	void field1;
+	void field2;
+	__CFSet field3;
+	void field4;
+	_ field5;
+	P field6;
+	A field7;
+	unsigned short field8;
+	unsigned long field9;
+	P field10;
+	Ob field11;
+	j field12;
+	e field13;
+	char field14;
+	t field15;
+	G field16;
+	const  field17;
+	a field18;
+	p field19;
+	h field20;
+	unsigned short field21;
+	t field22;
+	a field23;
+	t field24;
+	short field25;
+} SCD_Struct_PA17;
+

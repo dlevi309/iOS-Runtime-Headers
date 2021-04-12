@@ -1,0 +1,125 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:07 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
+*/
+
+
+#import <AppleMediaServices/AppleMediaServices-Structs.h>
+@interface AMSDefaults : NSObject
++(void)_setValue:(id)arg1 forKey:(id)arg2 ;
++(BOOL)_boolForKey:(id)arg1 defaultValue:(BOOL)arg2 ;
++(id)_valueForKey:(id)arg1 ;
++(BOOL)disablePrivacyAcknowledgement;
++(id)primaryBiometricACLVersion;
++(id)extendedBiometricACLVersion;
++(id)storefrontSuffixes;
++(id)bagOverrides;
++(void)setStorefrontSuffixes:(id)arg1 ;
++(id)bagURLCookies;
++(void)setBagURLCookies:(id)arg1 ;
++(long long)deviceBiometricsState;
++(void)setDeviceBiometricsState:(long long)arg1 ;
++(void)setDefaultPaymentPassIdentifier:(id)arg1 ;
++(id)defaultPaymentPassIdentifier;
++(BOOL)shouldSampleWithPercentage:(double)arg1 sessionDuration:(double)arg2 identifier:(id)arg3 ;
++(long long)cardEnrollmentSilent;
++(long long)_integerForKey:(id)arg1 defaultValue:(long long)arg2 ;
++(id)_valueForKey:(id)arg1 domain:(CFStringRef)arg2 ;
++(BOOL)_boolForKey:(id)arg1 defaultValue:(BOOL)arg2 domain:(CFStringRef)arg3 ;
++(void)_setBool:(BOOL)arg1 forKey:(id)arg2 ;
++(void)_setInteger:(long long)arg1 forKey:(id)arg2 ;
++(void)_setValue:(id)arg1 forKey:(id)arg2 domain:(CFStringRef)arg3 ;
++(void)_setBool:(BOOL)arg1 forKey:(id)arg2 domain:(CFStringRef)arg3 ;
++(double)_randomDouble;
++(long long)_integerForKey:(id)arg1 defaultValue:(long long)arg2 domain:(CFStringRef)arg3 ;
++(BOOL)allowDuplicateAccounts;
++(BOOL)allowUpsellEnrollmentForAppliedAccounts;
++(BOOL)alwaysSendCacheBuster;
++(BOOL)alwaysSendGUID;
++(long long)applePayClassic;
++(id)authenticationStarted;
++(long long)cardEnrollmentAutomatic;
++(long long)cardEnrollmentManual;
++(long long)cardEnrollmentUpsell;
++(id)deviceOfferEligibility;
++(id)deviceOffersSerialNumber;
++(BOOL)didRetrieveDeviceOffers;
++(BOOL)didRetrieveDeviceOffersEligibility;
++(BOOL)didRetrieveTVOffers;
++(BOOL)disableHARLogging;
++(id)dynamicURLs;
++(BOOL)enableCameraRedeem;
++(BOOL)enableFullDeviceOffersRetrieval;
++(BOOL)enablePurchaseQueue;
++(BOOL)enableRemoteSecuritySigning;
++(long long)forceLoadUrlMetrics;
++(BOOL)ignoreServerTrustEvaluation;
++(BOOL)includeFullRequestInHARLogging;
++(BOOL)includeFullResponseInHARLogging;
++(id)mediaTokenOverride;
++(id)mescalCertExpiration;
++(id)metricsCanaryIdentifier;
++(id)metricsTimingWindowStartTime;
++(BOOL)migratedDeviceOffers;
++(BOOL)migratedToNewCookieStorage;
++(id)multiUserContainerID;
++(id)multiUserSilentPreferredFailureTimes;
++(BOOL)perfomedDeviceOfferSetup;
++(long long)pushEnvironment;
++(BOOL)QAMode;
++(long long)reversePushEnabled;
++(id)sharedDatabaseChangeToken;
++(BOOL)showSandboxAccountUI;
++(BOOL)showSpyglassPurchases;
++(BOOL)useNewAccountStore;
++(void)setAllowDuplicateAccounts:(BOOL)arg1 ;
++(void)setAllowUpsellEnrollmentForAppliedAccounts:(BOOL)arg1 ;
++(void)setAlwaysSendCacheBuster:(BOOL)arg1 ;
++(void)setAlwaysSendGUID:(BOOL)arg1 ;
++(void)setApplePayClassic:(long long)arg1 ;
++(void)setAuthenticationStarted:(id)arg1 ;
++(void)setBagOverrides:(id)arg1 ;
++(void)setCardEnrollmentAutomatic:(long long)arg1 ;
++(void)setCardEnrollmentManual:(long long)arg1 ;
++(void)setCardEnrollmentSilent:(long long)arg1 ;
++(void)setCardEnrollmentUpsell:(long long)arg1 ;
++(void)setDeviceOfferEligibility:(id)arg1 ;
++(void)setDidRetrieveDeviceOffersEligibility:(BOOL)arg1 ;
++(void)setDidRetrieveDeviceOffers:(BOOL)arg1 ;
++(void)setDidRetrieveTVOffers:(BOOL)arg1 ;
++(void)setDisableHARLogging:(BOOL)arg1 ;
++(void)setDisablePrivacyAcknowledgement:(BOOL)arg1 ;
++(void)setDynamicURLs:(id)arg1 ;
++(void)setEnableCameraRedeem:(BOOL)arg1 ;
++(void)setEnableFullDeviceOffersRetrieval:(BOOL)arg1 ;
++(void)setEnablePurchaseQueue:(BOOL)arg1 ;
++(void)setEnableRemoteSecuritySigning:(BOOL)arg1 ;
++(void)setForceLoadUrlMetrics:(long long)arg1 ;
++(void)setIgnoreServerTrustEvaluation:(BOOL)arg1 ;
++(void)setIncludeFullRequestInHARLogging:(BOOL)arg1 ;
++(void)setIncludeFullResponseInHARLogging:(BOOL)arg1 ;
++(void)setMediaTokenOverride:(id)arg1 ;
++(void)setMescalCertExpiration:(id)arg1 ;
++(void)setMetricsCanaryIdentifier:(id)arg1 ;
++(void)setMetricsTimingWindowStartTime:(id)arg1 ;
++(void)setMigratedDeviceOffers:(BOOL)arg1 ;
++(void)setMigratedToNewCookieStorage:(BOOL)arg1 ;
++(void)setMultiUserSilentPreferredFailureTimes:(id)arg1 ;
++(void)setPerfomedDeviceOfferSetup:(BOOL)arg1 ;
++(void)setPushEnvironment:(long long)arg1 ;
++(void)setQAMode:(BOOL)arg1 ;
++(void)setReversePushEnabled:(long long)arg1 ;
++(void)setSharedDatabaseChangeToken:(id)arg1 ;
++(void)setShowSandboxAccountUI:(BOOL)arg1 ;
++(void)cleanupSampleSessions;
++(BOOL)shouldSampleWithPercentageValue:(id)arg1 sessionDurationValue:(id)arg2 identifier:(id)arg3 ;
++(void)syncWithBlock:(/*^block*/id)arg1 ;
++(BOOL)ss_ignoreServerTrustEvaluation;
++(id)demoAccount;
++(void)setDemoAccount:(id)arg1 ;
++(void)setExtendedBiometricACLVersion:(id)arg1 ;
++(void)setPrimaryBiometricACLVersion:(id)arg1 ;
++(BOOL)useNewCookieStorage;
+@end
+

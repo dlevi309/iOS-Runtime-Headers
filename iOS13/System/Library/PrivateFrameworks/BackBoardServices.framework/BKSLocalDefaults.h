@@ -1,0 +1,139 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:43 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices
+*/
+
+#import <BaseBoard/BSAbstractDefaultDomain.h>
+
+@class NSDictionary, NSArray, NSData, NSString;
+
+@interface BKSLocalDefaults : BSAbstractDefaultDomain {
+
+	BOOL _disableStudyLogAccelerometerLogging;
+	BOOL _disableStudyLogALSLogging;
+	BOOL _disableStudyLogGyroLogging;
+
+}
+
+@property (assign,nonatomic) BOOL ignoreAccelerometerAndOrientationEvents; 
+@property (assign,getter=isALSEnabled,nonatomic) BOOL ALSEnabled; 
+@property (assign,nonatomic) long long ALSEpoch; 
+@property (nonatomic,retain) NSDictionary * ALSUserPreferences; 
+@property (assign,nonatomic) float ALSDelayOnUnlock; 
+@property (assign,nonatomic) int brightnessCurve; 
+@property (assign,nonatomic) BOOL ignoreTetheringPreferences; 
+@property (assign,getter=isDitheringEnabled,nonatomic) BOOL ditheringEnabled; 
+@property (assign,nonatomic) BOOL simulatePhoneButton; 
+@property (assign,getter=isDigitizerSignpostsEnabled,nonatomic) BOOL digitizerSignpostsEnabled; 
+@property (assign,nonatomic) BOOL digitizerVisualizeTouches; 
+@property (assign,nonatomic) BOOL digitizerVisualizeHitTestRegions; 
+@property (assign,nonatomic) BOOL showBuildNumber; 
+@property (assign,nonatomic) BOOL disableMousePointer; 
+@property (assign,nonatomic) BOOL visualizeMousePointer; 
+@property (assign,nonatomic) NSArray * mouseInterpolation; 
+@property (nonatomic,retain) NSData * globalMouseDevicePreferences; 
+@property (assign,nonatomic,__weak) NSArray * loggingTypesEnabled; 
+@property (assign,nonatomic) float fenceArbiterTimeoutInterval; 
+@property (assign,nonatomic,__weak) NSString * forceMirroredOrientation; 
+@property (assign,nonatomic) BOOL hideAppleLogoOnLaunch; 
+@property (assign,getter=isSteveNoteRotationEnabled,nonatomic) BOOL steveNoteRotationEnabled; 
+@property (assign,nonatomic) BOOL disableCloneMirroring; 
+@property (assign,nonatomic) BOOL disableCAOverscan; 
+@property (assign,nonatomic) BOOL disableCAYUV; 
+@property (assign,nonatomic) BOOL disableCAScaling; 
+@property (assign,getter=isSteveNoteOverscanEnabled,nonatomic) BOOL steveNoteOverscanEnabled; 
+@property (assign,nonatomic) BOOL forceCloneMirroring; 
+@property (assign,nonatomic) BOOL disableStudyLogBTKeyboardEventLogging; 
+@property (assign,nonatomic) BOOL disableStudyLogBTKeyboardEventRedirection; 
+@property (assign,nonatomic) BOOL disableStudyLogVolumeKeyLogging; 
+@property (assign,nonatomic) BOOL disableStudyLogHomeButtonLogging; 
+@property (assign,nonatomic) BOOL disableStudyLogButtonLogging; 
+@property (assign,nonatomic) BOOL disableStudyLogCameraKeyLogging; 
+@property (assign,nonatomic) BOOL disableStudyLogPowerButtonLogging; 
+@property (assign,nonatomic) BOOL disableStudyLogAccelerometerLogging;                                       //@synthesize disableStudyLogAccelerometerLogging=_disableStudyLogAccelerometerLogging - In the implementation block
+@property (assign,nonatomic) BOOL disableStudyLogALSLogging;                                                 //@synthesize disableStudyLogALSLogging=_disableStudyLogALSLogging - In the implementation block
+@property (assign,nonatomic) BOOL disableStudyLogGyroLogging;                                                //@synthesize disableStudyLogGyroLogging=_disableStudyLogGyroLogging - In the implementation block
+-(void)setForceMirroredOrientation:(NSString *)arg1 ;
+-(NSString *)forceMirroredOrientation;
+-(void)setDigitizerSignpostsEnabled:(BOOL)arg1 ;
+-(BOOL)isDigitizerSignpostsEnabled;
+-(void)setIgnoreTetheringPreferences:(BOOL)arg1 ;
+-(BOOL)ignoreTetheringPreferences;
+-(void)setDigitizerVisualizeTouches:(BOOL)arg1 ;
+-(BOOL)digitizerVisualizeTouches;
+-(void)setDisableCAOverscan:(BOOL)arg1 ;
+-(BOOL)disableCAOverscan;
+-(void)setALSUserPreferences:(NSDictionary *)arg1 ;
+-(NSDictionary *)ALSUserPreferences;
+-(void)setForceCloneMirroring:(BOOL)arg1 ;
+-(BOOL)forceCloneMirroring;
+-(void)setALSEpoch:(long long)arg1 ;
+-(long long)ALSEpoch;
+-(void)setALSEnabled:(BOOL)arg1 ;
+-(BOOL)isALSEnabled;
+-(void)setShowBuildNumber:(BOOL)arg1 ;
+-(BOOL)showBuildNumber;
+-(void)setDisableStudyLogBTKeyboardEventLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogBTKeyboardEventLogging;
+-(void)setDigitizerVisualizeHitTestRegions:(BOOL)arg1 ;
+-(BOOL)digitizerVisualizeHitTestRegions;
+-(void)setGlobalMouseDevicePreferences:(NSData *)arg1 ;
+-(NSData *)globalMouseDevicePreferences;
+-(void)setDisableCAScaling:(BOOL)arg1 ;
+-(BOOL)disableCAScaling;
+-(void)setDisableStudyLogPowerButtonLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogPowerButtonLogging;
+-(void)setDitheringEnabled:(BOOL)arg1 ;
+-(BOOL)isDitheringEnabled;
+-(void)setBrightnessCurve:(int)arg1 ;
+-(int)brightnessCurve;
+-(void)setDisableStudyLogBTKeyboardEventRedirection:(BOOL)arg1 ;
+-(BOOL)disableStudyLogBTKeyboardEventRedirection;
+-(void)setFenceArbiterTimeoutInterval:(float)arg1 ;
+-(float)fenceArbiterTimeoutInterval;
+-(void)setDisableStudyLogVolumeKeyLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogVolumeKeyLogging;
+-(void)setMouseInterpolation:(NSArray *)arg1 ;
+-(NSArray *)mouseInterpolation;
+-(void)setDisableStudyLogCameraKeyLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogCameraKeyLogging;
+-(void)setSimulatePhoneButton:(BOOL)arg1 ;
+-(BOOL)simulatePhoneButton;
+-(void)setIgnoreAccelerometerAndOrientationEvents:(BOOL)arg1 ;
+-(BOOL)ignoreAccelerometerAndOrientationEvents;
+-(void)setDisableStudyLogHomeButtonLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogHomeButtonLogging;
+-(void)setSteveNoteRotationEnabled:(BOOL)arg1 ;
+-(BOOL)isSteveNoteRotationEnabled;
+-(void)setHideAppleLogoOnLaunch:(BOOL)arg1 ;
+-(BOOL)hideAppleLogoOnLaunch;
+-(void)setDisableCAYUV:(BOOL)arg1 ;
+-(BOOL)disableCAYUV;
+-(void)setDisableStudyLogButtonLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogButtonLogging;
+-(void)setDisableMousePointer:(BOOL)arg1 ;
+-(BOOL)disableMousePointer;
+-(void)setSteveNoteOverscanEnabled:(BOOL)arg1 ;
+-(BOOL)isSteveNoteOverscanEnabled;
+-(void)setALSDelayOnUnlock:(float)arg1 ;
+-(float)ALSDelayOnUnlock;
+-(void)setVisualizeMousePointer:(BOOL)arg1 ;
+-(BOOL)visualizeMousePointer;
+-(void)setDisableCloneMirroring:(BOOL)arg1 ;
+-(BOOL)disableCloneMirroring;
+-(void)setLoggingTypesEnabled:(NSArray *)arg1 ;
+-(NSArray *)loggingTypesEnabled;
+-(id)init;
+-(void)setValue:(id)arg1 forKey:(id)arg2 ;
+-(void)_bindAndRegisterDefaults;
+-(void)migrateDefaultsIfNecessary;
+-(id)valueForKey:(id)arg1 defaultValueProvider:(/*^block*/id)arg2 ;
+-(BOOL)disableStudyLogAccelerometerLogging;
+-(void)setDisableStudyLogAccelerometerLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogALSLogging;
+-(void)setDisableStudyLogALSLogging:(BOOL)arg1 ;
+-(BOOL)disableStudyLogGyroLogging;
+-(void)setDisableStudyLogGyroLogging:(BOOL)arg1 ;
+@end
+

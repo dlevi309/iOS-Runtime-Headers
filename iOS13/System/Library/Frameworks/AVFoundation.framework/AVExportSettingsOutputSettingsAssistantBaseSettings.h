@@ -1,0 +1,29 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+*/
+
+#import <AVFoundation/AVOutputSettingsAssistantBaseSettingsProvider.h>
+
+@class NSDictionary, NSString;
+
+@interface AVExportSettingsOutputSettingsAssistantBaseSettings : NSObject <AVOutputSettingsAssistantBaseSettingsProvider> {
+
+	NSDictionary* _exportSettings;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) NSDictionary * baseAudioSettings; 
+@property (nonatomic,readonly) NSDictionary * baseVideoSettings; 
+-(id)init;
+-(void)dealloc;
+-(NSDictionary *)baseAudioSettings;
+-(NSDictionary *)baseVideoSettings;
+-(id)initWithOutputSettingsPreset:(id)arg1 ;
+@end
+

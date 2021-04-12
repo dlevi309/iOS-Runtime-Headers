@@ -1,0 +1,74 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:02 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Memories.framework/Memories
+*/
+
+#import <Memories/Memories-Structs.h>
+#import <libobjc.A.dylib/NSCoding.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, NSMutableArray;
+
+@interface MapLocation : NSObject <NSCoding, NSCopying> {
+
+	BOOL _resolving;
+	BOOL _resolved;
+	int _state;
+	NSString* _customName;
+	double _latitude;
+	double _longitude;
+	NSString* _name;
+	NSString* _countryName;
+	NSMutableArray* _completionHandlers;
+
+}
+
+@property (assign,nonatomic) int state;                                        //@synthesize state=_state - In the implementation block
+@property (nonatomic,retain) NSString * name;                                  //@synthesize name=_name - In the implementation block
+@property (nonatomic,retain) NSString * countryName;                           //@synthesize countryName=_countryName - In the implementation block
+@property (assign,nonatomic) double latitude;                                  //@synthesize latitude=_latitude - In the implementation block
+@property (assign,nonatomic) double longitude;                                 //@synthesize longitude=_longitude - In the implementation block
+@property (nonatomic,retain) NSMutableArray * completionHandlers;              //@synthesize completionHandlers=_completionHandlers - In the implementation block
+@property (assign,getter=isResolving,nonatomic) BOOL resolving;                //@synthesize resolving=_resolving - In the implementation block
+@property (assign,getter=isResolved,nonatomic) BOOL resolved;                  //@synthesize resolved=_resolved - In the implementation block
+@property (nonatomic,retain) NSString * customName;                            //@synthesize customName=_customName - In the implementation block
++(id)defaultLocation;
++(id)objectFromPlist:(id)arg1 inProject:(id)arg2 ;
++(id)mapLocationWithLatitude:(double)arg1 longitude:(double)arg2 ;
++(id)mapLocationWithMapItem:(id)arg1 ;
++(id)mapLocationWithLocationCoordinate:(CLLocationCoordinate2D)arg1 ;
++(id)mapLocationWithLocation:(id)arg1 ;
+-(id)init;
+-(id)description;
+-(NSString *)name;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(long long)compare:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setName:(NSString *)arg1 ;
+-(int)state;
+-(void)setResolved:(BOOL)arg1 ;
+-(BOOL)isResolved;
+-(void)setState:(int)arg1 ;
+-(id)stringRepresentation;
+-(double)latitude;
+-(double)longitude;
+-(void)setCountryName:(NSString *)arg1 ;
+-(NSString *)countryName;
+-(void)setLongitude:(double)arg1 ;
+-(void)setLatitude:(double)arg1 ;
+-(NSMutableArray *)completionHandlers;
+-(void)setCompletionHandlers:(NSMutableArray *)arg1 ;
+-(void)resolveWithCompletionHandler:(/*^block*/id)arg1 ;
+-(BOOL)isEqualToLocation:(id)arg1 ;
+-(void)_resolveWithCompletionHandler:(/*^block*/id)arg1 ;
+-(void)setCustomName:(NSString *)arg1 ;
+-(NSString *)customName;
+-(id)plistRepresentation;
+-(void)setResolving:(BOOL)arg1 ;
+-(BOOL)hasSameCoordinateAsLocation:(id)arg1 tolerance:(float)arg2 ;
+-(BOOL)isResolving;
+-(BOOL)hasValidCoordinate;
+@end
+

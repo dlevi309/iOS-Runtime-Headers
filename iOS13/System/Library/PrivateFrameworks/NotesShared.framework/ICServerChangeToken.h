@@ -1,0 +1,41 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:13 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NotesShared.framework/NotesShared
+*/
+
+#import <CoreData/NSManagedObject.h>
+#import <libobjc.A.dylib/ICLoggable.h>
+
+@class CKRecordZoneID, CKServerChangeToken, NSString, ICAccount, NSData;
+
+@interface ICServerChangeToken : NSManagedObject <ICLoggable> {
+
+	CKRecordZoneID* _zoneID;
+	CKServerChangeToken* _ckServerChangeToken;
+
+}
+
+@property (nonatomic,retain) NSString * zoneName; 
+@property (nonatomic,retain) NSString * ownerName; 
+@property (nonatomic,retain) ICAccount * account; 
+@property (nonatomic,retain) NSData * ckServerChangeTokenData; 
+@property (nonatomic,retain) CKServerChangeToken * ckServerChangeToken;              //@synthesize ckServerChangeToken=_ckServerChangeToken - In the implementation block
+@property (assign,nonatomic) long long databaseScope; 
+@property (nonatomic,readonly) CKRecordZoneID * zoneID;                              //@synthesize zoneID=_zoneID - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)serverChangeTokensMatchingPredicate:(id)arg1 inContext:(id)arg2 ;
++(id)addServerChangeTokenForAccount:(id)arg1 ckServerChangeToken:(id)arg2 zoneID:(id)arg3 databaseScope:(long long)arg4 context:(id)arg5 ;
++(id)serverChangeTokenForAccount:(id)arg1 zoneID:(id)arg2 databaseScope:(long long)arg3 context:(id)arg4 ;
+-(CKRecordZoneID *)zoneID;
+-(void)didTurnIntoFault;
+-(long long)databaseScope;
+-(void)setDatabaseScope:(long long)arg1 ;
+-(id)ic_loggingValues;
+-(CKServerChangeToken *)ckServerChangeToken;
+-(void)setCkServerChangeToken:(CKServerChangeToken *)arg1 ;
+@end
+

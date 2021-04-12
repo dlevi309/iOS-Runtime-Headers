@@ -1,0 +1,46 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:57 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/StoreKitUI-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class IKColor, NSString;
+
+@interface SKUIButtonBorderStyle : NSObject <NSCopying> {
+
+	IKColor* _borderColor;
+	double _borderWidth;
+	UIEdgeInsets _contentInset;
+	IKCornerRadii _cornerRadii;
+	IKColor* _fillColor;
+	NSString* _namedCornerStyle;
+
+}
+
+@property (nonatomic,copy) IKColor * borderColor;                    //@synthesize borderColor=_borderColor - In the implementation block
+@property (assign,nonatomic) double borderWidth;                     //@synthesize borderWidth=_borderWidth - In the implementation block
+@property (assign,nonatomic) IKCornerRadii cornerRadii;              //@synthesize cornerRadii=_cornerRadii - In the implementation block
+@property (nonatomic,copy) IKColor * fillColor;                      //@synthesize fillColor=_fillColor - In the implementation block
+@property (nonatomic,copy) NSString * namedCornerStyle;              //@synthesize namedCornerStyle=_namedCornerStyle - In the implementation block
+@property (assign,nonatomic) UIEdgeInsets contentInset;              //@synthesize contentInset=_contentInset - In the implementation block
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)setBorderColor:(IKColor *)arg1 ;
+-(void)setContentInset:(UIEdgeInsets)arg1 ;
+-(void)setCornerRadii:(IKCornerRadii)arg1 ;
+-(IKColor *)fillColor;
+-(double)borderWidth;
+-(void)setBorderWidth:(double)arg1 ;
+-(UIEdgeInsets)contentInset;
+-(void)setFillColor:(IKColor *)arg1 ;
+-(IKColor *)borderColor;
+-(BOOL)_usesBackgroundWithAlpha:(id)arg1 ;
+-(id)initWithElementStyle:(id)arg1 ;
+-(id)bezierPathWithBounds:(CGRect)arg1 ;
+-(IKCornerRadii)cornerRadii;
+-(NSString *)namedCornerStyle;
+-(void)setNamedCornerStyle:(NSString *)arg1 ;
+@end
+

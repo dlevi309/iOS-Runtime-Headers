@@ -1,0 +1,28 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport
+*/
+
+
+@class WDDocument, NSMutableArray, NSMutableDictionary, WDListDefinition;
+
+@interface WDListDefinitionTable : NSObject {
+
+	WDDocument* mDocument;
+	NSMutableArray* mListDefinitions;
+	NSMutableDictionary* mListDefinitionMapById;
+	NSMutableDictionary* mListDefinitionMapByStyleId;
+	WDListDefinition* mNullListDefinition;
+	WDListDefinition* mDefaultListDefinition;
+
+}
+-(id)description;
+-(id)initWithDocument:(id)arg1 ;
+-(id)definitions;
+-(id)addDefinitionWithDefinitionId:(int)arg1 styleId:(id)arg2 ;
+-(id)resolvedDefinitionWithDefinitionId:(int)arg1 ;
+-(id)definitionWithDefinitionId:(int)arg1 ;
+-(id)definitionWithStyleId:(id)arg1 ;
+@end
+

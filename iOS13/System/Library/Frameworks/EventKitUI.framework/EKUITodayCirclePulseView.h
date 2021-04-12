@@ -1,0 +1,88 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:40 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/EventKitUI.framework/EventKitUI
+*/
+
+#import <EventKitUI/EventKitUI-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/_UIBasicAnimationFactory.h>
+
+@class UIView, TodayCirclePulseBackground, UILabel, NSDictionary, NSString, UIFont;
+
+@interface EKUITodayCirclePulseView : UIView <_UIBasicAnimationFactory> {
+
+	UIView* _backgroundContainer;
+	TodayCirclePulseBackground* _background;
+	UILabel* _label;
+	UILabel* _overlayLabel;
+	NSDictionary* _attributes;
+	NSDictionary* _overlayAttributes;
+	BOOL _usesTextYOffsetWithoutAdjustmentForOverlay;
+	BOOL _circleShouldFillFrame;
+	BOOL _dontApplyCenteringOffset;
+	double _circleDiameter;
+	double _textYOffset;
+	double _textFrameWidthAdjustment;
+	CGPoint _textOffsetFromCircle;
+
+}
+
+@property (nonatomic,copy) NSString * string; 
+@property (nonatomic,copy) NSString * overlayString; 
+@property (nonatomic,retain) UIFont * font; 
+@property (nonatomic,retain) UIFont * overlayFont; 
+@property (nonatomic,retain) NSDictionary * attributes; 
+@property (nonatomic,retain) NSDictionary * overlayAttributes; 
+@property (assign,nonatomic) double circleDiameter;                                        //@synthesize circleDiameter=_circleDiameter - In the implementation block
+@property (assign,nonatomic) double textYOffset;                                           //@synthesize textYOffset=_textYOffset - In the implementation block
+@property (assign,nonatomic) CGPoint textOffsetFromCircle;                                 //@synthesize textOffsetFromCircle=_textOffsetFromCircle - In the implementation block
+@property (assign,nonatomic) BOOL usesTextYOffsetWithoutAdjustmentForOverlay;              //@synthesize usesTextYOffsetWithoutAdjustmentForOverlay=_usesTextYOffsetWithoutAdjustmentForOverlay - In the implementation block
+@property (assign,nonatomic) BOOL circleShouldFillFrame;                                   //@synthesize circleShouldFillFrame=_circleShouldFillFrame - In the implementation block
+@property (assign,nonatomic) BOOL dontApplyCenteringOffset;                                //@synthesize dontApplyCenteringOffset=_dontApplyCenteringOffset - In the implementation block
+@property (assign,nonatomic) double textFrameWidthAdjustment;                              //@synthesize textFrameWidthAdjustment=_textFrameWidthAdjustment - In the implementation block
+@property (assign,nonatomic) BOOL usesRoundedRectInsteadOfCircle; 
+@property (assign,nonatomic) double roundedRectCornerRadius; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(NSString *)string;
+-(void)setString:(NSString *)arg1 ;
+-(NSDictionary *)attributes;
+-(void)setAttributes:(NSDictionary *)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)setFont:(UIFont *)arg1 ;
+-(UIFont *)font;
+-(id)_basicAnimationForView:(id)arg1 withKeyPath:(id)arg2 ;
+-(void)_layoutSubviews;
+-(BOOL)usesRoundedRectInsteadOfCircle;
+-(double)roundedRectCornerRadius;
+-(void)setUsesRoundedRectInsteadOfCircle:(BOOL)arg1 ;
+-(void)setRoundedRectCornerRadius:(double)arg1 ;
+-(void)_updateLabelAttributedString;
+-(id)_overlayLabel;
+-(void)_updateOverlayLabelAttributedString;
+-(BOOL)dontApplyCenteringOffset;
+-(double)textFrameWidthAdjustment;
+-(BOOL)circleShouldFillFrame;
+-(double)circleDiameter;
+-(CGPoint)textOffsetFromCircle;
+-(BOOL)usesTextYOffsetWithoutAdjustmentForOverlay;
+-(void)setOverlayString:(NSString *)arg1 ;
+-(NSString *)overlayString;
+-(void)setOverlayFont:(UIFont *)arg1 ;
+-(UIFont *)overlayFont;
+-(void)setOverlayAttributes:(NSDictionary *)arg1 ;
+-(NSDictionary *)overlayAttributes;
+-(void)setCircleDiameter:(double)arg1 ;
+-(void)pulse:(/*^block*/id)arg1 ;
+-(double)textYOffset;
+-(void)setTextYOffset:(double)arg1 ;
+-(void)setTextOffsetFromCircle:(CGPoint)arg1 ;
+-(void)setUsesTextYOffsetWithoutAdjustmentForOverlay:(BOOL)arg1 ;
+-(void)setCircleShouldFillFrame:(BOOL)arg1 ;
+-(void)setDontApplyCenteringOffset:(BOOL)arg1 ;
+-(void)setTextFrameWidthAdjustment:(double)arg1 ;
+@end
+

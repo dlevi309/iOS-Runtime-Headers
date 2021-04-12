@@ -1,0 +1,54 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:25 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CommunicationsSetupUI.framework/CommunicationsSetupUI
+*/
+
+
+#import <CommunicationsSetupUI/CommunicationsSetupUI-Structs.h>
+@class NSString;
+
+@interface FTRegConnectionHandler : NSObject {
+
+	long long _serviceType;
+	unsigned _caps;
+	NSString* _name;
+	NSString* _listenerID;
+	NSString* _logName;
+	struct {
+		unsigned listeningForNotifications : 1;
+	}  _handlerFlags;
+
+}
+
+@property (assign,nonatomic) long long serviceType;                                    //@synthesize serviceType=_serviceType - In the implementation block
+@property (nonatomic,copy) NSString * name;                                            //@synthesize name=_name - In the implementation block
+@property (nonatomic,retain,readonly) NSString * _serviceName; 
+@property (nonatomic,retain) NSString * _logName;                                      //@synthesize logName=_logName - In the implementation block
+@property (setter=_setListenerID:,nonatomic,copy) NSString * _listenerID;              //@synthesize listenerID=_listenerID - In the implementation block
+@property (assign,nonatomic) unsigned caps;                                            //@synthesize caps=_caps - In the implementation block
+-(void)dealloc;
+-(NSString *)name;
+-(void)setName:(NSString *)arg1 ;
+-(NSString *)_serviceName;
+-(long long)serviceType;
+-(NSString *)_listenerID;
+-(void)_startListeningForNotifications;
+-(void)setServiceType:(long long)arg1 ;
+-(BOOL)connectToDaemon;
+-(void)_handleDaemonConnected:(id)arg1 ;
+-(void)_handleDaemonDisconnected:(id)arg1 ;
+-(NSString *)_logName;
+-(BOOL)connectToDaemon:(BOOL)arg1 ;
+-(void)_setListenerID:(id)arg1 ;
+-(unsigned)caps;
+-(id)initWithServiceType:(long long)arg1 name:(id)arg2 ;
+-(BOOL)isConnectedToDaemon;
+-(void)_stopListeningForNotifications;
+-(void)setCaps:(unsigned)arg1 ;
+-(void)set_logName:(NSString *)arg1 ;
+-(id)initWithServiceType:(long long)arg1 name:(id)arg2 capabilities:(unsigned)arg3 ;
+-(void)_disconnectFromDaemon;
+-(BOOL)_isServiceSupported;
+@end
+

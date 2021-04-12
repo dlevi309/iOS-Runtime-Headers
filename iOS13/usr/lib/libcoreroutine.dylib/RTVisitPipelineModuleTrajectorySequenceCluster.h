@@ -1,0 +1,60 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:06 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /usr/lib/libcoreroutine.dylib
+*/
+
+#import <libobjc.A.dylib/RTVisitPipelineModule.h>
+
+@protocol RTVisitModelController;
+@class RTLocation, RTVisitHyperParameter, RTVisitDecoder, RTVisitCluster, NSArray, NSString;
+
+@interface RTVisitPipelineModuleTrajectorySequenceCluster : NSObject <RTVisitPipelineModule> {
+
+	double _sumOfNorthing;
+	double _sumOfEasting;
+	double _sumOfSquaredNorthing;
+	double _sumOfSquaredEasting;
+	RTLocation* _referenceLocation;
+	id<RTVisitModelController> _trajectorySequenceClassifier;
+	RTVisitHyperParameter* _hyperParameter;
+	RTVisitDecoder* _decoder;
+	RTVisitCluster* _workingVisitCluster;
+	unsigned long long _numOfLocations;
+	NSArray* _residualLocations;
+
+}
+
+@property (nonatomic,readonly) id<RTVisitModelController> trajectorySequenceClassifier;              //@synthesize trajectorySequenceClassifier=_trajectorySequenceClassifier - In the implementation block
+@property (nonatomic,readonly) RTVisitHyperParameter * hyperParameter;                               //@synthesize hyperParameter=_hyperParameter - In the implementation block
+@property (nonatomic,readonly) RTVisitDecoder * decoder;                                             //@synthesize decoder=_decoder - In the implementation block
+@property (nonatomic,readonly) RTVisitCluster * workingVisitCluster;                                 //@synthesize workingVisitCluster=_workingVisitCluster - In the implementation block
+@property (nonatomic,readonly) unsigned long long numOfLocations;                                    //@synthesize numOfLocations=_numOfLocations - In the implementation block
+@property (nonatomic,readonly) NSArray * residualLocations;                                          //@synthesize residualLocations=_residualLocations - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(double)normalizeFeature:(double)arg1 min:(double)arg2 max:(double)arg3 ;
+-(id)init;
+-(RTVisitDecoder *)decoder;
+-(id)process:(id)arg1 ;
+-(RTVisitHyperParameter *)hyperParameter;
+-(id)initWithVisitTrajectorySequenceClassifier:(id)arg1 hyperParameter:(id)arg2 ;
+-(BOOL)computeFeatureVector:(float*)arg1 cumSumNumLocations:(unsigned long long)arg2 cumSumNorthings:(double*)arg3 cumSumEastings:(double*)arg4 cumSumSquaredNorthings:(double*)arg5 cumSumSquaredEastings:(double*)arg6 sequenceLength:(unsigned long long)arg7 ;
+-(unsigned long long)startLocationIndex:(unsigned long long)arg1 ;
+-(double)computeRadiusFromCumSumNorthings:(const double*)arg1 cumSumEastings:(const double*)arg2 cumSumSquaredNorthings:(const double*)arg3 cumSumSuaredEastings:(const double*)arg4 firstLocationIndex:(unsigned long long)arg5 lastLocationIndex:(unsigned long long)arg6 ;
+-(unsigned long long)numLocationsFrom:(unsigned long long)arg1 ;
+-(float*)computeFeatureVectorFromLocalFramesNumOfLocations:(unsigned long long)arg1 northings:(const double*)arg2 eastings:(const double*)arg3 sequenceLength:(unsigned long long)arg4 ;
+-(unsigned long long)sequenceLengthFrom:(unsigned long long)arg1 ;
+-(float*)computeFeatureVectorFromLocations:(id)arg1 start:(unsigned long long)arg2 end:(unsigned long long)arg3 ;
+-(id)performBatchInferenceWithFeatureVector:(const float*)arg1 featureVectorLength:(unsigned long long)arg2 start:(unsigned long long)arg3 firstTimeStepDate:(id)arg4 ;
+-(id)createVisitWithLocations:(id)arg1 entryDate:(id)arg2 exitDate:(id)arg3 ;
+-(void)clearWorkingVisitCluster;
+-(unsigned long long)sequenceIndexFromDate:(id)arg1 firstTimeStepDate:(id)arg2 ;
+-(RTVisitCluster *)workingVisitCluster;
+-(id<RTVisitModelController>)trajectorySequenceClassifier;
+-(unsigned long long)numOfLocations;
+-(NSArray *)residualLocations;
+@end
+

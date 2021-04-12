@@ -1,0 +1,20 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:15 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+#import <UIKitCore/UIKitCore-Structs.h>
+#import <UIKitCore/_UISEGestureFeature.h>
+
+@protocol _UISEGestureFeatureSettings;
+@interface _UISEDiagonalHysteresisRecognizeGestureFeature : _UISEGestureFeature {
+
+	id<_UISEGestureFeatureSettings> _settings;
+	CGPoint _initialLocation;
+
+}
+-(id)initWithSettings:(id)arg1 ;
+-(void)_incorporateSample:(const UISEGestureFeatureSample*)arg1 ;
+@end
+

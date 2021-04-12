@@ -1,0 +1,49 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:39 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/AccessibilityBundles/UIKit.axbundle/UIKit
+*/
+
+#import <UIKit/UIKit-Structs.h>
+#import <UIKit/__UITextInputUIResponderAccessibility_super.h>
+
+@interface UITextInputUIResponderAccessibility : __UITextInputUIResponderAccessibility_super
++(id)safeCategoryTargetClassName;
++(void)_accessibilityPerformValidations:(id)arg1 ;
++(Class)safeCategoryBaseClass;
+-(id)accessibilityValue;
+-(unsigned long long)accessibilityTraits;
+-(BOOL)isAccessibilityElement;
+-(BOOL)becomeFirstResponder;
+-(BOOL)resignFirstResponder;
+-(id)_moveLeft:(BOOL)arg1 withHistory:(id)arg2 ;
+-(id)_moveRight:(BOOL)arg1 withHistory:(id)arg2 ;
+-(void)_updateSelectionWithTextRange:(id)arg1 withAffinityDownstream:(BOOL)arg2 ;
+-(NSRange)_accessibilitySelectedTextRange;
+-(void)_accessibilitySetSelectedTextRange:(NSRange)arg1 ;
+-(id)_accessibilityTextViewTextOperationResponder;
+-(NSRange)_accessibilityRawRangeForUITextRange:(id)arg1 ;
+-(id)_accessibilityLineNumberAndColumnForPoint:(CGPoint)arg1 ;
+-(NSRange)_accessibilityRangeForLineNumberAndColumn:(id)arg1 ;
+-(id)_accessibilityTextRangeFromNSRange:(NSRange)arg1 ;
+-(CGRect)_accessibilityBoundsForRange:(NSRange)arg1 ;
+-(NSRange)_accessibilityLineRangeForPosition:(unsigned long long)arg1 ;
+-(unsigned long long)_accessibilityPositionInDirection:(long long)arg1 offset:(unsigned long long)arg2 forPosition:(unsigned long long)arg3 ;
+-(id)_accessibilityAlternativesForTextAtPosition:(unsigned long long)arg1 ;
+-(long long)_accessibilityLineStartPosition;
+-(long long)_accessibilityLineEndPosition;
+-(BOOL)_accessibilityHandlesTabKey;
+-(id)_accessibilitySpeakThisString;
+-(BOOL)_accessibilityInsertTextWithAlternatives:(id)arg1 ;
+-(id)_accessibilityTextRectsForSpeakThisStringRange:(NSRange)arg1 ;
+-(void)_axDrawFocusRingAroundFirstResponderAndMoveFocus:(BOOL)arg1 ;
+-(void)_axResetFKAFocusToFirstResponder;
+-(void)_accessibilityCheckBorderHit:(BOOL)arg1 left:(BOOL)arg2 ;
+-(id)_accessibilityBeginningOfDocument;
+-(long long)_accessibilityOffsetFromPosition:(id)arg1 toPosition:(id)arg2 ;
+-(long long)_accessibilityTextInputLinePosition:(BOOL)arg1 ;
+-(id)_accessibilityPositionFromPosition:(id)arg1 offset:(long long)arg2 ;
+-(id)_accessibilityEndOfDocument;
+-(BOOL)_axShouldDrawFocusAroundFirstResponder;
+@end
+

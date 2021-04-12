@@ -1,0 +1,67 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions
+*/
+
+#import <CoreSuggestions/CoreSuggestions-Structs.h>
+#import <CoreSuggestions/SGObject.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, NSDateComponents, SGLocation, NSURL, NSDate;
+
+@interface SGReminder : SGObject <NSSecureCoding> {
+
+	unsigned char _dueLocationType;
+	unsigned char _dueLocationTrigger;
+	unsigned char _reminderStatus;
+	NSString* _title;
+	NSDateComponents* _dueDateComponents;
+	SGLocation* _dueLocation;
+	NSURL* _sourceURL;
+	NSDate* _creationDate;
+	NSString* _opaqueKey;
+	NSString* _uniqueKey;
+	NSString* _contactIdentifier;
+
+}
+
+@property (nonatomic,readonly) NSString * title;                                  //@synthesize title=_title - In the implementation block
+@property (nonatomic,readonly) NSDateComponents * dueDateComponents;              //@synthesize dueDateComponents=_dueDateComponents - In the implementation block
+@property (nonatomic,readonly) unsigned char dueLocationType;                     //@synthesize dueLocationType=_dueLocationType - In the implementation block
+@property (nonatomic,readonly) SGLocation * dueLocation;                          //@synthesize dueLocation=_dueLocation - In the implementation block
+@property (nonatomic,readonly) unsigned char dueLocationTrigger;                  //@synthesize dueLocationTrigger=_dueLocationTrigger - In the implementation block
+@property (nonatomic,readonly) NSURL * sourceURL;                                 //@synthesize sourceURL=_sourceURL - In the implementation block
+@property (nonatomic,readonly) NSDate * creationDate;                             //@synthesize creationDate=_creationDate - In the implementation block
+@property (nonatomic,readonly) NSString * opaqueKey;                              //@synthesize opaqueKey=_opaqueKey - In the implementation block
+@property (nonatomic,readonly) NSString * uniqueKey;                              //@synthesize uniqueKey=_uniqueKey - In the implementation block
+@property (nonatomic,readonly) NSString * contactIdentifier;                      //@synthesize contactIdentifier=_contactIdentifier - In the implementation block
+@property (nonatomic,readonly) unsigned char reminderStatus;                      //@synthesize reminderStatus=_reminderStatus - In the implementation block
++(BOOL)supportsSecureCoding;
++(id)describeReminderStatus:(unsigned char)arg1 ;
++(id)describeReminderDueLocationTrigger:(unsigned char)arg1 ;
++(id)describeReminderDueLocationType:(unsigned char)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(NSString *)title;
+-(NSDate *)creationDate;
+-(NSString *)contactIdentifier;
+-(NSURL *)sourceURL;
+-(BOOL)isAllDay;
+-(NSString *)uniqueKey;
+-(NSString *)opaqueKey;
+-(unsigned char)dueLocationTrigger;
+-(SGLocation *)dueLocation;
+-(NSDateComponents *)dueDateComponents;
+-(id)initWithRecordId:(id)arg1 origin:(id)arg2 title:(id)arg3 dueDateComponents:(id)arg4 dueLocationType:(unsigned char)arg5 dueLocation:(id)arg6 dueLocationTrigger:(unsigned char)arg7 sourceURL:(id)arg8 reminderStatus:(unsigned char)arg9 opaqueKey:(id)arg10 uniqueKey:(id)arg11 contactIdentifier:(id)arg12 creationDate:(id)arg13 ;
+-(id)initWithTitle:(id)arg1 dueDateComponents:(id)arg2 dueLocationType:(unsigned char)arg3 dueLocation:(id)arg4 dueLocationTrigger:(unsigned char)arg5 sourceURL:(id)arg6 reminderStatus:(unsigned char)arg7 ;
+-(BOOL)isEqualToReminder:(id)arg1 ;
+-(unsigned char)dueLocationType;
+-(unsigned char)reminderStatus;
+@end
+

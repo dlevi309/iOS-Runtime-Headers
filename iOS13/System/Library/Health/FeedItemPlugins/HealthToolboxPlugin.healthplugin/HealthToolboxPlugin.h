@@ -1,0 +1,4 @@
+#import <HealthToolboxPlugin/HealthToolboxPlugin.HealthToolboxPluginTileViewController.h>
+#import <HealthToolboxPlugin/HealthToolboxPlugin.HealthToolboxPluginFeedItemGenerator.h>
+#import <HealthToolboxPlugin/HealthToolboxPlugin.HealthToolboxSupportedTypes.h>
+#import <HealthToolboxPlugin/HealthToolboxPlugin.HealthToolboxFocusOperation.h>

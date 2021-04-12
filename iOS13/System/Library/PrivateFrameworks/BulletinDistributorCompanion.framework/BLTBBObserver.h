@@ -1,0 +1,40 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:18 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/BulletinDistributorCompanion.framework/BulletinDistributorCompanion
+*/
+
+#import <libobjc.A.dylib/BLTBBObserverDelegateDelegate.h>
+
+@protocol OS_dispatch_queue;
+@class BBObserver, NSLock, BLTBBObserverDelegate, NSObject, NSString;
+
+@interface BLTBBObserver : NSObject <BLTBBObserverDelegateDelegate> {
+
+	BBObserver* _actualObserver;
+	NSLock* _actualObserverLock;
+	BLTBBObserverDelegate* _delegateSurrogate;
+	NSObject*<OS_dispatch_queue> _queue;
+	NSObject*<OS_dispatch_queue> _calloutQueue;
+	NSString* _name;
+	unsigned long long _priority;
+	BOOL _isGateway;
+	unsigned long long _observerFeed;
+	BOOL _hasFeed;
+
+}
++(BOOL)instancesRespondToSelector:(SEL)arg1 ;
++(id)surrogateWithQueue:(id)arg1 calloutQueue:(id)arg2 ;
++(id)surrogateGatewayWithQueue:(id)arg1 calloutQueue:(id)arg2 name:(id)arg3 priority:(unsigned long long)arg4 ;
+-(void)dealloc;
+-(BOOL)isKindOfClass:(Class)arg1 ;
+-(BOOL)respondsToSelector:(SEL)arg1 ;
+-(id)methodSignatureForSelector:(SEL)arg1 ;
+-(void)forwardInvocation:(id)arg1 ;
+-(void)setDelegate:(id)arg1 ;
+-(void)setObserverFeed:(unsigned long long)arg1 ;
+-(void)noteServerConnectionStateChanged:(BOOL)arg1 ;
+-(void)_reconnectObserver;
+-(id)initWithQueue:(id)arg1 calloutQueue:(id)arg2 name:(id)arg3 priority:(unsigned long long)arg4 isGateway:(BOOL)arg5 ;
+@end
+

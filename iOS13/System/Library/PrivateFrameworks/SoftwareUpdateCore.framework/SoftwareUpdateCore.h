@@ -1,0 +1,17 @@
+#import <SoftwareUpdateCore/SUCoreScanParam.h>
+#import <SoftwareUpdateCore/SUCoreScan.h>
+#import <SoftwareUpdateCore/SUCorePolicyExtensionCompanionCompatibility.h>
+#import <SoftwareUpdateCore/SUCorePolicyUpdateBrain.h>
+#import <SoftwareUpdateCore/SUCorePolicyFamily.h>
+#import <SoftwareUpdateCore/SUCoreDocumentation.h>
+#import <SoftwareUpdateCore/SUCoreDescriptor.h>
+#import <SoftwareUpdateCore/SUCorePurge.h>
+#import <SoftwareUpdateCore/SUCorePolicyExtensionManagedUpdates.h>
+#import <SoftwareUpdateCore/SUCoreUpdateParam.h>
+#import <SoftwareUpdateCore/SUCorePower.h>
+#import <SoftwareUpdateCore/SUCoreUpdate.h>
+#import <SoftwareUpdateCore/SUCorePolicyExtensionAbsoluteCompatibility.h>
+#import <SoftwareUpdateCore/SUCoreMobileAsset.h>
+#import <SoftwareUpdateCore/SUCorePolicy.h>
+#import <SoftwareUpdateCore/SUCoreMSU.h>
+#import <SoftwareUpdateCore/SUCoreSpace.h>

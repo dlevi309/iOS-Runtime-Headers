@@ -1,0 +1,60 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:22 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/TextureIO.framework/TextureIO
+*/
+
+
+#import <TextureIO/TextureIO-Structs.h>
+@class TXRTexture, TXRAssetCatalogFileAttributes, NSMutableSet, NSSet;
+
+@interface TXRAssetCatalogConfig : NSObject {
+
+	TXRTexture* _texture;
+	TXRAssetCatalogFileAttributes* _baseFileAttributes;
+	NSMutableSet* _fileAttributesList;
+	unsigned long long _pixelFormat;
+	unsigned long long _mipmapOption;
+	unsigned long long _memory;
+	unsigned long long _graphicsFeatureSet;
+	unsigned long long _idiom;
+	unsigned long long _displayColorSpace;
+	unsigned long long _scaleFactor;
+
+}
+
+@property (nonatomic,retain) TXRAssetCatalogFileAttributes * baseFileAttributes;              //@synthesize baseFileAttributes=_baseFileAttributes - In the implementation block
+@property (nonatomic,readonly) NSSet * fileAttributesList;                                    //@synthesize fileAttributesList=_fileAttributesList - In the implementation block
+@property (nonatomic,readonly) TXRTexture * texture;                                          //@synthesize texture=_texture - In the implementation block
+@property (assign,nonatomic) unsigned long long pixelFormat;                                  //@synthesize pixelFormat=_pixelFormat - In the implementation block
+@property (assign,nonatomic) unsigned long long mipmapOption;                                 //@synthesize mipmapOption=_mipmapOption - In the implementation block
+@property (assign,nonatomic) unsigned long long memory;                                       //@synthesize memory=_memory - In the implementation block
+@property (assign,nonatomic) unsigned long long graphicsFeatureSet;                           //@synthesize graphicsFeatureSet=_graphicsFeatureSet - In the implementation block
+@property (assign,nonatomic) unsigned long long idiom;                                        //@synthesize idiom=_idiom - In the implementation block
+@property (assign,nonatomic) unsigned long long displayColorSpace;                            //@synthesize displayColorSpace=_displayColorSpace - In the implementation block
+@property (assign,nonatomic) unsigned long long scaleFactor;                                  //@synthesize scaleFactor=_scaleFactor - In the implementation block
+-(unsigned long long)memory;
+-(unsigned long long)pixelFormat;
+-(void)setPixelFormat:(unsigned long long)arg1 ;
+-(unsigned long long)scaleFactor;
+-(void)setScaleFactor:(unsigned long long)arg1 ;
+-(TXRTexture *)texture;
+-(unsigned long long)idiom;
+-(void)setIdiom:(unsigned long long)arg1 ;
+-(void)setMemory:(unsigned long long)arg1 ;
+-(id)initWithTexture:(id)arg1 ;
+-(unsigned long long)mipmapOption;
+-(TXRAssetCatalogFileAttributes *)baseFileAttributes;
+-(unsigned long long)graphicsFeatureSet;
+-(unsigned long long)displayColorSpace;
+-(void)addFileAttributesForLevel:(unsigned long long)arg1 ;
+-(void)addFileAttributesForLevel:(unsigned long long)arg1 face:(unsigned long long)arg2 ;
+-(void)addFileAttributesForLevel:(unsigned long long)arg1 fileFormat:(unsigned long long)arg2 colorSpace:(CGColorSpaceRef)arg3 exifOrientation:(unsigned char)arg4 ;
+-(void)addFileAttributesForLevel:(unsigned long long)arg1 face:(unsigned long long)arg2 fileFormat:(unsigned long long)arg3 colorSpace:(CGColorSpaceRef)arg4 exifOrientation:(unsigned char)arg5 ;
+-(void)setBaseFileAttributes:(TXRAssetCatalogFileAttributes *)arg1 ;
+-(NSSet *)fileAttributesList;
+-(void)setMipmapOption:(unsigned long long)arg1 ;
+-(void)setGraphicsFeatureSet:(unsigned long long)arg1 ;
+-(void)setDisplayColorSpace:(unsigned long long)arg1 ;
+@end
+

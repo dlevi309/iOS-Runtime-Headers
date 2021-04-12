@@ -1,0 +1,80 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:25 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit
+*/
+
+#import <PrototypeTools/PTSettings.h>
+
+@class MTLumaDodgePillStyleSettings;
+
+@interface MTLumaDodgePillSettings : PTSettings {
+
+	double _minWidth;
+	double _maxWidth;
+	double _height;
+	double _edgeSpacing;
+	double _colorAddWhiteness;
+	double _brightLumaThreshold;
+	double _darkLumaThreshold;
+	double _initialLumaThreshold;
+	double _cornerRadius;
+	long long _cornerMask;
+	MTLumaDodgePillStyleSettings* _noneSettings;
+	MTLumaDodgePillStyleSettings* _thinSettings;
+	MTLumaDodgePillStyleSettings* _graySettings;
+	MTLumaDodgePillStyleSettings* _blackSettings;
+	MTLumaDodgePillStyleSettings* _whiteSettings;
+
+}
+
+@property (assign,nonatomic) double minWidth;                                           //@synthesize minWidth=_minWidth - In the implementation block
+@property (assign,nonatomic) double maxWidth;                                           //@synthesize maxWidth=_maxWidth - In the implementation block
+@property (assign,nonatomic) double height;                                             //@synthesize height=_height - In the implementation block
+@property (assign,nonatomic) double edgeSpacing;                                        //@synthesize edgeSpacing=_edgeSpacing - In the implementation block
+@property (assign,nonatomic) double colorAddWhiteness;                                  //@synthesize colorAddWhiteness=_colorAddWhiteness - In the implementation block
+@property (assign,nonatomic) double brightLumaThreshold;                                //@synthesize brightLumaThreshold=_brightLumaThreshold - In the implementation block
+@property (assign,nonatomic) double darkLumaThreshold;                                  //@synthesize darkLumaThreshold=_darkLumaThreshold - In the implementation block
+@property (assign,nonatomic) double initialLumaThreshold;                               //@synthesize initialLumaThreshold=_initialLumaThreshold - In the implementation block
+@property (assign,nonatomic) double cornerRadius;                                       //@synthesize cornerRadius=_cornerRadius - In the implementation block
+@property (assign,nonatomic) long long cornerMask;                                      //@synthesize cornerMask=_cornerMask - In the implementation block
+@property (nonatomic,retain) MTLumaDodgePillStyleSettings * noneSettings;               //@synthesize noneSettings=_noneSettings - In the implementation block
+@property (nonatomic,retain) MTLumaDodgePillStyleSettings * thinSettings;               //@synthesize thinSettings=_thinSettings - In the implementation block
+@property (nonatomic,retain) MTLumaDodgePillStyleSettings * graySettings;               //@synthesize graySettings=_graySettings - In the implementation block
+@property (nonatomic,retain) MTLumaDodgePillStyleSettings * blackSettings;              //@synthesize blackSettings=_blackSettings - In the implementation block
+@property (nonatomic,retain) MTLumaDodgePillStyleSettings * whiteSettings;              //@synthesize whiteSettings=_whiteSettings - In the implementation block
++(id)sharedInstance;
++(id)settingsControllerModule;
+-(double)height;
+-(void)setHeight:(double)arg1 ;
+-(double)minWidth;
+-(void)setMinWidth:(double)arg1 ;
+-(double)maxWidth;
+-(void)setMaxWidth:(double)arg1 ;
+-(void)setCornerRadius:(double)arg1 ;
+-(void)setDefaultValues;
+-(double)cornerRadius;
+-(double)edgeSpacing;
+-(void)setEdgeSpacing:(double)arg1 ;
+-(void)setColorAddWhiteness:(double)arg1 ;
+-(void)setBrightLumaThreshold:(double)arg1 ;
+-(void)setDarkLumaThreshold:(double)arg1 ;
+-(void)setInitialLumaThreshold:(double)arg1 ;
+-(void)setCornerMask:(long long)arg1 ;
+-(void)setNoneSettings:(MTLumaDodgePillStyleSettings *)arg1 ;
+-(void)setThinSettings:(MTLumaDodgePillStyleSettings *)arg1 ;
+-(void)setGraySettings:(MTLumaDodgePillStyleSettings *)arg1 ;
+-(void)setBlackSettings:(MTLumaDodgePillStyleSettings *)arg1 ;
+-(void)setWhiteSettings:(MTLumaDodgePillStyleSettings *)arg1 ;
+-(double)colorAddWhiteness;
+-(double)brightLumaThreshold;
+-(double)darkLumaThreshold;
+-(double)initialLumaThreshold;
+-(long long)cornerMask;
+-(MTLumaDodgePillStyleSettings *)noneSettings;
+-(MTLumaDodgePillStyleSettings *)thinSettings;
+-(MTLumaDodgePillStyleSettings *)graySettings;
+-(MTLumaDodgePillStyleSettings *)blackSettings;
+-(MTLumaDodgePillStyleSettings *)whiteSettings;
+@end
+

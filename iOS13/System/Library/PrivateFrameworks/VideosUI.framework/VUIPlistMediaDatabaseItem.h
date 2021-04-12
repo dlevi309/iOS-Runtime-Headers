@@ -1,0 +1,85 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:26 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VideosUI-Structs.h>
+#import <VideosUI/VUIPlistMediaDatabaseEntity.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSNumber, VUIPlistMediaDatabaseSeason, NSDate, NSURL, _TVContentRating, NSString, VUIMediaItemCredits, NSDictionary;
+
+@interface VUIPlistMediaDatabaseItem : VUIPlistMediaDatabaseEntity <NSCopying> {
+
+	NSNumber* _local;
+	VUIPlistMediaDatabaseSeason* _season;
+	NSNumber* _duration;
+	NSDate* _releaseDate;
+	NSURL* _previewFrameURL;
+	_TVContentRating* _contentRating;
+	NSNumber* _colorCapability;
+	NSNumber* _HLSColorCapability;
+	NSNumber* _episodeNumber;
+	NSString* _studio;
+	VUIMediaItemCredits* _credits;
+	NSURL* _playbackURL;
+	NSURL* _filePathURL;
+	NSDictionary* _offlineFPSKeys;
+	NSString* _downloadState;
+
+}
+
+@property (assign,nonatomic,__weak) VUIPlistMediaDatabaseSeason * season;               //@synthesize season=_season - In the implementation block
+@property (getter=isPlayable,nonatomic,copy,readonly) NSNumber * playable; 
+@property (nonatomic,copy) NSNumber * duration;                                         //@synthesize duration=_duration - In the implementation block
+@property (nonatomic,copy) NSDate * releaseDate;                                        //@synthesize releaseDate=_releaseDate - In the implementation block
+@property (nonatomic,copy) NSURL * previewFrameURL;                                     //@synthesize previewFrameURL=_previewFrameURL - In the implementation block
+@property (nonatomic,copy) _TVContentRating * contentRating;                            //@synthesize contentRating=_contentRating - In the implementation block
+@property (nonatomic,copy) NSNumber * colorCapability;                                  //@synthesize colorCapability=_colorCapability - In the implementation block
+@property (nonatomic,copy) NSNumber * HLSColorCapability;                               //@synthesize HLSColorCapability=_HLSColorCapability - In the implementation block
+@property (nonatomic,copy) NSNumber * episodeNumber;                                    //@synthesize episodeNumber=_episodeNumber - In the implementation block
+@property (nonatomic,copy) NSString * studio;                                           //@synthesize studio=_studio - In the implementation block
+@property (nonatomic,copy) VUIMediaItemCredits * credits;                               //@synthesize credits=_credits - In the implementation block
+@property (nonatomic,copy) NSURL * playbackURL;                                         //@synthesize playbackURL=_playbackURL - In the implementation block
+@property (nonatomic,copy) NSURL * filePathURL;                                         //@synthesize filePathURL=_filePathURL - In the implementation block
+@property (nonatomic,copy) NSDictionary * offlineFPSKeys;                               //@synthesize offlineFPSKeys=_offlineFPSKeys - In the implementation block
+@property (nonatomic,copy) NSString * downloadState;                                    //@synthesize downloadState=_downloadState - In the implementation block
+-(BOOL)isEqual:(id)arg1 ;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithDictionary:(id)arg1 ;
+-(NSURL *)filePathURL;
+-(id)dictionaryRepresentation;
+-(NSNumber *)duration;
+-(void)setDuration:(NSNumber *)arg1 ;
+-(id)isLocal;
+-(id)isPlayable;
+-(NSDate *)releaseDate;
+-(void)setReleaseDate:(NSDate *)arg1 ;
+-(void)setSeason:(VUIPlistMediaDatabaseSeason *)arg1 ;
+-(VUIPlistMediaDatabaseSeason *)season;
+-(NSNumber *)episodeNumber;
+-(void)setEpisodeNumber:(NSNumber *)arg1 ;
+-(void)setContentRating:(_TVContentRating *)arg1 ;
+-(_TVContentRating *)contentRating;
+-(NSString *)downloadState;
+-(void)setDownloadState:(NSString *)arg1 ;
+-(id)initWithIdentifier:(id)arg1 type:(unsigned long long)arg2 ;
+-(VUIMediaItemCredits *)credits;
+-(void)setCredits:(VUIMediaItemCredits *)arg1 ;
+-(NSString *)studio;
+-(void)setStudio:(NSString *)arg1 ;
+-(NSNumber *)HLSColorCapability;
+-(NSNumber *)colorCapability;
+-(NSURL *)playbackURL;
+-(void)setPlaybackURL:(NSURL *)arg1 ;
+-(NSURL *)previewFrameURL;
+-(NSDictionary *)offlineFPSKeys;
+-(void)setPreviewFrameURL:(NSURL *)arg1 ;
+-(void)setColorCapability:(NSNumber *)arg1 ;
+-(void)setHLSColorCapability:(NSNumber *)arg1 ;
+-(void)setFilePathURL:(NSURL *)arg1 ;
+-(void)setOfflineFPSKeys:(NSDictionary *)arg1 ;
+@end
+

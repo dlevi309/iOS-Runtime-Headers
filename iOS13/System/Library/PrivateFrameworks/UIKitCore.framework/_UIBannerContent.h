@@ -1,0 +1,45 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:19 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString, UIImage, UIColor;
+
+@interface _UIBannerContent : NSObject <NSSecureCoding> {
+
+	NSString* _title;
+	NSString* _body;
+	NSString* _imageName;
+	UIImage* _image;
+	UIColor* _backgroundColor;
+	UIColor* _contentColor;
+
+}
+
+@property (nonatomic,retain) NSString * title;                       //@synthesize title=_title - In the implementation block
+@property (nonatomic,retain) NSString * body;                        //@synthesize body=_body - In the implementation block
+@property (nonatomic,retain) NSString * imageName;                   //@synthesize imageName=_imageName - In the implementation block
+@property (nonatomic,retain) UIImage * image;                        //@synthesize image=_image - In the implementation block
+@property (nonatomic,retain) UIColor * backgroundColor;              //@synthesize backgroundColor=_backgroundColor - In the implementation block
+@property (nonatomic,retain) UIColor * contentColor;                 //@synthesize contentColor=_contentColor - In the implementation block
++(BOOL)supportsSecureCoding;
++(id)bannerContentWithTitle:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(NSString *)title;
+-(void)setTitle:(NSString *)arg1 ;
+-(UIImage *)image;
+-(void)setImage:(UIImage *)arg1 ;
+-(UIColor *)backgroundColor;
+-(void)setBackgroundColor:(UIColor *)arg1 ;
+-(void)setBody:(NSString *)arg1 ;
+-(NSString *)body;
+-(void)setContentColor:(UIColor *)arg1 ;
+-(UIColor *)contentColor;
+-(void)setImageName:(NSString *)arg1 ;
+-(NSString *)imageName;
+@end
+

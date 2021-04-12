@@ -1,0 +1,83 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:32 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /usr/lib/libAWDSupportFramework.dylib
+*/
+
+#import <libAWDSupportFramework.dylib/libAWDSupportFramework.dylib-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@interface AWDLibnetcoreConnectionDataUsageSnapshot : PBCodable <NSCopying> {
+
+	unsigned long long _bytesIn;
+	unsigned long long _bytesOut;
+	unsigned long long _multipathBytesInCell;
+	unsigned long long _multipathBytesInInitial;
+	unsigned long long _multipathBytesInWiFi;
+	unsigned long long _multipathBytesOutCell;
+	unsigned long long _multipathBytesOutInitial;
+	unsigned long long _multipathBytesOutWiFi;
+	SCD_Struct_AW13 _has;
+
+}
+
+@property (assign,nonatomic) BOOL hasBytesIn; 
+@property (assign,nonatomic) unsigned long long bytesIn;                               //@synthesize bytesIn=_bytesIn - In the implementation block
+@property (assign,nonatomic) BOOL hasBytesOut; 
+@property (assign,nonatomic) unsigned long long bytesOut;                              //@synthesize bytesOut=_bytesOut - In the implementation block
+@property (assign,nonatomic) BOOL hasMultipathBytesInCell; 
+@property (assign,nonatomic) unsigned long long multipathBytesInCell;                  //@synthesize multipathBytesInCell=_multipathBytesInCell - In the implementation block
+@property (assign,nonatomic) BOOL hasMultipathBytesOutCell; 
+@property (assign,nonatomic) unsigned long long multipathBytesOutCell;                 //@synthesize multipathBytesOutCell=_multipathBytesOutCell - In the implementation block
+@property (assign,nonatomic) BOOL hasMultipathBytesInWiFi; 
+@property (assign,nonatomic) unsigned long long multipathBytesInWiFi;                  //@synthesize multipathBytesInWiFi=_multipathBytesInWiFi - In the implementation block
+@property (assign,nonatomic) BOOL hasMultipathBytesOutWiFi; 
+@property (assign,nonatomic) unsigned long long multipathBytesOutWiFi;                 //@synthesize multipathBytesOutWiFi=_multipathBytesOutWiFi - In the implementation block
+@property (assign,nonatomic) BOOL hasMultipathBytesInInitial; 
+@property (assign,nonatomic) unsigned long long multipathBytesInInitial;               //@synthesize multipathBytesInInitial=_multipathBytesInInitial - In the implementation block
+@property (assign,nonatomic) BOOL hasMultipathBytesOutInitial; 
+@property (assign,nonatomic) unsigned long long multipathBytesOutInitial;              //@synthesize multipathBytesOutInitial=_multipathBytesOutInitial - In the implementation block
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)setBytesIn:(unsigned long long)arg1 ;
+-(void)setHasBytesIn:(BOOL)arg1 ;
+-(BOOL)hasBytesIn;
+-(void)setBytesOut:(unsigned long long)arg1 ;
+-(void)setHasBytesOut:(BOOL)arg1 ;
+-(BOOL)hasBytesOut;
+-(void)setMultipathBytesInCell:(unsigned long long)arg1 ;
+-(void)setHasMultipathBytesInCell:(BOOL)arg1 ;
+-(BOOL)hasMultipathBytesInCell;
+-(void)setMultipathBytesOutCell:(unsigned long long)arg1 ;
+-(void)setHasMultipathBytesOutCell:(BOOL)arg1 ;
+-(BOOL)hasMultipathBytesOutCell;
+-(void)setMultipathBytesInWiFi:(unsigned long long)arg1 ;
+-(void)setHasMultipathBytesInWiFi:(BOOL)arg1 ;
+-(BOOL)hasMultipathBytesInWiFi;
+-(void)setMultipathBytesOutWiFi:(unsigned long long)arg1 ;
+-(void)setHasMultipathBytesOutWiFi:(BOOL)arg1 ;
+-(BOOL)hasMultipathBytesOutWiFi;
+-(void)setMultipathBytesInInitial:(unsigned long long)arg1 ;
+-(void)setHasMultipathBytesInInitial:(BOOL)arg1 ;
+-(BOOL)hasMultipathBytesInInitial;
+-(void)setMultipathBytesOutInitial:(unsigned long long)arg1 ;
+-(void)setHasMultipathBytesOutInitial:(BOOL)arg1 ;
+-(BOOL)hasMultipathBytesOutInitial;
+-(unsigned long long)bytesIn;
+-(unsigned long long)bytesOut;
+-(unsigned long long)multipathBytesInCell;
+-(unsigned long long)multipathBytesOutCell;
+-(unsigned long long)multipathBytesInWiFi;
+-(unsigned long long)multipathBytesOutWiFi;
+-(unsigned long long)multipathBytesInInitial;
+-(unsigned long long)multipathBytesOutInitial;
+@end
+

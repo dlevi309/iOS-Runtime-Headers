@@ -1,0 +1,52 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:29 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/BusinessChat.framework/BusinessChat
+*/
+
+#import <libobjc.A.dylib/BCDictionaryImageSerializable.h>
+
+@class NSString, UIImage, NSDictionary;
+
+@interface BCMessageInfo : NSObject <BCDictionaryImageSerializable> {
+
+	NSString* _title;
+	NSString* _subtitle;
+	NSString* _alternateTitle;
+	NSString* _imageIdentifier;
+	NSString* _imageDescription;
+	UIImage* _image;
+	NSString* __style;
+
+}
+
+@property (assign,nonatomic) NSString * _style;                             //@synthesize _style=__style - In the implementation block
+@property (nonatomic,retain) NSString * title;                              //@synthesize title=_title - In the implementation block
+@property (nonatomic,retain) NSString * subtitle;                           //@synthesize subtitle=_subtitle - In the implementation block
+@property (nonatomic,retain) NSString * alternateTitle;                     //@synthesize alternateTitle=_alternateTitle - In the implementation block
+@property (nonatomic,retain) NSString * imageIdentifier;                    //@synthesize imageIdentifier=_imageIdentifier - In the implementation block
+@property (nonatomic,retain) NSString * imageDescription;                   //@synthesize imageDescription=_imageDescription - In the implementation block
+@property (nonatomic,readonly) NSString * style; 
+@property (nonatomic,retain) UIImage * image;                               //@synthesize image=_image - In the implementation block
+@property (nonatomic,readonly) NSDictionary * dictionaryValue; 
+-(id)initWithDictionary:(id)arg1 ;
+-(NSString *)title;
+-(void)setTitle:(NSString *)arg1 ;
+-(NSString *)style;
+-(NSString *)_style;
+-(UIImage *)image;
+-(void)setImage:(UIImage *)arg1 ;
+-(NSString *)subtitle;
+-(NSDictionary *)dictionaryValue;
+-(void)setSubtitle:(NSString *)arg1 ;
+-(NSString *)imageDescription;
+-(void)setImageDescription:(NSString *)arg1 ;
+-(void)set_style:(NSString *)arg1 ;
+-(void)setAlternateTitle:(NSString *)arg1 ;
+-(NSString *)alternateTitle;
+-(NSString *)imageIdentifier;
+-(void)setImageIdentifier:(NSString *)arg1 ;
+-(id)initWithTitle:(id)arg1 subtitle:(id)arg2 style:(id)arg3 alternateTitle:(id)arg4 imageIdentifier:(id)arg5 imageDescription:(id)arg6 ;
+-(id)initWithDictionary:(id)arg1 imageDictionary:(id)arg2 ;
+@end
+

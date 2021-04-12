@@ -1,0 +1,1 @@
+#import <SetupAccountNotificationPlugin/BuddyAccountNotificationPlugin.h>

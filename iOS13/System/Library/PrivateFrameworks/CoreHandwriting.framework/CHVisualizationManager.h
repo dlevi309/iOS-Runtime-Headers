@@ -1,0 +1,81 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:45 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+*/
+
+#import <CoreHandwriting/CoreHandwriting-Structs.h>
+#import <libobjc.A.dylib/CHStrokeGroupBasedVisualizationDelegate.h>
+#import <libobjc.A.dylib/CHRecognitionSessionObserver.h>
+
+@protocol CHVisualizationManagerDelegate;
+@class CHRecognitionSession, NSMutableSet, NSMutableArray, NSMutableDictionary, NSString;
+
+@interface CHVisualizationManager : NSObject <CHStrokeGroupBasedVisualizationDelegate, CHRecognitionSessionObserver> {
+
+	BOOL _statusReportingEnabled;
+	BOOL __registeredAsChangeObserver;
+	BOOL __registeredAsInputDrawingsClient;
+	CHRecognitionSession* _recognitionSession;
+	id<CHVisualizationManagerDelegate> _delegate;
+	NSMutableSet* __enabledVisualizationIDs;
+	NSMutableArray* __activeVisualizationIDs;
+	NSMutableDictionary* __activeVisualizationsByID;
+	NSMutableDictionary* __strokeGroupIndexByAncestorID;
+
+}
+
+@property (nonatomic,retain,readonly) NSMutableSet * _enabledVisualizationIDs;                          //@synthesize _enabledVisualizationIDs=__enabledVisualizationIDs - In the implementation block
+@property (nonatomic,retain,readonly) NSMutableArray * _activeVisualizationIDs;                         //@synthesize _activeVisualizationIDs=__activeVisualizationIDs - In the implementation block
+@property (nonatomic,retain,readonly) NSMutableDictionary * _activeVisualizationsByID;                  //@synthesize _activeVisualizationsByID=__activeVisualizationsByID - In the implementation block
+@property (nonatomic,retain,readonly) NSMutableDictionary * _strokeGroupIndexByAncestorID;              //@synthesize _strokeGroupIndexByAncestorID=__strokeGroupIndexByAncestorID - In the implementation block
+@property (assign,nonatomic) BOOL _registeredAsChangeObserver;                                          //@synthesize _registeredAsChangeObserver=__registeredAsChangeObserver - In the implementation block
+@property (assign,nonatomic) BOOL _registeredAsInputDrawingsClient;                                     //@synthesize _registeredAsInputDrawingsClient=__registeredAsInputDrawingsClient - In the implementation block
+@property (nonatomic,retain,readonly) CHRecognitionSession * recognitionSession;                        //@synthesize recognitionSession=_recognitionSession - In the implementation block
+@property (assign,nonatomic) id<CHVisualizationManagerDelegate> delegate;                               //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) BOOL statusReportingEnabled;                                               //@synthesize statusReportingEnabled=_statusReportingEnabled - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)availableRecognitionSessionStatusKeys;
++(id)localizedNameForRecognitionSessionStatusKey:(id)arg1 ;
++(CGColorRef)newColorForVisualizedItemAtIndex:(long long)arg1 ;
++(id)availableVisualizationIdentifiers;
++(Class)_classForVisualizationIdentifier:(id)arg1 ;
++(id)localizedNameForVisualizationIdentifier:(id)arg1 ;
++(BOOL)variableHeightForRecognitionSessionStatusKey:(id)arg1 ;
+-(id)init;
+-(void)dealloc;
+-(id<CHVisualizationManagerDelegate>)delegate;
+-(void)setDelegate:(id<CHVisualizationManagerDelegate>)arg1 ;
+-(CHRecognitionSession *)recognitionSession;
+-(id)initWithRecognitionSession:(id)arg1 ;
+-(void)drawVisualizationInRect:(CGRect)arg1 context:(CGContextRef)arg2 viewBounds:(CGRect)arg3 ;
+-(BOOL)statusReportingEnabled;
+-(void)setStatusReportingEnabled:(BOOL)arg1 ;
+-(id)valueForRecognitionStatusKey:(id)arg1 ;
+-(long long)visualizationIndexForStrokeGroup:(id)arg1 ;
+-(void)visualizationNeedsDisplay:(id)arg1 ;
+-(void)visualization:(id)arg1 needsDisplayInRect:(CGRect)arg2 ;
+-(BOOL)isEnabledVisualizationForIdentifier:(id)arg1 ;
+-(NSMutableSet *)_enabledVisualizationIDs;
+-(void)_updateInstalledVisualizations;
+-(NSMutableArray *)_activeVisualizationIDs;
+-(void)_updateSessionRegistration;
+-(NSMutableDictionary *)_activeVisualizationsByID;
+-(BOOL)_isActiveVisualizationForIdentifier:(id)arg1 ;
+-(void)_addVisualizationForIdentifier:(id)arg1 ;
+-(void)_removeVisualizationForIdentifier:(id)arg1 ;
+-(BOOL)_registeredAsChangeObserver;
+-(void)set_registeredAsChangeObserver:(BOOL)arg1 ;
+-(BOOL)_registeredAsInputDrawingsClient;
+-(void)set_registeredAsInputDrawingsClient:(BOOL)arg1 ;
+-(NSMutableDictionary *)_strokeGroupIndexByAncestorID;
+-(void)_updateKnownStrokeGroupIndexes;
+-(void)recognitionSessionDidUpdateRecognitionResult:(id)arg1 ;
+-(void)recognitionSessionDidChangeStatus:(id)arg1 ;
+-(void)setEnabled:(BOOL)arg1 forVisualizationIdentifier:(id)arg2 ;
+-(void)toggleSelectiveVisualizationsAtPoint:(CGPoint)arg1 ;
+@end
+

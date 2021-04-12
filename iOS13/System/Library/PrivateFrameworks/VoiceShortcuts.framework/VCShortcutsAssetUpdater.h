@@ -1,0 +1,27 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:00 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts
+*/
+
+
+@class VCUserDefaults;
+
+@interface VCShortcutsAssetUpdater : NSObject {
+
+	VCUserDefaults* _defaults;
+
+}
+
+@property (nonatomic,readonly) VCUserDefaults * defaults;              //@synthesize defaults=_defaults - In the implementation block
++(BOOL)updateAsset;
++(void)scheduleAssetUpdate;
+-(id)init;
+-(VCUserDefaults *)defaults;
+-(BOOL)updateAsset;
+-(BOOL)downloadAsset:(id)arg1 ;
+-(id)fetchLatestAsset;
+-(BOOL)downloadAssetCatalog;
+-(BOOL)updateVoiceShortcutsBlacklistWithAsset:(id)arg1 ;
+@end
+

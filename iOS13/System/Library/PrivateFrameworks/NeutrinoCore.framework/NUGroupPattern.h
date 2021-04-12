@@ -1,0 +1,30 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:04 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore
+*/
+
+#import <NeutrinoCore/NUPattern.h>
+
+@class NSArray;
+
+@interface NUGroupPattern : NUPattern {
+
+	NSArray* _group;
+
+}
+
+@property (readonly) NSArray * group;              //@synthesize group=_group - In the implementation block
+-(id)init;
+-(id)stringRepresentation;
+-(NSArray *)group;
+-(id)initWithGroup:(id)arg1 ;
+-(id)tokens;
+-(id)shortestMatch;
+-(id)optimizedPattern;
+-(BOOL)match:(id)arg1 location:(unsigned long long*)arg2 count:(unsigned long long*)arg3 ;
+-(BOOL)isEqualToPattern:(id)arg1 ;
+-(BOOL)isFixedOrder;
+-(BOOL)isEqualToGroupPattern:(id)arg1 ;
+@end
+

@@ -1,0 +1,36 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:29 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud
+*/
+
+#import <libobjc.A.dylib/ICDelegateAccountStoreWriter.h>
+
+@class ICSQLiteConnection, NSString;
+
+@interface ICDelegateAccountStoreSQLWriter : NSObject <ICDelegateAccountStoreWriter> {
+
+	ICSQLiteConnection* _connection;
+	BOOL _isValid;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)invalidate;
+-(id)initWithConnection:(id)arg1 ;
+-(void)addDelegationUUIDs:(id)arg1 forUserIdentity:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)removeAllTokensWithCompletionHandler:(/*^block*/id)arg1 ;
+-(void)removeDelegationUUIDs:(id)arg1 forUserIdentity:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)removeIdentityPropertiesForUserIdentity:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)removeTokenForUserIdentity:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)removeTokensExpiringBeforeDate:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)setIdentityProperties:(id)arg1 forUserIdentity:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)setToken:(id)arg1 forUserIdentity:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(BOOL)_removeAccountForIdentityKey:(id)arg1 ;
+-(BOOL)_removeTokenForIdentityKey:(id)arg1 ;
+-(void)_setToken:(id)arg1 forIdentityKey:(id)arg2 ;
+@end
+

@@ -1,0 +1,36 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+
+@class NSString;
+
+@interface HDSQLiteMigrationStep : NSObject {
+
+	/*^block*/id _migrationHandler;
+	long long _finalSchemaVersion;
+	long long _foreignKeyStatus;
+	NSString* _schemaName;
+	long long _requiredPrimarySchemaVersion;
+
+}
+
+@property (nonatomic,copy,readonly) id migrationHandler;                            //@synthesize migrationHandler=_migrationHandler - In the implementation block
+@property (nonatomic,readonly) long long finalSchemaVersion;                        //@synthesize finalSchemaVersion=_finalSchemaVersion - In the implementation block
+@property (assign,nonatomic) long long foreignKeyStatus;                            //@synthesize foreignKeyStatus=_foreignKeyStatus - In the implementation block
+@property (nonatomic,copy,readonly) NSString * schemaName;                          //@synthesize schemaName=_schemaName - In the implementation block
+@property (nonatomic,readonly) long long requiredPrimarySchemaVersion;              //@synthesize requiredPrimarySchemaVersion=_requiredPrimarySchemaVersion - In the implementation block
++(id)migrationStepWithForeignKeysDisabledFrom:(long long)arg1 to:(long long)arg2 handler:(/*^block*/id)arg3 ;
++(id)migrationStepFrom:(long long)arg1 to:(long long)arg2 handler:(/*^block*/id)arg3 ;
+-(id)description;
+-(NSString *)schemaName;
+-(id)initForSchema:(id)arg1 toVersion:(long long)arg2 requiringVersion:(long long)arg3 foreignKeys:(long long)arg4 handler:(/*^block*/id)arg5 ;
+-(id)migrationHandler;
+-(long long)finalSchemaVersion;
+-(long long)foreignKeyStatus;
+-(void)setForeignKeyStatus:(long long)arg1 ;
+-(long long)requiredPrimarySchemaVersion;
+@end
+

@@ -1,0 +1,42 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:37 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <libobjc.A.dylib/GEOVenueFloorInfo.h>
+
+@protocol GEOVenueFloorInfo <NSObject>
+@property (nonatomic,readonly) short ordinal; 
+@property (nonatomic,readonly) unsigned long long levelID; 
+@required
+-(unsigned long long)levelID;
+-(short)ordinal;
+
+@end
+
+
+@class NSString;
+
+@interface GEOVenueFloorInfo : NSObject <GEOVenueFloorInfo> {
+
+	short _ordinal;
+	unsigned long long _levelID;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) short ordinal;                           //@synthesize ordinal=_ordinal - In the implementation block
+@property (nonatomic,readonly) unsigned long long levelID;              //@synthesize levelID=_levelID - In the implementation block
++(BOOL)isIntegerValidOrdinal:(long long)arg1 ;
++(id)floorInfosFromLevels:(id)arg1 ;
+-(id)init;
+-(id)initWithLevel:(id)arg1 ;
+-(unsigned long long)levelID;
+-(short)ordinal;
+-(id)initWithOrdinal:(short)arg1 levelID:(unsigned long long)arg2 ;
+@end
+

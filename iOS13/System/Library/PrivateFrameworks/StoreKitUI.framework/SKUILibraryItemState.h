@@ -1,0 +1,67 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:57 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/StoreKitUI-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, NSNumber;
+
+@interface SKUILibraryItemState : NSObject <NSCopying> {
+
+	long long _availability;
+	unsigned long long _avTypes;
+	NSString* _bundleIdentifier;
+	NSString* _bundleVersion;
+	BOOL _highDefinition;
+	BOOL _preview;
+	BOOL _rental;
+	NSNumber* _storeAccountIdentifier;
+	NSString* _storeFlavorIdentifier;
+	NSString* _storePlatformKind;
+	NSNumber* _storeVersionIdentifier;
+
+}
+
+@property (nonatomic,readonly) NSString * itemStateVariantIdentifier; 
+@property (assign,nonatomic) long long availability;                                   //@synthesize availability=_availability - In the implementation block
+@property (assign,nonatomic) unsigned long long AVTypes;                               //@synthesize avTypes=_avTypes - In the implementation block
+@property (nonatomic,copy) NSString * bundleIdentifier;                                //@synthesize bundleIdentifier=_bundleIdentifier - In the implementation block
+@property (nonatomic,copy) NSString * bundleVersion;                                   //@synthesize bundleVersion=_bundleVersion - In the implementation block
+@property (assign,getter=isHighDefinition,nonatomic) BOOL highDefinition;              //@synthesize highDefinition=_highDefinition - In the implementation block
+@property (assign,getter=isPreview,nonatomic) BOOL preview;                            //@synthesize preview=_preview - In the implementation block
+@property (assign,getter=isRental,nonatomic) BOOL rental;                              //@synthesize rental=_rental - In the implementation block
+@property (nonatomic,copy) NSNumber * storeAccountIdentifier;                          //@synthesize storeAccountIdentifier=_storeAccountIdentifier - In the implementation block
+@property (nonatomic,copy) NSString * storeFlavorIdentifier;                           //@synthesize storeFlavorIdentifier=_storeFlavorIdentifier - In the implementation block
+@property (nonatomic,copy) NSString * storePlatformKind;                               //@synthesize storePlatformKind=_storePlatformKind - In the implementation block
+@property (nonatomic,copy) NSNumber * storeVersionIdentifier;                          //@synthesize storeVersionIdentifier=_storeVersionIdentifier - In the implementation block
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(NSString *)bundleIdentifier;
+-(NSString *)bundleVersion;
+-(void)setBundleIdentifier:(NSString *)arg1 ;
+-(void)setPreview:(BOOL)arg1 ;
+-(id)initWithApplication:(id)arg1 ;
+-(void)setBundleVersion:(NSString *)arg1 ;
+-(long long)availability;
+-(void)setAvailability:(long long)arg1 ;
+-(BOOL)isRental;
+-(NSNumber *)storeAccountIdentifier;
+-(BOOL)isHighDefinition;
+-(void)setHighDefinition:(BOOL)arg1 ;
+-(void)setRental:(BOOL)arg1 ;
+-(BOOL)isPreview;
+-(NSString *)storePlatformKind;
+-(id)newJavaScriptRepresentation;
+-(NSString *)itemStateVariantIdentifier;
+-(unsigned long long)AVTypes;
+-(void)setAVTypes:(unsigned long long)arg1 ;
+-(void)setStoreAccountIdentifier:(NSNumber *)arg1 ;
+-(void)setStorePlatformKind:(NSString *)arg1 ;
+-(NSString *)storeFlavorIdentifier;
+-(void)setStoreFlavorIdentifier:(NSString *)arg1 ;
+-(NSNumber *)storeVersionIdentifier;
+-(void)setStoreVersionIdentifier:(NSNumber *)arg1 ;
+@end
+

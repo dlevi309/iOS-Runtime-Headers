@@ -1,0 +1,103 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:32 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/MapsSupport.framework/MapsSupport
+*/
+
+#import <libobjc.A.dylib/MSPCloudSynchronizerRunConditionsDelegate.h>
+#import <libobjc.A.dylib/MSPCloudNotificationReceiver.h>
+
+@protocol OS_dispatch_source, OS_dispatch_queue, MSPCloudSynchronizerDelegate;
+@class NSString, MSPCloudSynchronizerRunConditions, NSObject, NSUUID, MSPCloudClientRegistration, MSPJournal, MSPCloudMigrator, NSArray, MSPCloudKitAccountAccess;
+
+@interface MSPCloudSynchronizer : NSObject <MSPCloudSynchronizerRunConditionsDelegate, MSPCloudNotificationReceiver> {
+
+	BOOL _isRunning;
+	BOOL _hasMigratedPreSync;
+	BOOL _hasMigrated;
+	NSString* _accountID;
+	MSPCloudSynchronizerRunConditions* _runConditions;
+	NSObject*<OS_dispatch_source> _mergeTimer;
+	NSUUID* _clientIdentifier;
+	MSPCloudClientRegistration* _clientRegistration;
+	MSPJournal* _journal;
+	NSObject*<OS_dispatch_queue> _mergeQueue;
+	MSPCloudMigrator* _migrator;
+	unsigned long long _lastRetryInterval;
+	NSArray* _containers;
+	id<MSPCloudSynchronizerDelegate> _delegate;
+	MSPCloudKitAccountAccess* _cloudAccess;
+
+}
+
+@property (nonatomic,retain) NSString * accountID;                                           //@synthesize accountID=_accountID - In the implementation block
+@property (assign,nonatomic) BOOL isRunning;                                                 //@synthesize isRunning=_isRunning - In the implementation block
+@property (nonatomic,retain) MSPCloudSynchronizerRunConditions * runConditions;              //@synthesize runConditions=_runConditions - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_source> mergeTimer;                       //@synthesize mergeTimer=_mergeTimer - In the implementation block
+@property (nonatomic,retain) NSUUID * clientIdentifier;                                      //@synthesize clientIdentifier=_clientIdentifier - In the implementation block
+@property (nonatomic,retain) MSPCloudClientRegistration * clientRegistration;                //@synthesize clientRegistration=_clientRegistration - In the implementation block
+@property (nonatomic,retain) MSPJournal * journal;                                           //@synthesize journal=_journal - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> mergeQueue;                        //@synthesize mergeQueue=_mergeQueue - In the implementation block
+@property (nonatomic,retain) MSPCloudMigrator * migrator;                                    //@synthesize migrator=_migrator - In the implementation block
+@property (assign,nonatomic) BOOL hasMigratedPreSync;                                        //@synthesize hasMigratedPreSync=_hasMigratedPreSync - In the implementation block
+@property (assign,nonatomic) BOOL hasMigrated;                                               //@synthesize hasMigrated=_hasMigrated - In the implementation block
+@property (assign,nonatomic) unsigned long long lastRetryInterval;                           //@synthesize lastRetryInterval=_lastRetryInterval - In the implementation block
+@property (nonatomic,retain) NSArray * containers;                                           //@synthesize containers=_containers - In the implementation block
+@property (assign,nonatomic,__weak) id<MSPCloudSynchronizerDelegate> delegate;               //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,retain) MSPCloudKitAccountAccess * cloudAccess;                         //@synthesize cloudAccess=_cloudAccess - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(id<MSPCloudSynchronizerDelegate>)delegate;
+-(void)setDelegate:(id<MSPCloudSynchronizerDelegate>)arg1 ;
+-(void)stop;
+-(void)start;
+-(BOOL)isRunning;
+-(BOOL)hasMigrated;
+-(void)setClientIdentifier:(NSUUID *)arg1 ;
+-(NSString *)accountID;
+-(void)setAccountID:(NSString *)arg1 ;
+-(NSUUID *)clientIdentifier;
+-(void)setIsRunning:(BOOL)arg1 ;
+-(NSArray *)containers;
+-(void)setContainers:(NSArray *)arg1 ;
+-(MSPJournal *)journal;
+-(void)setJournal:(MSPJournal *)arg1 ;
+-(MSPCloudMigrator *)migrator;
+-(void)setMigrator:(MSPCloudMigrator *)arg1 ;
+-(BOOL)isCurrentlyRunning;
+-(void)didReceiveRemoteNotification:(id)arg1 ;
+-(void)runConditionsChanged:(id)arg1 ;
+-(void)merge;
+-(id)initWithContainers:(id)arg1 ;
+-(id)initWithCloudContainers:(id)arg1 clientRegistration:(id)arg2 runConditions:(id)arg3 cloudAccess:(id)arg4 ;
+-(MSPCloudSynchronizerRunConditions *)runConditions;
+-(void)performPreSyncMigrations:(/*^block*/id)arg1 ;
+-(NSObject*<OS_dispatch_source>)mergeTimer;
+-(void)setMergeTimer:(NSObject*<OS_dispatch_source>)arg1 ;
+-(void)requestMergeWithReason:(unsigned long long)arg1 ;
+-(void)requestMergeWithReason:(unsigned long long)arg1 afterDelay:(unsigned long long)arg2 ;
+-(unsigned long long)lastRetryInterval;
+-(void)setHasMigratedPreSync:(BOOL)arg1 ;
+-(void)setHasMigrated:(BOOL)arg1 ;
+-(MSPCloudClientRegistration *)clientRegistration;
+-(void)handleAccountChangeWithError:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(BOOL)hasMigratedPreSync;
+-(void)performMigrationsWithCompletion:(/*^block*/id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)mergeQueue;
+-(void)_merge;
+-(void)prepareForMergeWithGroup:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)requestMerge;
+-(unsigned long long)retryIntervalForError:(id)arg1 ;
+-(void)setLastRetryInterval:(unsigned long long)arg1 ;
+-(MSPCloudKitAccountAccess *)cloudAccess;
+-(id)initWithDefaultRemoteContainers;
+-(id)initWithDefaultLocalContainers;
+-(void)setRunConditions:(MSPCloudSynchronizerRunConditions *)arg1 ;
+-(void)setClientRegistration:(MSPCloudClientRegistration *)arg1 ;
+-(void)setMergeQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)setCloudAccess:(MSPCloudKitAccountAccess *)arg1 ;
+@end
+

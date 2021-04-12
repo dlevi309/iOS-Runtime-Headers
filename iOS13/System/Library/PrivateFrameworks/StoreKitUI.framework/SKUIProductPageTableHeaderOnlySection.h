@@ -1,0 +1,22 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:57 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/SKUIProductPageTableSection.h>
+
+@class UIView;
+
+@interface SKUIProductPageTableHeaderOnlySection : SKUIProductPageTableSection {
+
+	UIView* _headerView;
+
+}
+
+@property (nonatomic,retain) UIView * headerView;              //@synthesize headerView=_headerView - In the implementation block
+-(UIView *)headerView;
+-(void)setHeaderView:(UIView *)arg1 ;
+-(id)headerViewForTableView:(id)arg1 ;
+@end
+

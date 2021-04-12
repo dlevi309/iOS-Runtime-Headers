@@ -1,0 +1,77 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:27 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination
+*/
+
+#import <InstallCoordination/InstallCoordination-Structs.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, NSDictionary, NSArray;
+
+@interface IXPlaceholderAttributes : NSObject <NSSecureCoding, NSCopying> {
+
+	BOOL _launchProhibited;
+	BOOL _watchOnlyApp;
+	BOOL _runsIndependentlyOfCompanionApp;
+	NSString* _bundleVersion;
+	NSDictionary* _extensionDictionary;
+	NSString* _minimumOSVersion;
+	NSDictionary* _requiredDeviceCapabilities;
+	NSArray* _sbAppTags;
+	NSArray* _lsCounterpartIdentifiers;
+	NSString* _sbIconMasqueradeIdentifier;
+	NSString* _companionBundleIdentifierForWatchApp;
+
+}
+
+@property (assign,nonatomic) BOOL launchProhibited;                                      //@synthesize launchProhibited=_launchProhibited - In the implementation block
+@property (nonatomic,copy) NSString * bundleVersion;                                     //@synthesize bundleVersion=_bundleVersion - In the implementation block
+@property (nonatomic,copy) NSDictionary * extensionDictionary;                           //@synthesize extensionDictionary=_extensionDictionary - In the implementation block
+@property (nonatomic,copy) NSString * minimumOSVersion;                                  //@synthesize minimumOSVersion=_minimumOSVersion - In the implementation block
+@property (nonatomic,copy) NSDictionary * requiredDeviceCapabilities;                    //@synthesize requiredDeviceCapabilities=_requiredDeviceCapabilities - In the implementation block
+@property (nonatomic,copy) NSArray * sbAppTags;                                          //@synthesize sbAppTags=_sbAppTags - In the implementation block
+@property (nonatomic,copy) NSArray * lsCounterpartIdentifiers;                           //@synthesize lsCounterpartIdentifiers=_lsCounterpartIdentifiers - In the implementation block
+@property (nonatomic,copy) NSString * sbIconMasqueradeIdentifier;                        //@synthesize sbIconMasqueradeIdentifier=_sbIconMasqueradeIdentifier - In the implementation block
+@property (nonatomic,copy) NSString * companionBundleIdentifierForWatchApp;              //@synthesize companionBundleIdentifierForWatchApp=_companionBundleIdentifierForWatchApp - In the implementation block
+@property (assign,nonatomic) BOOL watchOnlyApp;                                          //@synthesize watchOnlyApp=_watchOnlyApp - In the implementation block
+@property (assign,nonatomic) BOOL runsIndependentlyOfCompanionApp;                       //@synthesize runsIndependentlyOfCompanionApp=_runsIndependentlyOfCompanionApp - In the implementation block
++(BOOL)supportsSecureCoding;
+-(id)init;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(NSString *)bundleVersion;
+-(NSDictionary *)requiredDeviceCapabilities;
+-(BOOL)runsIndependentlyOfCompanionApp;
+-(void)setBundleVersion:(NSString *)arg1 ;
+-(BOOL)launchProhibited;
+-(void)setLaunchProhibited:(BOOL)arg1 ;
+-(void)setRequiredDeviceCapabilities:(NSDictionary *)arg1 ;
+-(NSString *)minimumOSVersion;
+-(void)setMinimumOSVersion:(NSString *)arg1 ;
+-(id)initWithInfoPlistFromBundle:(CFBundleRef)arg1 error:(id*)arg2 ;
+-(void)setExtensionDictionary:(NSDictionary *)arg1 ;
+-(NSDictionary *)extensionDictionary;
+-(NSArray *)sbAppTags;
+-(NSArray *)lsCounterpartIdentifiers;
+-(NSString *)sbIconMasqueradeIdentifier;
+-(NSString *)companionBundleIdentifierForWatchApp;
+-(BOOL)watchOnlyApp;
+-(void)setSbAppTags:(NSArray *)arg1 ;
+-(void)setLsCounterpartIdentifiers:(NSArray *)arg1 ;
+-(void)setSbIconMasqueradeIdentifier:(NSString *)arg1 ;
+-(void)setCompanionBundleIdentifierForWatchApp:(NSString *)arg1 ;
+-(void)setWatchOnlyApp:(BOOL)arg1 ;
+-(void)setRunsIndependentlyOfCompanionApp:(BOOL)arg1 ;
+-(id)_plistKeys;
+-(id)initWithInfoPlistDictionary:(id)arg1 ;
+-(void)setRequiredDeviceCapabilitiesWithArray:(id)arg1 ;
+-(id)infoPlistContent;
+-(id)initWithInfoPlistFromBundleURL:(id)arg1 error:(id*)arg2 ;
+@end
+

@@ -1,0 +1,35 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:58 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/StoreKitUI-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSNumber, NSString, NSURL;
+
+@interface SKUISearchRequest : NSObject <NSCopying> {
+
+	NSNumber* _searchHintIndex;
+	NSString* _searchHintOriginalTerm;
+	NSString* _term;
+	NSURL* _url;
+
+}
+
+@property (nonatomic,copy) NSNumber * searchHintIndex;                     //@synthesize searchHintIndex=_searchHintIndex - In the implementation block
+@property (nonatomic,copy) NSString * searchHintOriginalTerm;              //@synthesize searchHintOriginalTerm=_searchHintOriginalTerm - In the implementation block
+@property (nonatomic,copy) NSString * term;                                //@synthesize term=_term - In the implementation block
+@property (nonatomic,copy) NSURL * URL;                                    //@synthesize url=_url - In the implementation block
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)setURL:(NSURL *)arg1 ;
+-(NSURL *)URL;
+-(NSString *)term;
+-(void)setTerm:(NSString *)arg1 ;
+-(void)setSearchHintOriginalTerm:(NSString *)arg1 ;
+-(void)setSearchHintIndex:(NSNumber *)arg1 ;
+-(NSNumber *)searchHintIndex;
+-(NSString *)searchHintOriginalTerm;
+@end
+

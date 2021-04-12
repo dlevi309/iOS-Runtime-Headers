@@ -1,0 +1,66 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+
+@interface HDDemoDataGeneratorConfiguration : NSObject {
+
+	BOOL _highFidelityGeneration;
+	BOOL _shouldPresentNotifications;
+	BOOL _shouldGenerateHealthDocuments;
+	BOOL _shouldGenerateMedicalID;
+	BOOL _shouldEnsureRecentWorkoutHasRoute;
+	BOOL _shouldGenerateRecentLiquidsIntake;
+	long long _profileType;
+	long long _generationPeriodInDays;
+	long long _biologicalSex;
+	long long _sampleTrackingType;
+	long long _nutritionTrackingType;
+	long long _resultsTrackingType;
+
+}
+
+@property (assign,nonatomic) long long profileType;                               //@synthesize profileType=_profileType - In the implementation block
+@property (assign,nonatomic) long long generationPeriodInDays;                    //@synthesize generationPeriodInDays=_generationPeriodInDays - In the implementation block
+@property (assign,nonatomic) BOOL highFidelityGeneration;                         //@synthesize highFidelityGeneration=_highFidelityGeneration - In the implementation block
+@property (assign,nonatomic) BOOL shouldPresentNotifications;                     //@synthesize shouldPresentNotifications=_shouldPresentNotifications - In the implementation block
+@property (assign,nonatomic) long long biologicalSex;                             //@synthesize biologicalSex=_biologicalSex - In the implementation block
+@property (assign,nonatomic) long long sampleTrackingType;                        //@synthesize sampleTrackingType=_sampleTrackingType - In the implementation block
+@property (assign,nonatomic) long long nutritionTrackingType;                     //@synthesize nutritionTrackingType=_nutritionTrackingType - In the implementation block
+@property (assign,nonatomic) long long resultsTrackingType;                       //@synthesize resultsTrackingType=_resultsTrackingType - In the implementation block
+@property (assign,nonatomic) BOOL shouldGenerateHealthDocuments;                  //@synthesize shouldGenerateHealthDocuments=_shouldGenerateHealthDocuments - In the implementation block
+@property (assign,nonatomic) BOOL shouldGenerateMedicalID;                        //@synthesize shouldGenerateMedicalID=_shouldGenerateMedicalID - In the implementation block
+@property (assign,nonatomic) BOOL shouldEnsureRecentWorkoutHasRoute;              //@synthesize shouldEnsureRecentWorkoutHasRoute=_shouldEnsureRecentWorkoutHasRoute - In the implementation block
+@property (assign,nonatomic) BOOL shouldGenerateRecentLiquidsIntake;              //@synthesize shouldGenerateRecentLiquidsIntake=_shouldGenerateRecentLiquidsIntake - In the implementation block
++(id)configurationFromDefaults:(id)arg1 ;
+-(id)init;
+-(long long)profileType;
+-(void)setProfileType:(long long)arg1 ;
+-(long long)biologicalSex;
+-(void)setBiologicalSex:(long long)arg1 ;
+-(BOOL)shouldGenerateRecentLiquidsIntake;
+-(long long)nutritionTrackingType;
+-(void)setNutritionTrackingType:(long long)arg1 ;
+-(void)setResultsTrackingType:(long long)arg1 ;
+-(void)setHighFidelityGeneration:(BOOL)arg1 ;
+-(long long)resultsTrackingType;
+-(void)configureForProfileType:(long long)arg1 ;
+-(void)setGenerationPeriodInDays:(long long)arg1 ;
+-(void)setShouldPresentNotifications:(BOOL)arg1 ;
+-(void)setSampleTrackingType:(long long)arg1 ;
+-(void)setShouldGenerateMedicalID:(BOOL)arg1 ;
+-(void)setShouldGenerateHealthDocuments:(BOOL)arg1 ;
+-(void)setShouldEnsureRecentWorkoutHasRoute:(BOOL)arg1 ;
+-(void)setShouldGenerateRecentLiquidsIntake:(BOOL)arg1 ;
+-(void)persistToDefaults:(id)arg1 ;
+-(long long)generationPeriodInDays;
+-(BOOL)highFidelityGeneration;
+-(BOOL)shouldPresentNotifications;
+-(long long)sampleTrackingType;
+-(BOOL)shouldGenerateHealthDocuments;
+-(BOOL)shouldGenerateMedicalID;
+-(BOOL)shouldEnsureRecentWorkoutHasRoute;
+@end
+

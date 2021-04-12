@@ -1,0 +1,71 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/NanoTimeKit/ComplicationBundles/NanoBooksComplicationsCompanion.bundle/NanoBooksComplicationsCompanion
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NBComplicationLibraryItem, NBComplicationTimelineEntry, NSHashTable, NSNumber, NSObject;
+
+@interface NBComplicationSharedDataSource : NSObject {
+
+	BOOL _observingMediaLibrary;
+	float _lastPlaybackRate;
+	NBComplicationLibraryItem* _recentAudiobook;
+	NBComplicationTimelineEntry* _current;
+	NSHashTable* _observers;
+	NSNumber* _activeOriginIdentifier;
+	NSObject*<OS_dispatch_queue> _queue;
+	double _lastElapsedTime;
+	double _lastCurrentTime;
+
+}
+
+@property (nonatomic,retain) NBComplicationLibraryItem * recentAudiobook;              //@synthesize recentAudiobook=_recentAudiobook - In the implementation block
+@property (nonatomic,retain) NBComplicationTimelineEntry * current;                    //@synthesize current=_current - In the implementation block
+@property (nonatomic,retain) NSHashTable * observers;                                  //@synthesize observers=_observers - In the implementation block
+@property (nonatomic,retain) NSNumber * activeOriginIdentifier;                        //@synthesize activeOriginIdentifier=_activeOriginIdentifier - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> queue;                       //@synthesize queue=_queue - In the implementation block
+@property (assign,nonatomic) BOOL observingMediaLibrary;                               //@synthesize observingMediaLibrary=_observingMediaLibrary - In the implementation block
+@property (assign,nonatomic) double lastElapsedTime;                                   //@synthesize lastElapsedTime=_lastElapsedTime - In the implementation block
+@property (assign,nonatomic) double lastCurrentTime;                                   //@synthesize lastCurrentTime=_lastCurrentTime - In the implementation block
+@property (assign,nonatomic) float lastPlaybackRate;                                   //@synthesize lastPlaybackRate=_lastPlaybackRate - In the implementation block
++(id)sharedDataSource;
++(BOOL)acceptsComplicationFamily:(long long)arg1 forDevice:(id)arg2 ;
++(BOOL)acceptsComplicationType:(unsigned long long)arg1 forDevice:(id)arg2 ;
+-(id)init;
+-(void)dealloc;
+-(void)setQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(NSObject*<OS_dispatch_queue>)queue;
+-(void)addObserver:(id)arg1 ;
+-(void)removeObserver:(id)arg1 ;
+-(NBComplicationTimelineEntry *)current;
+-(double)lastElapsedTime;
+-(void)setObservers:(NSHashTable *)arg1 ;
+-(NSHashTable *)observers;
+-(void)setCurrent:(NBComplicationTimelineEntry *)arg1 ;
+-(void)resume:(BOOL)arg1 ;
+-(id)q_timelineEntryForOrigin:(id)arg1 ;
+-(id)_timelineEntryForOrigin:(id)arg1 nowPlayingController:(id)arg2 recentAudiobook:(id)arg3 ;
+-(id)defaultSwitcherTemplate;
+-(NSNumber *)activeOriginIdentifier;
+-(void)q_endModifyingTimeline;
+-(NBComplicationLibraryItem *)recentAudiobook;
+-(void)getCurrentTimelineEntryForFamily:(long long)arg1 wantsRecentBookName:(BOOL)arg2 handler:(/*^block*/id)arg3 ;
+-(void)getLaunchURLForTimelineEntryDate:(id)arg1 wantsRecentBookName:(BOOL)arg2 handler:(/*^block*/id)arg3 ;
+-(id)_showAssetURL:(id)arg1 ;
+-(id)q_nowPlayingURL;
+-(void)q_updateWithOrigin:(id)arg1 ;
+-(void)q_updateMediaLibraryMonitoring;
+-(void)setRecentAudiobook:(NBComplicationLibraryItem *)arg1 ;
+-(void)setActiveOriginIdentifier:(NSNumber *)arg1 ;
+-(BOOL)observingMediaLibrary;
+-(void)setObservingMediaLibrary:(BOOL)arg1 ;
+-(void)setLastElapsedTime:(double)arg1 ;
+-(double)lastCurrentTime;
+-(void)setLastCurrentTime:(double)arg1 ;
+-(float)lastPlaybackRate;
+-(void)setLastPlaybackRate:(float)arg1 ;
+@end
+

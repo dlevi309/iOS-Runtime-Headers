@@ -1,0 +1,97 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:32 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+
+@protocol OS_dispatch_queue, HMDSharingDeviceDiscovery, HMDCompanionLinkClient;
+@class NSObject, HMFUnfairLock, HMFWiFiManager, NSMapTable, NSSet, NSString;
+
+@interface HMDSymptomManager : HMFObject <HMFLogging> {
+
+	BOOL _deviceProblemNotificationTokenValid;
+	BOOL _supportsRegisteringAccessories;
+	int _deviceProblemNotificationToken;
+	NSObject*<OS_dispatch_queue> _workQueue;
+	HMFUnfairLock* _lock;
+	id<HMDSharingDeviceDiscovery> _deviceDiscovery;
+	id<HMDCompanionLinkClient> _companionLinkClient;
+	HMFWiFiManager* _wifiManager;
+	NSMapTable* _symptomContainerByRegisteredAccessory;
+	NSMapTable* _nearbySFDevices;
+	NSMapTable* _networkReachableRPCompanionLinkDevices;
+	unsigned long long _deviceDiscoveryFlags;
+
+}
+
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> workQueue;                                                           //@synthesize workQueue=_workQueue - In the implementation block
+@property (nonatomic,readonly) HMFUnfairLock * lock;                                                                             //@synthesize lock=_lock - In the implementation block
+@property (nonatomic,readonly) id<HMDSharingDeviceDiscovery> deviceDiscovery;                                                    //@synthesize deviceDiscovery=_deviceDiscovery - In the implementation block
+@property (nonatomic,readonly) id<HMDCompanionLinkClient> companionLinkClient;                                                   //@synthesize companionLinkClient=_companionLinkClient - In the implementation block
+@property (nonatomic,readonly) HMFWiFiManager * wifiManager;                                                                     //@synthesize wifiManager=_wifiManager - In the implementation block
+@property (nonatomic,readonly) NSMapTable * symptomContainerByRegisteredAccessory;                                               //@synthesize symptomContainerByRegisteredAccessory=_symptomContainerByRegisteredAccessory - In the implementation block
+@property (nonatomic,readonly) NSMapTable * nearbySFDevices;                                                                     //@synthesize nearbySFDevices=_nearbySFDevices - In the implementation block
+@property (nonatomic,readonly) NSMapTable * networkReachableRPCompanionLinkDevices;                                              //@synthesize networkReachableRPCompanionLinkDevices=_networkReachableRPCompanionLinkDevices - In the implementation block
+@property (assign,nonatomic) unsigned long long deviceDiscoveryFlags;                                                            //@synthesize deviceDiscoveryFlags=_deviceDiscoveryFlags - In the implementation block
+@property (assign,nonatomic) int deviceProblemNotificationToken;                                                                 //@synthesize deviceProblemNotificationToken=_deviceProblemNotificationToken - In the implementation block
+@property (assign,getter=isDeviceProblemNotificationTokenValid,nonatomic) BOOL deviceProblemNotificationTokenValid;              //@synthesize deviceProblemNotificationTokenValid=_deviceProblemNotificationTokenValid - In the implementation block
+@property (assign,nonatomic) BOOL supportsRegisteringAccessories;                                                                //@synthesize supportsRegisteringAccessories=_supportsRegisteringAccessories - In the implementation block
+@property (nonatomic,copy,readonly) NSSet * currentDeviceSymptoms; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)sharedManager;
++(id)logCategory;
+-(id)init;
+-(void)dealloc;
+-(HMFUnfairLock *)lock;
+-(void)_start;
+-(NSObject*<OS_dispatch_queue>)workQueue;
+-(HMFWiFiManager *)wifiManager;
+-(void)_stop;
+-(id<HMDSharingDeviceDiscovery>)deviceDiscovery;
+-(void)startDiscoveringSymptomsRequiringNearbyInfo;
+-(void)stopDiscoveringSymptomsRequiringNearbyInfo;
+-(void)registerAccessory:(id)arg1 delegate:(id)arg2 ;
+-(NSSet *)currentDeviceSymptoms;
+-(void)initiateFixForAccessory:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(id)initWithDeviceDiscovery:(id)arg1 companionLinkClient:(id)arg2 wifiManager:(id)arg3 ;
+-(void)handleAccessoryRemovedNotification:(id)arg1 ;
+-(void)handleAccessoryWiFiNetworkInfoUpdatedNotification:(id)arg1 ;
+-(void)handleCurrentNetworkDidChangeNotification:(id)arg1 ;
+-(id<HMDCompanionLinkClient>)companionLinkClient;
+-(BOOL)isDeviceProblemNotificationTokenValid;
+-(int)deviceProblemNotificationToken;
+-(id)_currentDeviceSymptoms;
+-(BOOL)supportsRegisteringAccessories;
+-(NSMapTable *)symptomContainerByRegisteredAccessory;
+-(void)_updateSymptomsForRegisteredAccessory:(id)arg1 ;
+-(NSMapTable *)nearbySFDevices;
+-(void)setDeviceDiscoveryFlags:(unsigned long long)arg1 ;
+-(void)_sfDeviceLostHandler:(id)arg1 ;
+-(void)_initiateFixForAccessory:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_stopDeviceDiscovery;
+-(void)_startDeviceDiscovery;
+-(void)_startCompanionLinkClient;
+-(unsigned long long)deviceDiscoveryFlags;
+-(void)_sfDeviceFoundHandler:(id)arg1 ;
+-(void)_sfDeviceChangedHandler:(id)arg1 ;
+-(void)_rpDeviceFoundHandler:(id)arg1 ;
+-(void)_rpDeviceChangedHandler:(id)arg1 ;
+-(void)_rpDeviceLostHandler:(id)arg1 ;
+-(void)_stopCompanionLinkClient;
+-(NSMapTable *)networkReachableRPCompanionLinkDevices;
+-(void)setDeviceProblemNotificationTokenValid:(BOOL)arg1 ;
+-(id)_localSymptomsForRegisteredAccessory:(id)arg1 ;
+-(id)_registeredAccessoryWithIDSIdentifier:(id)arg1 ;
+-(void)_updateSymptomsForRegisteredAccessoryWithIDSIdentifier:(id)arg1 ;
+-(void)deregisterAccessory:(id)arg1 ;
+-(void)_updateSymptomsForAllRegisteredAccessories;
+-(void)setDeviceProblemNotificationToken:(int)arg1 ;
+-(void)setSupportsRegisteringAccessories:(BOOL)arg1 ;
+@end
+

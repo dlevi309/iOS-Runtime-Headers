@@ -1,0 +1,71 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:58 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreRE.framework/CoreRE
+*/
+
+#import <CoreRE/CoreRE-Structs.h>
+#import <libobjc.A.dylib/IDSServiceDelegatePrivate.h>
+
+@class IDSService, NSString;
+
+@interface IDSManagerImpl : NSObject <IDSServiceDelegatePrivate> {
+
+	Event<re::IDSSessionService, re::SharedPtr<re::DiscoveryInvite> >* m_receivedInvite;
+	Event<re::IDSSessionService, re::SharedPtr<re::DiscoveryInvite>, re::SharedPtr<re::DiscoveryIdentity> >* m_acceptedInvite;
+	Event<re::IDSSessionService, re::SharedPtr<re::DiscoveryInvite>, re::SharedPtr<re::DiscoveryIdentity> >* m_rejectedInvite;
+	DynamicArray<re::IDSInvite *>* m_invites;
+	DynamicArray<re::IDSDiscoveryView *>* m_views;
+	BOOL _isListeningForInvites;
+	IDSService* _service;
+	Config* _config;
+
+}
+
+@property (assign,nonatomic) Config* config;                          //@synthesize config=_config - In the implementation block
+@property (nonatomic,retain) IDSService * service;                    //@synthesize service=_service - In the implementation block
+@property (assign,nonatomic) BOOL isListeningForInvites;              //@synthesize isListeningForInvites=_isListeningForInvites - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(Config*)config;
+-(void)setConfig:(Config*)arg1 ;
+-(IDSService *)service;
+-(void)setService:(IDSService *)arg1 ;
+-(void)service:(id)arg1 account:(id)arg2 incomingMessage:(id)arg3 fromID:(id)arg4 context:(id)arg5 ;
+-(id)initWithConfig:(Config*)arg1 ;
+-(BOOL)isLoggedIn;
+-(void)setupService;
+-(BOOL)isValidDestinationsArray:(id)arg1 ;
+-(id)discoveryViewToNSArray:(DiscoveryView*)arg1 to:(id)arg2 ;
+-(void)sendMessage:(id)arg1 type:(id)arg2 objectGUID:(id)arg3 to:(id)arg4 ;
+-(IDSSessionService*)idsSessionService;
+-(void)broadcastViewUpdate:(IDSDiscoveryView*)arg1 ;
+-(BOOL)isValidInviteResponse:(id)arg1 message:(id)arg2 ;
+-(void)inviteAcceptedFrom:(IDSInvite*)arg1 from:(id)arg2 ;
+-(SharedPtr<re::IDSDiscoveryIdentity>*)createLocalIdentity;
+-(BOOL)isValidViewUpdate:(id)arg1 message:(id)arg2 ;
+-(SharedPtr<re::IDSDiscoveryView>*)createDiscoveryViewWithDestinations:(id)arg1 destinations:(id)arg2 ;
+-(void)sendInviteRequest:(IDSInvite*)arg1 destinations:(id)arg2 ;
+-(BOOL)parseMessage:(id)arg1 payload:(id*)arg2 objectGUID:(id*)arg3 type:(id*)arg4 ;
+-(IDSInvite*)inviteWithGuid:(id)arg1 ;
+-(IDSDiscoveryView*)discoveryViewWithGuid:(id)arg1 ;
+-(void)incomingInviteMessage:(IDSInvite*)arg1 type:(id)arg2 message:(id)arg3 from:(id)arg4 ;
+-(void)incomingViewMessage:(IDSDiscoveryView*)arg1 type:(id)arg2 message:(id)arg3 from:(id)arg4 ;
+-(void)incomingInviteRequest:(id)arg1 payload:(id)arg2 from:(id)arg3 ;
+-(Event<re::IDSSessionService, re::SharedPtr<re::DiscoveryInvite> >*)receivedInviteEvent;
+-(Event<re::IDSSessionService, re::SharedPtr<re::DiscoveryInvite>, re::SharedPtr<re::DiscoveryIdentity> >*)acceptedInviteEvent;
+-(Event<re::IDSSessionService, re::SharedPtr<re::DiscoveryInvite>, re::SharedPtr<re::DiscoveryIdentity> >*)rejectedInviteEvent;
+-(void)startListeningForInvites;
+-(void)stopListeningForInvites;
+-(void)acceptInvite:(IDSInvite*)arg1 ;
+-(void)willDestroyInvite:(IDSInvite*)arg1 ;
+-(void)willDestroyDiscoveryView:(IDSDiscoveryView*)arg1 ;
+-(SharedPtr<re::DiscoveryInvite>*)createInviteWithDestinations:(Slice<re::DynamicString>*)arg1 ;
+-(SharedPtr<re::DiscoveryInvite>*)createInviteWithDiscoveryView:(SharedPtr<re::DiscoveryView>*)arg1 destinations:(Slice<re::DynamicString>*)arg2 ;
+-(BOOL)isListeningForInvites;
+-(void)setIsListeningForInvites:(BOOL)arg1 ;
+@end
+

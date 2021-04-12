@@ -1,0 +1,11 @@
+#import <CoreMaterial/MTMaterialLayer.h>
+#import <CoreMaterial/MTCoreMaterialVisualStyling.h>
+#import <CoreMaterial/MTTintingMaterialSettings.h>
+#import <CoreMaterial/MTTintingFilteringMaterialSettings.h>
+#import <CoreMaterial/MTRecipeMaterialSettings.h>
+#import <CoreMaterial/MTColor.h>
+#import <CoreMaterial/MTRGBColor.h>
+#import <CoreMaterial/MTWhiteColor.h>
+#import <CoreMaterial/MTMaterialSettingsInterpolator.h>
+#import <CoreMaterial/MTVisualStyleSet.h>
+#import <CoreMaterial/MTCoreMaterialVisualStylingProvider.h>

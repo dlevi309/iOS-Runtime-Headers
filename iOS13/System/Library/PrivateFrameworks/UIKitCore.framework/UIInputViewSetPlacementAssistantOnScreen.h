@@ -1,0 +1,21 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:16 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+#import <UIKitCore/UIKitCore-Structs.h>
+#import <UIKitCore/UIInputViewSetPlacement.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@interface UIInputViewSetPlacementAssistantOnScreen : UIInputViewSetPlacement <NSSecureCoding>
++(BOOL)supportsSecureCoding;
+-(BOOL)showsInputViews;
+-(CGRect)remoteIntrinsicContentSizeForInputViewInSet:(id)arg1 includingIAV:(BOOL)arg2 ;
+-(BOOL)inputViewWillAppear;
+-(double)inputAssistantViewHeightForInputViewSet:(id)arg1 ;
+-(id)verticalConstraintForInputViewSet:(id)arg1 hostView:(id)arg2 containerView:(id)arg3 ;
+-(BOOL)accessoryViewWillAppear;
+-(Class)applicatorClassForKeyboard:(BOOL)arg1 ;
+@end
+

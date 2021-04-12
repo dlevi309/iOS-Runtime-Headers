@@ -1,0 +1,38 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:32 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSData;
+
+@interface GEOJunction : NSObject <NSSecureCoding> {
+
+	int _maneuverType;
+	int _drivingSide;
+	int _junctionType;
+	NSData* _elementsData;
+
+}
+
+@property (nonatomic,readonly) int maneuverType;                            //@synthesize maneuverType=_maneuverType - In the implementation block
+@property (nonatomic,readonly) int drivingSide;                             //@synthesize drivingSide=_drivingSide - In the implementation block
+@property (nonatomic,readonly) int junctionType;                            //@synthesize junctionType=_junctionType - In the implementation block
+@property (nonatomic,readonly) GEOJunctionElement* elements; 
+@property (nonatomic,readonly) unsigned long long numElements; 
++(BOOL)supportsSecureCoding;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(unsigned long long)numElements;
+-(GEOJunctionElement*)elements;
+-(int)maneuverType;
+-(int)drivingSide;
+-(int)junctionType;
+-(id)initWithStep:(id)arg1 ;
+-(id)initWithManeuverType:(int)arg1 drivingSide:(int)arg2 ;
+-(id)initWithJunctionInfo:(id)arg1 ;
+@end
+

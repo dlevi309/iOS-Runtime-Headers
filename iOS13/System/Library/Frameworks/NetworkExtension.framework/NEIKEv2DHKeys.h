@@ -1,0 +1,66 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:01 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension
+*/
+
+
+#import <NetworkExtension/NetworkExtension-Structs.h>
+@class NSData, NSMutableData;
+
+@interface NEIKEv2DHKeys : NSObject {
+
+	int _desc;
+	int _type;
+	int _gen1;
+	int _gen2;
+	NSData* _prime;
+	NSData* _curveA;
+	NSData* _curveB;
+	NSData* _order;
+	NSMutableData* _publicKey;
+	unsigned long long _publicKeySize;
+	OpaqueSecDHContextRef _context;
+
+}
+
+@property (assign) int desc;                                      //@synthesize desc=_desc - In the implementation block
+@property (assign) int type;                                      //@synthesize type=_type - In the implementation block
+@property (retain) NSData * prime;                                //@synthesize prime=_prime - In the implementation block
+@property (assign) int gen1;                                      //@synthesize gen1=_gen1 - In the implementation block
+@property (assign) int gen2;                                      //@synthesize gen2=_gen2 - In the implementation block
+@property (retain) NSData * curveA;                               //@synthesize curveA=_curveA - In the implementation block
+@property (retain) NSData * curveB;                               //@synthesize curveB=_curveB - In the implementation block
+@property (retain) NSData * order;                                //@synthesize order=_order - In the implementation block
+@property (retain) NSMutableData * publicKey;                     //@synthesize publicKey=_publicKey - In the implementation block
+@property (assign) unsigned long long publicKeySize;              //@synthesize publicKeySize=_publicKeySize - In the implementation block
+@property (assign) OpaqueSecDHContextRef context;                 //@synthesize context=_context - In the implementation block
+-(void)dealloc;
+-(int)type;
+-(void)setType:(int)arg1 ;
+-(NSData *)order;
+-(OpaqueSecDHContextRef)context;
+-(NSMutableData *)publicKey;
+-(void)setContext:(OpaqueSecDHContextRef)arg1 ;
+-(void)setOrder:(NSData *)arg1 ;
+-(void)setPublicKey:(NSMutableData *)arg1 ;
+-(int)desc;
+-(NSData *)prime;
+-(void)setPublicKeySize:(unsigned long long)arg1 ;
+-(BOOL)getECCP:(const ccec_cp*)arg1 ;
+-(BOOL)checkDHPublic;
+-(BOOL)generatePublicKeyWithECPKey:(ccec_full_ctx*)arg1 curveKey:(unsigned char*)arg2 ;
+-(id)createSharedSecretForECPKey:(ccec_full_ctx*)arg1 curveKey:(unsigned char*)arg2 remotePublicKey:(id)arg3 publicKeySize:(unsigned long long)arg4 dhContext:(OpaqueSecDHContextRef)arg5 ;
+-(void)setDesc:(int)arg1 ;
+-(void)setPrime:(NSData *)arg1 ;
+-(int)gen1;
+-(void)setGen1:(int)arg1 ;
+-(int)gen2;
+-(void)setGen2:(int)arg1 ;
+-(NSData *)curveA;
+-(void)setCurveA:(NSData *)arg1 ;
+-(NSData *)curveB;
+-(void)setCurveB:(NSData *)arg1 ;
+-(unsigned long long)publicKeySize;
+@end
+

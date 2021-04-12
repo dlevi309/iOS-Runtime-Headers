@@ -1,0 +1,110 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:44 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NanoTimeKitCompanion-Structs.h>
+#import <ClockKitUI/CLKUIQuad.h>
+
+@protocol MTLDevice, MTLRenderPipelineState, MTLTexture, MTLBuffer;
+@class CLKDevice, NTKSiderealCachedMTLTexture, NSOrderedSet, NTKAltitudeColorCurve, NSArray, NTKSiderealDataSource, MTLRenderPassDescriptor;
+
+@interface NTKSiderealBackgroundQuad : CLKUIQuad {
+
+	CLKDevice* _clkDevice;
+	id<MTLDevice> _device;
+	id<MTLRenderPipelineState> _mtlSolidPipelineState;
+	id<MTLRenderPipelineState> _mtlGradientPipelineState;
+	id<MTLRenderPipelineState> _mtlGlowPipelineState;
+	id<MTLRenderPipelineState> _mtlSpritePipelineState;
+	id<MTLRenderPipelineState> _mtlBlurPipelineState;
+	id<MTLRenderPipelineState> _mtlCompositePipelineState;
+	id<MTLTexture> _gradientTex;
+	id<MTLBuffer> _mtlIndexBuffer;
+	id<MTLBuffer> _mtlSectorDescriptorBuffers[3];
+	unsigned short _currentBufferIndex;
+	NTKSiderealCachedMTLTexture* _dialTex;
+	NTKSiderealCachedMTLTexture* _waypointTex;
+	NTKSiderealCachedMTLTexture* _gnomonTexture;
+	NTKSiderealCachedMTLTexture* _dayGnomonTexture;
+	NTKSiderealCachedMTLTexture* _dayDiskBloomTexture;
+	NTKSiderealCachedMTLTexture* _dayDiskTexture;
+	NTKSiderealCachedMTLTexture* _nightGnomonTexture;
+	NTKSiderealCachedMTLTexture* _nightDiskTexture;
+	NTKSiderealCachedMTLTexture* _nightRingTexture;
+	CGSize _size;
+	NSOrderedSet* _sectors;
+	double _dayProgress;
+	NTKAltitudeColorCurve* _civilTwilightCurve;
+	NTKAltitudeColorCurve* _nauticalTwilightCurve;
+	NTKAltitudeColorCurve* _astronomicalTwilightCurve;
+	NTKAltitudeColorCurve* _nightColorCurve;
+	NTKAltitudeColorCurve* _bloomColorCurve;
+	NSArray* _dayGradientCurves;
+	NSArray* _dayGradientInterpolations;
+	float _antiAliasWidth;
+	 _ticksColor_dim;
+	 _ticksColor_bright;
+	 _waypointsColor;
+	NTKSiderealDataSource* _dataSource;
+	double _glowStartAngle;
+	double _glowEndAngle;
+	float _diameter;
+	float _orbitDiameter;
+	MTLRenderPassDescriptor* _offscreenPassDescriptor;
+	MTLRenderPassDescriptor* _verticalBlurPassDescriptor;
+	MTLRenderPassDescriptor* _horizontalBlurPassDescriptor;
+	id<MTLTexture> _offscreenBuffer;
+	id<MTLTexture> _verticalBlurBuffer;
+	id<MTLTexture> _horizontalBlurBuffer;
+	float _blurOrbitRadius;
+	float _blurRadius;
+	BOOL _shouldDrawGlowPath;
+	float _litProgress;
+	float _backgroundDimming;
+	float _blurScale;
+	unsigned long long _renderingMode;
+	id<MTLTexture> _dayMask;
+	id<MTLTexture> _nightMask;
+
+}
+
+@property (assign,nonatomic) float litProgress;                             //@synthesize litProgress=_litProgress - In the implementation block
+@property (assign,nonatomic) float backgroundDimming;                       //@synthesize backgroundDimming=_backgroundDimming - In the implementation block
+@property (assign,nonatomic) float blurScale;                               //@synthesize blurScale=_blurScale - In the implementation block
+@property (assign,nonatomic) BOOL shouldDrawGlowPath;                       //@synthesize shouldDrawGlowPath=_shouldDrawGlowPath - In the implementation block
+@property (assign,nonatomic) unsigned long long renderingMode;              //@synthesize renderingMode=_renderingMode - In the implementation block
+@property (nonatomic,retain) id<MTLTexture> dayMask;                        //@synthesize dayMask=_dayMask - In the implementation block
+@property (nonatomic,retain) id<MTLTexture> nightMask;                      //@synthesize nightMask=_nightMask - In the implementation block
+-(unsigned long long)renderingMode;
+-(void)setRenderingMode:(unsigned long long)arg1 ;
+-(id<MTLTexture>)dayMask;
+-(void)setupForQuadView:(id)arg1 ;
+-(BOOL)prepareForTime:(double)arg1 ;
+-(void)performOffscreenPassesWithCommandBuffer:(id)arg1 ;
+-(void)renderForDisplayWithEncoder:(id)arg1 ;
+-(id)_currentBuffer;
+-(void)setSolarDayProgress:(double)arg1 ;
+-(void)loadGradientTexture:(/*^block*/id)arg1 ;
+-(void)updateAntiAliasWidth;
+-(void)dataSourceChanged;
+-(id)generateGradientData:(/*^block*/id)arg1 ;
+-(int)numSlicesForAngle:(double)arg1 ;
+-(id)initWithDevice:(id)arg1 orbitDiameter:(double)arg2 timeOrbitRadius:(double)arg3 timeRadius:(double)arg4 dialImage:(id)arg5 waypointImage:(id)arg6 gnomonImage:(id)arg7 dayGnomonImage:(id)arg8 dayDiskBloomImage:(id)arg9 dayDiscImage:(id)arg10 nightGnomonImage:(id)arg11 nightDiscImage:(id)arg12 nightRingImage:(id)arg13 dataSource:(id)arg14 ;
+-(void)setGlowViewStartAngle:(double)arg1 endAngle:(double)arg2 ;
+-(void)updateWaypointImage:(id)arg1 ;
+-(void)setSectors:(id)arg1 ;
+-(float)litProgress;
+-(void)setLitProgress:(float)arg1 ;
+-(float)backgroundDimming;
+-(void)setBackgroundDimming:(float)arg1 ;
+-(float)blurScale;
+-(void)setBlurScale:(float)arg1 ;
+-(BOOL)shouldDrawGlowPath;
+-(void)setShouldDrawGlowPath:(BOOL)arg1 ;
+-(void)setDayMask:(id<MTLTexture>)arg1 ;
+-(id<MTLTexture>)nightMask;
+-(void)setNightMask:(id<MTLTexture>)arg1 ;
+@end
+

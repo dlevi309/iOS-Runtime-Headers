@@ -1,0 +1,58 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:55 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/WebContentAnalysis.framework/WebContentAnalysis
+*/
+
+#import <libobjc.A.dylib/WFWebPageProtocol.h>
+
+@protocol WFWebPageProtocol;
+@class NSObject, WFImgArrayCache, NSString;
+
+@interface WFWebPageDecorator : NSObject <WFWebPageProtocol> {
+
+	NSObject*<WFWebPageProtocol> webPageStripper;
+	WFImgArrayCache* pageImagesPropertyCache;
+	NSString* URLString;
+
+}
+
+@property (retain) NSString * URLString; 
++(id)webPageWithString:(id)arg1 URLString:(id)arg2 ;
++(id)_plainTextWithSelector:(SEL)arg1 object:(id)arg2 ;
++(id)plainTextWithWebPageData:(id)arg1 ;
++(id)plainTextWithWebPageString:(id)arg1 ;
++(id)webPageWithData:(id)arg1 ;
++(id)webPageWithData:(id)arg1 URLString:(id)arg2 ;
++(id)webPageWithString:(id)arg1 ;
+-(void)dealloc;
+-(id)tags;
+-(id)images;
+-(NSString *)URLString;
+-(void)setURLString:(NSString *)arg1 ;
+-(long long)wordCount;
+-(id)links;
+-(id)pageTitle;
+-(id)plainText;
+-(long long)numberOfImages;
+-(id)pageContent;
+-(long long)numberOfKnownImagePixels;
+-(long long)numberOfUnknownSizedImages;
+-(id)metaTagDescription;
+-(id)metaTagKeywords;
+-(id)metaTagsLabeled;
+-(id)metaTagsUnlabeled;
+-(id)scriptBlocks;
+-(BOOL)hasFrameset;
+-(BOOL)hasShortRefresh;
+-(id)initWithWebPageData:(id)arg1 ;
+-(id)initWithWebPageString:(id)arg1 ;
+-(id)initWithWebPageStripper:(id)arg1 ;
+-(void)_cacheImgProperties;
+-(id)plainTextAttributeWithSelector:(SEL)arg1 title:(id)arg2 weight:(int)arg3 ;
+-(id)plainTextAttributeWithSelector:(SEL)arg1 title:(id)arg2 ;
+-(id)imageAltsText;
+-(id)rawPlainText;
+-(id)linkTitlesText;
+@end
+

@@ -1,0 +1,83 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:46 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit
+*/
+
+#import <NanoPassKit/NPKQuickPaymentSession.h>
+#import <libobjc.A.dylib/PKFieldDetectorObserver.h>
+
+@protocol OS_dispatch_queue, OS_dispatch_source;
+@class PKPass, NSDictionary, NSObject, PKFieldDetector, NSString;
+
+@interface NPKFakePaymentSession : NPKQuickPaymentSession <PKFieldDetectorObserver> {
+
+	BOOL _ourConfirmed;
+	BOOL _ourInServiceMode;
+	BOOL _invalidated;
+	PKPass* _ourCurrentPass;
+	NSDictionary* _ourVasPasses;
+	NSObject*<OS_dispatch_queue> _ourCallbackQueue;
+	NSObject*<OS_dispatch_queue> _ourInternalQueue;
+	NSObject*<OS_dispatch_source> _timeoutTimer;
+	PKFieldDetector* _fieldDetector;
+	unsigned long long _changeCardToken;
+
+}
+
+@property (nonatomic,retain) PKPass * ourCurrentPass;                                    //@synthesize ourCurrentPass=_ourCurrentPass - In the implementation block
+@property (nonatomic,retain) NSDictionary * ourVasPasses;                                //@synthesize ourVasPasses=_ourVasPasses - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> ourCallbackQueue;              //@synthesize ourCallbackQueue=_ourCallbackQueue - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> ourInternalQueue;              //@synthesize ourInternalQueue=_ourInternalQueue - In the implementation block
+@property (assign,nonatomic) BOOL ourConfirmed;                                          //@synthesize ourConfirmed=_ourConfirmed - In the implementation block
+@property (assign,nonatomic) BOOL ourInServiceMode;                                      //@synthesize ourInServiceMode=_ourInServiceMode - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_source> timeoutTimer;                 //@synthesize timeoutTimer=_timeoutTimer - In the implementation block
+@property (nonatomic,retain) PKFieldDetector * fieldDetector;                            //@synthesize fieldDetector=_fieldDetector - In the implementation block
+@property (assign,nonatomic) BOOL invalidated;                                           //@synthesize invalidated=_invalidated - In the implementation block
+@property (assign,nonatomic) unsigned long long changeCardToken;                         //@synthesize changeCardToken=_changeCardToken - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(id)initWithQueue:(id)arg1 ;
+-(void)setCredential:(id)arg1 ;
+-(BOOL)invalidated;
+-(void)setInvalidated:(BOOL)arg1 ;
+-(void)setTimeoutTimer:(NSObject*<OS_dispatch_source>)arg1 ;
+-(NSObject*<OS_dispatch_source>)timeoutTimer;
+-(BOOL)startSession;
+-(void)fieldDetectorDidEnterField:(id)arg1 withProperties:(id)arg2 ;
+-(id)vasPasses;
+-(void)setDeferAuthorization:(BOOL)arg1 ;
+-(void)setCurrentPass:(id)arg1 ;
+-(void)setVasPasses:(id)arg1 ;
+-(void)_handleTimeoutTimer;
+-(void)_setTimeoutTimer;
+-(void)_handleTransactionCompleteDarwinNotification;
+-(NSObject*<OS_dispatch_queue>)ourInternalQueue;
+-(void)setOurCurrentPass:(PKPass *)arg1 ;
+-(NSObject*<OS_dispatch_queue>)ourCallbackQueue;
+-(void)_scheduleDidActivateEventForPass:(id)arg1 ;
+-(PKPass *)ourCurrentPass;
+-(void)setOurVasPasses:(NSDictionary *)arg1 ;
+-(NSDictionary *)ourVasPasses;
+-(void)setOurInServiceMode:(BOOL)arg1 ;
+-(BOOL)ourInServiceMode;
+-(BOOL)ourConfirmed;
+-(void)setOurConfirmed:(BOOL)arg1 ;
+-(unsigned long long)changeCardToken;
+-(void)setChangeCardToken:(unsigned long long)arg1 ;
+-(id)currentPass;
+-(BOOL)deferAuthorization;
+-(void)setInServiceMode:(BOOL)arg1 ;
+-(BOOL)inServiceMode;
+-(void)confirmOrRenewSession;
+-(void)renewSession;
+-(void)deactivateSessionWithCompletion:(/*^block*/id)arg1 ;
+-(void)setOurCallbackQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)setOurInternalQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(PKFieldDetector *)fieldDetector;
+-(void)setFieldDetector:(PKFieldDetector *)arg1 ;
+@end
+

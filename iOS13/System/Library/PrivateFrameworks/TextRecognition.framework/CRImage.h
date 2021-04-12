@@ -1,0 +1,102 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:22 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition
+*/
+
+
+#import <TextRecognition/TextRecognition-Structs.h>
+@class CIImage;
+
+@interface CRImage : NSObject {
+
+	CVBufferRef _pixelBuffer;
+	BOOL _isFullRange;
+	BOOL _vImageDataIsCopy;
+	int _colorSpace;
+	CIImage* _ciImage;
+	CGImageRef _cgImage;
+	vImage_Buffer* _vImage;
+
+}
+
+@property (nonatomic,retain) CIImage * ciImage;                    //@synthesize ciImage=_ciImage - In the implementation block
+@property (assign,nonatomic) CVBufferRef pixelBuffer;              //@synthesize pixelBuffer=_pixelBuffer - In the implementation block
+@property (assign,nonatomic) CGImageRef cgImage;                   //@synthesize cgImage=_cgImage - In the implementation block
+@property (assign,nonatomic) BOOL vImageDataIsCopy;                //@synthesize vImageDataIsCopy=_vImageDataIsCopy - In the implementation block
+@property (readonly) vImage_Buffer* vImage;                        //@synthesize vImage=_vImage - In the implementation block
+@property (readonly) unsigned long long width; 
+@property (readonly) unsigned long long height; 
+@property (readonly) int colorSpace;                               //@synthesize colorSpace=_colorSpace - In the implementation block
+@property (readonly) BOOL isFullRange;                             //@synthesize isFullRange=_isFullRange - In the implementation block
++(unsigned long long)bytesPerPixelForColorSpace:(int)arg1 ;
++(vImage_Buffer*)allocateVImageBufferWithWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 bytesPerPixel:(int)arg3 ;
++(vImage_Buffer*)allocateVImageBufferWithWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 colorSpace:(int)arg3 ;
++(BOOL)convertVImage:(const vImage_Buffer*)arg1 inColorSpace:(int)arg2 toVImage:(vImage_Buffer*)arg3 toColorSpace:(int)arg4 ;
++(id)nameForColorSpace:(int)arg1 ;
++(void)cgOrientation:(unsigned)arg1 toVImageRotationMode:(char*)arg2 andReflection:(int*)arg3 ;
++(vImage_Buffer*)applyEXIFTransformsOnImage:(const vImage_Buffer*)arg1 inColorSpace:(int)arg2 properties:(id)arg3 ;
++(unsigned long long)channelsForColorSpace:(int)arg1 ;
++(void)drawVerticalLineAtXOffset:(double)arg1 image:(id)arg2 ;
+-(void)dealloc;
+-(id)initWithContentsOfURL:(id)arg1 ;
+-(unsigned long long)width;
+-(unsigned long long)height;
+-(CVBufferRef)pixelBuffer;
+-(int)colorSpace;
+-(id)initWithCGImage:(CGImageRef)arg1 ;
+-(id)initWithCVPixelBuffer:(CVBufferRef)arg1 ;
+-(unsigned long long)bytesPerPixel;
+-(id)initWithCIImage:(id)arg1 ;
+-(id)initWithWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 ;
+-(CIImage *)ciImage;
+-(CGImageRef)cgImage;
+-(void)writeToFile:(id)arg1 ;
+-(void)setPixelBuffer:(CVBufferRef)arg1 ;
+-(id)imageByCroppingTextFeature:(id)arg1 correctedBoundingBox:(id)arg2 padding:(CGPoint)arg3 networkInputSize:(CGSize)arg4 ;
+-(id)imageByApplyingHistogramCorrection;
+-(id)imageByRotating180;
+-(vImage_Buffer*)vImage;
+-(id)initWithWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 colorSpace:(int)arg3 ;
+-(id)imageByRotating90CW;
+-(id)initWithCVPixelBuffer:(CVBufferRef)arg1 toColorSpace:(int)arg2 ;
+-(id)imageByCroppingRectangle:(CGRect)arg1 ;
+-(id)imageByScalingToWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 ;
+-(unsigned long long)numChannels;
+-(id)imageByConvertingToColorSpace:(int)arg1 ;
+-(id)initWithCGImage:(CGImageRef)arg1 toColorSpace:(int)arg2 ;
+-(id)initWithContentsOfURL:(id)arg1 toColorSpace:(int)arg2 ;
+-(id)imageByCorrectingFromOrientation:(unsigned)arg1 ;
+-(CVBufferRef)pixelBufferWithScale:(double)arg1 paddedToSize:(CGSize)arg2 adjustedToSize:(CGSize*)arg3 ;
+-(CVBufferRef)pixelBufferWithScale:(double)arg1 paddedToSize:(CGSize)arg2 adjustedToSize:(CGSize*)arg3 mask:(CGImageRef)arg4 ;
+-(id)imageByCroppingRectangle:(CGRect)arg1 textFeaturePoints:(id)arg2 radians:(float)arg3 rotatedRoi:(CGRect*)arg4 ;
+-(id)imageByPaddingToRatioAndScalingToWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 alignCenter:(BOOL)arg3 ;
+-(vImage_Buffer*)createFloatBuffer;
+-(id)imageByCroppingRectangle:(CGRect)arg1 toHeight:(unsigned long long)arg2 andWidth:(unsigned long long)arg3 withRotationAngle:(float)arg4 ;
+-(id)initY8WithCVPixelBuffer:(CVBufferRef)arg1 ;
+-(id)initARGB8888WithCVPixelBuffer:(CVBufferRef)arg1 ;
+-(id)initAYUV8888WithCVPixelBuffer:(CVBufferRef)arg1 ;
+-(id)initYUV888WithCVPixelBuffer:(CVBufferRef)arg1 ;
+-(void)setCiImage:(CIImage *)arg1 ;
+-(void)runBlockWithARGB8888Image:(/*^block*/id)arg1 blockOwnsMemory:(BOOL)arg2 ;
+-(id)initWithVImageBuffer:(vImage_Buffer*)arg1 inColorSpace:(int)arg2 ;
+-(id)initWithVImageBuffer:(vImage_Buffer*)arg1 inColorSpace:(int)arg2 toColorSpace:(int)arg3 ;
+-(id)initWithCGImage:(CGImageRef)arg1 properties:(id)arg2 toColorSpace:(int)arg3 ;
+-(id)initWithCIImage:(id)arg1 toColorSpace:(int)arg2 ;
+-(CVBufferRef)pixelBufferWithScale:(double)arg1 paddedToSize:(CGSize)arg2 ;
+-(id)imageByPaddingToRatioAndScalingToWidth:(unsigned long long)arg1 height:(unsigned long long)arg2 ;
+-(id)imageByPaddingX:(unsigned long long)arg1 paddingY:(unsigned long long)arg2 ;
+-(id)imageByDilating;
+-(id)imageByApplyingBinaryMask:(id)arg1 ;
+-(id)initWithMat:(const Mat*)arg1 ;
+-(id)imageByInvertingIntensity;
+-(id)imageByOverlayingImage:(id)arg1 opacity:(float)arg2 ;
+-(id)imageByOverlayingRects:(CGRect*)arg1 count:(long long)arg2 ;
+-(id)initWithCGImage:(CGImageRef)arg1 properties:(id)arg2 ;
+-(id)initWithVImageBuffer:(vImage_Buffer*)arg1 ;
+-(BOOL)isFullRange;
+-(void)setCgImage:(CGImageRef)arg1 ;
+-(BOOL)vImageDataIsCopy;
+-(void)setVImageDataIsCopy:(BOOL)arg1 ;
+@end
+

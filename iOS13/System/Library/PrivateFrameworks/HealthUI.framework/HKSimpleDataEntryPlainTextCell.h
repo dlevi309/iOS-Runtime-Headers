@@ -1,0 +1,60 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:55 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
+*/
+
+#import <HealthUI/HealthUI-Structs.h>
+#import <HealthUI/HKSimpleDataEntryCell.h>
+#import <UIKit/UITextFieldDelegate.h>
+
+@protocol HKSimpleDataEntryCellDelegate;
+@class UIView, NSNumber, NSArray, UILabel, HKCaretOptionalTextField, NSString;
+
+@interface HKSimpleDataEntryPlainTextCell : HKSimpleDataEntryCell <UITextFieldDelegate> {
+
+	UIView* _horizontalSeparator;
+	NSNumber* _characterCountLimit;
+	BOOL _editDisabled;
+	NSArray* _regularConstraints;
+	NSArray* _largeTextConstraints;
+	id<HKSimpleDataEntryCellDelegate> _delegate;
+	UILabel* _titleLabel;
+	HKCaretOptionalTextField* _inputTextField;
+	NSString* _lastChangedText;
+
+}
+
+@property (nonatomic,retain) UILabel * titleLabel;                                           //@synthesize titleLabel=_titleLabel - In the implementation block
+@property (nonatomic,retain) HKCaretOptionalTextField * inputTextField;                      //@synthesize inputTextField=_inputTextField - In the implementation block
+@property (nonatomic,retain) NSString * lastChangedText;                                     //@synthesize lastChangedText=_lastChangedText - In the implementation block
+@property (assign,nonatomic,__weak) id<HKSimpleDataEntryCellDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)beginEditing;
+-(id<HKSimpleDataEntryCellDelegate>)delegate;
+-(void)setDelegate:(id<HKSimpleDataEntryCellDelegate>)arg1 ;
+-(UILabel *)titleLabel;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(void)setTitleLabel:(UILabel *)arg1 ;
+-(BOOL)textFieldShouldReturn:(id)arg1 ;
+-(BOOL)textFieldShouldBeginEditing:(id)arg1 ;
+-(void)textFieldDidEndEditing:(id)arg1 ;
+-(BOOL)textField:(id)arg1 shouldChangeCharactersInRange:(NSRange)arg2 replacementString:(id)arg3 ;
+-(void)_updateForCurrentSizeCategory;
+-(HKCaretOptionalTextField *)inputTextField;
+-(BOOL)editDisabled;
+-(void)setEditDisabled:(BOOL)arg1 ;
+-(id)initWithIntention:(long long)arg1 reuseIdentifier:(id)arg2 ;
+-(void)_setupInputTextFieldWithIntention:(long long)arg1 ;
+-(void)textFieldDidChangeValue:(id)arg1 ;
+-(void)_setupLabels;
+-(void)_setupLayoutConstraints;
+-(void)_informDelegateForContentChange;
+-(void)setInputTextField:(HKCaretOptionalTextField *)arg1 ;
+-(NSString *)lastChangedText;
+-(void)setLastChangedText:(NSString *)arg1 ;
+@end
+

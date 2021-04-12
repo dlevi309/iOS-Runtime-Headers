@@ -1,0 +1,64 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:59 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AvatarUI.framework/AvatarUI
+*/
+
+
+@protocol AVTResourceCache, AVTTaskScheduler, OS_dispatch_queue, AVTAvatarRecord, AVTCacheableResource;
+@class AVTClippableImageStore, AVTUIEnvironment, AVTUILogger, NSObject, AVTUIStickerGeneratorPool;
+
+@interface AVTUIStickerRenderer : NSObject {
+
+	BOOL _parallelizeEncoding;
+	id<AVTResourceCache> _cache;
+	AVTClippableImageStore* _imageStore;
+	AVTUIEnvironment* _environment;
+	AVTUILogger* _logger;
+	id<AVTTaskScheduler> _renderingScheduler;
+	NSObject*<OS_dispatch_queue> _renderingQueue;
+	NSObject*<OS_dispatch_queue> _encodingQueue;
+	NSObject*<OS_dispatch_queue> _callbackQueue;
+	id<AVTAvatarRecord> _avatarRecord;
+	id<AVTCacheableResource> _cacheableResourceItem;
+	AVTUIStickerGeneratorPool* _stickerGeneratorPool;
+
+}
+
+@property (nonatomic,readonly) id<AVTResourceCache> cache;                                    //@synthesize cache=_cache - In the implementation block
+@property (nonatomic,readonly) AVTClippableImageStore * imageStore;                           //@synthesize imageStore=_imageStore - In the implementation block
+@property (nonatomic,readonly) AVTUIEnvironment * environment;                                //@synthesize environment=_environment - In the implementation block
+@property (nonatomic,readonly) AVTUILogger * logger;                                          //@synthesize logger=_logger - In the implementation block
+@property (nonatomic,readonly) id<AVTTaskScheduler> renderingScheduler;                       //@synthesize renderingScheduler=_renderingScheduler - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> renderingQueue;                   //@synthesize renderingQueue=_renderingQueue - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> encodingQueue;                    //@synthesize encodingQueue=_encodingQueue - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> callbackQueue;                    //@synthesize callbackQueue=_callbackQueue - In the implementation block
+@property (nonatomic,readonly) id<AVTAvatarRecord> avatarRecord;                              //@synthesize avatarRecord=_avatarRecord - In the implementation block
+@property (nonatomic,readonly) id<AVTCacheableResource> cacheableResourceItem;                //@synthesize cacheableResourceItem=_cacheableResourceItem - In the implementation block
+@property (nonatomic,readonly) AVTUIStickerGeneratorPool * stickerGeneratorPool;              //@synthesize stickerGeneratorPool=_stickerGeneratorPool - In the implementation block
+@property (assign,nonatomic) BOOL parallelizeEncoding;                                        //@synthesize parallelizeEncoding=_parallelizeEncoding - In the implementation block
++(id)imageEncoder;
++(BOOL)clearStickersForAvatarRecordIdentifier:(id)arg1 withEnvironment:(id)arg2 ;
+-(AVTUIEnvironment *)environment;
+-(NSObject*<OS_dispatch_queue>)callbackQueue;
+-(AVTUILogger *)logger;
+-(id<AVTResourceCache>)cache;
+-(id<AVTAvatarRecord>)avatarRecord;
+-(NSObject*<OS_dispatch_queue>)renderingQueue;
+-(id<AVTTaskScheduler>)renderingScheduler;
+-(AVTClippableImageStore *)imageStore;
+-(void)stopUsingResources;
+-(id)initWithAvatarRecord:(id)arg1 cache:(id)arg2 imageStore:(id)arg3 stickerGeneratorPool:(id)arg4 environment:(id)arg5 renderingScheduler:(id)arg6 renderingQueue:(id)arg7 encodingQueue:(id)arg8 callbackQueue:(id)arg9 ;
+-(/*^block*/id)scheduledStickerResourceProviderForStickerConfiguration:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)encodingQueue;
+-(AVTUIStickerGeneratorPool *)stickerGeneratorPool;
+-(id<AVTCacheableResource>)cacheableResourceItem;
+-(void)saveImageForResource:(id)arg1 forScope:(id)arg2 synchronous:(BOOL)arg3 completionHandler:(/*^block*/id)arg4 ;
+-(/*^block*/id)scheduledTaskForItem:(id)arg1 scope:(id)arg2 queue:(id)arg3 renderingHandler:(/*^block*/id)arg4 resourceHandler:(/*^block*/id)arg5 synchronous:(BOOL)arg6 ;
+-(BOOL)parallelizeEncoding;
+-(id)renderStickerResourceForItem:(id)arg1 scope:(id)arg2 configuration:(id)arg3 ;
+-(/*^block*/id)providerForResourceForScope:(id)arg1 queue:(id)arg2 renderingHandler:(/*^block*/id)arg3 ;
+-(id)initWithAvatarRecord:(id)arg1 cache:(id)arg2 renderingScheduler:(id)arg3 renderingQueue:(id)arg4 encodingQueue:(id)arg5 stickerGeneratorPool:(id)arg6 environment:(id)arg7 ;
+-(void)setParallelizeEncoding:(BOOL)arg1 ;
+@end
+

@@ -1,0 +1,28 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:56 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
+*/
+
+#import <libobjc.A.dylib/HKNumberFormatter.h>
+
+@class NSString;
+
+@interface _HKStaticDecimalPrecisionNumberFormatter : NSObject <HKNumberFormatter> {
+
+	long long _decimalPrecision;
+
+}
+
+@property (assign,nonatomic) long long decimalPrecision;              //@synthesize decimalPrecision=_decimalPrecision - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)formatterWithDecimalPrecision:(long long)arg1 ;
+-(void)setDecimalPrecision:(long long)arg1 ;
+-(long long)decimalPrecision;
+-(id)stringFromNumber:(id)arg1 displayType:(id)arg2 unitController:(id)arg3 ;
+-(BOOL)returnsUnitWithValueForDisplay;
+@end
+

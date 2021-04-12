@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:34 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/HomeKit.framework/HomeKit
+*/
+
+#import <HomeKit/HMMediaContentProfileAccessControl.h>
+
+@class NSArray;
+
+@interface HMMutableMediaContentProfileAccessControl : HMMediaContentProfileAccessControl
+
+@property (copy) NSArray * accessories; 
+-(void)addAccessory:(id)arg1 ;
+-(void)setAccessories:(NSArray *)arg1 ;
+-(void)removeAccessory:(id)arg1 ;
+@end
+

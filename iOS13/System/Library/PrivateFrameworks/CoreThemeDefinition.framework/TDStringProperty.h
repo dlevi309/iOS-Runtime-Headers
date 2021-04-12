@@ -1,0 +1,23 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:45 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreThemeDefinition.framework/CoreThemeDefinition
+*/
+
+#import <CoreThemeDefinition/TDProperty.h>
+
+@class NSString;
+
+@interface TDStringProperty : TDProperty {
+
+	NSString* _stringValue;
+
+}
+
+@property (nonatomic,copy) NSString * stringValue; 
+-(void)dealloc;
+-(NSString *)stringValue;
+-(void)setStringValue:(NSString *)arg1 ;
+-(void)addToDictionary:(id)arg1 ;
+@end
+

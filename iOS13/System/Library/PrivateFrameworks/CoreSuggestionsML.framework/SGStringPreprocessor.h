@@ -1,0 +1,49 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:02 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreSuggestionsML.framework/CoreSuggestionsML
+*/
+
+
+@class NSMutableData;
+
+@interface SGStringPreprocessor : NSObject {
+
+	NSMutableData* _buffer;
+
+}
+-(id)init;
+-(unsigned short*)bufferPtrWithMinimumLength:(unsigned long long)arg1 ;
+-(void)replace:(id)arg1 withBuffer:(unsigned short*)arg2 toIndex:(unsigned long long)arg3 ;
+-(void)removeCharacters:(id)arg1 withExceptions:(id)arg2 fromString:(id)arg3 ;
+-(id)characterSetFromString:(id)arg1 ;
+-(void)lowerCase:(id)arg1 ;
+-(void)separateCharacter:(id)arg1 withValue:(id)arg2 ;
+-(void)removeCharacters:(id)arg1 withValue:(id)arg2 ;
+-(void)replaceCharactersWithSpaces:(id)arg1 withValue:(id)arg2 ;
+-(void)removeNonASCII:(id)arg1 ;
+-(void)removePunctuation:(id)arg1 ;
+-(void)removeSpacingModifierLetters:(id)arg1 ;
+-(void)removeDuplicateWhitespace:(id)arg1 ;
+-(void)mergeNumbersSeparatedByASCIISpace:(id)arg1 ;
+-(void)replaceNumbersWithString:(id)arg1 withValue:(id)arg2 ;
+-(void)mergeTwoOrMoreConsecutiveCharacters:(id)arg1 ;
+-(void)mergeAnyConsecutiveCharacters:(id)arg1 ;
+-(void)replaceLinksWithString:(id)arg1 withValue:(id)arg2 ;
+-(void)trimWhitespace:(id)arg1 ;
+-(void)removeNonBasicMultilingualPlane:(id)arg1 ;
+-(void)decomposeStringWithCompatibilityMapping:(id)arg1 ;
+-(void)decomposeAndRecomposeStringWithCompatibilityMapping:(id)arg1 ;
+-(void)stripCombiningMarks:(id)arg1 ;
+-(void)stripNonBaseCharacters:(id)arg1 ;
+-(void)removeNonBaseCharacters:(id)arg1 ;
+-(void)replaceAllWhitespaceWithSpaces:(id)arg1 ;
+-(void)removePunctuationWithExceptions:(id)arg1 withValue:(id)arg2 ;
+-(void)removeSymbols:(id)arg1 ;
+-(void)removeSymbolsWithExceptions:(id)arg1 withValue:(id)arg2 ;
+-(void)transformFullwidthToHalfwidth:(id)arg1 ;
+-(void)transformFullwidthToHalfwidthASCII:(id)arg1 ;
+-(void)addToStart:(id)arg1 withValue:(id)arg2 ;
+-(void)addToEnd:(id)arg1 withValue:(id)arg2 ;
+@end
+

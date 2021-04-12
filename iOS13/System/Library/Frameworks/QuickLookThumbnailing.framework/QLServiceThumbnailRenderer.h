@@ -1,0 +1,45 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:31 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing
+*/
+
+
+@protocol QLThumbnailServiceSurfaceGeneratorProtocol;
+#import <QuickLookThumbnailing/QuickLookThumbnailing-Structs.h>
+@class QLFileThumbnailRequest, QLThumbnailReply;
+
+@interface QLServiceThumbnailRenderer : NSObject {
+
+	QLFileThumbnailRequest* _request;
+	QLThumbnailReply* _reply;
+	/*^block*/id _completionHandler;
+	id<QLThumbnailServiceSurfaceGeneratorProtocol> _surfaceGenerator;
+
+}
+
+@property (nonatomic,retain) QLFileThumbnailRequest * request;                                             //@synthesize request=_request - In the implementation block
+@property (nonatomic,retain) QLThumbnailReply * reply;                                                     //@synthesize reply=_reply - In the implementation block
+@property (nonatomic,copy) id completionHandler;                                                           //@synthesize completionHandler=_completionHandler - In the implementation block
+@property (nonatomic,retain) id<QLThumbnailServiceSurfaceGeneratorProtocol> surfaceGenerator;              //@synthesize surfaceGenerator=_surfaceGenerator - In the implementation block
+-(void)setRequest:(QLFileThumbnailRequest *)arg1 ;
+-(QLFileThumbnailRequest *)request;
+-(id)completionHandler;
+-(void)setCompletionHandler:(id)arg1 ;
+-(QLThumbnailReply *)reply;
+-(void)setReply:(QLThumbnailReply *)arg1 ;
+-(void)_thumbnailGenerationDidFailWithError:(id)arg1 ;
+-(void)_didReceiveThumbnailURL:(id)arg1 ;
+-(void)_drawInContextOfSize:(CGSize)arg1 drawingBlock:(/*^block*/id)arg2 ;
+-(void)_drawInCurrentContextOfSize:(CGSize)arg1 drawingBlock:(/*^block*/id)arg2 ;
+-(void)_drawInIOSurface;
+-(BOOL)_canCreateContextOfSize:(CGSize)arg1 forRequest:(id)arg2 ;
+-(id)_thumbnailDataDestructionConcurrenQueue;
+-(void)_didGenerateThumbnailWithData:(id)arg1 drawingContextSize:(CGSize)arg2 ;
+-(void)_executeCompletionHandlerWithThumbnailData:(id)arg1 thumbnailURL:(id)arg2 ioSurface:(id)arg3 drawingContextSize:(CGSize)arg4 didGenerateThumbnail:(BOOL)arg5 error:(id)arg6 ;
+-(id)initWithRequest:(id)arg1 reply:(id)arg2 completionHandler:(/*^block*/id)arg3 surfaceGenerator:(id)arg4 ;
+-(void)generateThumbnailAndPerformCompletionHandler;
+-(id<QLThumbnailServiceSurfaceGeneratorProtocol>)surfaceGenerator;
+-(void)setSurfaceGenerator:(id<QLThumbnailServiceSurfaceGeneratorProtocol>)arg1 ;
+@end
+

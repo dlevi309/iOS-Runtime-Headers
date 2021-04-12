@@ -1,0 +1,46 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
+*/
+
+#import <PassKitUI/PassKitUI-Structs.h>
+#import <UIKitCore/UICollectionViewLayout.h>
+
+@class NSMutableDictionary;
+
+@interface PKSpendingSummaryLayout : UICollectionViewLayout {
+
+	NSMutableDictionary* _attributesPerIndexPath;
+	NSMutableDictionary* _headersPerIndexPath;
+	NSMutableDictionary* _footersPerIndexPath;
+	CGSize _currentSize;
+	BOOL _isLowEndDevice;
+	BOOL _visible;
+	double _transitionAlpha;
+	double _lastDrawnAlpha;
+
+}
+
+@property (assign,nonatomic) BOOL isLowEndDevice;                        //@synthesize isLowEndDevice=_isLowEndDevice - In the implementation block
+@property (assign,getter=isVisible,nonatomic) BOOL visible;              //@synthesize visible=_visible - In the implementation block
+@property (assign,nonatomic) double transitionAlpha;                     //@synthesize transitionAlpha=_transitionAlpha - In the implementation block
+@property (assign,nonatomic) double lastDrawnAlpha;                      //@synthesize lastDrawnAlpha=_lastDrawnAlpha - In the implementation block
+-(id)init;
+-(void)setVisible:(BOOL)arg1 ;
+-(BOOL)isVisible;
+-(void)prepareLayout;
+-(id)layoutAttributesForElementsInRect:(CGRect)arg1 ;
+-(id)layoutAttributesForItemAtIndexPath:(id)arg1 ;
+-(CGSize)collectionViewContentSize;
+-(id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2 ;
+-(void)_adjustItems:(id)arg1 withLateralMove:(double)arg2 ;
+-(double)alphaForIndexPath:(id)arg1 visible:(BOOL)arg2 transition:(double)arg3 ;
+-(void)setTransitionAlpha:(double)arg1 ;
+-(BOOL)isLowEndDevice;
+-(void)setIsLowEndDevice:(BOOL)arg1 ;
+-(double)transitionAlpha;
+-(double)lastDrawnAlpha;
+-(void)setLastDrawnAlpha:(double)arg1 ;
+@end
+

@@ -1,0 +1,76 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:57 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
+*/
+
+#import <StoreKitUI/StoreKitUI-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@class UIButton, SKUIClientContext, SKUIColorScheme, UILabel, NSMutableDictionary, UISegmentedControl, SKUIStarRatingControl, UIImageView, NSString, UIView, NSArray, UIControl;
+
+@interface SKUIReviewsHistogramView : UIView {
+
+	UIButton* _appSupportButton;
+	SKUIClientContext* _clientContext;
+	SKUIColorScheme* _colorScheme;
+	UILabel* _countLabel;
+	long long _numberOfUserRatings;
+	NSMutableDictionary* _ratings;
+	UISegmentedControl* _segmentedControl;
+	SKUIStarRatingControl* _starRatingControl;
+	UILabel* _starRatingControlLabel;
+	UILabel* _titleLabel;
+	double _userRating;
+	UIImageView* _userRatingStarsView;
+	NSString* _versionString;
+	UIButton* _writeAReviewButton;
+	UIView* _bottomSeparatorView;
+	UIImageView* _histogramImageView;
+	NSArray* _histogramValues;
+
+}
+
+@property (nonatomic,retain) SKUIColorScheme * colorScheme;                 //@synthesize colorScheme=_colorScheme - In the implementation block
+@property (nonatomic,copy) NSString * title; 
+@property (assign,nonatomic) long long numberOfUserRatings;                 //@synthesize numberOfUserRatings=_numberOfUserRatings - In the implementation block
+@property (assign,nonatomic) double userRating; 
+@property (nonatomic,copy) NSString * versionString;                        //@synthesize versionString=_versionString - In the implementation block
+@property (nonatomic,retain) NSArray * histogramValues;                     //@synthesize histogramValues=_histogramValues - In the implementation block
+@property (nonatomic,readonly) UIControl * segmentedControl; 
+@property (nonatomic,copy) NSArray * segmentedControlTitles; 
+@property (assign,nonatomic) long long selectedSegmentIndex; 
+@property (nonatomic,readonly) UIControl * starRatingControl;               //@synthesize starRatingControl=_starRatingControl - In the implementation block
+@property (assign,nonatomic) long long personalStarRating; 
+@property (nonatomic,readonly) UIControl * appSupportButton;                //@synthesize appSupportButton=_appSupportButton - In the implementation block
+@property (nonatomic,readonly) UIControl * writeAReviewButton;              //@synthesize writeAReviewButton=_writeAReviewButton - In the implementation block
+-(NSString *)title;
+-(void)setTitle:(NSString *)arg1 ;
+-(void)setVersionString:(NSString *)arg1 ;
+-(NSString *)versionString;
+-(void)setBackgroundColor:(id)arg1 ;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+-(void)layoutSubviews;
+-(long long)selectedSegmentIndex;
+-(void)setSelectedSegmentIndex:(long long)arg1 ;
+-(UIControl *)segmentedControl;
+-(double)userRating;
+-(void)setUserRating:(double)arg1 ;
+-(long long)numberOfUserRatings;
+-(SKUIColorScheme *)colorScheme;
+-(void)setColorScheme:(SKUIColorScheme *)arg1 ;
+-(id)initWithClientContext:(id)arg1 ;
+-(void)setNumberOfUserRatings:(long long)arg1 ;
+-(UIControl *)appSupportButton;
+-(UIControl *)starRatingControl;
+-(UIControl *)writeAReviewButton;
+-(long long)personalStarRating;
+-(void)setSegmentedControlTitles:(NSArray *)arg1 ;
+-(void)setPersonalStarRating:(long long)arg1 ;
+-(id)_histogramImageForValues:(id)arg1 ;
+-(id)_countLabelString;
+-(NSArray *)segmentedControlTitles;
+-(void)setHistogramValues:(NSArray *)arg1 ;
+-(NSArray *)histogramValues;
+@end
+

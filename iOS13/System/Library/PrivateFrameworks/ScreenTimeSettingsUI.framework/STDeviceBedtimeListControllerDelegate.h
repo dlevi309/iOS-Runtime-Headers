@@ -1,0 +1,13 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:53 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI
+*/
+
+
+@protocol STDeviceBedtimeListControllerDelegate <NSObject>
+@required
+-(void)bedtimeListController:(id)arg1 didFinishEditingBedtime:(id)arg2;
+
+@end
+

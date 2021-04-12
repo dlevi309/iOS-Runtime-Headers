@@ -1,0 +1,106 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:00 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ManagedConfigurationUI.framework/ManagedConfigurationUI
+*/
+
+
+@class NSArray, NSString, MCBook, NSDate;
+
+@interface MCPayloadInfo : NSObject {
+
+	BOOL _showIcon;
+	BOOL _hasDetails;
+	BOOL _isCertificate;
+	BOOL _isManagedAppPayload;
+	BOOL _isManagedBookPayload;
+	NSArray* _typeStrings;
+	NSString* _localizedSingularForm;
+	NSString* _localizedPluralForm;
+	NSArray* _payloadDescriptionKeyValueSections;
+	NSString* _friendlyName;
+	NSString* _title;
+	NSString* _subtitle1Label;
+	NSString* _subtitle1Description;
+	NSString* _subtitle2Label;
+	NSString* _subtitle2Description;
+	NSString* _managedAppID;
+	MCBook* _managedBook;
+	NSArray* _certificateProperties;
+	NSDate* _certificateExpirationDate;
+	long long _type;
+
+}
+
+@property (nonatomic,retain) NSArray * typeStrings;                                     //@synthesize typeStrings=_typeStrings - In the implementation block
+@property (nonatomic,retain) NSString * localizedSingularForm;                          //@synthesize localizedSingularForm=_localizedSingularForm - In the implementation block
+@property (nonatomic,retain) NSString * localizedPluralForm;                            //@synthesize localizedPluralForm=_localizedPluralForm - In the implementation block
+@property (nonatomic,retain) NSArray * payloadDescriptionKeyValueSections;              //@synthesize payloadDescriptionKeyValueSections=_payloadDescriptionKeyValueSections - In the implementation block
+@property (nonatomic,retain) NSString * friendlyName;                                   //@synthesize friendlyName=_friendlyName - In the implementation block
+@property (nonatomic,retain) NSString * title;                                          //@synthesize title=_title - In the implementation block
+@property (nonatomic,retain) NSString * subtitle1Label;                                 //@synthesize subtitle1Label=_subtitle1Label - In the implementation block
+@property (nonatomic,retain) NSString * subtitle1Description;                           //@synthesize subtitle1Description=_subtitle1Description - In the implementation block
+@property (nonatomic,retain) NSString * subtitle2Label;                                 //@synthesize subtitle2Label=_subtitle2Label - In the implementation block
+@property (nonatomic,retain) NSString * subtitle2Description;                           //@synthesize subtitle2Description=_subtitle2Description - In the implementation block
+@property (assign,nonatomic) BOOL showIcon;                                             //@synthesize showIcon=_showIcon - In the implementation block
+@property (assign,nonatomic) BOOL hasDetails;                                           //@synthesize hasDetails=_hasDetails - In the implementation block
+@property (assign,nonatomic) BOOL isCertificate;                                        //@synthesize isCertificate=_isCertificate - In the implementation block
+@property (assign,nonatomic) BOOL isManagedAppPayload;                                  //@synthesize isManagedAppPayload=_isManagedAppPayload - In the implementation block
+@property (assign,nonatomic) BOOL isManagedBookPayload;                                 //@synthesize isManagedBookPayload=_isManagedBookPayload - In the implementation block
+@property (nonatomic,retain) NSString * managedAppID;                                   //@synthesize managedAppID=_managedAppID - In the implementation block
+@property (nonatomic,retain) MCBook * managedBook;                                      //@synthesize managedBook=_managedBook - In the implementation block
+@property (nonatomic,retain) NSArray * certificateProperties;                           //@synthesize certificateProperties=_certificateProperties - In the implementation block
+@property (nonatomic,retain) NSDate * certificateExpirationDate;                        //@synthesize certificateExpirationDate=_certificateExpirationDate - In the implementation block
+@property (assign,nonatomic) long long type;                                            //@synthesize type=_type - In the implementation block
++(id)accountPayloadClasses;
++(id)managedAppClasses;
++(id)managedBookClasses;
++(id)restrictionPayloadClasses;
++(long long)payloadInfoTypeForPayloadClass:(Class)arg1 ;
++(id)payloadInfosFromPayload:(id)arg1 ;
++(id)removeDuplicatesFromRestrictionPayloadInfos:(id)arg1 ;
+-(long long)type;
+-(void)setType:(long long)arg1 ;
+-(NSString *)title;
+-(void)setTitle:(NSString *)arg1 ;
+-(id)initWithPayload:(id)arg1 ;
+-(NSString *)friendlyName;
+-(NSArray *)typeStrings;
+-(NSString *)localizedSingularForm;
+-(NSString *)localizedPluralForm;
+-(NSArray *)payloadDescriptionKeyValueSections;
+-(void)setFriendlyName:(NSString *)arg1 ;
+-(NSString *)subtitle1Label;
+-(NSString *)subtitle1Description;
+-(NSString *)subtitle2Label;
+-(NSString *)subtitle2Description;
+-(BOOL)hasDetails;
+-(NSDate *)certificateExpirationDate;
+-(void)setCertificateExpirationDate:(NSDate *)arg1 ;
+-(BOOL)showIcon;
+-(void)setShowIcon:(BOOL)arg1 ;
+-(void)setCertificateProperties:(NSArray *)arg1 ;
+-(NSArray *)certificateProperties;
+-(void)setManagedBook:(MCBook *)arg1 ;
+-(NSString *)managedAppID;
+-(void)setManagedAppID:(NSString *)arg1 ;
+-(BOOL)isManagedAppPayload;
+-(BOOL)isManagedBookPayload;
+-(MCBook *)managedBook;
+-(void)setSubtitle1Label:(NSString *)arg1 ;
+-(void)setSubtitle1Description:(NSString *)arg1 ;
+-(id)initWithManagedAppID:(id)arg1 ;
+-(id)initWithManagedBook:(id)arg1 ;
+-(void)setTypeStrings:(NSArray *)arg1 ;
+-(void)setLocalizedSingularForm:(NSString *)arg1 ;
+-(void)setLocalizedPluralForm:(NSString *)arg1 ;
+-(void)setPayloadDescriptionKeyValueSections:(NSArray *)arg1 ;
+-(void)setSubtitle2Label:(NSString *)arg1 ;
+-(void)setSubtitle2Description:(NSString *)arg1 ;
+-(void)setHasDetails:(BOOL)arg1 ;
+-(BOOL)isCertificate;
+-(void)setIsCertificate:(BOOL)arg1 ;
+-(void)setIsManagedAppPayload:(BOOL)arg1 ;
+-(void)setIsManagedBookPayload:(BOOL)arg1 ;
+@end
+

@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:07 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
+*/
+
+
+#import <AppleMediaServices/AppleMediaServices-Structs.h>
+@interface AMSPaymentSheetAssetCache : NSObject {
+
+	CFArrayRef _imageArrayRef;
+
+}
+-(id)init;
+-(void)dealloc;
+-(void)retainAsset:(void*)arg1 ;
+@end
+

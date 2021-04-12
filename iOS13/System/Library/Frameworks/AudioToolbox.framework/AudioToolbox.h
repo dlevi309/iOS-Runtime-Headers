@@ -1,0 +1,14 @@
+#import <AudioToolbox/SequenceEntry.h>
+#import <AudioToolbox/HapticClient.h>
+#import <AudioToolbox/BorealisServerSpeakerStateHysteresisNotifier.h>
+#import <AudioToolbox/BorealisServer.h>
+#import <AudioToolbox/ServerWrapper.h>
+#import <AudioToolbox/HapticServerInstance.h>
+#import <AudioToolbox/HapticServer.h>
+#import <AudioToolbox/AVHapticEvent.h>
+#import <AudioToolbox/AVHapticPlayerParameterCurveControlPoint.h>
+#import <AudioToolbox/AVHapticPlayerParameterCurve.h>
+#import <AudioToolbox/AVHapticPlayerChannel.h>
+#import <AudioToolbox/AVHapticPlayer.h>
+#import <AudioToolbox/AVHapticSequence.h>
+#import <AudioToolbox/AVHapticParameterCurveValue.h>

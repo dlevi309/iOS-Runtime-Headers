@@ -1,0 +1,89 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:31 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HomeKitDaemon/HomeKitDaemon-Structs.h>
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSMutableCopying.h>
+
+@class NSArray, NSUUID, NSString, HMDApplicationData, HMDAccount, NSDictionary;
+
+@interface HMDHomeData : HMFObject <NSCopying, NSMutableCopying> {
+
+	NSArray* _homes;
+	NSArray* _accessories;
+	NSUUID* _primaryHomeUUID;
+	NSUUID* _lastCurrentHomeUUID;
+	long long _schemaVersion;
+	long long _dataVersion;
+	NSUUID* _dataTag;
+	NSArray* _UUIDsOfRemovedHomes;
+	NSArray* _cloudZones;
+	NSArray* _incomingInvitations;
+	unsigned long long _assistantGenerationCounter;
+	NSString* _currentDevice;
+	NSArray* _pendingReasonSaved;
+	NSArray* _pendingUserManagementOperations;
+	NSArray* _unprocessedOperationIdentifiers;
+	HMDApplicationData* _applicationData;
+	long long _residentEnabledState;
+	HMDAccount* _account;
+	NSArray* _remoteAccounts;
+	BOOL _accessAllowedWhenLocked;
+	NSDictionary* _demoAccessories;
+	BOOL _demoFinalized;
+
+}
+
+@property (assign,nonatomic) long long dataVersion;                                         //@synthesize dataVersion=_dataVersion - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * homes;                                        //@synthesize homes=_homes - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * accessories;                                  //@synthesize accessories=_accessories - In the implementation block
+@property (nonatomic,copy,readonly) NSUUID * primaryHomeUUID;                               //@synthesize primaryHomeUUID=_primaryHomeUUID - In the implementation block
+@property (nonatomic,copy,readonly) NSUUID * lastCurrentHomeUUID;                           //@synthesize lastCurrentHomeUUID=_lastCurrentHomeUUID - In the implementation block
+@property (nonatomic,readonly) long long schemaVersion;                                     //@synthesize schemaVersion=_schemaVersion - In the implementation block
+@property (nonatomic,copy,readonly) NSUUID * dataTag;                                       //@synthesize dataTag=_dataTag - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * UUIDsOfRemovedHomes;                          //@synthesize UUIDsOfRemovedHomes=_UUIDsOfRemovedHomes - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * cloudZones;                                   //@synthesize cloudZones=_cloudZones - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * incomingInvitations;                          //@synthesize incomingInvitations=_incomingInvitations - In the implementation block
+@property (nonatomic,readonly) unsigned long long assistantGenerationCounter;               //@synthesize assistantGenerationCounter=_assistantGenerationCounter - In the implementation block
+@property (nonatomic,copy,readonly) NSString * currentDevice;                               //@synthesize currentDevice=_currentDevice - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * pendingReasonSaved;                           //@synthesize pendingReasonSaved=_pendingReasonSaved - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * pendingUserManagementOperations;              //@synthesize pendingUserManagementOperations=_pendingUserManagementOperations - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * unprocessedOperationIdentifiers;              //@synthesize unprocessedOperationIdentifiers=_unprocessedOperationIdentifiers - In the implementation block
+@property (nonatomic,copy,readonly) HMDApplicationData * applicationData;                   //@synthesize applicationData=_applicationData - In the implementation block
+@property (nonatomic,readonly) long long residentEnabledState;                              //@synthesize residentEnabledState=_residentEnabledState - In the implementation block
+@property (nonatomic,readonly) HMDAccount * account;                                        //@synthesize account=_account - In the implementation block
+@property (nonatomic,copy,readonly) NSArray * remoteAccounts;                               //@synthesize remoteAccounts=_remoteAccounts - In the implementation block
+@property (nonatomic,readonly) BOOL accessAllowedWhenLocked;                                //@synthesize accessAllowedWhenLocked=_accessAllowedWhenLocked - In the implementation block
+@property (nonatomic,copy,readonly) NSDictionary * demoAccessories;                         //@synthesize demoAccessories=_demoAccessories - In the implementation block
+@property (nonatomic,readonly) BOOL demoFinalized;                                          //@synthesize demoFinalized=_demoFinalized - In the implementation block
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)mutableCopyWithZone:(NSZone*)arg1 ;
+-(NSString *)currentDevice;
+-(long long)schemaVersion;
+-(HMDAccount *)account;
+-(NSArray *)homes;
+-(long long)dataVersion;
+-(void)setDataVersion:(long long)arg1 ;
+-(NSArray *)accessories;
+-(HMDApplicationData *)applicationData;
+-(NSDictionary *)demoAccessories;
+-(NSArray *)remoteAccounts;
+-(BOOL)demoFinalized;
+-(NSArray *)pendingUserManagementOperations;
+-(NSUUID *)primaryHomeUUID;
+-(unsigned long long)assistantGenerationCounter;
+-(NSArray *)cloudZones;
+-(NSUUID *)lastCurrentHomeUUID;
+-(NSUUID *)dataTag;
+-(NSArray *)UUIDsOfRemovedHomes;
+-(NSArray *)incomingInvitations;
+-(NSArray *)pendingReasonSaved;
+-(NSArray *)unprocessedOperationIdentifiers;
+-(long long)residentEnabledState;
+-(BOOL)accessAllowedWhenLocked;
+@end
+

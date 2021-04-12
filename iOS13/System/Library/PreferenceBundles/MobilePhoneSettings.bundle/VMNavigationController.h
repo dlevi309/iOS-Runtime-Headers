@@ -1,0 +1,26 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:33 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PreferenceBundles/MobilePhoneSettings.bundle/MobilePhoneSettings
+*/
+
+#import <UIKitCore/UINavigationController.h>
+
+@class VMVoicemailManager;
+
+@interface VMNavigationController : UINavigationController {
+
+	VMVoicemailManager* _manager;
+
+}
+
+@property (nonatomic,readonly) VMVoicemailManager * manager;              //@synthesize manager=_manager - In the implementation block
+-(id)init;
+-(id)initWithCoder:(id)arg1 ;
+-(id)initWithManager:(id)arg1 ;
+-(VMVoicemailManager *)manager;
+-(id)initWithNibName:(id)arg1 bundle:(id)arg2 ;
+-(id)initWithRootViewController:(id)arg1 ;
+-(id)initWithNavigationBarClass:(Class)arg1 toolbarClass:(Class)arg2 ;
+@end
+

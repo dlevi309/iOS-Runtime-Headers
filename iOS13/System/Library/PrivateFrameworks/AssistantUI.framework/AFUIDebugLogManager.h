@@ -1,0 +1,41 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:02 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
+*/
+
+
+@protocol OS_dispatch_queue;
+@class NSObject, NSURL;
+
+@interface AFUIDebugLogManager : NSObject {
+
+	NSObject*<OS_dispatch_queue> _queue;
+
+}
+
+@property (getter=_queue,nonatomic,readonly) NSObject*<OS_dispatch_queue> queue;                          //@synthesize queue=_queue - In the implementation block
+@property (getter=_baseLogDirectoryURL,nonatomic,copy,readonly) NSURL * baseLogDirectoryURL; 
+@property (getter=_siriLogDirectoryURL,nonatomic,copy,readonly) NSURL * siriLogDirectoryURL; 
++(int)executeSystemCommand:(id)arg1 stdoutTo:(id)arg2 ;
+-(id)init;
+-(id)_queue;
+-(id)_contentsOfDirectoryAtURL:(id)arg1 matchingPattern:(id)arg2 sortedByDateWithResourceKey:(id)arg3 error:(id*)arg4 ;
+-(id)_contentsOfDirectoryAtURL:(id)arg1 matchingPattern:(id)arg2 includingPropertiesForKeys:(id)arg3 error:(id*)arg4 ;
+-(id)_siriCardLogDirectoryURL;
+-(void)_captureLogsAtURL:(id)arg1 logName:(id)arg2 sinceTime:(double)arg3 pattern:(id)arg4 mimeType:(id)arg5 completion:(/*^block*/id)arg6 ;
+-(id)_siriLogDirectoryURL;
+-(id)_captureLogsInDirectoryAtURL:(id)arg1 matchingPattern:(id)arg2 withMimeType:(id)arg3 attemptCompression:(BOOL)arg4 limit:(long long)arg5 error:(id*)arg6 ;
+-(id)_uniqueTemporaryFileURL;
+-(id)_baseLogDirectoryURL;
+-(id)_archiveLogDirectoryAtURL:(id)arg1 name:(id)arg2 error:(id*)arg3 ;
+-(void)captureViewHierarchyLogWithDefaultViewHierarchy:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)captureCardLogsSinceTime:(double)arg1 completion:(/*^block*/id)arg2 ;
+-(void)captureSiriSpeechLogsWithCompletion:(/*^block*/id)arg1 ;
+-(void)captureSiriVoiceTriggerLogsWithCompletion:(/*^block*/id)arg1 ;
+-(void)captureSiriTTSAudioWithCompletion:(/*^block*/id)arg1 ;
+-(void)capturePreviousConversationWithCompletion:(/*^block*/id)arg1 ;
+-(void)_captureLogsAtURL:(id)arg1 logName:(id)arg2 sinceTime:(double)arg3 completion:(/*^block*/id)arg4 ;
+-(void)_captureFileAtURL:(id)arg1 completion:(/*^block*/id)arg2 ;
+@end
+

@@ -1,0 +1,117 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:42 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NewsCore.framework/NewsCore
+*/
+
+typedef struct _NSZone* NSZoneRef;
+
+typedef struct {
+	unsigned type : 1;
+} SCD_Struct_FC1;
+
+typedef struct CGPoint {
+	double x;
+	double y;
+} CGPoint;
+
+typedef struct os_unfair_lock_s {
+	unsigned _os_unfair_lock_opaque;
+} os_unfair_lock_s;
+
+typedef struct CGSize {
+	double width;
+	double height;
+} CGSize;
+
+typedef struct CGRect {
+	CGPoint origin;
+	CGSize size;
+} CGRect;
+
+typedef struct {
+	unsigned doubleValue : 1;
+	unsigned longValue : 1;
+	unsigned type : 1;
+	unsigned boolValue : 1;
+} SCD_Struct_FC6;
+
+typedef struct {
+	unsigned queryOperator : 1;
+	unsigned distinct : 1;
+} SCD_Struct_FC7;
+
+typedef struct {
+	unsigned doubleValue : 1;
+	unsigned signedValue : 1;
+	unsigned type : 1;
+} SCD_Struct_FC8;
+
+typedef struct FCEdgeInsets {
+	double top;
+	double left;
+	double bottom;
+	double right;
+} FCEdgeInsets;
+
+typedef struct _compressed_pair<unsigned long, std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > {
+	unsigned long long __value_;
+} compressed_pair<unsigned long, std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> >;
+
+typedef struct _compressed_pair<unsigned long, std::__1::__unordered_map_hasher<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::hash<int>, true> > {
+	unsigned long long __value_;
+} compressed_pair<unsigned long, std::__1::__unordered_map_hasher<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::hash<int>, true> >;
+
+typedef struct _compressed_pair<float, std::__1::__unordered_map_equal<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::equal_to<NTPBKeyValuePair_ValueType>, true> > {
+	float __value_;
+} compressed_pair<float, std::__1::__unordered_map_equal<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::equal_to<NTPBKeyValuePair_ValueType>, true> >;
+
+typedef struct _hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> {
+	__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> __next_;
+} hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *>;
+
+typedef struct _compressed_pair<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *>, std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> > > {
+	hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> __value_;
+} compressed_pair<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *>, std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> > >;
+
+typedef struct _bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > {
+	compressed_pair<unsigned long, std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > __data_;
+} bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> >;
+
+typedef struct _compressed_pair<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> **, std::__1::__bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > > {
+	__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> __value_;
+	bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > __value_;
+} compressed_pair<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> **, std::__1::__bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > >;
+
+typedef struct unique_ptr<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *[], std::__1::__bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > > {
+	compressed_pair<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> **, std::__1::__bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > > __ptr_;
+} unique_ptr<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *[], std::__1::__bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > >;
+
+typedef struct _hash_table<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::__unordered_map_hasher<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::hash<int>, true>, std::__1::__unordered_map_equal<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::equal_to<NTPBKeyValuePair_ValueType>, true>, std::__1::allocator<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> > > > {
+	unique_ptr<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *[], std::__1::__bucket_list_deallocator<std::__1::allocator<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *> *> > > __bucket_list_;
+	compressed_pair<std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> *>, std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, void *> > > __p1_;
+	compressed_pair<unsigned long, std::__1::__unordered_map_hasher<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::hash<int>, true> > __p2_;
+	compressed_pair<float, std::__1::__unordered_map_equal<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::equal_to<NTPBKeyValuePair_ValueType>, true> > __p3_;
+} hash_table<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::__unordered_map_hasher<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::hash<int>, true>, std::__1::__unordered_map_equal<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::equal_to<NTPBKeyValuePair_ValueType>, true>, std::__1::allocator<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> > > >;
+
+typedef struct unordered_map<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding>, std::__1::hash<int>, std::__1::equal_to<NTPBKeyValuePair_ValueType>, std::__1::allocator<std::__1::pair<const NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> > > > {
+	hash_table<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::__unordered_map_hasher<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::hash<int>, true>, std::__1::__unordered_map_equal<NTPBKeyValuePair_ValueType, std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> >, std::__1::equal_to<NTPBKeyValuePair_ValueType>, true>, std::__1::allocator<std::__1::__hash_value_type<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> > > > __table_;
+} unordered_map<NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding>, std::__1::hash<int>, std::__1::equal_to<NTPBKeyValuePair_ValueType>, std::__1::allocator<std::__1::pair<const NTPBKeyValuePair_ValueType, Class<FCKeyValueStoreCoding> > > >;
+
+typedef struct {
+	unsigned applicationConfigVersion : 1;
+	unsigned deviceFlowControlBudget : 1;
+	unsigned deviceFlowControlBudgetCap : 1;
+	unsigned deviceProtocolVersion : 1;
+	unsigned globalConfigVersion : 1;
+	unsigned applicationContainerEnvironment : 1;
+	unsigned deviceFlowControlRegeneration : 1;
+	unsigned isolationLevel : 1;
+	unsigned targetDatabase : 1;
+} SCD_Struct_FC20;
+
+typedef struct {
+	long long field1;
+	long long field2;
+} SCD_Struct_FC21;
+

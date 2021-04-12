@@ -1,0 +1,22 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:06 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
+*/
+
+#import <UIKitCore/UIView.h>
+
+@class UIColor;
+
+@interface AAUIiCloudCustomUIView : UIView {
+
+	UIColor* _lockedColor;
+
+}
+
+@property (nonatomic,retain) UIColor * lockedColor;              //@synthesize lockedColor=_lockedColor - In the implementation block
+-(void)setBackgroundColor:(id)arg1 ;
+-(UIColor *)lockedColor;
+-(void)setLockedColor:(UIColor *)arg1 ;
+@end
+

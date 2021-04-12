@@ -1,0 +1,131 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:06 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
+*/
+
+#import <ManagedConfiguration/MCEmailAccountPayloadBase.h>
+
+@class NSString, NSNumber, NSData, NSDictionary;
+
+@interface MCEASAccountPayload : MCEmailAccountPayloadBase {
+
+	NSString* _accountDescription;
+	NSString* _hostname;
+	NSString* _username;
+	NSString* _password;
+	NSString* _emailAddress;
+	NSNumber* _mailNumberOfPastDaysToSync;
+	NSData* _embeddedCertificate;
+	NSString* _embeddedCertificateName;
+	NSString* _embeddedCertificatePassword;
+	NSString* _certificateUUID;
+	NSString* _accountPersistentUUID;
+	NSData* _certificatePersistentID;
+	BOOL _syncDefaultFoldersOnly;
+	NSNumber* _enableMailNum;
+	NSNumber* _enableContactsNum;
+	NSNumber* _enableCalendarsNum;
+	NSNumber* _enableRemindersNum;
+	NSNumber* _enableNotesNum;
+	NSNumber* _enableMailUserOverridableNum;
+	NSNumber* _enableContactsUserOverridableNum;
+	NSNumber* _enableCalendarsUserOverridableNum;
+	NSNumber* _enableRemindersUserOverridableNum;
+	NSNumber* _enableNotesUserOverridableNum;
+	NSNumber* _useSSL;
+	NSNumber* _useOAuth;
+	NSString* _OAuthSignInURL;
+	NSString* _OAuthTokenRequestURL;
+	NSDictionary* _communicationServiceRules;
+	NSNumber* _syncDefaultFoldersOnlyNum;
+
+}
+
+@property (nonatomic,readonly) NSNumber * syncDefaultFoldersOnlyNum;                      //@synthesize syncDefaultFoldersOnlyNum=_syncDefaultFoldersOnlyNum - In the implementation block
+@property (nonatomic,retain,readonly) NSString * accountDescription;                      //@synthesize accountDescription=_accountDescription - In the implementation block
+@property (nonatomic,retain,readonly) NSString * hostname;                                //@synthesize hostname=_hostname - In the implementation block
+@property (nonatomic,copy) NSString * username;                                           //@synthesize username=_username - In the implementation block
+@property (nonatomic,copy) NSString * password;                                           //@synthesize password=_password - In the implementation block
+@property (nonatomic,copy) NSString * emailAddress;                                       //@synthesize emailAddress=_emailAddress - In the implementation block
+@property (nonatomic,retain) NSNumber * useSSL;                                           //@synthesize useSSL=_useSSL - In the implementation block
+@property (nonatomic,retain) NSNumber * useOAuth;                                         //@synthesize useOAuth=_useOAuth - In the implementation block
+@property (nonatomic,retain) NSString * OAuthSignInURL;                                   //@synthesize OAuthSignInURL=_OAuthSignInURL - In the implementation block
+@property (nonatomic,retain) NSString * OAuthTokenRequestURL;                             //@synthesize OAuthTokenRequestURL=_OAuthTokenRequestURL - In the implementation block
+@property (nonatomic,retain,readonly) NSNumber * mailNumberOfPastDaysToSync;              //@synthesize mailNumberOfPastDaysToSync=_mailNumberOfPastDaysToSync - In the implementation block
+@property (nonatomic,retain,readonly) NSData * embeddedCertificate;                       //@synthesize embeddedCertificate=_embeddedCertificate - In the implementation block
+@property (nonatomic,retain,readonly) NSString * embeddedCertificateName;                 //@synthesize embeddedCertificateName=_embeddedCertificateName - In the implementation block
+@property (nonatomic,copy) NSString * embeddedCertificatePassword;                        //@synthesize embeddedCertificatePassword=_embeddedCertificatePassword - In the implementation block
+@property (nonatomic,retain,readonly) NSString * certificateUUID;                         //@synthesize certificateUUID=_certificateUUID - In the implementation block
+@property (nonatomic,readonly) BOOL hasCertificate; 
+@property (nonatomic,readonly) NSDictionary * communicationServiceRules;                  //@synthesize communicationServiceRules=_communicationServiceRules - In the implementation block
+@property (nonatomic,readonly) BOOL enableMail; 
+@property (nonatomic,readonly) BOOL enableContacts; 
+@property (nonatomic,readonly) BOOL enableCalendars; 
+@property (nonatomic,readonly) BOOL enableReminders; 
+@property (nonatomic,readonly) BOOL enableNotes; 
+@property (nonatomic,readonly) BOOL enableMailUserOverridable; 
+@property (nonatomic,readonly) BOOL enableContactsUserOverridable; 
+@property (nonatomic,readonly) BOOL enableCalendarsUserOverridable; 
+@property (nonatomic,readonly) BOOL enableRemindersUserOverridable; 
+@property (nonatomic,readonly) BOOL enableNotesUserOverridable; 
+@property (nonatomic,copy) NSString * accountPersistentUUID;                              //@synthesize accountPersistentUUID=_accountPersistentUUID - In the implementation block
+@property (nonatomic,retain) NSData * certificatePersistentID;                            //@synthesize certificatePersistentID=_certificatePersistentID - In the implementation block
+@property (assign,nonatomic) BOOL syncDefaultFoldersOnly;                                 //@synthesize syncDefaultFoldersOnly=_syncDefaultFoldersOnly - In the implementation block
++(id)typeStrings;
++(id)localizedSingularForm;
++(id)localizedPluralForm;
+-(id)description;
+-(NSString *)password;
+-(void)setPassword:(NSString *)arg1 ;
+-(id)title;
+-(NSString *)hostname;
+-(NSString *)username;
+-(id)initWithDictionary:(id)arg1 profile:(id)arg2 outError:(id*)arg3 ;
+-(id)stubDictionary;
+-(id)payloadDescriptionKeyValueSections;
+-(id)subtitle1Label;
+-(id)subtitle1Description;
+-(id)restrictions;
+-(NSData *)certificatePersistentID;
+-(BOOL)containsSensitiveUserInformation;
+-(id)subtitle2Label;
+-(id)subtitle2Description;
+-(NSString *)emailAddress;
+-(void)setCertificatePersistentID:(NSData *)arg1 ;
+-(NSDictionary *)communicationServiceRules;
+-(NSString *)accountDescription;
+-(void)setUsername:(NSString *)arg1 ;
+-(NSString *)certificateUUID;
+-(NSNumber *)useSSL;
+-(NSString *)accountPersistentUUID;
+-(void)setAccountPersistentUUID:(NSString *)arg1 ;
+-(BOOL)enableMail;
+-(BOOL)enableContacts;
+-(BOOL)enableCalendars;
+-(BOOL)enableReminders;
+-(BOOL)enableNotes;
+-(NSNumber *)useOAuth;
+-(NSData *)embeddedCertificate;
+-(NSString *)embeddedCertificateName;
+-(NSString *)embeddedCertificatePassword;
+-(BOOL)hasCertificate;
+-(BOOL)enableMailUserOverridable;
+-(BOOL)enableContactsUserOverridable;
+-(BOOL)enableCalendarsUserOverridable;
+-(BOOL)enableRemindersUserOverridable;
+-(BOOL)enableNotesUserOverridable;
+-(void)setEmailAddress:(NSString *)arg1 ;
+-(NSNumber *)mailNumberOfPastDaysToSync;
+-(void)setEmbeddedCertificatePassword:(NSString *)arg1 ;
+-(BOOL)syncDefaultFoldersOnly;
+-(void)setSyncDefaultFoldersOnly:(BOOL)arg1 ;
+-(void)setUseSSL:(NSNumber *)arg1 ;
+-(void)setUseOAuth:(NSNumber *)arg1 ;
+-(NSString *)OAuthSignInURL;
+-(void)setOAuthSignInURL:(NSString *)arg1 ;
+-(NSString *)OAuthTokenRequestURL;
+-(void)setOAuthTokenRequestURL:(NSString *)arg1 ;
+-(NSNumber *)syncDefaultFoldersOnlyNum;
+@end
+

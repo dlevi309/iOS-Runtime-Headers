@@ -1,0 +1,243 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:13 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NotesShared.framework/NotesShared
+*/
+
+#import <CoreData/NSManagedObject.h>
+#import <libobjc.A.dylib/ICCloudObject.h>
+#import <libobjc.A.dylib/ICLoggable.h>
+
+@class NSMutableDictionary, CKRecord, CKShare, NSData, NSString, ICCloudState;
+
+@interface ICCloudSyncingObject : NSManagedObject <ICCloudObject, ICLoggable> {
+
+	BOOL _needsToLoadDecryptedValues;
+	BOOL mergingUnappliedEncryptedRecord;
+	NSMutableDictionary* _decryptedValues;
+	CKRecord* _serverRecord;
+	CKShare* _serverShare;
+	CKRecord* _userSpecificServerRecord;
+
+}
+
+@property (assign) long long failedToSyncCount; 
+@property (assign) long long numberOfPushAttemptsToWaitCount; 
+@property (nonatomic,readonly) NSMutableDictionary * decryptedValues;                                                    //@synthesize decryptedValues=_decryptedValues - In the implementation block
+@property (assign,nonatomic) BOOL needsToLoadDecryptedValues;                                                            //@synthesize needsToLoadDecryptedValues=_needsToLoadDecryptedValues - In the implementation block
+@property (assign,nonatomic) long long minimumSupportedNotesVersion; 
+@property (nonatomic,retain) NSData * serverRecordData; 
+@property (nonatomic,retain) CKRecord * serverRecord;                                                                    //@synthesize serverRecord=_serverRecord - In the implementation block
+@property (nonatomic,retain) NSData * serverShareData; 
+@property (nonatomic,retain) CKShare * serverShare;                                                                      //@synthesize serverShare=_serverShare - In the implementation block
+@property (nonatomic,retain) NSData * userSpecificServerRecordData; 
+@property (nonatomic,retain) CKRecord * userSpecificServerRecord;                                                        //@synthesize userSpecificServerRecord=_userSpecificServerRecord - In the implementation block
+@property (nonatomic,retain) NSString * zoneOwnerName; 
+@property (nonatomic,retain) NSString * primitiveZoneOwnerName; 
+@property (nonatomic,readonly) BOOL shouldBeIgnoredForSync; 
+@property (nonatomic,retain) NSData * encryptedValuesJSON; 
+@property (assign,getter=isMergingUnappliedEncryptedRecord,nonatomic) BOOL mergingUnappliedEncryptedRecord; 
+@property (nonatomic,readonly) CKShare * serverShareCheckingParent; 
+@property (nonatomic,retain) ICCloudState * cloudState; 
+@property (nonatomic,retain) NSString * identifier; 
+@property (assign,nonatomic) BOOL needsToBeFetchedFromCloud; 
+@property (assign,nonatomic) BOOL needsToSaveUserSpecificRecord; 
+@property (assign,nonatomic) BOOL needsInitialFetchFromCloud; 
+@property (assign,nonatomic) BOOL markedForDeletion; 
+@property (assign,nonatomic) BOOL isPasswordProtected; 
+@property (assign,nonatomic) long long cryptoIterationCount; 
+@property (nonatomic,retain) NSData * cryptoSalt; 
+@property (nonatomic,retain) NSData * cryptoInitializationVector; 
+@property (nonatomic,retain) NSData * cryptoTag; 
+@property (nonatomic,retain) NSData * cryptoWrappedKey; 
+@property (nonatomic,retain) NSString * passwordHint; 
+@property (nonatomic,retain) NSData * unappliedEncryptedRecord; 
+@property (nonatomic,readonly) long long intrinsicNotesVersion; 
+@property (nonatomic,readonly) BOOL shouldSyncMinimumSupportedNotesVersion; 
+@property (nonatomic,readonly) BOOL isUnsupported; 
+@property (nonatomic,readonly) BOOL isVisible; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)newObjectWithIdentifier:(id)arg1 context:(id)arg2 ;
++(void)resetAllDeletedByThisDeviceProperties;
++(id)predicateForVisibleObjects;
++(id)keyPathsForValuesAffectingCanBeSharedViaICloud;
++(id)keyPathsForValuesAffectingIsSharedViaICloud;
++(id)objectsWithRecordID:(id)arg1 context:(id)arg2 ;
++(id)failureCountQueue;
++(id)failedToSyncCountsByIdentifier;
++(id)numberOfPushAttemptsToWaitByIdentifier;
++(id)assetForData:(id)arg1 ;
++(long long)currentNotesVersion;
++(BOOL)needsToReFetchServerRecordValue:(id)arg1 ;
++(void)deleteTemporaryAssetFilesForOperation:(id)arg1 ;
++(BOOL)supportsUserSpecificRecords;
++(id)temporaryAssets;
++(id)temporaryAssetDirectoryURL;
++(void)deleteTemporaryFilesForAsset:(id)arg1 ;
++(id)versionsByOperationQueue;
++(id)versionsByRecordIDByOperation;
++(id)deletedByThisDeviceOperationQueue;
++(id)deletedByThisDeviceSet;
++(id)recordSystemFieldsTransformer;
++(id)shareSystemFieldsTransformer;
++(id)keyPathsForValuesAffectingCloudAccount;
++(id)objectWithRecordID:(id)arg1 accountID:(id)arg2 context:(id)arg3 ;
++(id)keyPathsForValuesAffectingZoneOwnerName;
++(id)existingCloudObjectForRecordID:(id)arg1 accountID:(id)arg2 context:(id)arg3 ;
++(id)newCloudObjectForRecord:(id)arg1 accountID:(id)arg2 context:(id)arg3 ;
++(id)newPlaceholderObjectForRecordName:(id)arg1 accountID:(id)arg2 context:(id)arg3 ;
++(id)cloudObjectWithIdentifier:(id)arg1 context:(id)arg2 ;
++(id)allCloudObjectsInContext:(id)arg1 ;
++(id)keyPathsForValuesAffectingNeedsToBePushedToCloud;
++(void)deleteAllTemporaryAssetFilesForAllObjects;
++(id)keyPathsForValuesAffectingNeedsToBeDeletedFromCloud;
++(id)keyPathsForValuesAffectingIsSharedReadOnly;
++(id)keyPathsForValuesAffectingServerShareCheckingParent;
++(id)allPasswordProtectedObjectsInContext:(id)arg1 ;
+-(NSString *)description;
+-(NSString *)debugDescription;
+-(BOOL)isDeletable;
+-(id)recordType;
+-(id)recordID;
+-(id)recordName;
+-(id)initWithEntity:(id)arg1 insertIntoManagedObjectContext:(id)arg2 ;
+-(BOOL)isVisible;
+-(void)awakeFromFetch;
+-(void)didTurnIntoFault;
+-(void)awakeFromInsert;
+-(void)willSave;
+-(long long)databaseScope;
+-(BOOL)isInCloud;
+-(BOOL)isOwnedByCurrentUser;
+-(id)sharedOwnerName;
+-(id)loggingDescription;
+-(void)setMarkedForDeletion:(BOOL)arg1 ;
+-(id)shareType;
+-(id)recordZoneName;
+-(void)markForDeletion;
+-(CKRecord *)serverRecord;
+-(BOOL)isSharedViaICloud;
+-(BOOL)isSharedReadOnly;
+-(void)setServerRecord:(CKRecord *)arg1 ;
+-(void)updateChangeCount;
+-(void)unmarkForDeletion;
+-(id)ic_loggingValues;
+-(id)cloudAccount;
+-(void)saveAndClearDecryptedDataIfNecessary;
+-(BOOL)shouldBeDeletedFromLocalDatabase;
+-(id)shortLoggingDescription;
+-(void)deleteFromLocalDatabase;
+-(BOOL)canBeSharedViaICloud;
+-(BOOL)isUnsupported;
+-(long long)intrinsicNotesVersion;
+-(void)mergeUnappliedEncryptedRecord;
+-(void)setCryptoTag:(NSData *)arg1 ;
+-(void)setCryptoInitializationVector:(NSData *)arg1 ;
+-(void)saveAndClearDecryptedData;
+-(void)setCryptoWrappedKey:(NSData *)arg1 ;
+-(void)resetToIntrinsicNotesVersionAndPropagateToChildObjects;
+-(BOOL)shouldSyncMinimumSupportedNotesVersion;
+-(BOOL)supportsEncryptedValuesDictionary;
+-(id)parentEncryptableObject;
+-(BOOL)isSharedRootObject;
+-(void)initializeCryptoProperties;
+-(void)initializeCryptoPropertiesFromObject:(id)arg1 ;
+-(BOOL)needsToDeleteShare;
+-(CKShare *)serverShare;
+-(void)didAcceptShare:(id)arg1 ;
+-(id)parentCloudObject;
+-(id)childCloudObjects;
+-(id)childCloudObjectsForMinimumSupportedVersionPropagation;
+-(BOOL)canBeRootShareObject;
+-(id)shareTitle;
+-(BOOL)needsToBePushedToCloud;
+-(BOOL)needsToBeDeletedFromCloud;
+-(void)requireMinimumSupportedVersionAndPropagateToChildObjects:(long long)arg1 ;
+-(void)setNeedsToLoadDecryptedValues:(BOOL)arg1 ;
+-(void)clearServerRecord;
+-(long long)numberOfPushAttemptsToWaitCount;
+-(void)setNumberOfPushAttemptsToWaitCount:(long long)arg1 ;
+-(long long)failedToSyncCount;
+-(void)setFailedToSyncCount:(long long)arg1 ;
+-(void)deleteChangeTokensAndReSync;
+-(NSString *)zoneOwnerName;
+-(BOOL)supportsDeletionByTTL;
+-(void)setInCloud:(BOOL)arg1 ;
+-(id)newlyCreatedRecord;
+-(void)setCryptoSalt:(NSData *)arg1 ;
+-(void)setCryptoIterationCount:(long long)arg1 ;
+-(void)mergeCryptoTagAndInitializationVectorFromRecord:(id)arg1 ;
+-(void)mergeEncryptedDataFromRecord:(id)arg1 ;
+-(void)loadDecryptedValuesIfNecessary;
+-(void)decryptAndMergeEncryptedJSON:(id)arg1 ;
+-(void)saveEncryptedJSON;
+-(long long)isPushingSameOrLaterThanVersion:(long long)arg1 ;
+-(BOOL)hasSuccessfullyPushedLatestVersionToCloud;
+-(void)setVersion:(long long)arg1 forOperation:(id)arg2 ;
+-(BOOL)needsToFetchAfterServerRecordChanged:(id)arg1 ;
+-(void)setNeedsToBeFetchedFromCloud:(BOOL)arg1 ;
+-(void)objectWasFetchedFromCloudWithRecord:(id)arg1 accountID:(id)arg2 ;
+-(void)fixBrokenReferences;
+-(long long)versionForOperation:(id)arg1 ;
+-(void)resetFailureCounts;
+-(void)mergeDataFromRecord:(id)arg1 accountID:(id)arg2 ;
+-(void)setServerShare:(CKShare *)arg1 ;
+-(void)updateParentReferenceIfNecessary;
+-(id)parentCloudObjectForMinimumSupportedVersionPropagation;
+-(id)userSpecificRecordType;
+-(CKRecord *)userSpecificServerRecord;
+-(id)userSpecificRecordID;
+-(void)mergeDataFromUserSpecificRecord:(id)arg1 accountID:(id)arg2 ;
+-(void)setUserSpecificServerRecord:(CKRecord *)arg1 ;
+-(void)didFetchUserSpecificRecord:(id)arg1 accountID:(id)arg2 ;
+-(BOOL)deletedByThisDevice;
+-(BOOL)isInICloudAccount;
+-(id)objectsToBeDeletedBeforeThisObject;
+-(void)setDeletedByThisDevice:(BOOL)arg1 ;
+-(void)updateChangeCountsForUnsavedParentReferences;
+-(CKShare *)serverShareCheckingParent;
+-(BOOL)needsToLoadDecryptedValues;
+-(void)setMergingUnappliedEncryptedRecord:(BOOL)arg1 ;
+-(BOOL)isEncryptableKeyBinaryData:(id)arg1 ;
+-(NSMutableDictionary *)decryptedValues;
+-(id)mergeDecryptedValue:(id)arg1 withOldValue:(id)arg2 forKey:(id)arg3 ;
+-(id)primitiveValueForEncryptableKey:(id)arg1 ;
+-(id)decryptedValueForKey:(id)arg1 ;
+-(void)setPrimitiveValue:(id)arg1 forEncryptableKey:(id)arg2 ;
+-(void)setDecryptedValue:(id)arg1 forKey:(id)arg2 ;
+-(void)setEncryptedValuesJSON:(NSData *)arg1 ;
+-(BOOL)hasAllMandatoryFields;
+-(id)newlyCreatedRecordWithObfuscator:(id)arg1 ;
+-(BOOL)wantsUserSpecificRecord;
+-(id)newlyCreatedUserSpecificRecord;
+-(void)didSaveUserSpecificRecord:(id)arg1 ;
+-(void)didFailToSaveUserSpecificRecord:(id)arg1 accountID:(id)arg2 error:(id)arg3 ;
+-(void)didDeleteUserSpecificRecordID:(id)arg1 ;
+-(BOOL)isValidObject;
+-(void)objectWasDeletedFromCloud;
+-(void)objectWasDeletedFromCloudByAnotherDevice;
+-(void)objectWillBePushedToCloudWithOperation:(id)arg1 ;
+-(void)objectWasPushedToCloudWithOperation:(id)arg1 serverRecord:(id)arg2 ;
+-(void)objectFailedToBePushedToCloudWithOperation:(id)arg1 record:(id)arg2 error:(id)arg3 ;
+-(void)objectWasFetchedButDoesNotExistInCloud;
+-(id)ic_loggingIdentifier;
+-(BOOL)validateIdentifier:(inout id*)arg1 error:(out id*)arg2 ;
+-(void)clearChangeCount;
+-(void)incrementFailureCounts;
+-(void)decrementFailureCounts;
+-(BOOL)shouldBeIgnoredForSync;
+-(void)unitTest_setMinimumSupportedNotesVersion:(long long)arg1 ;
+-(void)setServerShareIfNewer:(id)arg1 ;
+-(id)valueForEncryptableKey:(id)arg1 ;
+-(void)setValue:(id)arg1 forEncryptableKey:(id)arg2 ;
+-(id)cryptoMasterKey;
+-(void)setCryptoMasterKey:(id)arg1 ;
+-(id)cryptoPassphraseVerifier;
+-(BOOL)shouldFallBackToCheckAllCryptoKeys;
+-(void)resetUniqueIdentifier;
+-(BOOL)isMergingUnappliedEncryptedRecord;
+@end
+

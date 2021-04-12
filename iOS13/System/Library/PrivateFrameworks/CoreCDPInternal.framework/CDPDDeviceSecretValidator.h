@@ -1,0 +1,65 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:24 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal
+*/
+
+#import <libobjc.A.dylib/CDPRemoteDeviceSecretValidatorProtocol.h>
+
+@protocol CDPDDeviceSecretValidatorDelegate;
+@class NSMutableDictionary, NSMutableSet, CDPContext, CDPDevice;
+
+@interface CDPDDeviceSecretValidator : NSObject <CDPRemoteDeviceSecretValidatorProtocol> {
+
+	BOOL _isAttemptingRecovery;
+	unsigned long long _failedAttempts;
+	NSMutableDictionary* _failedSecrets;
+	NSMutableSet* _failedRecoveryKeys;
+	NSMutableSet* _failedSingleICSCs;
+	NSMutableDictionary* _recoveryErrors;
+	BOOL _depletedRemainingAttempts;
+	CDPContext* _context;
+	CDPDevice* _currentDevice;
+	BOOL _isUsingMultipleICSC;
+	unsigned long long supportedEscapeOfferMask;
+	/*^block*/id _validSecretHandler;
+	id<CDPDDeviceSecretValidatorDelegate> _delegate;
+
+}
+
+@property (assign,nonatomic) BOOL isUsingMultipleICSC;                                           //@synthesize isUsingMultipleICSC=_isUsingMultipleICSC - In the implementation block
+@property (nonatomic,copy) id validSecretHandler;                                                //@synthesize validSecretHandler=_validSecretHandler - In the implementation block
+@property (assign,nonatomic,__weak) id<CDPDDeviceSecretValidatorDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) unsigned long long supportedEscapeOfferMask; 
+-(id)init;
+-(id<CDPDDeviceSecretValidatorDelegate>)delegate;
+-(void)setDelegate:(id<CDPDDeviceSecretValidatorDelegate>)arg1 ;
+-(void)cancelValidationWithError:(id)arg1 ;
+-(id)initWithContext:(id)arg1 delegate:(id)arg2 ;
+-(void)validateSecret:(id)arg1 devices:(id)arg2 type:(unsigned long long)arg3 withCompletion:(/*^block*/id)arg4 ;
+-(void)validateRecoveryKey:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)approveFromAnotherDeviceWithCompletion:(/*^block*/id)arg1 ;
+-(void)cancelApproveFromAnotherDevice;
+-(void)resetAccountCDPState;
+-(void)supportedEscapeOfferMaskCompletion:(/*^block*/id)arg1 ;
+-(unsigned long long)supportedEscapeOfferMask;
+-(void)setSupportedEscapeOfferMask:(unsigned long long)arg1 ;
+-(void)setIsUsingMultipleICSC:(BOOL)arg1 ;
+-(void)setValidSecretHandler:(id)arg1 ;
+-(unsigned long long)failedAttempts;
+-(BOOL)isAttemptingRecovery;
+-(id)validSecretHandler;
+-(BOOL)_isFailedSecret:(id)arg1 forDevice:(id)arg2 ;
+-(void)_handleMultiCSCRecoveryResults:(id)arg1 clique:(id)arg2 type:(unsigned long long)arg3 secret:(id)arg4 device:(id)arg5 completion:(/*^block*/id)arg6 ;
+-(void)_attemptToRecoverWithRecoveryKey:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(BOOL)isUsingMultipleICSC;
+-(id)_handleMultiCSCRecoveryFailureForDevice:(id)arg1 recoveryError:(id)arg2 secret:(id)arg3 ;
+-(void)_handleRecoveryFailureForFinalDevice:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)_attemptToRecoverDevice:(id)arg1 withSecret:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_performSingleiCSCRecoveryWithSecret:(id)arg1 type:(unsigned long long)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_handleDelegateValidationError:(id)arg1 ;
+-(BOOL)_isInvalidICSCError:(id)arg1 ;
+-(id)_failedSecretsForDevice:(id)arg1 ;
+-(id)_failedSingleICSCs;
+@end
+

@@ -1,0 +1,45 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging
+*/
+
+#import <PhotoImaging/PhotoImaging-Structs.h>
+#import <CoreImage/CIFilter.h>
+
+@class CIImage, NSArray, NSNumber;
+
+@interface GUBWBilateralConvolution : CIFilter {
+
+	CIImage* _inputImage;
+	NSArray* _inputPoints;
+	NSArray* _inputWeights;
+	NSNumber* _inputEdgeDetail;
+	NSNumber* _inputBorder;
+
+}
+
+@property (retain) CIImage * inputImage;                    //@synthesize inputImage=_inputImage - In the implementation block
+@property (retain) NSArray * inputPoints;                   //@synthesize inputPoints=_inputPoints - In the implementation block
+@property (retain) NSArray * inputWeights;                  //@synthesize inputWeights=_inputWeights - In the implementation block
+@property (retain) NSNumber * inputEdgeDetail;              //@synthesize inputEdgeDetail=_inputEdgeDetail - In the implementation block
+@property (retain) NSNumber * inputBorder;                  //@synthesize inputBorder=_inputBorder - In the implementation block
++(id)BWBilateralKernels;
++(id)bilateralLoop2Kernel;
++(id)bilateralLoop5Kernel;
++(id)bilateralLoop11Kernel;
+-(id)outputImage;
+-(CIImage *)inputImage;
+-(void)setInputImage:(CIImage *)arg1 ;
+-(NSArray *)inputWeights;
+-(void)setInputWeights:(NSArray *)arg1 ;
+-(NSArray *)inputPoints;
+-(void)setInputPoints:(NSArray *)arg1 ;
+-(NSNumber *)inputEdgeDetail;
+-(void)setInputEdgeDetail:(NSNumber *)arg1 ;
+-(CGRect)bilateralROI:(long long)arg1 destRect:(CGRect)arg2 userInfo:(id)arg3 ;
+-(id)doBilateralLoop:(id)arg1 points:(id)arg2 weights:(id)arg3 slope:(id)arg4 ;
+-(NSNumber *)inputBorder;
+-(void)setInputBorder:(NSNumber *)arg1 ;
+@end
+

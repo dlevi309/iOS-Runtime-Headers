@@ -1,0 +1,13 @@
+#import <CoreRE/REGainRampingAudioUnit.h>
+#import <CoreRE/REAUHostAudioUnit.h>
+#import <CoreRE/REPlayerAudioUnit.h>
+#import <CoreRE/REOutputStageAudioUnit.h>
+#import <CoreRE/REAudioManagerNotificationListener.h>
+#import <CoreRE/RECaptureAudioUnit.h>
+#import <CoreRE/ObjCObjectClassEntry.h>
+#import <CoreRE/IDSManagerImpl.h>
+#import <CoreRE/IDSConnectionsQueue.h>
+#import <CoreRE/MultipeerHelper.h>
+#import <CoreRE/MCSessionHandler.h>
+#import <CoreRE/REARSessionObserver.h>
+#import <CoreRE/REDisplayLinkTarget.h>

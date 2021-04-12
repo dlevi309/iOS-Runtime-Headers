@@ -1,0 +1,109 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:42 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
+*/
+
+#import <NanoRegistry/NanoRegistry-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSMutableArray, NSData, NRPBNumber, NRPBSize, NSString;
+
+@interface NRPBPropertyValue : PBCodable <NSCopying> {
+
+	NSMutableArray* _arrayValues;
+	NSData* _dataValue;
+	NRPBPropertyValue* _dictionaryKey;
+	NRPBNumber* _numberValue;
+	NRPBSize* _sizeValue;
+	NSString* _stringValue;
+	NSData* _uUIDValue;
+	BOOL _isDate;
+	BOOL _isError;
+	BOOL _isMiniUUIDSet;
+	BOOL _isSecurePropertyValue;
+	BOOL _isSet;
+	SCD_Struct_NR3 _has;
+
+}
+
+@property (nonatomic,readonly) BOOL hasStringValue; 
+@property (nonatomic,retain) NSString * stringValue;                         //@synthesize stringValue=_stringValue - In the implementation block
+@property (nonatomic,readonly) BOOL hasNumberValue; 
+@property (nonatomic,retain) NRPBNumber * numberValue;                       //@synthesize numberValue=_numberValue - In the implementation block
+@property (nonatomic,readonly) BOOL hasUUIDValue; 
+@property (nonatomic,retain) NSData * uUIDValue;                             //@synthesize uUIDValue=_uUIDValue - In the implementation block
+@property (nonatomic,readonly) BOOL hasDataValue; 
+@property (nonatomic,retain) NSData * dataValue;                             //@synthesize dataValue=_dataValue - In the implementation block
+@property (nonatomic,readonly) BOOL hasSizeValue; 
+@property (nonatomic,retain) NRPBSize * sizeValue;                           //@synthesize sizeValue=_sizeValue - In the implementation block
+@property (nonatomic,readonly) BOOL hasDictionaryKey; 
+@property (nonatomic,retain) NRPBPropertyValue * dictionaryKey;              //@synthesize dictionaryKey=_dictionaryKey - In the implementation block
+@property (nonatomic,retain) NSMutableArray * arrayValues;                   //@synthesize arrayValues=_arrayValues - In the implementation block
+@property (assign,nonatomic) BOOL hasIsSet; 
+@property (assign,nonatomic) BOOL isSet;                                     //@synthesize isSet=_isSet - In the implementation block
+@property (assign,nonatomic) BOOL hasIsSecurePropertyValue; 
+@property (assign,nonatomic) BOOL isSecurePropertyValue;                     //@synthesize isSecurePropertyValue=_isSecurePropertyValue - In the implementation block
+@property (assign,nonatomic) BOOL hasIsDate; 
+@property (assign,nonatomic) BOOL isDate;                                    //@synthesize isDate=_isDate - In the implementation block
+@property (assign,nonatomic) BOOL hasIsError; 
+@property (assign,nonatomic) BOOL isError;                                   //@synthesize isError=_isError - In the implementation block
+@property (assign,nonatomic) BOOL hasIsMiniUUIDSet; 
+@property (assign,nonatomic) BOOL isMiniUUIDSet;                             //@synthesize isMiniUUIDSet=_isMiniUUIDSet - In the implementation block
++(Class)arrayValuesType;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(NSString *)stringValue;
+-(NRPBSize *)sizeValue;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)setStringValue:(NSString *)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(BOOL)hasStringValue;
+-(void)setDataValue:(NSData *)arg1 ;
+-(BOOL)hasDataValue;
+-(NSData *)dataValue;
+-(NRPBNumber *)numberValue;
+-(BOOL)isDate;
+-(void)setSizeValue:(NRPBSize *)arg1 ;
+-(void)setNumberValue:(NRPBNumber *)arg1 ;
+-(BOOL)isError;
+-(NRPBPropertyValue *)dictionaryKey;
+-(void)setDictionaryKey:(NRPBPropertyValue *)arg1 ;
+-(BOOL)isSet;
+-(void)setIsSet:(BOOL)arg1 ;
+-(void)addArrayValues:(id)arg1 ;
+-(void)setUUIDValue:(NSData *)arg1 ;
+-(unsigned long long)arrayValuesCount;
+-(void)clearArrayValues;
+-(id)arrayValuesAtIndex:(unsigned long long)arg1 ;
+-(BOOL)hasNumberValue;
+-(BOOL)hasUUIDValue;
+-(BOOL)hasSizeValue;
+-(BOOL)hasDictionaryKey;
+-(NSData *)uUIDValue;
+-(NSMutableArray *)arrayValues;
+-(void)setArrayValues:(NSMutableArray *)arg1 ;
+-(void)setHasIsSet:(BOOL)arg1 ;
+-(BOOL)hasIsSet;
+-(void)setIsSecurePropertyValue:(BOOL)arg1 ;
+-(void)setHasIsSecurePropertyValue:(BOOL)arg1 ;
+-(BOOL)hasIsSecurePropertyValue;
+-(void)setIsDate:(BOOL)arg1 ;
+-(void)setHasIsDate:(BOOL)arg1 ;
+-(BOOL)hasIsDate;
+-(void)setIsError:(BOOL)arg1 ;
+-(void)setHasIsError:(BOOL)arg1 ;
+-(BOOL)hasIsError;
+-(void)setIsMiniUUIDSet:(BOOL)arg1 ;
+-(void)setHasIsMiniUUIDSet:(BOOL)arg1 ;
+-(BOOL)hasIsMiniUUIDSet;
+-(BOOL)isSecurePropertyValue;
+-(BOOL)isMiniUUIDSet;
+@end
+

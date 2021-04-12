@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:43 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
+*/
+
+
+@protocol AKBasicLoginControllerDelegate <NSObject>
+@required
+-(void)basicLoginControllerDidPresent:(id)arg1;
+-(void)basicLoginControllerWillDismiss:(id)arg1;
+-(void)basicLoginControllerDidDismiss:(id)arg1;
+
+@end
+

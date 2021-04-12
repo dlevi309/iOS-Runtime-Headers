@@ -1,0 +1,123 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:05 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Silex.framework/Silex
+*/
+
+#import <Silex/Silex-Structs.h>
+#import <Silex/SXMediaComponentView.h>
+#import <libobjc.A.dylib/SXViewportChangeListener.h>
+#import <libobjc.A.dylib/SXMediaPlaybackDelegate.h>
+#import <libobjc.A.dylib/SXVideoPlayerViewControllerDelegate.h>
+#import <libobjc.A.dylib/SXVideoPlayerViewControllerDataSource.h>
+#import <libobjc.A.dylib/SXVideoAdProviderDataSource.h>
+#import <libobjc.A.dylib/SWReachabilityObserver.h>
+#import <libobjc.A.dylib/SXFullscreenVideoPlaybackCandidate.h>
+
+@protocol SXResourceDataSource, SWReachabilityProvider, SXAppStateMonitor, SXScrollObserverManager, SXBookmarkManager;
+@class SXVideoPlayerViewController, SXAdController, SXPosterFrameView, SXVideoAnalyticsRouter, SXVideoComponentAnalyticsReporting, SVVolumeProvider, SXVideoPlayerViewControllerManager, ADBannerView, NSString;
+
+@interface SXVideoComponentView : SXMediaComponentView <SXViewportChangeListener, SXMediaPlaybackDelegate, SXVideoPlayerViewControllerDelegate, SXVideoPlayerViewControllerDataSource, SXVideoAdProviderDataSource, SWReachabilityObserver, SXFullscreenVideoPlaybackCandidate> {
+
+	BOOL _isReceivingViewportDynamicBoundsChanges;
+	SXVideoPlayerViewController* _videoPlayerViewController;
+	SXAdController* _adController;
+	id<SXResourceDataSource> _resourceDataSource;
+	id<SWReachabilityProvider> _reachabilityProvider;
+	id<SXAppStateMonitor> _appStateMonitor;
+	SXPosterFrameView* _posterFrame;
+	/*^block*/id _thumbnailRequestCancelHandler;
+	SXVideoAnalyticsRouter* _analyticsRouter;
+	SXVideoComponentAnalyticsReporting* _videoComponentAnalyticsReporter;
+	id<SXScrollObserverManager> _scrollObserverManager;
+	SVVolumeProvider* _volumeProvider;
+	SXVideoPlayerViewControllerManager* _videoPlayerViewControllerManager;
+	id<SXBookmarkManager> _bookmarkManager;
+	ADBannerView* _bannerView;
+	/*^block*/id _presentationBlock;
+
+}
+
+@property (nonatomic,readonly) SXAdController * adController;                                                      //@synthesize adController=_adController - In the implementation block
+@property (nonatomic,readonly) id<SXResourceDataSource> resourceDataSource;                                        //@synthesize resourceDataSource=_resourceDataSource - In the implementation block
+@property (nonatomic,readonly) id<SWReachabilityProvider> reachabilityProvider;                                    //@synthesize reachabilityProvider=_reachabilityProvider - In the implementation block
+@property (nonatomic,readonly) id<SXAppStateMonitor> appStateMonitor;                                              //@synthesize appStateMonitor=_appStateMonitor - In the implementation block
+@property (assign,nonatomic) BOOL isReceivingViewportDynamicBoundsChanges;                                         //@synthesize isReceivingViewportDynamicBoundsChanges=_isReceivingViewportDynamicBoundsChanges - In the implementation block
+@property (nonatomic,retain) SXPosterFrameView * posterFrame;                                                      //@synthesize posterFrame=_posterFrame - In the implementation block
+@property (nonatomic,retain) SXVideoPlayerViewController * videoPlayerViewController;                              //@synthesize videoPlayerViewController=_videoPlayerViewController - In the implementation block
+@property (nonatomic,copy) id thumbnailRequestCancelHandler;                                                       //@synthesize thumbnailRequestCancelHandler=_thumbnailRequestCancelHandler - In the implementation block
+@property (nonatomic,retain) SXVideoAnalyticsRouter * analyticsRouter;                                             //@synthesize analyticsRouter=_analyticsRouter - In the implementation block
+@property (nonatomic,retain) SXVideoComponentAnalyticsReporting * videoComponentAnalyticsReporter;                 //@synthesize videoComponentAnalyticsReporter=_videoComponentAnalyticsReporter - In the implementation block
+@property (nonatomic,readonly) id<SXScrollObserverManager> scrollObserverManager;                                  //@synthesize scrollObserverManager=_scrollObserverManager - In the implementation block
+@property (nonatomic,readonly) SVVolumeProvider * volumeProvider;                                                  //@synthesize volumeProvider=_volumeProvider - In the implementation block
+@property (nonatomic,readonly) SXVideoPlayerViewControllerManager * videoPlayerViewControllerManager;              //@synthesize videoPlayerViewControllerManager=_videoPlayerViewControllerManager - In the implementation block
+@property (nonatomic,readonly) id<SXBookmarkManager> bookmarkManager;                                              //@synthesize bookmarkManager=_bookmarkManager - In the implementation block
+@property (assign,nonatomic,__weak) ADBannerView * bannerView;                                                     //@synthesize bannerView=_bannerView - In the implementation block
+@property (nonatomic,copy) id presentationBlock;                                                                   //@synthesize presentationBlock=_presentationBlock - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id<SXAppStateMonitor>)appStateMonitor;
+-(void)discardContents;
+-(ADBannerView *)bannerView;
+-(void)setBannerView:(ADBannerView *)arg1 ;
+-(SXPosterFrameView *)posterFrame;
+-(SVVolumeProvider *)volumeProvider;
+-(void)reachabilityChanged:(BOOL)arg1 ;
+-(SXVideoPlayerViewControllerManager *)videoPlayerViewControllerManager;
+-(BOOL)canEnterFullscreen;
+-(void)enterFullscreen;
+-(id<SXResourceDataSource>)resourceDataSource;
+-(SXAdController *)adController;
+-(SXVideoPlayerViewController *)videoPlayerViewController;
+-(void)viewport:(id)arg1 dynamicBoundsDidChangeFromBounds:(CGRect)arg2 ;
+-(void)viewport:(id)arg1 appearStateChangedFromState:(unsigned long long)arg2 ;
+-(void)viewport:(id)arg1 interfaceOrientationChangedFromOrientation:(long long)arg2 ;
+-(id<SXBookmarkManager>)bookmarkManager;
+-(id<SWReachabilityProvider>)reachabilityProvider;
+-(void)presentComponentWithChanges:(SCD_Struct_SX17)arg1 ;
+-(void)renderContents;
+-(BOOL)allowHierarchyRemoval;
+-(unsigned long long)analyticsMediaType;
+-(void)loadComponent:(id)arg1 ;
+-(void)visibilityStateDidChangeFromState:(long long)arg1 ;
+-(id)transitionContentView;
+-(CGRect)transitionContentFrame;
+-(void)prepareForTransitionType:(unsigned long long)arg1 ;
+-(BOOL)usesThumbnailWithImageIdentifier:(id)arg1 ;
+-(unsigned long long)analyticsVideoType;
+-(id)initWithDOMObjectProvider:(id)arg1 viewport:(id)arg2 presentationDelegate:(id)arg3 componentStyleRendererFactory:(id)arg4 analyticsReporting:(id)arg5 appStateMonitor:(id)arg6 resourceDataSource:(id)arg7 reachabilityProvider:(id)arg8 adController:(id)arg9 scrollObserverManager:(id)arg10 volumeProvider:(id)arg11 videoPlayerViewControllerManager:(id)arg12 bookmarkManager:(id)arg13 ;
+-(void)pauseMediaPlayback;
+-(void)setupVideoPlayerViewController:(id)arg1 ;
+-(id<SXScrollObserverManager>)scrollObserverManager;
+-(void)setPresentationBlock:(id)arg1 ;
+-(void)unloadVideoPlayerIfShowingAd;
+-(void)setVideoComponentAnalyticsReporter:(SXVideoComponentAnalyticsReporting *)arg1 ;
+-(SXVideoAnalyticsRouter *)analyticsRouter;
+-(void)setAnalyticsRouter:(SXVideoAnalyticsRouter *)arg1 ;
+-(SXVideoComponentAnalyticsReporting *)videoComponentAnalyticsReporter;
+-(void)showPosterFrame;
+-(id)presentationBlock;
+-(void)loadPosterFrameImage;
+-(id)thumbnailRequestCancelHandler;
+-(void)setThumbnailRequestCancelHandler:(id)arg1 ;
+-(void)setVideoPlayerViewController:(SXVideoPlayerViewController *)arg1 ;
+-(void)setPosterFrame:(SXPosterFrameView *)arg1 ;
+-(void)playButtonTapped;
+-(void)registerAsMediaPlaybackDelegate;
+-(void)pausePrerollIfNeeded;
+-(BOOL)videoPlayerIsMoreThan50PercentVisible;
+-(BOOL)isReceivingViewportDynamicBoundsChanges;
+-(void)setIsReceivingViewportDynamicBoundsChanges:(BOOL)arg1 ;
+-(void)videoPlayerViewControllerFinishedVideoPlayback:(id)arg1 ;
+-(void)videoPlayerViewController:(id)arg1 startedPlaybackOfVideo:(id)arg2 ;
+-(void)videoPlayerViewController:(id)arg1 resumedPlaybackOfVideo:(id)arg2 ;
+-(BOOL)videoPlayerViewControllerShouldStartPlayback:(id)arg1 ;
+-(id)videoForVideoPlayerViewController:(id)arg1 ;
+-(id)videoAdForVideoPlayerViewController:(id)arg1 ;
+-(/*^block*/id)videoAdWithCompletionBlock:(/*^block*/id)arg1 ;
+-(void)registerForViewportDynamicBoundsChanges;
+-(void)unregisterForViewportDynamicBoundsChanges;
+@end
+

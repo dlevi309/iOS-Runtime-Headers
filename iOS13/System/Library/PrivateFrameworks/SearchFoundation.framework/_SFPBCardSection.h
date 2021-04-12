@@ -1,0 +1,117 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:52 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
+*/
+
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/_SFPBCardSection.h>
+@class _SFPBCardSectionValue, _SFPBCard, NSArray, NSString, _SFPBUserReportRequest, NSData;
+
+
+@protocol _SFPBCardSection <NSObject>
+@property (assign,nonatomic) int type; 
+@property (nonatomic,retain) _SFPBCardSectionValue * value; 
+@property (nonatomic,retain) _SFPBCard * nextCard; 
+@property (nonatomic,copy) NSArray * commands; 
+@property (nonatomic,copy) NSArray * parameterKeyPaths; 
+@property (nonatomic,copy) NSString * cardSectionId; 
+@property (nonatomic,copy) NSString * resultIdentifier; 
+@property (nonatomic,retain) _SFPBUserReportRequest * userReportRequest; 
+@property (nonatomic,readonly) NSData * jsonData; 
+@required
+-(int)type;
+-(void)setType:(int)arg1;
+-(id)initWithDictionary:(id)arg1;
+-(_SFPBCardSectionValue *)value;
+-(void)setValue:(id)arg1;
+-(NSArray *)commands;
+-(void)setCommands:(id)arg1;
+-(NSData *)jsonData;
+-(_SFPBCard *)nextCard;
+-(void)setNextCard:(id)arg1;
+-(NSArray *)parameterKeyPaths;
+-(void)setParameterKeyPaths:(id)arg1;
+-(NSString *)cardSectionId;
+-(void)setCardSectionId:(id)arg1;
+-(NSString *)resultIdentifier;
+-(void)setResultIdentifier:(id)arg1;
+-(_SFPBUserReportRequest *)userReportRequest;
+-(void)setUserReportRequest:(id)arg1;
+-(id)initWithJSON:(id)arg1;
+-(void)addCommands:(id)arg1;
+-(void)addParameterKeyPaths:(id)arg1;
+-(void)clearCommands;
+-(unsigned long long)commandsCount;
+-(id)commandsAtIndex:(unsigned long long)arg1;
+-(void)clearParameterKeyPaths;
+-(unsigned long long)parameterKeyPathsCount;
+-(id)parameterKeyPathsAtIndex:(unsigned long long)arg1;
+
+@end
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class _SFPBCardSectionValue, _SFPBCard, NSArray, NSString, _SFPBUserReportRequest, NSData;
+
+@interface _SFPBCardSection : PBCodable <_SFPBCardSection, NSSecureCoding> {
+
+	int _type;
+	_SFPBCardSectionValue* _value;
+	_SFPBCard* _nextCard;
+	NSArray* _commands;
+	NSArray* _parameterKeyPaths;
+	NSString* _cardSectionId;
+	NSString* _resultIdentifier;
+	_SFPBUserReportRequest* _userReportRequest;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (assign,nonatomic) int type;                                                //@synthesize type=_type - In the implementation block
+@property (nonatomic,retain) _SFPBCardSectionValue * value;                           //@synthesize value=_value - In the implementation block
+@property (nonatomic,retain) _SFPBCard * nextCard;                                    //@synthesize nextCard=_nextCard - In the implementation block
+@property (nonatomic,copy) NSArray * commands;                                        //@synthesize commands=_commands - In the implementation block
+@property (nonatomic,copy) NSArray * parameterKeyPaths;                               //@synthesize parameterKeyPaths=_parameterKeyPaths - In the implementation block
+@property (nonatomic,copy) NSString * cardSectionId;                                  //@synthesize cardSectionId=_cardSectionId - In the implementation block
+@property (nonatomic,copy) NSString * resultIdentifier;                               //@synthesize resultIdentifier=_resultIdentifier - In the implementation block
+@property (nonatomic,retain) _SFPBUserReportRequest * userReportRequest;              //@synthesize userReportRequest=_userReportRequest - In the implementation block
+@property (nonatomic,readonly) NSData * jsonData; 
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(int)type;
+-(void)setType:(int)arg1 ;
+-(id)initWithDictionary:(id)arg1 ;
+-(_SFPBCardSectionValue *)value;
+-(void)setValue:(_SFPBCardSectionValue *)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(NSArray *)commands;
+-(void)setCommands:(NSArray *)arg1 ;
+-(NSData *)jsonData;
+-(_SFPBCard *)nextCard;
+-(void)setNextCard:(_SFPBCard *)arg1 ;
+-(NSArray *)parameterKeyPaths;
+-(void)setParameterKeyPaths:(NSArray *)arg1 ;
+-(NSString *)cardSectionId;
+-(void)setCardSectionId:(NSString *)arg1 ;
+-(NSString *)resultIdentifier;
+-(void)setResultIdentifier:(NSString *)arg1 ;
+-(_SFPBUserReportRequest *)userReportRequest;
+-(void)setUserReportRequest:(_SFPBUserReportRequest *)arg1 ;
+-(id)initWithJSON:(id)arg1 ;
+-(void)addCommands:(id)arg1 ;
+-(void)addParameterKeyPaths:(id)arg1 ;
+-(void)clearCommands;
+-(unsigned long long)commandsCount;
+-(id)commandsAtIndex:(unsigned long long)arg1 ;
+-(void)clearParameterKeyPaths;
+-(unsigned long long)parameterKeyPathsCount;
+-(id)parameterKeyPathsAtIndex:(unsigned long long)arg1 ;
+-(id)initWithSFCardSection:(id)arg1 ;
+@end
+

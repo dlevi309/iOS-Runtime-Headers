@@ -1,0 +1,14 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:01 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/QuickLook.framework/QuickLook
+*/
+
+
+@protocol QLItemThumbnailGeneratorProtocolInternal <NSObject>
+@required
+-(void)generateThumbnailWithSize:(CGSize)arg1 completionBlock:(/*^block*/id)arg2;
+-(id)genericIconWithSize:(CGSize)arg1;
+
+@end
+

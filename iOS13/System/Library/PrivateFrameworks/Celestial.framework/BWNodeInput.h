@@ -1,0 +1,119 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:38 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Celestial.framework/Celestial
+*/
+
+
+#import <Celestial/Celestial-Structs.h>
+@class NSString, BWNode, BWNodeConnection, BWNodeInputMediaConfiguration, NSMutableDictionary, BWNodeInputMediaProperties, BWFormatRequirements, BWFormat, BWVideoFormat, NSArray;
+
+@interface BWNodeInput : NSObject {
+
+	NSString* _name;
+	BOOL _mediaTypeIsVideo;
+	BOOL _mediaTypeIsPointCloud;
+	long long _configurationID;
+	unsigned _mediaType;
+	unsigned long long _index;
+	BOOL _enabled;
+	BOOL _discardsSampleDataTaggedToBeDropped;
+	BWNode* _node;
+	BWNodeConnection* _connection;
+	long long _liveConfigurationID;
+	unsigned _numberOfBuffersReceived;
+	unsigned _numberOfBuffersDropped;
+	BWNodeInputMediaConfiguration* _primaryMediaConfiguration;
+	BWNodeInputMediaConfiguration* _unspecifiedAttachedMediaConfiguration;
+	NSMutableDictionary* _attachedMediaConfigurations;
+	BWNodeInputMediaProperties* _primaryMediaProperties;
+	NSMutableDictionary* _attachedMediaProperties;
+
+}
+
+@property (nonatomic,retain) BWFormatRequirements * formatRequirements; 
+@property (nonatomic,retain) BWFormat * format; 
+@property (nonatomic,readonly) BWVideoFormat * videoFormat; 
+@property (nonatomic,readonly) BWFormat * liveFormat; 
+@property (assign,nonatomic) int passthroughMode; 
+@property (assign,nonatomic) BOOL passesBuffersDownstream; 
+@property (assign,nonatomic) int retainedBufferCount; 
+@property (assign,nonatomic) int delayedBufferCount; 
+@property (assign,nonatomic) int indefinitelyHeldBufferCount; 
+@property (nonatomic,readonly) BOOL mediaTypeIsVideo;                                                            //@synthesize mediaTypeIsVideo=_mediaTypeIsVideo - In the implementation block
+@property (nonatomic,readonly) BOOL mediaTypeIsPointCloud;                                                       //@synthesize mediaTypeIsPointCloud=_mediaTypeIsPointCloud - In the implementation block
+@property (nonatomic,copy) NSString * name;                                                                      //@synthesize name=_name - In the implementation block
+@property (nonatomic,readonly) unsigned mediaType;                                                               //@synthesize mediaType=_mediaType - In the implementation block
+@property (assign,getter=isEnabled,nonatomic) BOOL enabled;                                                      //@synthesize enabled=_enabled - In the implementation block
+@property (nonatomic,readonly) unsigned long long index;                                                         //@synthesize index=_index - In the implementation block
+@property (assign,nonatomic) BOOL discardsSampleDataTaggedToBeDropped;                                           //@synthesize discardsSampleDataTaggedToBeDropped=_discardsSampleDataTaggedToBeDropped - In the implementation block
+@property (nonatomic,readonly) BWNode * node;                                                                    //@synthesize node=_node - In the implementation block
+@property (assign,nonatomic) BWNodeConnection * connection;                                                      //@synthesize connection=_connection - In the implementation block
+@property (assign,nonatomic) long long configurationID;                                                          //@synthesize configurationID=_configurationID - In the implementation block
+@property (nonatomic,readonly) BWNodeInputMediaConfiguration * primaryMediaConfiguration;                        //@synthesize primaryMediaConfiguration=_primaryMediaConfiguration - In the implementation block
+@property (nonatomic,readonly) NSArray * specifiedAttachedMediaKeys; 
+@property (nonatomic,retain) BWNodeInputMediaConfiguration * unspecifiedAttachedMediaConfiguration;              //@synthesize unspecifiedAttachedMediaConfiguration=_unspecifiedAttachedMediaConfiguration - In the implementation block
+@property (nonatomic,readonly) BWNodeInputMediaProperties * primaryMediaProperties;                              //@synthesize primaryMediaProperties=_primaryMediaProperties - In the implementation block
+@property (nonatomic,readonly) NSArray * resolvedAttachedMediaKeys; 
+@property (nonatomic,readonly) long long liveConfigurationID;                                                    //@synthesize liveConfigurationID=_liveConfigurationID - In the implementation block
+@property (nonatomic,readonly) unsigned numberOfBuffersReceived;                                                 //@synthesize numberOfBuffersReceived=_numberOfBuffersReceived - In the implementation block
+@property (nonatomic,readonly) unsigned numberOfBuffersDropped;                                                  //@synthesize numberOfBuffersDropped=_numberOfBuffersDropped - In the implementation block
++(void)initialize;
++(opaqueCMSampleBufferRef)newSampleDataToBeDroppedMarkerBufferFromSampleBuffer:(opaqueCMSampleBufferRef)arg1 ;
+-(void)dealloc;
+-(id)description;
+-(NSString *)name;
+-(void)invalidate;
+-(void)setEnabled:(BOOL)arg1 ;
+-(void)setName:(NSString *)arg1 ;
+-(unsigned long long)index;
+-(BWNodeConnection *)connection;
+-(BOOL)isEnabled;
+-(void)setConnection:(BWNodeConnection *)arg1 ;
+-(BWNode *)node;
+-(BWFormat *)format;
+-(unsigned)mediaType;
+-(void)setFormat:(BWFormat *)arg1 ;
+-(long long)configurationID;
+-(BWVideoFormat *)videoFormat;
+-(void)setRetainedBufferCount:(int)arg1 ;
+-(void)setConfigurationID:(long long)arg1 ;
+-(id)initWithMediaType:(unsigned)arg1 node:(id)arg2 index:(unsigned long long)arg3 ;
+-(id)initWithMediaType:(unsigned)arg1 node:(id)arg2 ;
+-(void)setFormatRequirements:(BWFormatRequirements *)arg1 ;
+-(BWNodeInputMediaConfiguration *)primaryMediaConfiguration;
+-(BWFormatRequirements *)formatRequirements;
+-(void)setPassthroughMode:(int)arg1 ;
+-(void)setMediaConfiguration:(id)arg1 forAttachedMediaKey:(id)arg2 ;
+-(void)setUnspecifiedAttachedMediaConfiguration:(BWNodeInputMediaConfiguration *)arg1 ;
+-(id)mediaPropertiesForAttachedMediaKey:(id)arg1 ;
+-(void)_setMediaProperties:(id)arg1 forAttachedMediaKey:(id)arg2 ;
+-(id)mediaConfigurationForAttachedMediaKey:(id)arg1 ;
+-(int)retainedBufferCount;
+-(void)_setPrimaryProperties:(id)arg1 ;
+-(void)_clearAllMediaProperties;
+-(void)_handleConfigurationLiveMessage:(id)arg1 ;
+-(BWNodeInputMediaProperties *)primaryMediaProperties;
+-(BWFormat *)liveFormat;
+-(int)passthroughMode;
+-(int)_passthroughModeForUnspecifiedAttachedMedia;
+-(NSArray *)specifiedAttachedMediaKeys;
+-(NSArray *)resolvedAttachedMediaKeys;
+-(void)handleMessage:(id)arg1 ;
+-(int)_passthroughModeForAttachedMediaKey:(id)arg1 ;
+-(BOOL)mediaTypeIsVideo;
+-(BOOL)mediaTypeIsPointCloud;
+-(BOOL)discardsSampleDataTaggedToBeDropped;
+-(void)setDiscardsSampleDataTaggedToBeDropped:(BOOL)arg1 ;
+-(BWNodeInputMediaConfiguration *)unspecifiedAttachedMediaConfiguration;
+-(long long)liveConfigurationID;
+-(unsigned)numberOfBuffersReceived;
+-(unsigned)numberOfBuffersDropped;
+-(int)delayedBufferCount;
+-(void)setDelayedBufferCount:(int)arg1 ;
+-(int)indefinitelyHeldBufferCount;
+-(void)setIndefinitelyHeldBufferCount:(int)arg1 ;
+-(void)setPassesBuffersDownstream:(BOOL)arg1 ;
+-(BOOL)passesBuffersDownstream;
+@end
+

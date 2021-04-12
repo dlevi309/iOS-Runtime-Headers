@@ -1,0 +1,73 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:54 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI
+*/
+
+
+@class STUsageReport, NSArray, NSString, NSDate;
+
+@interface STUsageDetailsViewModel : NSObject {
+
+	BOOL _localDevice;
+	BOOL _hasAggregateUsageData;
+	unsigned long long _selectedWeek;
+	STUsageReport* _selectedWeekUsageReport;
+	NSArray* _weekUsageReports;
+	unsigned long long _selectedDay;
+	STUsageReport* _selectedDayUsageReport;
+	NSArray* _dayUsageReportByWeekdays;
+	NSString* _selectedItemDisplayName;
+	NSDate* _lastUpdatedDate;
+	NSArray* _rawUsageItems;
+
+}
+
+@property (retain) STUsageReport * selectedWeekUsageReport;                //@synthesize selectedWeekUsageReport=_selectedWeekUsageReport - In the implementation block
+@property (copy) NSArray * weekUsageReports;                               //@synthesize weekUsageReports=_weekUsageReports - In the implementation block
+@property (retain) STUsageReport * selectedDayUsageReport;                 //@synthesize selectedDayUsageReport=_selectedDayUsageReport - In the implementation block
+@property (copy) NSArray * dayUsageReportByWeekdays;                       //@synthesize dayUsageReportByWeekdays=_dayUsageReportByWeekdays - In the implementation block
+@property (copy) NSDate * lastUpdatedDate;                                 //@synthesize lastUpdatedDate=_lastUpdatedDate - In the implementation block
+@property (assign) BOOL hasAggregateUsageData;                             //@synthesize hasAggregateUsageData=_hasAggregateUsageData - In the implementation block
+@property (copy) NSArray * rawUsageItems;                                  //@synthesize rawUsageItems=_rawUsageItems - In the implementation block
+@property (assign,nonatomic) unsigned long long selectedWeek;              //@synthesize selectedWeek=_selectedWeek - In the implementation block
+@property (assign,nonatomic) unsigned long long selectedDay;               //@synthesize selectedDay=_selectedDay - In the implementation block
+@property (readonly) STUsageReport * selectedUsageReport; 
+@property (getter=isLocalDevice) BOOL localDevice;                         //@synthesize localDevice=_localDevice - In the implementation block
+@property (copy) NSString * selectedItemDisplayName;                       //@synthesize selectedItemDisplayName=_selectedItemDisplayName - In the implementation block
+@property (nonatomic,readonly) BOOL hasUsageData; 
++(id)keyPathsForValuesAffectingSelectedUsageReport;
++(id)keyPathsForValuesAffectingHasUsageData;
++(void)_enumerateWeeklyReportStartDatesWithReferenceDate:(id)arg1 ascending:(BOOL)arg2 block:(/*^block*/id)arg3 ;
++(void)_enumerateDayReportStartDatesWithStartOfWeek:(id)arg1 ascending:(BOOL)arg2 block:(/*^block*/id)arg3 ;
+-(id)init;
+-(void)setLocalDevice:(BOOL)arg1 ;
+-(NSDate *)lastUpdatedDate;
+-(void)setLastUpdatedDate:(NSDate *)arg1 ;
+-(unsigned long long)selectedDay;
+-(BOOL)isLocalDevice;
+-(STUsageReport *)selectedWeekUsageReport;
+-(BOOL)hasUsageData;
+-(STUsageReport *)selectedUsageReport;
+-(STUsageReport *)selectedDayUsageReport;
+-(unsigned long long)selectedWeek;
+-(void)setSelectedDay:(unsigned long long)arg1 ;
+-(NSArray *)weekUsageReports;
+-(NSArray *)dayUsageReportByWeekdays;
+-(void)setSelectedWeek:(unsigned long long)arg1 ;
+-(void)setSelectedWeek:(unsigned long long)arg1 selectedDay:(unsigned long long)arg2 ;
+-(void)selectToday;
+-(void)setSelectedItemDisplayName:(NSString *)arg1 ;
+-(void)setWeekReportUsageItems:(id)arg1 weekStartDate:(id)arg2 lastUpdatedDate:(id)arg3 ;
+-(BOOL)hasAggregateUsageData;
+-(unsigned long long)_mostRecentAvailableWeekday;
+-(void)setSelectedWeekUsageReport:(STUsageReport *)arg1 ;
+-(void)setSelectedDayUsageReport:(STUsageReport *)arg1 ;
+-(void)setRawUsageItems:(NSArray *)arg1 ;
+-(void)setWeekUsageReports:(NSArray *)arg1 ;
+-(void)setDayUsageReportByWeekdays:(NSArray *)arg1 ;
+-(NSString *)selectedItemDisplayName;
+-(void)setHasAggregateUsageData:(BOOL)arg1 ;
+-(NSArray *)rawUsageItems;
+@end
+

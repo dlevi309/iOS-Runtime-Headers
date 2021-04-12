@@ -1,0 +1,43 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:03 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/CoreImage.framework/CoreImage
+*/
+
+#import <CoreImage/CIFilter.h>
+
+@class CIImage, CIVector;
+
+@interface CIColorMatrix : CIFilter {
+
+	CIImage* inputImage;
+	CIVector* inputRVector;
+	CIVector* inputGVector;
+	CIVector* inputBVector;
+	CIVector* inputAVector;
+	CIVector* inputBiasVector;
+
+}
+
+@property (nonatomic,retain) CIImage * inputImage; 
+@property (nonatomic,retain) CIVector * inputRVector; 
+@property (nonatomic,retain) CIVector * inputGVector; 
+@property (nonatomic,retain) CIVector * inputBVector; 
+@property (nonatomic,retain) CIVector * inputAVector; 
+@property (nonatomic,retain) CIVector * inputBiasVector; 
++(id)customAttributes;
+-(id)outputImage;
+-(CIImage *)inputImage;
+-(void)setInputImage:(CIImage *)arg1 ;
+-(CIVector *)inputRVector;
+-(void)setInputRVector:(CIVector *)arg1 ;
+-(CIVector *)inputGVector;
+-(void)setInputGVector:(CIVector *)arg1 ;
+-(CIVector *)inputBVector;
+-(void)setInputBVector:(CIVector *)arg1 ;
+-(CIVector *)inputAVector;
+-(void)setInputAVector:(CIVector *)arg1 ;
+-(CIVector *)inputBiasVector;
+-(void)setInputBiasVector:(CIVector *)arg1 ;
+@end
+

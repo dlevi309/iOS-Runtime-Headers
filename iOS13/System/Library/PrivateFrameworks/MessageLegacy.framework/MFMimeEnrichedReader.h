@@ -1,0 +1,50 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:20 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy
+*/
+
+
+#import <MessageLegacy/MessageLegacy-Structs.h>
+@class NSMutableString;
+
+@interface MFMimeEnrichedReader : NSObject {
+
+	SCD_Struct_MF15* _inputBuffer;
+	long long _currentIndex;
+	long long _inputLength;
+	unsigned _noFillLevel : 30;
+	unsigned _eatOneNewline : 1;
+	unsigned _insideComment : 1;
+	unsigned _wantsPlainText : 1;
+	int _lastQuoteLevel;
+	CFArrayRef _commandStack;
+	id _outputString;
+	NSMutableString* _outputBuffer;
+	CFStringRef _prependHTML;
+	CFStringRef _postpendHTML;
+	float _indentWidth;
+
+}
++(CFCharacterSetRef)parenSet;
++(CFCharacterSetRef)punctuationSet;
+-(void)dealloc;
+-(id)description;
+-(id)currentFont;
+-(void)parseParameterString:(id)arg1 ;
+-(void)nowWouldBeAGoodTimeToAppendToTheAttributedString;
+-(void)handleNoParameterCommand:(const SCD_Struct_MF18*)arg1 ;
+-(void)setupFontStackEntry:(CommandStackEntry*)arg1 ;
+-(void)mismatchError:(id)arg1 ;
+-(void)appendNewLine:(id)arg1 ;
+-(void)resetStateWithString:(id)arg1 outputString:(id)arg2 ;
+-(int)readTokenInto:(id*)arg1 ;
+-(void)beginCommand:(id)arg1 ;
+-(void)endCommand:(id)arg1 ;
+-(void)appendStringToBuffer:(id)arg1 ;
+-(void)closeUpQuoting;
+-(void)setWantsHTML:(BOOL)arg1 ;
+-(void)convertRichTextString:(id)arg1 intoOutputString:(id)arg2 ;
+-(void)convertEnrichedString:(id)arg1 intoOutputString:(id)arg2 ;
+@end
+

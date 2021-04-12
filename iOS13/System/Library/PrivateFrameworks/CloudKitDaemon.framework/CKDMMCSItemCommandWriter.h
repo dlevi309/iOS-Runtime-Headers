@@ -1,0 +1,45 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:07 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+*/
+
+#import <libobjc.A.dylib/CKDMMCSItemReaderWriterProtocol.h>
+
+@class CKDMMCSItemGroupContext, CKDMMCSItem, NSMutableIndexSet, NSString;
+
+@interface CKDMMCSItemCommandWriter : NSObject <CKDMMCSItemReaderWriterProtocol> {
+
+	CKDMMCSItemGroupContext* _MMCSRequest;
+	CKDMMCSItem* _MMCSItem;
+	NSMutableIndexSet* _byteRanges;
+	unsigned long long _maximumLength;
+
+}
+
+@property (nonatomic,retain) CKDMMCSItemGroupContext * MMCSRequest;              //@synthesize MMCSRequest=_MMCSRequest - In the implementation block
+@property (nonatomic,retain) CKDMMCSItem * MMCSItem;                             //@synthesize MMCSItem=_MMCSItem - In the implementation block
+@property (nonatomic,retain) NSMutableIndexSet * byteRanges;                     //@synthesize byteRanges=_byteRanges - In the implementation block
+@property (assign,nonatomic) unsigned long long maximumLength;                   //@synthesize maximumLength=_maximumLength - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(BOOL)openWithError:(id*)arg1 ;
+-(BOOL)isContiguous;
+-(NSMutableIndexSet *)byteRanges;
+-(void)setByteRanges:(NSMutableIndexSet *)arg1 ;
+-(unsigned long long)maximumLength;
+-(void)setMaximumLength:(unsigned long long)arg1 ;
+-(BOOL)closeWithError:(id*)arg1 ;
+-(CKDMMCSItemGroupContext *)MMCSRequest;
+-(CKDMMCSItem *)MMCSItem;
+-(id)getFileMetadataWithError:(id*)arg1 ;
+-(BOOL)readBytesAtOffset:(unsigned long long)arg1 bytes:(char*)arg2 length:(unsigned long long)arg3 bytesRead:(unsigned long long*)arg4 error:(id*)arg5 ;
+-(BOOL)writeBytesAtOffset:(unsigned long long)arg1 bytes:(char*)arg2 length:(unsigned long long)arg3 bytesWritten:(unsigned long long*)arg4 error:(id*)arg5 ;
+-(id)initWithMMCSItem:(id)arg1 MMCSRequest:(id)arg2 ;
+-(void)setMMCSRequest:(CKDMMCSItemGroupContext *)arg1 ;
+-(void)setMMCSItem:(CKDMMCSItem *)arg1 ;
+@end
+

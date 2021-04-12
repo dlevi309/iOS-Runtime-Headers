@@ -1,0 +1,14 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:53 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
+*/
+
+
+@protocol DASessionDelegate <NSObject>
+@required
+-(void)daSession:(id)arg1 didBecomeActive:(id)arg2;
+-(void)daSession:(id)arg1 didEnd:(id)arg2;
+
+@end
+

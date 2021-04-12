@@ -1,0 +1,237 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:36 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
+*/
+
+#import <PassKitUI/PassKitUI-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <UIKit/UITableViewDataSource.h>
+#import <UIKit/UITableViewDelegate.h>
+#import <UIKit/UINavigationControllerDelegate.h>
+#import <libobjc.A.dylib/PKPaymentAuthorizationFooterViewDelegate.h>
+#import <libobjc.A.dylib/PKAuthenticatorDelegate.h>
+#import <libobjc.A.dylib/PKPaymentAuthorizationStateMachineDelegate.h>
+#import <libobjc.A.dylib/AKAppleIDAuthenticationInAppContextDelegate.h>
+#import <libobjc.A.dylib/PKPaymentAuthorizationServiceProtocol.h>
+
+@protocol PKPaymentAuthorizationServiceViewControllerDelegatePKPaymentAuthorizationHostProtocol;
+@class PKPaymentAuthorizationLayout, UIView, UITableView, PKPaymentAuthorizationSummaryItemsView, NSLayoutConstraint, PKPaymentAuthorizationTotalView, PKPaymentAuthorizationFooterView, PKPaymentAuthorizationPasswordButtonView, UIBarButtonItem, PKPaymentPreferencesViewController, UIViewController, PKPeerPaymentAccount, NSMutableSet, CNContact, PKPaymentAuthorizationStateMachine, PKAuthenticator, LAUIPhysicalButtonView, NSString;
+
+@interface PKPaymentAuthorizationServiceViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate, PKPaymentAuthorizationFooterViewDelegate, PKAuthenticatorDelegate, PKPaymentAuthorizationStateMachineDelegate, AKAppleIDAuthenticationInAppContextDelegate, PKPaymentAuthorizationServiceProtocol> {
+
+	PKPaymentAuthorizationLayout* _layout;
+	UIView* _contentView;
+	UITableView* _detailTableView;
+	PKPaymentAuthorizationSummaryItemsView* _summaryItemsView;
+	NSLayoutConstraint* _summaryHeightConstraint;
+	PKPaymentAuthorizationTotalView* _totalView;
+	PKPaymentAuthorizationFooterView* _footerView;
+	PKPaymentAuthorizationPasswordButtonView* _passwordButtonView;
+	NSLayoutConstraint* _passphraseBottomConstraint;
+	BOOL _needsToAccommodateKeyboard;
+	UIBarButtonItem* _cancelBarButtonItem;
+	BOOL _cancelButtonDisabled;
+	BOOL _scrollIndicatorShown;
+	UIView* _passphraseSeparatorView;
+	NSLayoutConstraint* _contentViewRightConstraint;
+	PKPaymentPreferencesViewController* _shippingMethodPreferencesController;
+	PKPaymentPreferencesViewController* _shippingAddressPreferencesController;
+	PKPaymentPreferencesViewController* _shippingContactPreferencesController;
+	PKPaymentPreferencesViewController* _paymentCardPreferencesController;
+	PKPaymentPreferencesViewController* _bankAccountPreferencesController;
+	BOOL _viewAppeared;
+	BOOL _visible;
+	BOOL _authenticating;
+	BOOL _allowCompactProcessing;
+	unsigned char _visibility;
+	BOOL _keyboardVisible;
+	CGRect _keyboardFrame;
+	CGRect _lastKeyboardFrame;
+	unsigned short _layoutRecursionCounter;
+	long long _internalFaceIDState;
+	unsigned _pearlCameraEdge;
+	long long _internalCoachingState;
+	UIViewController* _passcodeViewController;
+	UIViewController* _passphraseViewController;
+	BOOL _hostApplicationResignedActive;
+	BOOL _hostApplicationEnteredBackground;
+	BOOL _treatingHostAsBackgrounded;
+	BOOL _bypassAuthenticator;
+	BOOL _isPad;
+	BOOL _isAMPPayment;
+	BOOL _needsFinalCallback;
+	long long _preferencesStyle;
+	IOHIDEventSystemClientRef _hidSystemClient;
+	unsigned long long _biometryAttempts;
+	PKPeerPaymentAccount* _peerPaymentAccount;
+	BOOL _peerPaymentBalanceIsInsufficient;
+	NSMutableSet* _completionHandlers;
+	CNContact* _lastUnservicableAddress;
+	double _authenticatorFingerOnTime;
+	BOOL _userIntentRequired;
+	BOOL _shouldIgnorePhysicalButton;
+	BOOL _blockingHardwareCancels;
+	PKPaymentAuthorizationStateMachine* _stateMachine;
+	PKAuthenticator* _authenticator;
+	long long _coachingState;
+	LAUIPhysicalButtonView* _physicalButtonView;
+	id<PKPaymentAuthorizationServiceViewControllerDelegate><PKPaymentAuthorizationHostProtocol> _delegate;
+
+}
+
+@property (nonatomic,retain) PKPaymentAuthorizationStateMachine * stateMachine;                                                                        //@synthesize stateMachine=_stateMachine - In the implementation block
+@property (nonatomic,retain) PKAuthenticator * authenticator;                                                                                          //@synthesize authenticator=_authenticator - In the implementation block
+@property (getter=isUserIntentRequired,nonatomic,readonly) BOOL userIntentRequired;                                                                    //@synthesize userIntentRequired=_userIntentRequired - In the implementation block
+@property (nonatomic,readonly) BOOL shouldIgnorePhysicalButton;                                                                                        //@synthesize shouldIgnorePhysicalButton=_shouldIgnorePhysicalButton - In the implementation block
+@property (nonatomic,readonly) long long coachingState;                                                                                                //@synthesize coachingState=_coachingState - In the implementation block
+@property (nonatomic,retain) LAUIPhysicalButtonView * physicalButtonView;                                                                              //@synthesize physicalButtonView=_physicalButtonView - In the implementation block
+@property (assign,nonatomic,__weak) id<PKPaymentAuthorizationServiceViewControllerDelegate><PKPaymentAuthorizationHostProtocol> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,readonly) BOOL blockingHardwareCancels;                                                                                           //@synthesize blockingHardwareCancels=_blockingHardwareCancels - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(void)invalidate;
+-(id<PKPaymentAuthorizationServiceViewControllerDelegate><PKPaymentAuthorizationHostProtocol>)delegate;
+-(void)setDelegate:(id<PKPaymentAuthorizationServiceViewControllerDelegate><PKPaymentAuthorizationHostProtocol>)arg1 ;
+-(BOOL)_passwordRequired;
+-(PKAuthenticator *)authenticator;
+-(void)setAuthenticator:(PKAuthenticator *)arg1 ;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(void)viewWillDisappear:(BOOL)arg1 ;
+-(void)viewDidLoad;
+-(void)viewWillLayoutSubviews;
+-(void)_updatePreferredContentSize;
+-(void)viewWillTransitionToSize:(CGSize)arg1 withTransitionCoordinator:(id)arg2 ;
+-(void)viewDidLayoutSubviews;
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(void)viewDidDisappear:(BOOL)arg1 ;
+-(id)initWithLayout:(id)arg1 ;
+-(long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 ;
+-(id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 ;
+-(BOOL)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2 ;
+-(id)tableView:(id)arg1 willSelectRowAtIndexPath:(id)arg2 ;
+-(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 ;
+-(void)viewDidMoveToWindow:(id)arg1 shouldAppearOrDisappear:(BOOL)arg2 ;
+-(PKPaymentAuthorizationStateMachine *)stateMachine;
+-(void)setStateMachine:(PKPaymentAuthorizationStateMachine *)arg1 ;
+-(void)_hostApplicationDidEnterBackground;
+-(void)_hostApplicationWillEnterForeground;
+-(void)keyboardWillShow:(id)arg1 ;
+-(void)keyboardWillChange:(id)arg1 ;
+-(void)keyboardWillHide:(id)arg1 ;
+-(void)_createSubviews;
+-(void)signInViewController:(id)arg1 didAuthenticateWithResults:(id)arg2 error:(id)arg3 ;
+-(BOOL)signInViewController:(id)arg1 shouldContinueWithAuthenticationResults:(id)arg2 error:(id)arg3 forContext:(id)arg4 ;
+-(void)contextWillBeginPresentingSecondaryUI:(id)arg1 ;
+-(void)handleHostApplicationWillResignActive:(BOOL)arg1 ;
+-(void)handleHostApplicationDidBecomeActive;
+-(void)authorizationDidRequestMerchantSessionCompleteWithSession:(id)arg1 error:(id)arg2 ;
+-(void)authorizationDidAuthorizeContextCompleteWithResult:(id)arg1 ;
+-(void)authorizationDidAuthorizePaymentCompleteWithResult:(id)arg1 ;
+-(void)authorizationDidAuthorizePurchaseCompleteWithStatus:(long long)arg1 ;
+-(void)authorizationDidAuthorizePeerPaymentQuoteCompleteWithResult:(id)arg1 ;
+-(void)authorizationDidAuthorizeApplePayTrustSignatureCompleteWithResult:(id)arg1 ;
+-(void)authorizationDidUpdateAccountServicePaymentMethodCompleteWithUpdate:(id)arg1 signatureRequest:(id)arg2 ;
+-(void)authorizationDidSelectShippingMethodCompleteWithUpdate:(id)arg1 ;
+-(void)authorizationDidSelectShippingAddressCompleteWithUpdate:(id)arg1 ;
+-(void)authorizationDidSelectPaymentMethodCompleteWithUpdate:(id)arg1 ;
+-(void)handleHostApplicationDidCancel;
+-(void)handleDismissWithCompletion:(/*^block*/id)arg1 ;
+-(id)_unavailablePasses;
+-(BOOL)paymentAuthorizationStateMachine:(id)arg1 didTransitionFromState:(unsigned long long)arg2 toState:(unsigned long long)arg3 withParam:(id)arg4 ;
+-(void)cancelPressed:(id)arg1 ;
+-(void)_setVisible:(BOOL)arg1 ;
+-(void)_updateUserIntentRequired;
+-(void)_updateCoachingInstruction;
+-(void)_suspendAuthentication;
+-(void)_didFailWithFatalError:(id)arg1 ;
+-(void)_didSucceedWithAuthorizationStateParam:(id)arg1 ;
+-(void)_didFailWithError:(id)arg1 ;
+-(void)_processClientCallback:(id)arg1 ;
+-(void)_invalidPaymentDataWithParam:(id)arg1 ;
+-(long long)_authenticatorPolicy;
+-(void)_startEvaluation;
+-(void)_setAuthenticating:(BOOL)arg1 ;
+-(id)_evaluationRequest;
+-(void)_updatePendingTransaction:(id)arg1 withAuthorizationStateParam:(id)arg2 ;
+-(void)authenticatorDidEncounterMatchMiss:(id)arg1 ;
+-(void)_setPasscodeViewController:(id)arg1 ;
+-(void)_setPassphraseViewController:(id)arg1 ;
+-(void)authenticator:(id)arg1 didTransitionToFaceIDState:(long long)arg2 ;
+-(void)authenticator:(id)arg1 didTransitionToCoachingState:(long long)arg2 ;
+-(void)authenticatorDidEncounterFingerOn:(id)arg1 ;
+-(void)authenticatorDidEncounterFingerOff:(id)arg1 ;
+-(void)authenticator:(id)arg1 didRequestUserAction:(long long)arg2 ;
+-(void)authenticatorDidEncounterBiometricLockout:(id)arg1 ;
+-(void)presentPasscodeViewController:(id)arg1 completionHandler:(/*^block*/id)arg2 reply:(/*^block*/id)arg3 ;
+-(void)dismissPasscodeViewController;
+-(void)presentPassphraseViewController:(id)arg1 completionHandler:(/*^block*/id)arg2 reply:(/*^block*/id)arg3 ;
+-(void)dismissPassphraseViewController;
+-(void)authorizationFooterViewPasscodeButtonPressed:(id)arg1 ;
+-(void)authorizationFooterViewWillChangeConstraints:(id)arg1 ;
+-(void)authorizationFooterViewDidChangeConstraints:(id)arg1 ;
+-(void)_updateLayoutForKeyboardAction:(/*^block*/id)arg1 ;
+-(long long)coachingState;
+-(BOOL)isUserIntentRequired;
+-(LAUIPhysicalButtonView *)physicalButtonView;
+-(void)_didCancel:(BOOL)arg1 ;
+-(void)_removeSimulatorHIDListener;
+-(void)_executeCompletionHandlers;
+-(void)setFooterState:(long long)arg1 string:(id)arg2 animated:(BOOL)arg3 ;
+-(void)_setNavigationItemLeftItemForAMP;
+-(BOOL)_setNavigationItemLeftItemFromNavigationTitle;
+-(void)_payWithPasswordPressed:(id)arg1 ;
+-(void)_setVisibility:(unsigned char)arg1 ;
+-(void)_startSimulatorHIDListener;
+-(void)resumeAndUpdateContentSize;
+-(void)_showScrollIndicatorIfNeeded;
+-(id)handlePaymentRequest:(id)arg1 relevantPassUniqueID:(id)arg2 fromAppWithLocalizedName:(id)arg3 applicationIdentifier:(id)arg4 bundleIdentifier:(id)arg5 teamIdentifier:(id)arg6 ;
+-(void)_setupWithPaymentRequest:(id)arg1 relevantPassUniqueID:(id)arg2 fromAppWithLocalizedName:(id)arg3 applicationIdentifier:(id)arg4 bundleIdentifier:(id)arg5 teamIdentifier:(id)arg6 ;
+-(void)_updatePhysicalButtonInstruction;
+-(void)_suspendAuthenticationAndForceReset:(BOOL)arg1 ;
+-(void)_updateCancelButtonEnabledForState:(unsigned long long)arg1 param:(id)arg2 ;
+-(void)_resumeAuthenticationWithPreviousError:(id)arg1 animated:(BOOL)arg2 ;
+-(void)_updatePreferencesWithErrors:(id)arg1 ;
+-(void)_showUnservicableAddressAlertForErrors:(id)arg1 ;
+-(void)_abandonPSD2StyleAMPBuy;
+-(void)_abandonActiveEnrollmentAttempts;
+-(void)setFooterState:(long long)arg1 string:(id)arg2 animated:(BOOL)arg3 withCompletion:(/*^block*/id)arg4 ;
+-(void)_updateBackgroundedState:(BOOL)arg1 ;
+-(void)_updateShippingMethods;
+-(void)_sendDidEncounterAuthorizationEventIfNecessary:(unsigned long long)arg1 ;
+-(void)biometricAttemptFailed;
+-(void)_updateFooterStateForBiometricMatchMissIfNecessary;
+-(BOOL)_passcodeAllowed;
+-(void)_addPassphraseViewControllerToHierarchy:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)dismissPassphraseViewControllerWithCompletion:(/*^block*/id)arg1 ;
+-(void)_removePassphraseViewFromHierarchyWithCompletionHandler:(/*^block*/id)arg1 ;
+-(BOOL)_shouldShowSeparatorForRowAtIndexPath:(id)arg1 ;
+-(Class)_tableViewClassForDataItem:(id)arg1 ;
+-(Class)_viewPresenterClassForDataItem:(id)arg1 ;
+-(BOOL)_shouldShowUsePeerPaymentBalanceToggle;
+-(void)_selectOptionsForDataItem:(id)arg1 ;
+-(void)_updateAvailableCardsPreferences;
+-(void)_handleModelUpdate;
+-(void)_setupShippingMethods;
+-(void)_setupShippingAddress;
+-(void)_setupShippingContact;
+-(void)_setupPaymentPassAndBillingAddress;
+-(void)_setupBankAccounts;
+-(void)_updateBankAccounts;
+-(id)_availabilityStringForPass:(id)arg1 ;
+-(id)_availablePasses;
+-(long long)selectedPaymentApplicationIndexFromCardEntries:(id)arg1 ;
+-(long long)_totalViewStyle;
+-(id)_compactNavigationController;
+-(void)_setUserIntentRequired:(BOOL)arg1 shouldIgnorePhysicalButton:(BOOL)arg2 ;
+-(id)handlePaymentRequest:(id)arg1 fromAppWithLocalizedName:(id)arg2 andApplicationIdentifier:(id)arg3 ;
+-(void)setPhysicalButtonView:(LAUIPhysicalButtonView *)arg1 ;
+-(void)authorizationDidAuthorizeCashDisbursementWithResult:(id)arg1 ;
+-(BOOL)shouldIgnorePhysicalButton;
+-(BOOL)blockingHardwareCancels;
+@end
+

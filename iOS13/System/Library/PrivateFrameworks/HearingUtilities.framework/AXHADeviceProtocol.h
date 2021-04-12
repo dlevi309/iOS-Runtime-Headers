@@ -1,0 +1,146 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:53 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities
+*/
+
+@class NSString, NSMutableArray, NSDate, NSArray, AXHearingAidMode;
+
+
+@protocol AXHADeviceProtocol <NSObject>
+@property (nonatomic,readonly) BOOL isPaired; 
+@property (nonatomic,readonly) BOOL isConnecting; 
+@property (assign,nonatomic) BOOL keepInSync; 
+@property (nonatomic,retain,readonly) NSString * name; 
+@property (nonatomic,retain,readonly) NSMutableArray * manufacturer; 
+@property (nonatomic,retain,readonly) NSMutableArray * model; 
+@property (nonatomic,retain,readonly) NSString * leftFirmwareVersion; 
+@property (nonatomic,retain,readonly) NSString * rightFirmwareVersion; 
+@property (nonatomic,retain,readonly) NSString * leftHardwareVersion; 
+@property (nonatomic,retain,readonly) NSString * rightHardwareVersion; 
+@property (assign,nonatomic) int availableEars; 
+@property (nonatomic,retain,readonly) NSString * rightUUID; 
+@property (nonatomic,retain,readonly) NSString * leftUUID; 
+@property (nonatomic,retain,readonly) NSString * leftPeripheralUUID; 
+@property (nonatomic,retain,readonly) NSString * rightPeripheralUUID; 
+@property (assign,nonatomic) double rightMicrophoneVolume; 
+@property (assign,nonatomic) double leftMicrophoneVolume; 
+@property (assign,nonatomic) double rightStreamVolume; 
+@property (assign,nonatomic) double leftStreamVolume; 
+@property (assign,nonatomic) double rightSensitivity; 
+@property (assign,nonatomic) double leftSensitivity; 
+@property (assign,nonatomic) double rightMixedVolume; 
+@property (assign,nonatomic) double leftMixedVolume; 
+@property (assign,nonatomic) char rightTreble; 
+@property (assign,nonatomic) char leftTreble; 
+@property (assign,nonatomic) char rightBass; 
+@property (assign,nonatomic) char leftBass; 
+@property (nonatomic,readonly) double rightBatteryLevel; 
+@property (nonatomic,readonly) double leftBatteryLevel; 
+@property (nonatomic,retain,readonly) NSDate * leftBatteryLowDate; 
+@property (nonatomic,retain,readonly) NSDate * rightBatteryLowDate; 
+@property (nonatomic,readonly) short leftMicrophoneVolumeSteps; 
+@property (nonatomic,readonly) short rightMicrophoneVolumeSteps; 
+@property (nonatomic,readonly) short leftStreamVolumeSteps; 
+@property (nonatomic,readonly) short rightStreamVolumeSteps; 
+@property (nonatomic,readonly) short leftSensitivitySteps; 
+@property (nonatomic,readonly) short rightSensitivitySteps; 
+@property (nonatomic,readonly) short leftMixedVolumeSteps; 
+@property (nonatomic,readonly) short rightMixedVolumeSteps; 
+@property (nonatomic,readonly) BOOL supportsBinauralStreaming; 
+@property (nonatomic,readonly) BOOL supportsCombinedPresets; 
+@property (nonatomic,readonly) BOOL supportsCombinedVolumes; 
+@property (nonatomic,copy,readonly) NSArray * rightPrograms; 
+@property (nonatomic,copy,readonly) NSArray * leftPrograms; 
+@property (nonatomic,retain,readonly) AXHearingAidMode * leftSelectedProgram; 
+@property (nonatomic,retain,readonly) AXHearingAidMode * rightSelectedProgram; 
+@property (nonatomic,retain,readonly) AXHearingAidMode * leftSelectedStreamingProgram; 
+@property (nonatomic,retain,readonly) AXHearingAidMode * rightSelectedStreamingProgram; 
+@property (nonatomic,readonly) int availableInputEars; 
+@property (nonatomic,retain,readonly) NSString * deviceUUID; 
+@required
+-(NSString *)name;
+-(NSMutableArray *)model;
+-(unsigned long long)deviceType;
+-(NSString *)deviceUUID;
+-(void)connect;
+-(id)valueForProperty:(unsigned long long)arg1;
+-(void)setValue:(id)arg1 forProperty:(unsigned long long)arg2;
+-(BOOL)isConnected;
+-(NSMutableArray *)manufacturer;
+-(BOOL)isConnecting;
+-(BOOL)isPaired;
+-(double)leftBatteryLevel;
+-(double)rightBatteryLevel;
+-(BOOL)leftAvailable;
+-(void)setLeftMicrophoneVolume:(double)arg1;
+-(void)setLeftStreamVolume:(double)arg1;
+-(int)availableEars;
+-(void)setAvailableEars:(int)arg1;
+-(BOOL)rightAvailable;
+-(void)setRightMicrophoneVolume:(double)arg1;
+-(id)programs;
+-(void)selectProgram:(id)arg1 forEar:(int)arg2;
+-(BOOL)supportsCombinedPresets;
+-(NSArray *)leftPrograms;
+-(NSArray *)rightPrograms;
+-(AXHearingAidMode *)leftSelectedProgram;
+-(AXHearingAidMode *)rightSelectedProgram;
+-(AXHearingAidMode *)leftSelectedStreamingProgram;
+-(AXHearingAidMode *)rightSelectedStreamingProgram;
+-(BOOL)hasConnection;
+-(BOOL)didLoadBasicProperties;
+-(BOOL)didLoadRequiredProperties;
+-(NSString *)leftUUID;
+-(NSString *)rightUUID;
+-(NSString *)leftFirmwareVersion;
+-(NSString *)rightFirmwareVersion;
+-(NSString *)leftHardwareVersion;
+-(NSString *)rightHardwareVersion;
+-(BOOL)containsPeripheralWithUUID:(id)arg1;
+-(int)availableInputEars;
+-(double)leftMicrophoneVolume;
+-(short)leftStreamVolumeSteps;
+-(short)leftSensitivitySteps;
+-(double)leftSensitivity;
+-(void)setLeftSensitivity:(double)arg1;
+-(short)leftMicrophoneVolumeSteps;
+-(char)leftTreble;
+-(void)setLeftTreble:(char)arg1;
+-(char)leftBass;
+-(void)setLeftBass:(char)arg1;
+-(double)leftMixedVolume;
+-(void)setLeftMixedVolume:(double)arg1;
+-(short)leftMixedVolumeSteps;
+-(double)rightMicrophoneVolume;
+-(short)rightStreamVolumeSteps;
+-(short)rightSensitivitySteps;
+-(double)rightSensitivity;
+-(void)setRightSensitivity:(double)arg1;
+-(short)rightMicrophoneVolumeSteps;
+-(char)rightTreble;
+-(void)setRightTreble:(char)arg1;
+-(char)rightBass;
+-(void)setRightBass:(char)arg1;
+-(double)rightMixedVolume;
+-(void)setRightMixedVolume:(double)arg1;
+-(short)rightMixedVolumeSteps;
+-(BOOL)supportsBinauralStreaming;
+-(BOOL)supportsCombinedVolumes;
+-(void)disconnectAndUnpair:(BOOL)arg1;
+-(void)loadRequiredProperties;
+-(NSString *)leftPeripheralUUID;
+-(NSString *)rightPeripheralUUID;
+-(BOOL)keepInSync;
+-(void)setRightStreamVolume:(double)arg1;
+-(double)leftStreamVolume;
+-(double)rightStreamVolume;
+-(NSDate *)leftBatteryLowDate;
+-(NSDate *)rightBatteryLowDate;
+-(id)initWithPersistentRepresentation:(id)arg1;
+-(id)selectedPrograms;
+-(id)selectedProgramIndexes;
+-(void)setKeepInSync:(BOOL)arg1;
+
+@end
+

@@ -1,0 +1,14 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:33 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext
+*/
+
+
+@protocol _CDUserContextServer <_CDLocalContextServer>
+@required
+-(void)valuesForPaths:(id)arg1 inContextsMatching:(id)arg2 handler:(/*^block*/id)arg3;
+-(void)valuesForPaths:(id)arg1 handler:(/*^block*/id)arg2;
+
+@end
+

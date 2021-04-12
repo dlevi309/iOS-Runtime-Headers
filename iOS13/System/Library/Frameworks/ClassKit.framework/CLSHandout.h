@@ -1,0 +1,76 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:30 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/ClassKit.framework/ClassKit
+*/
+
+#import <ClassKit/CLSAbstractHandout.h>
+#import <libobjc.A.dylib/CLSRelationable.h>
+
+@class NSString, NSDate, NSError, CLSClass, NSArray;
+
+@interface CLSHandout : CLSAbstractHandout <CLSRelationable> {
+
+	NSString* _title;
+	NSString* _instructions;
+	NSDate* _dueDate;
+	BOOL _reviewed;
+	unsigned long long _flags;
+	NSDate* _dateLastReviewed;
+	long long _state;
+	long long _publishingState;
+	NSError* _publishError;
+
+}
+
+@property (nonatomic,readonly) CLSClass * effectiveClass; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (assign,nonatomic) long long state;                                        //@synthesize state=_state - In the implementation block
+@property (assign,nonatomic) long long publishingState;                              //@synthesize publishingState=_publishingState - In the implementation block
+@property (nonatomic,retain) NSError * publishError;                                 //@synthesize publishError=_publishError - In the implementation block
+@property (nonatomic,retain) NSDate * dateLastReviewed;                              //@synthesize dateLastReviewed=_dateLastReviewed - In the implementation block
+@property (nonatomic,retain) NSDate * lastReviewedDate; 
+@property (assign,nonatomic) unsigned long long flags;                               //@synthesize flags=_flags - In the implementation block
+@property (nonatomic,readonly) NSArray * recipients; 
+@property (nonatomic,readonly) NSArray * attachments; 
+@property (nonatomic,readonly) NSArray * collaborationStates; 
+@property (nonatomic,readonly) NSArray * attachmentCollaborationStates; 
+@property (assign,getter=isReviewed,nonatomic) BOOL reviewed; 
++(BOOL)supportsSecureCoding;
++(id)relations;
+-(id)init;
+-(NSString *)description;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)_init;
+-(unsigned long long)flags;
+-(NSArray *)attachments;
+-(id)dictionaryRepresentation;
+-(long long)state;
+-(void)setState:(long long)arg1 ;
+-(NSArray *)recipients;
+-(void)setFlags:(unsigned long long)arg1 ;
+-(void)mergeWithObject:(id)arg1 ;
+-(BOOL)validateObject:(id*)arg1 ;
+-(BOOL)isReviewed;
+-(void)setLastReviewedDate:(NSDate *)arg1 ;
+-(NSArray *)collaborationStates;
+-(long long)publishingState;
+-(void)setReviewed:(BOOL)arg1 ;
+-(NSDate *)lastReviewedDate;
+-(void)addHandoutAttachment:(id)arg1 ;
+-(void)removeHandoutAttachment:(id)arg1 ;
+-(void)addHandoutRecipient:(id)arg1 ;
+-(void)removeHandoutRecipient:(id)arg1 ;
+-(NSArray *)attachmentCollaborationStates;
+-(NSDate *)dateLastReviewed;
+-(void)setDateLastReviewed:(NSDate *)arg1 ;
+-(void)setPublishingState:(long long)arg1 ;
+-(NSError *)publishError;
+-(void)setPublishError:(NSError *)arg1 ;
+-(CLSClass *)effectiveClass;
+@end
+

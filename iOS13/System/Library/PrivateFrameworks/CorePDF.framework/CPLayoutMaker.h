@@ -1,0 +1,12 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:04 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CorePDF.framework/CorePDF
+*/
+
+
+@interface CPLayoutMaker : NSObject
+-(void)makeLayouts:(id)arg1 from:(id)arg2 ;
+-(BOOL)column:(id)arg1 fits:(id)arg2 ;
+@end
+

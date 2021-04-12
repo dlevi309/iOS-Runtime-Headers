@@ -1,0 +1,88 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:16 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SensorKitUI.framework/SensorKitUI
+*/
+
+#import <UIKitCore/UITableViewCell.h>
+
+@class UILabel, NSArray, UIStackView, UIFont, UIColor;
+
+@interface SRAuthorizationCategoryDetailCell : UITableViewCell {
+
+	BOOL _showAppUsage;
+	BOOL _OBKStyle;
+	UILabel* _categorySubTitleLabel;
+	UILabel* _categoryTitleLabel;
+	UILabel* _appUsageTitleLabel;
+	UILabel* _appUsageBodyLabel;
+	UILabel* _collectedTitleLabel;
+	UILabel* _notCollectedTitleLabel;
+	NSArray* _collectedLabels;
+	NSArray* _notCollectedLabels;
+	long long _numberOfCollectedLabels;
+	long long _numberOfNotCollectedLabels;
+	UIStackView* _categoryStack;
+	UIStackView* _appUsageStack;
+	UIStackView* _stacks;
+	UIFont* _titleFont;
+	UIFont* _bodyFont;
+	UIColor* _fontColor;
+
+}
+
+@property (nonatomic,retain) NSArray * collectedLabels;                         //@synthesize collectedLabels=_collectedLabels - In the implementation block
+@property (nonatomic,retain) NSArray * notCollectedLabels;                      //@synthesize notCollectedLabels=_notCollectedLabels - In the implementation block
+@property (nonatomic,retain) UIStackView * categoryStack;                       //@synthesize categoryStack=_categoryStack - In the implementation block
+@property (nonatomic,retain) UIStackView * appUsageStack;                       //@synthesize appUsageStack=_appUsageStack - In the implementation block
+@property (nonatomic,retain) UIStackView * stacks;                              //@synthesize stacks=_stacks - In the implementation block
+@property (nonatomic,retain) UIFont * titleFont;                                //@synthesize titleFont=_titleFont - In the implementation block
+@property (nonatomic,retain) UIFont * bodyFont;                                 //@synthesize bodyFont=_bodyFont - In the implementation block
+@property (nonatomic,retain) UIColor * fontColor;                               //@synthesize fontColor=_fontColor - In the implementation block
+@property (assign,nonatomic) BOOL OBKStyle;                                     //@synthesize OBKStyle=_OBKStyle - In the implementation block
+@property (nonatomic,readonly) UILabel * categorySubTitleLabel;                 //@synthesize categorySubTitleLabel=_categorySubTitleLabel - In the implementation block
+@property (nonatomic,readonly) UILabel * categoryTitleLabel;                    //@synthesize categoryTitleLabel=_categoryTitleLabel - In the implementation block
+@property (nonatomic,readonly) UILabel * appUsageTitleLabel;                    //@synthesize appUsageTitleLabel=_appUsageTitleLabel - In the implementation block
+@property (nonatomic,readonly) UILabel * appUsageBodyLabel;                     //@synthesize appUsageBodyLabel=_appUsageBodyLabel - In the implementation block
+@property (nonatomic,readonly) UILabel * collectedTitleLabel;                   //@synthesize collectedTitleLabel=_collectedTitleLabel - In the implementation block
+@property (nonatomic,readonly) UILabel * notCollectedTitleLabel;                //@synthesize notCollectedTitleLabel=_notCollectedTitleLabel - In the implementation block
+@property (assign,nonatomic) BOOL showAppUsage;                                 //@synthesize showAppUsage=_showAppUsage - In the implementation block
+@property (assign,nonatomic) long long numberOfCollectedLabels;                 //@synthesize numberOfCollectedLabels=_numberOfCollectedLabels - In the implementation block
+@property (assign,nonatomic) long long numberOfNotCollectedLabels;              //@synthesize numberOfNotCollectedLabels=_numberOfNotCollectedLabels - In the implementation block
+-(void)dealloc;
+-(UIFont *)titleFont;
+-(void)setTitleFont:(UIFont *)arg1 ;
+-(void)setFontColor:(UIColor *)arg1 ;
+-(UIColor *)fontColor;
+-(UIFont *)bodyFont;
+-(void)setBodyFont:(UIFont *)arg1 ;
+-(UIStackView *)stacks;
+-(id)dynamicHeightLabel;
+-(id)stackViewForSubviews:(id)arg1 spacing:(double)arg2 ;
+-(void)setCollectedLabels:(NSArray *)arg1 ;
+-(void)setNotCollectedLabels:(NSArray *)arg1 ;
+-(void)setCategoryStack:(UIStackView *)arg1 ;
+-(void)setAppUsageStack:(UIStackView *)arg1 ;
+-(void)setStacks:(UIStackView *)arg1 ;
+-(UILabel *)collectedTitleLabel;
+-(UILabel *)notCollectedTitleLabel;
+-(BOOL)OBKStyle;
+-(UIStackView *)appUsageStack;
+-(void)addBulletStackViewForCollected:(BOOL)arg1 count:(long long)arg2 ;
+-(id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2 titleFont:(id)arg3 bodyFont:(id)arg4 fontColor:(id)arg5 OBKStyle:(BOOL)arg6 ;
+-(void)setShowAppUsage:(BOOL)arg1 ;
+-(void)setNumberOfCollectedLabels:(long long)arg1 ;
+-(void)setNumberOfNotCollectedLabels:(long long)arg1 ;
+-(UILabel *)categorySubTitleLabel;
+-(UILabel *)categoryTitleLabel;
+-(UILabel *)appUsageTitleLabel;
+-(UILabel *)appUsageBodyLabel;
+-(NSArray *)collectedLabels;
+-(NSArray *)notCollectedLabels;
+-(BOOL)showAppUsage;
+-(long long)numberOfCollectedLabels;
+-(long long)numberOfNotCollectedLabels;
+-(UIStackView *)categoryStack;
+-(void)setOBKStyle:(BOOL)arg1 ;
+@end
+

@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport
+*/
+
+
+#import <OfficeImport/OfficeImport-Structs.h>
+@interface WBParagraphProperties : NSObject
++(WrdParagraphProperties*)createTrackedPropertiesIfNeeded:(id)arg1 ;
++(void)readFrom:(id)arg1 wrdProperties:(WrdParagraphProperties*)arg2 tracked:(WrdParagraphProperties*)arg3 document:(id)arg4 properties:(id)arg5 ;
++(void)mapWordProperties:(WrdParagraphProperties*)arg1 reader:(id)arg2 toProperties:(id)arg3 ;
++(id)formattingChangeDate:(const WrdDateTime*)arg1 ;
+@end
+

@@ -1,0 +1,90 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:01 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Memories.framework/Memories
+*/
+
+#import <Memories/Memories-Structs.h>
+#import <libobjc.A.dylib/PMEditProviderProtocol.h>
+#import <libobjc.A.dylib/PMRelatedClipsDelegate.h>
+
+@protocol PMEditProviderDelegate, PMClipCollectionProviderDelegate, VEKProjectProtocol;
+@class VEKProduction, VEKResult, NSMutableArray, NSMutableSet, NSString;
+
+@interface PMClipCollectionProvider : NSObject <PMEditProviderProtocol, PMRelatedClipsDelegate> {
+
+	BOOL _shouldCancel;
+	VEKProduction* _production;
+	id<PMEditProviderDelegate> _delegate;
+	id<PMClipCollectionProviderDelegate> _clipCollectionDelegate;
+	VEKResult* _result;
+	id<VEKProjectProtocol> _project;
+	double _currentDuration;
+	NSMutableArray* _assetClipProviders;
+	NSMutableSet* _projectAssets;
+
+}
+
+@property (nonatomic,readonly) VEKProduction * production; 
+@property (nonatomic,readonly) NSMutableArray * assetClipProviders; 
+@property (nonatomic,retain) id<VEKProjectProtocol> project;                                                  //@synthesize project=_project - In the implementation block
+@property (nonatomic,retain) VEKResult * result;                                                              //@synthesize result=_result - In the implementation block
+@property (assign,nonatomic) double currentDuration;                                                          //@synthesize currentDuration=_currentDuration - In the implementation block
+@property (nonatomic,retain) NSMutableArray * assetClipProviders;                                             //@synthesize assetClipProviders=_assetClipProviders - In the implementation block
+@property (nonatomic,retain) NSMutableSet * projectAssets;                                                    //@synthesize projectAssets=_projectAssets - In the implementation block
+@property (assign,nonatomic) BOOL shouldCancel;                                                               //@synthesize shouldCancel=_shouldCancel - In the implementation block
+@property (assign,nonatomic,__weak) id<PMClipCollectionProviderDelegate> clipCollectionDelegate;              //@synthesize clipCollectionDelegate=_clipCollectionDelegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,retain) VEKProduction * production;                                                      //@synthesize production=_production - In the implementation block
+@property (assign,nonatomic,__weak) id<PMEditProviderDelegate> delegate;                                      //@synthesize delegate=_delegate - In the implementation block
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id<PMEditProviderDelegate>)delegate;
+-(void)setDelegate:(id<PMEditProviderDelegate>)arg1 ;
+-(VEKResult *)result;
+-(void)setResult:(VEKResult *)arg1 ;
+-(unsigned long long)numberOfItems;
+-(void)updateWithResult:(id)arg1 ;
+-(BOOL)shouldCancel;
+-(void)setShouldCancel:(BOOL)arg1 ;
+-(VEKProduction *)production;
+-(void)setProduction:(VEKProduction *)arg1 ;
+-(double)currentDuration;
+-(void)setCurrentDuration:(double)arg1 ;
+-(BOOL)assetHasUserModifiedAudioLevel:(id)arg1 ;
+-(BOOL)assetIsPartOfMultiUp:(id)arg1 ;
+-(void)triggerEdit;
+-(BOOL)clipIsPartOfSplit:(id)arg1 ;
+-(BOOL)clipIsPartOfMultiUp:(id)arg1 ;
+-(id<VEKProjectProtocol>)project;
+-(id)initWithProduction:(id)arg1 ;
+-(id)clipProvidersForAsset:(id)arg1 ;
+-(void)setProject:(id<VEKProjectProtocol>)arg1 ;
+-(id)suggestionsForAsset:(id)arg1 ;
+-(id)initWithResult:(id)arg1 production:(id)arg2 ;
+-(unsigned long long)clipProviderIndexForSequenceTime:(SCD_Struct_PM5)arg1 ;
+-(void)setClipCollectionDelegate:(id<PMClipCollectionProviderDelegate>)arg1 ;
+-(id)clipProviderAtIndex:(unsigned long long)arg1 ;
+-(id)suggestedAssets;
+-(id)currentProductionAssetIDs;
+-(void)removeClipAtIndex:(unsigned long long)arg1 ;
+-(id)indexesForClipProvidersOfAssetID:(id)arg1 ;
+-(id)currentProductionAssets;
+-(void)updateClipProvidersForAssets:(id)arg1 progressHandler:(/*^block*/id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)setProjectAssets:(NSMutableSet *)arg1 ;
+-(id<PMClipCollectionProviderDelegate>)clipCollectionDelegate;
+-(NSMutableSet *)projectAssets;
+-(NSMutableArray *)assetClipProviders;
+-(void)setAssetClipProviders:(NSMutableArray *)arg1 ;
+-(void)updateWithResult:(id)arg1 error:(id)arg2 ;
+-(id)allAssetsIncludingAllMomentsAssets:(BOOL)arg1 ;
+-(void)removeSuggestionsForAsset:(id)arg1 ;
+-(void)updateSuggestionsForAddedAsset:(id)arg1 ;
+-(id)clipSuggestionsForAsset:(id)arg1 ;
+-(id)assetSetFromProject:(id)arg1 ;
+-(void)validateRangeSuggestionMatching;
+-(id)_otherSplitClipsForClip:(id)arg1 ;
+@end
+

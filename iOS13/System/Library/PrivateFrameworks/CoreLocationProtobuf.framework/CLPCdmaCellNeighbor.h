@@ -1,0 +1,62 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:52 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreLocationProtobuf.framework/CoreLocationProtobuf
+*/
+
+#import <CoreLocationProtobuf/CoreLocationProtobuf-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@interface CLPCdmaCellNeighbor : PBCodable <NSCopying> {
+
+	int _channel;
+	int _ecn0;
+	int _pilotPhase;
+	int _pnoffset;
+	int _rscp;
+	SCD_Struct_CL4 _has;
+
+}
+
+@property (assign,nonatomic) BOOL hasPnoffset; 
+@property (assign,nonatomic) int pnoffset;                    //@synthesize pnoffset=_pnoffset - In the implementation block
+@property (assign,nonatomic) BOOL hasPilotPhase; 
+@property (assign,nonatomic) int pilotPhase;                  //@synthesize pilotPhase=_pilotPhase - In the implementation block
+@property (assign,nonatomic) BOOL hasEcn0; 
+@property (assign,nonatomic) int ecn0;                        //@synthesize ecn0=_ecn0 - In the implementation block
+@property (assign,nonatomic) BOOL hasRscp; 
+@property (assign,nonatomic) int rscp;                        //@synthesize rscp=_rscp - In the implementation block
+@property (assign,nonatomic) BOOL hasChannel; 
+@property (assign,nonatomic) int channel;                     //@synthesize channel=_channel - In the implementation block
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(int)channel;
+-(int)rscp;
+-(int)ecn0;
+-(void)setRscp:(int)arg1 ;
+-(void)setEcn0:(int)arg1 ;
+-(void)setChannel:(int)arg1 ;
+-(void)setHasChannel:(BOOL)arg1 ;
+-(BOOL)hasChannel;
+-(void)setPnoffset:(int)arg1 ;
+-(void)setHasPnoffset:(BOOL)arg1 ;
+-(BOOL)hasPnoffset;
+-(void)setPilotPhase:(int)arg1 ;
+-(void)setHasPilotPhase:(BOOL)arg1 ;
+-(BOOL)hasPilotPhase;
+-(void)setHasEcn0:(BOOL)arg1 ;
+-(BOOL)hasEcn0;
+-(void)setHasRscp:(BOOL)arg1 ;
+-(BOOL)hasRscp;
+-(int)pnoffset;
+-(int)pilotPhase;
+@end
+

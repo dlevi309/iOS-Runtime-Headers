@@ -1,0 +1,165 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
+*/
+
+
+@protocol OS_dispatch_queue, AFSettingsDelegate;
+@class NSXPCConnection, NSObject, NSArray, AFVoiceInfo;
+
+@interface AFSettingsConnection : NSObject {
+
+	NSXPCConnection* _connection;
+	NSObject*<OS_dispatch_queue> _voicesQueue;
+	NSArray* _voices;
+	AFVoiceInfo* _selectedVoice;
+	id<AFSettingsDelegate> _delegate;
+	NSObject*<OS_dispatch_queue> _serialQueue;
+
+}
+
+@property (assign,setter=_setDelegate:,nonatomic,__weak) id<AFSettingsDelegate> _delegate; 
++(void)initialize;
+-(id)init;
+-(void)dealloc;
+-(id)_connection;
+-(id<AFSettingsDelegate>)_delegate;
+-(id)accounts;
+-(void)setLanguage:(id)arg1 ;
+-(void)_setDelegate:(id)arg1 ;
+-(void)fetchSupportedLanguageCodes:(/*^block*/id)arg1 ;
+-(void)setSiriDataSharingOptInStatus:(long long)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setOutputVoice:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setOutputVoice:(id)arg1 ;
+-(void)getSiriDataSharingOptInStatusWithCompletion:(/*^block*/id)arg1 ;
+-(void)homeOnboardingFlowInvoked:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)fetchSupportedMultiUserLanguageCodes:(/*^block*/id)arg1 ;
+-(void)_clearConnection;
+-(void)setAssistantEnabled:(BOOL)arg1 ;
+-(void)stopAudioPlaybackRequest:(id)arg1 immediately:(BOOL)arg2 ;
+-(void)stopAllAudioPlaybackRequests:(BOOL)arg1 ;
+-(void)startUIRequestWithText:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)startUIRequestWithInfo:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)startRemoteRequest:(id)arg1 onPeer:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)deleteAccountWithIdentifier:(id)arg1 ;
+-(void)setActiveAccountIdentifier:(id)arg1 ;
+-(void)setDictationEnabled:(BOOL)arg1 ;
+-(void)_setSyncNeededForReason:(id)arg1 ;
+-(void)_clearSyncNeededForKey:(id)arg1 ;
+-(void)_fetchPeerData:(/*^block*/id)arg1 ;
+-(void)_setSyncVerificationNeededAndFullReportNeeded:(BOOL)arg1 shouldPostNotification:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_startDeepSyncVerificationForKeys:(id)arg1 ;
+-(void)_runServiceMaintenance;
+-(void)setLanguage:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setLanguage:(id)arg1 outputVoice:(id)arg2 withCompletion:(/*^block*/id)arg3 ;
+-(void)getOfflineDictationStatusWithCompletion:(/*^block*/id)arg1 ;
+-(void)updateOfflineSpeechProfileWithLanguage:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)createOfflineSpeechProfileWithLanguage:(id)arg1 JSONData:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)setOfflineDictationProfileOverridePath:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)startUIRequestWithSpeechAudioFileURL:(id)arg1 ;
+-(void)startMultiUserUIRequestWithText:(id)arg1 expectedSpeakerSharedUserID:(id)arg2 expectedSpeakerConfidenceScore:(unsigned long long)arg3 nonspeakerConfidenceScores:(id)arg4 completion:(/*^block*/id)arg5 ;
+-(void)dismissUI;
+-(void)startUIMockServerRequestWithReplayFileURL:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getPeerIdentifiers:(/*^block*/id)arg1 ;
+-(void)startAudioPlaybackRequest:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setSupplementalLanguageDictionary:(id)arg1 forProduct:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)setSupplementalLanguages:(id)arg1 forProduct:(id)arg2 forBuildVersion:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)getSupplementalLanguagesDictionary:(/*^block*/id)arg1 ;
+-(void)getSupplementalLanguagesModificationDate:(/*^block*/id)arg1 ;
+-(void)getSupplementalLanguageDictionaryForProduct:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getSupplementalLanguagesForProduct:(id)arg1 forBuildVersion:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)fetchEventRecordsFromAnalyticsStoreAtPath:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)purgeAnalyticsStoreWithCompletion:(/*^block*/id)arg1 ;
+-(void)resetAnalyticsStoreWithCompletion:(/*^block*/id)arg1 ;
+-(void)sendMetricsToServerWithCompletion:(/*^block*/id)arg1 ;
+-(void)fetchExperimentConfigurationsWithCompletion:(/*^block*/id)arg1 ;
+-(void)fetchExperimentContextWithCompletion:(/*^block*/id)arg1 ;
+-(void)disableAndDeleteCloudSyncWithCompletion:(/*^block*/id)arg1 ;
+-(void)getDevicesWithAvailablePHSAssetsForLanguage:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getDevicesWithAvailablePHSAssetsOnDeviceCheck:(/*^block*/id)arg1 ;
+-(void)getMeCard:(/*^block*/id)arg1 ;
+-(void)getStereoPartnerLastMyriadWinDate:(/*^block*/id)arg1 ;
+-(void)getStereoPairState:(/*^block*/id)arg1 ;
+-(void)setConfigOverrides:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)configOverrides:(/*^block*/id)arg1 ;
+-(void)getSiriOutputVolumeForAudioRoute:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setSiriOutputVolume:(float)arg1 forAudioRoute:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)getBluetoothDeviceInfoWithAddress:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getBluetoothDeviceInfoWithUID:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getConnectedBluetoothDeviceInfoArrayWithCompletion:(/*^block*/id)arg1 ;
+-(void)getPairedBluetoothDeviceInfoArrayWithCompletion:(/*^block*/id)arg1 ;
+-(void)getBluetoothWirelessSplitterSessionInfoWithCompletion:(/*^block*/id)arg1 ;
+-(void)addMultiUserUser:(id)arg1 sharedId:(id)arg2 loggableSharedId:(id)arg3 enrollmentName:(id)arg4 isPrimary:(BOOL)arg5 completion:(/*^block*/id)arg6 ;
+-(void)removeMultiUserUser:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)showMultiUsers:(/*^block*/id)arg1 ;
+-(void)forceMultiUserSync:(BOOL)arg1 download:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)getHomeUserIdForSharedUserId:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getSharedUserIdForHomeUserId:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)fetchMultiUserVoiceIdentificationSetting:(/*^block*/id)arg1 ;
+-(void)setNanoAssistantEnabled:(BOOL)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoDictationEnabled:(BOOL)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoPhraseSpotterEnabled:(BOOL)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoRaiseToSpeakEnabled:(BOOL)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoUseDeviceSpeakerForTTS:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoTTSSpeakerVolume:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoOutputVoice:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoLanguage:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoCrownActivationEnabled:(BOOL)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setNanoSiriDataSharingOptInStatus:(long long)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)getSpokenNotificationTemporarilyDisabledEndDateWithCompletion:(/*^block*/id)arg1 ;
+-(void)setSpokenNotificationTemporarilyDisabledUntil:(id)arg1 ;
+-(void)clearSpokenNotificationTemporarilyDisabledStatus;
+-(void)getSpokenNotificationTemporarilyDisabledEndDateForApp:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setSpokenNotificationTemporarilyDisabledForApp:(id)arg1 until:(id)arg2 ;
+-(void)getSpokenNotificationShouldAlwaysSpeakNotificationsWithCompletion:(/*^block*/id)arg1 ;
+-(void)setSpokenNotificationShouldAlwaysSpeakNotifications:(BOOL)arg1 ;
+-(void)getSpokenNotificationShouldSkipTriggerlessRepliesWithCompletion:(/*^block*/id)arg1 ;
+-(void)setSpokenNotificationShouldSkipTriggerlessReplies:(BOOL)arg1 ;
+-(void)setSpokenNotificationProxCardSeen:(BOOL)arg1 ;
+-(void)setOpportuneSpeakingEdgeDetectorSignalOverride:(long long)arg1 ;
+-(void)clearOpportuneSpeakingEdgeDetectorSignalOverride;
+-(void)setSiriDataSharingOptInAlertPresented:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)deleteSiriHistoryWithContext:(id)arg1 withCompletion:(/*^block*/id)arg2 ;
+-(void)setSiriDesignModeEnabled:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)siriDesignModeIsEnabled:(/*^block*/id)arg1 ;
+-(void)barrier;
+-(void)setLanguage:(id)arg1 outputVoice:(id)arg2 ;
+-(void)startObservingWirelessSplitterSession;
+-(id)_settingsServiceWithErrorHandler:(/*^block*/id)arg1 ;
+-(void)fetchAccountsWithCompletion:(/*^block*/id)arg1 ;
+-(id)_settingsService;
+-(void)_setVoices:(id)arg1 ;
+-(void)getAvailableVoicesForRecognitionLanguage:(id)arg1 includeAssetInfo:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(void)getAvailableVoicesForLanguage:(id)arg1 includeAssetInfo:(BOOL)arg2 completion:(/*^block*/id)arg3 ;
+-(id)_voices;
+-(id)_filterVoices:(id)arg1 forLanguage:(id)arg2 ;
+-(void)_updateVoicesIncludingAssetInfo:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)startUIRequestWithText:(id)arg1 ;
+-(void)setXPCConnectionManagementQueue:(id)arg1 ;
+-(void)saveAccount:(id)arg1 setActive:(BOOL)arg2 ;
+-(void)setAssistantLoggingEnabled:(BOOL)arg1 ;
+-(void)killDaemon;
+-(void)shutdownSessionIfIdle;
+-(void)getAvailableVoicesForRecognitionLanguage:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getAvailableVoicesForSynthesisLanguage:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)startUIRequest:(id)arg1 ;
+-(void)startUIRequestWithInfo:(id)arg1 ;
+-(void)getHorsemanSupplementalLanguageDictionary:(/*^block*/id)arg1 ;
+-(void)setHorsemanSupplementalLanguageDictionary:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)getSiriOutputVolumeWithCompletion:(/*^block*/id)arg1 ;
+-(void)setSiriOutputVolume:(float)arg1 completion:(/*^block*/id)arg2 ;
+-(void)stopObservingWirelessSplitterSession;
+-(void)removeMultiUserWithSharedUserID:(id)arg1 completion:(/*^block*/id)arg2 ;
+-(void)setSiriGradingEnabled:(BOOL)arg1 completion:(/*^block*/id)arg2 ;
+-(void)siriGradingIsEnabled:(/*^block*/id)arg1 ;
+-(void)shouldSuppressSiriDataSharingOptInAlert:(/*^block*/id)arg1 ;
+-(void)deleteSiriHistoryWithCompletion:(/*^block*/id)arg1 ;
+-(void)_syncDataWithAnchorKeys:(id)arg1 forceReset:(BOOL)arg2 reason:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)_getSharedCompanionInfo:(/*^block*/id)arg1 ;
+-(void)_updateMultiUserInfoForUser:(id)arg1 score:(id)arg2 companionId:(id)arg3 companionSpeechId:(id)arg4 idsIdentifier:(id)arg5 aceHost:(id)arg6 reset:(BOOL)arg7 completion:(/*^block*/id)arg8 ;
+-(void)_getSharedUserID:(/*^block*/id)arg1 ;
+-(void)_tellDelegatePartialVerificationResult:(id)arg1 ;
+-(void)_tellDelegateServerVerificationReport:(id)arg1 ;
+@end
+

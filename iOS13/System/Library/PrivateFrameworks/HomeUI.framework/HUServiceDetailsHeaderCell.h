@@ -1,0 +1,80 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:57 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HomeUI.framework/HomeUI
+*/
+
+#import <UIKitCore/UITableViewCell.h>
+#import <libobjc.A.dylib/HUCellProtocol.h>
+
+@protocol HUResizableCellDelegate;
+@class HFItem, UIButton, UITextView, NSArray, UIStackView, UIActivityIndicatorView, UILabel, NSLayoutConstraint, NSString;
+
+@interface HUServiceDetailsHeaderCell : UITableViewCell <HUCellProtocol> {
+
+	HFItem* _item;
+	id<HUResizableCellDelegate> _resizingDelegate;
+	UIButton* _actionButton;
+	UITextView* _messageTextView;
+	NSArray* _hiddenMessageTextViewConstraints;
+	NSArray* _visibleMessageTextViewConstraints;
+	UIStackView* _titleSpinnerStackView;
+	UIActivityIndicatorView* _checkingForUpdateSpinner;
+	UILabel* _titleLabel;
+	NSLayoutConstraint* _spinnerBottomConstraint;
+	NSLayoutConstraint* _messageBottomConstraint;
+	NSLayoutConstraint* _actionBottomConstraint;
+
+}
+
+@property (nonatomic,retain) NSArray * hiddenMessageTextViewConstraints;                       //@synthesize hiddenMessageTextViewConstraints=_hiddenMessageTextViewConstraints - In the implementation block
+@property (nonatomic,retain) NSArray * visibleMessageTextViewConstraints;                      //@synthesize visibleMessageTextViewConstraints=_visibleMessageTextViewConstraints - In the implementation block
+@property (nonatomic,retain) UITextView * messageTextView;                                     //@synthesize messageTextView=_messageTextView - In the implementation block
+@property (nonatomic,retain) UIButton * actionButton;                                          //@synthesize actionButton=_actionButton - In the implementation block
+@property (nonatomic,retain) UIStackView * titleSpinnerStackView;                              //@synthesize titleSpinnerStackView=_titleSpinnerStackView - In the implementation block
+@property (nonatomic,retain) UIActivityIndicatorView * checkingForUpdateSpinner;               //@synthesize checkingForUpdateSpinner=_checkingForUpdateSpinner - In the implementation block
+@property (nonatomic,retain) UILabel * titleLabel;                                             //@synthesize titleLabel=_titleLabel - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * spinnerBottomConstraint;                     //@synthesize spinnerBottomConstraint=_spinnerBottomConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * messageBottomConstraint;                     //@synthesize messageBottomConstraint=_messageBottomConstraint - In the implementation block
+@property (nonatomic,retain) NSLayoutConstraint * actionBottomConstraint;                      //@synthesize actionBottomConstraint=_actionBottomConstraint - In the implementation block
+@property (assign,nonatomic,__weak) id<HUResizableCellDelegate> resizingDelegate;              //@synthesize resizingDelegate=_resizingDelegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,retain) HFItem * item;                                                    //@synthesize item=_item - In the implementation block
++(BOOL)requiresConstraintBasedLayout;
+-(HFItem *)item;
+-(void)setItem:(HFItem *)arg1 ;
+-(UILabel *)titleLabel;
+-(void)layoutSubviews;
+-(void)setTitleLabel:(UILabel *)arg1 ;
+-(id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2 ;
+-(UIActivityIndicatorView *)checkingForUpdateSpinner;
+-(void)setCheckingForUpdateSpinner:(UIActivityIndicatorView *)arg1 ;
+-(UIButton *)actionButton;
+-(void)setActionButton:(UIButton *)arg1 ;
+-(void)updateUIWithAnimation:(BOOL)arg1 ;
+-(id<HUResizableCellDelegate>)resizingDelegate;
+-(void)setResizingDelegate:(id<HUResizableCellDelegate>)arg1 ;
+-(void)_configureConstraints;
+-(UITextView *)messageTextView;
+-(void)_updateRequiredHeightIfNeeded;
+-(void)_updateErrorLabelConstraints;
+-(id)_hiddenMessageTextViewConstraints;
+-(void)setHiddenMessageTextViewConstraints:(NSArray *)arg1 ;
+-(id)_visibleMessageTextViewConstraints;
+-(void)setVisibleMessageTextViewConstraints:(NSArray *)arg1 ;
+-(NSArray *)visibleMessageTextViewConstraints;
+-(NSArray *)hiddenMessageTextViewConstraints;
+-(NSLayoutConstraint *)messageBottomConstraint;
+-(NSLayoutConstraint *)spinnerBottomConstraint;
+-(NSLayoutConstraint *)actionBottomConstraint;
+-(UIStackView *)titleSpinnerStackView;
+-(void)setMessageBottomConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setActionBottomConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setSpinnerBottomConstraint:(NSLayoutConstraint *)arg1 ;
+-(void)setMessageTextView:(UITextView *)arg1 ;
+-(void)setTitleSpinnerStackView:(UIStackView *)arg1 ;
+@end
+

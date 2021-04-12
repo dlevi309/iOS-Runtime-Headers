@@ -1,0 +1,23 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:05 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager
+*/
+
+#import <libobjc.A.dylib/CTCellularPlanClientDelegate.h>
+
+@class NSString;
+
+@interface CTCellularPlanManagerDelegate : NSObject <CTCellularPlanClientDelegate>
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)planInfoDidUpdate;
+-(void)localPlanInfoDidUpdate:(id)arg1 ;
+-(void)pendingTransferPlanInfoDidUpdate;
+-(void)carrierInfoDidUpdate;
+-(void)remoteProvisioningDidBecomeAvailable;
+@end
+

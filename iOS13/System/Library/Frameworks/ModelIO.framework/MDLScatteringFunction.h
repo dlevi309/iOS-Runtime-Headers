@@ -1,0 +1,48 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:48 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/ModelIO.framework/ModelIO
+*/
+
+#import <ModelIO/ModelIO-Structs.h>
+#import <libobjc.A.dylib/MDLNamed.h>
+
+@class NSString, MDLMaterialProperty;
+
+@interface MDLScatteringFunction : NSObject <MDLNamed> {
+
+	NSString* _name;
+	MDLMaterialProperty* _baseColor;
+	unique_ptr<ModelIO::BidirectionalScatteringDistributionFunction, std::__1::default_delete<ModelIO::BidirectionalScatteringDistributionFunction> >* _bsdf;
+	MDLMaterialProperty* _emission;
+	MDLMaterialProperty* _specular;
+	MDLMaterialProperty* _materialIndexOfRefraction;
+	MDLMaterialProperty* _interfaceIndexOfRefraction;
+	MDLMaterialProperty* _normal;
+	MDLMaterialProperty* _ambientOcclusion;
+	MDLMaterialProperty* _ambientOcclusionScale;
+
+}
+
+@property (nonatomic,copy) NSString * name;                                                          //@synthesize name=_name - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * baseColor;                               //@synthesize baseColor=_baseColor - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * emission;                                //@synthesize emission=_emission - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * specular;                                //@synthesize specular=_specular - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * materialIndexOfRefraction;               //@synthesize materialIndexOfRefraction=_materialIndexOfRefraction - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * interfaceIndexOfRefraction;              //@synthesize interfaceIndexOfRefraction=_interfaceIndexOfRefraction - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * normal;                                  //@synthesize normal=_normal - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * ambientOcclusion;                        //@synthesize ambientOcclusion=_ambientOcclusion - In the implementation block
+@property (nonatomic,retain,readonly) MDLMaterialProperty * ambientOcclusionScale;                   //@synthesize ambientOcclusionScale=_ambientOcclusionScale - In the implementation block
+-(id)init;
+-(NSString *)name;
+-(void)setName:(NSString *)arg1 ;
+-(MDLMaterialProperty *)normal;
+-(MDLMaterialProperty *)baseColor;
+-(MDLMaterialProperty *)emission;
+-(MDLMaterialProperty *)specular;
+-(MDLMaterialProperty *)materialIndexOfRefraction;
+-(MDLMaterialProperty *)interfaceIndexOfRefraction;
+-(MDLMaterialProperty *)ambientOcclusion;
+-(MDLMaterialProperty *)ambientOcclusionScale;
+@end
+

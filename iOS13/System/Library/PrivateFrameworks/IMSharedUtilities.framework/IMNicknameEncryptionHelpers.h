@@ -1,0 +1,24 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:41 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
+*/
+
+
+@interface IMNicknameEncryptionHelpers : NSObject
++(id)_encryptAndTagPlainFields:(id)arg1 withPreKey:(id)arg2 returningRecordTag:(id*)arg3 error:(id*)arg4 ;
++(id)_decryptAndVerifyCipherFields:(id)arg1 withPreKey:(id)arg2 recordTagToVerify:(id)arg3 error:(id*)arg4 ;
++(id)_encryptPlainFields:(id)arg1 withFieldEncryptionKey:(id)arg2 fieldTaggingKey:(id)arg3 error:(id*)arg4 ;
++(id)_recordTagForCipherFields:(id)arg1 recordTaggingKey:(id)arg2 error:(id*)arg3 ;
++(id)_decryptCipherFields:(id)arg1 withFieldEncryptionKey:(id)arg2 fieldTaggingKey:(id)arg3 error:(id*)arg4 ;
++(id)_encryptPlainField:(id)arg1 withFieldEncryptionKey:(id)arg2 fieldTaggingKey:(id)arg3 error:(id*)arg4 ;
++(id)_tagForData:(id)arg1 key:(id)arg2 error:(id*)arg3 ;
++(id)_randomBytesWithLength:(unsigned long long)arg1 error:(id*)arg2 ;
++(id)_performOperation:(unsigned)arg1 onData:(id)arg2 withFieldEncryptionKey:(id)arg3 iv:(id)arg4 error:(id*)arg5 ;
++(id)_fieldTagForFieldName:(id)arg1 cipherData:(id)arg2 IV:(id)arg3 fieldTaggingKey:(id)arg4 error:(id*)arg5 ;
++(id)_decryptCipherField:(id)arg1 withFieldEncryptionKey:(id)arg2 fieldTaggingKey:(id)arg3 error:(id*)arg4 ;
++(id)_hmacForData:(id)arg1 key:(id)arg2 ;
++(id)encryptAndTagPlainFields:(id)arg1 withPreKey:(id)arg2 returningRecordTag:(id*)arg3 error:(id*)arg4 ;
++(id)decryptAndVerifyCipherFields:(id)arg1 withPreKey:(id)arg2 recordTagToVerify:(id)arg3 error:(id*)arg4 ;
+@end
+

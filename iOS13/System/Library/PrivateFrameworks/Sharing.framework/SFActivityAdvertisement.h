@@ -1,0 +1,34 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:45 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Sharing.framework/Sharing
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSData, NSDictionary, SFPeerDevice;
+
+@interface SFActivityAdvertisement : NSObject <NSSecureCoding> {
+
+	long long _advertisementVersion;
+	NSData* _advertisementPayload;
+	NSDictionary* _options;
+	SFPeerDevice* _device;
+
+}
+
+@property (readonly) long long advertisementVersion;                  //@synthesize advertisementVersion=_advertisementVersion - In the implementation block
+@property (copy,readonly) NSData * advertisementPayload;              //@synthesize advertisementPayload=_advertisementPayload - In the implementation block
+@property (copy,readonly) NSDictionary * options;                     //@synthesize options=_options - In the implementation block
+@property (retain,readonly) SFPeerDevice * device;                    //@synthesize device=_device - In the implementation block
++(BOOL)supportsSecureCoding;
+-(id)description;
+-(NSDictionary *)options;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(SFPeerDevice *)device;
+-(id)initWithAdvertisementVersion:(unsigned long long)arg1 advertisementPayload:(id)arg2 options:(id)arg3 device:(id)arg4 ;
+-(long long)advertisementVersion;
+-(NSData *)advertisementPayload;
+@end
+

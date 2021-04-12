@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:04 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore
+*/
+
+
+@interface NURenderPipelineFunction : NSObject
++(id)functionWithEvaluationBlock:(/*^block*/id)arg1 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)evaluate:(id)arg1 error:(out id*)arg2 ;
+-(id)nu_evaluateWithPipelineState:(id)arg1 error:(out id*)arg2 ;
+@end
+

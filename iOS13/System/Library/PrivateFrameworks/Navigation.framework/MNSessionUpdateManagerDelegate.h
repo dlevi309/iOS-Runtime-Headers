@@ -1,0 +1,24 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:15 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Navigation.framework/Navigation
+*/
+
+
+@protocol MNSessionUpdateManagerDelegate <NSObject>
+@required
+-(void)updateManager:(id)arg1 willSendTransitUpdateRequests:(id)arg2;
+-(void)updateManager:(id)arg1 didReceiveTransitUpdateResponse:(id)arg2;
+-(void)updateManager:(id)arg1 willSendTransitUpdateRequestForRouteIDs:(id)arg2;
+-(void)updateManager:(id)arg1 didReceiveTransitUpdates:(id)arg2;
+-(void)updateManager:(id)arg1 didReceiveTransitError:(id)arg2;
+-(void)updateManager:(id)arg1 willSendETARequest:(id)arg2;
+-(void)updateManager:(id)arg1 didReceiveETAResponse:(id)arg2 toRequest:(id)arg3;
+-(void)updateManager:(id)arg1 didUpdateETAForRouteInfo:(id)arg2;
+-(void)updateManager:(id)arg1 didReceiveETAError:(id)arg2;
+-(BOOL)wantsETAUpdates;
+-(id)routeInfoForUpdateManager:(id)arg1;
+-(id)userLocationForUpdateManager:(id)arg1;
+
+@end
+

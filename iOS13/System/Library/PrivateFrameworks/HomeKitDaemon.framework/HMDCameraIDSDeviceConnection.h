@@ -1,0 +1,85 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:31 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HMFoundation/HMFObject.h>
+#import <libobjc.A.dylib/IDSServiceDelegate.h>
+#import <libobjc.A.dylib/HMDCameraRemoteStreamProtocol.h>
+#import <libobjc.A.dylib/HMFTimerDelegate.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+
+@protocol OS_dispatch_queue, OS_dispatch_source;
+@class NSObject, HMDCameraStreamSessionID, IDSService, IDSDevice, IDSDeviceConnection, HMFTimer, NSString;
+
+@interface HMDCameraIDSDeviceConnection : HMFObject <IDSServiceDelegate, HMDCameraRemoteStreamProtocol, HMFTimerDelegate, HMFLogging> {
+
+	unsigned char _keepAliveCounter;
+	NSObject*<OS_dispatch_queue> _workQueue;
+	NSObject*<OS_dispatch_queue> _highPriorityQueue;
+	HMDCameraStreamSessionID* _sessionID;
+	IDSService* _idsProxyStreamService;
+	IDSDevice* _device;
+	IDSDeviceConnection* _watchVideoConnection;
+	IDSDeviceConnection* _watchAudioConnection;
+	IDSDeviceConnection* _keepAliveConnection;
+	HMFTimer* _keepAliveByteSendTimer;
+	HMFTimer* _keepAliveByteReceiveTimeoutTimer;
+	NSObject*<OS_dispatch_source> _socketReceiveSource;
+
+}
+
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> workQueue;                       //@synthesize workQueue=_workQueue - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_queue> highPriorityQueue;               //@synthesize highPriorityQueue=_highPriorityQueue - In the implementation block
+@property (nonatomic,readonly) HMDCameraStreamSessionID * sessionID;                         //@synthesize sessionID=_sessionID - In the implementation block
+@property (nonatomic,readonly) IDSService * idsProxyStreamService;                           //@synthesize idsProxyStreamService=_idsProxyStreamService - In the implementation block
+@property (nonatomic,retain) IDSDevice * device;                                             //@synthesize device=_device - In the implementation block
+@property (nonatomic,retain) IDSDeviceConnection * watchVideoConnection;                     //@synthesize watchVideoConnection=_watchVideoConnection - In the implementation block
+@property (nonatomic,retain) IDSDeviceConnection * watchAudioConnection;                     //@synthesize watchAudioConnection=_watchAudioConnection - In the implementation block
+@property (nonatomic,retain) IDSDeviceConnection * keepAliveConnection;                      //@synthesize keepAliveConnection=_keepAliveConnection - In the implementation block
+@property (nonatomic,retain) HMFTimer * keepAliveByteSendTimer;                              //@synthesize keepAliveByteSendTimer=_keepAliveByteSendTimer - In the implementation block
+@property (nonatomic,retain) HMFTimer * keepAliveByteReceiveTimeoutTimer;                    //@synthesize keepAliveByteReceiveTimeoutTimer=_keepAliveByteReceiveTimeoutTimer - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_source> socketReceiveSource;              //@synthesize socketReceiveSource=_socketReceiveSource - In the implementation block
+@property (assign,nonatomic) unsigned char keepAliveCounter;                                 //@synthesize keepAliveCounter=_keepAliveCounter - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)logCategory;
+-(void)dealloc;
+-(IDSDevice *)device;
+-(NSObject*<OS_dispatch_queue>)workQueue;
+-(HMDCameraStreamSessionID *)sessionID;
+-(void)setDevice:(IDSDevice *)arg1 ;
+-(id)logIdentifier;
+-(void)timerDidFire:(id)arg1 ;
+-(NSObject*<OS_dispatch_queue>)highPriorityQueue;
+-(void)startKeepAlive;
+-(id)initWithSessionID:(id)arg1 workQueue:(id)arg2 ;
+-(void)_callSessionEnded:(id)arg1 ;
+-(void)_createStreamSocket:(id)arg1 ;
+-(IDSDeviceConnection *)watchVideoConnection;
+-(IDSDeviceConnection *)watchAudioConnection;
+-(void)_socketOpened:(id)arg1 ;
+-(IDSService *)idsProxyStreamService;
+-(void)setWatchAudioConnection:(IDSDeviceConnection *)arg1 ;
+-(void)setWatchVideoConnection:(IDSDeviceConnection *)arg1 ;
+-(IDSDeviceConnection *)keepAliveConnection;
+-(void)setKeepAliveConnection:(IDSDeviceConnection *)arg1 ;
+-(NSObject*<OS_dispatch_source>)socketReceiveSource;
+-(void)setSocketReceiveSource:(NSObject*<OS_dispatch_source>)arg1 ;
+-(void)_startKeepAliveByteSendTimer;
+-(void)_startKeepAliveTimeoutTimer;
+-(void)_setReceiveByteHandler;
+-(void)setKeepAliveByteSendTimer:(HMFTimer *)arg1 ;
+-(HMFTimer *)keepAliveByteSendTimer;
+-(void)setKeepAliveByteReceiveTimeoutTimer:(HMFTimer *)arg1 ;
+-(HMFTimer *)keepAliveByteReceiveTimeoutTimer;
+-(void)_sendTimerFired;
+-(void)_receiveByteCheckTimerFired;
+-(unsigned char)keepAliveCounter;
+-(void)setKeepAliveCounter:(unsigned char)arg1 ;
+-(void)callSessionEnded:(id)arg1 ;
+@end
+

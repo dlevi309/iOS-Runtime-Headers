@@ -1,0 +1,19 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:15 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SMBClientEngine.framework/SMBClientEngine
+*/
+
+
+#import <SMBClientEngine/SMBClientEngine-Structs.h>
+@interface SMBPistonEvents : NSObject {
+
+	smb_lease_break _leaseBreak;
+
+}
+
+@property (assign) smb_lease_break leaseBreak;              //@synthesize leaseBreak=_leaseBreak - In the implementation block
+-(smb_lease_break)leaseBreak;
+-(void)setLeaseBreak:(smb_lease_break)arg1 ;
+@end
+

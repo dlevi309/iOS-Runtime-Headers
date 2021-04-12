@@ -1,0 +1,42 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:00 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CertInfo.framework/CertInfo
+*/
+
+#import <CertInfo/CertInfo-Structs.h>
+#import <UIKitCore/UINavigationController.h>
+
+@protocol TrustCertificateViewControllerDelegate;
+@class CertificateViewController;
+
+@interface TrustCertificateViewController : UINavigationController {
+
+	BOOL _allowCertificateTrust;
+	id<TrustCertificateViewControllerDelegate> _trustCertificateDelegate;
+	CertificateViewController* _certificateViewController;
+
+}
+
+@property (assign,nonatomic) BOOL allowCertificateTrust;                                                              //@synthesize allowCertificateTrust=_allowCertificateTrust - In the implementation block
+@property (nonatomic,retain) CertificateViewController * certificateViewController;                                   //@synthesize certificateViewController=_certificateViewController - In the implementation block
+@property (assign,nonatomic,__weak) id<TrustCertificateViewControllerDelegate> trustCertificateDelegate;              //@synthesize trustCertificateDelegate=_trustCertificateDelegate - In the implementation block
+-(void)didReceiveMemoryWarning;
+-(void)_cancel;
+-(void)setShowCertificateButton:(BOOL)arg1 localizedTitle:(id)arg2 localizedDescription:(id)arg3 destructive:(BOOL)arg4 handler:(/*^block*/id)arg5 ;
+-(void)_setupNavItem;
+-(void)_dismissWithResult:(int)arg1 ;
+-(void)_accept;
+-(id)initWithTrustCertificateDelegate:(id)arg1 allowTrust:(BOOL)arg2 ;
+-(id)initWithTrust:(SecTrustRef)arg1 action:(int)arg2 delegate:(id)arg3 allowTrust:(BOOL)arg4 ;
+-(CertificateViewController *)certificateViewController;
+-(id)initWithTrustCertificateDelegate:(id)arg1 ;
+-(id)initWithTrust:(SecTrustRef)arg1 action:(int)arg2 delegate:(id)arg3 ;
+-(void)setCertificateInfo:(id)arg1 issuer:(id)arg2 purpose:(id)arg3 expiration:(id)arg4 isRoot:(BOOL)arg5 properties:(id)arg6 action:(int)arg7 ;
+-(id<TrustCertificateViewControllerDelegate>)trustCertificateDelegate;
+-(void)setTrustCertificateDelegate:(id<TrustCertificateViewControllerDelegate>)arg1 ;
+-(BOOL)allowCertificateTrust;
+-(void)setAllowCertificateTrust:(BOOL)arg1 ;
+-(void)setCertificateViewController:(CertificateViewController *)arg1 ;
+@end
+

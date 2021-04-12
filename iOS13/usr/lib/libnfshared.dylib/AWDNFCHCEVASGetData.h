@@ -1,0 +1,104 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:31 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /usr/lib/libnfshared.dylib
+*/
+
+#import <libnfshared.dylib/libnfshared.dylib-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSData, NSString;
+
+@interface AWDNFCHCEVASGetData : PBCodable <NSCopying> {
+
+	unsigned long long _timeDeltaFromReference;
+	unsigned long long _timestamp;
+	unsigned _filterType;
+	unsigned _filterValue;
+	NSData* _merchantID;
+	NSString* _merchantURL;
+	unsigned _signupOnly;
+	unsigned _swStatus;
+	unsigned _terminalCapabilities;
+	NSData* _uuidReference;
+	unsigned _version;
+	SCD_Struct_AW4 _has;
+
+}
+
+@property (assign,nonatomic) BOOL hasTimestamp; 
+@property (assign,nonatomic) unsigned long long timestamp;                           //@synthesize timestamp=_timestamp - In the implementation block
+@property (assign,nonatomic) BOOL hasVersion; 
+@property (assign,nonatomic) unsigned version;                                       //@synthesize version=_version - In the implementation block
+@property (assign,nonatomic) BOOL hasSignupOnly; 
+@property (assign,nonatomic) unsigned signupOnly;                                    //@synthesize signupOnly=_signupOnly - In the implementation block
+@property (assign,nonatomic) BOOL hasTerminalCapabilities; 
+@property (assign,nonatomic) unsigned terminalCapabilities;                          //@synthesize terminalCapabilities=_terminalCapabilities - In the implementation block
+@property (nonatomic,readonly) BOOL hasMerchantID; 
+@property (nonatomic,retain) NSData * merchantID;                                    //@synthesize merchantID=_merchantID - In the implementation block
+@property (nonatomic,readonly) BOOL hasMerchantURL; 
+@property (nonatomic,retain) NSString * merchantURL;                                 //@synthesize merchantURL=_merchantURL - In the implementation block
+@property (assign,nonatomic) BOOL hasFilterType; 
+@property (assign,nonatomic) unsigned filterType;                                    //@synthesize filterType=_filterType - In the implementation block
+@property (assign,nonatomic) BOOL hasFilterValue; 
+@property (assign,nonatomic) unsigned filterValue;                                   //@synthesize filterValue=_filterValue - In the implementation block
+@property (assign,nonatomic) BOOL hasSwStatus; 
+@property (assign,nonatomic) unsigned swStatus;                                      //@synthesize swStatus=_swStatus - In the implementation block
+@property (nonatomic,readonly) BOOL hasUuidReference; 
+@property (nonatomic,retain) NSData * uuidReference;                                 //@synthesize uuidReference=_uuidReference - In the implementation block
+@property (assign,nonatomic) BOOL hasTimeDeltaFromReference; 
+@property (assign,nonatomic) unsigned long long timeDeltaFromReference;              //@synthesize timeDeltaFromReference=_timeDeltaFromReference - In the implementation block
+-(void)dealloc;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(unsigned)version;
+-(id)dictionaryRepresentation;
+-(void)setVersion:(unsigned)arg1 ;
+-(unsigned long long)timestamp;
+-(BOOL)hasTimestamp;
+-(void)setTimestamp:(unsigned long long)arg1 ;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(unsigned)filterType;
+-(void)setFilterType:(unsigned)arg1 ;
+-(void)setHasTimestamp:(BOOL)arg1 ;
+-(BOOL)hasVersion;
+-(void)setHasVersion:(BOOL)arg1 ;
+-(void)setMerchantURL:(NSString *)arg1 ;
+-(NSData *)merchantID;
+-(NSString *)merchantURL;
+-(void)setUuidReference:(NSData *)arg1 ;
+-(BOOL)hasUuidReference;
+-(void)setTimeDeltaFromReference:(unsigned long long)arg1 ;
+-(void)setHasTimeDeltaFromReference:(BOOL)arg1 ;
+-(BOOL)hasTimeDeltaFromReference;
+-(NSData *)uuidReference;
+-(unsigned long long)timeDeltaFromReference;
+-(void)setSwStatus:(unsigned)arg1 ;
+-(void)setHasSwStatus:(BOOL)arg1 ;
+-(BOOL)hasSwStatus;
+-(unsigned)swStatus;
+-(void)setMerchantID:(NSData *)arg1 ;
+-(void)setSignupOnly:(unsigned)arg1 ;
+-(void)setHasSignupOnly:(BOOL)arg1 ;
+-(BOOL)hasSignupOnly;
+-(void)setTerminalCapabilities:(unsigned)arg1 ;
+-(void)setHasTerminalCapabilities:(BOOL)arg1 ;
+-(BOOL)hasTerminalCapabilities;
+-(BOOL)hasMerchantID;
+-(BOOL)hasMerchantURL;
+-(void)setHasFilterType:(BOOL)arg1 ;
+-(BOOL)hasFilterType;
+-(void)setFilterValue:(unsigned)arg1 ;
+-(void)setHasFilterValue:(BOOL)arg1 ;
+-(BOOL)hasFilterValue;
+-(unsigned)signupOnly;
+-(unsigned)terminalCapabilities;
+-(unsigned)filterValue;
+@end
+

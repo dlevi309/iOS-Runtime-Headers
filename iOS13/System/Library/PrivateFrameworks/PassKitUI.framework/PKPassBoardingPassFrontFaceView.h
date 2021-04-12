@@ -1,0 +1,23 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
+*/
+
+#import <PassKitUI/PKPassFrontFaceView.h>
+
+@class UIImageView;
+
+@interface PKPassBoardingPassFrontFaceView : PKPassFrontFaceView {
+
+	UIImageView* _transitImageView;
+	UIImageView* _footerImageView;
+
+}
+-(void)layoutSubviews;
+-(void)createBodyContentViews;
+-(id)_transitGlyphForTransitType:(long long)arg1 ;
+-(void)setShowsBarcodeView:(BOOL)arg1 animated:(BOOL)arg2 ;
+-(id)templateForLayoutMode:(long long)arg1 ;
+@end
+

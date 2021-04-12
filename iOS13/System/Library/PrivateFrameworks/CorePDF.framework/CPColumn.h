@@ -1,0 +1,52 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:04 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CorePDF.framework/CorePDF
+*/
+
+#import <CorePDF/CorePDF-Structs.h>
+#import <CorePDF/CPRegion.h>
+
+@interface CPColumn : CPRegion {
+
+	BOOL hasCentredParagraph;
+	BOOL hasColumnBreak;
+	double maxLeftPad;
+	double maxRightPad;
+	double maxRight;
+	double minLeft;
+	BOOL complete;
+
+}
+
+@property (assign) BOOL complete; 
+-(id)init;
+-(void)dealloc;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)complete;
+-(void)setComplete:(BOOL)arg1 ;
+-(void)accept:(id)arg1 ;
+-(CGRect)columnBounds;
+-(double)leftPad;
+-(double)rightPad;
+-(double)selectionBottom;
+-(void)setHasColumnBreak:(BOOL)arg1 ;
+-(BOOL)isBoxRegion;
+-(BOOL)isGraphicalRegion;
+-(BOOL)isRowRegion;
+-(void)setIsImageRegion:(BOOL)arg1 ;
+-(BOOL)isImageRegion;
+-(BOOL)isShapeRegion;
+-(double)bottomBaseline;
+-(BOOL)hasCentredParagraph;
+-(void)setHasCentredParagraph:(BOOL)arg1 ;
+-(double)maxLeftPad;
+-(void)setMaxLeftPad:(double)arg1 ;
+-(double)maxRightPad;
+-(void)setMaxRightPad:(double)arg1 ;
+-(CGRect)paddedBounds;
+-(int)outOrder;
+-(int)inOrder;
+@end
+

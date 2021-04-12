@@ -1,0 +1,79 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:32 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/iAd.framework/iAd
+*/
+
+#import <libobjc.A.dylib/ADBannerViewInternalDelegate.h>
+
+@protocol ADPlayerDelegate;
+@class ADBannerView, AVPlayerItem, AVPlayer, NSString;
+
+@interface ADPlayer : NSObject <ADBannerViewInternalDelegate> {
+
+	BOOL _playbackHasBegun;
+	id<ADPlayerDelegate> _delegate;
+	ADBannerView* _videoAd;
+	AVPlayerItem* _avPlayerItem;
+	AVPlayer* _avPlayer;
+	unsigned long long _playbackState;
+	id _timeObserver;
+
+}
+
+@property (assign,nonatomic) BOOL playbackHasBegun;                             //@synthesize playbackHasBegun=_playbackHasBegun - In the implementation block
+@property (nonatomic,retain) AVPlayerItem * avPlayerItem;                       //@synthesize avPlayerItem=_avPlayerItem - In the implementation block
+@property (nonatomic,retain) AVPlayer * avPlayer;                               //@synthesize avPlayer=_avPlayer - In the implementation block
+@property (assign,nonatomic) unsigned long long playbackState;                  //@synthesize playbackState=_playbackState - In the implementation block
+@property (nonatomic,retain) ADBannerView * videoAd;                            //@synthesize videoAd=_videoAd - In the implementation block
+@property (nonatomic,retain) id timeObserver;                                   //@synthesize timeObserver=_timeObserver - In the implementation block
+@property (assign,nonatomic,__weak) id<ADPlayerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,readonly) float playbackRate; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(void)dealloc;
+-(id<ADPlayerDelegate>)delegate;
+-(void)setDelegate:(id<ADPlayerDelegate>)arg1 ;
+-(void)pause;
+-(void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void*)arg4 ;
+-(void)play;
+-(void)performAction;
+-(void)applicationDidBecomeActive;
+-(void)applicationWillResignActive;
+-(void)shutdown;
+-(float)playbackRate;
+-(unsigned long long)playbackState;
+-(AVPlayer *)avPlayer;
+-(void)setPlaybackState:(unsigned long long)arg1 ;
+-(AVPlayerItem *)avPlayerItem;
+-(void)setAvPlayer:(AVPlayer *)arg1 ;
+-(void)setAvPlayerItem:(AVPlayerItem *)arg1 ;
+-(void)bannerViewActionDidFinish:(id)arg1 ;
+-(BOOL)bannerViewActionShouldBegin:(id)arg1 willLeaveApplication:(BOOL)arg2 ;
+-(void)showAdTransparency;
+-(id)viewControllerForStoryboardPresentationFromBannerView:(id)arg1 ;
+-(void)bannerViewWillLoadAd:(id)arg1 ;
+-(void)bannerViewDidLoadAd:(id)arg1 ;
+-(void)bannerView:(id)arg1 didFailToReceiveAdWithError:(id)arg2 ;
+-(void)bannerViewShouldPauseMedia:(id)arg1 ;
+-(void)bannerViewShouldResumeMedia:(id)arg1 ;
+-(ADBannerView *)videoAd;
+-(BOOL)prepareForPlayback;
+-(void)setVideoAd:(ADBannerView *)arg1 ;
+-(id)_networkOptimalVideoURLForAd:(id)arg1 ;
+-(BOOL)_beginLoadingVideoFromURL:(id)arg1 ;
+-(BOOL)playbackHasBegun;
+-(void)playerItemDidPlayToEnd:(id)arg1 ;
+-(void)playerItemDidFailedToPlayToEnd:(id)arg1 ;
+-(void)playerItemEncounteredPlaybackStall:(id)arg1 ;
+-(void)setTimeObserver:(id)arg1 ;
+-(void)setPlaybackHasBegun:(BOOL)arg1 ;
+-(id)timeObserver;
+-(void)playerDidStart;
+-(void)playerDidPause;
+-(BOOL)prepareForPlayackOfInterstitialWithURL:(id)arg1 ;
+@end
+

@@ -1,0 +1,204 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:37 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, PBUnknownFields, GEOAbAssignInfo, NSString, GEOLocalTime, NSMutableArray;
+
+@interface GEOPDAnalyticMetadata : PBCodable <NSCopying> {
+
+	PBDataReader* _reader;
+	PBUnknownFields* _unknownFields;
+	GEOSessionID _sessionId;
+	GEOAbAssignInfo* _abAssignInfo;
+	NSString* _appIdentifier;
+	NSString* _appMajorVersion;
+	NSString* _appMinorVersion;
+	NSString* _hardwareModel;
+	NSString* _loggedAbExperiment;
+	NSString* _osVersion;
+	NSString* _productName;
+	double _relativeTimestamp;
+	GEOLocalTime* _requestTime;
+	NSMutableArray* _serviceTags;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	int _requestSource;
+	unsigned _sequenceNumber;
+	BOOL _isFromApi;
+	BOOL _isInternalInstall;
+	BOOL _isInternalTool;
+	struct {
+		unsigned has_sessionId : 1;
+		unsigned has_relativeTimestamp : 1;
+		unsigned has_requestSource : 1;
+		unsigned has_sequenceNumber : 1;
+		unsigned has_isFromApi : 1;
+		unsigned has_isInternalInstall : 1;
+		unsigned has_isInternalTool : 1;
+		unsigned read_unknownFields : 1;
+		unsigned read_abAssignInfo : 1;
+		unsigned read_appIdentifier : 1;
+		unsigned read_appMajorVersion : 1;
+		unsigned read_appMinorVersion : 1;
+		unsigned read_hardwareModel : 1;
+		unsigned read_loggedAbExperiment : 1;
+		unsigned read_osVersion : 1;
+		unsigned read_productName : 1;
+		unsigned read_requestTime : 1;
+		unsigned read_serviceTags : 1;
+		unsigned wrote_unknownFields : 1;
+		unsigned wrote_sessionId : 1;
+		unsigned wrote_abAssignInfo : 1;
+		unsigned wrote_appIdentifier : 1;
+		unsigned wrote_appMajorVersion : 1;
+		unsigned wrote_appMinorVersion : 1;
+		unsigned wrote_hardwareModel : 1;
+		unsigned wrote_loggedAbExperiment : 1;
+		unsigned wrote_osVersion : 1;
+		unsigned wrote_productName : 1;
+		unsigned wrote_relativeTimestamp : 1;
+		unsigned wrote_requestTime : 1;
+		unsigned wrote_serviceTags : 1;
+		unsigned wrote_requestSource : 1;
+		unsigned wrote_sequenceNumber : 1;
+		unsigned wrote_isFromApi : 1;
+		unsigned wrote_isInternalInstall : 1;
+		unsigned wrote_isInternalTool : 1;
+	}  _flags;
+
+}
+
+@property (nonatomic,readonly) BOOL hasAppIdentifier; 
+@property (nonatomic,retain) NSString * appIdentifier; 
+@property (nonatomic,readonly) BOOL hasAppMajorVersion; 
+@property (nonatomic,retain) NSString * appMajorVersion; 
+@property (nonatomic,readonly) BOOL hasAppMinorVersion; 
+@property (nonatomic,retain) NSString * appMinorVersion; 
+@property (nonatomic,readonly) BOOL hasHardwareModel; 
+@property (nonatomic,retain) NSString * hardwareModel; 
+@property (nonatomic,readonly) BOOL hasOsVersion; 
+@property (nonatomic,retain) NSString * osVersion; 
+@property (assign,nonatomic) BOOL hasIsInternalTool; 
+@property (assign,nonatomic) BOOL isInternalTool; 
+@property (assign,nonatomic) BOOL hasIsInternalInstall; 
+@property (assign,nonatomic) BOOL isInternalInstall; 
+@property (assign,nonatomic) BOOL hasSessionId; 
+@property (assign,nonatomic) GEOSessionID sessionId; 
+@property (assign,nonatomic) BOOL hasSequenceNumber; 
+@property (assign,nonatomic) unsigned sequenceNumber; 
+@property (assign,nonatomic) BOOL hasRequestSource; 
+@property (assign,nonatomic) int requestSource; 
+@property (assign,nonatomic) BOOL hasIsFromApi; 
+@property (assign,nonatomic) BOOL isFromApi; 
+@property (nonatomic,retain) NSMutableArray * serviceTags; 
+@property (nonatomic,readonly) BOOL hasProductName; 
+@property (nonatomic,retain) NSString * productName; 
+@property (nonatomic,readonly) BOOL hasLoggedAbExperiment; 
+@property (nonatomic,retain) NSString * loggedAbExperiment; 
+@property (nonatomic,readonly) BOOL hasAbAssignInfo; 
+@property (nonatomic,retain) GEOAbAssignInfo * abAssignInfo; 
+@property (nonatomic,readonly) BOOL hasRequestTime; 
+@property (nonatomic,retain) GEOLocalTime * requestTime; 
+@property (assign,nonatomic) BOOL hasRelativeTimestamp; 
+@property (assign,nonatomic) double relativeTimestamp; 
+@property (nonatomic,readonly) PBUnknownFields * unknownFields; 
++(BOOL)isValid:(id)arg1 ;
++(Class)serviceTagType;
+-(id)init;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)setSequenceNumber:(unsigned)arg1 ;
+-(unsigned)sequenceNumber;
+-(void)writeTo:(id)arg1 ;
+-(NSString *)hardwareModel;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(BOOL)isInternalInstall;
+-(id)initWithTraits:(id)arg1 ;
+-(NSString *)productName;
+-(void)setProductName:(NSString *)arg1 ;
+-(void)readAll:(BOOL)arg1 ;
+-(PBUnknownFields *)unknownFields;
+-(void)clearUnknownFields:(BOOL)arg1 ;
+-(GEOSessionID)sessionId;
+-(void)setSessionId:(GEOSessionID)arg1 ;
+-(void)setHasSessionId:(BOOL)arg1 ;
+-(BOOL)hasSessionId;
+-(void)_readLoggedAbExperiment;
+-(void)_readServiceTags;
+-(void)_addNoFlagsServiceTag:(id)arg1 ;
+-(NSString *)loggedAbExperiment;
+-(void)setLoggedAbExperiment:(NSString *)arg1 ;
+-(unsigned long long)serviceTagsCount;
+-(void)clearServiceTags;
+-(id)serviceTagAtIndex:(unsigned long long)arg1 ;
+-(void)addServiceTag:(id)arg1 ;
+-(NSMutableArray *)serviceTags;
+-(void)setHasSequenceNumber:(BOOL)arg1 ;
+-(BOOL)hasSequenceNumber;
+-(BOOL)hasLoggedAbExperiment;
+-(void)setServiceTags:(NSMutableArray *)arg1 ;
+-(GEOLocalTime *)requestTime;
+-(void)setRequestTime:(GEOLocalTime *)arg1 ;
+-(BOOL)hasRequestTime;
+-(void)setAppIdentifier:(NSString *)arg1 ;
+-(void)setAbAssignInfo:(GEOAbAssignInfo *)arg1 ;
+-(void)_readOsVersion;
+-(NSString *)osVersion;
+-(void)setOsVersion:(NSString *)arg1 ;
+-(BOOL)hasOsVersion;
+-(void)setAppMajorVersion:(NSString *)arg1 ;
+-(void)setAppMinorVersion:(NSString *)arg1 ;
+-(double)relativeTimestamp;
+-(void)setRelativeTimestamp:(double)arg1 ;
+-(void)setHasRelativeTimestamp:(BOOL)arg1 ;
+-(BOOL)hasRelativeTimestamp;
+-(void)_readAppMajorVersion;
+-(void)_readAppMinorVersion;
+-(void)_readHardwareModel;
+-(void)_readAbAssignInfo;
+-(void)_readRequestTime;
+-(NSString *)appMajorVersion;
+-(NSString *)appMinorVersion;
+-(GEOAbAssignInfo *)abAssignInfo;
+-(void)setHardwareModel:(NSString *)arg1 ;
+-(BOOL)hasAppMajorVersion;
+-(BOOL)hasAppMinorVersion;
+-(BOOL)hasHardwareModel;
+-(BOOL)hasAbAssignInfo;
+-(void)_readAppIdentifier;
+-(NSString *)appIdentifier;
+-(BOOL)hasAppIdentifier;
+-(void)setIsInternalInstall:(BOOL)arg1 ;
+-(void)setIsInternalTool:(BOOL)arg1 ;
+-(void)_readProductName;
+-(BOOL)isInternalTool;
+-(void)setHasIsInternalTool:(BOOL)arg1 ;
+-(BOOL)hasIsInternalTool;
+-(void)setHasIsInternalInstall:(BOOL)arg1 ;
+-(BOOL)hasIsInternalInstall;
+-(int)requestSource;
+-(void)setRequestSource:(int)arg1 ;
+-(void)setHasRequestSource:(BOOL)arg1 ;
+-(BOOL)hasRequestSource;
+-(id)requestSourceAsString:(int)arg1 ;
+-(int)StringAsRequestSource:(id)arg1 ;
+-(BOOL)isFromApi;
+-(void)setIsFromApi:(BOOL)arg1 ;
+-(void)setHasIsFromApi:(BOOL)arg1 ;
+-(BOOL)hasIsFromApi;
+-(BOOL)hasProductName;
+@end
+

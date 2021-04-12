@@ -1,0 +1,25 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:27 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/CoreData.framework/CoreData
+*/
+
+
+@class NSString, NSMutableDictionary, NSRecursiveLock, PFUbiquityGlobalObjectIDCache;
+
+@interface PFUbiquityTransactionLogCache : NSObject {
+
+	NSString* _localPeerID;
+	NSMutableDictionary* _transactionLogCache;
+	NSRecursiveLock* _transactionLogCacheLock;
+	PFUbiquityGlobalObjectIDCache* _gidCache;
+
+}
+-(id)init;
+-(void)dealloc;
+-(void)cacheExportedLog:(id)arg1 ;
+-(id)initWithLocalPeerID:(id)arg1 andGlobalIDCache:(id)arg2 ;
+-(id)retainedCachedLogForLocation:(id)arg1 loadWithRetry:(BOOL)arg2 error:(id*)arg3 ;
+-(void)removeLogsCachedForStoreNamed:(id)arg1 withUbiquityRootLocation:(id)arg2 ;
+@end
+

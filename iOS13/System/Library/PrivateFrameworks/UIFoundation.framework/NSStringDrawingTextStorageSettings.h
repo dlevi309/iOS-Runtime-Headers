@@ -1,0 +1,17 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+*/
+
+
+#import <UIFoundation/UIFoundation-Structs.h>
+@interface NSStringDrawingTextStorageSettings : NSObject {
+
+	SCD_Struct_NS40 _settings;
+
+}
++(id)threadSpecificStringDrawingTextStorageSettings:(BOOL)arg1 ;
+-(id)init;
+@end
+

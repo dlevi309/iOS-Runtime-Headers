@@ -1,0 +1,22 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SpringBoardUI.framework/SpringBoardUI
+*/
+
+#import <SpringBoardUI/SBLockScreenPluginAction.h>
+
+@class TUDialRequest, NSURL;
+
+@interface SBLockScreenPluginCallAction : SBLockScreenPluginAction {
+
+	TUDialRequest* _dialRequest;
+
+}
+
+@property (nonatomic,readonly) NSURL * url; 
+-(id)initWithURL:(id)arg1 ;
+-(NSURL *)url;
+-(BOOL)isCallAction;
+@end
+

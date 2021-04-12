@@ -1,0 +1,47 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:46 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/WebKit.framework/WebKit
+*/
+
+#import <WebKit/WebKit-Structs.h>
+#import <UIKit/UIPopoverControllerDelegate.h>
+
+@protocol WKRotatingPopoverDelegate;
+@class WKContentView, UIPopoverController, NSString;
+
+@interface WKRotatingPopover : NSObject <UIPopoverControllerDelegate> {
+
+	WKContentView* _view;
+	BOOL _isRotating;
+	CGPoint _presentationPoint;
+	RetainPtr<UIPopoverController>* _popoverController;
+	id<WKRotatingPopoverDelegate> _dismissionDelegate;
+
+}
+
+@property (nonatomic,readonly) WKContentView * view;                                        //@synthesize view=_view - In the implementation block
+@property (assign,nonatomic) CGPoint presentationPoint;                                     //@synthesize presentationPoint=_presentationPoint - In the implementation block
+@property (nonatomic,retain) UIPopoverController * popoverController; 
+@property (assign,nonatomic) id<WKRotatingPopoverDelegate> dismissionDelegate;              //@synthesize dismissionDelegate=_dismissionDelegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(WKContentView *)view;
+-(void)popoverControllerDidDismissPopover:(id)arg1 ;
+-(UIPopoverController *)popoverController;
+-(void)dismissPopoverAnimated:(BOOL)arg1 ;
+-(id)initWithView:(id)arg1 ;
+-(void)setPopoverController:(UIPopoverController *)arg1 ;
+-(void)presentPopoverAnimated:(BOOL)arg1 ;
+-(unsigned long long)popoverArrowDirections;
+-(void)setPresentationPoint:(CGPoint)arg1 ;
+-(void)willRotate:(id)arg1 ;
+-(void)didRotate:(id)arg1 ;
+-(CGPoint)presentationPoint;
+-(void)setDismissionDelegate:(id<WKRotatingPopoverDelegate>)arg1 ;
+-(id<WKRotatingPopoverDelegate>)dismissionDelegate;
+@end
+

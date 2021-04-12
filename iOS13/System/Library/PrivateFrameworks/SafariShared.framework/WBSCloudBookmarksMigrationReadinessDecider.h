@@ -1,0 +1,64 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:06 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SafariShared.framework/SafariShared
+*/
+
+
+@protocol OS_dispatch_queue, WBSLogger;
+@class NSObject, NSDate, NSMutableDictionary, WBSDeviceEligibilityInformation, NSArray, NSDictionary;
+
+@interface WBSCloudBookmarksMigrationReadinessDecider : NSObject {
+
+	NSObject*<OS_dispatch_queue> _accessQueue;
+	NSDate* _nonMigratableDeviceGracePeriodStartDate;
+	NSDate* _dateOfCloudTabDevicesSyncRequest;
+	NSDate* _dateOfLastCloudTabDevicesUpdate;
+	NSDate* _dateOfDeviceEligibilityUpdate;
+	NSMutableDictionary* _nonMigratableDeviceIdentifiersToLastModifiedDates;
+	WBSDeviceEligibilityInformation* _deviceEligibilityInformation;
+	NSArray* _eligibleOperatingSystemVersionRanges;
+	BOOL _readyToMigrate;
+	BOOL _lastCloudTabDevicesSyncRequestWasSuccessful;
+	id<WBSLogger> _keyActionsLogger;
+
+}
+
+@property (getter=isReadyToMigrate,nonatomic,readonly) BOOL readyToMigrate; 
+@property (nonatomic,readonly) NSDictionary * dictionaryRepresentation; 
+@property (nonatomic,readonly) NSDate * earliestPossibleDateOfMigration; 
+@property (nonatomic,retain) id<WBSLogger> keyActionsLogger;                             //@synthesize keyActionsLogger=_keyActionsLogger - In the implementation block
+@property (nonatomic,copy) NSArray * eligibleOperatingSystemVersionRanges; 
++(id)_deviceEligibilityInformationFromDictionaryRepresentation:(id)arg1 ;
+-(NSDictionary *)dictionaryRepresentation;
+-(BOOL)_isInternalInstall;
+-(id)initFromDictionaryRepresentation:(id)arg1 ;
+-(void)_logKeyAction:(id)arg1 ;
+-(void)setKeyActionsLogger:(id<WBSLogger>)arg1 ;
+-(void)setEligibleOperatingSystemVersionRanges:(NSArray *)arg1 ;
+-(void)_logErrorAsKeyAction:(id)arg1 ;
+-(void)updateWithCloudTabDeviceProvider:(id)arg1 deviceEligibilityFetcher:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(BOOL)isReadyToMigrate;
+-(NSDate *)earliestPossibleDateOfMigration;
+-(id<WBSLogger>)keyActionsLogger;
+-(double)_nonMigratableDeviceGracePeriod;
+-(BOOL)_shouldRequestCloudTabDevicesSync;
+-(double)_minimumWaitForCloudTabDevicesUpdateAfterSync;
+-(BOOL)_hasValidDeviceEligibilityInformation;
+-(double)_deviceEligibilityUpdateInterval;
+-(void)_logKeyActionForUpdateWithDevice:(id)arg1 ;
+-(void)_logDevicesExcludedFromUpdateWithDevices:(id)arg1 ;
+-(void)_reevaluateReadinessWithCompletionHandler:(/*^block*/id)arg1 ;
+-(void)_fetchDeviceEligibilityInformationWithCloudTabDeviceProvider:(id)arg1 deviceEligibilityFetcher:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(void)_pruneOldNonMigratableDevicesWithCompletionHandler:(/*^block*/id)arg1 ;
+-(void)_synchronizeCloudTabDevicesWithCloudTabDeviceProvider:(id)arg1 deviceEligibilityFetcher:(id)arg2 completionHandler:(/*^block*/id)arg3 ;
+-(BOOL)_isDateInGracePeriod:(id)arg1 ;
+-(BOOL)_shouldWaitForCloudTabDevicesUpdate;
+-(long long)_timescale;
+-(double)_maximumAgeForCloudTabDevicesUpdate;
+-(BOOL)_isPastMinimumWaitAfterCloudTabDeviceSyncRequest;
+-(BOOL)_isCloudTabDeviceDataPastExpiration;
+-(NSArray *)eligibleOperatingSystemVersionRanges;
+-(void)_logPrunedDeviceIdentifiers:(id)arg1 ;
+@end
+

@@ -1,0 +1,34 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:26 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs
+*/
+
+#import <CloudDocs/CloudDocs-Structs.h>
+#import <libobjc.A.dylib/NSFastEnumeration.h>
+
+@class NSMutableArray, NSMutableDictionary;
+
+@interface BRNotificationQueue : NSObject <NSFastEnumeration> {
+
+	NSMutableArray* _array;
+	NSMutableArray* _callbacks;
+	NSMutableDictionary* _index;
+	unsigned long long _dequeued;
+	unsigned long long _dequeuedNotificationCount;
+
+}
+
+@property (nonatomic,readonly) unsigned long long count; 
+-(id)init;
+-(id)description;
+-(unsigned long long)count;
+-(unsigned long long)countByEnumeratingWithState:(SCD_Struct_BR10*)arg1 objects:(id*)arg2 count:(unsigned long long)arg3 ;
+-(void)removeAllObjects;
+-(void)dequeue:(unsigned long long)arg1 block:(/*^block*/id)arg2 ;
+-(void)addNotification:(id)arg1 asDead:(BOOL)arg2 ;
+-(void)_filterIndex:(id)arg1 ;
+-(void)processDequeueCallbacks;
+-(void)addDequeueCallback:(/*^block*/id)arg1 ;
+@end
+

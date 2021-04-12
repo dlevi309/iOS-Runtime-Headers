@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+
+@interface HDMedicalIDDataMigrator : NSObject
++(BOOL)migrateMedicalIDDataIfNeeded:(id)arg1 ;
++(BOOL)_migrateFromVersionNoneTo1:(id)arg1 ;
++(BOOL)_migrateEmergencyContactsToVersion2:(id)arg1 ;
++(BOOL)_migrateEmergencyContactsToVersion3:(id)arg1 ;
++(BOOL)_migrateFromVersion3ToVersion4:(id)arg1 ;
+@end
+

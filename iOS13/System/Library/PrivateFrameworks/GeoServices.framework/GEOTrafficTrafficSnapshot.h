@@ -1,0 +1,95 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:34 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, NSMutableArray, GEOTrafficSnapshotMetaData;
+
+@interface GEOTrafficTrafficSnapshot : PBCodable <NSCopying> {
+
+	PBDataReader* _reader;
+	NSMutableArray* _colors;
+	NSMutableArray* _incidents;
+	unsigned long long _receivedTime;
+	GEOTrafficSnapshotMetaData* _snapshotMetaData;
+	NSMutableArray* _speeds;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	struct {
+		unsigned has_receivedTime : 1;
+		unsigned read_colors : 1;
+		unsigned read_incidents : 1;
+		unsigned read_snapshotMetaData : 1;
+		unsigned read_speeds : 1;
+		unsigned wrote_colors : 1;
+		unsigned wrote_incidents : 1;
+		unsigned wrote_receivedTime : 1;
+		unsigned wrote_snapshotMetaData : 1;
+		unsigned wrote_speeds : 1;
+	}  _flags;
+
+}
+
+@property (nonatomic,readonly) BOOL hasSnapshotMetaData; 
+@property (nonatomic,retain) GEOTrafficSnapshotMetaData * snapshotMetaData; 
+@property (nonatomic,retain) NSMutableArray * speeds; 
+@property (nonatomic,retain) NSMutableArray * incidents; 
+@property (nonatomic,retain) NSMutableArray * colors; 
+@property (assign,nonatomic) BOOL hasReceivedTime; 
+@property (assign,nonatomic) unsigned long long receivedTime; 
++(BOOL)isValid:(id)arg1 ;
++(Class)speedsType;
++(Class)incidentsType;
++(Class)colorsType;
+-(id)init;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)setColors:(NSMutableArray *)arg1 ;
+-(NSMutableArray *)colors;
+-(void)readAll:(BOOL)arg1 ;
+-(void)_readSnapshotMetaData;
+-(void)_readSpeeds;
+-(void)_addNoFlagsSpeeds:(id)arg1 ;
+-(void)_readIncidents;
+-(void)_addNoFlagsIncidents:(id)arg1 ;
+-(void)_readColors;
+-(void)_addNoFlagsColors:(id)arg1 ;
+-(GEOTrafficSnapshotMetaData *)snapshotMetaData;
+-(void)setSnapshotMetaData:(GEOTrafficSnapshotMetaData *)arg1 ;
+-(unsigned long long)speedsCount;
+-(void)clearSpeeds;
+-(id)speedsAtIndex:(unsigned long long)arg1 ;
+-(void)addSpeeds:(id)arg1 ;
+-(unsigned long long)incidentsCount;
+-(void)clearIncidents;
+-(id)incidentsAtIndex:(unsigned long long)arg1 ;
+-(void)addIncidents:(id)arg1 ;
+-(unsigned long long)colorsCount;
+-(void)clearColors;
+-(id)colorsAtIndex:(unsigned long long)arg1 ;
+-(void)addColors:(id)arg1 ;
+-(BOOL)hasSnapshotMetaData;
+-(NSMutableArray *)speeds;
+-(void)setSpeeds:(NSMutableArray *)arg1 ;
+-(NSMutableArray *)incidents;
+-(void)setIncidents:(NSMutableArray *)arg1 ;
+-(unsigned long long)receivedTime;
+-(void)setReceivedTime:(unsigned long long)arg1 ;
+-(void)setHasReceivedTime:(BOOL)arg1 ;
+-(BOOL)hasReceivedTime;
+@end
+

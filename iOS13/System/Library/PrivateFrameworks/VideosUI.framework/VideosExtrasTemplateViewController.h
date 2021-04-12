@@ -1,0 +1,45 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:26 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VideosExtrasElementViewController.h>
+#import <libobjc.A.dylib/IKAppDocumentDelegate.h>
+
+@class IKViewElement, NSDictionary, IKAppDocument, VideosExtrasContext, NSString;
+
+@interface VideosExtrasTemplateViewController : VideosExtrasElementViewController <IKAppDocumentDelegate> {
+
+	IKViewElement* _displayedTemplate;
+	NSDictionary* _options;
+	IKAppDocument* _document;
+	VideosExtrasContext* _context;
+
+}
+
+@property (nonatomic,readonly) IKAppDocument * document;                          //@synthesize document=_document - In the implementation block
+@property (nonatomic,readonly) BOOL showsPlaceholder; 
+@property (nonatomic,__weak,readonly) VideosExtrasContext * context;              //@synthesize context=_context - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)templateViewControllerWithDocument:(id)arg1 options:(id)arg2 context:(id)arg3 ;
+-(void)dealloc;
+-(VideosExtrasContext *)context;
+-(void)viewDidLoad;
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(void)viewDidDisappear:(BOOL)arg1 ;
+-(IKAppDocument *)document;
+-(void)documentNeedsUpdate:(id)arg1 ;
+-(void)documentDidUpdate:(id)arg1 ;
+-(void)_showPlaceholder;
+-(BOOL)showsPlaceholder;
+-(void)_startBackgroundAudio;
+-(BOOL)shouldUpdateByReplacingViewControllerWithTemplate:(id)arg1 ;
+-(void)configureBackgroundWithElements:(id)arg1 ;
+-(id)initWithDocument:(id)arg1 options:(id)arg2 context:(id)arg3 ;
+-(void)documentDidFail:(id)arg1 withError:(id)arg2 ;
+@end
+

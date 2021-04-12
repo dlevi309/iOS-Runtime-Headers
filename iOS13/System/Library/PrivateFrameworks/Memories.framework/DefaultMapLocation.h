@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:02 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Memories.framework/Memories
+*/
+
+#import <Memories/MapLocation.h>
+
+@interface DefaultMapLocation : MapLocation
+-(BOOL)isResolved;
+-(void)resolveWithCompletionHandler:(/*^block*/id)arg1 ;
+-(BOOL)isResolving;
+-(BOOL)hasValidCoordinate;
+@end
+

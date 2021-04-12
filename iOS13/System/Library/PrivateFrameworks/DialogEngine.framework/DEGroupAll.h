@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:52 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine
+*/
+
+#import <DialogEngine/DialogEngine-Structs.h>
+#import <DialogEngine/DEGroup.h>
+
+@interface DEGroupAll : DEGroup
+
+@property (assign) GroupAll* This; 
+-(id)init;
+-(void)dealloc;
+-(void)addNode:(id)arg1 ;
+-(BOOL)validate:(id)arg1 ;
+@end
+

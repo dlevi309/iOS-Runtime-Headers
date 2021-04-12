@@ -1,0 +1,17 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:04 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Silex.framework/Silex
+*/
+
+#import <Silex/SXComponentClassification.h>
+
+@interface SXBannerAdComponentClassification : SXComponentClassification
++(int)role;
++(id)typeString;
++(id)roleString;
+-(BOOL)isCollapsible;
+-(id)layoutRules;
+-(Class)componentModelClass;
+@end
+

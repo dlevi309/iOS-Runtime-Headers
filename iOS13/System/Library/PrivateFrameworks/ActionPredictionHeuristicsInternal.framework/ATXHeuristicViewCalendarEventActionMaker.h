@@ -1,0 +1,23 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:07 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ActionPredictionHeuristicsInternal.framework/ActionPredictionHeuristicsInternal
+*/
+
+#import <ActionPredictionHeuristicsInternal/ATXHeuristicActionMaker.h>
+
+@class ATXHeuristicObjectHandle;
+
+@interface ATXHeuristicViewCalendarEventActionMaker : ATXHeuristicActionMaker {
+
+	ATXHeuristicObjectHandle* _event;
+
+}
++(BOOL)supportsSecureCoding;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)_makeAction;
+-(id)actionTypeName;
+-(id)initWithTitle:(id)arg1 subtitle:(id)arg2 event:(id)arg3 ;
+@end
+

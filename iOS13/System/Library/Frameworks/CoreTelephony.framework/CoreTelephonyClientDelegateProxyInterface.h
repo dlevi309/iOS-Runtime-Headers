@@ -1,0 +1,13 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:25 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+*/
+
+
+@protocol CoreTelephonyClientDelegateProxyInterface <NSObject,CoreTelephonyClientDelegateInternal,CoreTelephonyClientCellularUsagePolicyDelegateInternal,CoreTelephonyClientRegistrationDelegateInternal,CoreTelephonyClientDataDelegateInternal,CoreTelephonyClientSubscriberDelegateInternal,CoreTelephonyClientEmergencyDelegateInternal,CoreTelephonyClientSMSDelegateInternal,CoreTelephonyClientVoicemailDelegateInternal,CoreTelephonyClientPNRDelegateInternal,CoreTelephonyClientCarrierBundleDelegateInternal,CoreTelephonyClientCapabilitiesDelegateInternal,CoreTelephonyClientSuppServicesDelegateInternal,CoreTelephonyClientCallDelegateInternal,CoreTelephonyClientCarrierServicesDelegateInternal>
+@required
+-(void)clientDidTriggerFault:(id)arg1;
+
+@end
+

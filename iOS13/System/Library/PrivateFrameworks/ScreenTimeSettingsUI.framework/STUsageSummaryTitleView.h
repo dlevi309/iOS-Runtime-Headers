@@ -1,0 +1,77 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:54 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI
+*/
+
+#import <UIKitCore/UIView.h>
+
+@class STUsageReport, UILabel, UIImageView, NSArray, NSLayoutConstraint;
+
+@interface STUsageSummaryTitleView : UIView {
+
+	BOOL _hasMultilineLayout;
+	BOOL _useVibrancy;
+	BOOL _truncateAverageLabel;
+	unsigned long long _usageItemType;
+	STUsageReport* _usageReport;
+	double _previousWidth;
+	UILabel* _titleLabel;
+	UILabel* _usageLabel;
+	UIImageView* _notificationDot;
+	UIImageView* _deltaAverageImageView;
+	UILabel* _deltaAverageLabel;
+	NSArray* _variableConstraints;
+	NSLayoutConstraint* _deltaAverageImageViewVerticalPosition;
+	NSLayoutConstraint* _deltaAverageImageViewWidthConstraint;
+	NSLayoutConstraint* _deltaAverageImageViewHeightConstraint;
+
+}
+
+@property (readonly) BOOL useVibrancy;                                                        //@synthesize useVibrancy=_useVibrancy - In the implementation block
+@property (readonly) BOOL truncateAverageLabel;                                               //@synthesize truncateAverageLabel=_truncateAverageLabel - In the implementation block
+@property (assign) BOOL hasMultilineLayout;                                                   //@synthesize hasMultilineLayout=_hasMultilineLayout - In the implementation block
+@property (assign) double previousWidth;                                                      //@synthesize previousWidth=_previousWidth - In the implementation block
+@property (readonly) UILabel * titleLabel;                                                    //@synthesize titleLabel=_titleLabel - In the implementation block
+@property (readonly) UILabel * usageLabel;                                                    //@synthesize usageLabel=_usageLabel - In the implementation block
+@property (retain) UIImageView * notificationDot;                                             //@synthesize notificationDot=_notificationDot - In the implementation block
+@property (readonly) UIImageView * deltaAverageImageView;                                     //@synthesize deltaAverageImageView=_deltaAverageImageView - In the implementation block
+@property (readonly) UILabel * deltaAverageLabel;                                             //@synthesize deltaAverageLabel=_deltaAverageLabel - In the implementation block
+@property (retain) NSArray * variableConstraints;                                             //@synthesize variableConstraints=_variableConstraints - In the implementation block
+@property (readonly) NSLayoutConstraint * deltaAverageImageViewVerticalPosition;              //@synthesize deltaAverageImageViewVerticalPosition=_deltaAverageImageViewVerticalPosition - In the implementation block
+@property (readonly) NSLayoutConstraint * deltaAverageImageViewWidthConstraint;               //@synthesize deltaAverageImageViewWidthConstraint=_deltaAverageImageViewWidthConstraint - In the implementation block
+@property (readonly) NSLayoutConstraint * deltaAverageImageViewHeightConstraint;              //@synthesize deltaAverageImageViewHeightConstraint=_deltaAverageImageViewHeightConstraint - In the implementation block
+@property (assign,nonatomic) unsigned long long usageItemType;                                //@synthesize usageItemType=_usageItemType - In the implementation block
+@property (nonatomic,retain) STUsageReport * usageReport;                                     //@synthesize usageReport=_usageReport - In the implementation block
+-(id)initWithCoder:(id)arg1 ;
+-(UILabel *)titleLabel;
+-(void)awakeFromNib;
+-(NSArray *)variableConstraints;
+-(void)setVariableConstraints:(NSArray *)arg1 ;
+-(void)_setupSubviews;
+-(void)_setUpConstraints;
+-(void)_updateTitleLabel;
+-(unsigned long long)usageItemType;
+-(void)setUsageItemType:(unsigned long long)arg1 ;
+-(BOOL)useVibrancy;
+-(id)initWithVibrancy:(BOOL)arg1 usageItemType:(unsigned long long)arg2 truncateAverageLabel:(BOOL)arg3 ;
+-(void)setUsageReport:(STUsageReport *)arg1 ;
+-(UILabel *)usageLabel;
+-(BOOL)hasMultilineLayout;
+-(double)previousWidth;
+-(void)setPreviousWidth:(double)arg1 ;
+-(STUsageReport *)usageReport;
+-(UIImageView *)notificationDot;
+-(void)setNotificationDot:(UIImageView *)arg1 ;
+-(void)_updateUsageLabel;
+-(void)_updateDeltaAverageViews;
+-(UIImageView *)deltaAverageImageView;
+-(NSLayoutConstraint *)deltaAverageImageViewWidthConstraint;
+-(NSLayoutConstraint *)deltaAverageImageViewHeightConstraint;
+-(UILabel *)deltaAverageLabel;
+-(BOOL)truncateAverageLabel;
+-(NSLayoutConstraint *)deltaAverageImageViewVerticalPosition;
+-(BOOL)_shouldHaveMultilineLayoutForLineWidth:(double)arg1 ;
+-(void)setHasMultilineLayout:(BOOL)arg1 ;
+@end
+

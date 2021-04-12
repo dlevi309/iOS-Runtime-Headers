@@ -1,0 +1,78 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:21 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+#import <UIKitCore/UIKitCore-Structs.h>
+#import <UIKitCore/UIImageView.h>
+#import <UIKit/UIKeyboardCandidateList.h>
+#import <UIKitCore/_UIDynamicCaretDocumentContentDelegate.h>
+
+@protocol UIKeyboardCandidateListDelegate;
+@class _UIDynamicCaretInput, _UIDynamicCaretAlternatives, _UIDynamicCaretNoContentView, _UIDynamicCaretHelpLabel, TIKeyboardCandidateResultSet, NSString;
+
+@interface UIDynamicCaret : UIImageView <UIKeyboardCandidateList, _UIDynamicCaretDocumentContentDelegate> {
+
+	id<UIKeyboardCandidateListDelegate> _candidateListDelegate;
+	long long _selectedIndex;
+	BOOL _justDeleted;
+	_UIDynamicCaretInput* _inputView;
+	_UIDynamicCaretAlternatives* _alternativesView;
+	_UIDynamicCaretNoContentView* _noContentView;
+	_UIDynamicCaretHelpLabel* _helpLabel;
+	TIKeyboardCandidateResultSet* _candidateSet;
+
+}
+
+@property (nonatomic,retain) _UIDynamicCaretInput * inputView;                            //@synthesize inputView=_inputView - In the implementation block
+@property (nonatomic,retain) _UIDynamicCaretAlternatives * alternativesView;              //@synthesize alternativesView=_alternativesView - In the implementation block
+@property (nonatomic,retain) _UIDynamicCaretNoContentView * noContentView;                //@synthesize noContentView=_noContentView - In the implementation block
+@property (nonatomic,retain) _UIDynamicCaretHelpLabel * helpLabel;                        //@synthesize helpLabel=_helpLabel - In the implementation block
+@property (nonatomic,retain) TIKeyboardCandidateResultSet * candidateSet;                 //@synthesize candidateSet=_candidateSet - In the implementation block
+@property (assign,nonatomic) BOOL isActive; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(BOOL)isActive;
+-(id)backgroundImage;
+-(void)setFrame:(CGRect)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)layoutSubviews;
+-(void)touchesBegan:(id)arg1 withEvent:(id)arg2 ;
+-(void)touchesMoved:(id)arg1 withEvent:(id)arg2 ;
+-(void)touchesEnded:(id)arg1 withEvent:(id)arg2 ;
+-(void)touchesCancelled:(id)arg1 withEvent:(id)arg2 ;
+-(_UIDynamicCaretInput *)inputView;
+-(void)setInputView:(_UIDynamicCaretInput *)arg1 ;
+-(void)didMoveToSuperview;
+-(BOOL)hasCandidates;
+-(void)showCandidateInForwardDirection:(BOOL)arg1 granularity:(int)arg2 ;
+-(BOOL)showCandidate:(id)arg1 ;
+-(BOOL)isExtendedList;
+-(BOOL)isFloatingList;
+-(void)setCandidates:(id)arg1 inlineText:(id)arg2 inlineRect:(CGRect)arg3 maxX:(double)arg4 layout:(BOOL)arg5 ;
+-(void)setUIKeyboardCandidateListDelegate:(id)arg1 ;
+-(void)showCandidateAtIndex:(unsigned long long)arg1 ;
+-(id)currentCandidate;
+-(unsigned long long)currentIndex;
+-(void)candidateAcceptedAtIndex:(unsigned long long)arg1 ;
+-(id)keyboardBehaviors;
+-(id)statisticsIdentifier;
+-(unsigned long long)selectedSortIndex;
+-(BOOL)isDeleteCandidate:(id)arg1 ;
+-(void)setCandidateSet:(TIKeyboardCandidateResultSet *)arg1 ;
+-(TIKeyboardCandidateResultSet *)candidateSet;
+-(void)setIsActive:(BOOL)arg1 ;
+-(void)setAlternativesView:(_UIDynamicCaretAlternatives *)arg1 ;
+-(void)setNoContentView:(_UIDynamicCaretNoContentView *)arg1 ;
+-(void)setHelpLabel:(_UIDynamicCaretHelpLabel *)arg1 ;
+-(_UIDynamicCaretAlternatives *)alternativesView;
+-(_UIDynamicCaretNoContentView *)noContentView;
+-(_UIDynamicCaretHelpLabel *)helpLabel;
+-(void)displayAlternatives:(BOOL)arg1 ;
+-(void)setDocumentHasContent:(BOOL)arg1 ;
+-(void)alternativeTappedAtIndex:(long long)arg1 ;
+@end
+

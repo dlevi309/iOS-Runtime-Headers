@@ -1,0 +1,32 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:11 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotosGraph.framework/PhotosGraph
+*/
+
+
+#import <PhotosGraph/PhotosGraph-Structs.h>
+@class NSString;
+
+@interface PGMatchingCommonLocation : NSObject {
+
+	double _distance;
+	NSString* _label;
+	CLLocationCoordinate2D _coordinate;
+	CLLocationCoordinate2D _addressCoordinate;
+
+}
+
+@property (nonatomic,retain) NSString * label;                                      //@synthesize label=_label - In the implementation block
+@property (assign,nonatomic) CLLocationCoordinate2D coordinate;                     //@synthesize coordinate=_coordinate - In the implementation block
+@property (assign,nonatomic) CLLocationCoordinate2D addressCoordinate;              //@synthesize addressCoordinate=_addressCoordinate - In the implementation block
++(id)matchingCommonLocationWithLabel:(id)arg1 coordinate:(CLLocationCoordinate2D)arg2 forAddressCoordinate:(CLLocationCoordinate2D)arg3 ;
+-(CLLocationCoordinate2D)coordinate;
+-(void)setLabel:(NSString *)arg1 ;
+-(NSString *)label;
+-(void)setCoordinate:(CLLocationCoordinate2D)arg1 ;
+-(double)distanceBetweenCoordinates;
+-(CLLocationCoordinate2D)addressCoordinate;
+-(void)setAddressCoordinate:(CLLocationCoordinate2D)arg1 ;
+@end
+

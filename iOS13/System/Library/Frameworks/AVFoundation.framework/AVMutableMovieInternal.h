@@ -1,0 +1,27 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+*/
+
+
+@protocol OS_dispatch_semaphore;
+#import <AVFoundation/AVFoundation-Structs.h>
+@class NSURL, NSData, NSDictionary, NSObject, NSMutableArray, AVDispatchOnce;
+
+@interface AVMutableMovieInternal : NSObject {
+
+	OpaqueFigMutableMovieRef figMutableMovie;
+	OpaqueFigFormatReaderRef formatReader;
+	OpaqueFigAssetRef figAsset;
+	NSURL* URL;
+	NSData* data;
+	NSDictionary* initializationOptions;
+	NSObject*<OS_dispatch_semaphore> trackWaitingSemaphore;
+	NSObject*<OS_dispatch_semaphore> metadataWaitingSemaphore;
+	NSMutableArray* tracks;
+	AVDispatchOnce* makeTracksArrayOnce;
+
+}
+@end
+

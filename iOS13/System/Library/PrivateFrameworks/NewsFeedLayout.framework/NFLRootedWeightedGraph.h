@@ -1,0 +1,60 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:15 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NewsFeedLayout.framework/NewsFeedLayout
+*/
+
+#import <NewsFeedLayout/NewsFeedLayout-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class FCSetValueMapTable, NSMutableSet, NSMutableDictionary;
+
+@interface NFLRootedWeightedGraph : NSObject <NSCopying> {
+
+	id _rootNode;
+	FCSetValueMapTable* _parentToChildren;
+	FCSetValueMapTable* _childToParents;
+	NSMutableSet* _childlessNodes;
+	NSMutableSet* _parentlessNodes;
+	NSMutableDictionary* _weightsByEdge;
+
+}
+
+@property (nonatomic,retain) id rootNode;                                        //@synthesize rootNode=_rootNode - In the implementation block
+@property (nonatomic,retain) FCSetValueMapTable * parentToChildren;              //@synthesize parentToChildren=_parentToChildren - In the implementation block
+@property (nonatomic,retain) FCSetValueMapTable * childToParents;                //@synthesize childToParents=_childToParents - In the implementation block
+@property (nonatomic,retain) NSMutableSet * childlessNodes;                      //@synthesize childlessNodes=_childlessNodes - In the implementation block
+@property (nonatomic,retain) NSMutableSet * parentlessNodes;                     //@synthesize parentlessNodes=_parentlessNodes - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * weightsByEdge;                //@synthesize weightsByEdge=_weightsByEdge - In the implementation block
+-(id)init;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)rootNode;
+-(void)removeNode:(id)arg1 ;
+-(BOOL)containsNode:(id)arg1 ;
+-(void)setRootNode:(id)arg1 ;
+-(id)initWithRootNode:(id)arg1 ;
+-(FCSetValueMapTable *)parentToChildren;
+-(void)setParentToChildren:(FCSetValueMapTable *)arg1 ;
+-(FCSetValueMapTable *)childToParents;
+-(void)setChildToParents:(FCSetValueMapTable *)arg1 ;
+-(NSMutableSet *)childlessNodes;
+-(void)setChildlessNodes:(NSMutableSet *)arg1 ;
+-(NSMutableSet *)parentlessNodes;
+-(void)setParentlessNodes:(NSMutableSet *)arg1 ;
+-(NSMutableDictionary *)weightsByEdge;
+-(void)setWeightsByEdge:(NSMutableDictionary *)arg1 ;
+-(id)parentsOfNode:(id)arg1 ;
+-(void)_submitMaxPath:(id)arg1 withWeight:(double)arg2 toNode:(id)arg3 maxPathStore:(id)arg4 ;
+-(void)_setWeight:(double)arg1 forEdgeFromNode:(id)arg2 toNode:(id)arg3 ;
+-(id)childrenOfNode:(id)arg1 ;
+-(void)debug_assertDataStructuresInSync;
+-(id)_edgeRepresentationFromNode:(id)arg1 toNode:(id)arg2 ;
+-(void)removeEdgeFromNode:(id)arg1 toNode:(id)arg2 ;
+-(double)weightForEdgeFromNode:(id)arg1 toNode:(id)arg2 ;
+-(id)highestAverageWeightedPathsFromRootToNode:(id)arg1 pathWeight:(double*)arg2 ;
+-(void)addDirectedEdgeWithWeight:(double)arg1 fromNode:(id)arg2 toNode:(id)arg3 ;
+-(void)removeChildlessNodesExhaustivelyButNode:(id)arg1 ;
+-(void)removeParentlessNodesExhaustivelyButRootNode;
+@end
+

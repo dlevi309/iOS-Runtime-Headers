@@ -1,0 +1,82 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:50 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI
+*/
+
+#import <libobjc.A.dylib/RUIObjectModelDelegate.h>
+
+@protocol FAChildAccountCreationDelegate;
+@class AASetupAssistantService, ACAccount, AAGrandSlamSigner, NSURL, NSMutableArray, RUILoader, NSHTTPURLResponse, UIActivityIndicatorView, UIBarButtonItem, UINavigationItem, NSArray, UIToolbar, FARequestConfigurator, UINavigationController, NSString;
+
+@interface FAChildAccountCreationController : NSObject <RUIObjectModelDelegate> {
+
+	AASetupAssistantService* _setupService;
+	ACAccount* _appleAccount;
+	AAGrandSlamSigner* _grandSlamSigner;
+	NSURL* _launchingURL;
+	NSMutableArray* _objectModels;
+	RUILoader* _loader;
+	/*^block*/id _loaderCompletion;
+	NSHTTPURLResponse* _currentResponse;
+	UIActivityIndicatorView* _spinnerView;
+	UIBarButtonItem* _originalRightBarButtonItem;
+	UINavigationItem* _navigationItemShowingSpinner;
+	NSArray* _originalEnabledToolbarItems;
+	NSArray* _originalToolbarItems;
+	UIToolbar* _originalToolbar;
+	BOOL _isShowingSpinner;
+	BOOL _isPendingDismissal;
+	FARequestConfigurator* _requestConfigurator;
+	id<FAChildAccountCreationDelegate> _delegate;
+	UINavigationController* _navigationController;
+	NSString* _continuationData;
+
+}
+
+@property (assign,nonatomic,__weak) id<FAChildAccountCreationDelegate> delegate;                //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic,__weak) UINavigationController * navigationController;              //@synthesize navigationController=_navigationController - In the implementation block
+@property (nonatomic,copy) NSString * continuationData;                                         //@synthesize continuationData=_continuationData - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id<FAChildAccountCreationDelegate>)delegate;
+-(void)setDelegate:(id<FAChildAccountCreationDelegate>)arg1 ;
+-(UINavigationController *)navigationController;
+-(void)_cancel;
+-(id)initWithAccountManager:(id)arg1 ;
+-(void)setNavigationController:(UINavigationController *)arg1 ;
+-(id)_spinnerView;
+-(void)objectModelDidChange:(id)arg1 ;
+-(id)parentViewControllerForObjectModel:(id)arg1 ;
+-(id)loader:(id)arg1 willLoadRequest:(id)arg2 redirectResponse:(id)arg3 ;
+-(id)sessionConfigurationForLoader:(id)arg1 ;
+-(void)loader:(id)arg1 receivedObjectModel:(id)arg2 actionSignal:(unsigned long long)arg3 ;
+-(void)loader:(id)arg1 didFailWithError:(id)arg2 ;
+-(void)loader:(id)arg1 didReceiveHTTPResponse:(id)arg2 ;
+-(void)objectModelPressedBack:(id)arg1 ;
+-(void)objectModel:(id)arg1 pressedLink:(id)arg2 httpMethod:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)objectModel:(id)arg1 pressedButton:(id)arg2 attributes:(id)arg3 ;
+-(unsigned long long)supportedInterfaceOrientationsForObjectModel:(id)arg1 page:(id)arg2 ;
+-(id)initWithAppleAccount:(id)arg1 grandSlamSigner:(id)arg2 ;
+-(void)_showActivitySpinnerInNavigationBar;
+-(void)_sendUserToiTunesSettings;
+-(void)_popObjectModelAnimated:(BOOL)arg1 ;
+-(void)_addHeadersToRequest:(id)arg1 ;
+-(id)_requestConfigurator;
+-(void)loadRemoteUI;
+-(void)prepareForDismiss;
+-(void)_startRemoteUILoaderWithRequest:(id)arg1 ;
+-(void)_cleanupRemoteUILoader;
+-(void)_hideActivitySpinner;
+-(void)_displayConnectionErrorAndCancel;
+-(void)_renewCredentialsWithCompletionHandler:(/*^block*/id)arg1 ;
+-(void)_createAppleIDWithParameters:(id)arg1 handler:(/*^block*/id)arg2 ;
+-(void)_createChildAccount;
+-(BOOL)_pressedLink:(id)arg1 comesFromBarButtonItem:(id)arg2 objectModel:(id)arg3 ;
+-(void)_showActivitySpinnerInToolbar:(id)arg1 ;
+-(NSString *)continuationData;
+-(void)setContinuationData:(NSString *)arg1 ;
+@end
+

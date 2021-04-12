@@ -1,0 +1,119 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+#import <HealthDaemon/HealthDaemon-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/HDDecoding.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class HDCodableMedicalCodingList, NSString, NSData, HDCodableMedicalRecord, HDCodableStringList, HDCodableReferenceRangeList, HDCodableMedicalCoding, HDCodableInspectableValueCollection;
+
+@interface HDCodableDiagnosticTestResult : PBCodable <HDDecoding, NSCopying> {
+
+	HDCodableMedicalCodingList* _bodySiteCodings;
+	NSString* _category;
+	NSString* _comments;
+	HDCodableMedicalCodingList* _diagnosticTestCodings;
+	NSData* _effectiveEndDate;
+	NSData* _effectiveStartDate;
+	HDCodableMedicalCodingList* _interpretationCodings;
+	NSData* _issueDate;
+	HDCodableMedicalRecord* _medicalRecord;
+	HDCodableMedicalCodingList* _methodCodings;
+	HDCodableStringList* _performers;
+	HDCodableReferenceRangeList* _referenceRanges;
+	HDCodableMedicalCoding* _statusCoding;
+	HDCodableInspectableValueCollection* _value;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) BOOL hasMedicalRecord; 
+@property (nonatomic,retain) HDCodableMedicalRecord * medicalRecord;                          //@synthesize medicalRecord=_medicalRecord - In the implementation block
+@property (nonatomic,readonly) BOOL hasDiagnosticTestCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * diagnosticTestCodings;              //@synthesize diagnosticTestCodings=_diagnosticTestCodings - In the implementation block
+@property (nonatomic,readonly) BOOL hasValue; 
+@property (nonatomic,retain) HDCodableInspectableValueCollection * value;                     //@synthesize value=_value - In the implementation block
+@property (nonatomic,readonly) BOOL hasReferenceRanges; 
+@property (nonatomic,retain) HDCodableReferenceRangeList * referenceRanges;                   //@synthesize referenceRanges=_referenceRanges - In the implementation block
+@property (nonatomic,readonly) BOOL hasEffectiveStartDate; 
+@property (nonatomic,retain) NSData * effectiveStartDate;                                     //@synthesize effectiveStartDate=_effectiveStartDate - In the implementation block
+@property (nonatomic,readonly) BOOL hasCategory; 
+@property (nonatomic,retain) NSString * category;                                             //@synthesize category=_category - In the implementation block
+@property (nonatomic,readonly) BOOL hasIssueDate; 
+@property (nonatomic,retain) NSData * issueDate;                                              //@synthesize issueDate=_issueDate - In the implementation block
+@property (nonatomic,readonly) BOOL hasEffectiveEndDate; 
+@property (nonatomic,retain) NSData * effectiveEndDate;                                       //@synthesize effectiveEndDate=_effectiveEndDate - In the implementation block
+@property (nonatomic,readonly) BOOL hasStatusCoding; 
+@property (nonatomic,retain) HDCodableMedicalCoding * statusCoding;                           //@synthesize statusCoding=_statusCoding - In the implementation block
+@property (nonatomic,readonly) BOOL hasInterpretationCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * interpretationCodings;              //@synthesize interpretationCodings=_interpretationCodings - In the implementation block
+@property (nonatomic,readonly) BOOL hasComments; 
+@property (nonatomic,retain) NSString * comments;                                             //@synthesize comments=_comments - In the implementation block
+@property (nonatomic,readonly) BOOL hasBodySiteCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * bodySiteCodings;                    //@synthesize bodySiteCodings=_bodySiteCodings - In the implementation block
+@property (nonatomic,readonly) BOOL hasMethodCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * methodCodings;                      //@synthesize methodCodings=_methodCodings - In the implementation block
+@property (nonatomic,readonly) BOOL hasPerformers; 
+@property (nonatomic,retain) HDCodableStringList * performers;                                //@synthesize performers=_performers - In the implementation block
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(NSString *)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(NSString *)category;
+-(void)setCategory:(NSString *)arg1 ;
+-(HDCodableInspectableValueCollection *)value;
+-(void)setValue:(HDCodableInspectableValueCollection *)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(BOOL)hasCategory;
+-(BOOL)hasValue;
+-(NSString *)comments;
+-(void)setComments:(NSString *)arg1 ;
+-(BOOL)hasComments;
+-(HDCodableStringList *)performers;
+-(void)setPerformers:(HDCodableStringList *)arg1 ;
+-(HDCodableReferenceRangeList *)referenceRanges;
+-(HDCodableMedicalCoding *)statusCoding;
+-(HDCodableMedicalCodingList *)diagnosticTestCodings;
+-(HDCodableMedicalCodingList *)bodySiteCodings;
+-(NSData *)effectiveStartDate;
+-(NSData *)issueDate;
+-(NSData *)effectiveEndDate;
+-(HDCodableMedicalCodingList *)interpretationCodings;
+-(HDCodableMedicalCodingList *)methodCodings;
+-(void)setMedicalRecord:(HDCodableMedicalRecord *)arg1 ;
+-(void)setStatusCoding:(HDCodableMedicalCoding *)arg1 ;
+-(BOOL)hasMedicalRecord;
+-(BOOL)hasStatusCoding;
+-(HDCodableMedicalRecord *)medicalRecord;
+-(BOOL)applyToObject:(id)arg1 ;
+-(void)setBodySiteCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(void)setDiagnosticTestCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(void)setEffectiveStartDate:(NSData *)arg1 ;
+-(void)setEffectiveEndDate:(NSData *)arg1 ;
+-(void)setIssueDate:(NSData *)arg1 ;
+-(BOOL)applyToObject:(id)arg1 error:(out id*)arg2 ;
+-(void)setReferenceRanges:(HDCodableReferenceRangeList *)arg1 ;
+-(void)setInterpretationCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(void)setMethodCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(BOOL)hasDiagnosticTestCodings;
+-(BOOL)hasReferenceRanges;
+-(BOOL)hasEffectiveStartDate;
+-(BOOL)hasIssueDate;
+-(BOOL)hasEffectiveEndDate;
+-(BOOL)hasInterpretationCodings;
+-(BOOL)hasBodySiteCodings;
+-(BOOL)hasMethodCodings;
+-(BOOL)hasPerformers;
+@end
+

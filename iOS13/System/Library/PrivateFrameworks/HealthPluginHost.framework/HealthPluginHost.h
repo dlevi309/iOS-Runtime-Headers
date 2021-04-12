@@ -1,0 +1,12 @@
+#import <HealthPluginHost/HealthPluginHost.PostNotificationOperation.h>
+#import <HealthPluginHost/HealthPluginHost.FeedItemGenerationOperation.h>
+#import <HealthPluginHost/HealthPluginHost.SubmitTrainingOperation.h>
+#import <HealthPluginHost/HealthPluginHost.SubmitHighlightsAnalyticsOperation.h>
+#import <HealthPluginHost/HealthPluginHost.SummarySingleDayFeedItemGenerationOperation.h>
+#import <HealthPluginHost/HealthPluginHost.HealthPluginHostConnection.h>
+#import <HealthPluginHost/HealthPluginHost.PopulateDiscoverFeedOperation.h>
+#import <HealthPluginHost/HealthPluginHost.InteractiveFeedItemGenerationOperation.h>
+#import <HealthPluginHost/HealthPluginHost.SubmitFeedPersonalizationAnalyticsOperation.h>
+#import <HealthPluginHost/HealthPluginHost.DeleteFeedOperation.h>
+#import <HealthPluginHost/HealthPluginHost.HealthPluginHostOperation.h>
+#import <HealthPluginHost/HealthPluginHost.CollectFeedPopulationDiagnosticLogsOperation.h>

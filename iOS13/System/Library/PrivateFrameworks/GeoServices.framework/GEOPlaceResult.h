@@ -1,0 +1,205 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:31 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, PBUnknownFields, NSMutableArray, GEOPlace, NSString, GEOPlaceSearchRequest, GEOAddress;
+
+@interface GEOPlaceResult : PBCodable <NSCopying> {
+
+	PBDataReader* _reader;
+	PBUnknownFields* _unknownFields;
+	NSMutableArray* _additionalPlaces;
+	NSMutableArray* _disambiguationLabels;
+	unsigned long long _flyoverTourMuid;
+	NSMutableArray* _matchedTokens;
+	NSMutableArray* _namedFeatures;
+	NSMutableArray* _namedFields;
+	GEOPlace* _place;
+	NSString* _quad;
+	GEOPlaceSearchRequest* _revgeoRequestTemplate;
+	NSString* _suggestedQuery;
+	GEOAddress* _tokenEntity;
+	NSMutableArray* _unmatchedStrings;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	int _cacheControl;
+	unsigned _travelDistance;
+	unsigned _travelTime;
+	struct {
+		unsigned has_flyoverTourMuid : 1;
+		unsigned has_cacheControl : 1;
+		unsigned has_travelDistance : 1;
+		unsigned has_travelTime : 1;
+		unsigned read_unknownFields : 1;
+		unsigned read_additionalPlaces : 1;
+		unsigned read_disambiguationLabels : 1;
+		unsigned read_matchedTokens : 1;
+		unsigned read_namedFeatures : 1;
+		unsigned read_namedFields : 1;
+		unsigned read_place : 1;
+		unsigned read_quad : 1;
+		unsigned read_revgeoRequestTemplate : 1;
+		unsigned read_suggestedQuery : 1;
+		unsigned read_tokenEntity : 1;
+		unsigned read_unmatchedStrings : 1;
+		unsigned wrote_unknownFields : 1;
+		unsigned wrote_additionalPlaces : 1;
+		unsigned wrote_disambiguationLabels : 1;
+		unsigned wrote_flyoverTourMuid : 1;
+		unsigned wrote_matchedTokens : 1;
+		unsigned wrote_namedFeatures : 1;
+		unsigned wrote_namedFields : 1;
+		unsigned wrote_place : 1;
+		unsigned wrote_quad : 1;
+		unsigned wrote_revgeoRequestTemplate : 1;
+		unsigned wrote_suggestedQuery : 1;
+		unsigned wrote_tokenEntity : 1;
+		unsigned wrote_unmatchedStrings : 1;
+		unsigned wrote_cacheControl : 1;
+		unsigned wrote_travelDistance : 1;
+		unsigned wrote_travelTime : 1;
+	}  _flags;
+
+}
+
+@property (nonatomic,retain) GEOPlace * place; 
+@property (nonatomic,retain) NSMutableArray * additionalPlaces; 
+@property (nonatomic,readonly) BOOL hasSuggestedQuery; 
+@property (nonatomic,retain) NSString * suggestedQuery; 
+@property (assign,nonatomic) BOOL hasTravelTime; 
+@property (assign,nonatomic) unsigned travelTime; 
+@property (assign,nonatomic) BOOL hasTravelDistance; 
+@property (assign,nonatomic) unsigned travelDistance; 
+@property (nonatomic,readonly) BOOL hasTokenEntity; 
+@property (nonatomic,retain) GEOAddress * tokenEntity; 
+@property (nonatomic,readonly) BOOL hasQuad; 
+@property (nonatomic,retain) NSString * quad; 
+@property (nonatomic,retain) NSMutableArray * unmatchedStrings; 
+@property (nonatomic,retain) NSMutableArray * namedFeatures; 
+@property (nonatomic,readonly) BOOL hasRevgeoRequestTemplate; 
+@property (nonatomic,retain) GEOPlaceSearchRequest * revgeoRequestTemplate; 
+@property (nonatomic,retain) NSMutableArray * matchedTokens; 
+@property (assign,nonatomic) BOOL hasFlyoverTourMuid; 
+@property (assign,nonatomic) unsigned long long flyoverTourMuid; 
+@property (assign,nonatomic) BOOL hasCacheControl; 
+@property (assign,nonatomic) int cacheControl; 
+@property (nonatomic,retain) NSMutableArray * disambiguationLabels; 
+@property (nonatomic,retain) NSMutableArray * namedFields; 
+@property (nonatomic,readonly) PBUnknownFields * unknownFields; 
++(BOOL)isValid:(id)arg1 ;
++(Class)disambiguationLabelType;
++(Class)additionalPlaceType;
++(Class)unmatchedStringType;
++(Class)namedFeatureType;
++(Class)matchedTokenType;
++(Class)namedFieldType;
+-(id)init;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(NSString *)quad;
+-(void)readAll:(BOOL)arg1 ;
+-(PBUnknownFields *)unknownFields;
+-(void)clearUnknownFields:(BOOL)arg1 ;
+-(int)cacheControl;
+-(BOOL)hasCacheControl;
+-(void)clearSensitiveFields;
+-(void)_readDisambiguationLabels;
+-(void)_addNoFlagsDisambiguationLabel:(id)arg1 ;
+-(unsigned long long)disambiguationLabelsCount;
+-(void)clearDisambiguationLabels;
+-(id)disambiguationLabelAtIndex:(unsigned long long)arg1 ;
+-(void)addDisambiguationLabel:(id)arg1 ;
+-(NSMutableArray *)disambiguationLabels;
+-(void)setDisambiguationLabels:(NSMutableArray *)arg1 ;
+-(void)_readPlace;
+-(void)_readAdditionalPlaces;
+-(void)_addNoFlagsAdditionalPlace:(id)arg1 ;
+-(void)_readSuggestedQuery;
+-(void)_readTokenEntity;
+-(void)_readQuad;
+-(void)_readUnmatchedStrings;
+-(void)_addNoFlagsUnmatchedString:(id)arg1 ;
+-(void)_readNamedFeatures;
+-(void)_addNoFlagsNamedFeature:(id)arg1 ;
+-(void)_readRevgeoRequestTemplate;
+-(void)_readMatchedTokens;
+-(void)_addNoFlagsMatchedToken:(id)arg1 ;
+-(void)_readNamedFields;
+-(void)_addNoFlagsNamedField:(id)arg1 ;
+-(GEOPlace *)place;
+-(NSString *)suggestedQuery;
+-(GEOAddress *)tokenEntity;
+-(NSMutableArray *)unmatchedStrings;
+-(GEOPlaceSearchRequest *)revgeoRequestTemplate;
+-(BOOL)hasRevgeoRequestTemplate;
+-(void)setRevgeoRequestTemplate:(GEOPlaceSearchRequest *)arg1 ;
+-(void)setPlace:(GEOPlace *)arg1 ;
+-(unsigned long long)additionalPlacesCount;
+-(void)clearAdditionalPlaces;
+-(id)additionalPlaceAtIndex:(unsigned long long)arg1 ;
+-(void)addAdditionalPlace:(id)arg1 ;
+-(void)setSuggestedQuery:(NSString *)arg1 ;
+-(void)setTokenEntity:(GEOAddress *)arg1 ;
+-(void)setQuad:(NSString *)arg1 ;
+-(unsigned long long)unmatchedStringsCount;
+-(void)clearUnmatchedStrings;
+-(id)unmatchedStringAtIndex:(unsigned long long)arg1 ;
+-(void)addUnmatchedString:(id)arg1 ;
+-(unsigned long long)namedFeaturesCount;
+-(void)clearNamedFeatures;
+-(id)namedFeatureAtIndex:(unsigned long long)arg1 ;
+-(void)addNamedFeature:(id)arg1 ;
+-(unsigned long long)matchedTokensCount;
+-(void)clearMatchedTokens;
+-(id)matchedTokenAtIndex:(unsigned long long)arg1 ;
+-(void)addMatchedToken:(id)arg1 ;
+-(unsigned long long)namedFieldsCount;
+-(void)clearNamedFields;
+-(id)namedFieldAtIndex:(unsigned long long)arg1 ;
+-(void)addNamedField:(id)arg1 ;
+-(NSMutableArray *)additionalPlaces;
+-(NSMutableArray *)namedFeatures;
+-(NSMutableArray *)matchedTokens;
+-(NSMutableArray *)namedFields;
+-(void)setAdditionalPlaces:(NSMutableArray *)arg1 ;
+-(BOOL)hasSuggestedQuery;
+-(unsigned)travelTime;
+-(void)setTravelTime:(unsigned)arg1 ;
+-(void)setHasTravelTime:(BOOL)arg1 ;
+-(BOOL)hasTravelTime;
+-(unsigned)travelDistance;
+-(void)setTravelDistance:(unsigned)arg1 ;
+-(void)setHasTravelDistance:(BOOL)arg1 ;
+-(BOOL)hasTravelDistance;
+-(BOOL)hasTokenEntity;
+-(BOOL)hasQuad;
+-(void)setUnmatchedStrings:(NSMutableArray *)arg1 ;
+-(void)setNamedFeatures:(NSMutableArray *)arg1 ;
+-(void)setMatchedTokens:(NSMutableArray *)arg1 ;
+-(unsigned long long)flyoverTourMuid;
+-(void)setFlyoverTourMuid:(unsigned long long)arg1 ;
+-(void)setHasFlyoverTourMuid:(BOOL)arg1 ;
+-(BOOL)hasFlyoverTourMuid;
+-(void)setCacheControl:(int)arg1 ;
+-(void)setHasCacheControl:(BOOL)arg1 ;
+-(id)cacheControlAsString:(int)arg1 ;
+-(int)StringAsCacheControl:(id)arg1 ;
+-(void)setNamedFields:(NSMutableArray *)arg1 ;
+-(id)geoMapItem;
+@end
+

@@ -1,0 +1,49 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:43 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/CloudDocsDaemon
+*/
+
+
+@class PQLConnection, NSURL, NSArray;
+
+@interface BRCDatabaseBackupStorage : NSObject {
+
+	PQLConnection* _database;
+	NSURL* _databaseURL;
+	NSArray* _urlPropertiesToFetch;
+	NSURL* _attachedDatabaseURL;
+
+}
+
+@property (nonatomic,retain) NSURL * databaseURL;                         //@synthesize databaseURL=_databaseURL - In the implementation block
+@property (nonatomic,retain) PQLConnection * database;                    //@synthesize database=_database - In the implementation block
+@property (nonatomic,retain) NSArray * urlPropertiesToFetch;              //@synthesize urlPropertiesToFetch=_urlPropertiesToFetch - In the implementation block
+@property (nonatomic,retain) NSURL * attachedDatabaseURL;                 //@synthesize attachedDatabaseURL=_attachedDatabaseURL - In the implementation block
+-(void)dealloc;
+-(void)setDatabase:(PQLConnection *)arg1 ;
+-(PQLConnection *)database;
+-(BOOL)addRecord:(id)arg1 ;
+-(NSURL *)databaseURL;
+-(id)initWithDatabaseURL:(id)arg1 ;
+-(void)setDatabaseURL:(NSURL *)arg1 ;
+-(void)flushAndClose;
+-(NSArray *)urlPropertiesToFetch;
+-(BOOL)setUpDatabaseWithError:(id*)arg1 ;
+-(id)backupManifestEnumerator:(id)arg1 ;
+-(void)populateNewColumnsInDatabase:(id)arg1 forRecord:(id)arg2 basePath:(id)arg3 ;
+-(id)docIDForURL:(id)arg1 ;
+-(BOOL)setForeignKeys:(id)arg1 enabled:(BOOL)arg2 ;
+-(BOOL)negateIDs:(id)arg1 ;
+-(BOOL)updateIDs:(id)arg1 ;
+-(BOOL)clearStagedIDs:(id)arg1 ;
+-(BOOL)fixUpBackupDetector:(id)arg1 ;
+-(BOOL)fixUpClientState:(id)arg1 ;
+-(NSURL *)attachedDatabaseURL;
+-(void)populateNewColumnsWithBasePath:(id)arg1 ;
+-(BOOL)attachDatabase:(id)arg1 error:(id*)arg2 ;
+-(BOOL)updateAttachedDatabase;
+-(void)setUrlPropertiesToFetch:(NSArray *)arg1 ;
+-(void)setAttachedDatabaseURL:(NSURL *)arg1 ;
+@end
+

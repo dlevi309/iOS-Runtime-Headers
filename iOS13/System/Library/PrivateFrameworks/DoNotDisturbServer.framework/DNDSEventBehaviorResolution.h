@@ -1,0 +1,42 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:01 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/DoNotDisturbServer.framework/DoNotDisturbServer
+*/
+
+#import <DoNotDisturbServer/DoNotDisturbServer-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSUUID, NSDate, DNDClientEventBehavior, NSString;
+
+@interface DNDSEventBehaviorResolution : NSObject <NSCopying> {
+
+	NSUUID* _UUID;
+	NSDate* _date;
+	DNDClientEventBehavior* _eventBehavior;
+	NSString* _clientIdentifier;
+	unsigned long long _outcome;
+	unsigned long long _reason;
+
+}
+
+@property (nonatomic,copy,readonly) NSUUID * UUID;                                       //@synthesize UUID=_UUID - In the implementation block
+@property (nonatomic,copy,readonly) NSDate * date;                                       //@synthesize date=_date - In the implementation block
+@property (nonatomic,copy,readonly) DNDClientEventBehavior * eventBehavior;              //@synthesize eventBehavior=_eventBehavior - In the implementation block
+@property (nonatomic,copy,readonly) NSString * clientIdentifier;                         //@synthesize clientIdentifier=_clientIdentifier - In the implementation block
+@property (nonatomic,readonly) unsigned long long outcome;                               //@synthesize outcome=_outcome - In the implementation block
+@property (nonatomic,readonly) unsigned long long reason;                                //@synthesize reason=_reason - In the implementation block
++(id)resolutionForDate:(id)arg1 eventBehavior:(id)arg2 clientIdentifier:(id)arg3 outcome:(unsigned long long)arg4 reason:(unsigned long long)arg5 ;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(unsigned long long)reason;
+-(NSDate *)date;
+-(NSUUID *)UUID;
+-(unsigned long long)outcome;
+-(NSString *)clientIdentifier;
+-(DNDClientEventBehavior *)eventBehavior;
+-(id)_initWithUUID:(id)arg1 date:(id)arg2 eventBehavior:(id)arg3 clientIdentifier:(id)arg4 outcome:(unsigned long long)arg5 reason:(unsigned long long)arg6 ;
+@end
+

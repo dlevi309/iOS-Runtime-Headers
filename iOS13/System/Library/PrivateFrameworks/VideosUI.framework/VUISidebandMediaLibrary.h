@@ -1,0 +1,71 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:26 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VideosUI-Structs.h>
+#import <VideosUI/VUIDeviceMediaLibrary.h>
+
+@protocol OS_dispatch_queue;
+@class NSPersistentContainer, NSManagedObjectContext, NSObject;
+
+@interface VUISidebandMediaLibrary : VUIDeviceMediaLibrary {
+
+	NSPersistentContainer* _persistentContainer;
+	NSManagedObjectContext* _backgroundManagedObjectContext;
+	NSObject*<OS_dispatch_queue> _serialQueue;
+
+}
+
+@property (nonatomic,retain) NSPersistentContainer * persistentContainer;                          //@synthesize persistentContainer=_persistentContainer - In the implementation block
+@property (nonatomic,retain) NSManagedObjectContext * backgroundManagedObjectContext;              //@synthesize backgroundManagedObjectContext=_backgroundManagedObjectContext - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> serialQueue;                             //@synthesize serialQueue=_serialQueue - In the implementation block
++(void)initialize;
++(void)setDeleteAllVideosAndKeysOnInitializationForAppRemoval:(BOOL)arg1 ;
+-(void)dealloc;
+-(id)initWithManager:(id)arg1 ;
+-(id)title;
+-(NSObject*<OS_dispatch_queue>)serialQueue;
+-(NSPersistentContainer *)persistentContainer;
+-(void)setSerialQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)setPersistentContainer:(NSPersistentContainer *)arg1 ;
+-(NSManagedObjectContext *)backgroundManagedObjectContext;
+-(id)enqueueFetchRequests:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)_dumpDatabaseToLogIfEnabled;
+-(void)setBackgroundManagedObjectContext:(NSManagedObjectContext *)arg1 ;
+-(void)_mainQueueManagedObjectContextDidSave:(id)arg1 ;
+-(void)_activeAccountDidChange:(id)arg1 ;
+-(void)_pruneVideosAtAppLaunchWithCompletion:(/*^block*/id)arg1 ;
+-(id)_movieForCanonicalID:(id)arg1 createIfNeeded:(BOOL)arg2 wasCreated:(BOOL*)arg3 ;
+-(id)_tvEpisodeForCanonicalID:(id)arg1 createIfNeeded:(BOOL)arg2 wasCreated:(BOOL*)arg3 ;
+-(id)_tvSeriesForCanonicalID:(id)arg1 createIfNeeded:(BOOL)arg2 wasCreated:(BOOL*)arg3 ;
+-(id)imageInfoForSeries:(id)arg1 imageType:(unsigned long long)arg2 createIfNeeded:(BOOL)arg3 wasCreated:(BOOL*)arg4 ;
+-(id)_tvSeasonForCanonicalID:(id)arg1 createIfNeeded:(BOOL)arg2 wasCreated:(BOOL*)arg3 ;
+-(id)imageInfoForVideo:(id)arg1 imageType:(unsigned long long)arg2 createIfNeeded:(BOOL)arg3 wasCreated:(BOOL*)arg4 ;
+-(void)saveChangesToManagedObjects;
+-(id)_managedObjectWithEntityName:(id)arg1 predicate:(id)arg2 createIfNeeded:(BOOL)arg3 wasCreated:(BOOL*)arg4 ;
+-(void)deleteFPSKeyDeletionInfos:(id)arg1 ;
+-(void)removeDownloadedMediaForVideoManagedObjects:(id)arg1 ;
+-(id)mainContextVideoForVideo:(id)arg1 ;
+-(BOOL)_removeDownloadedMediaForVideoManagedObject:(id)arg1 saveWhenDone:(BOOL)arg2 ;
+-(id)_mainContextManagedObjectsForObjects:(id)arg1 ;
+-(void)_deleteVideoManagedObjects:(id)arg1 ;
+-(id)videosWithDownloadState:(long long)arg1 ;
+-(id)_downloadedVideosForNonSignedInUsers;
+-(void)_deleteOrphanedDownloads;
+-(void)_removeDownloadsForNonSignedInUsers;
+-(id)videoForPlayable:(id)arg1 ;
+-(id)videoForCanonicalID:(id)arg1 ;
+-(id)fpsKeyInfoForVideo:(id)arg1 keyURI:(id)arg2 createIfNeeded:(BOOL)arg3 wasCreated:(BOOL*)arg4 ;
+-(id)existingFpsKeyInfoForKeyURI:(id)arg1 ;
+-(id)allFpsKeyDeletionInfos;
+-(void)deleteFPSKeyDeletionInfo:(id)arg1 ;
+-(void)removeDownloadedMediaForVideoManagedObject:(id)arg1 ;
+-(id)enqueueMediaItemEntityTypesFetchWithCompletionHandler:(/*^block*/id)arg1 ;
+-(id)saveMediaEntity:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(id)_imageLoaderIdentifier;
+-(id)_imageLoadParamsForImageLoaderObject:(id)arg1 ;
+-(id)_imageLoadOperationWithParams:(id)arg1 scaleToSize:(CGSize)arg2 cropToFit:(BOOL)arg3 ;
+@end
+

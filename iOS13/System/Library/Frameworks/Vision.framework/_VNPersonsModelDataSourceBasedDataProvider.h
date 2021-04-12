@@ -1,0 +1,30 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:27 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/Vision.framework/Vision
+*/
+
+#import <libobjc.A.dylib/VNPersonsModelFaceModelDataProvider.h>
+
+@protocol VNPersonsModelDataSource;
+@class VNPersonsModel, NSString;
+
+@interface _VNPersonsModelDataSourceBasedDataProvider : NSObject <VNPersonsModelFaceModelDataProvider> {
+
+	VNPersonsModel* _personsModel;
+	id<VNPersonsModelDataSource> _dataSource;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(unsigned long long)faceModelPersonsCount;
+-(id)faceModelUniqueIdentifierOfPersonAtIndex:(unsigned long long)arg1 ;
+-(unsigned long long)faceModelIndexOfPersonWithUniqueIdentifier:(id)arg1 ;
+-(unsigned long long)faceModelNumberOfFaceObservationsForPersonAtIndex:(unsigned long long)arg1 ;
+-(id)faceModelFaceObservationAtIndex:(unsigned long long)arg1 forPersonAtIndex:(unsigned long long)arg2 ;
+-(id)initWithPersonsModel:(id)arg1 dataSource:(id)arg2 ;
+@end
+

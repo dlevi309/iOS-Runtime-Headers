@@ -1,0 +1,43 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:58 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/ContactsUI.framework/ContactsUI
+*/
+
+#import <libobjc.A.dylib/NSItemProviderWriting.h>
+#import <libobjc.A.dylib/NSItemProviderReading.h>
+
+@class NSArray, CNContactStore, NSString;
+
+@interface CNUIDraggingContacts : NSObject <NSItemProviderWriting, NSItemProviderReading> {
+
+	NSArray* _draggingContacts;
+	CNContactStore* _contactStore;
+
+}
+
+@property (nonatomic,retain) NSArray * draggingContacts;                                           //@synthesize draggingContacts=_draggingContacts - In the implementation block
+@property (nonatomic,readonly) CNContactStore * contactStore;                                      //@synthesize contactStore=_contactStore - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,copy,readonly) NSArray * writableTypeIdentifiersForItemProvider; 
++(id)objectWithItemProviderData:(id)arg1 typeIdentifier:(id)arg2 error:(id*)arg3 ;
++(id)writableTypeIdentifiersForItemProvider;
++(id)readableTypeIdentifiersForItemProvider;
++(id)dragItemForContact:(id)arg1 withContactStore:(id)arg2 ;
++(id)imageForDragging;
++(BOOL)canAcceptDropForDropSession:(id)arg1 ;
++(void)provideContactsForDropSession:(id)arg1 withKeys:(id)arg2 completionBlock:(/*^block*/id)arg3 ;
++(void)provideVCardURLForDropSession:(id)arg1 completionBlock:(/*^block*/id)arg2 ;
++(id)contactsWithIdentifiers:(id)arg1 store:(id)arg2 keysToFetch:(id)arg3 unifyResults:(BOOL)arg4 error:(id*)arg5 ;
++(id)draggingContactsWithItemProviderData:(id)arg1 typeIdentifier:(id)arg2 contactStore:(id)arg3 error:(id*)arg4 ;
++(id)draggingContactsForContacts:(id)arg1 contactStore:(id)arg2 ;
+-(id)loadDataWithTypeIdentifier:(id)arg1 forItemProviderCompletionHandler:(/*^block*/id)arg2 ;
+-(CNContactStore *)contactStore;
+-(id)initWithDraggingContacts:(id)arg1 contactStore:(id)arg2 ;
+-(NSArray *)draggingContacts;
+-(void)setDraggingContacts:(NSArray *)arg1 ;
+@end
+

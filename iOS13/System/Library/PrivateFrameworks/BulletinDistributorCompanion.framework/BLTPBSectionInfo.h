@@ -1,0 +1,264 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:18 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/BulletinDistributorCompanion.framework/BulletinDistributorCompanion
+*/
+
+#import <BulletinDistributorCompanion/BulletinDistributorCompanion-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSString, BLTPBSectionIcon, NSMutableArray;
+
+@interface BLTPBSectionInfo : PBCodable <NSCopying> {
+
+	unsigned _alertType;
+	int _authorizationStatus;
+	NSString* _displayName;
+	NSString* _factorySectionID;
+	int _groupingSetting;
+	BLTPBSectionIcon* _icon;
+	int _lockScreenSetting;
+	unsigned _notificationCenterLimit;
+	int _notificationCenterSetting;
+	int _phoneAuthorizationStatus;
+	unsigned _pushSettings;
+	int _sectionCategory;
+	NSString* _sectionID;
+	int _sectionType;
+	int _spokenNotificationSetting;
+	NSString* _subsectionID;
+	int _subsectionPriority;
+	NSMutableArray* _subsections;
+	unsigned _suppressedSettings;
+	NSString* _universalSectionID;
+	unsigned _version;
+	NSString* _watchSectionID;
+	BOOL _allowsNotifications;
+	BOOL _criticalAlertSetting;
+	BOOL _displaysCriticalBulletinsLegacy;
+	BOOL _excludeFromBulletinBoard;
+	BOOL _iconsStripped;
+	BOOL _phoneAllowsNotifications;
+	BOOL _showsInLockScreen;
+	BOOL _showsInNotificationCenter;
+	BOOL _showsMessagePreview;
+	BOOL _showsOnExternalDevices;
+	BOOL _suppressFromSettings;
+	SCD_Struct_BL6 _has;
+
+}
+
+@property (nonatomic,readonly) BOOL hasSectionID; 
+@property (nonatomic,retain) NSString * sectionID;                                 //@synthesize sectionID=_sectionID - In the implementation block
+@property (nonatomic,readonly) BOOL hasSubsectionID; 
+@property (nonatomic,retain) NSString * subsectionID;                              //@synthesize subsectionID=_subsectionID - In the implementation block
+@property (assign,nonatomic) BOOL hasSectionType; 
+@property (assign,nonatomic) int sectionType;                                      //@synthesize sectionType=_sectionType - In the implementation block
+@property (assign,nonatomic) BOOL hasSectionCategory; 
+@property (assign,nonatomic) int sectionCategory;                                  //@synthesize sectionCategory=_sectionCategory - In the implementation block
+@property (assign,nonatomic) BOOL hasSuppressFromSettings; 
+@property (assign,nonatomic) BOOL suppressFromSettings;                            //@synthesize suppressFromSettings=_suppressFromSettings - In the implementation block
+@property (assign,nonatomic) BOOL hasShowsInNotificationCenter; 
+@property (assign,nonatomic) BOOL showsInNotificationCenter;                       //@synthesize showsInNotificationCenter=_showsInNotificationCenter - In the implementation block
+@property (assign,nonatomic) BOOL hasShowsInLockScreen; 
+@property (assign,nonatomic) BOOL showsInLockScreen;                               //@synthesize showsInLockScreen=_showsInLockScreen - In the implementation block
+@property (assign,nonatomic) BOOL hasShowsOnExternalDevices; 
+@property (assign,nonatomic) BOOL showsOnExternalDevices;                          //@synthesize showsOnExternalDevices=_showsOnExternalDevices - In the implementation block
+@property (assign,nonatomic) BOOL hasNotificationCenterLimit; 
+@property (assign,nonatomic) unsigned notificationCenterLimit;                     //@synthesize notificationCenterLimit=_notificationCenterLimit - In the implementation block
+@property (assign,nonatomic) BOOL hasPushSettings; 
+@property (assign,nonatomic) unsigned pushSettings;                                //@synthesize pushSettings=_pushSettings - In the implementation block
+@property (assign,nonatomic) BOOL hasAlertType; 
+@property (assign,nonatomic) unsigned alertType;                                   //@synthesize alertType=_alertType - In the implementation block
+@property (assign,nonatomic) BOOL hasShowsMessagePreview; 
+@property (assign,nonatomic) BOOL showsMessagePreview;                             //@synthesize showsMessagePreview=_showsMessagePreview - In the implementation block
+@property (assign,nonatomic) BOOL hasAllowsNotifications; 
+@property (assign,nonatomic) BOOL allowsNotifications;                             //@synthesize allowsNotifications=_allowsNotifications - In the implementation block
+@property (assign,nonatomic) BOOL hasSuppressedSettings; 
+@property (assign,nonatomic) unsigned suppressedSettings;                          //@synthesize suppressedSettings=_suppressedSettings - In the implementation block
+@property (nonatomic,readonly) BOOL hasDisplayName; 
+@property (nonatomic,retain) NSString * displayName;                               //@synthesize displayName=_displayName - In the implementation block
+@property (assign,nonatomic) BOOL hasDisplaysCriticalBulletinsLegacy; 
+@property (assign,nonatomic) BOOL displaysCriticalBulletinsLegacy;                 //@synthesize displaysCriticalBulletinsLegacy=_displaysCriticalBulletinsLegacy - In the implementation block
+@property (nonatomic,retain) NSMutableArray * subsections;                         //@synthesize subsections=_subsections - In the implementation block
+@property (assign,nonatomic) BOOL hasSubsectionPriority; 
+@property (assign,nonatomic) int subsectionPriority;                               //@synthesize subsectionPriority=_subsectionPriority - In the implementation block
+@property (assign,nonatomic) BOOL hasVersion; 
+@property (assign,nonatomic) unsigned version;                                     //@synthesize version=_version - In the implementation block
+@property (nonatomic,readonly) BOOL hasFactorySectionID; 
+@property (nonatomic,retain) NSString * factorySectionID;                          //@synthesize factorySectionID=_factorySectionID - In the implementation block
+@property (nonatomic,readonly) BOOL hasUniversalSectionID; 
+@property (nonatomic,retain) NSString * universalSectionID;                        //@synthesize universalSectionID=_universalSectionID - In the implementation block
+@property (nonatomic,readonly) BOOL hasIcon; 
+@property (nonatomic,retain) BLTPBSectionIcon * icon;                              //@synthesize icon=_icon - In the implementation block
+@property (assign,nonatomic) BOOL hasIconsStripped; 
+@property (assign,nonatomic) BOOL iconsStripped;                                   //@synthesize iconsStripped=_iconsStripped - In the implementation block
+@property (assign,nonatomic) BOOL hasPhoneAllowsNotifications; 
+@property (assign,nonatomic) BOOL phoneAllowsNotifications;                        //@synthesize phoneAllowsNotifications=_phoneAllowsNotifications - In the implementation block
+@property (assign,nonatomic) BOOL hasCriticalAlertSetting; 
+@property (assign,nonatomic) BOOL criticalAlertSetting;                            //@synthesize criticalAlertSetting=_criticalAlertSetting - In the implementation block
+@property (assign,nonatomic) BOOL hasGroupingSetting; 
+@property (assign,nonatomic) int groupingSetting;                                  //@synthesize groupingSetting=_groupingSetting - In the implementation block
+@property (assign,nonatomic) BOOL hasExcludeFromBulletinBoard; 
+@property (assign,nonatomic) BOOL excludeFromBulletinBoard;                        //@synthesize excludeFromBulletinBoard=_excludeFromBulletinBoard - In the implementation block
+@property (assign,nonatomic) BOOL hasAuthorizationStatus; 
+@property (assign,nonatomic) int authorizationStatus;                              //@synthesize authorizationStatus=_authorizationStatus - In the implementation block
+@property (assign,nonatomic) BOOL hasPhoneAuthorizationStatus; 
+@property (assign,nonatomic) int phoneAuthorizationStatus;                         //@synthesize phoneAuthorizationStatus=_phoneAuthorizationStatus - In the implementation block
+@property (assign,nonatomic) BOOL hasLockScreenSetting; 
+@property (assign,nonatomic) int lockScreenSetting;                                //@synthesize lockScreenSetting=_lockScreenSetting - In the implementation block
+@property (assign,nonatomic) BOOL hasNotificationCenterSetting; 
+@property (assign,nonatomic) int notificationCenterSetting;                        //@synthesize notificationCenterSetting=_notificationCenterSetting - In the implementation block
+@property (assign,nonatomic) BOOL hasSpokenNotificationSetting; 
+@property (assign,nonatomic) int spokenNotificationSetting;                        //@synthesize spokenNotificationSetting=_spokenNotificationSetting - In the implementation block
+@property (nonatomic,readonly) BOOL hasWatchSectionID; 
+@property (nonatomic,retain) NSString * watchSectionID;                            //@synthesize watchSectionID=_watchSectionID - In the implementation block
++(Class)subsectionsType;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(unsigned)version;
+-(id)dictionaryRepresentation;
+-(void)setVersion:(unsigned)arg1 ;
+-(NSString *)displayName;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)setDisplayName:(NSString *)arg1 ;
+-(int)authorizationStatus;
+-(NSString *)sectionID;
+-(void)setSectionID:(NSString *)arg1 ;
+-(BLTPBSectionIcon *)icon;
+-(void)setIcon:(BLTPBSectionIcon *)arg1 ;
+-(BOOL)hasVersion;
+-(void)setHasVersion:(BOOL)arg1 ;
+-(BOOL)hasIcon;
+-(BOOL)hasDisplayName;
+-(unsigned)alertType;
+-(void)setAlertType:(unsigned)arg1 ;
+-(void)setHasAlertType:(BOOL)arg1 ;
+-(BOOL)hasAlertType;
+-(int)sectionType;
+-(int)lockScreenSetting;
+-(int)notificationCenterSetting;
+-(BOOL)criticalAlertSetting;
+-(int)groupingSetting;
+-(void)setAuthorizationStatus:(int)arg1 ;
+-(void)setNotificationCenterSetting:(int)arg1 ;
+-(void)setLockScreenSetting:(int)arg1 ;
+-(void)setCriticalAlertSetting:(BOOL)arg1 ;
+-(void)setGroupingSetting:(int)arg1 ;
+-(unsigned)suppressedSettings;
+-(NSString *)subsectionID;
+-(NSMutableArray *)subsections;
+-(BOOL)showsInNotificationCenter;
+-(void)setSectionType:(int)arg1 ;
+-(BOOL)showsInLockScreen;
+-(BOOL)showsMessagePreview;
+-(BOOL)allowsNotifications;
+-(void)setPushSettings:(unsigned)arg1 ;
+-(NSString *)universalSectionID;
+-(void)setUniversalSectionID:(NSString *)arg1 ;
+-(void)setShowsMessagePreview:(BOOL)arg1 ;
+-(int)subsectionPriority;
+-(unsigned)pushSettings;
+-(int)spokenNotificationSetting;
+-(NSString *)factorySectionID;
+-(void)setSuppressFromSettings:(BOOL)arg1 ;
+-(void)setFactorySectionID:(NSString *)arg1 ;
+-(BOOL)suppressFromSettings;
+-(int)sectionCategory;
+-(void)setSuppressedSettings:(unsigned)arg1 ;
+-(void)setSubsections:(NSMutableArray *)arg1 ;
+-(void)setSpokenNotificationSetting:(int)arg1 ;
+-(void)setNotificationCenterLimit:(unsigned)arg1 ;
+-(void)setSubsectionID:(NSString *)arg1 ;
+-(void)setSectionCategory:(int)arg1 ;
+-(void)setSubsectionPriority:(int)arg1 ;
+-(void)setAllowsNotifications:(BOOL)arg1 ;
+-(void)setShowsInNotificationCenter:(BOOL)arg1 ;
+-(void)setShowsInLockScreen:(BOOL)arg1 ;
+-(void)setShowsOnExternalDevices:(BOOL)arg1 ;
+-(unsigned)notificationCenterLimit;
+-(BOOL)showsOnExternalDevices;
+-(void)setHasSectionType:(BOOL)arg1 ;
+-(BOOL)hasSectionType;
+-(void)setHasAuthorizationStatus:(BOOL)arg1 ;
+-(BOOL)hasAuthorizationStatus;
+-(BOOL)hasSectionID;
+-(BOOL)hasUniversalSectionID;
+-(void)setHasCriticalAlertSetting:(BOOL)arg1 ;
+-(BOOL)hasCriticalAlertSetting;
+-(void)addSubsections:(id)arg1 ;
+-(unsigned long long)subsectionsCount;
+-(void)clearSubsections;
+-(id)subsectionsAtIndex:(unsigned long long)arg1 ;
+-(void)setWatchSectionID:(NSString *)arg1 ;
+-(BOOL)hasSubsectionID;
+-(void)setHasSectionCategory:(BOOL)arg1 ;
+-(BOOL)hasSectionCategory;
+-(void)setHasSuppressFromSettings:(BOOL)arg1 ;
+-(BOOL)hasSuppressFromSettings;
+-(void)setHasShowsInNotificationCenter:(BOOL)arg1 ;
+-(BOOL)hasShowsInNotificationCenter;
+-(void)setHasShowsInLockScreen:(BOOL)arg1 ;
+-(BOOL)hasShowsInLockScreen;
+-(void)setHasShowsOnExternalDevices:(BOOL)arg1 ;
+-(BOOL)hasShowsOnExternalDevices;
+-(void)setHasNotificationCenterLimit:(BOOL)arg1 ;
+-(BOOL)hasNotificationCenterLimit;
+-(void)setHasPushSettings:(BOOL)arg1 ;
+-(BOOL)hasPushSettings;
+-(void)setHasShowsMessagePreview:(BOOL)arg1 ;
+-(BOOL)hasShowsMessagePreview;
+-(void)setHasAllowsNotifications:(BOOL)arg1 ;
+-(BOOL)hasAllowsNotifications;
+-(void)setHasSuppressedSettings:(BOOL)arg1 ;
+-(BOOL)hasSuppressedSettings;
+-(void)setDisplaysCriticalBulletinsLegacy:(BOOL)arg1 ;
+-(void)setHasDisplaysCriticalBulletinsLegacy:(BOOL)arg1 ;
+-(BOOL)hasDisplaysCriticalBulletinsLegacy;
+-(void)setHasSubsectionPriority:(BOOL)arg1 ;
+-(BOOL)hasSubsectionPriority;
+-(BOOL)hasFactorySectionID;
+-(void)setIconsStripped:(BOOL)arg1 ;
+-(void)setHasIconsStripped:(BOOL)arg1 ;
+-(BOOL)hasIconsStripped;
+-(void)setPhoneAllowsNotifications:(BOOL)arg1 ;
+-(void)setHasPhoneAllowsNotifications:(BOOL)arg1 ;
+-(BOOL)hasPhoneAllowsNotifications;
+-(void)setHasGroupingSetting:(BOOL)arg1 ;
+-(BOOL)hasGroupingSetting;
+-(id)groupingSettingAsString:(int)arg1 ;
+-(int)StringAsGroupingSetting:(id)arg1 ;
+-(void)setExcludeFromBulletinBoard:(BOOL)arg1 ;
+-(void)setHasExcludeFromBulletinBoard:(BOOL)arg1 ;
+-(BOOL)hasExcludeFromBulletinBoard;
+-(void)setPhoneAuthorizationStatus:(int)arg1 ;
+-(void)setHasPhoneAuthorizationStatus:(BOOL)arg1 ;
+-(BOOL)hasPhoneAuthorizationStatus;
+-(void)setHasLockScreenSetting:(BOOL)arg1 ;
+-(BOOL)hasLockScreenSetting;
+-(id)lockScreenSettingAsString:(int)arg1 ;
+-(int)StringAsLockScreenSetting:(id)arg1 ;
+-(void)setHasNotificationCenterSetting:(BOOL)arg1 ;
+-(BOOL)hasNotificationCenterSetting;
+-(id)notificationCenterSettingAsString:(int)arg1 ;
+-(int)StringAsNotificationCenterSetting:(id)arg1 ;
+-(void)setHasSpokenNotificationSetting:(BOOL)arg1 ;
+-(BOOL)hasSpokenNotificationSetting;
+-(id)spokenNotificationSettingAsString:(int)arg1 ;
+-(int)StringAsSpokenNotificationSetting:(id)arg1 ;
+-(BOOL)hasWatchSectionID;
+-(BOOL)displaysCriticalBulletinsLegacy;
+-(BOOL)iconsStripped;
+-(BOOL)phoneAllowsNotifications;
+-(BOOL)excludeFromBulletinBoard;
+-(int)phoneAuthorizationStatus;
+-(NSString *)watchSectionID;
+@end
+

@@ -1,0 +1,140 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:06 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+*/
+
+#import <BiometricKit/BiometricKit-Structs.h>
+#import <BiometricKit/BiometricKitDelegateXpcProtocol.h>
+
+@protocol OS_os_log, BiometricKitDelegate;
+@class BiometricKitXPCClient, BiometricKitStatistics, NSDictionary, NSObject, NSString;
+
+@interface BiometricKit : NSObject <BiometricKitDelegateXpcProtocol> {
+
+	BiometricKitXPCClient* _xpcClient;
+	int _enrollingMode;
+	int _matchingMode;
+	BiometricKitStatistics* _statistics;
+	NSDictionary* _images[300];
+	SCD_Struct_Bi1* _compSet;
+	BOOL _showDebugImages;
+	SCD_Struct_Bi3 _enrollImageSet;
+	BOOL _isInternalInstall;
+	BOOL _ariadneSignposts;
+	NSObject*<OS_os_log> _osLog;
+	NSObject*<OS_os_log> _osLogTrace;
+	BOOL _inUse;
+	int _enrollProgressConfigRenderMode;
+	id<BiometricKitDelegate> _delegate;
+
+}
+
+@property (assign,nonatomic) id<BiometricKitDelegate> delegate;               //@synthesize delegate=_delegate - In the implementation block
+@property (assign) BOOL inUse;                                                //@synthesize inUse=_inUse - In the implementation block
+@property (assign,nonatomic) int enrollProgressConfigRenderMode;              //@synthesize enrollProgressConfigRenderMode=_enrollProgressConfigRenderMode - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)allocWithZone:(NSZone*)arg1 ;
++(id)manager;
++(long long)getSensorPatchVersion;
+-(id)init;
+-(void)dealloc;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(int)match:(id)arg1 ;
+-(id<BiometricKitDelegate>)delegate;
+-(void)setDelegate:(id<BiometricKitDelegate>)arg1 ;
+-(void)cancel;
+-(void)setInUse:(BOOL)arg1 ;
+-(BOOL)inUse;
+-(id)identities:(id)arg1 ;
+-(long long)getMaxIdentityCount:(int)arg1 ;
+-(int)removeIdentity:(id)arg1 ;
+-(int)updateIdentity:(id)arg1 ;
+-(BOOL)isDelegate;
+-(void)appWillEnterForeground:(id)arg1 ;
+-(void)logEventOrCode:(unsigned long long)arg1 ;
+-(void)enrollResult:(id)arg1 client:(unsigned long long)arg2 ;
+-(void)enrollUpdate:(id)arg1 client:(unsigned long long)arg2 ;
+-(void)enrollFeedback:(id)arg1 client:(unsigned long long)arg2 ;
+-(void)matchResult:(id)arg1 details:(id)arg2 client:(unsigned long long)arg3 ;
+-(void)statusMessage:(unsigned)arg1 client:(unsigned long long)arg2 ;
+-(void)statusMessage:(unsigned)arg1 details:(id)arg2 client:(unsigned long long)arg3 ;
+-(void)homeButtonPressed:(unsigned long long)arg1 ;
+-(void)touchIDButtonPressed:(BOOL)arg1 client:(unsigned long long)arg2 ;
+-(void)templateUpdate:(id)arg1 details:(id)arg2 client:(unsigned long long)arg3 ;
+-(void)taskResumeStatus:(int)arg1 client:(unsigned long long)arg2 ;
+-(int)updateIdentity:(id)arg1 withOptions:(id)arg2 ;
+-(int)removeIdentity:(id)arg1 withOptions:(id)arg2 ;
+-(int)removeAllIdentitiesForUser:(unsigned)arg1 withOptions:(id)arg2 ;
+-(id)getIdentityFromUUID:(id)arg1 ;
+-(long long)getFreeIdentityCount:(int)arg1 forUser:(unsigned)arg2 ;
+-(id)getProtectedConfigurationForUser:(unsigned)arg1 ;
+-(id)getSystemProtectedConfiguration;
+-(int)setProtectedConfiguration:(id)arg1 forUser:(unsigned)arg2 withOptions:(id)arg3 ;
+-(int)setSystemProtectedConfiguration:(id)arg1 withOptions:(id)arg2 ;
+-(long long)getProvisioningState;
+-(int)dropUnlockToken;
+-(int)registerDSID:(unsigned long long)arg1 withOptions:(id)arg2 ;
+-(int)resetAppleConnectCounter;
+-(int)registerStoreToken:(id)arg1 ;
+-(int)getCountersignedStoreToken:(id*)arg1 ;
+-(id)getIdentitiesDatabaseUUIDForUser:(unsigned)arg1 ;
+-(id)getIdentitiesDatabaseHashForUser:(unsigned)arg1 ;
+-(int)diagnostics:(int)arg1 withOptions:(id)arg2 passed:(BOOL*)arg3 withDetails:(id*)arg4 ;
+-(int)setUserDSID:(unsigned long long)arg1 withOptions:(id)arg2 ;
+-(long long)getSensorCalibrationStatus;
+-(id)getCalibrationDataInfo;
+-(id)getSensorInfo;
+-(id)pullCalibrationData;
+-(id)pullCaptureBuffer;
+-(void)setDebugImages:(BOOL)arg1 ;
+-(id)getLogs:(BOOL)arg1 withDetails:(id*)arg2 ;
+-(BOOL)fileRadarWithLogs:(id)arg1 withDescription:(id)arg2 ;
+-(BOOL)isFingerOn;
+-(int)enableBackgroundFdet:(BOOL)arg1 ;
+-(void)appDidEnterBackground:(id)arg1 ;
+-(void)appWillResignActive:(id)arg1 ;
+-(void)appDidBecomeActive:(id)arg1 ;
+-(BOOL)isTouchIDCapable;
+-(int)enroll:(int)arg1 forUser:(unsigned)arg2 withOptions:(id)arg3 ;
+-(int)match:(id)arg1 withOptions:(id)arg2 ;
+-(int)setProtectedConfiguration:(id)arg1 withOptions:(id)arg2 ;
+-(long long)getBioLockoutStateForUser:(unsigned)arg1 ;
+-(int)detectFingerWithOptions:(id)arg1 ;
+-(id)imageDictFromRawImageData:(SCD_Struct_Bi5*)arg1 ;
+-(int)forceBioLockoutForUser:(unsigned)arg1 ;
+-(void)pullDebugImageData:(BOOL)arg1 rotated:(BOOL)arg2 target:(SCD_Struct_Bi5*)arg3 ;
+-(void)_enrollResult:(id)arg1 ;
+-(id)createMatchInfo:(id)arg1 withTopology:(const SCD_Struct_Bi9*)arg2 withMatchImage:(SCD_Struct_Bi5*)arg3 ;
+-(void)_matchResult:(id)arg1 withDictionary:(id)arg2 ;
+-(void)enrollProgressMessage:(unsigned)arg1 ;
+-(void)_statusMessage:(unsigned)arg1 ;
+-(void)_homeButtonPressed;
+-(void)_touchIDButtonPressed:(BOOL)arg1 ;
+-(void)_templateUpdate:(id)arg1 withDictionary:(id)arg2 ;
+-(void)_taskResumeStatus:(int)arg1 ;
+-(BOOL)isTouchIDAvailableWithInfo:(long long*)arg1 ;
+-(int)enroll:(int)arg1 withOptions:(id)arg2 ;
+-(id)getMatchPolicyInfo;
+-(id)getProtectedConfiguration;
+-(int)setProtectedConfiguration:(id)arg1 withAuthToken:(id)arg2 ;
+-(long long)getBioLockoutState;
+-(int)detectPresenceWithOptions:(id)arg1 ;
+-(id)getTemplateInfo:(id)arg1 ;
+-(int)registerDSID:(unsigned long long)arg1 withAuthToken:(id)arg2 ;
+-(void)timestampEvent:(unsigned long long)arg1 ;
+-(int)setUserDSID:(unsigned long long)arg1 withAuthToken:(id)arg2 ;
+-(int)forceBioLockout;
+-(id)getIdentitiesDatabaseUUID;
+-(id)getIdentitiesDatabaseHash;
+-(long long)getCalBlobVersion;
+-(long long)getCalibrationDataState;
+-(float)getModulationRatio;
+-(id)pullDebugImage:(BOOL)arg1 rotated:(BOOL)arg2 ;
+-(int)enrollProgressConfigRenderMode;
+-(void)setEnrollProgressConfigRenderMode:(int)arg1 ;
+@end
+

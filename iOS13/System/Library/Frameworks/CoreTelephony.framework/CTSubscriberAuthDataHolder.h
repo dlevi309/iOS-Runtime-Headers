@@ -1,0 +1,27 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:25 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSDictionary;
+
+@interface CTSubscriberAuthDataHolder : NSObject <NSSecureCoding> {
+
+	NSDictionary* _dict;
+
+}
+
+@property (nonatomic,retain) NSDictionary * dict;              //@synthesize dict=_dict - In the implementation block
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)data;
+-(NSDictionary *)dict;
+-(void)setDict:(NSDictionary *)arg1 ;
+@end
+

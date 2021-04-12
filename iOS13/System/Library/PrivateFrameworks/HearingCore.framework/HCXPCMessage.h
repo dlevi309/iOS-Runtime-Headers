@@ -1,0 +1,40 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HearingCore.framework/HearingCore
+*/
+
+
+@protocol OS_xpc_object;
+@class HCXPCClient, NSObject, NSDictionary, NSError;
+
+@interface HCXPCMessage : NSObject {
+
+	HCXPCClient* _client;
+	NSObject*<OS_xpc_object> _xpcMessage;
+	NSDictionary* _payload;
+	NSError* _error;
+
+}
+
+@property (assign,nonatomic,__weak) HCXPCClient * client;                      //@synthesize client=_client - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_xpc_object> xpcMessage;              //@synthesize xpcMessage=_xpcMessage - In the implementation block
+@property (nonatomic,retain) NSDictionary * payload;                           //@synthesize payload=_payload - In the implementation block
+@property (nonatomic,retain) NSError * error;                                  //@synthesize error=_error - In the implementation block
++(id)messageWithPayload:(id)arg1 ;
++(id)messageWithPayload:(id)arg1 xpcMessage:(id)arg2 andClient:(id)arg3 ;
+-(void)dealloc;
+-(id)description;
+-(NSError *)error;
+-(void)setError:(NSError *)arg1 ;
+-(HCXPCClient *)client;
+-(void)setClient:(HCXPCClient *)arg1 ;
+-(id)initWithPayload:(id)arg1 ;
+-(void)setPayload:(NSDictionary *)arg1 ;
+-(NSDictionary *)payload;
+-(BOOL)hasEntitlement:(id)arg1 ;
+-(void)setXpcMessage:(NSObject*<OS_xpc_object>)arg1 ;
+-(NSObject*<OS_xpc_object>)xpcMessage;
+-(id)replyMessageWithPayload:(id)arg1 ;
+@end
+

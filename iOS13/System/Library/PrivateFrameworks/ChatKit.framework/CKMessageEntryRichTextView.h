@@ -1,0 +1,74 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:49 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ChatKit.framework/ChatKit
+*/
+
+#import <ChatKit/ChatKit-Structs.h>
+#import <ChatKit/CKMessageEntryTextView.h>
+#import <libobjc.A.dylib/NSTextStorageDelegate.h>
+#import <UIKit/UIGestureRecognizerDelegate.h>
+
+@class NSMutableDictionary, UITapGestureRecognizer, UILongPressGestureRecognizer, NSString;
+
+@interface CKMessageEntryRichTextView : CKMessageEntryTextView <NSTextStorageDelegate, UIGestureRecognizerDelegate> {
+
+	char _balloonColor;
+	BOOL _allowCalloutActions;
+	NSMutableDictionary* _mediaObjects;
+	NSMutableDictionary* _pluginDisplayContainers;
+	NSMutableDictionary* _composeImages;
+	UITapGestureRecognizer* _tapGestureRecognizer;
+	UILongPressGestureRecognizer* _longPressGestureRecognizer;
+
+}
+
+@property (nonatomic,retain) NSMutableDictionary * mediaObjects;                                     //@synthesize mediaObjects=_mediaObjects - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * pluginDisplayContainers;                          //@synthesize pluginDisplayContainers=_pluginDisplayContainers - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * composeImages;                                    //@synthesize composeImages=_composeImages - In the implementation block
+@property (nonatomic,retain) UITapGestureRecognizer * tapGestureRecognizer;                          //@synthesize tapGestureRecognizer=_tapGestureRecognizer - In the implementation block
+@property (nonatomic,retain) UILongPressGestureRecognizer * longPressGestureRecognizer;              //@synthesize longPressGestureRecognizer=_longPressGestureRecognizer - In the implementation block
+@property (assign,nonatomic) BOOL allowCalloutActions;                                               //@synthesize allowCalloutActions=_allowCalloutActions - In the implementation block
+@property (assign,nonatomic,__weak) id<CKMessageEntryRichTextViewDelegate> delegate; 
+@property (assign,nonatomic) char balloonColor;                                                      //@synthesize balloonColor=_balloonColor - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(void)textStorage:(id)arg1 willProcessEditing:(unsigned long long)arg2 range:(NSRange)arg3 changeInLength:(long long)arg4 ;
+-(BOOL)gestureRecognizerShouldBegin:(id)arg1 ;
+-(BOOL)gestureRecognizer:(id)arg1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)arg2 ;
+-(BOOL)canPerformAction:(SEL)arg1 withSender:(id)arg2 ;
+-(void)cut:(id)arg1 ;
+-(void)copy:(id)arg1 ;
+-(void)paste:(id)arg1 ;
+-(UILongPressGestureRecognizer *)longPressGestureRecognizer;
+-(void)setLongPressGestureRecognizer:(UILongPressGestureRecognizer *)arg1 ;
+-(id)pasteConfiguration;
+-(void)_showCustomInputView;
+-(id)initWithFrame:(CGRect)arg1 textContainer:(id)arg2 ;
+-(UITapGestureRecognizer *)tapGestureRecognizer;
+-(void)setTapGestureRecognizer:(UITapGestureRecognizer *)arg1 ;
+-(id)pasteboard;
+-(void)setMediaObjects:(NSMutableDictionary *)arg1 ;
+-(NSMutableDictionary *)mediaObjects;
+-(id)attributedTextForCompositionText:(id)arg1 ;
+-(void)setBalloonColor:(char)arg1 ;
+-(id)compositionText;
+-(NSMutableDictionary *)pluginDisplayContainers;
+-(void)handlePastedString:(id)arg1 toRange:(id)arg2 ;
+-(void)previewDidChange:(id)arg1 ;
+-(BOOL)allowCalloutActions;
+-(id)_compositionFromSelection;
+-(void)setPluginDisplayContainers:(NSMutableDictionary *)arg1 ;
+-(void)setComposeImages:(NSMutableDictionary *)arg1 ;
+-(void)handleTapOrLongPress:(id)arg1 ;
+-(void)setAllowCalloutActions:(BOOL)arg1 ;
+-(NSMutableDictionary *)composeImages;
+-(void)updateComposeImages;
+-(id)composeImageForTransferGUID:(id)arg1 ;
+-(char)balloonColor;
+-(void)setCompositionText:(id)arg1 ;
+@end
+

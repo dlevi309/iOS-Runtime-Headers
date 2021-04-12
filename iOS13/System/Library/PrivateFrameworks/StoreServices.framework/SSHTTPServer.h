@@ -1,0 +1,58 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:44 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/StoreServices.framework/StoreServices
+*/
+
+#import <StoreServices/StoreServices-Structs.h>
+#import <libobjc.A.dylib/SSHTTPServerRequestHandlerDelegate.h>
+
+@protocol OS_dispatch_queue;
+@class NSMutableDictionary, NSMutableArray, NSObject, NSRunLoop;
+
+@interface SSHTTPServer : NSObject <SSHTTPServerRequestHandlerDelegate> {
+
+	NSMutableDictionary* _definedResponses;
+	NSMutableArray* _incomingRequests;
+	NSObject*<OS_dispatch_queue> _propertyQueue;
+	CFSocketRef _socket;
+	NSRunLoop* _runLoop;
+	BOOL _allowsSecure;
+	BOOL _verbose;
+	short _port;
+	int _downloadSpeed;
+	int _state;
+	long long _responsesDelivered;
+
+}
+
+@property (nonatomic,readonly) BOOL allowsSecure;                         //@synthesize allowsSecure=_allowsSecure - In the implementation block
+@property (assign,nonatomic) int downloadSpeed;                           //@synthesize downloadSpeed=_downloadSpeed - In the implementation block
+@property (assign,nonatomic) short port;                                  //@synthesize port=_port - In the implementation block
+@property (nonatomic,readonly) long long responsesDelivered;              //@synthesize responsesDelivered=_responsesDelivered - In the implementation block
+@property (nonatomic,readonly) int state;                                 //@synthesize state=_state - In the implementation block
+@property (assign,nonatomic) BOOL verbose;                                //@synthesize verbose=_verbose - In the implementation block
++(id)sharedServer;
++(BOOL)_isPortOccupied:(short)arg1 ;
+-(id)init;
+-(void)dealloc;
+-(short)port;
+-(void)stop;
+-(void)setPort:(short)arg1 ;
+-(BOOL)start;
+-(int)state;
+-(id)_ipAddress;
+-(void)requestDidFinish:(id)arg1 ;
+-(void)setDownloadSpeed:(int)arg1 ;
+-(/*^block*/id)responseBlockForPath:(id)arg1 ;
+-(long long)responsesDelivered;
+-(id)serverURL;
+-(id)serverLocalhostURL;
+-(void)setResponseForPath:(id)arg1 handler:(/*^block*/id)arg2 ;
+-(void)_handleConnectWithType:(unsigned long long)arg1 handle:(int)arg2 ;
+-(BOOL)allowsSecure;
+-(int)downloadSpeed;
+-(BOOL)verbose;
+-(void)setVerbose:(BOOL)arg1 ;
+@end
+

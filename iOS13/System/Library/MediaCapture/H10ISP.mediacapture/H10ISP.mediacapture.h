@@ -1,0 +1,16 @@
+#import <H10ISP.mediacapture/AWDImageSignalProcessorProjectorFaultTransitions.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorFaceIDMemoryUsage.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorISF.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorFlickerDetection.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorSensorFaults.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorProjectorFaults.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorProjectorUsage.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorISFThreshold.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorGMC.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorGMCAxisTolerance.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorRGBIR.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorGMCEFLTolerance.h>
+#import <H10ISP.mediacapture/FlickerResourceArbiterClientDelegate.h>
+#import <H10ISP.mediacapture/BasicMOVReader.h>
+#import <H10ISP.mediacapture/AWDImageSignalProcessorStereoGMC.h>
+#import <H10ISP.mediacapture/JasperDepthProvider.h>

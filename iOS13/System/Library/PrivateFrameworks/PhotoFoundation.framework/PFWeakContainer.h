@@ -1,0 +1,24 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:28 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotoFoundation.framework/PhotoFoundation
+*/
+
+
+@class _PFWeakContainerSentenal;
+
+@interface PFWeakContainer : NSObject {
+
+	_PFWeakContainerSentenal* _sentenal;
+	id _nilNotificationDelegate;
+
+}
+-(id)init;
+-(void)dealloc;
+-(void)weakReferenceBecameNil;
+-(BOOL)isTrackingWeakObjectDealloc:(id)arg1 ;
+-(void)trackWeakObjectDealloc:(id)arg1 ;
+-(void)stopTrackingWeakObjectDealloc:(id)arg1 ;
+-(void)setNilNotificationDelegate:(id)arg1 ;
+@end
+

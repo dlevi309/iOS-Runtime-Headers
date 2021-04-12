@@ -1,0 +1,40 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:45 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+*/
+
+
+@protocol CHStrokeProvider;
+#import <CoreHandwriting/CoreHandwriting-Structs.h>
+@class CHRecognitionSessionResult, NSArray, NSDictionary;
+
+@interface CHStrokeGroupingManager : NSObject {
+
+	BOOL _isInlineContinuousMode;
+	id<CHStrokeProvider> _strokeProvider;
+	CHRecognitionSessionResult* _sessionLastResult;
+	NSArray* _locales;
+	NSDictionary* _groupingStrategiesByIdentifier;
+
+}
+
+@property (nonatomic,retain,readonly) NSDictionary * groupingStrategiesByIdentifier;               //@synthesize groupingStrategiesByIdentifier=_groupingStrategiesByIdentifier - In the implementation block
+@property (nonatomic,retain,readonly) id<CHStrokeProvider> strokeProvider;                         //@synthesize strokeProvider=_strokeProvider - In the implementation block
+@property (nonatomic,retain,readonly) CHRecognitionSessionResult * sessionLastResult;              //@synthesize sessionLastResult=_sessionLastResult - In the implementation block
+@property (nonatomic,retain,readonly) NSArray * locales;                                           //@synthesize locales=_locales - In the implementation block
+@property (nonatomic,readonly) BOOL isInlineContinuousMode;                                        //@synthesize isInlineContinuousMode=_isInlineContinuousMode - In the implementation block
+-(void)dealloc;
+-(NSArray *)locales;
+-(id<CHStrokeProvider>)strokeProvider;
+-(id)strokesForIdentifiers:(id)arg1 ;
+-(id)recognizableDrawingForStrokeGroup:(id)arg1 translationVector:(CGVector)arg2 originalDrawing:(id*)arg3 orderedStrokesIDs:(id*)arg4 rescalingFactor:(double*)arg5 ;
+-(CHRecognitionSessionResult *)sessionLastResult;
+-(NSDictionary *)groupingStrategiesByIdentifier;
+-(id)_greedyCombinationOfGroupingResults:(id)arg1 stableStrokeIdentifiers:(id)arg2 withCancellationBlock:(/*^block*/id)arg3 ;
+-(id)_simpleDrawingForStrokeGroup:(id)arg1 originalDrawing:(id*)arg2 orderedStrokeIDs:(id*)arg3 ;
+-(id)initWithStrokeProvider:(id)arg1 sessionLastResult:(id)arg2 locales:(id)arg3 isInlineContinuousMode:(BOOL)arg4 inlineContinuousModeTargets:(id)arg5 ;
+-(id)updatedGroupingResultByAddingStrokes:(id)arg1 removingStrokeIdentifiers:(id)arg2 orderedStrokeIdentifiers:(id)arg3 strokeClassificationResult:(id)arg4 cancellationBlock:(/*^block*/id)arg5 ;
+-(BOOL)isInlineContinuousMode;
+@end
+

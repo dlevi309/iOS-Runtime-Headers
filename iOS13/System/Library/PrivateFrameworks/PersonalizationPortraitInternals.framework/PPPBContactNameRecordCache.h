@@ -1,0 +1,45 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:48 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PersonalizationPortraitInternals.framework/PersonalizationPortraitInternals
+*/
+
+#import <PersonalizationPortraitInternals/PersonalizationPortraitInternals-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class NSMutableArray;
+
+@interface PPPBContactNameRecordCache : PBCodable <NSCopying> {
+
+	long long _createdAt;
+	NSMutableArray* _records;
+	SCD_Struct_PP1 _has;
+
+}
+
+@property (nonatomic,retain) NSMutableArray * records;              //@synthesize records=_records - In the implementation block
+@property (assign,nonatomic) BOOL hasCreatedAt; 
+@property (assign,nonatomic) long long createdAt;                   //@synthesize createdAt=_createdAt - In the implementation block
++(Class)recordsType;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(NSMutableArray *)records;
+-(long long)createdAt;
+-(void)setCreatedAt:(long long)arg1 ;
+-(BOOL)hasCreatedAt;
+-(void)setRecords:(NSMutableArray *)arg1 ;
+-(void)addRecords:(id)arg1 ;
+-(unsigned long long)recordsCount;
+-(void)clearRecords;
+-(id)recordsAtIndex:(unsigned long long)arg1 ;
+-(void)setHasCreatedAt:(BOOL)arg1 ;
+@end
+

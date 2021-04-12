@@ -1,0 +1,121 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:15 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ScreenReaderCore.framework/ScreenReaderCore
+*/
+
+
+@protocol SCRCGestureFactoryCallback;
+#import <ScreenReaderCore/ScreenReaderCore-Structs.h>
+@class SCRCTargetSelectorTimer;
+
+@interface SCRCGestureFactory : NSObject {
+
+	double _stallDistance;
+	double _maxDimension;
+	double _thumbRegion;
+	long long _orientation;
+	long long _directions[7];
+	CGPoint _axisFlipper;
+	double _scaledTrackingDistance;
+	BOOL _setTrackingTimer;
+	double _flickVelocityThreshold;
+	double _tapVelocityThreshold;
+	double _echoWaitTime;
+	CGRect _tapSpeedRegion;
+	double _tapVelocityThresholdForRegion;
+	long long _tapSpeedFingerCount;
+	BOOL _inTapSpeedRegionForDownEvent;
+	CGRect _mainFrame;
+	CGRect _gutterFrame;
+	double _lastTime;
+	double _lastDownTime;
+	double _lastGutterDownTime;
+	double _lastDegrees;
+	double _startDegrees;
+	double _startDistance;
+	double _potentialTrackingStartTimestamp;
+	BOOL _requireUp;
+	BOOL _thumbRejectionEnabled;
+	long long _state;
+	long long _direction;
+	double _directionalSlope;
+	SCRCFingerState _finger[2];
+	unsigned long long _absoluteFingerCount;
+	unsigned short _fingerCount;
+	unsigned short _lastFingerCount;
+	double _distance;
+	unsigned long long _tapCount;
+	CGRect _tapFrame;
+	CGRect _tapMultiFrame;
+	id<SCRCGestureFactoryCallback> _trackDelegate;
+	id<SCRCGestureFactoryCallback> _tapDelegate;
+	id<SCRCGestureFactoryCallback> _gutterUpDelegate;
+	id<SCRCGestureFactoryCallback> _splitTapDelegate;
+	id<SCRCGestureFactoryCallback> _canSplitTapDelegate;
+	id<SCRCGestureFactoryCallback> _didBeginSplitGestureDelegate;
+	SCRCTargetSelectorTimer* _trackingTimer;
+	SCD_Struct_SC6 _tap;
+	SCRCTargetSelectorTimer* _tapTimer;
+	SCRCTargetSelectorTimer* _gutterUpTimer;
+	SCRCGestureFactory* _splitFactory;
+	SCD_Struct_SC7 _split;
+
+}
+
+@property (assign,nonatomic) BOOL thumbRejectionEnabled;              //@synthesize thumbRejectionEnabled=_thumbRejectionEnabled - In the implementation block
+-(void)dealloc;
+-(void)reset;
+-(long long)orientation;
+-(void)setOrientation:(long long)arg1 ;
+-(long long)direction;
+-(double)velocity;
+-(CGPoint)startLocation;
+-(CGPoint)endLocation;
+-(CGRect)mainFrame;
+-(unsigned long long)tapCount;
+-(double)distance;
+-(CGPoint)rawLocation;
+-(unsigned long long)fingerCount;
+-(void)_up;
+-(long long)gestureState;
+-(double)vector;
+-(void)_handleTap;
+-(id)initWithSize:(CGSize)arg1 delegate:(id)arg2 threadKey:(id)arg3 ;
+-(void)_enterTrackingMode:(id)arg1 ;
+-(CGRect)_currentTapRect;
+-(void)_updateMultiTapFrame;
+-(void)_resetSplit;
+-(void)_processUpAndPost:(BOOL)arg1 ;
+-(void)_updateTapState;
+-(BOOL)_handleSplitTap;
+-(SCD_Struct_SC8)handleGestureEvent:(id)arg1 ;
+-(SCD_Struct_SC8)captureCurrentState;
+-(BOOL)_handleSplitEvent:(id)arg1 ;
+-(void)_drag:(id)arg1 ;
+-(void)_down:(id)arg1 ;
+-(void)_updateStartWithPoint:(CGPoint)arg1 time:(double)arg2 ;
+-(CGRect)tapFrame;
+-(id)initWithSize:(CGSize)arg1 delegate:(id)arg2 ;
+-(void)setFlickSpeed:(double)arg1 ;
+-(double)flickSpeed;
+-(void)setTapSpeed:(double)arg1 ;
+-(void)setTapSpeedTimeThreshold:(double)arg1 forRegion:(CGRect)arg2 fingerCount:(long long)arg3 ;
+-(double)tapSpeed;
+-(void)_handleGutterUp;
+-(double)directionalSlope;
+-(unsigned long long)absoluteFingerCount;
+-(BOOL)tapIsDown;
+-(double)firstFingerPressure;
+-(double)firstFingerAltitude;
+-(double)firstFingerAzimuth;
+-(CGPoint)rawAverageLocation;
+-(CGRect)multiTapFrame;
+-(CGPoint)tapPoint;
+-(CGPoint)tapPointWeightedToSides;
+-(double)tapInterval;
+-(id)gestureStateString;
+-(BOOL)thumbRejectionEnabled;
+-(void)setThumbRejectionEnabled:(BOOL)arg1 ;
+@end
+

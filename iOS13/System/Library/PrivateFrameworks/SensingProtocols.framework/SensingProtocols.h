@@ -1,0 +1,1 @@
+#import <SensingProtocols/BinaryFrame.h>

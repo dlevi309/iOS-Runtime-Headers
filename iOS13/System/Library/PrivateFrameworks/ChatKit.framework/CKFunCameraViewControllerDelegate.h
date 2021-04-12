@@ -1,0 +1,17 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:48 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ChatKit.framework/ChatKit
+*/
+
+
+@protocol CKFunCameraViewControllerDelegate <NSObject>
+@required
+-(void)stageAssetArchive:(id)arg1 skipShelf:(BOOL)arg2 completionHandler:(/*^block*/id)arg3;
+-(void)startDeferredEditingPayload:(id)arg1 forConversation:(id)arg2;
+-(void)startCommitPayload:(id)arg1 forConversation:(id)arg2;
+-(void)willDismissFunCamera:(id)arg1;
+-(void)presentPhotosApp;
+
+@end
+

@@ -1,0 +1,99 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:27 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/MediaStream.framework/MediaStream
+*/
+
+
+@protocol MSPowerBudgetDelegate, OS_dispatch_queue;
+@class NSString, MSPBTimerContext, NSObject;
+
+@interface MSPowerBudget : NSObject {
+
+	BOOL _workQueueIsFileTransferAllowed;
+	BOOL _workQueueIsExternalPowered;
+	BOOL _workQueueIsForeground;
+	id<MSPowerBudgetDelegate> _delegate;
+	double _maxActiveTimeAfterPush;
+	double _maxActiveTimeAfterLossOfForeground;
+	double _maxActiveTimeAfterGlobalResetSync;
+	NSString* _focusAlbumGUID;
+	NSString* _focusAssetCollectionGUID;
+	NSString* _personID;
+	MSPBTimerContext* _workQueuePushTimerContext;
+	MSPBTimerContext* _workQueuePostForegroundTimerContext;
+	MSPBTimerContext* _workQueueGlobalResetSyncTimerContext;
+	NSObject*<OS_dispatch_queue> _workQueue;
+
+}
+
+@property (assign,setter=workQueueSetFileTransferAllowed:,nonatomic) BOOL workQueueIsFileTransferAllowed;              //@synthesize workQueueIsFileTransferAllowed=_workQueueIsFileTransferAllowed - In the implementation block
+@property (assign,setter=workQueueSetExternalPowered:,nonatomic) BOOL workQueueIsExternalPowered;                      //@synthesize workQueueIsExternalPowered=_workQueueIsExternalPowered - In the implementation block
+@property (assign,setter=workQueueSetForeground:,nonatomic) BOOL workQueueIsForeground;                                //@synthesize workQueueIsForeground=_workQueueIsForeground - In the implementation block
+@property (nonatomic,retain) MSPBTimerContext * workQueuePushTimerContext;                                             //@synthesize workQueuePushTimerContext=_workQueuePushTimerContext - In the implementation block
+@property (nonatomic,retain) MSPBTimerContext * workQueuePostForegroundTimerContext;                                   //@synthesize workQueuePostForegroundTimerContext=_workQueuePostForegroundTimerContext - In the implementation block
+@property (nonatomic,retain) MSPBTimerContext * workQueueGlobalResetSyncTimerContext;                                  //@synthesize workQueueGlobalResetSyncTimerContext=_workQueueGlobalResetSyncTimerContext - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> workQueue;                                                   //@synthesize workQueue=_workQueue - In the implementation block
+@property (assign,nonatomic,__weak) id<MSPowerBudgetDelegate> delegate;                                                //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) double maxActiveTimeAfterPush;                                                            //@synthesize maxActiveTimeAfterPush=_maxActiveTimeAfterPush - In the implementation block
+@property (assign,nonatomic) double maxActiveTimeAfterLossOfForeground;                                                //@synthesize maxActiveTimeAfterLossOfForeground=_maxActiveTimeAfterLossOfForeground - In the implementation block
+@property (assign,nonatomic) double maxActiveTimeAfterGlobalResetSync;                                                 //@synthesize maxActiveTimeAfterGlobalResetSync=_maxActiveTimeAfterGlobalResetSync - In the implementation block
+@property (nonatomic,retain) NSString * focusAlbumGUID;                                                                //@synthesize focusAlbumGUID=_focusAlbumGUID - In the implementation block
+@property (nonatomic,retain) NSString * focusAssetCollectionGUID;                                                      //@synthesize focusAssetCollectionGUID=_focusAssetCollectionGUID - In the implementation block
+@property (nonatomic,retain) NSString * personID;                                                                      //@synthesize personID=_personID - In the implementation block
+@property (getter=isFileTransferAllowed,nonatomic,readonly) BOOL fileTransferAllowed; 
+@property (getter=hasForegroundFocus,nonatomic,readonly) BOOL foregroundFocus; 
+@property (nonatomic,readonly) BOOL hasActiveTimers; 
+-(id)init;
+-(id<MSPowerBudgetDelegate>)delegate;
+-(void)setDelegate:(id<MSPowerBudgetDelegate>)arg1 ;
+-(NSObject*<OS_dispatch_queue>)workQueue;
+-(void)setWorkQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)shutDown;
+-(NSString *)personID;
+-(void)setPersonID:(NSString *)arg1 ;
+-(void)didReceivePushNotification;
+-(void)workQueueSetPushTimerDate:(id)arg1 ;
+-(void)workQueueSetPostForegroundTimerDate:(id)arg1 ;
+-(void)workQueueSetGlobalResetSyncTimerDate:(id)arg1 ;
+-(double)maxActiveTimeAfterPush;
+-(void)setMaxActiveTimeAfterPush:(double)arg1 ;
+-(double)workQueueMaxActiveTimeAfterPush;
+-(double)maxActiveTimeAfterGlobalResetSync;
+-(void)setMaxActiveTimeAfterGlobalResetSync:(double)arg1 ;
+-(double)workQueueMaxActiveTimeAfterGlobalResetSync;
+-(double)maxActiveTimeAfterLossOfForeground;
+-(void)setMaxActiveTimeAfterLossOfForeground:(double)arg1 ;
+-(double)workQueueMaxActiveTimeAfterLossOfForeground;
+-(void)workQueueRecomputeFileTransferAllowed;
+-(BOOL)isFileTransferAllowed;
+-(BOOL)hasForegroundFocus;
+-(BOOL)hasActiveTimers;
+-(void)workQueueSetIsFileTransferAllowed:(BOOL)arg1 ;
+-(void)setIsFileTransferAllowed:(BOOL)arg1 ;
+-(void)workQueueCommitPersistedValues;
+-(void)didBeginForegroundFocus;
+-(void)didEndForegroundFocus;
+-(void)didReceiveGlobalResetSync;
+-(void)didBeginExternalPower;
+-(void)didEndExternalPower;
+-(void)setFocusAlbumGUID:(NSString *)arg1 ;
+-(void)setFocusAssetCollectionGUID:(NSString *)arg1 ;
+-(void)_postForegroundTimerDidExpire:(id)arg1 ;
+-(void)_globalResetSyncTimerDidExpire:(id)arg1 ;
+-(NSString *)focusAlbumGUID;
+-(NSString *)focusAssetCollectionGUID;
+-(BOOL)workQueueIsFileTransferAllowed;
+-(void)workQueueSetFileTransferAllowed:(BOOL)arg1 ;
+-(BOOL)workQueueIsExternalPowered;
+-(void)workQueueSetExternalPowered:(BOOL)arg1 ;
+-(BOOL)workQueueIsForeground;
+-(void)workQueueSetForeground:(BOOL)arg1 ;
+-(MSPBTimerContext *)workQueuePushTimerContext;
+-(void)setWorkQueuePushTimerContext:(MSPBTimerContext *)arg1 ;
+-(MSPBTimerContext *)workQueuePostForegroundTimerContext;
+-(void)setWorkQueuePostForegroundTimerContext:(MSPBTimerContext *)arg1 ;
+-(MSPBTimerContext *)workQueueGlobalResetSyncTimerContext;
+-(void)setWorkQueueGlobalResetSyncTimerContext:(MSPBTimerContext *)arg1 ;
+@end
+

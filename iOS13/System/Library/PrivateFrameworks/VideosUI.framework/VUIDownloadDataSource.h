@@ -1,0 +1,105 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:27 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VUIMediaEntitiesDataSource.h>
+#import <libobjc.A.dylib/VUIMediaEntitiesFetchControllerDelegate.h>
+#import <libobjc.A.dylib/VUIDownloadManagerDelegate.h>
+#import <libobjc.A.dylib/SSDownloadManagerObserver.h>
+
+@protocol VUIDownloadDataSourceDelegate;
+@class NSArray, VUIMediaLibrary, VUIMediaEntitiesFetchController, SSDownloadManager, NSMutableDictionary, NSString;
+
+@interface VUIDownloadDataSource : VUIMediaEntitiesDataSource <VUIMediaEntitiesFetchControllerDelegate, VUIDownloadManagerDelegate, SSDownloadManagerObserver> {
+
+	BOOL _hasFetchedAllDownloadEntities;
+	BOOL _hasFetchedAllDownloadedEntities;
+	BOOL _performingRentalExpirationFetch;
+	id<VUIDownloadDataSourceDelegate> _downloadDelegate;
+	NSArray* _downloadEntities;
+	VUIMediaLibrary* _mediaLibrary;
+	VUIMediaEntitiesFetchController* _downloadedEntitiesFetchController;
+	VUIMediaEntitiesFetchController* _activeDownloadingEntitiesFetchController;
+	SSDownloadManager* _sDownloadManager;
+	NSArray* _localMediaItems;
+	NSArray* _activelyDownloadingAdamIds;
+	NSArray* _activelyDownloadingMediaItems;
+	NSMutableDictionary* _episodesDownloadingForShow;
+	NSMutableDictionary* _groupingByShowIdentifier;
+
+}
+
+@property (nonatomic,readonly) VUIMediaLibrary * mediaLibrary;                                                        //@synthesize mediaLibrary=_mediaLibrary - In the implementation block
+@property (nonatomic,retain) VUIMediaEntitiesFetchController * downloadedEntitiesFetchController;                     //@synthesize downloadedEntitiesFetchController=_downloadedEntitiesFetchController - In the implementation block
+@property (nonatomic,retain) VUIMediaEntitiesFetchController * activeDownloadingEntitiesFetchController;              //@synthesize activeDownloadingEntitiesFetchController=_activeDownloadingEntitiesFetchController - In the implementation block
+@property (nonatomic,retain) SSDownloadManager * sDownloadManager;                                                    //@synthesize sDownloadManager=_sDownloadManager - In the implementation block
+@property (assign,nonatomic) BOOL hasFetchedAllDownloadEntities;                                                      //@synthesize hasFetchedAllDownloadEntities=_hasFetchedAllDownloadEntities - In the implementation block
+@property (assign,nonatomic) BOOL hasFetchedAllDownloadedEntities;                                                    //@synthesize hasFetchedAllDownloadedEntities=_hasFetchedAllDownloadedEntities - In the implementation block
+@property (assign,nonatomic) BOOL performingRentalExpirationFetch;                                                    //@synthesize performingRentalExpirationFetch=_performingRentalExpirationFetch - In the implementation block
+@property (nonatomic,retain) NSArray * localMediaItems;                                                               //@synthesize localMediaItems=_localMediaItems - In the implementation block
+@property (nonatomic,retain) NSArray * activelyDownloadingAdamIds;                                                    //@synthesize activelyDownloadingAdamIds=_activelyDownloadingAdamIds - In the implementation block
+@property (nonatomic,retain) NSArray * activelyDownloadingMediaItems;                                                 //@synthesize activelyDownloadingMediaItems=_activelyDownloadingMediaItems - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * episodesDownloadingForShow;                                        //@synthesize episodesDownloadingForShow=_episodesDownloadingForShow - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * groupingByShowIdentifier;                                          //@synthesize groupingByShowIdentifier=_groupingByShowIdentifier - In the implementation block
+@property (assign,nonatomic,__weak) id<VUIDownloadDataSourceDelegate> downloadDelegate;                               //@synthesize downloadDelegate=_downloadDelegate - In the implementation block
+@property (nonatomic,retain) NSArray * downloadEntities;                                                              //@synthesize downloadEntities=_downloadEntities - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(void)downloadManager:(id)arg1 downloadStatesDidChange:(id)arg2 ;
+-(void)downloadManagerDownloadsDidChange:(id)arg1 ;
+-(id<VUIDownloadDataSourceDelegate>)downloadDelegate;
+-(void)setDownloadDelegate:(id<VUIDownloadDataSourceDelegate>)arg1 ;
+-(VUIMediaLibrary *)mediaLibrary;
+-(id)initWithMediaLibrary:(id)arg1 fetchRequest:(id)arg2 ;
+-(void)controller:(id)arg1 fetchRequests:(id)arg2 didCompleteWithResult:(id)arg3 ;
+-(void)controller:(id)arg1 fetchRequests:(id)arg2 didFailWithError:(id)arg3 ;
+-(void)startFetch;
+-(NSArray *)downloadEntities;
+-(void)setDownloadEntities:(NSArray *)arg1 ;
+-(void)_addNotificationObservers;
+-(void)_loadActiveDownloads;
+-(void)setDownloadedEntitiesFetchController:(VUIMediaEntitiesFetchController *)arg1 ;
+-(VUIMediaEntitiesFetchController *)downloadedEntitiesFetchController;
+-(void)setActiveDownloadingEntitiesFetchController:(VUIMediaEntitiesFetchController *)arg1 ;
+-(void)_removeNotifcationObservers;
+-(SSDownloadManager *)sDownloadManager;
+-(void)setHasFetchedAllDownloadEntities:(BOOL)arg1 ;
+-(void)setHasFetchedAllDownloadedEntities:(BOOL)arg1 ;
+-(void)setEpisodesDownloadingForShow:(NSMutableDictionary *)arg1 ;
+-(void)_loadDownloadedEntities;
+-(void)setLocalMediaItems:(NSArray *)arg1 ;
+-(id)_createGroupingByShowIdentifierWithLatestMediaEntityGroups:(id)arg1 ;
+-(void)setGroupingByShowIdentifier:(NSMutableDictionary *)arg1 ;
+-(id)_coalesceActiveDownloadEntitiesAndDownloadedEntities;
+-(void)_sortDownloadEntitiesByTitle;
+-(void)_notifyDelegatesDownloadsFetchCompletedWithChanges:(BOOL)arg1 ;
+-(VUIMediaEntitiesFetchController *)activeDownloadingEntitiesFetchController;
+-(NSMutableDictionary *)episodesDownloadingForShow;
+-(NSArray *)activelyDownloadingAdamIds;
+-(void)setActivelyDownloadingMediaItems:(NSArray *)arg1 ;
+-(BOOL)hasFetchedAllDownloadEntities;
+-(BOOL)hasFetchedAllDownloadedEntities;
+-(void)setActivelyDownloadingAdamIds:(NSArray *)arg1 ;
+-(NSArray *)localMediaItems;
+-(void)_handleDownloadingStateDidChange;
+-(id)_getActivelyDownloadingAdamIDs;
+-(void)_rentalsDidExpire;
+-(void)setPerformingRentalExpirationFetch:(BOOL)arg1 ;
+-(BOOL)_doesEpisodeSet:(id)arg1 containMediaEntity:(id)arg2 ;
+-(NSMutableDictionary *)groupingByShowIdentifier;
+-(BOOL)performingRentalExpirationFetch;
+-(id)_createDownloadEntitiesFromLatestDownloads:(id)arg1 ;
+-(NSArray *)activelyDownloadingMediaItems;
+-(void)_upsertEpisodesDownloadingForShowWithMediaEntity:(id)arg1 ;
+-(id)_getDownloadEntityInDownloadEntities:(id)arg1 containingMediaEntity:(id)arg2 ;
+-(id)_upsertDownloadEntities:(id)arg1 withEpisodesDownloadingForShow:(id)arg2 ;
+-(void)loadDownloadData;
+-(void)_updateDownloadEntity:(id*)arg1 withLatestMediaEntity:(id)arg2 ;
+-(void)setSDownloadManager:(SSDownloadManager *)arg1 ;
+@end
+

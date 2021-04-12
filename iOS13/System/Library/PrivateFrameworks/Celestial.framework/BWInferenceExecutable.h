@@ -1,0 +1,14 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:37 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Celestial.framework/Celestial
+*/
+
+
+@protocol BWInferenceExecutable <BWInferenceJobProvider>
+@required
+-(int)prepareForExecution;
+-(int)executeOnSampleBuffer:(opaqueCMSampleBufferRef)arg1 usingStorage:(id)arg2 withExecutionTime:(SCD_Struct_BW2)arg3 completionHandler:(/*^block*/id)arg4;
+
+@end
+

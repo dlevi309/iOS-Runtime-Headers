@@ -1,0 +1,43 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:24 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/IntentsUI.framework/IntentsUI
+*/
+
+#import <UIKitCore/_UIRemoteViewController.h>
+#import <libobjc.A.dylib/INUIVoiceShortcutRemoteHostingInterface.h>
+
+@protocol INUIVoiceShortcutRemoteViewControllerDelegate;
+@class NSString;
+
+@interface INUIVoiceShortcutHostViewController : _UIRemoteViewController <INUIVoiceShortcutRemoteHostingInterface> {
+
+	id<INUIVoiceShortcutRemoteViewControllerDelegate> _delegate;
+	long long _mode;
+
+}
+
+@property (assign,nonatomic) long long mode;                                                                 //@synthesize mode=_mode - In the implementation block
+@property (assign,nonatomic,__weak) id<INUIVoiceShortcutRemoteViewControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(void)initialize;
++(id)exportedInterface;
++(id)serviceViewControllerInterface;
++(id)_voiceShortcutUIExtension;
++(void)getViewControllerForAddingShortcut:(id)arg1 completion:(/*^block*/id)arg2 ;
++(void)getViewControllerForEditingVoiceShortcut:(id)arg1 completion:(/*^block*/id)arg2 ;
++(void)getViewControllerCompletion:(/*^block*/id)arg1 ;
+-(id<INUIVoiceShortcutRemoteViewControllerDelegate>)delegate;
+-(void)setDelegate:(id<INUIVoiceShortcutRemoteViewControllerDelegate>)arg1 ;
+-(void)setMode:(long long)arg1 ;
+-(long long)mode;
+-(void)viewServiceDidTerminateWithError:(id)arg1 ;
+-(void)remoteViewControllerDidCreateVoiceShortcut:(id)arg1 error:(id)arg2 ;
+-(void)remoteViewControllerDidUpdateVoiceShortcut:(id)arg1 error:(id)arg2 ;
+-(void)remoteViewControllerDidDeleteVoiceShortcutWithIdentifier:(id)arg1 ;
+-(void)remoteViewControllerDidCancel;
+@end
+

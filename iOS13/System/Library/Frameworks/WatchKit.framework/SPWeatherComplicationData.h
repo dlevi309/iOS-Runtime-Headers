@@ -1,0 +1,41 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:44 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/WatchKit.framework/WatchKit
+*/
+
+#import <WatchKit/SPComplicationData.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSString;
+
+@interface SPWeatherComplicationData : SPComplicationData <NSSecureCoding> {
+
+	NSString* _temperatureText;
+	NSString* _locationText;
+	NSString* _currentConditionsText;
+	long long _currentConditionsEnum;
+	NSString* _highLowText;
+
+}
+
+@property (nonatomic,retain) NSString * temperatureText;                    //@synthesize temperatureText=_temperatureText - In the implementation block
+@property (nonatomic,retain) NSString * locationText;                       //@synthesize locationText=_locationText - In the implementation block
+@property (nonatomic,retain) NSString * currentConditionsText;              //@synthesize currentConditionsText=_currentConditionsText - In the implementation block
+@property (assign,nonatomic) long long currentConditionsEnum;               //@synthesize currentConditionsEnum=_currentConditionsEnum - In the implementation block
+@property (nonatomic,retain) NSString * highLowText;                        //@synthesize highLowText=_highLowText - In the implementation block
++(BOOL)supportsSecureCoding;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(NSString *)temperatureText;
+-(void)setTemperatureText:(NSString *)arg1 ;
+-(NSString *)locationText;
+-(void)setLocationText:(NSString *)arg1 ;
+-(NSString *)currentConditionsText;
+-(void)setCurrentConditionsText:(NSString *)arg1 ;
+-(long long)currentConditionsEnum;
+-(void)setCurrentConditionsEnum:(long long)arg1 ;
+-(NSString *)highLowText;
+-(void)setHighLowText:(NSString *)arg1 ;
+@end
+

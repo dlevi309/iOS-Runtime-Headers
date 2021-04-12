@@ -1,0 +1,23 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:52 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
+*/
+
+#import <HealthExperience/HealthExperience.AsynchronousOperation.h>
+
+@class NSString;
+
+@interface HealthExperience.AsynchronousBlockOperation : HealthExperience.AsynchronousOperation {
+
+	 workBlock;
+	 debugIdentifier;
+
+}
+
+@property (readonly,nonatomic) NSString * debugDescription; 
+-(id)init;
+-(NSString *)debugDescription;
+-(void)main;
+@end
+

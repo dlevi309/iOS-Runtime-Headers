@@ -1,0 +1,64 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:46 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit
+*/
+
+#import <NanoPassKit/NanoPassKit-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSUUID, NSData, NSString, NPKPassSyncStateItem, NSDictionary;
+
+@interface NPKPassSyncChange : NSObject <NSCopying, NSSecureCoding> {
+
+	NSUUID* _changeUUID;
+	NSData* _reconciledStateHash;
+	unsigned long long _changeType;
+	NSString* _uniqueID;
+	NPKPassSyncStateItem* _syncStateItem;
+	NSData* _passData;
+	NSData* _baseManifestHashForPartialUpdate;
+	NSDictionary* _remoteAssetsForPartialUpdate;
+
+}
+
+@property (nonatomic,retain) NSUUID * changeUUID;                                      //@synthesize changeUUID=_changeUUID - In the implementation block
+@property (nonatomic,retain) NSData * reconciledStateHash;                             //@synthesize reconciledStateHash=_reconciledStateHash - In the implementation block
+@property (assign,nonatomic) unsigned long long changeType;                            //@synthesize changeType=_changeType - In the implementation block
+@property (nonatomic,retain) NSString * uniqueID;                                      //@synthesize uniqueID=_uniqueID - In the implementation block
+@property (nonatomic,retain) NPKPassSyncStateItem * syncStateItem;                     //@synthesize syncStateItem=_syncStateItem - In the implementation block
+@property (nonatomic,retain) NSData * passData;                                        //@synthesize passData=_passData - In the implementation block
+@property (nonatomic,retain) NSData * baseManifestHashForPartialUpdate;                //@synthesize baseManifestHashForPartialUpdate=_baseManifestHashForPartialUpdate - In the implementation block
+@property (nonatomic,retain) NSDictionary * remoteAssetsForPartialUpdate;              //@synthesize remoteAssetsForPartialUpdate=_remoteAssetsForPartialUpdate - In the implementation block
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(unsigned long long)changeType;
+-(NSString *)uniqueID;
+-(void)setChangeType:(unsigned long long)arg1 ;
+-(void)setUniqueID:(NSString *)arg1 ;
+-(NSData *)passData;
+-(id)initWithProtoPassSyncChange:(id)arg1 ;
+-(NSUUID *)changeUUID;
+-(void)setPassData:(NSData *)arg1 ;
+-(NSData *)reconciledStateHash;
+-(id)protoPassSyncChange;
+-(void)setReconciledStateHash:(NSData *)arg1 ;
+-(NPKPassSyncStateItem *)syncStateItem;
+-(NSData *)baseManifestHashForPartialUpdate;
+-(NSDictionary *)remoteAssetsForPartialUpdate;
+-(void)setBaseManifestHashForPartialUpdate:(NSData *)arg1 ;
+-(void)setRemoteAssetsForPartialUpdate:(NSDictionary *)arg1 ;
+-(id)initWithChangeUUID:(id)arg1 reconciledStateHash:(id)arg2 changeType:(unsigned long long)arg3 uniqueID:(id)arg4 syncStateItem:(id)arg5 passData:(id)arg6 baseManifestHashForPartialUpdate:(id)arg7 remoteAssetsForPartialUpdate:(id)arg8 ;
+-(id)initWithChangeUUID:(id)arg1 reconciledStateHash:(id)arg2 changeType:(unsigned long long)arg3 uniqueID:(id)arg4 syncStateItem:(id)arg5 passData:(id)arg6 ;
+-(BOOL)isEqualToChangeIgnoringUUID:(id)arg1 ;
+-(void)setChangeUUID:(NSUUID *)arg1 ;
+-(BOOL)isEqualToChange:(id)arg1 ;
+-(void)setSyncStateItem:(NPKPassSyncStateItem *)arg1 ;
+@end
+

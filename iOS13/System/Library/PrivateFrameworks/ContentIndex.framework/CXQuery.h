@@ -1,0 +1,62 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:44 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ContentIndex.framework/ContentIndex
+*/
+
+
+@protocol OS_dispatch_semaphore;
+#import <ContentIndex/ContentIndex-Structs.h>
+@class CXIndex, NSArray, NSObject;
+
+@interface CXQuery : NSObject {
+
+	BOOL _started;
+	BOOL _complete;
+	BOOL _canceled;
+	BOOL _waiting;
+	CXIndex* _index;
+	SIQueryRef _siQuery;
+	SIResultQueueRef _resultQueue;
+	SIJobRefRef _job;
+	SCD_Struct_CX9* _batch;
+	long long _batchOffset;
+	NSArray* _batchValues;
+	NSObject*<OS_dispatch_semaphore> _semaphore;
+
+}
+
+@property (nonatomic,readonly) CXIndex * index;                                         //@synthesize index=_index - In the implementation block
+@property (nonatomic,readonly) SIQueryRef siQuery;                                      //@synthesize siQuery=_siQuery - In the implementation block
+@property (nonatomic,readonly) SIResultQueueRef resultQueue;                            //@synthesize resultQueue=_resultQueue - In the implementation block
+@property (nonatomic,readonly) SIJobRefRef job;                                         //@synthesize job=_job - In the implementation block
+@property (nonatomic,readonly) SCD_Struct_CX9* batch;                                   //@synthesize batch=_batch - In the implementation block
+@property (nonatomic,readonly) long long batchOffset;                                   //@synthesize batchOffset=_batchOffset - In the implementation block
+@property (nonatomic,readonly) NSArray * batchValues;                                   //@synthesize batchValues=_batchValues - In the implementation block
+@property (nonatomic,readonly) BOOL started;                                            //@synthesize started=_started - In the implementation block
+@property (nonatomic,readonly) BOOL complete;                                           //@synthesize complete=_complete - In the implementation block
+@property (nonatomic,readonly) BOOL canceled;                                           //@synthesize canceled=_canceled - In the implementation block
+@property (nonatomic,readonly) BOOL waiting;                                            //@synthesize waiting=_waiting - In the implementation block
+@property (nonatomic,readonly) NSObject*<OS_dispatch_semaphore> semaphore;              //@synthesize semaphore=_semaphore - In the implementation block
++(void)initialize;
+-(void)dealloc;
+-(void)cancel;
+-(CXIndex *)index;
+-(BOOL)start;
+-(BOOL)canceled;
+-(BOOL)started;
+-(BOOL)complete;
+-(SCD_Struct_CX9*)batch;
+-(NSObject*<OS_dispatch_semaphore>)semaphore;
+-(SIJobRefRef)job;
+-(SIResultQueueRef)resultQueue;
+-(SIQueryRef)siQuery;
+-(unsigned)getResults:(unsigned*)arg1 docNames:(id*)arg2 valueLists:(id*)arg3 maxCount:(unsigned)arg4 ;
+-(id)initWithSting:(id)arg1 forIndex:(id)arg2 withOptions:(id)arg3 ;
+-(void)processResults:(BOOL)arg1 ;
+-(BOOL)findDocuments:(unsigned*)arg1 docNames:(id*)arg2 valueLists:(id*)arg3 maxCount:(unsigned)arg4 timeOut:(double)arg5 foundCount:(unsigned*)arg6 ;
+-(long long)batchOffset;
+-(NSArray *)batchValues;
+-(BOOL)waiting;
+@end
+

@@ -1,0 +1,47 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:03 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit
+*/
+
+#import <libobjc.A.dylib/AKNoteEditorViewControllerDelegate.h>
+#import <UIKit/UIPopoverPresentationControllerDelegate.h>
+
+@protocol AKNoteEditorControllerDelegate;
+@class AKPopupAnnotation, AKNoteEditorViewController, NSString;
+
+@interface AKNoteEditorController : NSObject <AKNoteEditorViewControllerDelegate, UIPopoverPresentationControllerDelegate> {
+
+	AKPopupAnnotation* _annotation;
+	id<AKNoteEditorControllerDelegate> _delegate;
+	AKNoteEditorViewController* _contentViewController;
+
+}
+
+@property (retain) AKNoteEditorViewController * contentViewController;                        //@synthesize contentViewController=_contentViewController - In the implementation block
+@property (nonatomic,retain) AKPopupAnnotation * annotation;                                  //@synthesize annotation=_annotation - In the implementation block
+@property (nonatomic,readonly) NSString * editedText; 
+@property (assign,nonatomic,__weak) id<AKNoteEditorControllerDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id<AKNoteEditorControllerDelegate>)delegate;
+-(void)setDelegate:(id<AKNoteEditorControllerDelegate>)arg1 ;
+-(void)setContentViewController:(AKNoteEditorViewController *)arg1 ;
+-(long long)adaptivePresentationStyleForPresentationController:(id)arg1 ;
+-(id)presentationController:(id)arg1 viewControllerForAdaptivePresentationStyle:(long long)arg2 ;
+-(AKNoteEditorViewController *)contentViewController;
+-(void)hide;
+-(AKPopupAnnotation *)annotation;
+-(void)show:(BOOL)arg1 ;
+-(void)setAnnotation:(AKPopupAnnotation *)arg1 ;
+-(id)_popupBackgroundColorForPopupAnnotation:(id)arg1 ;
+-(void)finishEditing;
+-(void)noteEditorViewControllerDidBeginEditing:(id)arg1 ;
+-(void)noteEditorViewControllerDidEndEditing:(id)arg1 ;
+-(NSString *)editedText;
+-(double)suggestedEditorHeightForWidth:(double)arg1 ;
+-(void)beginEditing:(BOOL)arg1 ;
+@end
+

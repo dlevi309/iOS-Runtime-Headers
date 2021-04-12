@@ -1,0 +1,288 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:03 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit
+*/
+
+
+@protocol AKControllerDelegateProtocol, PKRulerHostingDelegate;
+#import <AnnotationKit/AnnotationKit-Structs.h>
+@class AKModelController, UIView, NSString, AKSparseMutableControllerArray, NSMapTable, AKActionController, AKToolController, AKToolbarViewController, AKAttributeController, AKUndoController, AKSidecarController, AKMainEventHandler, AKTextEditorController, AKLegacyDoodleController, AKSignatureModelController, AKFormFeatureDetectorController, AKHighlightAnnotationController, AKStatistics, AKPeripheralAvailabilityManager_iOS, AKPageController, NSArray, AKToolbarView;
+
+@interface AKController : NSObject {
+
+	BOOL _isUsedOnDarkBackground;
+	BOOL overlayShouldPixelate;
+	BOOL _isTornDown;
+	BOOL _allEditingDisabled;
+	BOOL _annotationEditingEnabled;
+	BOOL _pencilAlwaysDraws;
+	BOOL _isTestingInstance;
+	BOOL _showingMenu;
+	BOOL _hideAllAdornments;
+	BOOL _isLogging;
+	BOOL _selectNewlyCreatedAnnotations;
+	BOOL _shapeDetectionEnabled;
+	BOOL _useHighVisibilityDefaultInks;
+	BOOL __isInDFRAction;
+	id<AKControllerDelegateProtocol> _delegate;
+	AKModelController* _modelController;
+	UIView* _toolbarView;
+	unsigned long long _currentPageIndex;
+	id<PKRulerHostingDelegate> _rulerHostingDelegate;
+	NSString* _author;
+	AKSparseMutableControllerArray* _pageControllers;
+	NSMapTable* _pageModelControllersToPageControllers;
+	AKActionController* _actionController;
+	AKToolController* _toolController;
+	AKToolbarViewController* _toolbarViewController;
+	AKAttributeController* _attributeController;
+	AKUndoController* _undoController;
+	AKSidecarController* _sidecarController;
+	AKMainEventHandler* _mainEventHandler;
+	AKTextEditorController* _textEditorController;
+	AKLegacyDoodleController* _legacyDoodleController;
+	AKSignatureModelController* _signatureModelController;
+	AKFormFeatureDetectorController* _formDetectionController;
+	AKHighlightAnnotationController* _highlightAnnotationController;
+	AKStatistics* _statisticsLogger;
+	AKPeripheralAvailabilityManager_iOS* _peripheralAvailabilityManager;
+	unsigned long long _pasteCascadingMultiplier;
+	long long _lastPasteboardChangeCount;
+	unsigned long long _creationCascadingMultiplier;
+	AKPageController* _lastCreationCascadingPageController;
+	NSArray* _cachedKeyCommands;
+	double _akModelToCanvasFixedPixelScaleOfFirstEncounteredPage;
+	double _screenPixelsToCanvasPixelsDownscale;
+	AKToolbarView* _modernToolbarView;
+
+}
+
+@property (assign) BOOL isTestingInstance;                                                           //@synthesize isTestingInstance=_isTestingInstance - In the implementation block
+@property (assign) BOOL isTornDown;                                                                  //@synthesize isTornDown=_isTornDown - In the implementation block
+@property (retain) AKSparseMutableControllerArray * pageControllers;                                 //@synthesize pageControllers=_pageControllers - In the implementation block
+@property (retain) NSMapTable * pageModelControllersToPageControllers;                               //@synthesize pageModelControllersToPageControllers=_pageModelControllersToPageControllers - In the implementation block
+@property (__weak) id<AKControllerDelegateProtocol> delegate;                                        //@synthesize delegate=_delegate - In the implementation block
+@property (retain) AKActionController * actionController;                                            //@synthesize actionController=_actionController - In the implementation block
+@property (retain) AKToolController * toolController;                                                //@synthesize toolController=_toolController - In the implementation block
+@property (retain) AKToolbarViewController * toolbarViewController;                                  //@synthesize toolbarViewController=_toolbarViewController - In the implementation block
+@property (retain) AKAttributeController * attributeController;                                      //@synthesize attributeController=_attributeController - In the implementation block
+@property (retain) AKModelController * modelController;                                              //@synthesize modelController=_modelController - In the implementation block
+@property (retain) AKUndoController * undoController;                                                //@synthesize undoController=_undoController - In the implementation block
+@property (retain) AKSidecarController * sidecarController;                                          //@synthesize sidecarController=_sidecarController - In the implementation block
+@property (retain) AKMainEventHandler * mainEventHandler;                                            //@synthesize mainEventHandler=_mainEventHandler - In the implementation block
+@property (retain) AKTextEditorController * textEditorController;                                    //@synthesize textEditorController=_textEditorController - In the implementation block
+@property (retain) AKLegacyDoodleController * legacyDoodleController;                                //@synthesize legacyDoodleController=_legacyDoodleController - In the implementation block
+@property (retain) UIView * toolbarView;                                                             //@synthesize toolbarView=_toolbarView - In the implementation block
+@property (retain) AKSignatureModelController * signatureModelController;                            //@synthesize signatureModelController=_signatureModelController - In the implementation block
+@property (retain) AKFormFeatureDetectorController * formDetectionController;                        //@synthesize formDetectionController=_formDetectionController - In the implementation block
+@property (retain) AKHighlightAnnotationController * highlightAnnotationController;                  //@synthesize highlightAnnotationController=_highlightAnnotationController - In the implementation block
+@property (retain) AKStatistics * statisticsLogger;                                                  //@synthesize statisticsLogger=_statisticsLogger - In the implementation block
+@property (retain) AKPeripheralAvailabilityManager_iOS * peripheralAvailabilityManager;              //@synthesize peripheralAvailabilityManager=_peripheralAvailabilityManager - In the implementation block
+@property (getter=isShowingMenu) BOOL showingMenu;                                                   //@synthesize showingMenu=_showingMenu - In the implementation block
+@property (assign) unsigned long long pasteCascadingMultiplier;                                      //@synthesize pasteCascadingMultiplier=_pasteCascadingMultiplier - In the implementation block
+@property (assign) long long lastPasteboardChangeCount;                                              //@synthesize lastPasteboardChangeCount=_lastPasteboardChangeCount - In the implementation block
+@property (assign) unsigned long long creationCascadingMultiplier;                                   //@synthesize creationCascadingMultiplier=_creationCascadingMultiplier - In the implementation block
+@property (__weak) AKPageController * lastCreationCascadingPageController;                           //@synthesize lastCreationCascadingPageController=_lastCreationCascadingPageController - In the implementation block
+@property (assign,nonatomic) BOOL hideAllAdornments;                                                 //@synthesize hideAllAdornments=_hideAllAdornments - In the implementation block
+@property (assign,nonatomic) BOOL isUsedOnDarkBackground;                                            //@synthesize isUsedOnDarkBackground=_isUsedOnDarkBackground - In the implementation block
+@property (nonatomic,readonly) NSArray * cachedKeyCommands;                                          //@synthesize cachedKeyCommands=_cachedKeyCommands - In the implementation block
+@property (assign) double akModelToCanvasFixedPixelScaleOfFirstEncounteredPage;                      //@synthesize akModelToCanvasFixedPixelScaleOfFirstEncounteredPage=_akModelToCanvasFixedPixelScaleOfFirstEncounteredPage - In the implementation block
+@property (assign) double screenPixelsToCanvasPixelsDownscale;                                       //@synthesize screenPixelsToCanvasPixelsDownscale=_screenPixelsToCanvasPixelsDownscale - In the implementation block
+@property (assign,nonatomic) BOOL isLogging;                                                         //@synthesize isLogging=_isLogging - In the implementation block
+@property (assign,nonatomic) BOOL selectNewlyCreatedAnnotations;                                     //@synthesize selectNewlyCreatedAnnotations=_selectNewlyCreatedAnnotations - In the implementation block
+@property (assign,nonatomic) BOOL shapeDetectionEnabled;                                             //@synthesize shapeDetectionEnabled=_shapeDetectionEnabled - In the implementation block
+@property (assign,nonatomic,__weak) AKToolbarView * modernToolbarView;                               //@synthesize modernToolbarView=_modernToolbarView - In the implementation block
+@property (assign,nonatomic) BOOL useHighVisibilityDefaultInks;                                      //@synthesize useHighVisibilityDefaultInks=_useHighVisibilityDefaultInks - In the implementation block
+@property (nonatomic,readonly) BOOL onlyDrawWithApplePencil; 
+@property (readonly) BOOL _isInDFRAction;                                                            //@synthesize _isInDFRAction=__isInDFRAction - In the implementation block
+@property (assign,nonatomic) BOOL overlayShouldPixelate; 
+@property (assign,nonatomic) BOOL allEditingDisabled;                                                //@synthesize allEditingDisabled=_allEditingDisabled - In the implementation block
+@property (assign,nonatomic) BOOL annotationEditingEnabled;                                          //@synthesize annotationEditingEnabled=_annotationEditingEnabled - In the implementation block
+@property (assign,nonatomic) BOOL pencilAlwaysDraws;                                                 //@synthesize pencilAlwaysDraws=_pencilAlwaysDraws - In the implementation block
+@property (assign) unsigned long long currentPageIndex;                                              //@synthesize currentPageIndex=_currentPageIndex - In the implementation block
+@property (assign,nonatomic,__weak) id<PKRulerHostingDelegate> rulerHostingDelegate;                 //@synthesize rulerHostingDelegate=_rulerHostingDelegate - In the implementation block
+@property (copy) NSString * author;                                                                  //@synthesize author=_author - In the implementation block
++(void)renderAnnotation:(id)arg1 inContext:(CGContextRef)arg2 ;
++(id)controllerWithDelegate:(id)arg1 ;
++(id)akBundle;
++(void)adjustAnnotationBoundsToFitText:(id)arg1 ;
++(id)colorForHighlightAttributeWithTag:(long long)arg1 ;
++(id)akBundleIdentifier;
++(BOOL)_isInLowMemoryEnvironment;
++(BOOL)canConnectToStylus;
++(BOOL)hasPressureCapableHardware;
++(id)markupBarButtonItemWithTarget:(id)arg1 action:(SEL)arg2 ;
+-(void)dealloc;
+-(id<AKControllerDelegateProtocol>)delegate;
+-(void)setDelegate:(id<AKControllerDelegateProtocol>)arg1 ;
+-(void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void*)arg4 ;
+-(id)initWithDelegate:(id)arg1 ;
+-(NSString *)author;
+-(void)setAuthor:(NSString *)arg1 ;
+-(void)teardown;
+-(id)panGestureRecognizer;
+-(void)cut:(id)arg1 ;
+-(void)copy:(id)arg1 ;
+-(void)paste:(id)arg1 ;
+-(void)undo:(id)arg1 ;
+-(void)redo:(id)arg1 ;
+-(BOOL)handleEvent:(id)arg1 ;
+-(void)_didReceiveMemoryWarning:(id)arg1 ;
+-(void)selectAll:(id)arg1 ;
+-(void)delete:(id)arg1 ;
+-(unsigned long long)currentPageIndex;
+-(void)setCurrentPageIndex:(unsigned long long)arg1 ;
+-(void)commitEditing;
+-(id)tapGestureRecognizer;
+-(id)pressGestureRecognizer;
+-(BOOL)isTornDown;
+-(AKModelController *)modelController;
+-(void)highlightableSelectionChanged;
+-(void)highlightableSelectionWillBeginChanging;
+-(void)highlightableSelectionDidEndChanging;
+-(BOOL)isOverlayViewLoadedAtIndex:(unsigned long long)arg1 ;
+-(double)currentModelBaseScaleFactorForPageAtIndex:(unsigned long long)arg1 ;
+-(long long)currentExifOrientationForPageAtIndex:(unsigned long long)arg1 ;
+-(id)doubleTapGestureRecognizer;
+-(void)prepareOverlayAtIndex:(unsigned long long)arg1 ;
+-(id)overlayViewAtIndex:(unsigned long long)arg1 ;
+-(void)relinquishOverlayAtIndex:(unsigned long long)arg1 ;
+-(BOOL)onlyDrawWithApplePencil;
+-(id)rotationGestureRecognizer;
+-(void)renderAnnotation:(id)arg1 inContext:(CGContextRef)arg2 ;
+-(void)setRulerHostingDelegate:(id<PKRulerHostingDelegate>)arg1 ;
+-(void)setAnnotationEditingEnabled:(BOOL)arg1 ;
+-(UIView *)toolbarView;
+-(BOOL)validateUndo:(id)arg1 ;
+-(BOOL)validateRedo:(id)arg1 ;
+-(id)toolbarButtonItemOfType:(unsigned long long)arg1 ;
+-(BOOL)annotationEditingEnabled;
+-(void)resetToDefaultToolMode;
+-(void)performActionForSender:(id)arg1 ;
+-(BOOL)isShowingMenu;
+-(AKActionController *)actionController;
+-(id)currentPageController;
+-(AKMainEventHandler *)mainEventHandler;
+-(AKAttributeController *)attributeController;
+-(void)setModernToolbarView:(AKToolbarView *)arg1 ;
+-(AKToolController *)toolController;
+-(unsigned long long)toolMode;
+-(AKSignatureModelController *)signatureModelController;
+-(AKUndoController *)undoController;
+-(BOOL)isPresentingPopover;
+-(id)initForTesting;
+-(AKStatistics *)statisticsLogger;
+-(AKToolbarView *)modernToolbarView;
+-(AKSparseMutableControllerArray *)pageControllers;
+-(BOOL)shapeDetectionEnabled;
+-(void)setShapeDetectionEnabled:(BOOL)arg1 ;
+-(BOOL)validateSender:(id)arg1 ;
+-(AKToolbarViewController *)toolbarViewController;
+-(BOOL)useHighVisibilityDefaultInks;
+-(AKTextEditorController *)textEditorController;
+-(AKLegacyDoodleController *)legacyDoodleController;
+-(double)akModelToCanvasFixedPixelScaleOfFirstEncounteredPage;
+-(double)screenPixelsToCanvasPixelsDownscale;
+-(void)setAkModelToCanvasFixedPixelScaleOfFirstEncounteredPage:(double)arg1 ;
+-(void)setScreenPixelsToCanvasPixelsDownscale:(double)arg1 ;
+-(AKSidecarController *)sidecarController;
+-(id<PKRulerHostingDelegate>)rulerHostingDelegate;
+-(id)imageForToolbarButtonItemOfType:(unsigned long long)arg1 ;
+-(BOOL)shouldDrawVariableStrokeDoodles;
+-(BOOL)pencilAlwaysDraws;
+-(BOOL)selectNewlyCreatedAnnotations;
+-(void)_updateGestureDependencyPriority;
+-(void)setIsTestingInstance:(BOOL)arg1 ;
+-(void)setStatisticsLogger:(AKStatistics *)arg1 ;
+-(void)setPageControllers:(AKSparseMutableControllerArray *)arg1 ;
+-(void)setPageModelControllersToPageControllers:(NSMapTable *)arg1 ;
+-(void)setAllEditingDisabled:(BOOL)arg1 ;
+-(void)setPencilAlwaysDraws:(BOOL)arg1 ;
+-(void)setModelController:(AKModelController *)arg1 ;
+-(void)setUndoController:(AKUndoController *)arg1 ;
+-(void)setSidecarController:(AKSidecarController *)arg1 ;
+-(void)setLegacyDoodleController:(AKLegacyDoodleController *)arg1 ;
+-(void)enclosingScrollViewDidScroll:(id)arg1 ;
+-(void)setToolController:(AKToolController *)arg1 ;
+-(void)setAttributeController:(AKAttributeController *)arg1 ;
+-(void)setActionController:(AKActionController *)arg1 ;
+-(void)setToolbarViewController:(AKToolbarViewController *)arg1 ;
+-(void)setToolbarView:(UIView *)arg1 ;
+-(void)setMainEventHandler:(AKMainEventHandler *)arg1 ;
+-(void)setTextEditorController:(AKTextEditorController *)arg1 ;
+-(void)setSignatureModelController:(AKSignatureModelController *)arg1 ;
+-(void)setFormDetectionController:(AKFormFeatureDetectorController *)arg1 ;
+-(void)setHighlightAnnotationController:(AKHighlightAnnotationController *)arg1 ;
+-(void)setPeripheralAvailabilityManager:(AKPeripheralAvailabilityManager_iOS *)arg1 ;
+-(AKPeripheralAvailabilityManager_iOS *)peripheralAvailabilityManager;
+-(void)_pageModelControllerSelectedAnnotationsChangedNotification:(id)arg1 ;
+-(void)setIsTornDown:(BOOL)arg1 ;
+-(BOOL)isTestingInstance;
+-(void)setPasteCascadingMultiplier:(unsigned long long)arg1 ;
+-(NSMapTable *)pageModelControllersToPageControllers;
+-(void)_setupPageModelController:(id)arg1 ;
+-(BOOL)overlayShouldPixelate;
+-(BOOL)validateCut:(id)arg1 ;
+-(BOOL)validateCopy:(id)arg1 ;
+-(BOOL)validatePaste:(id)arg1 ;
+-(BOOL)validateDelete:(id)arg1 ;
+-(void)duplicate:(id)arg1 ;
+-(BOOL)validateDuplicate:(id)arg1 ;
+-(BOOL)validateSelectAll:(id)arg1 ;
+-(void)showAttributeInspector:(id)arg1 ;
+-(BOOL)validateShowAttributeInspector:(id)arg1 ;
+-(BOOL)supportForPencilAlwaysDrawsSatisfied;
+-(void)setToolMode:(unsigned long long)arg1 ;
+-(BOOL)_validateCutCopyDelete;
+-(void)setLastPasteboardChangeCount:(long long)arg1 ;
+-(long long)lastPasteboardChangeCount;
+-(AKPageController *)lastCreationCascadingPageController;
+-(unsigned long long)creationCascadingMultiplier;
+-(void)setLastCreationCascadingPageController:(AKPageController *)arg1 ;
+-(void)setCreationCascadingMultiplier:(unsigned long long)arg1 ;
+-(id)pageControllerForAnnotation:(id)arg1 ;
+-(BOOL)canBeginEditingTextAnnotation:(id)arg1 ;
+-(CGRect)_popoverAnchorFrameInModelForAnnotations:(id)arg1 ;
+-(void)editTextAnnotation:(id)arg1 ;
+-(void)willShowMenu:(id)arg1 ;
+-(void)willHideMenu:(id)arg1 ;
+-(void)setShowingMenu:(BOOL)arg1 ;
+-(AKHighlightAnnotationController *)highlightAnnotationController;
+-(void)setSelectNewlyCreatedAnnotations:(BOOL)arg1 ;
+-(void)addPopupToAnnotation:(id)arg1 openPopup:(BOOL)arg2 ;
+-(void)removeNoteFromAnnotation:(id)arg1 ;
+-(void)hideSelectionMenu:(id)arg1 ;
+-(void)strokeAddedNotification:(id)arg1 ;
+-(void)updateOverlayViewAtIndex:(unsigned long long)arg1 ;
+-(void)setOverlayShouldPixelate:(BOOL)arg1 ;
+-(void)reloadVisibleToolbarItemIdentifiers;
+-(CGRect)contentAlignedRectForRect:(CGRect)arg1 onPageAtIndex:(unsigned long long)arg2 ;
+-(id)keyCommandsForAnnotations;
+-(BOOL)canPerformKeyCommandAction:(SEL)arg1 withSender:(id)arg2 handled:(BOOL*)arg3 ;
+-(void)applyCurrentCrop;
+-(void)clearUndoStack;
+-(void)delayedUndoControllerSetup;
+-(BOOL)validateEditTextAnnotation:(id)arg1 ;
+-(void)showSelectionMenu:(id)arg1 ;
+-(void)_toolpicker_setColor:(id)arg1 ;
+-(id)_toolpicker_color;
+-(void)_toolpicker_setInkIdentifier:(id)arg1 ;
+-(id)_toolpicker_inkIdentifier;
+-(id)pageControllerForPageModelController:(id)arg1 ;
+-(void)setHideAllAdornments:(BOOL)arg1 ;
+-(void)beginLogging:(id)arg1 documentType:(id)arg2 ;
+-(void)endLogging;
+-(BOOL)isUsedOnDarkBackground;
+-(void)setIsUsedOnDarkBackground:(BOOL)arg1 ;
+-(BOOL)allEditingDisabled;
+-(AKFormFeatureDetectorController *)formDetectionController;
+-(unsigned long long)pasteCascadingMultiplier;
+-(BOOL)hideAllAdornments;
+-(NSArray *)cachedKeyCommands;
+-(BOOL)isLogging;
+-(void)setIsLogging:(BOOL)arg1 ;
+-(void)setUseHighVisibilityDefaultInks:(BOOL)arg1 ;
+-(BOOL)_isInDFRAction;
+@end
+

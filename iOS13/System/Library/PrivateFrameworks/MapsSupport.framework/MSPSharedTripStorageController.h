@@ -1,0 +1,57 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:31 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/MapsSupport.framework/MapsSupport
+*/
+
+
+@protocol MSPSharedTripStorageDelegate;
+@class MSPGroupSessionStorage, NSMutableDictionary;
+
+@interface MSPSharedTripStorageController : NSObject {
+
+	id<MSPSharedTripStorageDelegate> _delegate;
+	MSPGroupSessionStorage* _senderSession;
+	NSMutableDictionary* _sharedTripGroupSessionInfo;
+	NSMutableDictionary* _receiverRules;
+	NSMutableDictionary* _senderRules;
+
+}
+
+@property (nonatomic,retain) NSMutableDictionary * sharedTripGroupSessionInfo;              //@synthesize sharedTripGroupSessionInfo=_sharedTripGroupSessionInfo - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * receiverRules;                           //@synthesize receiverRules=_receiverRules - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * senderRules;                             //@synthesize senderRules=_senderRules - In the implementation block
+@property (assign,nonatomic,__weak) id<MSPSharedTripStorageDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (nonatomic,retain) MSPGroupSessionStorage * senderSession;                        //@synthesize senderSession=_senderSession - In the implementation block
+-(id)init;
+-(void)dealloc;
+-(id<MSPSharedTripStorageDelegate>)delegate;
+-(void)setDelegate:(id<MSPSharedTripStorageDelegate>)arg1 ;
+-(void)removeSession:(id)arg1 ;
+-(id)groupSessionInfoForKey:(id)arg1 ;
+-(id)receivingRulesForIdentifier:(id)arg1 ;
+-(void)receivingRulesTouched;
+-(void)updateGroupSessionStorageWithState:(id)arg1 ;
+-(void)_loadSenderSession;
+-(void)_loadStoredSessions;
+-(void)setSenderRules:(NSMutableDictionary *)arg1 ;
+-(void)_saveSenderSession;
+-(void)_saveStoredSessions;
+-(NSMutableDictionary *)receiverRules;
+-(void)_saveReceivingRules;
+-(void)_saveSendingRules;
+-(id)_storingPath;
+-(id)_rulesPath;
+-(void)setReceiverRules:(NSMutableDictionary *)arg1 ;
+-(id)_senderRulesPath;
+-(NSMutableDictionary *)senderRules;
+-(id)_storingSenderPath;
+-(void)setSenderSession:(MSPGroupSessionStorage *)arg1 ;
+-(void)addNewSession:(id)arg1 originator:(id)arg2 receivingHandle:(id)arg3 receivingAccountIdentifier:(id)arg4 ;
+-(id)sendingRulesForIdentifier:(id)arg1 ;
+-(void)sendingRulesTouched;
+-(MSPGroupSessionStorage *)senderSession;
+-(NSMutableDictionary *)sharedTripGroupSessionInfo;
+-(void)setSharedTripGroupSessionInfo:(NSMutableDictionary *)arg1 ;
+@end
+

@@ -1,0 +1,141 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:03 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/EventKit.framework/EventKit
+*/
+
+#import <EventKit/EventKit-Structs.h>
+#import <EventKit/EKPersistentObject.h>
+
+@interface EKPersistentCalendarItem : EKPersistentObject
+
+@property (assign,getter=isDefaultAlarmRemoved,nonatomic) BOOL defaultAlarmRemoved; 
++(id)relations;
++(id)defaultPropertiesToLoad;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)calendar;
+-(void)setCalendar:(id)arg1 ;
+-(id)attachments;
+-(id)startDate;
+-(void)setURL:(id)arg1 ;
+-(void)setAttachments:(id)arg1 ;
+-(id)UUID;
+-(void)setUUID:(id)arg1 ;
+-(id)URL;
+-(id)title;
+-(void)setTitle:(id)arg1 ;
+-(int)priority;
+-(id)uniqueID;
+-(void)setPriority:(int)arg1 ;
+-(void)setSequence:(int)arg1 ;
+-(int)sequence;
+-(id)action;
+-(int)sequenceNumber;
+-(id)location;
+-(id)creationDate;
+-(void)setStartDate:(id)arg1 ;
+-(void)setCreationDate:(id)arg1 ;
+-(id)clientLocation;
+-(void)setLocation:(id)arg1 ;
+-(id)startLocation;
+-(void)setAction:(id)arg1 ;
+-(id)appLink;
+-(void)setAppLink:(id)arg1 ;
+-(void)setStartLocation:(id)arg1 ;
+-(id)lastModifiedDate;
+-(void)setUniqueID:(id)arg1 ;
+-(void)setLastModifiedDate:(id)arg1 ;
+-(id)organizer;
+-(id)externalID;
+-(void)setExternalID:(id)arg1 ;
+-(id)externalModificationTag;
+-(void)setExternalModificationTag:(id)arg1 ;
+-(id)originalItem;
+-(void)setOriginalItem:(id)arg1 ;
+-(void)setAllDay:(BOOL)arg1 ;
+-(BOOL)isAllDay;
+-(id)notes;
+-(void)setNotes:(id)arg1 ;
+-(id)alarms;
+-(void)setAlarms:(id)arg1 ;
+-(id)attendees;
+-(BOOL)hasAttendees;
+-(void)removeAttendee:(id)arg1 ;
+-(void)setAttendees:(id)arg1 ;
+-(void)addAttendee:(id)arg1 ;
+-(BOOL)hasRecurrenceRules;
+-(id)selfAttendee;
+-(id)travelStartLocation;
+-(void)setTravelStartLocation:(id)arg1 ;
+-(id)sharedItemModifiedByDisplayName;
+-(id)sharedItemModifiedDate;
+-(id)sharedItemCreatedByDisplayName;
+-(id)sharedItemCreatedDate;
+-(id)sharedItemModifiedByAddress;
+-(id)sharedItemCreatedByAddress;
+-(id)structuredLocationWithoutPrediction;
+-(void)addAlarm:(id)arg1 ;
+-(id)recurrenceRules;
+-(int)selfParticipantStatus;
+-(void)removeAlarm:(id)arg1 ;
+-(id)detachedItems;
+-(void)setClientLocation:(id)arg1 ;
+-(void)setRecurrenceRules:(id)arg1 ;
+-(void)addRecurrenceRule:(id)arg1 ;
+-(void)addAttachment:(id)arg1 ;
+-(void)removeRecurrenceRule:(id)arg1 ;
+-(void)removeAttachment:(id)arg1 ;
+-(id)localStructuredData;
+-(id)structuredData;
+-(void)setLocalStructuredData:(id)arg1 ;
+-(void)setStructuredData:(id)arg1 ;
+-(id)exceptionDates;
+-(id)externalScheduleID;
+-(void)setExternalScheduleID:(id)arg1 ;
+-(void)setStructuredLocationWithoutPrediction:(id)arg1 ;
+-(id)startTimeZoneName;
+-(void)setStartTimeZoneName:(id)arg1 ;
+-(id)endTimeZoneName;
+-(void)setEndTimeZoneName:(id)arg1 ;
+-(id)externalData;
+-(id)sharedItemCreatedByFirstName;
+-(id)sharedItemCreatedByLastName;
+-(id)sharedItemCreatedTimeZoneName;
+-(void)setSharedItemCreatedTimeZoneName:(id)arg1 ;
+-(id)sharedItemModifiedByFirstName;
+-(id)sharedItemModifiedByLastName;
+-(id)sharedItemModifiedTimeZoneName;
+-(void)setSharedItemModifiedTimeZoneName:(id)arg1 ;
+-(void)setExternalData:(id)arg1 ;
+-(id)ekExceptionDates;
+-(void)setEkExceptionDates:(id)arg1 ;
+-(void)setDetachedItems:(id)arg1 ;
+-(unsigned)modifiedProperties;
+-(void)setModifiedProperties:(unsigned)arg1 ;
+-(BOOL)hasNotes;
+-(id)calendarScale;
+-(void)setCalendarScale:(id)arg1 ;
+-(void)setSelfAttendee:(id)arg1 ;
+-(void)setOrganizer:(id)arg1 ;
+-(void)setSharedItemCreatedByDisplayName:(id)arg1 ;
+-(void)setSharedItemCreatedByAddress:(id)arg1 ;
+-(void)setSharedItemCreatedByFirstName:(id)arg1 ;
+-(void)setSharedItemCreatedByLastName:(id)arg1 ;
+-(void)setSharedItemCreatedDate:(id)arg1 ;
+-(void)setSharedItemModifiedByDisplayName:(id)arg1 ;
+-(void)setSharedItemModifiedByAddress:(id)arg1 ;
+-(void)setSharedItemModifiedByFirstName:(id)arg1 ;
+-(void)setSharedItemModifiedByLastName:(id)arg1 ;
+-(void)setSharedItemModifiedDate:(id)arg1 ;
+-(void)setExceptionDates:(id)arg1 ;
+-(id)participationStatusModifiedDate;
+-(void)setParticipationStatusModifiedDate:(id)arg1 ;
+-(BOOL)isDefaultAlarmRemoved;
+-(void)setDefaultAlarmRemoved:(BOOL)arg1 ;
+-(void)setHasNotes:(BOOL)arg1 ;
+-(BOOL)isPhantomMaster;
+-(void)setPhantomMaster:(BOOL)arg1 ;
+-(void)setHasRecurrenceRules:(BOOL)arg1 ;
+-(void)setHasAttendees:(BOOL)arg1 ;
+@end
+

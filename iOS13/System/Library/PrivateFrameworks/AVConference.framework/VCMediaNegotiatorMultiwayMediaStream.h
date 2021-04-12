@@ -1,0 +1,58 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:10 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AVConference.framework/AVConference
+*/
+
+#import <AVConference/AVConference-Structs.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@interface VCMediaNegotiatorMultiwayMediaStream : NSObject <NSCopying> {
+
+	unsigned _ssrc;
+	unsigned _maxNetworkBitrate;
+	unsigned _maxMediaBitrate;
+	unsigned _maxPacketsPerSecond;
+	unsigned short _streamID;
+	BOOL _isSubstream;
+	unsigned _qualityIndex;
+	BOOL _hasRepairedStreamID;
+	unsigned short _repairedStreamID;
+	unsigned _repairedMaxNetworkBitrate;
+
+}
+
+@property (assign,nonatomic) unsigned ssrc;                                   //@synthesize ssrc=_ssrc - In the implementation block
+@property (assign,nonatomic) unsigned maxNetworkBitrate;                      //@synthesize maxNetworkBitrate=_maxNetworkBitrate - In the implementation block
+@property (assign,nonatomic) unsigned maxMediaBitrate;                        //@synthesize maxMediaBitrate=_maxMediaBitrate - In the implementation block
+@property (assign,nonatomic) unsigned maxPacketsPerSecond;                    //@synthesize maxPacketsPerSecond=_maxPacketsPerSecond - In the implementation block
+@property (assign,nonatomic) BOOL isSubstream;                                //@synthesize isSubstream=_isSubstream - In the implementation block
+@property (assign,nonatomic) unsigned short streamID;                         //@synthesize streamID=_streamID - In the implementation block
+@property (assign,nonatomic) unsigned qualityIndex;                           //@synthesize qualityIndex=_qualityIndex - In the implementation block
+@property (assign,nonatomic) BOOL hasRepairedStreamID;                        //@synthesize hasRepairedStreamID=_hasRepairedStreamID - In the implementation block
+@property (assign,nonatomic) unsigned short repairedStreamID;                 //@synthesize repairedStreamID=_repairedStreamID - In the implementation block
+@property (assign,nonatomic) unsigned repairedMaxNetworkBitrate;              //@synthesize repairedMaxNetworkBitrate=_repairedMaxNetworkBitrate - In the implementation block
+-(BOOL)isEqual:(id)arg1 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(unsigned short)streamID;
+-(void)setStreamID:(unsigned short)arg1 ;
+-(void)setMaxNetworkBitrate:(unsigned)arg1 ;
+-(void)setMaxMediaBitrate:(unsigned)arg1 ;
+-(void)setMaxPacketsPerSecond:(unsigned)arg1 ;
+-(void)setRepairedStreamID:(unsigned short)arg1 ;
+-(void)setHasRepairedStreamID:(BOOL)arg1 ;
+-(BOOL)hasRepairedStreamID;
+-(void)setRepairedMaxNetworkBitrate:(unsigned)arg1 ;
+-(unsigned)ssrc;
+-(void)setSsrc:(unsigned)arg1 ;
+-(unsigned)maxNetworkBitrate;
+-(unsigned)qualityIndex;
+-(void)setQualityIndex:(unsigned)arg1 ;
+-(unsigned)maxMediaBitrate;
+-(unsigned)maxPacketsPerSecond;
+-(unsigned short)repairedStreamID;
+-(unsigned)repairedMaxNetworkBitrate;
+-(void)setIsSubstream:(BOOL)arg1 ;
+-(BOOL)isSubstream;
+@end
+

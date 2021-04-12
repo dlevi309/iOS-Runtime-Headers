@@ -1,0 +1,75 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:11 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AVConference.framework/AVConference
+*/
+
+
+@class NSString, NSArray;
+
+@interface VCMediaStreamMultiwayConfig : NSObject {
+
+	NSString* _sessionId;
+	NSString* _participantId;
+	unsigned long long _idsParticipantID;
+	unsigned _ssrc;
+	unsigned _maxNetworkBitrate;
+	unsigned _maxMediaBitrate;
+	float _maxPacketsPerSecond;
+	unsigned short _idsStreamID;
+	unsigned _qualityIndex;
+	unsigned _maxIDSStreamIdCount;
+	unsigned short _repairedStreamID;
+	unsigned _repairedMaxNetworkBitrate;
+	BOOL _hasRepairedStreamID;
+	BOOL _startOnDemand;
+
+}
+
+@property (nonatomic,retain) NSString * sessionId;                             //@synthesize sessionId=_sessionId - In the implementation block
+@property (nonatomic,retain) NSString * participantId;                         //@synthesize participantId=_participantId - In the implementation block
+@property (assign,nonatomic) unsigned long long idsParticipantID;              //@synthesize idsParticipantID=_idsParticipantID - In the implementation block
+@property (assign,nonatomic) unsigned ssrc;                                    //@synthesize ssrc=_ssrc - In the implementation block
+@property (assign,nonatomic) unsigned maxNetworkBitrate;                       //@synthesize maxNetworkBitrate=_maxNetworkBitrate - In the implementation block
+@property (assign,nonatomic) unsigned maxMediaBitrate;                         //@synthesize maxMediaBitrate=_maxMediaBitrate - In the implementation block
+@property (assign,nonatomic) float maxPacketsPerSecond;                        //@synthesize maxPacketsPerSecond=_maxPacketsPerSecond - In the implementation block
+@property (assign,nonatomic) unsigned short idsStreamID;                       //@synthesize idsStreamID=_idsStreamID - In the implementation block
+@property (assign,nonatomic) unsigned qualityIndex;                            //@synthesize qualityIndex=_qualityIndex - In the implementation block
+@property (assign,nonatomic) unsigned maxIDSStreamIdCount;                     //@synthesize maxIDSStreamIdCount=_maxIDSStreamIdCount - In the implementation block
+@property (assign,nonatomic) unsigned short repairedStreamID;                  //@synthesize repairedStreamID=_repairedStreamID - In the implementation block
+@property (assign,nonatomic) unsigned repairedMaxNetworkBitrate;               //@synthesize repairedMaxNetworkBitrate=_repairedMaxNetworkBitrate - In the implementation block
+@property (assign,nonatomic) BOOL hasRepairedStreamID;                         //@synthesize hasRepairedStreamID=_hasRepairedStreamID - In the implementation block
+@property (assign,nonatomic) BOOL startOnDemand;                               //@synthesize startOnDemand=_startOnDemand - In the implementation block
+@property (nonatomic,readonly) NSArray * streamIds; 
+-(void)dealloc;
+-(NSString *)sessionId;
+-(void)setSessionId:(NSString *)arg1 ;
+-(NSArray *)streamIds;
+-(void)setParticipantId:(NSString *)arg1 ;
+-(NSString *)participantId;
+-(void)setMaxNetworkBitrate:(unsigned)arg1 ;
+-(void)setMaxMediaBitrate:(unsigned)arg1 ;
+-(void)setMaxPacketsPerSecond:(float)arg1 ;
+-(void)setRepairedStreamID:(unsigned short)arg1 ;
+-(void)setHasRepairedStreamID:(BOOL)arg1 ;
+-(BOOL)hasRepairedStreamID;
+-(void)setRepairedMaxNetworkBitrate:(unsigned)arg1 ;
+-(unsigned)ssrc;
+-(void)setSsrc:(unsigned)arg1 ;
+-(unsigned)maxNetworkBitrate;
+-(unsigned)qualityIndex;
+-(void)setQualityIndex:(unsigned)arg1 ;
+-(unsigned)maxMediaBitrate;
+-(float)maxPacketsPerSecond;
+-(unsigned short)repairedStreamID;
+-(unsigned)repairedMaxNetworkBitrate;
+-(unsigned short)idsStreamID;
+-(unsigned)maxIDSStreamIdCount;
+-(void)setMaxIDSStreamIdCount:(unsigned)arg1 ;
+-(unsigned long long)idsParticipantID;
+-(void)setIdsParticipantID:(unsigned long long)arg1 ;
+-(void)setIdsStreamID:(unsigned short)arg1 ;
+-(BOOL)startOnDemand;
+-(void)setStartOnDemand:(BOOL)arg1 ;
+@end
+

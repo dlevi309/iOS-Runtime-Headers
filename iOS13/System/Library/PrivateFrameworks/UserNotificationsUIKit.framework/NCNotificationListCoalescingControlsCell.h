@@ -1,0 +1,64 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:59 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UserNotificationsUIKit.framework/UserNotificationsUIKit
+*/
+
+#import <UserNotificationsUIKit/UserNotificationsUIKit-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/NCNotificationListCoalescingControlsViewDelegate.h>
+#import <libobjc.A.dylib/PLContentSizeCategoryAdjusting.h>
+#import <libobjc.A.dylib/NCNotificationListCoalescingControlsHandler.h>
+#import <libobjc.A.dylib/MTMaterialGrouping.h>
+
+@protocol NCNotificationListCoalescingControlsHandlerDelegate;
+@class NSString, NCNotificationListCoalescingControlsView;
+
+@interface NCNotificationListCoalescingControlsCell : UIView <NCNotificationListCoalescingControlsViewDelegate, PLContentSizeCategoryAdjusting, NCNotificationListCoalescingControlsHandler, MTMaterialGrouping> {
+
+	BOOL _adjustsFontForContentSizeCategory;
+	BOOL _shouldShowCoalescingControls;
+	id<NCNotificationListCoalescingControlsHandlerDelegate> _handlerDelegate;
+	NSString* _materialGroupNameBase;
+	NCNotificationListCoalescingControlsView* _coalescingControlsView;
+
+}
+
+@property (nonatomic,retain) NCNotificationListCoalescingControlsView * coalescingControlsView;                           //@synthesize coalescingControlsView=_coalescingControlsView - In the implementation block
+@property (assign,nonatomic) BOOL shouldShowCoalescingControls;                                                           //@synthesize shouldShowCoalescingControls=_shouldShowCoalescingControls - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (assign,nonatomic) BOOL adjustsFontForContentSizeCategory;                                                      //@synthesize adjustsFontForContentSizeCategory=_adjustsFontForContentSizeCategory - In the implementation block
+@property (nonatomic,copy) NSString * preferredContentSizeCategory; 
+@property (assign,nonatomic,__weak) id<NCNotificationListCoalescingControlsHandlerDelegate> handlerDelegate;              //@synthesize handlerDelegate=_handlerDelegate - In the implementation block
+@property (nonatomic,copy) NSString * materialGroupNameBase;                                                              //@synthesize materialGroupNameBase=_materialGroupNameBase - In the implementation block
++(double)coalescingControlsCellHeightShowingCoalescingControls:(BOOL)arg1 ;
+-(void)layoutSubviews;
+-(void)setAdjustsFontForContentSizeCategory:(BOOL)arg1 ;
+-(BOOL)adjustsFontForContentSizeCategory;
+-(BOOL)adjustForContentSizeCategoryChange;
+-(NSString *)materialGroupNameBase;
+-(void)setMaterialGroupNameBase:(NSString *)arg1 ;
+-(void)resetClearButtonStateAnimated:(BOOL)arg1 ;
+-(BOOL)shouldReceiveTouchAtPointInWindowSpace:(CGPoint)arg1 ;
+-(BOOL)dismissModalFullScreenIfNeeded;
+-(NCNotificationListCoalescingControlsView *)coalescingControlsView;
+-(void)_configureCoalescingControlsViewIfNecessary;
+-(void)_layoutCoalescingControlsView;
+-(id<NCNotificationListCoalescingControlsHandlerDelegate>)handlerDelegate;
+-(void)notificationListCoalescingControlsViewRequestsClear:(id)arg1 ;
+-(id)containerViewForCoalescingControlsPreviewInteractionPresentedContent:(id)arg1 ;
+-(void)notificationListCoalescingControlsViewRequestsClearAll:(id)arg1 ;
+-(void)notificationListCoalescingControlsViewRequestsRestack:(id)arg1 ;
+-(void)notificationListCoalescingControlsView:(id)arg1 didTransitionToClearState:(BOOL)arg2 ;
+-(void)notificationListCoalescingControlsViewDidBeginPreviewInteraction:(id)arg1 ;
+-(void)notificationListCoalescingControlsViewDidPresentPreviewInteractionPresentedContent:(id)arg1 ;
+-(void)notificationListCoalescingControlsViewDidDismissPreviewInteractionPresentedContent:(id)arg1 ;
+-(void)setHandlerDelegate:(id<NCNotificationListCoalescingControlsHandlerDelegate>)arg1 ;
+-(void)setCoalescingControlsView:(NCNotificationListCoalescingControlsView *)arg1 ;
+-(void)setShouldShowCoalescingControls:(BOOL)arg1 ;
+-(BOOL)shouldShowCoalescingControls;
+@end
+

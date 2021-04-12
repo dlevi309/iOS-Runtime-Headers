@@ -1,0 +1,16 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:03 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/TextInput.framework/TextInput
+*/
+
+#import <TextInput/TextInput-Structs.h>
+#import <TextInput/TICharacterSetDescription.h>
+
+@interface TIMutableCharacterSetDescription : TICharacterSetDescription
++(BOOL)supportsSecureCoding;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(void)addCharactersInString:(id)arg1 ;
+-(void)removeCharactersInString:(id)arg1 ;
+@end
+

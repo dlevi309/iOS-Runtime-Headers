@@ -1,0 +1,97 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:40 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/BookUtility.framework/BookUtility
+*/
+
+#import <libobjc.A.dylib/BUReadChannel.h>
+
+@protocol OS_dispatch_queue, BUReadChannel, BUStreamReadChannel, OS_dispatch_data;
+@class NSObject, NSError, NSArray, NSString;
+
+@interface BUBufferedReadChannel : NSObject <BUReadChannel> {
+
+	BOOL _streamOutputDone;
+	/*^block*/id _streamReadChannelSourceHandler;
+	NSObject*<OS_dispatch_queue> _readQueue;
+	id<BUReadChannel> _sourceReadChannel;
+	unsigned long long _sourceReadBufferSize;
+	long long _sourceOffset;
+	unsigned long long _sourceLength;
+	NSError* _sourceReadChannelError;
+	NSArray* _blockInfos;
+	/*^block*/id _streamReadChannelBlock;
+	id<BUStreamReadChannel> _streamReadChannel;
+	long long _streamOutputOffset;
+	unsigned long long _streamOutputOutstandingLength;
+	unsigned long long _streamOutputLength;
+	NSObject*<OS_dispatch_data> _currentStreamOutputData;
+
+}
+
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> readQueue;                           //@synthesize readQueue=_readQueue - In the implementation block
+@property (nonatomic,retain) id<BUReadChannel> sourceReadChannel;                              //@synthesize sourceReadChannel=_sourceReadChannel - In the implementation block
+@property (assign,nonatomic) unsigned long long sourceReadBufferSize;                          //@synthesize sourceReadBufferSize=_sourceReadBufferSize - In the implementation block
+@property (assign,nonatomic) long long sourceOffset;                                           //@synthesize sourceOffset=_sourceOffset - In the implementation block
+@property (assign,nonatomic) unsigned long long sourceLength;                                  //@synthesize sourceLength=_sourceLength - In the implementation block
+@property (nonatomic,retain) NSError * sourceReadChannelError;                                 //@synthesize sourceReadChannelError=_sourceReadChannelError - In the implementation block
+@property (nonatomic,retain) NSArray * blockInfos;                                             //@synthesize blockInfos=_blockInfos - In the implementation block
+@property (nonatomic,copy) id streamReadChannelBlock;                                          //@synthesize streamReadChannelBlock=_streamReadChannelBlock - In the implementation block
+@property (nonatomic,retain) id<BUStreamReadChannel> streamReadChannel;                        //@synthesize streamReadChannel=_streamReadChannel - In the implementation block
+@property (assign,getter=isStreamOutputDone,nonatomic) BOOL streamOutputDone;                  //@synthesize streamOutputDone=_streamOutputDone - In the implementation block
+@property (assign,nonatomic) long long streamOutputOffset;                                     //@synthesize streamOutputOffset=_streamOutputOffset - In the implementation block
+@property (assign,nonatomic) unsigned long long streamOutputOutstandingLength;                 //@synthesize streamOutputOutstandingLength=_streamOutputOutstandingLength - In the implementation block
+@property (assign,nonatomic) unsigned long long streamOutputLength;                            //@synthesize streamOutputLength=_streamOutputLength - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_data> currentStreamOutputData;              //@synthesize currentStreamOutputData=_currentStreamOutputData - In the implementation block
+@property (nonatomic,copy) id streamReadChannelSourceHandler;                                  //@synthesize streamReadChannelSourceHandler=_streamReadChannelSourceHandler - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) BOOL isValid; 
+-(void)dealloc;
+-(BOOL)isValid;
+-(void)close;
+-(void)_close;
+-(void)setLowWater:(unsigned long long)arg1 ;
+-(void)addBarrier:(/*^block*/id)arg1 ;
+-(void)_closeStreamReadChannel;
+-(id)_currentDataIntersectionWithOffset:(long long)arg1 length:(unsigned long long)arg2 isReadDone:(BOOL*)arg3 ;
+-(long long)sourceOffset;
+-(void)readWithHandler:(/*^block*/id)arg1 ;
+-(void)readFromOffset:(long long)arg1 length:(unsigned long long)arg2 handler:(/*^block*/id)arg3 ;
+-(void)setStreamReadChannelSourceHandler:(id)arg1 ;
+-(id)initWithReadChannel:(id)arg1 blockInfos:(id)arg2 streamReadChannelBlock:(/*^block*/id)arg3 ;
+-(id)initWithReadChannel:(id)arg1 sourceReadBufferSize:(unsigned long long)arg2 blockInfos:(id)arg3 streamReadChannelBlock:(/*^block*/id)arg4 ;
+-(BOOL)isStreamOutputDone;
+-(void)setStreamOutputDone:(BOOL)arg1 ;
+-(unsigned long long)streamOutputLength;
+-(void)setStreamOutputLength:(unsigned long long)arg1 ;
+-(NSObject*<OS_dispatch_data>)currentStreamOutputData;
+-(void)setCurrentStreamOutputData:(NSObject*<OS_dispatch_data>)arg1 ;
+-(NSError *)sourceReadChannelError;
+-(NSObject*<OS_dispatch_queue>)readQueue;
+-(void)_readFromOffset:(long long)arg1 length:(unsigned long long)arg2 handler:(/*^block*/id)arg3 ;
+-(void)_resetStreamReadChannelIfNeededForOffset:(long long)arg1 length:(unsigned long long)arg2 ;
+-(id)streamReadChannelSourceHandler;
+-(void)setSourceReadChannelError:(NSError *)arg1 ;
+-(void)setSourceOffset:(long long)arg1 ;
+-(unsigned long long)sourceLength;
+-(void)setSourceLength:(unsigned long long)arg1 ;
+-(void)setReadQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(id<BUReadChannel>)sourceReadChannel;
+-(void)setSourceReadChannel:(id<BUReadChannel>)arg1 ;
+-(unsigned long long)sourceReadBufferSize;
+-(void)setSourceReadBufferSize:(unsigned long long)arg1 ;
+-(NSArray *)blockInfos;
+-(void)setBlockInfos:(NSArray *)arg1 ;
+-(id)streamReadChannelBlock;
+-(void)setStreamReadChannelBlock:(id)arg1 ;
+-(id<BUStreamReadChannel>)streamReadChannel;
+-(void)setStreamReadChannel:(id<BUStreamReadChannel>)arg1 ;
+-(long long)streamOutputOffset;
+-(void)setStreamOutputOffset:(long long)arg1 ;
+-(unsigned long long)streamOutputOutstandingLength;
+-(void)setStreamOutputOutstandingLength:(unsigned long long)arg1 ;
+@end
+

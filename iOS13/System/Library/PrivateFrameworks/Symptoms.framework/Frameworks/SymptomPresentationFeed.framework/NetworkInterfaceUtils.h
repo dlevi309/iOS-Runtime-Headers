@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomPresentationFeed.framework/SymptomPresentationFeed
+*/
+
+
+@interface NetworkInterfaceUtils : NSObject {
+
+	BOOL _hasPrimaryInterface;
+
+}
+
+@property (nonatomic,readonly) BOOL hasPrimaryInterface;              //@synthesize hasPrimaryInterface=_hasPrimaryInterface - In the implementation block
++(id)sharedInstance;
+-(BOOL)hasPrimaryInterface;
+@end
+

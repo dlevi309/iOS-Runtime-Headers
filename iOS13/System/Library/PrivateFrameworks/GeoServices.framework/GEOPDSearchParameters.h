@@ -1,0 +1,203 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:39 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, PBUnknownFields, GEOPDRecentRouteInfo, GEOPDRetainedSearchMetadata, GEOPDSSearchFilter, GEOPDSSearchLocationParameters, NSString, GEOPDSSearchStructureIntentRequestType, NSData, GEOPDAutocompleteEntry, GEOPDViewportInfo;
+
+@interface GEOPDSearchParameters : PBCodable <NSCopying> {
+
+	PBDataReader* _reader;
+	PBUnknownFields* _unknownFields;
+	GEOPDRecentRouteInfo* _recentRouteInfo;
+	GEOPDRetainedSearchMetadata* _retainedSearch;
+	GEOPDSSearchFilter* _searchFilter;
+	GEOPDSSearchLocationParameters* _searchLocationParameters;
+	NSString* _searchString;
+	GEOPDSSearchStructureIntentRequestType* _searchStructureIntentType;
+	NSData* _suggestionEntryMetadata;
+	GEOPDAutocompleteEntry* _suggestionEntry;
+	NSData* _suggestionMetadata;
+	GEOPDViewportInfo* _viewportInfo;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	unsigned _maxResults;
+	int _searchType;
+	int _sortOrder;
+	BOOL _supportDirectionIntentSearch;
+	BOOL _supportDymSuggestion;
+	BOOL _supportSearchResultSection;
+	BOOL _supportUnresolvedDirectionIntent;
+	struct {
+		unsigned has_maxResults : 1;
+		unsigned has_searchType : 1;
+		unsigned has_sortOrder : 1;
+		unsigned has_supportDirectionIntentSearch : 1;
+		unsigned has_supportDymSuggestion : 1;
+		unsigned has_supportSearchResultSection : 1;
+		unsigned has_supportUnresolvedDirectionIntent : 1;
+		unsigned read_unknownFields : 1;
+		unsigned read_recentRouteInfo : 1;
+		unsigned read_retainedSearch : 1;
+		unsigned read_searchFilter : 1;
+		unsigned read_searchLocationParameters : 1;
+		unsigned read_searchString : 1;
+		unsigned read_searchStructureIntentType : 1;
+		unsigned read_suggestionEntryMetadata : 1;
+		unsigned read_suggestionEntry : 1;
+		unsigned read_suggestionMetadata : 1;
+		unsigned read_viewportInfo : 1;
+		unsigned wrote_unknownFields : 1;
+		unsigned wrote_recentRouteInfo : 1;
+		unsigned wrote_retainedSearch : 1;
+		unsigned wrote_searchFilter : 1;
+		unsigned wrote_searchLocationParameters : 1;
+		unsigned wrote_searchString : 1;
+		unsigned wrote_searchStructureIntentType : 1;
+		unsigned wrote_suggestionEntryMetadata : 1;
+		unsigned wrote_suggestionEntry : 1;
+		unsigned wrote_suggestionMetadata : 1;
+		unsigned wrote_viewportInfo : 1;
+		unsigned wrote_maxResults : 1;
+		unsigned wrote_searchType : 1;
+		unsigned wrote_sortOrder : 1;
+		unsigned wrote_supportDirectionIntentSearch : 1;
+		unsigned wrote_supportDymSuggestion : 1;
+		unsigned wrote_supportSearchResultSection : 1;
+		unsigned wrote_supportUnresolvedDirectionIntent : 1;
+	}  _flags;
+
+}
+
+@property (assign,nonatomic) BOOL hasSortOrder; 
+@property (assign,nonatomic) int sortOrder; 
+@property (assign,nonatomic) BOOL hasMaxResults; 
+@property (assign,nonatomic) unsigned maxResults; 
+@property (nonatomic,readonly) BOOL hasSearchString; 
+@property (nonatomic,retain) NSString * searchString; 
+@property (nonatomic,readonly) BOOL hasViewportInfo; 
+@property (nonatomic,retain) GEOPDViewportInfo * viewportInfo; 
+@property (nonatomic,readonly) BOOL hasSuggestionMetadata; 
+@property (nonatomic,retain) NSData * suggestionMetadata; 
+@property (nonatomic,readonly) BOOL hasSuggestionEntryMetadata; 
+@property (nonatomic,retain) NSData * suggestionEntryMetadata; 
+@property (nonatomic,readonly) BOOL hasSuggestionEntry; 
+@property (nonatomic,retain) GEOPDAutocompleteEntry * suggestionEntry; 
+@property (assign,nonatomic) BOOL hasSearchType; 
+@property (assign,nonatomic) int searchType; 
+@property (nonatomic,readonly) BOOL hasSearchStructureIntentType; 
+@property (nonatomic,retain) GEOPDSSearchStructureIntentRequestType * searchStructureIntentType; 
+@property (nonatomic,readonly) BOOL hasSearchLocationParameters; 
+@property (nonatomic,retain) GEOPDSSearchLocationParameters * searchLocationParameters; 
+@property (nonatomic,readonly) BOOL hasRecentRouteInfo; 
+@property (nonatomic,retain) GEOPDRecentRouteInfo * recentRouteInfo; 
+@property (nonatomic,readonly) BOOL hasSearchFilter; 
+@property (nonatomic,retain) GEOPDSSearchFilter * searchFilter; 
+@property (assign,nonatomic) BOOL hasSupportDymSuggestion; 
+@property (assign,nonatomic) BOOL supportDymSuggestion; 
+@property (assign,nonatomic) BOOL hasSupportDirectionIntentSearch; 
+@property (assign,nonatomic) BOOL supportDirectionIntentSearch; 
+@property (nonatomic,readonly) BOOL hasRetainedSearch; 
+@property (nonatomic,retain) GEOPDRetainedSearchMetadata * retainedSearch; 
+@property (assign,nonatomic) BOOL hasSupportUnresolvedDirectionIntent; 
+@property (assign,nonatomic) BOOL supportUnresolvedDirectionIntent; 
+@property (assign,nonatomic) BOOL hasSupportSearchResultSection; 
+@property (assign,nonatomic) BOOL supportSearchResultSection; 
+@property (nonatomic,readonly) PBUnknownFields * unknownFields; 
++(BOOL)isValid:(id)arg1 ;
+-(id)init;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(NSString *)searchString;
+-(void)setSearchString:(NSString *)arg1 ;
+-(void)readAll:(BOOL)arg1 ;
+-(PBUnknownFields *)unknownFields;
+-(void)clearUnknownFields:(BOOL)arg1 ;
+-(void)clearSensitiveFields;
+-(void)_readViewportInfo;
+-(GEOPDViewportInfo *)viewportInfo;
+-(void)setViewportInfo:(GEOPDViewportInfo *)arg1 ;
+-(BOOL)hasViewportInfo;
+-(unsigned)maxResults;
+-(void)setMaxResults:(unsigned)arg1 ;
+-(void)setHasMaxResults:(BOOL)arg1 ;
+-(BOOL)hasMaxResults;
+-(void)_readSearchString;
+-(int)sortOrder;
+-(void)setSortOrder:(int)arg1 ;
+-(void)setHasSortOrder:(BOOL)arg1 ;
+-(BOOL)hasSortOrder;
+-(id)sortOrderAsString:(int)arg1 ;
+-(int)StringAsSortOrder:(id)arg1 ;
+-(BOOL)hasSearchString;
+-(int)searchType;
+-(void)setSearchType:(int)arg1 ;
+-(void)setHasSearchType:(BOOL)arg1 ;
+-(BOOL)hasSearchType;
+-(id)searchTypeAsString:(int)arg1 ;
+-(int)StringAsSearchType:(id)arg1 ;
+-(void)_readSuggestionMetadata;
+-(NSData *)suggestionMetadata;
+-(void)setSuggestionMetadata:(NSData *)arg1 ;
+-(BOOL)hasSuggestionMetadata;
+-(void)_readSuggestionEntryMetadata;
+-(void)_readSuggestionEntry;
+-(NSData *)suggestionEntryMetadata;
+-(GEOPDAutocompleteEntry *)suggestionEntry;
+-(void)setSuggestionEntryMetadata:(NSData *)arg1 ;
+-(void)setSuggestionEntry:(GEOPDAutocompleteEntry *)arg1 ;
+-(BOOL)hasSuggestionEntryMetadata;
+-(BOOL)hasSuggestionEntry;
+-(void)_readRecentRouteInfo;
+-(GEOPDRecentRouteInfo *)recentRouteInfo;
+-(void)setRecentRouteInfo:(GEOPDRecentRouteInfo *)arg1 ;
+-(BOOL)hasRecentRouteInfo;
+-(BOOL)hasSearchFilter;
+-(void)setSearchFilter:(GEOPDSSearchFilter *)arg1 ;
+-(GEOPDSSearchFilter *)searchFilter;
+-(BOOL)supportDirectionIntentSearch;
+-(void)setSupportDirectionIntentSearch:(BOOL)arg1 ;
+-(void)setHasSupportDirectionIntentSearch:(BOOL)arg1 ;
+-(BOOL)hasSupportDirectionIntentSearch;
+-(BOOL)supportDymSuggestion;
+-(void)setSupportDymSuggestion:(BOOL)arg1 ;
+-(void)setHasSupportDymSuggestion:(BOOL)arg1 ;
+-(BOOL)hasSupportDymSuggestion;
+-(BOOL)supportUnresolvedDirectionIntent;
+-(void)setSupportUnresolvedDirectionIntent:(BOOL)arg1 ;
+-(void)setHasSupportUnresolvedDirectionIntent:(BOOL)arg1 ;
+-(BOOL)hasSupportUnresolvedDirectionIntent;
+-(void)_readRetainedSearch;
+-(GEOPDRetainedSearchMetadata *)retainedSearch;
+-(void)setRetainedSearch:(GEOPDRetainedSearchMetadata *)arg1 ;
+-(BOOL)hasRetainedSearch;
+-(void)setSupportSearchResultSection:(BOOL)arg1 ;
+-(id)initWithSearchQuery:(id)arg1 entryMetadata:(id)arg2 metadata:(id)arg3 autocompleteEntry:(id)arg4 retainedSearch:(id)arg5 maxResults:(unsigned)arg6 traits:(id)arg7 ;
+-(void)_readSearchStructureIntentType;
+-(void)_readSearchLocationParameters;
+-(void)_readSearchFilter;
+-(GEOPDSSearchStructureIntentRequestType *)searchStructureIntentType;
+-(GEOPDSSearchLocationParameters *)searchLocationParameters;
+-(void)setSearchStructureIntentType:(GEOPDSSearchStructureIntentRequestType *)arg1 ;
+-(void)setSearchLocationParameters:(GEOPDSSearchLocationParameters *)arg1 ;
+-(BOOL)hasSearchStructureIntentType;
+-(BOOL)hasSearchLocationParameters;
+-(BOOL)supportSearchResultSection;
+-(void)setHasSupportSearchResultSection:(BOOL)arg1 ;
+-(BOOL)hasSupportSearchResultSection;
+@end
+

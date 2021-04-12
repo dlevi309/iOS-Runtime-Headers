@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:21 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/DifferentialPrivacy.framework/DifferentialPrivacy
+*/
+
+#import <DifferentialPrivacy/_DPOBHRecordMO.h>
+
+@class NSString;
+
+@interface _DPOBHSequenceMO : _DPOBHRecordMO
+
+@property (nonatomic,copy) NSString * plainSequence; 
+@property (assign,nonatomic) long long sequenceBitPosition; 
+@property (assign,nonatomic) BOOL sequenceBitValue; 
++(id)fetchRequest;
+@end
+

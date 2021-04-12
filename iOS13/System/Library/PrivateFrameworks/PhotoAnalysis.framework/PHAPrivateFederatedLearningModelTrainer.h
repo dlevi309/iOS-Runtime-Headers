@@ -1,0 +1,64 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:21 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotoAnalysis.framework/PhotoAnalysis
+*/
+
+
+@protocol ETDataProvider;
+@class NSURL, NSArray, NSString, ETLossDefinition, ETOptimizerDefinition;
+
+@interface PHAPrivateFederatedLearningModelTrainer : NSObject {
+
+	id<ETDataProvider> _trainingData;
+	NSURL* _espressoFileURL;
+	NSArray* _layersToTrain;
+	NSString* _inputName;
+	NSString* _modelOutputName;
+	NSString* _modelInferenceOutputName;
+	NSString* _labelName;
+	NSString* _lossName;
+	NSString* _optimizerName;
+	ETLossDefinition* _lossDefinition;
+	ETOptimizerDefinition* _optimizerDefinition;
+
+}
+
+@property (nonatomic,readonly) id<ETDataProvider> trainingData;                        //@synthesize trainingData=_trainingData - In the implementation block
+@property (nonatomic,readonly) NSURL * espressoFileURL;                                //@synthesize espressoFileURL=_espressoFileURL - In the implementation block
+@property (nonatomic,readonly) NSArray * layersToTrain;                                //@synthesize layersToTrain=_layersToTrain - In the implementation block
+@property (nonatomic,retain) NSString * inputName;                                     //@synthesize inputName=_inputName - In the implementation block
+@property (nonatomic,retain) NSString * modelOutputName;                               //@synthesize modelOutputName=_modelOutputName - In the implementation block
+@property (nonatomic,retain) NSString * modelInferenceOutputName;                      //@synthesize modelInferenceOutputName=_modelInferenceOutputName - In the implementation block
+@property (nonatomic,retain) NSString * labelName;                                     //@synthesize labelName=_labelName - In the implementation block
+@property (nonatomic,retain) NSString * lossName;                                      //@synthesize lossName=_lossName - In the implementation block
+@property (nonatomic,retain) NSString * optimizerName;                                 //@synthesize optimizerName=_optimizerName - In the implementation block
+@property (nonatomic,retain) ETLossDefinition * lossDefinition;                        //@synthesize lossDefinition=_lossDefinition - In the implementation block
+@property (nonatomic,retain) ETOptimizerDefinition * optimizerDefinition;              //@synthesize optimizerDefinition=_optimizerDefinition - In the implementation block
++(BOOL)_generateError:(id*)arg1 withCode:(long long)arg2 andMessage:(id)arg3 ;
+-(id<ETDataProvider>)trainingData;
+-(NSString *)inputName;
+-(NSString *)labelName;
+-(id)initWithTrainingData:(id)arg1 espressoFileURL:(id)arg2 learningRate:(id)arg3 modelInputName:(id)arg4 modelOutputName:(id)arg5 lossName:(id)arg6 optimizerName:(id)arg7 error:(id*)arg8 ;
+-(id)trainForNumberOfEpochs:(unsigned long long)arg1 layersToTrain:(id)arg2 verbose:(BOOL)arg3 error:(id*)arg4 ;
+-(id)_getParamsFromTask:(id)arg1 forLayers:(id)arg2 ;
+-(int)_argmax:(float*)arg1 size:(int)arg2 ;
+-(id)_averageLossAndAccuracyForBatchResults:(id)arg1 error:(id*)arg2 ;
+-(NSURL *)espressoFileURL;
+-(NSArray *)layersToTrain;
+-(void)setInputName:(NSString *)arg1 ;
+-(NSString *)modelOutputName;
+-(void)setModelOutputName:(NSString *)arg1 ;
+-(NSString *)modelInferenceOutputName;
+-(void)setModelInferenceOutputName:(NSString *)arg1 ;
+-(void)setLabelName:(NSString *)arg1 ;
+-(NSString *)lossName;
+-(void)setLossName:(NSString *)arg1 ;
+-(NSString *)optimizerName;
+-(void)setOptimizerName:(NSString *)arg1 ;
+-(ETLossDefinition *)lossDefinition;
+-(void)setLossDefinition:(ETLossDefinition *)arg1 ;
+-(ETOptimizerDefinition *)optimizerDefinition;
+-(void)setOptimizerDefinition:(ETOptimizerDefinition *)arg1 ;
+@end
+

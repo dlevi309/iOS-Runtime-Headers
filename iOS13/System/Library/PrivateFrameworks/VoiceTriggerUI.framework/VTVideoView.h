@@ -1,0 +1,48 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:25 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI
+*/
+
+#import <VoiceTriggerUI/VoiceTriggerUI-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@class UIImage, UIImageView, AVPlayer, AVPlayerViewController;
+
+@interface VTVideoView : UIView {
+
+	BOOL _displayingVideo;
+	UIImage* _placeholderImage;
+	UIImageView* _imageView;
+	AVPlayer* _videoPlayer;
+	AVPlayerViewController* _videoViewController;
+
+}
+
+@property (retain) UIImageView * imageView;                                   //@synthesize imageView=_imageView - In the implementation block
+@property (retain) AVPlayer * videoPlayer;                                    //@synthesize videoPlayer=_videoPlayer - In the implementation block
+@property (retain) AVPlayerViewController * videoViewController;              //@synthesize videoViewController=_videoViewController - In the implementation block
+@property (assign) BOOL displayingVideo;                                      //@synthesize displayingVideo=_displayingVideo - In the implementation block
+@property (assign,nonatomic,__weak) UIImage * placeholderImage;               //@synthesize placeholderImage=_placeholderImage - In the implementation block
+-(void)dealloc;
+-(void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void*)arg4 ;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+-(void)layoutSubviews;
+-(UIImageView *)imageView;
+-(void)setImageView:(UIImageView *)arg1 ;
+-(void)setPlaceholderImage:(UIImage *)arg1 ;
+-(UIImage *)placeholderImage;
+-(void)stopPlaying;
+-(AVPlayerViewController *)videoViewController;
+-(void)setVideoViewController:(AVPlayerViewController *)arg1 ;
+-(void)startPlaying;
+-(void)setVideoPlayer:(AVPlayer *)arg1 ;
+-(AVPlayer *)videoPlayer;
+-(id)initWithPlaceholderImage:(id)arg1 ;
+-(void)showVideo:(id)arg1 ;
+-(void)videoReachedEnd:(id)arg1 ;
+-(void)setDisplayingVideo:(BOOL)arg1 ;
+-(BOOL)displayingVideo;
+-(void)transitionToVideo;
+@end
+

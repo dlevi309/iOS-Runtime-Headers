@@ -1,0 +1,68 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:39 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/iTunesStore.framework/iTunesStore
+*/
+
+#import <iTunesStore/iTunesStore-Structs.h>
+#import <iTunesStore/ISDataProvider.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class SSBiometricAuthenticationContext;
+
+@interface ISProtocolDataProvider : ISDataProvider <NSCopying> {
+
+	BOOL _shouldPostFooterSectionChanged;
+	BOOL _shouldProcessAccount;
+	BOOL _shouldProcessAuthenticationDialogs;
+	BOOL _shouldProcessDialogs;
+	BOOL _shouldProcessDialogsOutsideDaemon;
+	BOOL _shouldProcessProtocol;
+	BOOL _shouldProcessTouchIDDialogs;
+	BOOL _shouldTriggerDownloads;
+	SSBiometricAuthenticationContext* _biometricAuthenticationContext;
+
+}
+
+@property (assign) BOOL shouldPostFooterSectionChanged;                  //@synthesize shouldPostFooterSectionChanged=_shouldPostFooterSectionChanged - In the implementation block
+@property (assign) BOOL shouldProcessAccount;                            //@synthesize shouldProcessAccount=_shouldProcessAccount - In the implementation block
+@property (assign) BOOL shouldProcessAuthenticationDialogs;              //@synthesize shouldProcessAuthenticationDialogs=_shouldProcessAuthenticationDialogs - In the implementation block
+@property (assign) BOOL shouldProcessDialogs;                            //@synthesize shouldProcessDialogs=_shouldProcessDialogs - In the implementation block
+@property (assign) BOOL shouldProcessDialogsOutsideDaemon;               //@synthesize shouldProcessDialogsOutsideDaemon=_shouldProcessDialogsOutsideDaemon - In the implementation block
+@property (assign) BOOL shouldProcessProtocol;                           //@synthesize shouldProcessProtocol=_shouldProcessProtocol - In the implementation block
+@property (readonly) BOOL shouldProcessTouchIDDialogs; 
+@property (assign) BOOL shouldTriggerDownloads;                          //@synthesize shouldTriggerDownloads=_shouldTriggerDownloads - In the implementation block
+-(id)init;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(BOOL)shouldProcessProtocol;
+-(void)setShouldProcessProtocol:(BOOL)arg1 ;
+-(BOOL)parseData:(id)arg1 returningError:(id*)arg2 ;
+-(void)setShouldProcessDialogs:(BOOL)arg1 ;
+-(void)setShouldProcessAuthenticationDialogs:(BOOL)arg1 ;
+-(void)_presentDialog:(id)arg1 ;
+-(void)setShouldPostFooterSectionChanged:(BOOL)arg1 ;
+-(BOOL)shouldProcessAuthenticationDialogs;
+-(BOOL)shouldProcessTouchIDDialogs;
+-(BOOL)shouldProcessDialogs;
+-(BOOL)processDialogFromDictionary:(id)arg1 error:(id*)arg2 ;
+-(BOOL)processDictionary:(id)arg1 error:(id*)arg2 ;
+-(void)setShouldProcessAccount:(BOOL)arg1 ;
+-(id)_metricsDictionaryForResponse:(id)arg1 ;
+-(BOOL)_shouldFailWithTokenErrorForDialog:(id)arg1 dictionary:(id)arg2 error:(id*)arg3 ;
+-(id)_touchIDDialogForResponse:(id)arg1 ;
+-(void)_checkBiometricFailureForResponse:(id)arg1 ;
+-(BOOL)_shouldAttemptPasswordPaymentSheetForError:(id)arg1 ;
+-(void)_performActionsForResponse:(id)arg1 ;
+-(BOOL)_processFailureTypeFromDictionary:(id)arg1 error:(id*)arg2 ;
+-(BOOL)shouldProcessDialogsOutsideDaemon;
+-(BOOL)shouldTriggerDownloads;
+-(void)_checkDownloadQueues;
+-(void)_refreshSubscriptionStatus;
+-(void)_selectFooterSection:(id)arg1 ;
+-(BOOL)shouldProcessAccount;
+-(void)_checkInAppPurchaseQueueForAction:(id)arg1 ;
+-(BOOL)shouldPostFooterSectionChanged;
+-(void)setShouldTriggerDownloads:(BOOL)arg1 ;
+-(void)setShouldProcessDialogsOutsideDaemon:(BOOL)arg1 ;
+@end
+

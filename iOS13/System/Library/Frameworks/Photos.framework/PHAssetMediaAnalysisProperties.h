@@ -1,0 +1,60 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:59 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/Photos.framework/Photos
+*/
+
+#import <Photos/Photos-Structs.h>
+#import <Photos/PHAssetPropertySet.h>
+
+@class NSDate;
+
+@interface PHAssetMediaAnalysisProperties : PHAssetPropertySet {
+
+	short _audioClassification;
+	float _blurrinessScore;
+	float _exposureScore;
+	float _autoplaySuggestionScore;
+	float _videoScore;
+	float _activityScore;
+	NSDate* _mediaAnalysisTimeStamp;
+	unsigned long long _mediaAnalysisVersion;
+	unsigned long long _faceCount;
+	SCD_Struct_PH9 _bestKeyFrameTime;
+	CGRect _bestPlaybackRect;
+	SCD_Struct_PH11 _bestVideoTimeRange;
+
+}
+
+@property (nonatomic,readonly) SCD_Struct_PH9 bestKeyFrameTime;                      //@synthesize bestKeyFrameTime=_bestKeyFrameTime - In the implementation block
+@property (nonatomic,readonly) SCD_Struct_PH11 bestVideoTimeRange;                   //@synthesize bestVideoTimeRange=_bestVideoTimeRange - In the implementation block
+@property (nonatomic,readonly) CGRect bestPlaybackRect;                              //@synthesize bestPlaybackRect=_bestPlaybackRect - In the implementation block
+@property (nonatomic,readonly) NSDate * mediaAnalysisTimeStamp;                      //@synthesize mediaAnalysisTimeStamp=_mediaAnalysisTimeStamp - In the implementation block
+@property (nonatomic,readonly) unsigned long long mediaAnalysisVersion;              //@synthesize mediaAnalysisVersion=_mediaAnalysisVersion - In the implementation block
+@property (nonatomic,readonly) float blurrinessScore;                                //@synthesize blurrinessScore=_blurrinessScore - In the implementation block
+@property (nonatomic,readonly) float exposureScore;                                  //@synthesize exposureScore=_exposureScore - In the implementation block
+@property (nonatomic,readonly) float autoplaySuggestionScore;                        //@synthesize autoplaySuggestionScore=_autoplaySuggestionScore - In the implementation block
+@property (nonatomic,readonly) float videoScore;                                     //@synthesize videoScore=_videoScore - In the implementation block
+@property (nonatomic,readonly) float activityScore;                                  //@synthesize activityScore=_activityScore - In the implementation block
+@property (nonatomic,readonly) unsigned long long faceCount;                         //@synthesize faceCount=_faceCount - In the implementation block
+@property (nonatomic,readonly) short audioClassification;                            //@synthesize audioClassification=_audioClassification - In the implementation block
++(id)propertiesToFetch;
++(id)entityName;
++(id)propertySetName;
++(id)keyPathFromPrimaryObject;
+-(void)initWithDefaultValues;
+-(float)exposureScore;
+-(unsigned long long)faceCount;
+-(SCD_Struct_PH9)bestKeyFrameTime;
+-(SCD_Struct_PH11)bestVideoTimeRange;
+-(NSDate *)mediaAnalysisTimeStamp;
+-(unsigned long long)mediaAnalysisVersion;
+-(float)blurrinessScore;
+-(float)autoplaySuggestionScore;
+-(float)videoScore;
+-(float)activityScore;
+-(short)audioClassification;
+-(id)initWithFetchDictionary:(id)arg1 asset:(id)arg2 prefetched:(BOOL)arg3 ;
+-(CGRect)bestPlaybackRect;
+@end
+

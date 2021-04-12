@@ -1,0 +1,146 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:19 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Rapport.framework/Rapport
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@protocol OS_nw_listener, OS_nw_path_evaluator, OS_dispatch_queue, RPMessageable;
+@class NSObject, RPConnection, CUTCPServer, CUWiFiManager, NSUUID, NSString, NSData;
+
+@interface RPStreamSession : NSObject <NSSecureCoding> {
+
+	BOOL _invalidateCalled;
+	BOOL _invalidateDone;
+	NSObject*<OS_nw_listener> _nwListener;
+	NSObject*<OS_nw_path_evaluator> _nwPathEvaluator;
+	unsigned char _ourCurveSK[32];
+	SCD_Union_RP13 _peerIP;
+	int _peerPort;
+	BOOL _prepareOnly;
+	RPConnection* _rpCnx;
+	CUTCPServer* _tcpServer;
+	BOOL _trafficRegistrationCalled;
+	CUWiFiManager* _wifiManager;
+	BOOL _serverMode;
+	int _flowControlState;
+	unsigned _streamFlags;
+	int _streamSocket;
+	int _streamType;
+	unsigned _trafficFlags;
+	unsigned long long _delegatedProcessUPID;
+	NSObject*<OS_dispatch_queue> _dispatchQueue;
+	/*^block*/id _invalidationHandler;
+	id<RPMessageable> _messenger;
+	NSUUID* _nwClientID;
+	/*^block*/id _receivedEventHandler;
+	/*^block*/id _receivedRequestHandler;
+	/*^block*/id _statusChangedHandler;
+	unsigned long long _statusFlags;
+	NSString* _streamID;
+	NSData* _streamKey;
+	NSString* _trafficSessionID;
+	NSString* _destinationString;
+	NSData* _pskData;
+	/*^block*/id _streamAcceptHandler;
+
+}
+
+@property (nonatomic,copy) NSString * destinationString;                              //@synthesize destinationString=_destinationString - In the implementation block
+@property (nonatomic,copy) NSUUID * nwClientID;                                       //@synthesize nwClientID=_nwClientID - In the implementation block
+@property (nonatomic,copy) NSData * pskData;                                          //@synthesize pskData=_pskData - In the implementation block
+@property (assign,nonatomic) BOOL serverMode;                                         //@synthesize serverMode=_serverMode - In the implementation block
+@property (nonatomic,copy) id streamAcceptHandler;                                    //@synthesize streamAcceptHandler=_streamAcceptHandler - In the implementation block
+@property (nonatomic,copy) NSData * streamKey;                                        //@synthesize streamKey=_streamKey - In the implementation block
+@property (assign,nonatomic) int streamSocket;                                        //@synthesize streamSocket=_streamSocket - In the implementation block
+@property (assign,nonatomic) unsigned long long delegatedProcessUPID;                 //@synthesize delegatedProcessUPID=_delegatedProcessUPID - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> dispatchQueue;              //@synthesize dispatchQueue=_dispatchQueue - In the implementation block
+@property (nonatomic,readonly) int flowControlState;                                  //@synthesize flowControlState=_flowControlState - In the implementation block
+@property (nonatomic,copy) id invalidationHandler;                                    //@synthesize invalidationHandler=_invalidationHandler - In the implementation block
+@property (nonatomic,retain) id<RPMessageable> messenger;                             //@synthesize messenger=_messenger - In the implementation block
+@property (nonatomic,copy) id receivedEventHandler;                                   //@synthesize receivedEventHandler=_receivedEventHandler - In the implementation block
+@property (nonatomic,copy) id receivedRequestHandler;                                 //@synthesize receivedRequestHandler=_receivedRequestHandler - In the implementation block
+@property (nonatomic,copy) id statusChangedHandler;                                   //@synthesize statusChangedHandler=_statusChangedHandler - In the implementation block
+@property (nonatomic,readonly) unsigned long long statusFlags;                        //@synthesize statusFlags=_statusFlags - In the implementation block
+@property (assign,nonatomic) unsigned streamFlags;                                    //@synthesize streamFlags=_streamFlags - In the implementation block
+@property (nonatomic,copy) NSString * streamID;                                       //@synthesize streamID=_streamID - In the implementation block
+@property (assign,nonatomic) int streamType;                                          //@synthesize streamType=_streamType - In the implementation block
+@property (assign,nonatomic) unsigned trafficFlags;                                   //@synthesize trafficFlags=_trafficFlags - In the implementation block
+@property (nonatomic,copy) NSString * trafficSessionID;                               //@synthesize trafficSessionID=_trafficSessionID - In the implementation block
++(BOOL)supportsSecureCoding;
+-(id)init;
+-(void)dealloc;
+-(void)invalidate;
+-(void)_invalidate;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setInvalidationHandler:(id)arg1 ;
+-(id)invalidationHandler;
+-(NSObject*<OS_dispatch_queue>)dispatchQueue;
+-(void)setDispatchQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(void)activateWithCompletion:(/*^block*/id)arg1 ;
+-(unsigned long long)statusFlags;
+-(void)_invalidated;
+-(void)setTrafficFlags:(unsigned)arg1 ;
+-(void)sendEventID:(id)arg1 event:(id)arg2 options:(id)arg3 completion:(/*^block*/id)arg4 ;
+-(void)sendRequestID:(id)arg1 request:(id)arg2 options:(id)arg3 responseHandler:(/*^block*/id)arg4 ;
+-(unsigned)trafficFlags;
+-(id)statusChangedHandler;
+-(void)setStatusChangedHandler:(id)arg1 ;
+-(void)_updateTrafficRegistration;
+-(NSString *)destinationString;
+-(void)setDestinationString:(NSString *)arg1 ;
+-(int)flowControlState;
+-(NSString *)streamID;
+-(void)setStreamID:(NSString *)arg1 ;
+-(void)setReceivedRequestHandler:(id)arg1 ;
+-(id)receivedRequestHandler;
+-(BOOL)serverMode;
+-(void)setServerMode:(BOOL)arg1 ;
+-(void)prepareWithCompletion:(/*^block*/id)arg1 ;
+-(NSData *)pskData;
+-(void)setPskData:(NSData *)arg1 ;
+-(id)receivedEventHandler;
+-(void)setReceivedEventHandler:(id)arg1 ;
+-(id<RPMessageable>)messenger;
+-(void)setMessenger:(id<RPMessageable>)arg1 ;
+-(void)setStreamType:(int)arg1 ;
+-(unsigned)streamFlags;
+-(void)setStreamFlags:(unsigned)arg1 ;
+-(void)startServerConnectionWithCompletion:(/*^block*/id)arg1 ;
+-(void)setStreamAcceptHandler:(id)arg1 ;
+-(void)acceptedByServer;
+-(void)activateForServerRequest:(id)arg1 options:(id)arg2 responseHandler:(/*^block*/id)arg3 ;
+-(id)streamAcceptHandler;
+-(void)_clientUDPSocketStartWithCompletion:(/*^block*/id)arg1 ;
+-(BOOL)_startServerConnectionAndReturnError:(id*)arg1 ;
+-(void)_clientRPConnectionStartWithCompletion:(/*^block*/id)arg1 ;
+-(void)_clientRPConnectionPrepareWithCompletion:(/*^block*/id)arg1 ;
+-(void)_clientUDPNWPathStartWithCompletion:(/*^block*/id)arg1 ;
+-(void)_serverUDPSocketStartRequest:(id)arg1 options:(id)arg2 responseHandler:(/*^block*/id)arg3 ;
+-(void)_serverRPConnectionStartRequest:(id)arg1 options:(id)arg2 responseHandler:(/*^block*/id)arg3 ;
+-(void)_serverUDPNWPathStartRequest:(id)arg1 options:(id)arg2 responseHandler:(/*^block*/id)arg3 ;
+-(id)_lowLatencySelfAddressString:(id*)arg1 ;
+-(void)_clientUDPNWPathNextWithEndpoint:(id)arg1 nwInterface:(id)arg2 selfMACData:(id)arg3 usb:(BOOL)arg4 completion:(/*^block*/id)arg5 ;
+-(void)_clientUDPNWPathStartResponse:(id)arg1 options:(id)arg2 localEndpoint:(id)arg3 nwInterface:(id)arg4 selfIPString:(id)arg5 usb:(BOOL)arg6 completion:(/*^block*/id)arg7 ;
+-(void)_updateTrafficRegistrationForIP:(const /*function pointer*/void**)arg1 ;
+-(void)_serverUDPNWPathNextWithEndpoint:(id)arg1 nwInterface:(id)arg2 selfMACData:(id)arg3 peerIP:(/*function pointer*/void*)arg4 peerMACData:(id)arg5 usb:(BOOL)arg6 responseHandler:(/*^block*/id)arg7 ;
+-(void)_clientUDPSocketStartResponse:(id)arg1 options:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_clientRPConnectionPrepareResponse:(id)arg1 options:(id)arg2 completion:(/*^block*/id)arg3 ;
+-(void)_serverRPConnectionHandleConnectionAccepted:(int)arg1 ;
+-(void)_serverRPConnectionHandleConnectionStarted:(id)arg1 ;
+-(unsigned)_getSockAddrInterfaceType:(const void*)arg1 ;
+-(unsigned long long)delegatedProcessUPID;
+-(void)setDelegatedProcessUPID:(unsigned long long)arg1 ;
+-(NSUUID *)nwClientID;
+-(void)setNwClientID:(NSUUID *)arg1 ;
+-(NSData *)streamKey;
+-(void)setStreamKey:(NSData *)arg1 ;
+-(int)streamSocket;
+-(void)setStreamSocket:(int)arg1 ;
+-(int)streamType;
+-(NSString *)trafficSessionID;
+-(void)setTrafficSessionID:(NSString *)arg1 ;
+@end
+

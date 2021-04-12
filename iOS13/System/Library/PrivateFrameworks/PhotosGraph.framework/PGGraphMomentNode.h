@@ -1,0 +1,205 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:11 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotosGraph.framework/PhotosGraph
+*/
+
+#import <PhotosGraph/PhotosGraph-Structs.h>
+#import <PhotosGraph/PGGraphNode.h>
+#import <libobjc.A.dylib/PLMomentProtocol.h>
+#import <libobjc.A.dylib/PGGraphFullEvent.h>
+#import <libobjc.A.dylib/PGGraphPhotoEvent.h>
+#import <libobjc.A.dylib/PGGraphRelatableEvent.h>
+#import <libobjc.A.dylib/PGEventEnrichment.h>
+
+@class NSDate, CLLocation, NSString, PGGraphHighlightNode, NSSet, CLSHolidayCalendarEventRuleTraits, PGGraphHighlightGroupNode;
+
+@interface PGGraphMomentNode : PGGraphNode <PLMomentProtocol, PGGraphFullEvent, PGGraphPhotoEvent, PGGraphRelatableEvent, PGEventEnrichment>
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) NSDate * pl_startDate; 
+@property (nonatomic,readonly) NSDate * pl_endDate; 
+@property (nonatomic,readonly) unsigned long long pl_numberOfAssets; 
+@property (nonatomic,readonly) CLLocation * pl_location; 
+@property (nonatomic,readonly) CLLocationCoordinate2D pl_coordinate; 
+@property (readonly) NSString * localIdentifier; 
+@property (readonly) unsigned long long numberOfAssetsWithPersons; 
+@property (readonly) unsigned long long numberOfAssets; 
+@property (readonly) BOOL happensPartiallyAtMyHomeOrWork; 
+@property (readonly) BOOL happensPartiallyAtMyWork; 
+@property (readonly) BOOL happensPartiallyAtMyHome; 
+@property (readonly) BOOL isPartOfTrip; 
+@property (readonly) BOOL isBreakoutOfRoutineHigh; 
+@property (readonly) BOOL isMeaningful; 
+@property (readonly) BOOL isInterestingForMemories; 
+@property (nonatomic,readonly) PGGraphHighlightNode * highlightNode; 
+@property (nonatomic,readonly) unsigned long long locationMobilityType; 
+@property (readonly) double inhabitationScore; 
+@property (readonly) BOOL hasHigherThanImprovedAssets; 
+@property (readonly) BOOL hasAssetsWithInterestingScenes; 
+@property (readonly) BOOL containsBetterScoringAsset; 
+@property (readonly) BOOL containsNonJunkAssets; 
+@property (readonly) double neighborScore; 
+@property (nonatomic,readonly) NSSet * frequentLocationNodes; 
+@property (nonatomic,readonly) BOOL happensAtFrequentLocation; 
+@property (nonatomic,readonly) CLSHolidayCalendarEventRuleTraits * holidayCalendarEventRuleTraits; 
+@property (nonatomic,readonly) long long breakoutOfRoutineType; 
+@property (readonly) unsigned long long numberOfShinyGemAssets; 
+@property (readonly) unsigned long long numberOfRegularGemAssets; 
+@property (readonly) double behavioralScore; 
+@property (readonly) NSString * UUID; 
+@property (readonly) double contentScore; 
+@property (readonly) NSDate * localStartDate; 
+@property (readonly) NSDate * localEndDate; 
+@property (readonly) NSDate * universalStartDate; 
+@property (readonly) NSDate * universalEndDate; 
+@property (readonly) BOOL isLongTrip; 
+@property (readonly) BOOL isShortTrip; 
+@property (readonly) BOOL isTrip; 
+@property (readonly) BOOL babyIsPresent; 
+@property (readonly) BOOL petIsPresent; 
+@property (readonly) PGGraphHighlightGroupNode * highlightGroupNode; 
+@property (readonly) BOOL hasLocation; 
+@property (nonatomic,readonly) NSString * uuid; 
+@property (readonly) BOOL isAggregation; 
++(id)pathFromMoment;
++(id)pathToMoment;
++(id)pathFromTargetNodeDomain:(unsigned short)arg1 ;
++(id)pathToTargetNodeDomain:(unsigned short)arg1 ;
++(id)inclusivePathFromTargetNodeDomain:(unsigned short)arg1 withName:(id)arg2 ;
++(id)inclusivePathToTargetNodeDomain:(unsigned short)arg1 withName:(id)arg2 ;
++(id)scoreSortDescriptors;
++(id)contentScoreSortDescriptors;
++(id)propertiesWithMoment:(id)arg1 ;
++(id)contentBasedPropertiesWithMoment:(id)arg1 ;
++(id)firstAndLastMomentNodesInMomentNodes:(id)arg1 ;
++(id)addressNodesForMomentNodes:(id)arg1 ;
++(id)addressEdgesForMomentNodes:(id)arg1 ;
++(id)sceneEdgesForMomentNodes:(id)arg1 ;
+-(NSString *)UUID;
+-(NSString *)uuid;
+-(id)debugDictionary;
+-(NSString *)localIdentifier;
+-(BOOL)hasLocation;
+-(CLLocationCoordinate2D)pl_coordinate;
+-(unsigned long long)numberOfAssets;
+-(NSDate *)localStartDate;
+-(NSDate *)localEndDate;
+-(NSDate *)pl_endDate;
+-(NSDate *)pl_startDate;
+-(unsigned long long)pl_numberOfAssets;
+-(CLLocation *)pl_location;
+-(id)meaningLabels;
+-(NSDate *)universalStartDate;
+-(NSDate *)universalEndDate;
+-(double)behavioralScore;
+-(BOOL)isWeekend;
+-(BOOL)isAggregation;
+-(double)contentScore;
+-(double)neighborScore;
+-(unsigned long long)numberOfMoments;
+-(id)associatedNodesForRemoval;
+-(BOOL)isTrip;
+-(BOOL)isLongTrip;
+-(BOOL)isShortTrip;
+-(BOOL)isPartOfTrip;
+-(void)enumerateHighlightNodesUsingBlock:(/*^block*/id)arg1 ;
+-(id)momentNodes;
+-(void)eventEnumerateMomentNodesUsingBlock:(/*^block*/id)arg1 ;
+-(id)addressNodes;
+-(void)enumerateBabyNodesUsingBlock:(/*^block*/id)arg1 ;
+-(id)personNodes;
+-(BOOL)startsAfterLocalDate:(id)arg1 ;
+-(BOOL)endsBeforeLocalDate:(id)arg1 ;
+-(id)sortedMomentNodes;
+-(id)naturalLanguageFeatures;
+-(id)timedEvent;
+-(id)locatedEvent;
+-(id)peopledEvent;
+-(id)scenedEvent;
+-(id)meaningfulEvent;
+-(id)businessedEvent;
+-(id)enrichableEvent;
+-(id)relatableEvent;
+-(BOOL)babyIsPresent;
+-(BOOL)petIsPresent;
+-(PGGraphHighlightGroupNode *)highlightGroupNode;
+-(id)dateNodes;
+-(id)seasonNodes;
+-(id)holidayNodes;
+-(id)celebratedHolidayNodes;
+-(id)poiNodes;
+-(id)roiNodes;
+-(BOOL)happensPartiallyAtMyHome;
+-(BOOL)happensPartiallyAtMyWork;
+-(BOOL)hasPeopleCountingMe:(BOOL)arg1 ;
+-(id)socialGroupNodes;
+-(id)sceneNodes;
+-(id)highConfidenceSceneNodes;
+-(id)searchConfidenceSceneNodes;
+-(id)businessNodes;
+-(id)publicEventNodes;
+-(void)enumerateBusinessesUsingBlock:(/*^block*/id)arg1 ;
+-(id)fetchAssetCollection;
+-(double)weightForMoment:(id)arg1 ;
+-(id)photoEvent;
+-(id)connectedEventsWithTargetDomain:(unsigned short)arg1 ;
+-(id)keywordsForRelatedType:(unsigned long long)arg1 focusOnNodes:(id)arg2 ;
+-(id)reliableMeaningLabels;
+-(id)birthdayPersonNode;
+-(id)anniversaryPersonNode;
+-(unsigned long long)numberOfRegularGemAssets;
+-(unsigned long long)numberOfShinyGemAssets;
+-(id)meaningNodes;
+-(void)enumerateMeaningNodesUsingBlock:(/*^block*/id)arg1 ;
+-(id)relatableNode;
+-(double)inhabitationScore;
+-(BOOL)hasHigherThanImprovedAssets;
+-(BOOL)hasAssetsWithInterestingScenes;
+-(BOOL)containsBetterScoringAsset;
+-(BOOL)containsNonJunkAssets;
+-(void)enumerateBusinessNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)enumeratePublicEventNodesUsingBlock:(/*^block*/id)arg1 ;
+-(PGGraphHighlightNode *)highlightNode;
+-(void)enumerateMeaningfulEventsUsingBlock:(/*^block*/id)arg1 ;
+-(void)enumeratePetNodesUsingBlock:(/*^block*/id)arg1 ;
+-(double)meaningScore;
+-(unsigned long long)numberOfAssetsWithPersons;
+-(BOOL)happensPartiallyAtMyHomeOrWork;
+-(BOOL)isBreakoutOfRoutineHigh;
+-(long long)breakoutOfRoutineType;
+-(BOOL)isInterestingForMemories;
+-(unsigned long long)locationMobilityType;
+-(BOOL)isMeaningful;
+-(void)momentEnumerateDateNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)momentEnumerateCelebratedHolidayNodesUsingBlock:(/*^block*/id)arg1 ;
+-(id)addressEdges;
+-(void)enumerateAddressNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)momentEnumerateRemoteAddressNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)enumerateConsolidatedAddressesUsingBlock:(/*^block*/id)arg1 ;
+-(id)remoteAddressEdges;
+-(void)momentEnumeratePersonNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)momentEnumerateSocialGroupNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)momentEnumeratePOINodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)momentEnumerateROINodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)momentEnumerateSceneNodesUsingBlock:(/*^block*/id)arg1 ;
+-(void)enumerateFrequentLocationNodesUsingBlock:(/*^block*/id)arg1 ;
+-(NSSet *)frequentLocationNodes;
+-(BOOL)happensAtFrequentLocation;
+-(id)meaningLabelsIncludingParents;
+-(id)earlierMomentNode:(id)arg1 ;
+-(id)laterMomentNode:(id)arg1 ;
+-(long long)_compareToMomentNode:(id)arg1 withSortDescriptors:(id)arg2 ;
+-(id)weekendNode;
+-(id)lastWeekendMoments;
+-(id)sameWeekendMoments;
+-(id)sameMonthMoments;
+-(CLSHolidayCalendarEventRuleTraits *)holidayCalendarEventRuleTraits;
+-(unsigned long long)_eventRulePeopleTrait;
+-(unsigned long long)_eventRuleLocationTrait;
+-(BOOL)_isMePresent;
+@end
+

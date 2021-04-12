@@ -1,0 +1,42 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP
+*/
+
+
+#import <CoreHAP/CoreHAP-Structs.h>
+@interface HAPBTLETuple : NSObject {
+
+	int _maxHAPConnections;
+	float _minBandwidth;
+	float _maxBandwidth;
+	unsigned long long _atvState;
+	BTStatus _state;
+
+}
+
+@property (assign,nonatomic) unsigned long long atvState;              //@synthesize atvState=_atvState - In the implementation block
+@property (assign,nonatomic) BTStatus state;                           //@synthesize state=_state - In the implementation block
+@property (assign,nonatomic) int maxHAPConnections;                    //@synthesize maxHAPConnections=_maxHAPConnections - In the implementation block
+@property (assign,nonatomic) float minBandwidth;                       //@synthesize minBandwidth=_minBandwidth - In the implementation block
+@property (assign,nonatomic) float maxBandwidth;                       //@synthesize maxBandwidth=_maxBandwidth - In the implementation block
++(id)makeTupleWithATVState:(unsigned long long)arg1 MaxHAPConnections:(int)arg2 ;
++(id)atvState2String:(unsigned long long)arg1 ;
++(void)bandwidthFromATVState:(unsigned long long)arg1 MinBandwidth:(float*)arg2 MaxBandwidth:(float*)arg3 ;
++(id)makeTupleWithATVState:(unsigned long long)arg1 MaxHAPConnections:(int)arg2 MinBandwidth:(float)arg3 MaxBandwidth:(float)arg4 ;
++(id)state2String:(BTStatus*)arg1 ;
++(id)makeTupleWithState:(BTStatus*)arg1 MaxHAPConnections:(int)arg2 MinBandwidth:(float)arg3 MaxBandwidth:(float)arg4 ;
+-(id)description;
+-(BTStatus)state;
+-(void)setState:(BTStatus)arg1 ;
+-(unsigned long long)atvState;
+-(int)maxHAPConnections;
+-(void)setAtvState:(unsigned long long)arg1 ;
+-(void)setMinBandwidth:(float)arg1 ;
+-(void)setMaxBandwidth:(float)arg1 ;
+-(void)setMaxHAPConnections:(int)arg1 ;
+-(float)minBandwidth;
+-(float)maxBandwidth;
+@end
+

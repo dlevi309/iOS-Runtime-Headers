@@ -1,0 +1,37 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:33 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon
+*/
+
+#import <HomeKitDaemon/HMDNetworkRouterFirewallRule.h>
+
+@interface HMDNetworkRouterFirewallRuleLAN : HMDNetworkRouterFirewallRule {
+
+	BOOL _allowInterAccessoryConnections;
+	unsigned char _direction;
+	BOOL _requiredForHAPFunctionality;
+	unsigned long long _purpose;
+
+}
+
+@property (nonatomic,readonly) unsigned long long purpose;                                                                        //@synthesize purpose=_purpose - In the implementation block
+@property (getter=areConnectionsWithOtherAccessoriesAllowed,nonatomic,readonly) BOOL allowInterAccessoryConnections;              //@synthesize allowInterAccessoryConnections=_allowInterAccessoryConnections - In the implementation block
+@property (nonatomic,readonly) unsigned char direction;                                                                           //@synthesize direction=_direction - In the implementation block
+@property (getter=isRequiredForHAPFunctionality,nonatomic,readonly) BOOL requiredForHAPFunctionality;                             //@synthesize requiredForHAPFunctionality=_requiredForHAPFunctionality - In the implementation block
++(BOOL)__decodeTransportProtocolFromJSONDictionary:(id)arg1 key:(id)arg2 transportProtocol:(unsigned char*)arg3 error:(id*)arg4 ;
++(id)createWithJSONDictionary:(id)arg1 name:(id)arg2 critical:(BOOL)arg3 purpose:(unsigned long long)arg4 allowInterAccessoryConnections:(BOOL)arg5 direction:(unsigned char)arg6 requiredForHAPFunctionality:(BOOL)arg7 ruleDictionary:(id)arg8 error:(id*)arg9 ;
++(id)createWithJSONDictionary:(id)arg1 error:(id*)arg2 ;
++(BOOL)__decodeType:(id)arg1 type:(unsigned char*)arg2 error:(id*)arg3 ;
++(BOOL)__decodeFlags:(id)arg1 critical:(BOOL*)arg2 allowInterAccessoryConnections:(BOOL*)arg3 requiredForHAPFunctionality:(BOOL*)arg4 error:(id*)arg5 ;
++(BOOL)__decodePurpose:(id)arg1 purpose:(unsigned long long*)arg2 error:(id*)arg3 ;
++(BOOL)__decodeDirection:(id)arg1 direction:(unsigned char*)arg2 error:(id*)arg3 ;
+-(unsigned char)direction;
+-(unsigned long long)purpose;
+-(id)attributeDescriptions;
+-(id)initWithJSONDictionary:(id)arg1 name:(id)arg2 critical:(BOOL)arg3 purpose:(unsigned long long)arg4 allowInterAccessoryConnections:(BOOL)arg5 direction:(unsigned char)arg6 requiredForHAPFunctionality:(BOOL)arg7 ;
+-(id)prettyJSONDictionary;
+-(BOOL)areConnectionsWithOtherAccessoriesAllowed;
+-(BOOL)isRequiredForHAPFunctionality;
+@end
+

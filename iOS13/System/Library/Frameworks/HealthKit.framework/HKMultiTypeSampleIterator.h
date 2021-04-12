@@ -1,0 +1,44 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:11 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/HealthKit.framework/HealthKit
+*/
+
+#import <HealthKit/HealthKit-Structs.h>
+#import <libobjc.A.dylib/HKIterator.h>
+
+@class NSArray, HKQueryAnchor, HKHealthStore, HKMultiTypeQueryCursor, NSMutableArray, HKSample, NSString;
+
+@interface HKMultiTypeSampleIterator : NSObject <HKIterator> {
+
+	NSArray* _sampleQueryDescriptions;
+	NSArray* _sortDescriptors;
+	HKQueryAnchor* _followingAnchor;
+	HKQueryAnchor* _upToAndIncludingAnchor;
+	NSArray* _distinctByKeyPaths;
+	unsigned long long _bufferSize;
+	unsigned long long _limit;
+	HKHealthStore* _healthStore;
+	unsigned long long _state;
+	HKMultiTypeQueryCursor* _queryCursor;
+	NSMutableArray* _buffer;
+	HKSample* _current;
+	unsigned long long _numberOfSamplesDelivered;
+
+}
+
+@property (nonatomic,copy,readonly) HKSample * sample; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)object;
+-(HKSample *)sample;
+-(id)initWithSampleQueryDescriptions:(id)arg1 sortDescriptors:(id)arg2 followingAnchor:(id)arg3 upToAndIncludingAnchor:(id)arg4 distinctByKeyPaths:(id)arg5 bufferSize:(unsigned long long)arg6 limit:(unsigned long long)arg7 healthStore:(id)arg8 ;
+-(BOOL)_queryForNextPageIfNecessaryWithError:(id*)arg1 ;
+-(BOOL)advanceWithError:(id*)arg1 ;
+-(id)initWithSampleQueryDescriptions:(id)arg1 sortDescriptors:(id)arg2 bufferSize:(long long)arg3 healthStore:(id)arg4 ;
+@end
+

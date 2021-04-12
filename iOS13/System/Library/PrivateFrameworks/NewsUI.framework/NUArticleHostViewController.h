@@ -1,0 +1,99 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:03 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NewsUI.framework/NewsUI
+*/
+
+#import <UIKitCore/UIViewController.h>
+#import <libobjc.A.dylib/NULoadingDelegate.h>
+#import <libobjc.A.dylib/SXAnalyticsReporting.h>
+#import <libobjc.A.dylib/NUPageable.h>
+#import <libobjc.A.dylib/NUBarCompressible.h>
+
+@protocol NULoadingDelegate, NUArticleViewControllerFactory, NUSettings, NULoadingViewProviding, NUErrorMessageFactory, NUAnalyticsReporting, NUArticleContentSizeManager;
+@class NSString, FCObservable, NUArticleContext, UIResponder, FCArticle, FCIssue, UIViewController, UIView, NFMultiDelegate, NSHashTable, UIScrollView;
+
+@interface NUArticleHostViewController : UIViewController <NULoadingDelegate, SXAnalyticsReporting, NUPageable, NUBarCompressible> {
+
+	NSString* _pageIdentifier;
+	id<NULoadingDelegate> _loadingDelegate;
+	FCObservable* _articleViewStyler;
+	NUArticleContext* _articleContext;
+	UIResponder* _responder;
+	FCArticle* _article;
+	FCIssue* _issue;
+	id<NUArticleViewControllerFactory> _articleViewControllerFactory;
+	id<NUSettings> _settings;
+	UIViewController* _contentTypeViewController;
+	UIView*<NULoadingViewProviding> _loadingView;
+	NFMultiDelegate* _multiLoadingDelegate;
+	id<NUErrorMessageFactory> _errorMessageFactory;
+	id<NUAnalyticsReporting> _analyticsReporting;
+	id<NUArticleContentSizeManager> _contentSizeManager;
+
+}
+
+@property (nonatomic,readonly) FCArticle * article;                                                          //@synthesize article=_article - In the implementation block
+@property (nonatomic,readonly) FCIssue * issue;                                                              //@synthesize issue=_issue - In the implementation block
+@property (nonatomic,readonly) id<NUArticleViewControllerFactory> articleViewControllerFactory;              //@synthesize articleViewControllerFactory=_articleViewControllerFactory - In the implementation block
+@property (nonatomic,copy,readonly) id<NUSettings> settings;                                                 //@synthesize settings=_settings - In the implementation block
+@property (nonatomic,retain) UIViewController * contentTypeViewController;                                   //@synthesize contentTypeViewController=_contentTypeViewController - In the implementation block
+@property (nonatomic,retain) UIView*<NULoadingViewProviding> loadingView;                                    //@synthesize loadingView=_loadingView - In the implementation block
+@property (nonatomic,readonly) NFMultiDelegate * multiLoadingDelegate;                                       //@synthesize multiLoadingDelegate=_multiLoadingDelegate - In the implementation block
+@property (nonatomic,readonly) id<NUErrorMessageFactory> errorMessageFactory;                                //@synthesize errorMessageFactory=_errorMessageFactory - In the implementation block
+@property (nonatomic,readonly) id<NUAnalyticsReporting> analyticsReporting;                                  //@synthesize analyticsReporting=_analyticsReporting - In the implementation block
+@property (nonatomic,readonly) id<NUArticleContentSizeManager> contentSizeManager;                           //@synthesize contentSizeManager=_contentSizeManager - In the implementation block
+@property (nonatomic,retain) NSString * contentSizeCategory; 
+@property (assign,nonatomic) long long contentScale; 
+@property (nonatomic,readonly) FCObservable * articleViewStyler;                                             //@synthesize articleViewStyler=_articleViewStyler - In the implementation block
+@property (nonatomic,readonly) NSHashTable * loadingListeners; 
+@property (nonatomic,retain) NUArticleContext * articleContext;                                              //@synthesize articleContext=_articleContext - In the implementation block
+@property (nonatomic,retain) UIResponder * responder;                                                        //@synthesize responder=_responder - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (assign,nonatomic,__weak) id<NULoadingDelegate> loadingDelegate;                                   //@synthesize loadingDelegate=_loadingDelegate - In the implementation block
+@property (nonatomic,copy,readonly) NSString * pageIdentifier;                                               //@synthesize pageIdentifier=_pageIdentifier - In the implementation block
+@property (nonatomic,readonly) UIScrollView * scrollView; 
+-(id<NUSettings>)settings;
+-(void)setContentSizeCategory:(NSString *)arg1 ;
+-(NSString *)contentSizeCategory;
+-(BOOL)becomeFirstResponder;
+-(void)viewDidLoad;
+-(BOOL)resignFirstResponder;
+-(void)viewDidLayoutSubviews;
+-(UIResponder *)responder;
+-(UIScrollView *)scrollView;
+-(long long)contentScale;
+-(void)setContentScale:(long long)arg1 ;
+-(void)setResponder:(UIResponder *)arg1 ;
+-(NSString *)pageIdentifier;
+-(void)setLoadingView:(UIView*<NULoadingViewProviding>)arg1 ;
+-(UIView*<NULoadingViewProviding>)loadingView;
+-(void)reportEvent:(id)arg1 ;
+-(FCArticle *)article;
+-(NSHashTable *)loadingListeners;
+-(id<NULoadingDelegate>)loadingDelegate;
+-(void)loadingDidFinishWithError:(id)arg1 ;
+-(void)setLoadingDelegate:(id<NULoadingDelegate>)arg1 ;
+-(id<NUArticleViewControllerFactory>)articleViewControllerFactory;
+-(id<NUErrorMessageFactory>)errorMessageFactory;
+-(id<NUArticleContentSizeManager>)contentSizeManager;
+-(id)initWithArticle:(id)arg1 articleViewControllerFactory:(id)arg2 settings:(id)arg3 errorMessageFactory:(id)arg4 contentSizeManager:(id)arg5 ;
+-(void)loadingWillStart;
+-(void)loadingDidStart;
+-(void)loadingDidUpdateProgress:(double)arg1 ;
+-(FCIssue *)issue;
+-(NUArticleContext *)articleContext;
+-(void)setArticleContext:(NUArticleContext *)arg1 ;
+-(FCObservable *)articleViewStyler;
+-(id<NUAnalyticsReporting>)analyticsReporting;
+-(id)initWithArticle:(id)arg1 issue:(id)arg2 articleViewControllerFactory:(id)arg3 settings:(id)arg4 errorMessageFactory:(id)arg5 analyticsReporting:(id)arg6 contentSizeManager:(id)arg7 ;
+-(id)loadingTextForArticle:(id)arg1 ;
+-(void)loadArticleAndEmbedArticleViewController;
+-(UIViewController *)contentTypeViewController;
+-(NFMultiDelegate *)multiLoadingDelegate;
+-(void)setContentTypeViewController:(UIViewController *)arg1 ;
+@end
+

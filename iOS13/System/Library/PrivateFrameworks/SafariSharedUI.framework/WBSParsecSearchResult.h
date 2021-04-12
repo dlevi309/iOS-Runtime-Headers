@@ -1,0 +1,131 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:53 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI
+*/
+
+#import <libobjc.A.dylib/WBSParsecSearchResult.h>
+#import <libobjc.A.dylib/WBSCompletionListItem.h>
+#import <libobjc.A.dylib/WBSParsecSearchGenericResult.h>
+#import <libobjc.A.dylib/WBSParsecSearchMapsResult.h>
+#import <libobjc.A.dylib/WBSParsecSearchSimpleResult.h>
+#import <libobjc.A.dylib/WBSParsecSearchSportsResult.h>
+
+@class NSNumber, NSArray, NSString, WBSParsecImageRepresentation, WBSParsecAuxiliaryInfo, WBSParsecSearchSportsAttributionExtraCompletionItem, WBSParsecLegacySearchResult, NSURL, WBSParsecActionButton, MKMapItem, SFSearchResult, WBSQuerySuggestion, WBSParsecSearchMapsResultFeedbackSender;
+
+@interface WBSParsecSearchResult : NSObject <WBSParsecSearchResult, WBSCompletionListItem, WBSParsecSearchGenericResult, WBSParsecSearchMapsResult, WBSParsecSearchSimpleResult, WBSParsecSearchSportsResult> {
+
+	WBSParsecLegacySearchResult* _legacySearchResult;
+
+}
+
+@property (nonatomic,readonly) WBSParsecLegacySearchResult * legacySearchResult;                                       //@synthesize legacySearchResult=_legacySearchResult - In the implementation block
+@property (nonatomic,readonly) long long type; 
+@property (nonatomic,readonly) long long subtype; 
+@property (nonatomic,readonly) NSString * title; 
+@property (nonatomic,readonly) NSString * descriptionText; 
+@property (nonatomic,readonly) NSString * identifier; 
+@property (nonatomic,readonly) NSString * feedbackIdentifier; 
+@property (nonatomic,readonly) NSString * urlString; 
+@property (nonatomic,readonly) NSString * sectionHeader; 
+@property (nonatomic,readonly) NSString * completion; 
+@property (nonatomic,copy,readonly) NSString * query; 
+@property (nonatomic,readonly) unsigned long long minimumRankOfTopHitToSuppressResult; 
+@property (nonatomic,readonly) NSURL * appPunchoutURL; 
+@property (nonatomic,copy,readonly) NSString * mediaKind; 
+@property (nonatomic,copy,readonly) NSString * referrerForLoadingResult; 
+@property (nonatomic,readonly) WBSParsecActionButton * actionButton; 
+@property (nonatomic,readonly) MKMapItem * mapItem; 
+@property (nonatomic,copy,readonly) NSString * sectionBundleIdentifier; 
+@property (nonatomic,readonly) WBSParsecImageRepresentation * icon; 
+@property (nonatomic,readonly) WBSParsecImageRepresentation * completionIcon; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) NSString * parsecDomainIdentifier; 
+@property (nonatomic,readonly) SFSearchResult * sfSearchResultValue; 
+@property (nonatomic,readonly) unsigned long long engagementDestination; 
+@property (assign,nonatomic) long long parsecQueryID; 
+@property (nonatomic,readonly) NSString * lastSearchQuery; 
+@property (nonatomic,retain) WBSQuerySuggestion * siriSuggestion; 
+@property (nonatomic,readonly) NSNumber * titleMaximumLines; 
+@property (nonatomic,copy,readonly) NSArray * descriptionRichTexts; 
+@property (nonatomic,copy,readonly) NSString * footnote; 
+@property (nonatomic,copy,readonly) NSString * secondaryTitle; 
+@property (nonatomic,readonly) WBSParsecImageRepresentation * secondaryTitleGlyph; 
+@property (nonatomic,readonly) WBSParsecAuxiliaryInfo * auxiliaryInfo; 
+@property (nonatomic,readonly) WBSParsecImageRepresentation * thumbnail; 
+@property (nonatomic,retain) id<WBSParsecSearchSession> parsecSearchSession; 
+@property (nonatomic,retain) WBSParsecSearchMapsResultFeedbackSender * mapsFeedbackSender; 
+@property (nonatomic,readonly) NSNumber * titleMaximumNumberOfLines; 
+@property (nonatomic,readonly) NSString * descriptionLeadInText; 
+@property (nonatomic,readonly) NSNumber * descriptionMaximumNumberOfLines; 
+@property (nonatomic,readonly) BOOL descriptionTextCanWrap; 
+@property (nonatomic,readonly) BOOL hasSingleLineDescriptionAndTitle; 
+@property (nonatomic,copy,readonly) NSArray * images; 
+@property (nonatomic,copy,readonly) NSArray * individualScores; 
+@property (nonatomic,copy,readonly) NSString * subtitle; 
+@property (nonatomic,readonly) WBSParsecSearchSportsAttributionExtraCompletionItem * extraCompletionItem; 
++(long long)typeForSFSearchResult:(id)arg1 isOneLine:(BOOL)arg2 ;
++(long long)typeForSFSearchResult:(id)arg1 ;
+-(id)init;
+-(long long)type;
+-(NSString *)query;
+-(NSString *)identifier;
+-(NSString *)title;
+-(id)_result;
+-(NSArray *)images;
+-(NSString *)subtitle;
+-(long long)subtype;
+-(NSString *)completion;
+-(WBSParsecImageRepresentation *)icon;
+-(NSString *)sectionHeader;
+-(WBSParsecImageRepresentation *)thumbnail;
+-(MKMapItem *)mapItem;
+-(NSString *)descriptionText;
+-(NSString *)urlString;
+-(NSString *)mediaKind;
+-(NSString *)footnote;
+-(NSString *)secondaryTitle;
+-(NSString *)sectionBundleIdentifier;
+-(unsigned long long)minimumRankOfTopHitToSuppressResult;
+-(WBSParsecActionButton *)actionButton;
+-(long long)parsecQueryID;
+-(void)setParsecQueryID:(long long)arg1 ;
+-(WBSParsecImageRepresentation *)completionIcon;
+-(NSString *)parsecDomainIdentifier;
+-(SFSearchResult *)sfSearchResultValue;
+-(unsigned long long)engagementDestination;
+-(WBSParsecAuxiliaryInfo *)auxiliaryInfo;
+-(id<WBSParsecSearchSession>)parsecSearchSession;
+-(void)setParsecSearchSession:(id<WBSParsecSearchSession>)arg1 ;
+-(WBSParsecSearchMapsResultFeedbackSender *)mapsFeedbackSender;
+-(void)setMapsFeedbackSender:(WBSParsecSearchMapsResultFeedbackSender *)arg1 ;
+-(id)titleGlyphWithSession:(id)arg1 ;
+-(NSNumber *)titleMaximumNumberOfLines;
+-(NSString *)descriptionLeadInText;
+-(NSNumber *)descriptionMaximumNumberOfLines;
+-(BOOL)descriptionTextCanWrap;
+-(BOOL)hasSingleLineDescriptionAndTitle;
+-(BOOL)canBecomeTopHitForQuery:(id)arg1 ;
+-(id)iconWithSession:(id)arg1 ;
+-(id)completionIconWithSession:(id)arg1 ;
+-(NSString *)feedbackIdentifier;
+-(NSURL *)appPunchoutURL;
+-(NSString *)referrerForLoadingResult;
+-(id)_genericResult;
+-(NSNumber *)titleMaximumLines;
+-(NSArray *)descriptionRichTexts;
+-(WBSParsecImageRepresentation *)secondaryTitleGlyph;
+-(id)thumbnailWithSession:(id)arg1 ;
+-(id)_resultPresentedInCard;
+-(id)_mapsResult;
+-(id)_simpleResult;
+-(id)_sportsResult;
+-(NSArray *)individualScores;
+-(WBSParsecSearchSportsAttributionExtraCompletionItem *)extraCompletionItem;
+-(id)initWithLegacySearchResult:(id)arg1 ;
+-(WBSParsecLegacySearchResult *)legacySearchResult;
+@end
+

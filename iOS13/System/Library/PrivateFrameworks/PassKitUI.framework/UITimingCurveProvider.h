@@ -1,0 +1,20 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
+*/
+
+@class UICubicTimingParameters, UISpringTimingParameters;
+
+
+@protocol UITimingCurveProvider <NSCoding,NSCopying>
+@property (nonatomic,readonly) long long timingCurveType; 
+@property (nonatomic,readonly) UICubicTimingParameters * cubicTimingParameters; 
+@property (nonatomic,readonly) UISpringTimingParameters * springTimingParameters; 
+@required
+-(long long)timingCurveType;
+-(UICubicTimingParameters *)cubicTimingParameters;
+-(UISpringTimingParameters *)springTimingParameters;
+
+@end
+

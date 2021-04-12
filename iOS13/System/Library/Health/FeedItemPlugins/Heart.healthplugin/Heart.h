@@ -1,0 +1,13 @@
+#import <Heart/HeartAppPluginFeatureFlagUtilities.h>
+#import <Heart/Heart.ElectrocardiogramPromotionTileViewController.h>
+#import <Heart/_TtC5HeartP33_D8B08F6E2D0512D378D77ADA56066F6F35ElectrocardiogramOnboardingHeroView.h>
+#import <Heart/Heart.PromotionFeedItemGenerator.h>
+#import <Heart/Heart.ElectrocardiogramDataTypeDetailViewController.h>
+#import <Heart/Heart.AtrialFibrillationPromotionFeedItemGenerator.h>
+#import <Heart/Heart.AtrialFibrillationPromotionTileViewController.h>
+#import <Heart/Heart.AtrialFibrillationDataTypeDetailViewController.h>
+#import <Heart/Heart.PromotionTileViewController.h>
+#import <Heart/Heart.HeartAppDelegate.h>
+#import <Heart/Heart.HeartFeedItemGenerator.h>
+#import <Heart/Heart.PromotionAvailability.h>
+#import <Heart/Heart.ElectrocardiogramPromotionFeedItemGenerator.h>

@@ -1,0 +1,165 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
+*/
+
+#import <PassKitUI/PassKitUI-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <UIKit/UIGestureRecognizerDelegate.h>
+#import <libobjc.A.dylib/PKRenderLoopDelegate.h>
+
+@protocol PKBillPaymentRingViewDelegate, PKBillPaymentRingViewDataSource;
+@class PKBillPaymentSuggestedAmountList, NSArray, NSDictionary, NSDecimalNumber, PKBillPaymentSuggestedAmount, PKRenderLoop, UISelectionFeedbackGenerator, UITapGestureRecognizer, UILongPressGestureRecognizer, UIPanGestureRecognizer, PKBillPaymentRingGradientState, PKRingGradientView, PKBillPaymentCircularView, PKEnterCurrencyAmountView, UILabel, PKCurvedTextLabel, UIColor, NSString;
+
+@interface PKBillPaymentRingView : UIView <UIGestureRecognizerDelegate, PKRenderLoopDelegate> {
+
+	PKBillPaymentSuggestedAmountList* _suggestedAmountList;
+	NSArray* _suggestedAmountViews;
+	double _amountRoundingUnit;
+	double _minimumPaymentAmount;
+	double _maximumPaymentAmount;
+	NSDictionary* _suggestedAmoutImages;
+	NSArray* _suggestedAmountAngles;
+	NSDictionary* _suggestedAmountsForAngle;
+	NSDictionary* _standardRingStates;
+	NSDictionary* _colorStops;
+	NSDecimalNumber* _displayAmount;
+	NSDecimalNumber* _overrideDisplayAmount;
+	NSDecimalNumber* _effectiveDisplayAmount;
+	BOOL _selectedSuggestedAmountIsTarget;
+	PKBillPaymentSuggestedAmount* _selectedSuggestedAmount;
+	PKBillPaymentSuggestedAmount* _highlightedSuggestedAmount;
+	NSDecimalNumber* _pinnedAmount;
+	double _pinnedAmountAngle;
+	unsigned long long _pinnedAmountAngleIndex;
+	unsigned long long _screenType;
+	PKRenderLoop* _renderLoop;
+	UISelectionFeedbackGenerator* _feedbackGenerator;
+	UITapGestureRecognizer* _tapRecognizer;
+	UILongPressGestureRecognizer* _pressRecognizer;
+	UIPanGestureRecognizer* _dragRecognizer;
+	double _lastDrawTime;
+	SCD_Struct_PK12 _spring;
+	SCD_Struct_PK13 _angleState;
+	SCD_Struct_PK12 _responseSpring;
+	SCD_Struct_PK13 _responseState;
+	double _responseSpringElapsedDuration;
+	SCD_Struct_PK12 _scaleSpring;
+	SCD_Struct_PK13 _scaleState;
+	BOOL _dragging;
+	BOOL _pressed;
+	long long _dragCapture;
+	BOOL _ignoreTouches;
+	BOOL _dotsVisible;
+	double _interestLabelAlpha;
+	BOOL _needsInitialDisplay;
+	NSDecimalNumber* _initialDisplayAmount;
+	double _overrideGradientStartAngle;
+	PKBillPaymentRingGradientState* _overrideGradientState;
+	PKRingGradientView* _ringView;
+	PKBillPaymentCircularView* _handleView;
+	PKEnterCurrencyAmountView* _enterCurrencyAmountView;
+	UILabel* _interestLabel;
+	PKCurvedTextLabel* _topCurvedTextLabel;
+	PKCurvedTextLabel* _bottomCurvedTextLabel;
+	BOOL _userSelectedAngleChange;
+	BOOL _enabled;
+	BOOL _isSmall;
+	id<PKBillPaymentRingViewDelegate> _delegate;
+	id<PKBillPaymentRingViewDataSource> _dataSource;
+
+}
+
+@property (assign,getter=isEnabled,nonatomic) BOOL enabled;                               //@synthesize enabled=_enabled - In the implementation block
+@property (nonatomic,copy,readonly) NSDecimalNumber * amount; 
+@property (assign,nonatomic) id<PKBillPaymentRingViewDelegate> delegate;                  //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) id<PKBillPaymentRingViewDataSource> dataSource;              //@synthesize dataSource=_dataSource - In the implementation block
+@property (assign,nonatomic) BOOL isSmall;                                                //@synthesize isSmall=_isSmall - In the implementation block
+@property (nonatomic,readonly) double ringWidth; 
+@property (nonatomic,readonly) double targetAngle; 
+@property (nonatomic,copy,readonly) UIColor * currentStartColor; 
+@property (nonatomic,copy,readonly) UIColor * currentEndColor; 
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(id)init;
+-(void)dealloc;
+-(void)setEnabled:(BOOL)arg1 ;
+-(id<PKBillPaymentRingViewDelegate>)delegate;
+-(void)setDelegate:(id<PKBillPaymentRingViewDelegate>)arg1 ;
+-(BOOL)isEnabled;
+-(NSDecimalNumber *)amount;
+-(id<PKBillPaymentRingViewDataSource>)dataSource;
+-(void)setDataSource:(id<PKBillPaymentRingViewDataSource>)arg1 ;
+-(CGPoint)_center;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(BOOL)gestureRecognizerShouldBegin:(id)arg1 ;
+-(BOOL)gestureRecognizer:(id)arg1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)arg2 ;
+-(BOOL)gestureRecognizer:(id)arg1 shouldReceiveTouch:(id)arg2 ;
+-(CGSize)sizeThatFits:(CGSize)arg1 ;
+-(void)layoutSubviews;
+-(void)didMoveToWindow;
+-(void)_tapRecognized:(id)arg1 ;
+-(void)_dragEnded:(id)arg1 ;
+-(id)initWithSuggestedAmountList:(id)arg1 delegate:(id)arg2 dataSource:(id)arg3 ;
+-(double)ringWidth;
+-(void)prepareForInitialDisplayWithAmount:(id)arg1 ;
+-(void)completeInitialDisplayAnimated:(BOOL)arg1 ;
+-(UIColor *)currentStartColor;
+-(void)setAmount:(id)arg1 animated:(BOOL)arg2 ;
+-(BOOL)isSmall;
+-(void)setIsSmall:(BOOL)arg1 ;
+-(void)_updatePausedState;
+-(void)_createSuggestedAmountsImageDictionary;
+-(void)_createSuggestedAmountAngles;
+-(void)_createStandardColors;
+-(void)_createSuggestedAmountRingColorStops;
+-(id)_roundedAmountForAngle:(double)arg1 ;
+-(void)_pressRecognized:(id)arg1 ;
+-(void)_dragRecognizerChanged:(id)arg1 ;
+-(void)didUpdateAngleSpringTarget;
+-(void)didUpdateAngleSpringPosition;
+-(void)didUpdateScaleSpringPosition;
+-(void)setAngle:(double)arg1 animated:(BOOL)arg2 forExplicitAmount:(id)arg3 userInitiated:(BOOL)arg4 ;
+-(void)_updateForEnabledState;
+-(double)_ringWidth;
+-(double)_amountLabelMaximumFontSize;
+-(double)_offsetCurrentAngle;
+-(CGPoint)_centerPointAtAngle:(double)arg1 ;
+-(double)_angleForAmount:(id)arg1 ;
+-(double)_offsetAngle:(double)arg1 ;
+-(BOOL)_preferredPausedState;
+-(void)_pauseRenderLoop;
+-(double)_angleForPosition:(CGPoint)arg1 ;
+-(double)_angleForRecognizer:(id)arg1 ;
+-(void)_updateScaleTarget;
+-(void)_dragStarted:(id)arg1 ;
+-(void)_dragMoved:(id)arg1 ;
+-(void)_dragMovedToAngle:(double)arg1 normalizedRadius:(double)arg2 ;
+-(void)setHandleScale:(double)arg1 animated:(BOOL)arg2 ;
+-(void)_updateCurvedText;
+-(BOOL)_updateEffectiveDisplayAmount;
+-(id)_targetGradientStateForAngle:(double)arg1 ;
+-(void)_setDotsVisible:(BOOL)arg1 animated:(BOOL)arg2 ;
+-(unsigned long long)_unnormalizedAngleIndexForAngle:(double)arg1 ;
+-(id)_suggestedAmountForAngleIndex:(unsigned long long)arg1 ;
+-(void)_setSelectedSuggestedAmount:(id)arg1 ;
+-(void)_updateHandleImage;
+-(BOOL)_isAmount:(id)arg1 withinRoundingUnitOfAmount:(id)arg2 ;
+-(id)_blendFromGradientState:(id)arg1 toState:(id)arg2 withProgress:(double)arg3 ;
+-(void)_setHighlightedSuggestedAmount:(id)arg1 ;
+-(BOOL)_setDisplayAmount:(id)arg1 ;
+-(void)_updateInterestText;
+-(void)_setResponse:(double)arg1 ;
+-(id)_blendFromLinearColor:(id)arg1 toLinearColor:(id)arg2 withProgress:(double)arg3 ;
+-(id)_suggestedAmountImageForSuggestedAmount:(id)arg1 ;
+-(double)_angleForAngleIndex:(unsigned long long)arg1 ;
+-(unsigned long long)_segmentEndAngleIndexForAngle:(double)arg1 ;
+-(id)_gradientStateForSuggestedAmount:(id)arg1 ;
+-(void)renderLoop:(id)arg1 drawAtTime:(double)arg2 ;
+-(double)targetAngle;
+-(UIColor *)currentEndColor;
+@end
+

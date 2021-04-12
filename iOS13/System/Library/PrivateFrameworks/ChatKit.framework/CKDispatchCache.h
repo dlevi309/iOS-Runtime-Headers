@@ -1,0 +1,60 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ChatKit.framework/ChatKit
+*/
+
+#import <libobjc.A.dylib/IMSystemMonitorListener.h>
+
+@protocol OS_dispatch_queue;
+@class NSCache, NSCountedSet, NSMutableDictionary, CKDispatchQueue, NSObject;
+
+@interface CKDispatchCache : NSObject <IMSystemMonitorListener> {
+
+	NSCache* _objectCache;
+	NSCountedSet* _pendingKeys;
+	NSMutableDictionary* _pendingGroups;
+	CKDispatchQueue* _dispatchQueue;
+	NSObject*<OS_dispatch_queue> _lockQueue;
+	long long _dispatchPriority;
+
+}
+
+@property (nonatomic,retain) NSCache * objectCache;                               //@synthesize objectCache=_objectCache - In the implementation block
+@property (nonatomic,retain) NSCountedSet * pendingKeys;                          //@synthesize pendingKeys=_pendingKeys - In the implementation block
+@property (nonatomic,retain) NSMutableDictionary * pendingGroups;                 //@synthesize pendingGroups=_pendingGroups - In the implementation block
+@property (nonatomic,retain) CKDispatchQueue * dispatchQueue;                     //@synthesize dispatchQueue=_dispatchQueue - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_queue> lockQueue;              //@synthesize lockQueue=_lockQueue - In the implementation block
+@property (assign,nonatomic) long long dispatchPriority;                          //@synthesize dispatchPriority=_dispatchPriority - In the implementation block
+-(id)init;
+-(void)dealloc;
+-(void)resume;
+-(void)suspend;
+-(CKDispatchQueue *)dispatchQueue;
+-(void)setDispatchQueue:(CKDispatchQueue *)arg1 ;
+-(void)systemApplicationDidSuspend;
+-(void)emptyCache;
+-(void)clearQueue;
+-(id)cachedObjectForKey:(id)arg1 ;
+-(void)enqueueGenerationBlock:(/*^block*/id)arg1 completion:(/*^block*/id)arg2 withPriority:(long long)arg3 forKey:(id)arg4 ;
+-(NSObject*<OS_dispatch_queue>)lockQueue;
+-(void)setLockQueue:(NSObject*<OS_dispatch_queue>)arg1 ;
+-(id)initWithCacheLimit:(unsigned long long)arg1 dispatchPriority:(long long)arg2 ;
+-(NSCache *)objectCache;
+-(void)beginGeneratingForKey:(id)arg1 ;
+-(void)_endGeneratingForKeyUnlocked:(id)arg1 ;
+-(NSCountedSet *)pendingKeys;
+-(NSMutableDictionary *)pendingGroups;
+-(void)_beginGeneratingForKeyUnlocked:(id)arg1 ;
+-(void)setCachedObject:(id)arg1 forKey:(id)arg2 ;
+-(void)enqueueBlock:(/*^block*/id)arg1 withPriority:(long long)arg2 ;
+-(BOOL)isGeneratingForKey:(id)arg1 ;
+-(void)endGeneratingForKey:(id)arg1 ;
+-(BOOL)waitOnGenerationForKey:(id)arg1 ;
+-(void)setObjectCache:(NSCache *)arg1 ;
+-(void)setPendingKeys:(NSCountedSet *)arg1 ;
+-(void)setPendingGroups:(NSMutableDictionary *)arg1 ;
+-(long long)dispatchPriority;
+-(void)setDispatchPriority:(long long)arg1 ;
+@end
+

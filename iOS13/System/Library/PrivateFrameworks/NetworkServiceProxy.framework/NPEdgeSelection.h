@@ -1,0 +1,55 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:24 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy
+*/
+
+#import <NetworkServiceProxy/EdgeSelection.h>
+
+@class NPWaldo, NSString, NSDate;
+
+@interface NPEdgeSelection : EdgeSelection {
+
+	NPWaldo* _waldoInfo;
+	NSString* _bestEdge;
+	unsigned long long _bestEdgeRTT;
+	unsigned long long _bestEdgeProbedRTT;
+	NSString* _nextBestEdge;
+	unsigned long long _nextBestEdgeRTT;
+	NSDate* _probeDate;
+
+}
+
+@property (retain) NSString * bestEdge;                               //@synthesize bestEdge=_bestEdge - In the implementation block
+@property (assign) unsigned long long bestEdgeRTT;                    //@synthesize bestEdgeRTT=_bestEdgeRTT - In the implementation block
+@property (assign) unsigned long long bestEdgeProbedRTT;              //@synthesize bestEdgeProbedRTT=_bestEdgeProbedRTT - In the implementation block
+@property (retain) NSString * nextBestEdge;                           //@synthesize nextBestEdge=_nextBestEdge - In the implementation block
+@property (assign) unsigned long long nextBestEdgeRTT;                //@synthesize nextBestEdgeRTT=_nextBestEdgeRTT - In the implementation block
+@property (retain) NSDate * probeDate;                                //@synthesize probeDate=_probeDate - In the implementation block
+@property (assign,nonatomic,__weak) NPWaldo * waldoInfo;              //@synthesize waldoInfo=_waldoInfo - In the implementation block
++(BOOL)supportsSecureCoding;
+-(id)description;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(NSString *)bestEdge;
+-(unsigned long long)bestEdgeRTT;
+-(unsigned long long)bestEdgeProbedRTT;
+-(NSString *)nextBestEdge;
+-(unsigned long long)nextBestEdgeRTT;
+-(void)trainEdgeSelection:(id)arg1 edgeRank:(unsigned long long)arg2 rtt:(unsigned long long)arg3 ;
+-(void)setNextBestEdge:(NSString *)arg1 ;
+-(void)setNextBestEdgeRTT:(unsigned long long)arg1 ;
+-(NPWaldo *)waldoInfo;
+-(void)getBestEdgeFromEdgeSelection;
+-(BOOL)shouldProbeForEdgeSelection:(id)arg1 edgeRank:(long long*)arg2 edgeIndex:(long long*)arg3 bestEdgeLabel:(id*)arg4 ;
+-(void)setBestEdge:(NSString *)arg1 ;
+-(void)setBestEdgeRTT:(unsigned long long)arg1 ;
+-(void)setBestEdgeProbedRTT:(unsigned long long)arg1 ;
+-(NSDate *)probeDate;
+-(void)setProbeDate:(NSDate *)arg1 ;
+-(id)initWithWaldo:(id)arg1 signature:(id)arg2 interfaceType:(id)arg3 ;
+-(void)updateEdgeSelection:(unsigned long long)arg1 ;
+-(id)copyEdgeSelectionTelemetry;
+-(void)setWaldoInfo:(NPWaldo *)arg1 ;
+@end
+

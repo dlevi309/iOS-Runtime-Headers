@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:23 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices
+*/
+
+#import <AssetsLibraryServices/PLAssetsdBaseClient.h>
+
+@interface PLAssetsdResourceInternalClient : PLAssetsdBaseClient
+-(void)batchSaveAssetsWithJobDictionaries:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)prepareRevertToOriginalForAsset:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)requestMasterThumbnailForAssetUUID:(id)arg1 completionHandler:(/*^block*/id)arg2 ;
+-(void)purgeExpiredOutboundSharingAssetsWithCompletionHandler:(/*^block*/id)arg1 ;
+@end
+

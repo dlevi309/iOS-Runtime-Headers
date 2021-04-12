@@ -1,0 +1,34 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:28 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
+*/
+
+#import <VideosUI/VideosUI-Structs.h>
+#import <UIKitCore/UICollectionViewCell.h>
+
+@class VUICollectionViewFeaturedView, TVImageLayout, IKViewElement;
+
+@interface VUICollectionViewFeaturedCell : UICollectionViewCell {
+
+	VUICollectionViewFeaturedView* _featuredView;
+	TVImageLayout* _imageLayout;
+	IKViewElement* _viewElement;
+
+}
+
+@property (nonatomic,retain) VUICollectionViewFeaturedView * featuredView;              //@synthesize featuredView=_featuredView - In the implementation block
+@property (nonatomic,retain) TVImageLayout * imageLayout;                               //@synthesize imageLayout=_imageLayout - In the implementation block
+@property (nonatomic,retain) IKViewElement * viewElement;                               //@synthesize viewElement=_viewElement - In the implementation block
++(CGSize)lockupSizeForElement:(id)arg1 ;
++(id)featuredCellWithElement:(id)arg1 existingCell:(id)arg2 ;
++(double)_iOSLockupWidthWithWindowWidth:(double)arg1 safeAreaInsets:(UIEdgeInsets)arg2 showsPageControl:(BOOL)arg3 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(IKViewElement *)viewElement;
+-(void)setViewElement:(IKViewElement *)arg1 ;
+-(TVImageLayout *)imageLayout;
+-(void)setImageLayout:(TVImageLayout *)arg1 ;
+-(VUICollectionViewFeaturedView *)featuredView;
+-(void)setFeaturedView:(VUICollectionViewFeaturedView *)arg1 ;
+@end
+

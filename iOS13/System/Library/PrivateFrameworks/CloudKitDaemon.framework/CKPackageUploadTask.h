@@ -1,0 +1,58 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+*/
+
+#import <libobjc.A.dylib/CKDCancelling.h>
+
+@protocol OS_dispatch_group;
+@class NSError, CKPackage, CKDMMCSItem, NSArray, CKDProgressTracker, CKDMMCSRequestOptions, NSObject, CKDCancelTokenGroup, NSString;
+
+@interface CKPackageUploadTask : NSObject <CKDCancelling> {
+
+	NSError* _error;
+	CKPackage* _package;
+	CKDMMCSItem* _MMCSManifestItem;
+	NSArray* _MMCSSectionItems;
+	CKDProgressTracker* _progressTracker;
+	CKDMMCSRequestOptions* _MMCSRequestOptions;
+	NSObject*<OS_dispatch_group> _group;
+	CKDCancelTokenGroup* _cancelTokens;
+
+}
+
+@property (retain) NSError * error;                                                   //@synthesize error=_error - In the implementation block
+@property (nonatomic,readonly) CKPackage * package;                                   //@synthesize package=_package - In the implementation block
+@property (nonatomic,retain) CKDMMCSItem * MMCSManifestItem;                          //@synthesize MMCSManifestItem=_MMCSManifestItem - In the implementation block
+@property (nonatomic,retain) NSArray * MMCSSectionItems;                              //@synthesize MMCSSectionItems=_MMCSSectionItems - In the implementation block
+@property (nonatomic,retain) CKDProgressTracker * progressTracker;                    //@synthesize progressTracker=_progressTracker - In the implementation block
+@property (nonatomic,retain) CKDMMCSRequestOptions * MMCSRequestOptions;              //@synthesize MMCSRequestOptions=_MMCSRequestOptions - In the implementation block
+@property (nonatomic,retain) NSObject*<OS_dispatch_group> group;                      //@synthesize group=_group - In the implementation block
+@property (nonatomic,retain) CKDCancelTokenGroup * cancelTokens;                      //@synthesize cancelTokens=_cancelTokens - In the implementation block
+@property (nonatomic,readonly) long long storageGroupingPolicy; 
+@property (nonatomic,readonly) long long uploadRank; 
+@property (nonatomic,readonly) NSString * recordKey; 
+-(void)setGroup:(NSObject*<OS_dispatch_group>)arg1 ;
+-(NSError *)error;
+-(void)cancel;
+-(void)setError:(NSError *)arg1 ;
+-(NSObject*<OS_dispatch_group>)group;
+-(CKPackage *)package;
+-(id)activityCreate;
+-(NSString *)recordKey;
+-(long long)uploadRank;
+-(long long)storageGroupingPolicy;
+-(CKDMMCSRequestOptions *)MMCSRequestOptions;
+-(void)setMMCSRequestOptions:(CKDMMCSRequestOptions *)arg1 ;
+-(CKDCancelTokenGroup *)cancelTokens;
+-(id)initWithPackage:(id)arg1 trackProgress:(BOOL)arg2 ;
+-(CKDProgressTracker *)progressTracker;
+-(void)setProgressTracker:(CKDProgressTracker *)arg1 ;
+-(void)setCancelTokens:(CKDCancelTokenGroup *)arg1 ;
+-(void)setMMCSManifestItem:(CKDMMCSItem *)arg1 ;
+-(void)setMMCSSectionItems:(NSArray *)arg1 ;
+-(NSArray *)MMCSSectionItems;
+-(CKDMMCSItem *)MMCSManifestItem;
+@end
+

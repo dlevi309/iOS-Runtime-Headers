@@ -1,0 +1,21 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:34 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
+*/
+
+#import <TelephonyUtilities/TUConversationParticipant.h>
+
+@class TUHandle;
+
+@interface TUMutableConversationParticipant : TUConversationParticipant
+
+@property (assign,nonatomic) unsigned long long identifier; 
+@property (nonatomic,copy) TUHandle * handle; 
+@property (assign,getter=isMuted,nonatomic) BOOL muted; 
+@property (assign,getter=isAudioEnabled,nonatomic) BOOL audioEnabled; 
+@property (assign,getter=isVideoEnabled,nonatomic) BOOL videoEnabled; 
+@property (assign,nonatomic) long long streamToken; 
++(BOOL)supportsSecureCoding;
+@end
+

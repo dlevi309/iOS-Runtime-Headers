@@ -1,0 +1,17 @@
+#import <BehaviorMiner/BMMiningTask.h>
+#import <BehaviorMiner/BMAprioriPatternMiner.h>
+#import <BehaviorMiner/BMItem.h>
+#import <BehaviorMiner/BMCoreRoutineProvider.h>
+#import <BehaviorMiner/BMRuleExtractor.h>
+#import <BehaviorMiner/BMEventExtractor.h>
+#import <BehaviorMiner/BMManagedObjectConverter.h>
+#import <BehaviorMiner/BMEvent.h>
+#import <BehaviorMiner/BMBasketExtractor.h>
+#import <BehaviorMiner/BMItemType.h>
+#import <BehaviorMiner/BMRule.h>
+#import <BehaviorMiner/BMRetrievalFilter.h>
+#import <BehaviorMiner/BMBehaviorRetriever.h>
+#import <BehaviorMiner/BMInteractionProvider.h>
+#import <BehaviorMiner/BMBehaviorStorage.h>
+#import <BehaviorMiner/BMItemMO.h>
+#import <BehaviorMiner/BMRuleMO.h>

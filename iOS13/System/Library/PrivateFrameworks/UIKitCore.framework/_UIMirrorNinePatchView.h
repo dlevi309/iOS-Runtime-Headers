@@ -1,0 +1,25 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:24 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+*/
+
+#import <UIKitCore/UIKitCore-Structs.h>
+#import <UIKitCore/UIView.h>
+
+@class UIImage, UIImageView;
+
+@interface _UIMirrorNinePatchView : UIView {
+
+	UIImage* _originalImage;
+	UIEdgeInsets _insets;
+	UIImageView* _imageViews[4];
+
+}
+-(id)initWithFrame:(CGRect)arg1 ;
+-(void)layoutSubviews;
+-(void)_dynamicUserInterfaceTraitDidChange;
+-(void)_updateResizableImageAndViews;
+-(void)setImage:(id)arg1 withResizableCornerSize:(CGSize)arg2 ;
+@end
+

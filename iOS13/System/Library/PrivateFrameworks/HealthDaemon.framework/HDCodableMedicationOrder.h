@@ -1,0 +1,103 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:09 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+*/
+
+#import <HealthDaemon/HealthDaemon-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/HDDecoding.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class HDCodableMedicationDosageList, NSData, HDCodableMedicalRecord, HDCodableMedicalCodingList, NSString, HDCodableMedicalCoding;
+
+@interface HDCodableMedicationOrder : PBCodable <HDDecoding, NSCopying> {
+
+	long long _numberOfFills;
+	HDCodableMedicationDosageList* _dosages;
+	NSData* _earliestDosageDate;
+	NSData* _endedDate;
+	HDCodableMedicalRecord* _medicalRecord;
+	HDCodableMedicalCodingList* _medicationCodings;
+	NSString* _prescriber;
+	HDCodableMedicalCodingList* _reasonCodings;
+	HDCodableMedicalCodingList* _reasonEndedCodings;
+	HDCodableMedicalCoding* _statusCoding;
+	NSData* _writtenDate;
+	SCD_Struct_HD7 _has;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (nonatomic,readonly) BOOL hasMedicalRecord; 
+@property (nonatomic,retain) HDCodableMedicalRecord * medicalRecord;                       //@synthesize medicalRecord=_medicalRecord - In the implementation block
+@property (nonatomic,readonly) BOOL hasMedicationCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * medicationCodings;               //@synthesize medicationCodings=_medicationCodings - In the implementation block
+@property (nonatomic,readonly) BOOL hasPrescriber; 
+@property (nonatomic,retain) NSString * prescriber;                                        //@synthesize prescriber=_prescriber - In the implementation block
+@property (assign,nonatomic) BOOL hasNumberOfFills; 
+@property (assign,nonatomic) long long numberOfFills;                                      //@synthesize numberOfFills=_numberOfFills - In the implementation block
+@property (nonatomic,readonly) BOOL hasDosages; 
+@property (nonatomic,retain) HDCodableMedicationDosageList * dosages;                      //@synthesize dosages=_dosages - In the implementation block
+@property (nonatomic,readonly) BOOL hasEarliestDosageDate; 
+@property (nonatomic,retain) NSData * earliestDosageDate;                                  //@synthesize earliestDosageDate=_earliestDosageDate - In the implementation block
+@property (nonatomic,readonly) BOOL hasWrittenDate; 
+@property (nonatomic,retain) NSData * writtenDate;                                         //@synthesize writtenDate=_writtenDate - In the implementation block
+@property (nonatomic,readonly) BOOL hasEndedDate; 
+@property (nonatomic,retain) NSData * endedDate;                                           //@synthesize endedDate=_endedDate - In the implementation block
+@property (nonatomic,readonly) BOOL hasStatusCoding; 
+@property (nonatomic,retain) HDCodableMedicalCoding * statusCoding;                        //@synthesize statusCoding=_statusCoding - In the implementation block
+@property (nonatomic,readonly) BOOL hasReasonCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * reasonCodings;                   //@synthesize reasonCodings=_reasonCodings - In the implementation block
+@property (nonatomic,readonly) BOOL hasReasonEndedCodings; 
+@property (nonatomic,retain) HDCodableMedicalCodingList * reasonEndedCodings;              //@synthesize reasonEndedCodings=_reasonEndedCodings - In the implementation block
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(NSString *)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(HDCodableMedicalCodingList *)medicationCodings;
+-(HDCodableMedicationDosageList *)dosages;
+-(NSData *)earliestDosageDate;
+-(HDCodableMedicalCoding *)statusCoding;
+-(NSString *)prescriber;
+-(long long)numberOfFills;
+-(NSData *)writtenDate;
+-(NSData *)endedDate;
+-(HDCodableMedicalCodingList *)reasonCodings;
+-(HDCodableMedicalCodingList *)reasonEndedCodings;
+-(void)setMedicalRecord:(HDCodableMedicalRecord *)arg1 ;
+-(void)setMedicationCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(void)setDosages:(HDCodableMedicationDosageList *)arg1 ;
+-(void)setEarliestDosageDate:(NSData *)arg1 ;
+-(void)setStatusCoding:(HDCodableMedicalCoding *)arg1 ;
+-(BOOL)hasMedicalRecord;
+-(BOOL)hasMedicationCodings;
+-(BOOL)hasDosages;
+-(BOOL)hasEarliestDosageDate;
+-(BOOL)hasStatusCoding;
+-(HDCodableMedicalRecord *)medicalRecord;
+-(void)setReasonCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(BOOL)applyToObject:(id)arg1 ;
+-(BOOL)applyToObject:(id)arg1 error:(out id*)arg2 ;
+-(void)setPrescriber:(NSString *)arg1 ;
+-(void)setNumberOfFills:(long long)arg1 ;
+-(void)setWrittenDate:(NSData *)arg1 ;
+-(void)setEndedDate:(NSData *)arg1 ;
+-(void)setReasonEndedCodings:(HDCodableMedicalCodingList *)arg1 ;
+-(BOOL)hasPrescriber;
+-(void)setHasNumberOfFills:(BOOL)arg1 ;
+-(BOOL)hasNumberOfFills;
+-(BOOL)hasWrittenDate;
+-(BOOL)hasEndedDate;
+-(BOOL)hasReasonCodings;
+-(BOOL)hasReasonEndedCodings;
+@end
+

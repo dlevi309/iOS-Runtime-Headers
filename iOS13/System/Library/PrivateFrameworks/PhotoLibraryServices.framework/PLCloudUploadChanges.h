@@ -1,0 +1,83 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:56 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices
+*/
+
+
+@class NSMutableArray, NSMutableSet;
+
+@interface PLCloudUploadChanges : NSObject {
+
+	NSMutableArray* _insertedAssets;
+	NSMutableArray* _updatedAssets;
+	NSMutableSet* _adjustedAssetUuids;
+	NSMutableSet* _propertyChangedAssetUuids;
+	NSMutableSet* _faceChangedAssetUuids;
+	NSMutableArray* _updatedMasters;
+	NSMutableArray* _insertedResources;
+	NSMutableArray* _updatedResources;
+	NSMutableArray* _albumInserts;
+	NSMutableArray* _albumChanges;
+	NSMutableArray* _memoryChanges;
+	NSMutableArray* _personChanges;
+	NSMutableArray* _faceCropChanges;
+	NSMutableArray* _suggestionChanges;
+	NSMutableSet* _updatedRelationship;
+	NSMutableArray* _deletedRecords;
+
+}
+
+@property (nonatomic,retain) NSMutableArray * insertedAssets;                       //@synthesize insertedAssets=_insertedAssets - In the implementation block
+@property (nonatomic,retain) NSMutableArray * updatedAssets;                        //@synthesize updatedAssets=_updatedAssets - In the implementation block
+@property (nonatomic,retain) NSMutableSet * adjustedAssetUuids;                     //@synthesize adjustedAssetUuids=_adjustedAssetUuids - In the implementation block
+@property (nonatomic,retain) NSMutableSet * propertyChangedAssetUuids;              //@synthesize propertyChangedAssetUuids=_propertyChangedAssetUuids - In the implementation block
+@property (nonatomic,retain) NSMutableSet * faceChangedAssetUuids;                  //@synthesize faceChangedAssetUuids=_faceChangedAssetUuids - In the implementation block
+@property (nonatomic,retain) NSMutableArray * updatedMasters;                       //@synthesize updatedMasters=_updatedMasters - In the implementation block
+@property (nonatomic,retain) NSMutableArray * insertedResources;                    //@synthesize insertedResources=_insertedResources - In the implementation block
+@property (nonatomic,retain) NSMutableArray * updatedResources;                     //@synthesize updatedResources=_updatedResources - In the implementation block
+@property (nonatomic,retain) NSMutableArray * albumInserts;                         //@synthesize albumInserts=_albumInserts - In the implementation block
+@property (nonatomic,retain) NSMutableArray * albumChanges;                         //@synthesize albumChanges=_albumChanges - In the implementation block
+@property (nonatomic,retain) NSMutableArray * memoryChanges;                        //@synthesize memoryChanges=_memoryChanges - In the implementation block
+@property (nonatomic,retain) NSMutableArray * personChanges;                        //@synthesize personChanges=_personChanges - In the implementation block
+@property (nonatomic,retain) NSMutableArray * faceCropChanges;                      //@synthesize faceCropChanges=_faceCropChanges - In the implementation block
+@property (nonatomic,retain) NSMutableArray * suggestionChanges;                    //@synthesize suggestionChanges=_suggestionChanges - In the implementation block
+@property (nonatomic,retain) NSMutableSet * updatedRelationship;                    //@synthesize updatedRelationship=_updatedRelationship - In the implementation block
+@property (nonatomic,retain) NSMutableArray * deletedRecords;                       //@synthesize deletedRecords=_deletedRecords - In the implementation block
+-(id)init;
+-(BOOL)isEmpty;
+-(NSMutableSet *)updatedRelationship;
+-(NSMutableArray *)deletedRecords;
+-(NSMutableArray *)suggestionChanges;
+-(NSMutableArray *)faceCropChanges;
+-(NSMutableArray *)personChanges;
+-(NSMutableArray *)memoryChanges;
+-(NSMutableArray *)albumChanges;
+-(NSMutableArray *)albumInserts;
+-(NSMutableArray *)updatedResources;
+-(NSMutableArray *)insertedResources;
+-(NSMutableSet *)faceChangedAssetUuids;
+-(NSMutableSet *)adjustedAssetUuids;
+-(NSMutableSet *)propertyChangedAssetUuids;
+-(NSMutableArray *)updatedMasters;
+-(NSMutableArray *)updatedAssets;
+-(NSMutableArray *)insertedAssets;
+-(id)summaryDescription;
+-(void)setUpdatedAssets:(NSMutableArray *)arg1 ;
+-(void)setInsertedAssets:(NSMutableArray *)arg1 ;
+-(void)setAdjustedAssetUuids:(NSMutableSet *)arg1 ;
+-(void)setPropertyChangedAssetUuids:(NSMutableSet *)arg1 ;
+-(void)setFaceChangedAssetUuids:(NSMutableSet *)arg1 ;
+-(void)setUpdatedMasters:(NSMutableArray *)arg1 ;
+-(void)setInsertedResources:(NSMutableArray *)arg1 ;
+-(void)setUpdatedResources:(NSMutableArray *)arg1 ;
+-(void)setAlbumInserts:(NSMutableArray *)arg1 ;
+-(void)setAlbumChanges:(NSMutableArray *)arg1 ;
+-(void)setMemoryChanges:(NSMutableArray *)arg1 ;
+-(void)setPersonChanges:(NSMutableArray *)arg1 ;
+-(void)setFaceCropChanges:(NSMutableArray *)arg1 ;
+-(void)setSuggestionChanges:(NSMutableArray *)arg1 ;
+-(void)setUpdatedRelationship:(NSMutableSet *)arg1 ;
+-(void)setDeletedRecords:(NSMutableArray *)arg1 ;
+@end
+

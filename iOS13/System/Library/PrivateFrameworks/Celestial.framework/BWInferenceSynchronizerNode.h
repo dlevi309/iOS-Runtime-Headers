@@ -1,0 +1,54 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:39 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/Celestial.framework/Celestial
+*/
+
+#import <Celestial/Celestial-Structs.h>
+#import <Celestial/BWNode.h>
+
+@class BWNodeInput;
+
+@interface BWInferenceSynchronizerNode : BWNode {
+
+	int _mostRecentEmittedCaptureIdentifier;
+	int _indexOfInputProvidingOutputSampleBuffer;
+	int _indexOfInputProvidingOnlyInferences;
+	int _indexOfInputProvidingPreferredInferences;
+	SCD_Struct_BW129 _contexts[2];
+	os_unfair_lock_s _bufferServicingLock;
+	unsigned char _maximumNumberOfInflightBuffers;
+	unsigned short _errorHandlingModel;
+	BOOL _synchronizesTopLevelAttachments;
+
+}
+
+@property (nonatomic,readonly) unsigned short errorHandlingModel;                            //@synthesize errorHandlingModel=_errorHandlingModel - In the implementation block
+@property (nonatomic,readonly) BWNodeInput * inputProvidingOutputSampleBuffer; 
+@property (nonatomic,readonly) BWNodeInput * inputProvidingOnlyInferences; 
+@property (nonatomic,readonly) BWNodeInput * inputProvidingPreferredInferences; 
+@property (assign,nonatomic) BOOL synchronizesTopLevelAttachments;                           //@synthesize synchronizesTopLevelAttachments=_synchronizesTopLevelAttachments - In the implementation block
++(void)initialize;
+-(id)init;
+-(void)dealloc;
+-(id)nodeType;
+-(void)configurationWithID:(long long)arg1 updatedFormat:(id)arg2 didBecomeLiveForInput:(id)arg3 ;
+-(void)didReachEndOfDataForInput:(id)arg1 ;
+-(id)nodeSubType;
+-(void)renderSampleBuffer:(opaqueCMSampleBufferRef)arg1 forInput:(id)arg2 ;
+-(void)handleDroppedSample:(id)arg1 forInput:(id)arg2 ;
+-(void)didSelectFormat:(id)arg1 forInput:(id)arg2 forAttachedMediaKey:(id)arg3 ;
+-(void)handleNodeError:(id)arg1 forInput:(id)arg2 ;
+-(void)handleStillImageReferenceFrameBracketedCaptureSequenceNumber:(int)arg1 forInput:(id)arg2 ;
+-(id)_bufferArrayToString:(id)arg1 ;
+-(id)initWithIndexOfInputProvidingOutputSampleBuffer:(int)arg1 indexOfInputProvidingPreferredInferences:(int)arg2 errorHandlingModel:(unsigned short)arg3 ;
+-(void)setSynchronizesTopLevelAttachments:(BOOL)arg1 ;
+-(void)_attemptBufferOrErrorEmission;
+-(unsigned short)errorHandlingModel;
+-(opaqueCMSampleBufferRef)_synchronizedBufferFromQueue:(id)arg1 withIdentifier:(unsigned)arg2 ;
+-(BOOL)synchronizesTopLevelAttachments;
+-(BWNodeInput *)inputProvidingOutputSampleBuffer;
+-(BWNodeInput *)inputProvidingPreferredInferences;
+-(BWNodeInput *)inputProvidingOnlyInferences;
+@end
+

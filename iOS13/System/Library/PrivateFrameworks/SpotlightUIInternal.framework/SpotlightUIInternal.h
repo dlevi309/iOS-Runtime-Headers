@@ -1,0 +1,16 @@
+#import <SpotlightUIInternal/SPUINavigationController.h>
+#import <SpotlightUIInternal/SPUIResilientView.h>
+#import <SpotlightUIInternal/SPUISearchViewController.h>
+#import <SpotlightUIInternal/SPUIResultsViewController.h>
+#import <SpotlightUIInternal/SPUISearchModel.h>
+#import <SpotlightUIInternal/SPUISearchModelGeneral.h>
+#import <SpotlightUIInternal/SPUISearchModelZKW.h>
+#import <SpotlightUIInternal/SPUIHeaderBlurView.h>
+#import <SpotlightUIInternal/SPUILockScreenFooterView.h>
+#import <SpotlightUIInternal/SPUITextField.h>
+#import <SpotlightUIInternal/SPUISearchHeader.h>
+#import <SpotlightUIInternal/SPUIPPTTypingHelper.h>
+#import <SpotlightUIInternal/SPUITestingHelper.h>
+#import <SpotlightUIInternal/SPUISearchFirstTimeViewController.h>
+#import <SpotlightUIInternal/SPUIFeedbackManager.h>
+#import <SpotlightUIInternal/SPUINavigationBar.h>

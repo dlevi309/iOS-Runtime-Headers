@@ -1,0 +1,56 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:02 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SilexVideo.framework/SilexVideo
+*/
+
+#import <libobjc.A.dylib/SVVideoPlaybackEventTracking.h>
+
+@protocol SVVideoPlaybackStateObserving, SVVideoLoadingStateObserving;
+@class NSError, NFStateMachine, NSString;
+
+@interface SVVideoPlaybackEventTracker : NSObject <SVVideoPlaybackEventTracking> {
+
+	/*^block*/id playbackStartBlock;
+	/*^block*/id playbackPausedBlock;
+	/*^block*/id playbackResumedBlock;
+	/*^block*/id playbackFinishedBlock;
+	/*^block*/id playbackFailedBlock;
+	id<SVVideoPlaybackStateObserving> _playbackStateObserver;
+	id<SVVideoLoadingStateObserving> _loadingStateObserver;
+	NFStateMachine* _stateMachine;
+	NSError* _error;
+
+}
+
+@property (nonatomic,readonly) id<SVVideoPlaybackStateObserving> playbackStateObserver;              //@synthesize playbackStateObserver=_playbackStateObserver - In the implementation block
+@property (nonatomic,readonly) id<SVVideoLoadingStateObserving> loadingStateObserver;                //@synthesize loadingStateObserver=_loadingStateObserver - In the implementation block
+@property (nonatomic,readonly) NFStateMachine * stateMachine;                                        //@synthesize stateMachine=_stateMachine - In the implementation block
+@property (nonatomic,copy) NSError * error;                                                          //@synthesize error=_error - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (setter=onPlaybackStart:,nonatomic,copy) id playbackStartBlock; 
+@property (setter=onPlaybackPaused:,nonatomic,copy) id playbackPausedBlock; 
+@property (setter=onPlaybackResumed:,nonatomic,copy) id playbackResumedBlock; 
+@property (setter=onPlaybackFinished:,nonatomic,copy) id playbackFinishedBlock; 
+@property (setter=onPlaybackFailed:,nonatomic,copy) id playbackFailedBlock; 
+-(NSError *)error;
+-(void)setError:(NSError *)arg1 ;
+-(NFStateMachine *)stateMachine;
+-(void)onPlaybackStart:(/*^block*/id)arg1 ;
+-(void)onPlaybackPaused:(/*^block*/id)arg1 ;
+-(void)onPlaybackResumed:(/*^block*/id)arg1 ;
+-(void)onPlaybackFinished:(/*^block*/id)arg1 ;
+-(void)onPlaybackFailed:(/*^block*/id)arg1 ;
+-(id<SVVideoLoadingStateObserving>)loadingStateObserver;
+-(id)initWithPlaybackStateObserver:(id)arg1 loadingStateObserver:(id)arg2 ;
+-(id<SVVideoPlaybackStateObserving>)playbackStateObserver;
+-(id)playbackStartBlock;
+-(id)playbackResumedBlock;
+-(id)playbackPausedBlock;
+-(id)playbackFinishedBlock;
+-(id)playbackFailedBlock;
+@end
+

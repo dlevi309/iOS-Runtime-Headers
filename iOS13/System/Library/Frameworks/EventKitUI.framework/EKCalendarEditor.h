@@ -1,0 +1,84 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:40 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/EventKitUI.framework/EventKitUI
+*/
+
+#import <EventKitUI/EventKitUI-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <libobjc.A.dylib/EKCalendarEditItemDelegate.h>
+
+@protocol EKCalendarEditorDelegate, EKStyleProvider;
+@class UITableView, NSArray, EKCalendarShareesEditItem, EKCalendarColorEditItem, EKSource, EKEventStore, EKCalendar, NSString;
+
+@interface EKCalendarEditor : UIViewController <EKCalendarEditItemDelegate> {
+
+	UITableView* _tableView;
+	NSArray* _editItems;
+	EKCalendarShareesEditItem* _shareesEditItem;
+	EKCalendarColorEditItem* _colorEditItem;
+	unsigned long long _entityType;
+	EKSource* _limitedToSource;
+	BOOL _isNewCalendar;
+	EKEventStore* _eventStore;
+	EKCalendar* _calendar;
+	id<EKCalendarEditorDelegate> _delegate;
+	id<EKStyleProvider> _styleProvider;
+
+}
+
+@property (nonatomic,retain) EKEventStore * eventStore;                                 //@synthesize eventStore=_eventStore - In the implementation block
+@property (nonatomic,retain) EKCalendar * calendar;                                     //@synthesize calendar=_calendar - In the implementation block
+@property (assign,nonatomic,__weak) id<EKCalendarEditorDelegate> delegate;              //@synthesize delegate=_delegate - In the implementation block
+@property (assign,nonatomic) BOOL isNewCalendar;                                        //@synthesize isNewCalendar=_isNewCalendar - In the implementation block
+@property (assign,nonatomic,__weak) id<EKStyleProvider> styleProvider;                  //@synthesize styleProvider=_styleProvider - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(void)dealloc;
+-(id<EKCalendarEditorDelegate>)delegate;
+-(void)setDelegate:(id<EKCalendarEditorDelegate>)arg1 ;
+-(EKCalendar *)calendar;
+-(void)setCalendar:(EKCalendar *)arg1 ;
+-(void)loadView;
+-(void)traitCollectionDidChange:(id)arg1 ;
+-(id)tableView;
+-(CGSize)preferredContentSize;
+-(void)scrollViewDidScroll:(id)arg1 ;
+-(void)viewWillAppear:(BOOL)arg1 ;
+-(void)viewDidLoad;
+-(void)viewWillLayoutSubviews;
+-(void)viewDidAppear:(BOOL)arg1 ;
+-(long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 ;
+-(id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 ;
+-(long long)numberOfSectionsInTableView:(id)arg1 ;
+-(id)tableView:(id)arg1 titleForHeaderInSection:(long long)arg2 ;
+-(BOOL)isModalInPresentation;
+-(double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2 ;
+-(double)tableView:(id)arg1 heightForFooterInSection:(long long)arg2 ;
+-(id)tableView:(id)arg1 viewForFooterInSection:(long long)arg2 ;
+-(BOOL)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2 ;
+-(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 ;
+-(void)done:(id)arg1 ;
+-(void)cancel:(id)arg1 ;
+-(void)setStyleProvider:(id<EKStyleProvider>)arg1 ;
+-(id<EKStyleProvider>)styleProvider;
+-(EKEventStore *)eventStore;
+-(void)_localeChanged;
+-(void)calendarItemStartedEditing:(id)arg1 ;
+-(void)setEventStore:(EKEventStore *)arg1 ;
+-(id)owningNavigationController;
+-(BOOL)isNewCalendar;
+-(void)_eventStoreChanged:(id)arg1 ;
+-(id)_editItems;
+-(void)setupForCalendar;
+-(void)_deleteClicked:(id)arg1 ;
+-(BOOL)_shouldShowDeleteButton;
+-(void)_presentValidationAlert:(id)arg1 ;
+-(void)_deleteCalendar;
+-(int)sectionForCalendarEditItem:(id)arg1 ;
+-(id)initWithCalendar:(id)arg1 eventStore:(id)arg2 entityType:(unsigned long long)arg3 limitedToSource:(id)arg4 ;
+-(void)setIsNewCalendar:(BOOL)arg1 ;
+@end
+

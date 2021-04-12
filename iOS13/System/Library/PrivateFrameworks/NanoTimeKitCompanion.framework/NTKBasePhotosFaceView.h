@@ -1,0 +1,138 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:43 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/NanoTimeKitCompanion-Structs.h>
+#import <NanoTimeKitCompanion/NTKBackgroundImageFaceView.h>
+#import <libobjc.A.dylib/NTKPhotoImageViewDelegate.h>
+#import <UIKit/UIGestureRecognizerDelegate.h>
+
+@class NTKPhotoImageView, UILongPressGestureRecognizer, UIView, NSTimer, NTKTaskScheduler, UIColor, NTKUtilityComplicationFactory, NTKAlbumEmptyView, NSString;
+
+@interface NTKBasePhotosFaceView : NTKBackgroundImageFaceView <NTKPhotoImageViewDelegate, UIGestureRecognizerDelegate> {
+
+	NTKPhotoImageView* _posterImageView;
+	UILongPressGestureRecognizer* _longPressGesture;
+	BOOL _lastLongPressGestureWasCancelled;
+	BOOL _paused;
+	BOOL _updateWhenUnpausing;
+	UIView* _blackView;
+	BOOL _shouldPlayIntro;
+	BOOL _shouldPlayOnWake;
+	NSTimer* _playOnWakeTimeout;
+	NTKTaskScheduler* _taskScheduler;
+	BOOL _preLoadingPhotoOnSleep;
+	BOOL _preloadedPhotoOnSleep;
+	long long _previousDataMode;
+	unsigned long long _dateAlignment;
+	UIView* _cornerView;
+	UIColor* _foregroundColor;
+	UIColor* _shadowColor;
+	UIColor* _legibilityGradientColor;
+	UIView* _currentGradientView;
+	unsigned _isContentLoaded : 1;
+	unsigned _isInteractive : 1;
+	unsigned _isUsingLegibility : 1;
+	NTKUtilityComplicationFactory* _complicationFactory;
+	BOOL _noPhotosViewVisible;
+	NTKAlbumEmptyView* _noPhotosView;
+
+}
+
+@property (nonatomic,readonly) unsigned long long dateAlignment; 
+@property (nonatomic,readonly) UIView * cornerView;                                              //@synthesize cornerView=_cornerView - In the implementation block
+@property (nonatomic,readonly) BOOL isInteractive;                                               //@synthesize isInteractive=_isInteractive - In the implementation block
+@property (nonatomic,readonly) NTKPhotoImageView * posterImageView;                              //@synthesize posterImageView=_posterImageView - In the implementation block
+@property (nonatomic,readonly) NTKAlbumEmptyView * noPhotosView;                                 //@synthesize noPhotosView=_noPhotosView - In the implementation block
+@property (assign,getter=isNoPhotosViewVisible,nonatomic) BOOL noPhotosViewVisible;              //@synthesize noPhotosViewVisible=_noPhotosViewVisible - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)_temporaryDirectory;
++(id)_analyzeSidecarPhoto:(id)arg1 dateAlignment:(unsigned long long)arg2 ;
++(id)_analysisForPhoto:(id)arg1 dateAlignment:(unsigned long long)arg2 ;
++(id)_saveSidecarPhotoAnalysis:(id)arg1 ;
+-(void)dealloc;
+-(BOOL)gestureRecognizerShouldBegin:(id)arg1 ;
+-(void)layoutSubviews;
+-(BOOL)isInteractive;
+-(void)_handleLongPress:(id)arg1 ;
+-(BOOL)_screenOn;
+-(void)_animateIn;
+-(void)_playVideo;
+-(NTKPhotoImageView *)posterImageView;
+-(id)initWithFaceStyle:(long long)arg1 forDevice:(id)arg2 clientIdentifier:(id)arg3 ;
+-(void)_loadSnapshotContentViews;
+-(void)_unloadSnapshotContentViews;
+-(void)_configureForEditMode:(long long)arg1 ;
+-(void)_configureForTransitionFraction:(double)arg1 fromEditMode:(long long)arg2 toEditMode:(long long)arg3 ;
+-(void)_applyOption:(id)arg1 forCustomEditMode:(long long)arg2 slot:(id)arg3 ;
+-(void)_applyTransitionFraction:(double)arg1 fromOption:(id)arg2 toOption:(id)arg3 forCustomEditMode:(long long)arg4 slot:(id)arg5 ;
+-(unsigned long long)_keylineLabelAlignmentForCustomEditMode:(long long)arg1 slot:(id)arg2 ;
+-(id)_keylineViewForCustomEditMode:(long long)arg1 slot:(id)arg2 ;
+-(void)_applyRubberBandingFraction:(double)arg1 forCustomEditMode:(long long)arg2 slot:(id)arg3 ;
+-(void)_configureComplicationView:(id)arg1 forSlot:(id)arg2 ;
+-(id)_digitalTimeLabelStyleFromViewMode:(long long)arg1 faceBounds:(CGRect)arg2 ;
+-(void)_prepareForEditing;
+-(void)_cleanupAfterEditing;
+-(id)_newLegacyViewForComplication:(id)arg1 family:(long long)arg2 slot:(id)arg3 ;
+-(void)_loadLayoutRules;
+-(BOOL)_usesCustomZoom;
+-(void)_applyDataMode;
+-(void)_handleWristRaiseScreenWake;
+-(void)_handleOrdinaryScreenWake;
+-(unsigned long long)_keylineLabelAlignmentForComplicationSlot:(id)arg1 ;
+-(void)_setDateAttributes:(id)arg1 animated:(BOOL)arg2 ;
+-(UIView *)cornerView;
+-(void)setNoPhotosViewVisible:(BOOL)arg1 ;
+-(void)_invalidatePreloadedPhoto;
+-(BOOL)_preloadNextPhoto;
+-(void)_applyFrozen;
+-(unsigned long long)dateAlignment;
+-(void)_configureComplicationFactory;
+-(void)_unpauseFromSwitcher;
+-(double)_timeTravelYAdjustment;
+-(void)_layoutForegroundContainerView;
+-(void)_applyAlignment;
+-(void)_setComplicationsHidden:(BOOL)arg1 ;
+-(long long)_utilitySlotForSlot:(id)arg1 ;
+-(double)_backgroundImageAlphaForEditMode:(long long)arg1 ;
+-(double)_editSpeedForCustomEditMode:(long long)arg1 slot:(id)arg2 ;
+-(void)_updatePaused;
+-(void)_applySlow;
+-(void)_prepareForOrb;
+-(void)_cleanupAfterOrb:(BOOL)arg1 ;
+-(void)_playPhoto;
+-(void)_playVideoForScreenWake:(id)arg1 ;
+-(void)_playStill;
+-(void)_hideCurtainView;
+-(void)_scheduleSleepPreloadTask;
+-(void)_handleScreenWake;
+-(void)_applyForegroundAlphaForTransitionFraction:(double)arg1 fromEditMode:(long long)arg2 toEditMode:(long long)arg3 ;
+-(void)_prepareToZoomWithIconView:(id)arg1 minDiameter:(double)arg2 maxDiameter:(double)arg3 ;
+-(void)_setZoomFraction:(double)arg1 iconDiameter:(double)arg2 ;
+-(void)_cleanupAfterZoom;
+-(BOOL)_timeLabelUsesLegibility;
+-(id)_newGradientViewWithColor:(id)arg1 ;
+-(void)_applyComplicationContentSpecificAttributesAnimated:(BOOL)arg1 ;
+-(BOOL)_curtainViewVisible;
+-(void)_applyScrubbingForegroundColor:(id)arg1 shadowColor:(id)arg2 ;
+-(void)imageViewDidBeginPlaying:(id)arg1 ;
+-(void)imageViewDidEndPlaying:(id)arg1 ;
+-(BOOL)_fadesComplicationSlot:(id)arg1 inEditMode:(long long)arg2 ;
+-(double)_timeLabelAlphaForEditMode:(long long)arg1 ;
+-(long long)_complicationPickerStyleForSlot:(id)arg1 ;
+-(double)_keylineCornerRadiusForComplicationSlot:(id)arg1 ;
+-(id)_selectedContentView;
+-(void)_showCurtainView;
+-(void)_startScrubbingAnimationFromUIViewAnimateWithDuration;
+-(void)_endScrubbingAnimationFromUIViewAnimateWithDuration;
+-(BOOL)isNoPhotosViewVisible;
+-(BOOL)screenWillGoDark;
+-(BOOL)isCheapCopy;
+-(NTKAlbumEmptyView *)noPhotosView;
+@end
+

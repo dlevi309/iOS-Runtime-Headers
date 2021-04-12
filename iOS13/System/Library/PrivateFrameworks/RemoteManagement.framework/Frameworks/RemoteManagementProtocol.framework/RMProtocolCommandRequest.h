@@ -1,0 +1,38 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:14 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementProtocol.framework/RemoteManagementProtocol
+*/
+
+#import <RemoteManagementProtocol/RemoteManagementProtocol-Structs.h>
+#import <RemoteManagementModel/RMModelPayloadBase.h>
+
+@class NSString, RMModelAnyPayload, NSArray;
+
+@interface RMProtocolCommandRequest : RMModelPayloadBase {
+
+	NSString* _requestStatus;
+	NSString* _requestIdentifier;
+	RMModelAnyPayload* _requestResult;
+	NSArray* _requestReasons;
+
+}
+
+@property (nonatomic,copy) NSString * requestStatus;                       //@synthesize requestStatus=_requestStatus - In the implementation block
+@property (nonatomic,copy) NSString * requestIdentifier;                   //@synthesize requestIdentifier=_requestIdentifier - In the implementation block
+@property (nonatomic,copy) RMModelAnyPayload * requestResult;              //@synthesize requestResult=_requestResult - In the implementation block
+@property (nonatomic,copy) NSArray * requestReasons;                       //@synthesize requestReasons=_requestReasons - In the implementation block
++(id)requestWithStatus:(id)arg1 identifier:(id)arg2 result:(id)arg3 reasons:(id)arg4 ;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(NSString *)requestStatus;
+-(void)setRequestIdentifier:(NSString *)arg1 ;
+-(NSString *)requestIdentifier;
+-(void)setRequestStatus:(NSString *)arg1 ;
+-(id)serializeWithType:(short)arg1 ;
+-(BOOL)loadFromDictionary:(id)arg1 serializationType:(short)arg2 error:(id*)arg3 ;
+-(void)setRequestResult:(RMModelAnyPayload *)arg1 ;
+-(void)setRequestReasons:(NSArray *)arg1 ;
+-(RMModelAnyPayload *)requestResult;
+-(NSArray *)requestReasons;
+@end
+

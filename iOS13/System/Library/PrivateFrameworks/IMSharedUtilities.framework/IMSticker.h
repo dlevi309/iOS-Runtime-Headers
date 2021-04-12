@@ -1,0 +1,56 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:41 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
+*/
+
+
+@class NSURL, NSString, NSData, NSDictionary;
+
+@interface IMSticker : NSObject {
+
+	NSURL* _fileURL;
+	NSString* _stickerGUID;
+	NSString* _stickerPackGUID;
+	NSString* _accessibilityLabel;
+	NSString* _moodCategory;
+	NSString* _stickerName;
+	NSData* _recipe;
+	NSString* _ballonBundleID;
+	NSDictionary* _attributionInfo;
+
+}
+
+@property (nonatomic,retain) NSData * recipe;                                //@synthesize recipe=_recipe - In the implementation block
+@property (nonatomic,copy) NSString * ballonBundleID;                        //@synthesize ballonBundleID=_ballonBundleID - In the implementation block
+@property (nonatomic,copy) NSDictionary * attributionInfo;                   //@synthesize attributionInfo=_attributionInfo - In the implementation block
+@property (nonatomic,copy,readonly) NSURL * fileURL;                         //@synthesize fileURL=_fileURL - In the implementation block
+@property (nonatomic,copy,readonly) NSString * stickerGUID;                  //@synthesize stickerGUID=_stickerGUID - In the implementation block
+@property (nonatomic,copy,readonly) NSString * stickerPackGUID;              //@synthesize stickerPackGUID=_stickerPackGUID - In the implementation block
+@property (nonatomic,copy) NSString * accessibilityLabel;                    //@synthesize accessibilityLabel=_accessibilityLabel - In the implementation block
+@property (nonatomic,copy) NSString * moodCategory;                          //@synthesize moodCategory=_moodCategory - In the implementation block
+@property (nonatomic,copy) NSString * stickerName;                           //@synthesize stickerName=_stickerName - In the implementation block
+-(id)init;
+-(void)dealloc;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(id)description;
+-(NSURL *)fileURL;
+-(NSString *)accessibilityLabel;
+-(void)setAccessibilityLabel:(NSString *)arg1 ;
+-(NSString *)stickerGUID;
+-(NSString *)stickerPackGUID;
+-(id)initWithStickerID:(id)arg1 stickerPackID:(id)arg2 fileURL:(id)arg3 accessibilityLabel:(id)arg4 moodCategory:(id)arg5 stickerName:(id)arg6 ;
+-(id)initWithStickerPropertyDictionary:(id)arg1 stickerPackID:(id)arg2 stickerPackBundlePath:(id)arg3 ;
+-(NSString *)moodCategory;
+-(void)setMoodCategory:(NSString *)arg1 ;
+-(NSString *)stickerName;
+-(void)setStickerName:(NSString *)arg1 ;
+-(NSData *)recipe;
+-(void)setRecipe:(NSData *)arg1 ;
+-(NSString *)ballonBundleID;
+-(void)setBallonBundleID:(NSString *)arg1 ;
+-(NSDictionary *)attributionInfo;
+-(void)setAttributionInfo:(NSDictionary *)arg1 ;
+@end
+

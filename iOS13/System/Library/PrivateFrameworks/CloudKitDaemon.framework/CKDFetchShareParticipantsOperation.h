@@ -1,0 +1,36 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:08 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+*/
+
+#import <CloudKitDaemon/CKDOperation.h>
+
+@class CKDPublicIdentityLookupRequest, NSArray;
+
+@interface CKDFetchShareParticipantsOperation : CKDOperation {
+
+	/*^block*/id _shareParticipantFetchedBlock;
+	CKDPublicIdentityLookupRequest* _pendingRequest;
+	NSArray* _userIdentityLookupInfos;
+
+}
+
+@property (nonatomic,retain) CKDPublicIdentityLookupRequest * pendingRequest;              //@synthesize pendingRequest=_pendingRequest - In the implementation block
+@property (nonatomic,retain) NSArray * userIdentityLookupInfos;                            //@synthesize userIdentityLookupInfos=_userIdentityLookupInfos - In the implementation block
+@property (nonatomic,copy) id shareParticipantFetchedBlock;                                //@synthesize shareParticipantFetchedBlock=_shareParticipantFetchedBlock - In the implementation block
+-(void)main;
+-(void)finishWithError:(id)arg1 ;
+-(void)setPendingRequest:(CKDPublicIdentityLookupRequest *)arg1 ;
+-(CKDPublicIdentityLookupRequest *)pendingRequest;
+-(void)_finishOnCallbackQueueWithError:(id)arg1 ;
+-(id)activityCreate;
+-(void)setShareParticipantFetchedBlock:(id)arg1 ;
+-(void)setUserIdentityLookupInfos:(NSArray *)arg1 ;
+-(NSArray *)userIdentityLookupInfos;
+-(id)shareParticipantFetchedBlock;
+-(id)initWithOperationInfo:(id)arg1 clientContext:(id)arg2 ;
+-(void)_handleFetchedInfo:(id)arg1 withIdentity:(id)arg2 error:(id)arg3 ;
+-(void)_fetchIdentities;
+@end
+

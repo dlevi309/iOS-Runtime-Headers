@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:52 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit
+*/
+
+#import <CalendarUIKit/CUIKDescriptionGenerator.h>
+
+@interface CUIKPhoneNumberDescriptionGenerator : CUIKDescriptionGenerator
++(id)sharedGenerator;
++(id)normalizedPhoneNumber:(id)arg1 ;
+-(id)formattedStringForPhoneNumber:(id)arg1 ;
+-(id)formattedStringForTelURL:(id)arg1 ;
+@end
+

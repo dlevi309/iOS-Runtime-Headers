@@ -1,0 +1,141 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:26 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
+*/
+
+#import <SAObjects/SADomainObject.h>
+
+@class SASportsEntity, NSArray, NSString, NSNumber, SALCMLiveTuneInButton, SAUIAppPunchOut, NSDate, SALCMToggleButton;
+
+@interface SASportsMatchup : SADomainObject
+
+@property (nonatomic,retain) SASportsEntity * awayEntity; 
+@property (nonatomic,copy) NSArray * awayLineScores; 
+@property (nonatomic,copy) NSString * awayScore; 
+@property (nonatomic,copy) NSNumber * awayShootoutPoints; 
+@property (nonatomic,copy) NSString * awayTeamRecordSummary; 
+@property (nonatomic,copy) NSString * currentPeriod; 
+@property (nonatomic,copy) NSNumber * expectedLineScoreCount; 
+@property (nonatomic,copy) NSString * favoredEntity; 
+@property (nonatomic,copy) NSString * gameSummary; 
+@property (nonatomic,copy) NSString * gameType; 
+@property (nonatomic,retain) id<SAServerBoundCommand> getAppsCommand; 
+@property (nonatomic,retain) id<SAServerBoundCommand> getModalDetailSnippetCommand; 
+@property (nonatomic,retain) SASportsEntity * homeEntity; 
+@property (nonatomic,copy) NSArray * homeLineScores; 
+@property (nonatomic,copy) NSString * homeScore; 
+@property (nonatomic,copy) NSNumber * homeShootoutPoints; 
+@property (nonatomic,copy) NSString * homeTeamRecordSummary; 
+@property (assign,nonatomic) BOOL isAvailable; 
+@property (nonatomic,copy) NSNumber * isExplicitlyEndOfPeriod; 
+@property (assign,nonatomic) BOOL isOnNow; 
+@property (assign,nonatomic) BOOL isWatchlistable; 
+@property (nonatomic,copy) NSString * line; 
+@property (nonatomic,retain) SALCMLiveTuneInButton * liveTuneInButton; 
+@property (nonatomic,copy) NSString * location; 
+@property (nonatomic,copy) NSString * locationName; 
+@property (nonatomic,copy) NSString * matchupOrder; 
+@property (nonatomic,copy) NSString * overUnder; 
+@property (nonatomic,copy) NSString * periodDescription; 
+@property (nonatomic,copy) NSArray * playSummaries; 
+@property (nonatomic,copy) NSNumber * playoff; 
+@property (nonatomic,retain) SAUIAppPunchOut * punchout; 
+@property (nonatomic,copy) NSDate * startTime; 
+@property (nonatomic,copy) NSNumber * statsId; 
+@property (nonatomic,copy) NSString * status; 
+@property (nonatomic,copy) NSString * timeRemaining; 
+@property (nonatomic,copy) NSNumber * timeTBD; 
+@property (nonatomic,copy) NSString * title; 
+@property (nonatomic,retain) SALCMToggleButton * toggleButton; 
+@property (nonatomic,copy) NSString * tournamentSeriesDescription; 
+@property (nonatomic,copy) NSArray * tvChannels; 
+@property (nonatomic,copy) NSString * winningEntity; 
++(id)matchup;
++(id)matchupWithDictionary:(id)arg1 context:(id)arg2 ;
+-(NSString *)status;
+-(id)groupIdentifier;
+-(NSString *)title;
+-(void)setTitle:(NSString *)arg1 ;
+-(NSString *)location;
+-(NSString *)locationName;
+-(BOOL)isAvailable;
+-(void)setIsAvailable:(BOOL)arg1 ;
+-(void)setStatus:(NSString *)arg1 ;
+-(NSDate *)startTime;
+-(void)setLocation:(NSString *)arg1 ;
+-(void)setStartTime:(NSDate *)arg1 ;
+-(NSString *)line;
+-(void)setLine:(NSString *)arg1 ;
+-(void)setLocationName:(NSString *)arg1 ;
+-(SAUIAppPunchOut *)punchout;
+-(void)setPunchout:(SAUIAppPunchOut *)arg1 ;
+-(void)setTimeRemaining:(NSString *)arg1 ;
+-(NSString *)timeRemaining;
+-(id)encodedClassName;
+-(SALCMToggleButton *)toggleButton;
+-(void)setToggleButton:(SALCMToggleButton *)arg1 ;
+-(SALCMLiveTuneInButton *)liveTuneInButton;
+-(SASportsEntity *)awayEntity;
+-(void)setAwayEntity:(SASportsEntity *)arg1 ;
+-(NSArray *)awayLineScores;
+-(void)setAwayLineScores:(NSArray *)arg1 ;
+-(NSString *)awayScore;
+-(void)setAwayScore:(NSString *)arg1 ;
+-(NSNumber *)awayShootoutPoints;
+-(void)setAwayShootoutPoints:(NSNumber *)arg1 ;
+-(NSString *)awayTeamRecordSummary;
+-(void)setAwayTeamRecordSummary:(NSString *)arg1 ;
+-(NSString *)currentPeriod;
+-(void)setCurrentPeriod:(NSString *)arg1 ;
+-(NSNumber *)expectedLineScoreCount;
+-(void)setExpectedLineScoreCount:(NSNumber *)arg1 ;
+-(NSString *)favoredEntity;
+-(void)setFavoredEntity:(NSString *)arg1 ;
+-(NSString *)gameSummary;
+-(void)setGameSummary:(NSString *)arg1 ;
+-(NSString *)gameType;
+-(void)setGameType:(NSString *)arg1 ;
+-(id<SAServerBoundCommand>)getAppsCommand;
+-(void)setGetAppsCommand:(id<SAServerBoundCommand>)arg1 ;
+-(id<SAServerBoundCommand>)getModalDetailSnippetCommand;
+-(void)setGetModalDetailSnippetCommand:(id<SAServerBoundCommand>)arg1 ;
+-(SASportsEntity *)homeEntity;
+-(void)setHomeEntity:(SASportsEntity *)arg1 ;
+-(NSArray *)homeLineScores;
+-(void)setHomeLineScores:(NSArray *)arg1 ;
+-(NSString *)homeScore;
+-(void)setHomeScore:(NSString *)arg1 ;
+-(NSNumber *)homeShootoutPoints;
+-(void)setHomeShootoutPoints:(NSNumber *)arg1 ;
+-(NSString *)homeTeamRecordSummary;
+-(void)setHomeTeamRecordSummary:(NSString *)arg1 ;
+-(NSNumber *)isExplicitlyEndOfPeriod;
+-(void)setIsExplicitlyEndOfPeriod:(NSNumber *)arg1 ;
+-(BOOL)isOnNow;
+-(void)setIsOnNow:(BOOL)arg1 ;
+-(BOOL)isWatchlistable;
+-(void)setIsWatchlistable:(BOOL)arg1 ;
+-(void)setLiveTuneInButton:(SALCMLiveTuneInButton *)arg1 ;
+-(NSString *)matchupOrder;
+-(void)setMatchupOrder:(NSString *)arg1 ;
+-(NSString *)overUnder;
+-(void)setOverUnder:(NSString *)arg1 ;
+-(NSString *)periodDescription;
+-(void)setPeriodDescription:(NSString *)arg1 ;
+-(NSArray *)playSummaries;
+-(void)setPlaySummaries:(NSArray *)arg1 ;
+-(NSNumber *)playoff;
+-(void)setPlayoff:(NSNumber *)arg1 ;
+-(NSNumber *)statsId;
+-(void)setStatsId:(NSNumber *)arg1 ;
+-(NSNumber *)timeTBD;
+-(void)setTimeTBD:(NSNumber *)arg1 ;
+-(NSString *)tournamentSeriesDescription;
+-(void)setTournamentSeriesDescription:(NSString *)arg1 ;
+-(NSArray *)tvChannels;
+-(void)setTvChannels:(NSArray *)arg1 ;
+-(NSString *)winningEntity;
+-(void)setWinningEntity:(NSString *)arg1 ;
+@end
+

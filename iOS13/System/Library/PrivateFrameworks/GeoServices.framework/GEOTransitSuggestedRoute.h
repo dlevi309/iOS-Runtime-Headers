@@ -1,0 +1,210 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:39 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+*/
+
+#import <GeoServices/GeoServices-Structs.h>
+#import <ProtocolBuffer/PBCodable.h>
+#import <libobjc.A.dylib/GEOCompanionCompatibility.h>
+#import <libobjc.A.dylib/NSCopying.h>
+
+@class PBDataReader, PBUnknownFields, GEOTransitRouteDisplayStrings, GEOTransitEngineDebugData, NSData, NSMutableArray, GEOPBTransitRoutingIncidentMessage, NSString;
+
+@interface GEOTransitSuggestedRoute : PBCodable <GEOCompanionCompatibility, NSCopying> {
+
+	PBDataReader* _reader;
+	PBUnknownFields* _unknownFields;
+	SCD_Struct_GE1* _routeBadges;
+	GEOTransitRouteDisplayStrings* _displayStrings;
+	GEOTransitEngineDebugData* _engineDebugData;
+	NSData* _routeHandle;
+	NSMutableArray* _routePlanningArtworks;
+	NSMutableArray* _sectionOptions;
+	NSMutableArray* _sections;
+	NSMutableArray* _steps;
+	GEOPBTransitRoutingIncidentMessage* _transitIncidentMessage;
+	unsigned _readerMarkPos;
+	unsigned _readerMarkLength;
+	os_unfair_lock_s _readerLock;
+	unsigned _absEndTime;
+	unsigned _absStartTime;
+	unsigned _rank;
+	unsigned _travelTimeAggressiveEstimate;
+	unsigned _travelTimeConservativeEstimate;
+	BOOL _supportsRouteUpdates;
+	struct {
+		unsigned has_absEndTime : 1;
+		unsigned has_absStartTime : 1;
+		unsigned has_rank : 1;
+		unsigned has_travelTimeAggressiveEstimate : 1;
+		unsigned has_travelTimeConservativeEstimate : 1;
+		unsigned has_supportsRouteUpdates : 1;
+		unsigned read_unknownFields : 1;
+		unsigned read_routeBadges : 1;
+		unsigned read_displayStrings : 1;
+		unsigned read_engineDebugData : 1;
+		unsigned read_routeHandle : 1;
+		unsigned read_routePlanningArtworks : 1;
+		unsigned read_sectionOptions : 1;
+		unsigned read_sections : 1;
+		unsigned read_steps : 1;
+		unsigned read_transitIncidentMessage : 1;
+		unsigned wrote_unknownFields : 1;
+		unsigned wrote_routeBadges : 1;
+		unsigned wrote_displayStrings : 1;
+		unsigned wrote_engineDebugData : 1;
+		unsigned wrote_routeHandle : 1;
+		unsigned wrote_routePlanningArtworks : 1;
+		unsigned wrote_sectionOptions : 1;
+		unsigned wrote_sections : 1;
+		unsigned wrote_steps : 1;
+		unsigned wrote_transitIncidentMessage : 1;
+		unsigned wrote_absEndTime : 1;
+		unsigned wrote_absStartTime : 1;
+		unsigned wrote_rank : 1;
+		unsigned wrote_travelTimeAggressiveEstimate : 1;
+		unsigned wrote_travelTimeConservativeEstimate : 1;
+		unsigned wrote_supportsRouteUpdates : 1;
+	}  _flags;
+
+}
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+@property (getter=isWalkingOnlyRoute,nonatomic,readonly) BOOL walkingOnlyRoute; 
+@property (assign,nonatomic) BOOL hasAbsStartTime; 
+@property (assign,nonatomic) unsigned absStartTime; 
+@property (assign,nonatomic) BOOL hasAbsEndTime; 
+@property (assign,nonatomic) unsigned absEndTime; 
+@property (nonatomic,retain) NSMutableArray * steps; 
+@property (nonatomic,readonly) BOOL hasRouteHandle; 
+@property (nonatomic,retain) NSData * routeHandle; 
+@property (assign,nonatomic) BOOL hasRank; 
+@property (assign,nonatomic) unsigned rank; 
+@property (nonatomic,readonly) BOOL hasTransitIncidentMessage; 
+@property (nonatomic,retain) GEOPBTransitRoutingIncidentMessage * transitIncidentMessage; 
+@property (nonatomic,retain) NSMutableArray * routePlanningArtworks; 
+@property (nonatomic,readonly) BOOL hasDisplayStrings; 
+@property (nonatomic,retain) GEOTransitRouteDisplayStrings * displayStrings; 
+@property (nonatomic,readonly) unsigned long long routeBadgesCount; 
+@property (nonatomic,readonly) int* routeBadges; 
+@property (nonatomic,retain) NSMutableArray * sectionOptions; 
+@property (nonatomic,retain) NSMutableArray * sections; 
+@property (assign,nonatomic) BOOL hasTravelTimeAggressiveEstimate; 
+@property (assign,nonatomic) unsigned travelTimeAggressiveEstimate; 
+@property (assign,nonatomic) BOOL hasTravelTimeConservativeEstimate; 
+@property (assign,nonatomic) unsigned travelTimeConservativeEstimate; 
+@property (nonatomic,readonly) BOOL hasEngineDebugData; 
+@property (nonatomic,retain) GEOTransitEngineDebugData * engineDebugData; 
+@property (assign,nonatomic) BOOL hasSupportsRouteUpdates; 
+@property (assign,nonatomic) BOOL supportsRouteUpdates; 
+@property (nonatomic,readonly) PBUnknownFields * unknownFields; 
++(BOOL)isValid:(id)arg1 ;
++(Class)stepsType;
++(Class)routePlanningArtworkType;
++(Class)sectionOptionType;
++(Class)sectionType;
+-(id)init;
+-(void)dealloc;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(NSString *)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)initWithData:(id)arg1 ;
+-(id)dictionaryRepresentation;
+-(void)writeTo:(id)arg1 ;
+-(void)mergeFrom:(id)arg1 ;
+-(BOOL)readFrom:(id)arg1 ;
+-(void)copyTo:(id)arg1 ;
+-(void)setRank:(unsigned)arg1 ;
+-(unsigned)rank;
+-(NSMutableArray *)sections;
+-(void)setSections:(NSMutableArray *)arg1 ;
+-(id)sectionAtIndex:(unsigned long long)arg1 ;
+-(void)addSection:(id)arg1 ;
+-(void)readAll:(BOOL)arg1 ;
+-(PBUnknownFields *)unknownFields;
+-(void)clearUnknownFields:(BOOL)arg1 ;
+-(void)_readSections;
+-(unsigned long long)sectionsCount;
+-(void)clearSections;
+-(unsigned long long)stepsCount;
+-(id)stepsAtIndex:(unsigned long long)arg1 ;
+-(GEOPBTransitRoutingIncidentMessage *)transitIncidentMessage;
+-(void)_readRouteHandle;
+-(NSData *)routeHandle;
+-(void)setRouteHandle:(NSData *)arg1 ;
+-(BOOL)hasRouteHandle;
+-(void)_readTransitIncidentMessage;
+-(void)setTransitIncidentMessage:(GEOPBTransitRoutingIncidentMessage *)arg1 ;
+-(BOOL)hasTransitIncidentMessage;
+-(void)_readSteps;
+-(void)clearSteps;
+-(NSMutableArray *)steps;
+-(void)setSteps:(NSMutableArray *)arg1 ;
+-(unsigned)travelTimeAggressiveEstimate;
+-(void)setTravelTimeAggressiveEstimate:(unsigned)arg1 ;
+-(void)setHasTravelTimeAggressiveEstimate:(BOOL)arg1 ;
+-(BOOL)hasTravelTimeAggressiveEstimate;
+-(unsigned)travelTimeConservativeEstimate;
+-(void)setTravelTimeConservativeEstimate:(unsigned)arg1 ;
+-(void)setHasTravelTimeConservativeEstimate:(BOOL)arg1 ;
+-(BOOL)hasTravelTimeConservativeEstimate;
+-(GEOTransitRouteDisplayStrings *)displayStrings;
+-(BOOL)hasAbsStartTime;
+-(unsigned)absStartTime;
+-(unsigned)absEndTime;
+-(NSMutableArray *)routePlanningArtworks;
+-(unsigned long long)sectionOptionsCount;
+-(id)sectionOptionAtIndex:(unsigned long long)arg1 ;
+-(NSMutableArray *)sectionOptions;
+-(void)_readDisplayStrings;
+-(void)setDisplayStrings:(GEOTransitRouteDisplayStrings *)arg1 ;
+-(id)instanceCompatibleWithProtocolVersion:(unsigned long long)arg1 ;
+-(void)setAbsStartTime:(unsigned)arg1 ;
+-(void)setHasAbsStartTime:(BOOL)arg1 ;
+-(void)setAbsEndTime:(unsigned)arg1 ;
+-(void)setHasAbsEndTime:(BOOL)arg1 ;
+-(BOOL)hasAbsEndTime;
+-(BOOL)isWalkingOnlyRoute;
+-(BOOL)hasDisplayStrings;
+-(void)_addNoFlagsSteps:(id)arg1 ;
+-(void)_readRoutePlanningArtworks;
+-(void)_addNoFlagsRoutePlanningArtwork:(id)arg1 ;
+-(void)_readRouteBadges;
+-(void)_addNoFlagsRouteBadge:(int)arg1 ;
+-(void)_readSectionOptions;
+-(void)_addNoFlagsSectionOption:(id)arg1 ;
+-(void)_addNoFlagsSection:(id)arg1 ;
+-(void)_readEngineDebugData;
+-(GEOTransitEngineDebugData *)engineDebugData;
+-(void)addSteps:(id)arg1 ;
+-(unsigned long long)routePlanningArtworksCount;
+-(void)clearRoutePlanningArtworks;
+-(id)routePlanningArtworkAtIndex:(unsigned long long)arg1 ;
+-(void)addRoutePlanningArtwork:(id)arg1 ;
+-(unsigned long long)routeBadgesCount;
+-(void)clearRouteBadges;
+-(int)routeBadgeAtIndex:(unsigned long long)arg1 ;
+-(void)addRouteBadge:(int)arg1 ;
+-(void)clearSectionOptions;
+-(void)addSectionOption:(id)arg1 ;
+-(void)setEngineDebugData:(GEOTransitEngineDebugData *)arg1 ;
+-(void)setHasRank:(BOOL)arg1 ;
+-(BOOL)hasRank;
+-(void)setRoutePlanningArtworks:(NSMutableArray *)arg1 ;
+-(int*)routeBadges;
+-(void)setRouteBadges:(int*)arg1 count:(unsigned long long)arg2 ;
+-(id)routeBadgesAsString:(int)arg1 ;
+-(int)StringAsRouteBadges:(id)arg1 ;
+-(void)setSectionOptions:(NSMutableArray *)arg1 ;
+-(BOOL)hasEngineDebugData;
+-(BOOL)supportsRouteUpdates;
+-(void)setSupportsRouteUpdates:(BOOL)arg1 ;
+-(void)setHasSupportsRouteUpdates:(BOOL)arg1 ;
+-(BOOL)hasSupportsRouteUpdates;
+@end
+

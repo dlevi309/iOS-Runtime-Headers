@@ -1,0 +1,42 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:49 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/CryptoTokenKit.framework/CryptoTokenKit
+*/
+
+#import <CryptoTokenKit/TKSmartCardUserInteraction.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSLocale, NSArray, NSData;
+
+@interface TKSmartCardUserInteractionForPINOperation : TKSmartCardUserInteraction <NSSecureCoding> {
+
+	NSLocale* _locale;
+	unsigned short _resultSW;
+	unsigned long long _PINCompletion;
+	NSArray* _PINMessageIndices;
+	NSData* _resultData;
+
+}
+
+@property (assign) unsigned long long PINCompletion;              //@synthesize PINCompletion=_PINCompletion - In the implementation block
+@property (retain) NSArray * PINMessageIndices;                   //@synthesize PINMessageIndices=_PINMessageIndices - In the implementation block
+@property (retain) NSLocale * locale; 
+@property (assign) unsigned short resultSW;                       //@synthesize resultSW=_resultSW - In the implementation block
+@property (retain) NSData * resultData;                           //@synthesize resultData=_resultData - In the implementation block
++(BOOL)supportsSecureCoding;
+-(id)init;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(void)setLocale:(NSLocale *)arg1 ;
+-(NSLocale *)locale;
+-(NSData *)resultData;
+-(void)setResultData:(NSData *)arg1 ;
+-(unsigned long long)PINCompletion;
+-(void)setPINCompletion:(unsigned long long)arg1 ;
+-(NSArray *)PINMessageIndices;
+-(void)setPINMessageIndices:(NSArray *)arg1 ;
+-(unsigned short)resultSW;
+-(void)setResultSW:(unsigned short)arg1 ;
+@end
+

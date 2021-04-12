@@ -1,0 +1,24 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:22 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/WorkflowUI.framework/WorkflowUI
+*/
+
+#import <ComponentKit/CKStatefulViewComponentController.h>
+#import <libobjc.A.dylib/WFTagFieldDelegate.h>
+
+@class NSString;
+
+@interface WFTagFieldComponentController : CKStatefulViewComponentController <WFTagFieldDelegate>
+
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(id)newStatefulView:(id)arg1 ;
++(void)configureStatefulView:(id)arg1 forComponent:(id)arg2 ;
+-(id)viewControllerContainingTagField:(id)arg1 ;
+-(void)didAcquireStatefulView:(id)arg1 ;
+-(void)willRelinquishStatefulView:(id)arg1 ;
+@end
+

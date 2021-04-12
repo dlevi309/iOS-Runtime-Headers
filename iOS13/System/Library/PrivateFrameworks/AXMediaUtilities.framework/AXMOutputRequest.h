@@ -1,0 +1,50 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:04 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities
+*/
+
+
+@protocol OS_dispatch_queue;
+@class AXMOutputRequestHandle, NSObject, NSMutableArray, NSArray;
+
+@interface AXMOutputRequest : NSObject {
+
+	AXMOutputRequestHandle* _handle;
+	NSObject*<OS_dispatch_queue> _queue;
+	NSMutableArray* _queue_actions;
+	BOOL _interruptsAndClearsQueue;
+	/*^block*/id _completionBlock;
+
+}
+
+@property (nonatomic,readonly) AXMOutputRequestHandle * handle;              //@synthesize handle=_handle - In the implementation block
+@property (nonatomic,readonly) NSArray * actions; 
+@property (nonatomic,readonly) NSArray * speechActions; 
+@property (nonatomic,readonly) NSArray * oneShotSoundActions; 
+@property (nonatomic,readonly) NSArray * activeSoundActions; 
+@property (nonatomic,readonly) NSArray * hapticActions; 
+@property (nonatomic,copy) id completionBlock;                               //@synthesize completionBlock=_completionBlock - In the implementation block
+@property (assign,nonatomic) BOOL interruptsAndClearsQueue;                  //@synthesize interruptsAndClearsQueue=_interruptsAndClearsQueue - In the implementation block
++(id)speechItemSeparator;
+-(id)init;
+-(AXMOutputRequestHandle *)handle;
+-(id)completionBlock;
+-(void)setCompletionBlock:(id)arg1 ;
+-(NSArray *)actions;
+-(void)_addAction:(id)arg1 ;
+-(void)addHapticItemWithURL:(id)arg1 intensity:(double)arg2 ;
+-(NSArray *)speechActions;
+-(NSArray *)oneShotSoundActions;
+-(NSArray *)activeSoundActions;
+-(NSArray *)hapticActions;
+-(void)addSpeechItem:(id)arg1 ;
+-(void)addSoundItemWithID:(id)arg1 ;
+-(void)addSoundItemWithURL:(id)arg1 ;
+-(void)addActiveSoundItemWithID:(id)arg1 ;
+-(void)addActiveSoundItemWithURL:(id)arg1 ;
+-(void)addHapticItemWithURL:(id)arg1 ;
+-(BOOL)interruptsAndClearsQueue;
+-(void)setInterruptsAndClearsQueue:(BOOL)arg1 ;
+@end
+

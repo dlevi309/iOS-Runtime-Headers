@@ -1,0 +1,48 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:30:01 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/Foundation.framework/Foundation
+*/
+
+#import <libobjc.A.dylib/NSSecureCoding.h>
+
+@class NSData, NSURL, NSString;
+
+@interface NSSecurityScopedURLWrapper : NSObject <NSSecureCoding> {
+
+	BOOL _readonly;
+	BOOL _backedByFileProvider;
+	NSData* _scope;
+	NSURL* _url;
+	NSString* _providerIdentifier;
+	NSString* _domainIdentifier;
+	NSString* _itemIdentifier;
+
+}
+
+@property (nonatomic,copy,readonly) NSURL * url;                                                     //@synthesize url=_url - In the implementation block
+@property (getter=isReadonly,nonatomic,readonly) BOOL readonly;                                      //@synthesize readonly=_readonly - In the implementation block
+@property (getter=isBackedByFileProvider,nonatomic,readonly) BOOL backedByFileProvider;              //@synthesize backedByFileProvider=_backedByFileProvider - In the implementation block
+@property (nonatomic,readonly) NSString * providerIdentifier;                                        //@synthesize providerIdentifier=_providerIdentifier - In the implementation block
+@property (nonatomic,readonly) NSString * domainIdentifier;                                          //@synthesize domainIdentifier=_domainIdentifier - In the implementation block
+@property (nonatomic,readonly) NSString * itemIdentifier;                                            //@synthesize itemIdentifier=_itemIdentifier - In the implementation block
+@property (nonatomic,readonly) NSData * _scope;                                                      //@synthesize scope=_scope - In the implementation block
++(BOOL)supportsSecureCoding;
+-(void)dealloc;
+-(id)description;
+-(NSString *)domainIdentifier;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(id)initWithURL:(id)arg1 ;
+-(NSString *)itemIdentifier;
+-(NSString *)providerIdentifier;
+-(id)initWithURL:(id)arg1 readonly:(BOOL)arg2 ;
+-(id)initWithURL:(id)arg1 readonly:(BOOL)arg2 extensionClass:(id)arg3 ;
+-(id)initWithProviderIdentifier:(id)arg1 domainIdentifier:(id)arg2 itemIdentifier:(id)arg3 ;
+-(id)initWithURL:(id)arg1 readonly:(BOOL)arg2 scope:(id)arg3 ;
+-(NSData *)_scope;
+-(NSURL *)url;
+-(BOOL)isReadonly;
+-(BOOL)isBackedByFileProvider;
+@end
+

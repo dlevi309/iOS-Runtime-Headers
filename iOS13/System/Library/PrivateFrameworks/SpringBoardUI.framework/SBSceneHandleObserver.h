@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:51 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SpringBoardUI.framework/SpringBoardUI
+*/
+
+
+@protocol SBSceneHandleObserver <NSObject>
+@optional
+-(void)sceneHandle:(id)arg1 didCreateScene:(id)arg2;
+-(void)sceneHandle:(id)arg1 didDestroyScene:(id)arg2;
+-(void)sceneHandle:(id)arg1 didUpdateContentState:(long long)arg2;
+-(void)sceneHandle:(id)arg1 didUpdateSettingsWithDiff:(id)arg2 previousSettings:(id)arg3;
+-(void)sceneHandle:(id)arg1 didUpdateClientSettingsWithDiff:(id)arg2 transitionContext:(id)arg3;
+-(void)sceneHandle:(id)arg1 didUpdatePairingStatusForExternalSceneIdentifiers:(id)arg2;
+
+@end
+

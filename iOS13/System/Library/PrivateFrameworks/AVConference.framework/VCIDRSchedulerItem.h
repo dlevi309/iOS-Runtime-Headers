@@ -1,0 +1,36 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:10 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/AVConference.framework/AVConference
+*/
+
+
+@class NSMutableArray, NSArray;
+
+@interface VCIDRSchedulerItem : NSObject {
+
+	unsigned _framePosition;
+	unsigned _budgetInCaptureFrames;
+	unsigned _weightFactor;
+	NSMutableArray* _streams;
+
+}
+
+@property (assign,nonatomic) unsigned framePosition;                      //@synthesize framePosition=_framePosition - In the implementation block
+@property (assign,nonatomic) unsigned weightFactor;                       //@synthesize weightFactor=_weightFactor - In the implementation block
+@property (assign,nonatomic) unsigned budgetInCaptureFrames;              //@synthesize budgetInCaptureFrames=_budgetInCaptureFrames - In the implementation block
+@property (nonatomic,readonly) NSArray * streams;                         //@synthesize streams=_streams - In the implementation block
+-(id)init;
+-(void)dealloc;
+-(id)description;
+-(unsigned)framePosition;
+-(void)setFramePosition:(unsigned)arg1 ;
+-(NSArray *)streams;
+-(unsigned)weightFactor;
+-(unsigned)budgetInCaptureFrames;
+-(void)addStream:(id)arg1 ;
+-(long long)compareBudget:(id)arg1 ;
+-(void)setBudgetInCaptureFrames:(unsigned)arg1 ;
+-(void)setWeightFactor:(unsigned)arg1 ;
+@end
+

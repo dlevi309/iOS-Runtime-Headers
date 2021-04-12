@@ -1,0 +1,122 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:58 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/HomeUI.framework/HomeUI
+*/
+
+#import <Home/HFItemManager.h>
+
+@class HFStaticItem, HFActionSetBuilder, NSArray, HUMediaItem, HFMediaPlaybackActionBuilder, SKCloudServiceController, HFPlaybackArchive, NSNumber;
+
+@interface HUMediaSelectionItemManager : HFItemManager {
+
+	HFStaticItem* _selectedPlaybackStateItem;
+	HFActionSetBuilder* _actionSetBuilder;
+	HFStaticItem* _playbackStateAdjustVolumeOnlyItem;
+	HFStaticItem* _playbackStatePauseItem;
+	HFStaticItem* _playbackStateResumeItem;
+	HFStaticItem* _playbackStatePlayItem;
+	NSArray* _playbackStateItems;
+	HFStaticItem* _mediaPickerItem;
+	HUMediaItem* _chosenMediaItem;
+	NSArray* _playbackOptionsItems;
+	HFStaticItem* _useCurrentVolumeItem;
+	HFStaticItem* _useCustomVolumeItem;
+	HFStaticItem* _selectedVolumeItem;
+	HFStaticItem* _volumeSliderItem;
+	HFMediaPlaybackActionBuilder* _actionBuilder;
+	NSArray* _mediaPickerRowItems;
+	HFStaticItem* _repeatItem;
+	HFStaticItem* _shuffleItem;
+	NSArray* _customVolumeItems;
+	NSArray* _volumeSliderItems;
+	SKCloudServiceController* _cloudServiceController;
+	HFPlaybackArchive* _lastSelectedArchive;
+	NSNumber* _lastSelectedVolume;
+
+}
+
+@property (nonatomic,retain) HFMediaPlaybackActionBuilder * actionBuilder;                   //@synthesize actionBuilder=_actionBuilder - In the implementation block
+@property (nonatomic,retain) HFStaticItem * playbackStateAdjustVolumeOnlyItem;               //@synthesize playbackStateAdjustVolumeOnlyItem=_playbackStateAdjustVolumeOnlyItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * playbackStatePauseItem;                          //@synthesize playbackStatePauseItem=_playbackStatePauseItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * playbackStateResumeItem;                         //@synthesize playbackStateResumeItem=_playbackStateResumeItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * playbackStatePlayItem;                           //@synthesize playbackStatePlayItem=_playbackStatePlayItem - In the implementation block
+@property (nonatomic,retain) NSArray * playbackStateItems;                                   //@synthesize playbackStateItems=_playbackStateItems - In the implementation block
+@property (nonatomic,retain) HFStaticItem * mediaPickerItem;                                 //@synthesize mediaPickerItem=_mediaPickerItem - In the implementation block
+@property (nonatomic,retain) HUMediaItem * chosenMediaItem;                                  //@synthesize chosenMediaItem=_chosenMediaItem - In the implementation block
+@property (nonatomic,retain) NSArray * mediaPickerRowItems;                                  //@synthesize mediaPickerRowItems=_mediaPickerRowItems - In the implementation block
+@property (nonatomic,retain) HFStaticItem * repeatItem;                                      //@synthesize repeatItem=_repeatItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * shuffleItem;                                     //@synthesize shuffleItem=_shuffleItem - In the implementation block
+@property (nonatomic,retain) NSArray * playbackOptionsItems;                                 //@synthesize playbackOptionsItems=_playbackOptionsItems - In the implementation block
+@property (nonatomic,retain) HFStaticItem * useCurrentVolumeItem;                            //@synthesize useCurrentVolumeItem=_useCurrentVolumeItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * useCustomVolumeItem;                             //@synthesize useCustomVolumeItem=_useCustomVolumeItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * volumeSliderItem;                                //@synthesize volumeSliderItem=_volumeSliderItem - In the implementation block
+@property (nonatomic,retain) NSArray * customVolumeItems;                                    //@synthesize customVolumeItems=_customVolumeItems - In the implementation block
+@property (nonatomic,retain) NSArray * volumeSliderItems;                                    //@synthesize volumeSliderItems=_volumeSliderItems - In the implementation block
+@property (nonatomic,retain) SKCloudServiceController * cloudServiceController;              //@synthesize cloudServiceController=_cloudServiceController - In the implementation block
+@property (nonatomic,retain) HFPlaybackArchive * lastSelectedArchive;                        //@synthesize lastSelectedArchive=_lastSelectedArchive - In the implementation block
+@property (nonatomic,retain) NSNumber * lastSelectedVolume;                                  //@synthesize lastSelectedVolume=_lastSelectedVolume - In the implementation block
+@property (nonatomic,readonly) HFActionSetBuilder * actionSetBuilder;                        //@synthesize actionSetBuilder=_actionSetBuilder - In the implementation block
+@property (nonatomic,retain) HFStaticItem * selectedPlaybackStateItem;                       //@synthesize selectedPlaybackStateItem=_selectedPlaybackStateItem - In the implementation block
+@property (nonatomic,retain) HFStaticItem * selectedVolumeItem;                              //@synthesize selectedVolumeItem=_selectedVolumeItem - In the implementation block
+@property (nonatomic,retain) HFPlaybackArchive * pickedPlaybackArchive; 
+-(id)initWithDelegate:(id)arg1 sourceItem:(id)arg2 ;
+-(id)_buildItemProvidersForHome:(id)arg1 ;
+-(id)_buildSectionsWithDisplayedItems:(id)arg1 ;
+-(id)_itemsToHideInSet:(id)arg1 ;
+-(HFActionSetBuilder *)actionSetBuilder;
+-(id)initWithDelegate:(id)arg1 mediaPlaybackActionBuilder:(id)arg2 ;
+-(HFStaticItem *)mediaPickerItem;
+-(NSArray *)playbackOptionsItems;
+-(HUMediaItem *)chosenMediaItem;
+-(HFStaticItem *)volumeSliderItem;
+-(NSArray *)playbackStateItems;
+-(HFStaticItem *)useCustomVolumeItem;
+-(HFStaticItem *)useCurrentVolumeItem;
+-(HFStaticItem *)selectedPlaybackStateItem;
+-(HFStaticItem *)selectedVolumeItem;
+-(HFStaticItem *)playbackStatePlayItem;
+-(void)setSelectedPlaybackStateItem:(HFStaticItem *)arg1 ;
+-(void)setSelectedVolumeItem:(HFStaticItem *)arg1 ;
+-(HFStaticItem *)playbackStateAdjustVolumeOnlyItem;
+-(HFPlaybackArchive *)pickedPlaybackArchive;
+-(void)setPickedPlaybackArchive:(HFPlaybackArchive *)arg1 ;
+-(void)mediaPlaybackOptionsItem:(id)arg1 switchedOn:(BOOL)arg2 ;
+-(void)mediaVolumeValueChanged:(double)arg1 ;
+-(HFMediaPlaybackActionBuilder *)actionBuilder;
+-(HFStaticItem *)playbackStatePauseItem;
+-(HFStaticItem *)playbackStateResumeItem;
+-(void)setLastSelectedArchive:(HFPlaybackArchive *)arg1 ;
+-(HFPlaybackArchive *)lastSelectedArchive;
+-(void)setLastSelectedVolume:(NSNumber *)arg1 ;
+-(id)_volumeForMediaAction;
+-(HFStaticItem *)shuffleItem;
+-(HFStaticItem *)repeatItem;
+-(void)setPlaybackStateAdjustVolumeOnlyItem:(HFStaticItem *)arg1 ;
+-(void)setPlaybackStatePauseItem:(HFStaticItem *)arg1 ;
+-(void)setPlaybackStateResumeItem:(HFStaticItem *)arg1 ;
+-(void)setPlaybackStatePlayItem:(HFStaticItem *)arg1 ;
+-(void)setPlaybackStateItems:(NSArray *)arg1 ;
+-(id)selectedPlaybackStateItemBasedOnActionBuilderState;
+-(SKCloudServiceController *)cloudServiceController;
+-(void)setMediaPickerItem:(HFStaticItem *)arg1 ;
+-(void)setChosenMediaItem:(HUMediaItem *)arg1 ;
+-(void)setMediaPickerRowItems:(NSArray *)arg1 ;
+-(void)setRepeatItem:(HFStaticItem *)arg1 ;
+-(void)setShuffleItem:(HFStaticItem *)arg1 ;
+-(void)setPlaybackOptionsItems:(NSArray *)arg1 ;
+-(void)setUseCurrentVolumeItem:(HFStaticItem *)arg1 ;
+-(void)setUseCustomVolumeItem:(HFStaticItem *)arg1 ;
+-(id)selectedVolumeItemBasedOnActionBuilderState;
+-(void)setVolumeSliderItem:(HFStaticItem *)arg1 ;
+-(void)setCustomVolumeItems:(NSArray *)arg1 ;
+-(void)setVolumeSliderItems:(NSArray *)arg1 ;
+-(NSArray *)mediaPickerRowItems;
+-(NSArray *)customVolumeItems;
+-(NSArray *)volumeSliderItems;
+-(NSNumber *)lastSelectedVolume;
+-(id)_defaultCurrentVolume;
+-(void)setActionBuilder:(HFMediaPlaybackActionBuilder *)arg1 ;
+-(void)setCloudServiceController:(SKCloudServiceController *)arg1 ;
+@end
+

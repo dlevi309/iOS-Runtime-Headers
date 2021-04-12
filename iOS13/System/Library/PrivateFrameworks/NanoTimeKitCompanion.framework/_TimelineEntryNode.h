@@ -1,0 +1,24 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:43 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+*/
+
+#import <NanoTimeKitCompanion/_TimelineNode.h>
+
+@protocol CLKTimelineEntry;
+@class NSDate;
+
+@interface _TimelineEntryNode : _TimelineNode {
+
+	id<CLKTimelineEntry> _entry;
+
+}
+
+@property (nonatomic,retain) id<CLKTimelineEntry> entry;              //@synthesize entry=_entry - In the implementation block
+@property (nonatomic,readonly) NSDate * date; 
+-(NSDate *)date;
+-(id<CLKTimelineEntry>)entry;
+-(void)setEntry:(id<CLKTimelineEntry>)arg1 ;
+@end
+

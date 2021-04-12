@@ -1,0 +1,85 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:53 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI
+*/
+
+#import <TVRemoteUI/TVRemoteUI-Structs.h>
+#import <UIKitCore/UIViewController.h>
+#import <TVRemoteUI/_TVRUIEventDelegate.h>
+#import <libobjc.A.dylib/_UICursorInteractionDelegate.h>
+#import <TVRemoteUI/TVRUIRemoteViewProvider.h>
+
+@protocol _TVRUIEventDelegate, TVRUIDevice, TVRUIStyleProvider, TVRUITouchProcessor;
+@class _TVRUITouchpadView, _TVRUIDirectionalControlView, UIView, NSString;
+
+@interface TVRUITouchpadViewController : UIViewController <_TVRUIEventDelegate, _UICursorInteractionDelegate, TVRUIRemoteViewProvider> {
+
+	BOOL _mediaControlsAreVisible;
+	id<_TVRUIEventDelegate> _eventDelegate;
+	_TVRUITouchpadView* _touchpadView;
+	_TVRUIDirectionalControlView* _directionalControlView;
+	id<TVRUIDevice> _remoteDevice;
+	id<TVRUIStyleProvider> _styleProvider;
+	long long _touchpadMode;
+	id<TVRUITouchProcessor> _touchProcessor;
+	UIView* _backgroundView;
+
+}
+
+@property (nonatomic,retain) _TVRUITouchpadView * touchpadView;                                        //@synthesize touchpadView=_touchpadView - In the implementation block
+@property (nonatomic,retain) _TVRUIDirectionalControlView * directionalControlView;                    //@synthesize directionalControlView=_directionalControlView - In the implementation block
+@property (nonatomic,retain) id<TVRUIDevice> remoteDevice;                                             //@synthesize remoteDevice=_remoteDevice - In the implementation block
+@property (nonatomic,retain) id<TVRUIStyleProvider> styleProvider;                                     //@synthesize styleProvider=_styleProvider - In the implementation block
+@property (assign,nonatomic) long long touchpadMode;                                                   //@synthesize touchpadMode=_touchpadMode - In the implementation block
+@property (nonatomic,retain) id<TVRUITouchProcessor> touchProcessor;                                   //@synthesize touchProcessor=_touchProcessor - In the implementation block
+@property (nonatomic,retain) UIView * backgroundView;                                                  //@synthesize backgroundView=_backgroundView - In the implementation block
+@property (assign,nonatomic,__weak) id<_TVRUIEventDelegate> eventDelegate;                             //@synthesize eventDelegate=_eventDelegate - In the implementation block
+@property (assign,getter=isShowingControls,nonatomic) BOOL showControls; 
+@property (assign,getter=areMediaControlsVisible,nonatomic) BOOL mediaControlsAreVisible;              //@synthesize mediaControlsAreVisible=_mediaControlsAreVisible - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
+-(UIView *)backgroundView;
+-(void)touchesBegan:(id)arg1 withEvent:(id)arg2 ;
+-(void)touchesMoved:(id)arg1 withEvent:(id)arg2 ;
+-(void)touchesEnded:(id)arg1 withEvent:(id)arg2 ;
+-(void)touchesCancelled:(id)arg1 withEvent:(id)arg2 ;
+-(void)viewWillDisappear:(BOOL)arg1 ;
+-(void)viewDidLoad;
+-(void)viewWillLayoutSubviews;
+-(BOOL)_canShowWhileLocked;
+-(id)cursorInteraction:(id)arg1 regionForLocation:(CGPoint)arg2 defaultRegion:(id)arg3 ;
+-(id)cursorInteraction:(id)arg1 styleForRegion:(id)arg2 modifiers:(long long)arg3 ;
+-(void)setBackgroundView:(UIView *)arg1 ;
+-(void)cursorInteraction:(id)arg1 willEnterRegion:(id)arg2 ;
+-(void)setDevice:(id)arg1 ;
+-(void)setStyleProvider:(id<TVRUIStyleProvider>)arg1 ;
+-(id<TVRUIStyleProvider>)styleProvider;
+-(BOOL)isShowingControls;
+-(id<TVRUIDevice>)remoteDevice;
+-(void)setRemoteDevice:(id<TVRUIDevice>)arg1 ;
+-(id<_TVRUIEventDelegate>)eventDelegate;
+-(void)setEventDelegate:(id<_TVRUIEventDelegate>)arg1 ;
+-(_TVRUITouchpadView *)touchpadView;
+-(void)setTouchpadView:(_TVRUITouchpadView *)arg1 ;
+-(void)transitonToViewForDeviceType:(long long)arg1 ;
+-(void)setMediaControlsAreVisible:(BOOL)arg1 ;
+-(void)setShowControls:(BOOL)arg1 ;
+-(id<TVRUITouchProcessor>)touchProcessor;
+-(void)setTouchProcessor:(id<TVRUITouchProcessor>)arg1 ;
+-(void)_setupTouchpadView;
+-(void)_transitionToDirectionalControlView;
+-(void)_transitionToTouchpadView;
+-(void)_simpleRemoteGesturesEnabled:(id)arg1 ;
+-(_TVRUIDirectionalControlView *)directionalControlView;
+-(void)setTouchpadMode:(long long)arg1 ;
+-(void)_setupDirectionalArrowView;
+-(void)_toggleControlScale;
+-(void)_transitionToAppropriateView;
+-(long long)touchpadMode;
+-(BOOL)areMediaControlsVisible;
+-(void)setDirectionalControlView:(_TVRUIDirectionalControlView *)arg1 ;
+@end
+

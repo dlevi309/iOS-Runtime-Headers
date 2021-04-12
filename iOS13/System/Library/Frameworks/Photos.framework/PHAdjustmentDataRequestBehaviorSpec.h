@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:00 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/Photos.framework/Photos
+*/
+
+
+@interface PHAdjustmentDataRequestBehaviorSpec : NSObject {
+
+	BOOL _networkAccessAllowed;
+
+}
+
+@property (assign,getter=isNetworkAccessAllowed,nonatomic) BOOL networkAccessAllowed;              //@synthesize networkAccessAllowed=_networkAccessAllowed - In the implementation block
+-(BOOL)isNetworkAccessAllowed;
+-(void)setNetworkAccessAllowed:(BOOL)arg1 ;
+@end
+

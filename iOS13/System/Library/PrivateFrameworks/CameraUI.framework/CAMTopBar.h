@@ -1,0 +1,160 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:33:50 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CameraUI.framework/CameraUI
+*/
+
+#import <CameraUI/CameraUI-Structs.h>
+#import <UIKitCore/UIView.h>
+#import <libobjc.A.dylib/CAMExpandableMenuButtonDelegate.h>
+#import <libobjc.A.dylib/CEKApertureButtonDelegate.h>
+
+@protocol CAMControlVisibilityUpdateDelegate;
+@class CAMFlashButton, CAMElapsedTimeView, CAMHDRButton, CAMFlipButton, CAMFilterButton, CEKApertureButton, CAMIntensityButton, CAMTimerButton, CAMLivePhotoButton, CAMMessagesPhotosButton, PUReviewScreenDoneButton, CAMFramerateIndicatorView, UIView, NSArray, NSSet, CAMExpandableMenuButton;
+
+@interface CAMTopBar : UIView <CAMExpandableMenuButtonDelegate, CEKApertureButtonDelegate> {
+
+	id<CAMControlVisibilityUpdateDelegate> _visibilityUpdateDelegate;
+	long long _style;
+	long long _backgroundStyle;
+	CAMFlashButton* _flashButton;
+	CAMElapsedTimeView* _elapsedTimeView;
+	CAMHDRButton* _HDRButton;
+	CAMFlipButton* _flipButton;
+	CAMFilterButton* _filterButton;
+	CEKApertureButton* _apertureButton;
+	CAMIntensityButton* _intensityButton;
+	CAMTimerButton* _timerButton;
+	CAMLivePhotoButton* _livePhotoButton;
+	CAMMessagesPhotosButton* _photosButton;
+	PUReviewScreenDoneButton* _doneButton;
+	CAMFramerateIndicatorView* _framerateIndicatorView;
+	long long _orientation;
+	UIView* __backgroundView;
+	NSArray* __allowedControls;
+	NSSet* __controlsNeedingNonAnimatedLayout;
+	CAMExpandableMenuButton* __expandedMenuButton;
+	long long __mode;
+	UIEdgeInsets __expandedMenuButtonTappableInsets;
+
+}
+
+@property (nonatomic,readonly) UIView * _backgroundView;                                                                               //@synthesize _backgroundView=__backgroundView - In the implementation block
+@property (nonatomic,readonly) NSArray * _allowedControls;                                                                             //@synthesize _allowedControls=__allowedControls - In the implementation block
+@property (setter=_setControlsNeedingNonAnimatedLayout:,nonatomic,retain) NSSet * _controlsNeedingNonAnimatedLayout;                   //@synthesize _controlsNeedingNonAnimatedLayout=__controlsNeedingNonAnimatedLayout - In the implementation block
+@property (setter=_setExpandedMenuButton:,nonatomic,retain) CAMExpandableMenuButton * _expandedMenuButton;                             //@synthesize _expandedMenuButton=__expandedMenuButton - In the implementation block
+@property (assign,setter=_setExpandedMenuButtonTappableInsets:,nonatomic) UIEdgeInsets _expandedMenuButtonTappableInsets;              //@synthesize _expandedMenuButtonTappableInsets=__expandedMenuButtonTappableInsets - In the implementation block
+@property (nonatomic,readonly) long long _mode;                                                                                        //@synthesize _mode=__mode - In the implementation block
+@property (assign,nonatomic,__weak) id<CAMControlVisibilityUpdateDelegate> visibilityUpdateDelegate;                                   //@synthesize visibilityUpdateDelegate=_visibilityUpdateDelegate - In the implementation block
+@property (assign,nonatomic) long long style;                                                                                          //@synthesize style=_style - In the implementation block
+@property (assign,nonatomic) long long backgroundStyle;                                                                                //@synthesize backgroundStyle=_backgroundStyle - In the implementation block
+@property (nonatomic,retain) CAMFlashButton * flashButton;                                                                             //@synthesize flashButton=_flashButton - In the implementation block
+@property (nonatomic,retain) CAMElapsedTimeView * elapsedTimeView;                                                                     //@synthesize elapsedTimeView=_elapsedTimeView - In the implementation block
+@property (nonatomic,retain) CAMHDRButton * HDRButton;                                                                                 //@synthesize HDRButton=_HDRButton - In the implementation block
+@property (nonatomic,retain) CAMFlipButton * flipButton;                                                                               //@synthesize flipButton=_flipButton - In the implementation block
+@property (nonatomic,retain) CAMFilterButton * filterButton;                                                                           //@synthesize filterButton=_filterButton - In the implementation block
+@property (nonatomic,retain) CEKApertureButton * apertureButton;                                                                       //@synthesize apertureButton=_apertureButton - In the implementation block
+@property (nonatomic,retain) CAMIntensityButton * intensityButton;                                                                     //@synthesize intensityButton=_intensityButton - In the implementation block
+@property (nonatomic,retain) CAMTimerButton * timerButton;                                                                             //@synthesize timerButton=_timerButton - In the implementation block
+@property (nonatomic,retain) CAMLivePhotoButton * livePhotoButton;                                                                     //@synthesize livePhotoButton=_livePhotoButton - In the implementation block
+@property (nonatomic,retain) CAMMessagesPhotosButton * photosButton;                                                                   //@synthesize photosButton=_photosButton - In the implementation block
+@property (nonatomic,retain) PUReviewScreenDoneButton * doneButton;                                                                    //@synthesize doneButton=_doneButton - In the implementation block
+@property (nonatomic,retain) CAMFramerateIndicatorView * framerateIndicatorView;                                                       //@synthesize framerateIndicatorView=_framerateIndicatorView - In the implementation block
+@property (assign,nonatomic) long long orientation;                                                                                    //@synthesize orientation=_orientation - In the implementation block
+@property (getter=isFloating,nonatomic,readonly) BOOL floating; 
++(BOOL)isFloatingStyle:(long long)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(long long)orientation;
+-(long long)style;
+-(void)setStyle:(long long)arg1 ;
+-(void)setOrientation:(long long)arg1 ;
+-(id)initWithFrame:(CGRect)arg1 ;
+-(BOOL)isFloating;
+-(id)hitTest:(CGPoint)arg1 withEvent:(id)arg2 ;
+-(UIView *)_backgroundView;
+-(void)layoutSubviews;
+-(BOOL)pointInside:(CGPoint)arg1 withEvent:(id)arg2 ;
+-(void)setStyle:(long long)arg1 animated:(BOOL)arg2 ;
+-(void)setBackgroundStyle:(long long)arg1 ;
+-(long long)_mode;
+-(long long)backgroundStyle;
+-(void)setDoneButton:(PUReviewScreenDoneButton *)arg1 ;
+-(PUReviewScreenDoneButton *)doneButton;
+-(void)setBackgroundStyle:(long long)arg1 animated:(BOOL)arg2 ;
+-(void)apertureButtonNeedsLayout:(id)arg1 animated:(BOOL)arg2 ;
+-(CAMLivePhotoButton *)livePhotoButton;
+-(CAMFlipButton *)flipButton;
+-(CAMElapsedTimeView *)elapsedTimeView;
+-(id)touchingRecognizersToCancel;
+-(id)hudItemForAccessibilityHUDManager:(id)arg1 ;
+-(void)selectedByAccessibilityHUDManager:(id)arg1 ;
+-(id<CAMControlVisibilityUpdateDelegate>)visibilityUpdateDelegate;
+-(double)_opacityForBackgroundStyle:(long long)arg1 ;
+-(CAMExpandableMenuButton *)_expandedMenuButton;
+-(CGRect)expandedFrameForMenuButton:(id)arg1 ;
+-(CEKApertureButton *)apertureButton;
+-(CGRect)collapsedFrameForMenuButton:(id)arg1 ;
+-(void)_setExpandedMenuButton:(id)arg1 ;
+-(void)_updateControlVisibilityAnimated:(BOOL)arg1 ;
+-(void)_iterateViewsInHUDManager:(id)arg1 forHUDItem:(/*^block*/id)arg2 ;
+-(void)collapseMenuButton:(id)arg1 animated:(BOOL)arg2 ;
+-(void)expandMenuButton:(id)arg1 animated:(BOOL)arg2 ;
+-(void)setFlipButton:(CAMFlipButton *)arg1 ;
+-(void)setFlashButton:(CAMFlashButton *)arg1 ;
+-(void)setHDRButton:(CAMHDRButton *)arg1 ;
+-(void)setTimerButton:(CAMTimerButton *)arg1 ;
+-(void)setLivePhotoButton:(CAMLivePhotoButton *)arg1 ;
+-(void)setApertureButton:(CEKApertureButton *)arg1 ;
+-(void)setVisibilityUpdateDelegate:(id<CAMControlVisibilityUpdateDelegate>)arg1 ;
+-(CAMFlashButton *)flashButton;
+-(CAMHDRButton *)HDRButton;
+-(CAMTimerButton *)timerButton;
+-(CAMFilterButton *)filterButton;
+-(CAMIntensityButton *)intensityButton;
+-(void)configureForMode:(long long)arg1 ;
+-(CAMMessagesPhotosButton *)photosButton;
+-(BOOL)_shouldExpandButtonsHorizontally;
+-(void)configureForMode:(long long)arg1 animated:(BOOL)arg2 ;
+-(void)setElapsedTimeView:(CAMElapsedTimeView *)arg1 ;
+-(void)setFilterButton:(CAMFilterButton *)arg1 ;
+-(void)setFramerateIndicatorView:(CAMFramerateIndicatorView *)arg1 ;
+-(void)setPhotosButton:(CAMMessagesPhotosButton *)arg1 ;
+-(void)setIntensityButton:(CAMIntensityButton *)arg1 ;
+-(BOOL)shouldHideFlashButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideHDRButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideElapsedTimeViewForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideLivePhotoButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideFlipButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHidePhotosButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideDoneButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideFilterButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideApertureButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideIntensityButtonForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideFramerateIndicatorForGraphConfiguration:(id)arg1 ;
+-(BOOL)shouldHideTimerButtonForGraphConfiguration:(id)arg1 ;
+-(CAMFramerateIndicatorView *)framerateIndicatorView;
+-(void)_commonCAMTopBarInitialization;
+-(NSArray *)_allowedControls;
+-(void)_layoutDefaultStyle;
+-(void)_layoutFloatingStyle;
+-(void)_layoutFloatingRecordingStyle;
+-(double)_backgroundCornerRadiusForStyle:(long long)arg1 ;
+-(BOOL)_backgroundMasksToBoundsForStyle:(long long)arg1 ;
+-(void)_layoutControls:(id)arg1 apply:(BOOL)arg2 withExpandedMenuButton:(id)arg3 collapsingMenuButton:(id)arg4 collapsingFrame:(CGRect*)arg5 ;
+-(double)_interpolatedFloatingBarHeight;
+-(void)_computeHorizontalLayoutForViewsBetweenLeftView:(id)arg1 rightView:(id)arg2 views:(id)arg3 alignmentRects:(id)arg4 ;
+-(NSSet *)_controlsNeedingNonAnimatedLayout;
+-(void)_setMode:(long long)arg1 style:(long long)arg2 animationDuration:(double)arg3 animationOptions:(unsigned long long)arg4 ;
+-(id)_allowedControlsForStillImageMode;
+-(id)_allowedControlsForPortraitMode;
+-(id)_allowedControlsForSquareMode;
+-(id)_allowedControlsForVideoMode;
+-(id)_allowedControlsForPanoramaMode;
+-(id)_allowedControlsForTimelapseMode;
+-(id)_allowedControlsForMode:(long long)arg1 style:(long long)arg2 ;
+-(void)_setControlsNeedingNonAnimatedLayout:(id)arg1 ;
+-(BOOL)_shouldHideSubview:(id)arg1 ;
+-(UIEdgeInsets)_expandedMenuButtonTappableInsets;
+-(void)_setExpandedMenuButtonTappableInsets:(UIEdgeInsets)arg1 ;
+@end
+

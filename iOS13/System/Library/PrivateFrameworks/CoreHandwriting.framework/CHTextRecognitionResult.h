@@ -1,0 +1,53 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:45 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+*/
+
+#import <CoreHandwriting/CHRecognitionResult.h>
+
+@class NSString, NSArray, NSIndexSet;
+
+@interface CHTextRecognitionResult : CHRecognitionResult {
+
+	BOOL _isTextReplacement;
+	NSString* _string;
+	NSArray* _wordRanges;
+	NSArray* _wordIDs;
+	NSArray* _wordRecognitionScores;
+	NSArray* _wordCombinedScores;
+	NSArray* _wordStrokeSets;
+	NSArray* _wordLexicalEntries;
+	NSArray* _wordPatternEntries;
+	NSIndexSet* _rareWordIndexes;
+	NSIndexSet* _inappropriateWordIndexes;
+
+}
+
+@property (readonly) NSString * string;                                  //@synthesize string=_string - In the implementation block
+@property (readonly) NSArray * wordRanges;                               //@synthesize wordRanges=_wordRanges - In the implementation block
+@property (readonly) NSArray * wordIDs;                                  //@synthesize wordIDs=_wordIDs - In the implementation block
+@property (readonly) NSArray * wordRecognitionScores;                    //@synthesize wordRecognitionScores=_wordRecognitionScores - In the implementation block
+@property (readonly) NSArray * wordCombinedScores;                       //@synthesize wordCombinedScores=_wordCombinedScores - In the implementation block
+@property (readonly) NSArray * wordStrokeSets;                           //@synthesize wordStrokeSets=_wordStrokeSets - In the implementation block
+@property (readonly) NSArray * wordLexicalEntries;                       //@synthesize wordLexicalEntries=_wordLexicalEntries - In the implementation block
+@property (readonly) NSArray * wordPatternEntries;                       //@synthesize wordPatternEntries=_wordPatternEntries - In the implementation block
+@property (readonly) NSIndexSet * rareWordIndexes;                       //@synthesize rareWordIndexes=_rareWordIndexes - In the implementation block
+@property (readonly) NSIndexSet * inappropriateWordIndexes;              //@synthesize inappropriateWordIndexes=_inappropriateWordIndexes - In the implementation block
+@property (readonly) BOOL isTextReplacement;                             //@synthesize isTextReplacement=_isTextReplacement - In the implementation block
+-(NSString *)string;
+-(void)dealloc;
+-(NSArray *)wordIDs;
+-(id)initWithString:(id)arg1 score:(double)arg2 wordRanges:(id)arg3 wordIDs:(id)arg4 wordRecognitionScores:(id)arg5 wordCombinedScores:(id)arg6 wordStrokeSets:(id)arg7 wordLexicalEntries:(id)arg8 wordPatternEntries:(id)arg9 rareWordIndexes:(id)arg10 inappropriateWordIndexes:(id)arg11 isTextReplacement:(BOOL)arg12 ;
+-(NSIndexSet *)inappropriateWordIndexes;
+-(NSArray *)wordStrokeSets;
+-(NSIndexSet *)rareWordIndexes;
+-(NSArray *)wordCombinedScores;
+-(NSArray *)wordLexicalEntries;
+-(NSArray *)wordPatternEntries;
+-(NSArray *)wordRanges;
+-(NSArray *)wordRecognitionScores;
+-(BOOL)isTextReplacement;
+-(id)mecabraCandidate;
+@end
+

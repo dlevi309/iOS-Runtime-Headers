@@ -1,0 +1,22 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:36 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ActionKit.framework/ActionKit
+*/
+
+#import <WorkflowKit/WFDateFieldParameter.h>
+
+@class HKSampleType;
+
+@interface WFHealthActionEndDateFieldParameter : WFDateFieldParameter {
+
+	HKSampleType* _sampleType;
+
+}
+
+@property (nonatomic,retain) HKSampleType * sampleType;              //@synthesize sampleType=_sampleType - In the implementation block
+-(BOOL)isHidden;
+-(HKSampleType *)sampleType;
+-(void)setSampleType:(HKSampleType *)arg1 ;
+@end
+

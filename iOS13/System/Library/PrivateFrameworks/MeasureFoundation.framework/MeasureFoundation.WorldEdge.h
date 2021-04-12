@@ -1,0 +1,24 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:53 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/MeasureFoundation.framework/MeasureFoundation
+*/
+
+#import <MeasureFoundation/MeasureFoundation.MeasureObject.h>
+
+@interface MeasureFoundation.WorldEdge : MeasureFoundation.MeasureObject {
+
+	 transform;
+	 p1;
+	 p2;
+	 type;
+	 typeConfidence;
+	 backingPlanes;
+	 connectedSurfaces;
+	 edgePlanesMetrics;
+	 adVariance;
+
+}
+-(id)init;
+@end
+

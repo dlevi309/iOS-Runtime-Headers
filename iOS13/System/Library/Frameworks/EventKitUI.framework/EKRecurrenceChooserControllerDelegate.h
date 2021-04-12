@@ -1,0 +1,15 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:41 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/EventKitUI.framework/EventKitUI
+*/
+
+
+@protocol EKRecurrenceChooserControllerDelegate <NSObject>
+@required
+-(void)recurrenceChooser:(id)arg1 wantsRowReload:(long long)arg2;
+-(void)recurrenceChooserUpdated:(id)arg1;
+-(void)recurrenceChooserWantsReload:(id)arg1;
+
+@end
+

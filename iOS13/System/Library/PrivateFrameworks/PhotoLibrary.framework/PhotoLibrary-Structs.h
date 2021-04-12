@@ -1,0 +1,74 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:52 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/PhotoLibrary.framework/PhotoLibrary
+*/
+
+typedef struct __CFDictionary* CFDictionaryRef;
+
+typedef struct CGPath* CGPathRef;
+
+typedef struct opaque_pthread_mutex_t {
+	long long __sig;
+	char __opaque[56];
+} opaque_pthread_mutex_t;
+
+typedef struct entryList {
+	lruEntry tqh_first;
+	lruEntry tqh_last;
+} entryList;
+
+typedef struct CGPoint {
+	double x;
+	double y;
+} CGPoint;
+
+typedef struct CGSize {
+	double width;
+	double height;
+} CGSize;
+
+typedef struct CGRect {
+	CGPoint origin;
+	CGSize size;
+} CGRect;
+
+typedef struct __CFRunLoopSource* CFRunLoopSourceRef;
+
+typedef struct {
+	long long version;
+	void info;
+	/*function pointer*/void* retain;
+	/*function pointer*/void* release;
+	/*function pointer*/void* copyDescription;
+} SCD_Struct_PL8;
+
+typedef struct __CFRunLoop* CFRunLoopRef;
+
+typedef struct __CFString* CFStringRef;
+
+typedef struct CGContext* CGContextRef;
+
+typedef struct UIEdgeInsets {
+	double top;
+	double left;
+	double bottom;
+	double right;
+} UIEdgeInsets;
+
+typedef struct CGImage* CGImageRef;
+
+typedef struct __CFUserNotification* CFUserNotificationRef;
+
+typedef struct __IOSurface* IOSurfaceRef;
+
+typedef struct CGColorSpace* CGColorSpaceRef;
+
+typedef struct vImageConverter* vImageConverterRef;
+
+typedef struct iosPoolOpaque* iosPoolOpaqueRef;
+
+typedef struct os_unfair_lock_s {
+	unsigned _os_unfair_lock_opaque;
+} os_unfair_lock_s;
+

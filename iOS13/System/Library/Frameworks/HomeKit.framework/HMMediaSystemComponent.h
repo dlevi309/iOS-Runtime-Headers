@@ -1,0 +1,63 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:32:34 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/HomeKit.framework/HomeKit
+*/
+
+#import <HomeKit/HomeKit-Structs.h>
+#import <libobjc.A.dylib/HMFLogging.h>
+#import <libobjc.A.dylib/NSSecureCoding.h>
+#import <libobjc.A.dylib/HMObjectMerge.h>
+#import <libobjc.A.dylib/NSCopying.h>
+#import <libobjc.A.dylib/NSMutableCopying.h>
+
+@class HMFUnfairLock, HMMediaProfile, HMMediaSystemRole, NSUUID, HMAccessory, NSString;
+
+@interface HMMediaSystemComponent : NSObject <HMFLogging, NSSecureCoding, HMObjectMerge, NSCopying, NSMutableCopying> {
+
+	HMFUnfairLock* _lock;
+	HMMediaProfile* _mediaProfile;
+	HMMediaSystemRole* _role;
+	NSUUID* _uniqueIdentifier;
+	HMAccessory* _accessory;
+	NSUUID* _uuid;
+
+}
+
+@property (nonatomic,readonly) NSUUID * uuid;                                     //@synthesize uuid=_uuid - In the implementation block
+@property (assign,nonatomic,__weak) HMAccessory * accessory;                      //@synthesize accessory=_accessory - In the implementation block
+@property (nonatomic,__weak,readonly) HMMediaProfile * mediaProfile;              //@synthesize mediaProfile=_mediaProfile - In the implementation block
+@property (nonatomic,readonly) HMMediaSystemRole * role;                          //@synthesize role=_role - In the implementation block
+@property (nonatomic,readonly) NSUUID * uniqueIdentifier;                         //@synthesize uniqueIdentifier=_uniqueIdentifier - In the implementation block
+@property (readonly) unsigned long long hash; 
+@property (readonly) Class superclass; 
+@property (copy,readonly) NSString * description; 
+@property (copy,readonly) NSString * debugDescription; 
++(BOOL)supportsSecureCoding;
++(id)logCategory;
++(id)mediaSystemComponentWithDictionary:(id)arg1 home:(id)arg2 ;
+-(id)init;
+-(void)dealloc;
+-(BOOL)isEqual:(id)arg1 ;
+-(unsigned long long)hash;
+-(NSString *)description;
+-(id)copyWithZone:(NSZone*)arg1 ;
+-(id)mutableCopyWithZone:(NSZone*)arg1 ;
+-(void)_invalidate;
+-(void)encodeWithCoder:(id)arg1 ;
+-(id)initWithCoder:(id)arg1 ;
+-(HMMediaSystemRole *)role;
+-(NSUUID *)uuid;
+-(NSUUID *)uniqueIdentifier;
+-(id)serialize;
+-(void)setRole:(HMMediaSystemRole *)arg1 ;
+-(HMAccessory *)accessory;
+-(void)setAccessory:(HMAccessory *)arg1 ;
+-(HMMediaProfile *)mediaProfile;
+-(id)logIdentifier;
+-(id)initWithMediaProfile:(id)arg1 role:(id)arg2 ;
+-(BOOL)_mergeWithNewObject:(id)arg1 operations:(id)arg2 ;
+-(void)_updateAccessoryReference:(id)arg1 ;
+-(id)initWithUUID:(id)arg1 mediaProfile:(id)arg2 role:(id)arg3 ;
+@end
+

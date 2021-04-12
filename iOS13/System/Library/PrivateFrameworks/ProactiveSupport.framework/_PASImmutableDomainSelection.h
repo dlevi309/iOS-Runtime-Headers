@@ -1,0 +1,22 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:31:35 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
+*/
+
+#import <ProactiveSupport/_PASDomainSelection.h>
+
+@class NSSet;
+
+@interface _PASImmutableDomainSelection : _PASDomainSelection {
+
+	NSSet* _domains;
+
+}
+-(BOOL)isEmpty;
+-(id)_initWithNonOverlappingDomainSet:(id)arg1 ;
+-(BOOL)containsDomain:(id)arg1 ;
+-(id)allDomains;
+-(BOOL)isEqualToDomainSelection:(id)arg1 ;
+@end
+

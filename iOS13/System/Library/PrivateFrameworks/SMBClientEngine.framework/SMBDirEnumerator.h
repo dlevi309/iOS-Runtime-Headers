@@ -1,0 +1,47 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:35:15 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/PrivateFrameworks/SMBClientEngine.framework/SMBClientEngine
+*/
+
+
+#import <SMBClientEngine/SMBClientEngine-Structs.h>
+@class SMBPiston, NSString, SMBNode, SMB_rq;
+
+@interface SMBDirEnumerator : NSObject {
+
+	SMBPiston* pd;
+	unsigned f_shareID;
+	int f_flags;
+	int f_sfm_conversion;
+	unsigned short f_searchCount;
+	unsigned char f_infolevel;
+	int f_attrmask;
+	NSString* f_lookupName;
+	NSString* f_createName;
+	SMBNode* f_node;
+	smb_query_dir f_query_inp;
+	unsigned f_query_buffer_len;
+	unsigned char f_NetworkNameBuffer[1020];
+	unsigned f_NetworkNameLen;
+	smbfattr f_attr;
+	unsigned f_eofs;
+	SMB_rq* f_create_rqp;
+	SMB_rq* f_query_dir_rqp;
+	int f_need_close;
+	unsigned f_resume_file_index;
+	unsigned f_output_buf_len;
+
+}
++(void)enumeratorWithParameters:(id)arg1 onShareID:(unsigned)arg2 dirName:(id)arg3 lookUpName:(id)arg4 searchFlags:(unsigned)arg5 outParameters:(smb_dir_enum_out*)arg6 callBack:(/*^block*/id)arg7 ;
+-(void)dealloc;
+-(int)cleanup;
+-(int)commonInit:(id)arg1 onShareID:(unsigned)arg2 dirName:(id)arg3 lookUpName:(id)arg4 searchFlags:(unsigned)arg5 outParameters:(smb_dir_enum_out*)arg6 ;
+-(int)smb2fs_smb_findnext:(unsigned*)arg1 ;
+-(int)smb2_smb_query_dir:(unsigned*)arg1 ;
+-(int)smb2_smb_parse_query_dir_both_dir_info:(mdchain*)arg1 ;
+-(void)close:(smb_dir_enum_out*)arg1 callBack:(/*^block*/id)arg2 ;
+-(id)init:(id)arg1 onShareID:(unsigned)arg2 dirName:(id)arg3 lookUpName:(id)arg4 searchFlags:(unsigned)arg5 outParameters:(smb_dir_enum_out*)arg6 callBack:(/*^block*/id)arg7 ;
+-(void)nextEntry:(id)arg1 outParameters:(smb_dir_enum_out*)arg2 callBack:(/*^block*/id)arg3 ;
+@end
+

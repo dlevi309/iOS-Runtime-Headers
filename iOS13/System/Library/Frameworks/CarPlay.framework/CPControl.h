@@ -1,0 +1,18 @@
+/*
+* Generated on Monday, March 1, 2021 at 2:34:29 AM Pacific Standard Time
+* Operating System: Version 13.4.1 (Build 17E262)
+* Image Source: /System/Library/Frameworks/CarPlay.framework/CarPlay
+*/
+
+@class NSUUID;
+
+
+@protocol CPControl <NSObject>
+@property (nonatomic,retain) NSUUID * identifier; 
+@required
+-(NSUUID *)identifier;
+-(void)setIdentifier:(id)arg1;
+-(void)handlePrimaryAction;
+
+@end
+

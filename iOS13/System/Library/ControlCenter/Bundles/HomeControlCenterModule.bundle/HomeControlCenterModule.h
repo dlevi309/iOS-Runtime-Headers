@@ -1,0 +1,11 @@
+#import <HomeControlCenterModule/HUCCControlCenterModule.h>
+#import <HomeControlCenterModule/HUCCOpenURLHandler.h>
+#import <HomeControlCenterModule/HUCCWarningLabelView.h>
+#import <HomeControlCenterModule/HUCCPreferences.h>
+#import <HomeControlCenterModule/HUCCModuleContentViewController.h>
+#import <HomeControlCenterModule/HUCCGridItemManager.h>
+#import <HomeControlCenterModule/HUCCPageItemManager.h>
+#import <HomeControlCenterModule/HUCCGridViewController.h>
+#import <HomeControlCenterModule/HUCCHomeButton.h>
+#import <HomeControlCenterModule/HUCCModuleExpandingTransition.h>
+#import <HomeControlCenterModule/HUCCModuleView.h>
